@@ -1,0 +1,17 @@
+{
+  "name": "fluentplayer-user-docs",
+  "version": "1.0.0",
+  "description": "Documentation for the FluentPlayer WordPress plugin",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:build:gh-pages": "VITEPRESS_BASE=/fluentplayer-user-docs/ vitepress build .",
+    "docs:preview": "vitepress preview ."
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.0"
+  }
+}

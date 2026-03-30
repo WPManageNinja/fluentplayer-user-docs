@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# VitePress
+.vitepress/cache
+.vitepress/dist
+# Stray cache if VitePress is run with a `docs/` subfolder as root by mistake
+docs/.vitepress/
+
+# Local plugin source extractions (for doc audits)
+_plugin-extract/
+_screenshot-read/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.*.local
