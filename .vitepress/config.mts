@@ -174,10 +174,21 @@ export default defineConfig({
 
   head: [
     ['meta', { name: 'generator', content: 'FluentPlayer' }],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: `${base}brand/fluentplayer_primary_icon.png`,
+      },
+    ],
   ],
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: {
+      light: '/brand/fluentplayer_primary_logo.png',
+      dark: '/brand/fluentplayer_secondary_logo.png',
+    },
     siteTitle: 'FluentPlayer',
     nav: [
       { text: 'Guide', link: '/guide/' },

@@ -27,7 +27,6 @@ const target = computed(() =>
     <a class="title" :href="link" :rel="rel" :target="target">
       <slot name="nav-bar-title-before" />
       <VPImage v-if="theme.logo" class="logo" :image="theme.logo" />
-      <span>FluentPlayer</span>
       <slot name="nav-bar-title-after" />
     </a>
   </div>
