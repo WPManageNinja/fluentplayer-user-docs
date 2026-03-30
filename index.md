@@ -1,7 +1,6 @@
 ---
 layout: home
 title: FluentPlayer
-titleTemplate: Documentation for the FluentPlayer WordPress Plugin
 hero:
   name: Fluent Player
   text: WordPress Video & Media Plugin

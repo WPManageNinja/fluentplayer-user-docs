@@ -159,8 +159,6 @@ const guideGroups = [
 
 export default defineConfig({
   title: 'FluentPlayer',
-  description: 'Documentation for the FluentPlayer WordPress plugin — video players, playlists, and streaming.',
-  base,
   lang: 'en-US',
   lastUpdated: true,
   /**
@@ -189,7 +187,8 @@ export default defineConfig({
       light: '/brand/fluentplayer_primary_logo.png',
       dark: '/brand/fluentplayer_secondary_logo.png',
     },
-    siteTitle: 'FluentPlayer',
+    /** Logo only in the navbar (no text beside it). `config.title` still sets the HTML `<title>`. */
+    siteTitle: false,
     nav: [
       { text: 'Guide', link: '/guide/' },
       { text: 'Reference', link: '/reference/' },
@@ -240,7 +239,6 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'FluentPlayer WordPress Plugin Documentation.',
       copyright: 'Copyright © FluentPlayer',
     },
 
