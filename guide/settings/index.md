@@ -8,6 +8,8 @@ The **Settings** screen is the global control panel for Fluent Player. All site-
 2. Click **Settings** — either the **gear icon** in the plugin header bar, or the **Settings** item under the Fluent Player menu in the WordPress sidebar.
 3. Use the **inner settings sidebar** (on the left of the settings screen) to switch between sections.
 
+![Settings](/guide/public/settings/index/settings-1.webp)
+
 ## Settings sections
 
 | Section | What it covers |
@@ -36,15 +38,3 @@ Settings control **global defaults**. Many options can be overridden at narrower
 | **Per media** | Edit a media item in the Fluent Player → Media editor |
 | **Per block** | Fluent Player block sidebar in the Gutenberg editor |
 
-Priority (highest wins): **per-block / per-media → preset → global setting**.
-
-## Next steps
-
-- [General Settings](/guide/settings/general)
-- [Performance Settings](/guide/settings/performance)
-- [Branding Settings](/guide/settings/branding)
-- [Integrations Settings](/guide/settings/integrations)
-- [Storage Settings](/guide/settings/storage)
-- [YouTube Settings](/guide/settings/youtube)
-- [Analytics Settings](/guide/settings/analytics)
-- [Export](/guide/settings/export)
