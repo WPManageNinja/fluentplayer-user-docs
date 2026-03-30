@@ -4,6 +4,7 @@ import type { Theme } from 'vitepress'
 import VPNavBarTitle from './components/VPNavBarTitle.vue'
 import NotFound from './components/NotFound.vue'
 import SupportCTA from './components/SupportCTA.vue'
+import './styles/brand.css'
 
 const theme: Theme = {
   extends: DefaultTheme,
