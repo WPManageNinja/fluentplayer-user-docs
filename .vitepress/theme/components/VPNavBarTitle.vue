@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData, withBase } from 'vitepress'
-import { useLayout, VPImage } from 'vitepress/theme'
+import { VPImage } from 'vitepress/theme'
 
 const { theme } = useData()
-const { hasSidebar } = useLayout()
+const hasSidebar = computed(() => false)
 
 const link = computed(() => {
   const logoLink = theme.value.logoLink
