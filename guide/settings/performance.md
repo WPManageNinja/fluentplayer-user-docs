@@ -1,7 +1,5 @@
 # Performance Settings
 
-**Fluent Player → Settings → Performance**
-
 The Performance section controls how the player loads JavaScript on your site. These options help balance **interactivity** with **page speed** and metrics such as Core Web Vitals.
 
 ## Why this matters
@@ -25,14 +23,7 @@ Exact behavior can vary by theme and caching plugins. After changing this settin
 
 **AJAX progress** relates to how progress and related updates are requested while the admin or player communicates with WordPress. Leave the default unless support or release notes recommend a change for your environment.
 
----
-
 ## Saving changes
 
 Click **Save Settings** after changing performance options. Clear any full-page cache or CDN cache so visitors receive the updated loading behavior.
 
-## Next steps
-
-- [General Settings](/guide/settings/general) — Default preset, custom CSS, and custom JavaScript.
-- [Settings Overview](/guide/settings/) — All global settings sections.
-- [Installation](/guide/installation) — Initial plugin setup.
