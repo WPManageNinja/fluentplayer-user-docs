@@ -1,7 +1,5 @@
 # Integrations Settings
 
-**Fluent Player → Settings → Integrations**
-
 The Integrations section manages **email and lead capture providers**. When viewers submit their email through a [Fluent Player email capture overlay](/guide/engagement/email-capture), the data is routed to whichever provider you configure here.
 
 ::: info Note
@@ -10,38 +8,30 @@ Video storage providers (Mux, BunnyCDN) are configured under [**Settings → Sto
 
 ## Browsing integrations
 
-The list can be filtered using the tabs at the top:
+Navigating your available integrations is simple. You can use the search bar on the right or filter the list using the tabs at the top of the screen:
 
-| Filter | Shows |
-|--------|-------|
-| **All** | Every integration card |
-| **Email Service Provider** | FluentCRM, Mailchimp |
-| **Others** | Webhook |
+* **All:** Shows every integration card available.
+* **Email Service Provider:** Filters the view to show dedicated email platforms like FluentCRM and Mailchimp.
+* **Others:** Filters the view to show custom routing options like Webhooks.
 
-Each card displays a short description, an **Enabled** or **Disabled** status badge, and a **Configure** button.
+Each integration card displays a brief description, a status badge (Enabled or Disabled), and a **Configure** button to manage your connection settings.
 
----
+![Integrattions](/guide/public/settings/integrations/integrations-1.webp)
 
 ## FluentCRM
 
-**FluentCRM** is a WordPress-native CRM and email marketing plugin. Because it runs on your own site, the integration requires no external API keys — it connects automatically once FluentCRM is installed.
+FluentCRM is a powerful, WordPress-native CRM and email marketing plugin. Because it runs directly on your own WordPress site, integrating it with FluentPlayer requires absolutely no external API keys—it connects seamlessly!
 
 **What happens when a viewer submits their email:**
-- A contact is created (or updated) in FluentCRM.
-- You can add them to specific lists or tags.
-- From there, run email sequences, newsletters, or automations inside FluentCRM.
+* A contact is instantly created (or updated) within FluentCRM.
+* The contact is added to your specified lists or tags.
+* Your pre-built email sequences, newsletters, or automations trigger automatically inside FluentCRM.
 
 **How to set it up:**
-
-1. Install and activate **FluentCRM** on your WordPress site.
-2. Go to **Fluent Player → Settings → Integrations**.
-3. Find **FluentCRM** and click **Configure**.
-4. Enable the integration — the status badge changes to **Enabled**.
-5. Configure which list or tag new contacts should be added to, then **Save**.
-
-**Best for:** Users who want a fully self-hosted, WordPress-native email marketing stack.
-
----
+1. Ensure you have the FluentCRM plugin installed and activated on your WordPress site.
+2. Navigate to **FluentPlayer -> Settings -> Integrations**.
+3. Locate the FluentCRM card and enable the integration (the status badge will turn green and display *Enabled*).
+4. Configure which list or tag your new contacts should be assigned to, and click **Save**.
 
 ## Mailchimp (Pro)
 
@@ -57,26 +47,21 @@ Each card displays a short description, an **Enabled** or **Disabled** status ba
 
 **Best for:** Users who already run Mailchimp campaigns and want email captures from video to feed directly into their existing lists.
 
----
-
 ## Webhook (Pro)
 
-A **webhook** sends captured email data as an HTTP POST to any URL you specify. This is the most flexible option — you can route data to any CRM, automation platform, or custom system.
+A webhook sends your captured email data as an HTTP POST request to any URL you specify. This is your most flexible, powerful option, allowing you to route lead data to virtually any modern CRM, automation platform, or custom-built system.
 
 **What happens when a viewer submits their email:**
-- Fluent Player sends a POST request to your webhook URL.
-- Your endpoint receives the payload (email, name, and any other collected fields) and processes it.
+* FluentPlayer instantly sends a POST request to your specified webhook URL.
+* Your receiving endpoint accepts the payload (which includes the email, name, and any other collected fields) and processes it according to your external setup.
 
 **How to set it up:**
+1. Navigate to **FluentPlayer -> Settings -> Integrations**.
+2. Locate the Webhook card and click **Configure**.
+3. Enter your Webhook URL—this is the exact endpoint address that should receive the data.
+4. Click **Save** to activate the integration.
 
-1. Go to **Fluent Player → Settings → Integrations**.
-2. Find **Webhook** and click **Configure**.
-3. Enter your **webhook URL** — the endpoint that should receive the data.
-4. **Save**.
-
-**Works with:** Zapier, Make (Integromat), HubSpot, ActiveCampaign, n8n, or any custom receiver that accepts HTTP POST.
-
-**Best for:** Users who need to connect to a CRM or automation tool not natively supported.
+> **🔍 Example:** Webhooks are perfect for connecting your video lead generation to automation tools like Zapier, Make (Integromat), n8n, HubSpot, or ActiveCampaign.
 
 ---
 
@@ -93,10 +78,3 @@ You can have multiple providers configured (each with Enabled/Disabled toggles),
 ## Connecting a provider to email capture
 
 After setting up a provider here, make sure to select it in the [Email Capture Overlay](/guide/engagement/email-capture) settings (on the preset or per media). The capture overlay and the provider are configured separately.
-
-## Next steps
-
-- [Email Capture Overlay](/guide/engagement/email-capture) — Set up the email gate form on the player.
-- [Storage Settings](/guide/settings/storage) — Connect Mux, BunnyCDN Stream, and BunnyCDN Storage.
-- [Export](/guide/settings/export) — Download collected emails as CSV, JSON, or ODS.
-- [Settings Overview](/guide/settings/) — All settings sections at a glance.

@@ -1,7 +1,5 @@
 # Storage Settings
 
-**Fluent Player → Settings → Storage**
-
 The Storage section is where you connect external **video hosting** providers to Fluent Player Pro. Once connected, you can choose these providers as video sources when adding or editing media items.
 
 ::: info Pro feature
@@ -14,17 +12,13 @@ Email and CRM providers (FluentCRM, Mailchimp, Webhook) are configured under [**
 
 ## Browsing storage providers
 
-The list can be filtered using the tabs at the top:
+Navigating your available integrations is simple. You can use the search bar on the right or filter the list using the tabs at the top of the screen:
 
-| Filter | Shows |
-|--------|-------|
-| **All** | Every storage provider row |
-| **BunnyCDN** | BunnyCDN Stream and BunnyCDN Storage |
-| **Mux** | Mux row only |
+- **All:** Shows every integration card available.
+- **Email Service Provider:** Filters the view to show dedicated email platforms like FluentCRM and Mailchimp.
+- **Others:** Filters the view to show custom routing options like Webhooks.
 
-Each row shows a provider name, description, status badge, and a **Configure** button.
-
----
+Each integration card displays a brief description, a status badge (Enabled or Disabled), and a **Configure** button to manage your connection settings.
 
 ## BunnyCDN Stream
 
@@ -57,8 +51,6 @@ After connecting:
 
 **Related:** [BunnyCDN Stream integration guide](/guide/integrations/bunnycdn-stream) for advanced options.
 
----
-
 ## BunnyCDN Storage
 
 **BunnyCDN Storage** lets you store video files in Bunny's storage zones and serve them through their CDN. This is useful when you want self-managed file hosting rather than a full streaming platform.
@@ -87,8 +79,6 @@ After connecting:
 4. Save the media.
 
 **Related:** [BunnyCDN Storage integration guide](/guide/integrations/bunnycdn-storage) for file management options.
-
----
 
 ## Mux
 
@@ -127,13 +117,3 @@ After connecting:
 4. Save the media.
 
 **Related:** [Mux integration guide](/guide/integrations/mux) for live streaming, signed URLs, and advanced API details.
-
----
-
-## Next steps
-
-- [Integrations Settings](/guide/settings/integrations) — Email/CRM providers.
-- [BunnyCDN Stream guide](/guide/integrations/bunnycdn-stream) — Advanced streaming options.
-- [BunnyCDN Storage guide](/guide/integrations/bunnycdn-storage) — File management.
-- [Mux guide](/guide/integrations/mux) — Live streams, signed URLs, webhooks.
-- [Settings Overview](/guide/settings/) — All settings sections at a glance.
