@@ -1,3 +1,8 @@
+---
+title: "Public vs Private Visibility"
+description: "Learn how Fluent Player public and private visibility affects the dedicated player URL, how it differs from embeds and playlists, and how to change the setting."
+---
+
 # Public vs Private Visibility
 
 Each Fluent Player media item has a **visibility** setting that controls who can access the [dedicated player URL](/guide/display-embed/dedicated-player-url). This is separate from how you embed the video in posts and pages.
@@ -34,7 +39,9 @@ When a media item is set to **private** (the default):
 1. Go to **Fluent Player → Media** and open the media item.
 2. In the media settings, look for the **public visibility** option.
 3. Toggle it **on** to make the dedicated URL publicly accessible, or **off** to keep it private.
-4. Save.
+4. Latsly, click on the **Save** button.
+
+![Change Visibility](/guide/public/Images/Managing-your-media/Visibilty/change-visibility-1.webp)
 
 ## What visibility does NOT affect
 
@@ -48,8 +55,4 @@ The public/private setting **only** applies to the dedicated player URL. It does
 Think of it this way: the public/private setting answers one question: "Can someone type the URL `/fluent-player-media/42/` into their browser and watch the video?" If public, yes. If private, only admins and editors.
 :::
 
-## Next steps
 
-- [Dedicated Player URL](/guide/display-embed/dedicated-player-url) — Learn more about the dedicated player page and when to use it.
-- [Embed with Shortcode](/guide/display-embed/shortcode) — The most common way to show videos on your site.
-- [Adding and Editing Videos](/guide/videos-and-media/adding-videos) — Create and configure media items.

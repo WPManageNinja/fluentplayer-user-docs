@@ -25,6 +25,9 @@ If you have subtitles in a different format, there are many free online converte
 1. Go to **Fluent Player → Media** and open the media you want to add subtitles to.
 2. In the media editor, find the **subtitles** section.
 3. Upload your subtitle file (`.vtt` or `.srt`).
+
+![Subtitle](/guide/public/Images/Managing-your-media/subtitle/subtitle-1.webp)
+
 4. If prompted, set the **language** for the subtitle track (for example, English, Spanish, French).
 5. Save the media.
 
@@ -35,6 +38,8 @@ You can add **multiple subtitle tracks** for different languages. Viewers can sw
 1. Open the media in the editor.
 2. In the subtitles section, remove the track you no longer need.
 3. Save the media.
+
+![Remove Subtitle](/guide/public/Images/Managing-your-media/subtitle/remove-subtitle-2.webp)
 
 ## Styling captions on the player
 
@@ -59,8 +64,4 @@ Let's get started!
 
 Each block has a start time, an end time, and the text to display.
 
-## Next steps
 
-- [Captions and Branding](/guide/customize/captions-and-branding) — Customize how captions look.
-- [Multiple Languages](/guide/videos-and-media/multiple-languages) — Offer the same video in different languages.
-- [Skins and Controls](/guide/customize/skins-and-controls) — Make sure the captions toggle is enabled so viewers can turn subtitles on and off.

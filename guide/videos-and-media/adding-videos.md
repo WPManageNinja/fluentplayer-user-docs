@@ -1,18 +1,31 @@
+---
+title: "Adding and Editing Videos"
+description: "Learn how to create, edit, and manage media in Fluent Player, including video sources, presets, posters, and media IDs."
+---
+
 # Adding and Editing Videos
 
-This page shows you how to create a new video (media) in Fluent Player and how to edit an existing one. No coding is needed — everything happens in your WordPress admin.
+This guide explains how to manage your video content within Fluent Player. You can create, organize, and update your media directly from your WordPress dashboard without touching a single line of code.
 
 ## Creating a new media item
 
-Follow these steps to add a new video:
+Adding a video (Media) is the first step toward getting your content in front of your audience.
 
 1. In your WordPress admin, go to **Fluent Player → Media** (the **Media** section in **Fluent Player Pro**).
 2. Click **Add Media** (or **Add New** / **+**, depending on the screen) to create a new item.
+
+![Add Media](/guide/public/Images/Managing-your-media/adding-and-ediitng-video/add-media-1.webp)
+
 3. Give your media a **title**. This is for your reference in the admin and can also appear in the player header on the [dedicated player URL](/guide/display-embed/dedicated-player-url).
 
 **Example:** If you are adding a product demo video, you might title it "Product Demo — Getting Started."
 
+![Add title](/guide/public/Images/Managing-your-media/adding-and-ediitng-video/enter-title-and-url-2.webp)
+
 4. Set the **video source**. This is the URL or file that the player will load. See [Video Sources](/guide/videos-and-media/video-sources) for all the options.
+
+![Set Video Source](/guide/public/Images/Managing-your-media/adding-and-ediitng-video/add-video-source-3.webp)
+
 5. Optionally, add a **poster image**. This is the thumbnail that viewers see before they click play. A good poster makes your video look more professional and inviting.
 6. Choose a **preset** that controls the player's look and controls. See [Presets](/guide/customize/presets) for details.
 7. Click **Publish** to make it live, or **Save as Draft** to come back later.
@@ -21,9 +34,11 @@ Follow these steps to add a new video:
 You do not need to configure everything at once. You can always come back and change the video source, poster, preset, or any other setting later.
 :::
 
+![Publish](/guide/public/Images/Managing-your-media/adding-and-ediitng-video/publish-4.webp)
+
 ## Editing an existing media item
 
-To edit a media item you already created:
+You can update your videos at any time, and the changes will automatically reflect wherever the video is embedded.
 
 1. Go to **Fluent Player → Media**.
 2. Find the media in the list and click on it.
@@ -67,8 +82,3 @@ Here is how to find it:
 - In the **Media list**, the ID is shown next to each item (for example, `#42`).
 - When **editing** a media, check the URL in your browser — it usually contains something like `post=42`.
 
-## Next steps
-
-- [Video Sources](/guide/videos-and-media/video-sources) — Learn about all the ways to provide a video file.
-- [Subtitles](/guide/videos-and-media/subtitles) — Add caption tracks for accessibility.
-- [Display & Embed](/guide/display-embed/) — Show the video on your site using shortcodes or blocks.

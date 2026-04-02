@@ -1,41 +1,45 @@
+---
+title: "Multiple Languages"
+description: "Set up Fluent Player Multi-Language: link alternate video files per language, enable the selector, automatic browser-language switching, and when to use it vs subtitles."
+---
+
 # Multiple Languages
 
-If your audience speaks different languages, Fluent Player lets you offer **alternate language versions** of the same video. The player can even switch the video source automatically based on the viewer's browser language.
+If your audience speaks different languages, Fluent Player allows you to offer **alternate versions** of the same video. This is perfect for videos with different voiceovers or narrations.
 
-This is different from subtitles — subtitles add text over the same video, while multiple languages swap the entire video (for example, a version narrated in Spanish instead of English).
+Unlike subtitles, which just add text over the screen, the **Multi-Language** feature swaps the entire video file so the viewer hears the audio in their preferred language.
 
-## How it works
+## How it works for Viewers
 
-Each media item has a **language** setting (for example, `en_US` for English). You can then create **language mappings** that link other media items as alternate versions.
+ * **Automatic Switching:** When a person visits your site, Fluent Player detects their browser language. If you have a matching video version, it can load that version automatically.
+ * **Manual Choice:** Viewers can also use the language selector in the player controls to pick their preferred language at any time.
 
-Here is an example:
+>[!Note]
+>Make sure you have already uploaded your translated videos as separate media items before trying to link them in the Multi-Language settings.
 
-| Media item | Language | Role |
-|------------|----------|------|
-| "Welcome Video (English)" (ID: 42) | `en_US` | Primary |
-| "Welcome Video (Spanish)" (ID: 55) | `es` | Mapped to ID 42 |
-| "Welcome Video (French)" (ID: 68) | `fr` | Mapped to ID 42 |
+## How to Enable Multiple Languages
 
-When a viewer whose browser language is set to Spanish visits a page with media ID 42, the player can automatically load the Spanish version (ID 55) instead.
+To set up different language versions, follow these simple steps:
 
-## Setting the primary language
+ 1. Go to **Fluent Player → Media** and open the video you want to edit. 
+ 2. In the right-hand sidebar, click on the **Multi-Language** tab to expand it.
+ 3. **Set the Primary Language:** Choose the main language of your video (e.g., English) from the **Primary Language** dropdown menu.
+ 4. **Turn on the Feature:** Switch the **toggle** for **Enable Multi-Language** to the "on" position. This adds a language selector to the player so viewers can switch manually.
 
-1. Go to **Fluent Player → Media** and open the media you want to configure.
-2. In the media settings, find the **language** option.
-3. Set it to the primary language of this video (for example, `en_US`).
-4. Save.
+![Enable Multi-Language](/guide/public/Images/Managing-your-media/multi-language/enable-multi-language-1.webp)
 
-## Adding language mappings
+## Adding and Managing Additional Languages
 
-1. Open the **primary** media item (the one you embed on the page).
-2. In the settings, find **language mappings**.
-3. Add a mapping by selecting a **language code** (for example, `es`) and the **media ID** of the alternate version.
-4. Repeat for each additional language.
-5. Save.
+Once the feature is enabled, you can link and manage your translated video versions:
 
-**Example:** For media ID 42 (English), you add:
-- Language `es` → Media ID 55
-- Language `fr` → Media ID 68
+ * **Adding a Language:** Click the **+ Add New** button. Select the language code and choose the corresponding media file from the dropdown, then click **Add**.
+
+ ![Adding a Language](/guide/public/Images/Managing-your-media/multi-language/additional-language-2.webp)
+
+ * **Editing a Language:** If you need to change the video file linked to a language, click the **Edit** button on the specific language card.
+ * **Removing a Language:** To delete a language option, click the **Trash/Delete** icon on the right side of the language card.
+
+ ![Edit or Remove Language](/guide/public/Images/Managing-your-media/multi-language/edit-or-remove-3.webp)
 
 ## Automatic language switching
 
@@ -65,7 +69,4 @@ Automatic switching is great for international audiences, but make sure you actu
 
 You can use both at the same time — for example, a Spanish-narrated video with French subtitles.
 
-## Next steps
 
-- [Subtitles](/guide/videos-and-media/subtitles) — Add text captions to your videos.
-- [Adding and Editing Videos](/guide/videos-and-media/adding-videos) — Create the alternate media items.
