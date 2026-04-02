@@ -9,13 +9,13 @@ The **shortcode** is the most common way to embed a Fluent Player video. It work
 
 ### Basic usage
 
-Add this shortcode to any **post or page** (preferred tag name):
+Add the following shortcode to any **post or page (recommended)**:
 
 ```
 [fluentplayer id="129"]
 ```
 
-The plugin also registers **`[fluentmedia id="133"]`** — the same handler, kept for older content. Replace `133` with the ID of your media item. That's it. The player will appear where you placed the shortcode.
+Replace `129` with the ID of your media item. Once added, the player will appear exactly where you place the shortcode.
 
 ## Find Your Shortcode
 
