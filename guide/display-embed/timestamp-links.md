@@ -5,47 +5,59 @@ description: "Use the fluentplayer_timestamp shortcode to jump the player to a t
 
 # Timestamp Links
 
-Timestamp links are clickable links that **jump the video to a specific time** when clicked. They are perfect for creating chapter lists, tables of contents, or "skip to" navigation for longer videos.
+**Timestamp links** are clickable text links that allow viewers to **jump to a specific moment** in your video. They are perfect for creating "Table of Contents" style navigation, allowing users to skip directly to the most relevant parts of longer content.
 
 ## How it works
 
-You place a video on the page using `[fluentplayer id="42"]` (or the legacy `[fluentmedia]` tag), and then you add timestamp links below (or above) it. When a viewer clicks a timestamp link, the player automatically seeks to that time.
+When a viewer clicks a timestamp link, the Fluent Player on that same page automatically seeks to the exact time defined in the link. To make this work, the **Media ID** in your timestamp link must match the **ID** of the player embedded on the page.
 
-## The shortcode
+## Finding the Shortcode
+
+You can easily find and copy the base shortcode directly from the block editor:
+
+1. Select your **FluentPlayer** block in the WordPress editor.
+2. In the right-hand sidebar, expand the **Timestamp Links** panel.
+3. You will see the **Timestamp Link Shortcode** box. Click the **Copy** icon next to it to grab the code.
 
 ```
-[fluentplayer_timestamp time="1:30" media_id="42"]Jump to 1:30[/fluentplayer_timestamp]
+[fluentplayer_timestamp time="1:30" media_id="129"]Jump to 1:30[/fluentplayer_timestamp]
 ```
 
-Let's break this down:
+## Step-by-Step Configuration
 
-| Part | What it does |
-|------|-------------|
-| `time="1:30"` | The time to jump to (minutes:seconds) |
-| `media_id="42"` | Which player on the page to control (must match the media ID) |
-| `Jump to 1:30` | The visible link text (can be anything) |
+To create a custom "Skip to" link, use the following shortcode format:
 
-## Example: Chapter list for a tutorial
+```
+[fluentplayer_timestamp time="1:30" media_id="129"]Jump to 1:30[/fluentplayer_timestamp]
+```
+
+ * **time="1:30":** Enter the specific time to jump to in minutes:seconds or just seconds (e.g., 90 for 1:30).
+ * **media_id="129":** This must match the ID of the video player on your page.
+ * **Link Text:** Change "Jump to 1:30" to any text you like, such as "See the Results".
+
+## Example: Creating a Chapter List
 
 Here is a complete example showing a video with a chapter list below it:
 
 ```
-[fluentplayer id="42"]
+[fluentplayer id="129"] (Your main video)
 
 ## Chapters
 
-[fluentplayer_timestamp time="0:00" media_id="42"]Introduction[/fluentplayer_timestamp]
+[fluentplayer_timestamp time="0:00" media_id="129"]Introduction[/fluentplayer_timestamp]
 
-[fluentplayer_timestamp time="2:15" media_id="42"]Setting up your account[/fluentplayer_timestamp]
+[fluentplayer_timestamp time="2:15" media_id="129"]Setting up your account[/fluentplayer_timestamp]
 
-[fluentplayer_timestamp time="5:30" media_id="42"]Creating your first project[/fluentplayer_timestamp]
+[fluentplayer_timestamp time="5:30" media_id="129"]Creating your first project[/fluentplayer_timestamp]
 
-[fluentplayer_timestamp time="8:45" media_id="42"]Publishing and sharing[/fluentplayer_timestamp]
+[fluentplayer_timestamp time="8:45" media_id="129"]Publishing and sharing[/fluentplayer_timestamp]
 
-[fluentplayer_timestamp time="11:00" media_id="42"]Next steps[/fluentplayer_timestamp]
+[fluentplayer_timestamp time="11:00" media_id="129"]Next steps[/fluentplayer_timestamp]
 ```
 
 On the front end, each chapter title appears as a clickable link. When a viewer clicks "Creating your first project," the video jumps to 5 minutes and 30 seconds.
+
+![Timestand Link](/guide/public/display-embed/dedicated-player-url/timestamp-link-1.webp)
 
 ## Important rules
 
@@ -69,8 +81,3 @@ Timestamp links are designed for single media items. For playlists, you typicall
 
 The timestamp link needs the player to be on the same page to work. If the player is in the main content and the link is in a sidebar widget, it should still work as long as they are rendered on the same page.
 
-## Next steps
-
-- [Embed with Shortcode](/guide/display-embed/shortcode) — The main embedding method.
-- [Shortcodes Reference](/reference/shortcodes) — Full list of all shortcodes and attributes.
-- [Skins and Controls](/guide/customize/skins-and-controls) — Enable the **chapters** control in the player for built-in chapter markers.
