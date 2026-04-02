@@ -5,21 +5,32 @@ description: "Add the Fluent Player Gutenberg block, pick video sources (YouTube
 
 # Embed with Block
 
+The Gutenberg Block is the easiest way to add videos if you prefer a visual, drag-and-drop experience.
 If you use the WordPress block editor (Gutenberg), you can add Fluent Player using the **FluentPlayer Media** block. The inserter lists it as **Fluent Player** / **FluentPlayer Media** (registered name: `fluent-player/media`).
 
 ## How to add the block
 
-1. Edit any post or page in the block editor (or open **Fluent Player → Media** for the dedicated editor—see below).
-2. Click **+** and search for **Fluent Player** or **FluentPlayer Media**.
-3. Insert the block. You will see **Add a new media from different sources** and a row of source buttons.
-4. Pick a source, complete the steps (for example paste a **YouTube URL** and click **Add YouTube Video**), or use **Back to Media Selector** to change the source type.
-5. Publish or update the page (or save the media item).
+You can add a video to any post or page by following these steps:
 
-On **posts and pages**, the block is **not locked** — you can place multiple Fluent Player blocks and mix them with other blocks.
+1. Open the WordPress editor for any **post** or **page**.
+2. Click the **(+)** button to add a new block and search for "**FluentPlayer**".
+3. Select the **Fluent Player** or **FluentPlayer Media** block from the list.
 
-## Choosing a video source (first step)
+![Add FluentPlayer](/guide/public/Images/Display-Embed/embed-with-block/fluentplayer-1.webp)
 
-After you insert the block, the UI offers **one-click source** buttons. In Fluent Player Pro these commonly include:
+4. Once the block appears, you have two choices:
+  * **Select Existing Media:** Use the dropdown menu to pick a video you have already created.
+  * **Add New Media:** Choose a source button **(like YouTube, Vimeo, or Media Library)** to add a fresh video.
+
+![Add New Media](/guide/public/Images/Display-Embed/embed-with-block/add-the-media-2.webp)
+
+5. If adding a new source, **paste** your link (e.g., a YouTube URL) and click the **Add Video** button.
+
+![Youtube Source](/guide/public/Images/Display-Embed/embed-with-block/youtube-source-3.webp)
+
+## Available Video Sources
+
+When you insert a new block, you can choose from several high-performance sources. Here, you will get offers **one-click source** buttons. In Fluent Player Pro these commonly include:
 
 | Source | Purpose |
 |--------|---------|
@@ -34,7 +45,7 @@ After you insert the block, the UI offers **one-click source** buttons. In Fluen
 
 Availability depends on your plan and **Settings → Storage** integrations.
 
-## Dedicated media editor vs normal post
+## Dedicated Media Editor vs Normal Post
 
 | Context | What you see |
 |---------|----------------|
@@ -43,11 +54,11 @@ Availability depends on your plan and **Settings → Storage** integrations.
 
 In both cases, configuration uses the same **right sidebar** (**Media** and **Block** tabs).
 
-## Deep dive: every Block sidebar panel
+## Deep Dive: Every Block sidebar panel
 
-Full documentation for each panel (Branding, General settings, Preset, Chapters, overlays, layers, timed content, multi-language, subtitles, timestamp links, Advanced) lives here:
+When the block is selected, a **Block** tab will appear in the right-hand sidebar. This is where you can fine-tune every part of your player. For each panel (Branding, General settings, Preset, Chapters, overlays, layers, timed content, multi-language, subtitles, timestamp links, Advanced) lives here:
 
-**[Fluent Player block & media editor](/guide/block-editor/)**
+**[Fluent Player Block & Media Editor](/guide/block-editor/)**
 
 ## Block vs shortcode
 
@@ -58,9 +69,3 @@ Full documentation for each panel (Branding, General settings, Preset, Chapters,
 
 For shortcodes, see [Embed with Shortcode](/guide/display-embed/shortcode).
 
-## Next steps
-
-- [Block & media editor](/guide/block-editor/) — Detailed Block sidebar reference
-- [Video Sources](/guide/videos-and-media/video-sources)
-- [Settings](/guide/settings/) — Global defaults
-- [Shortcodes Reference](/reference/shortcodes)
