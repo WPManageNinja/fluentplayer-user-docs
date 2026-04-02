@@ -61,7 +61,7 @@ On the front end, each chapter title appears as a clickable link. When a viewer 
 
 ## Important rules
 
-1. **The player must be on the same page.** The timestamp link controls a player by matching the `media_id`. If there is no `[fluentplayer id="42"]` (or equivalent `[fluentmedia]`) on the page, the link will not work.
+1. **The player must be on the same page.** The timestamp link controls a player by matching the `media_id`. If there is no `[fluentplayer id="129"]` (or equivalent `[fluentmedia]`) on the page, the link will not work.
 
 2. **The `media_id` must match.** Make sure the `media_id` in the timestamp shortcode matches the `id` in the `[fluentplayer]` shortcode above.
 
