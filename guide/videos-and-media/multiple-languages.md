@@ -24,7 +24,7 @@ To set up different language versions, follow these simple steps:
  1. Go to **Fluent Player → Media** and open the video you want to edit. 
  2. In the right-hand sidebar, click on the **Multi-Language** tab to expand it.
  3. **Set the Primary Language:** Choose the main language of your video (e.g., English) from the **Primary Language** dropdown menu.
- 4. **Turn on the Feature:** Switch the **toggle** for **Enable Multi-Language **to the "on" position. This adds a language selector to the player so viewers can switch manually.
+ 4. **Turn on the Feature:** Switch the **toggle** for **Enable Multi-Language** to the "on" position. This adds a language selector to the player so viewers can switch manually.
 
 ![Enable Multi-Language](/guide/public/Images/Managing-your-media/multi-language/enable-multi-language-1.webp)
 
