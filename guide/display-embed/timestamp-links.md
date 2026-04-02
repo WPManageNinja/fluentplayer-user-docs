@@ -1,3 +1,8 @@
+---
+title: "Timestamp Links"
+description: "Use the fluentplayer_timestamp shortcode to jump the player to a time, build chapter lists, and match media_id to your fluentplayer embed on the same page."
+---
+
 # Timestamp Links
 
 Timestamp links are clickable links that **jump the video to a specific time** when clicked. They are perfect for creating chapter lists, tables of contents, or "skip to" navigation for longer videos.

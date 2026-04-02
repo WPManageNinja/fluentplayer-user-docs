@@ -1,3 +1,8 @@
+---
+title: "Dedicated Player URL"
+description: "Fluent Player’s standalone page per media: pretty URLs, query-string form, when to share it, and how public vs private visibility affects access."
+---
+
 # Dedicated Player URL
 
 Every Fluent Player media item has its own **dedicated URL** — a standalone page that shows only the video player and a small header. This is useful when you want to share a direct link to a video without embedding it inside a regular page.

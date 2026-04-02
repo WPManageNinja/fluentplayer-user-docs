@@ -1,6 +1,11 @@
+---
+title: "Display & Embed Overview"
+description: "Compare ways to show Fluent Player on your site: shortcode, Gutenberg block, dedicated player URL, and timestamp links—with quick examples and how embedding works."
+---
+
 # Display & Embed Overview
 
-You have created a video in Fluent Player — now it is time to show it on your site. There are several ways to display the player, and each one is suited for a different situation.
+Once you have created your video in **Fluent Player**, you need to display it on your website. There are several simple ways to embed your player, depending on your workflow and where you want the video to appear.
 
 ## Which method should I use?
 
@@ -35,16 +40,16 @@ Most users will use either the **shortcode** or the **block**. Both produce the 
 [fluentplayer_timestamp time="1:30" media_id="42"]Jump to 1:30[/fluentplayer_timestamp]
 ```
 
-## How embedding works behind the scenes
+## How Embedding Works
 
-When you use a shortcode or block, here is what happens:
+When you use a shortcode or block, Fluent Player handles the technical work behind the scenes:
 
-1. WordPress sees `[fluentplayer id="42"]` (or the legacy `[fluentmedia]` tag) in the content.
-2. Fluent Player fetches the media settings for ID 42 (video source, preset, overlays, etc.).
-3. The plugin generates the HTML for the video player and inserts it into the page.
-4. The viewer sees a fully working player.
+1. **Detection:** WordPress identifies the `[fluentplayer id="42"]` tag in your content.
+2. **Fetching Data:** The plugin pulls the specific settings for that ID, such as the video source, player preset, and any overlays.
+3. **Rendering:** The plugin generates the necessary HTML and inserts the player into your page for the viewer. The viewer sees a fully working player.
 
-The video source URL is **not** hardcoded in the shortcode — only the ID is. This means if you change the video source later (under Fluent Player → Media), every page that embeds this media automatically shows the updated video.
+![Important] 
+>Your video source URL is **not** hardcoded into the shortcode. Because the shortcode uses the **Media ID**, you can change the video file or source in the Fluent Player dashboard, and it will automatically update everywhere the video is embedded.
 
 ## Topics in this section
 
@@ -53,6 +58,4 @@ The video source URL is **not** hardcoded in the shortcode — only the ID is. T
 - [Dedicated Player URL](/guide/display-embed/dedicated-player-url)
 - [Timestamp Links](/guide/display-embed/timestamp-links)
 
-## Next steps
 
-Start with [Shortcode Embed](/guide/display-embed/shortcode) — it's the fastest way to get a video on any page. For a visual workflow in the block editor, try [Gutenberg Block](/guide/display-embed/block) instead. Once your video is live, explore the [Player Editor](/guide/block-editor/) to customize the sidebar settings for each embed.

@@ -1,21 +1,34 @@
+---
+title: "Embed with Shortcode"
+description: "Embed Fluent Player with [fluentplayer id=\"…\"] or [fluentmedia] in posts, widgets, and templates—find the media ID, optional attributes, and common questions."
+---
+
 # Embed with Shortcode
 
 The **shortcode** is the most common way to embed a Fluent Player video. It works in posts, pages, widgets, and even in theme templates.
 
-## Basic usage
+### Basic usage
 
-Add this shortcode to any post or page (preferred tag name):
+Add this shortcode to any **post or page** (preferred tag name):
 
 ```
-[fluentplayer id="42"]
+[fluentplayer id="129"]
 ```
 
-The plugin also registers **`[fluentmedia id="42"]`** — the same handler, kept for older content. Replace `42` with the ID of your media item. That's it — the player will appear where you placed the shortcode.
+The plugin also registers **`[fluentmedia id="133"]`** — the same handler, kept for older content. Replace `133` with the ID of your media item. That's it. The player will appear where you placed the shortcode.
 
-## Where to find the media ID
+## Find Your Shortcode
 
-- In **Fluent Player → Media**, the ID appears in the list (for example, `#42`).
-- When editing a media, check your browser's URL — it usually includes `post=42` or similar.
+Every video you create is assigned a unique ID and a ready-to-use shortcode.
+
+ 1. Navigate to **Fluent Player → Media**.
+ 2. Look at the **Media List** table.
+ 3. You will find the **ID (e.g., #129)** at the start of the row and the full **ShortCode** (e.g., [fluentplayer id='129']) in its own column.
+ 4. **Copy** the code exactly as shown.
+
+![Find your Shortcode](/guide/public/Images/Display-Embed/shortcode/find-your-shortcode.webp)
+
+![Medial ID]()
 
 ## Shortcode attributes
 
@@ -29,34 +42,35 @@ The shortcode is intentionally simple — the video source, preset, controls, an
 If you ever change the video source, poster, or preset for a media item, every page that uses the shortcode for that ID will update automatically. No need to edit every page.
 :::
 
-## Step-by-step: adding a shortcode
+## Using the Shortcode in Different Areas
 
-**In the Classic Editor:**
+**In a Post or Page (Block Editor)**
 
-1. Edit a post or page.
-2. Place your cursor where you want the video.
-3. Type `[fluentplayer id="42"]` (using your actual ID).
-4. Publish or update.
+1. Go to **Pages → Add New** or edit an existing page.
+2. Click the **+ icon** and search for the **Shortcode** block.
+3. **Paste** your code (e.g., `[fluentplayer id="133"]`) into the box.
+4. Click **Publish or Update** to see your video live.
 
-**In the Block Editor (Gutenberg):**
-
-1. Edit a post or page.
-2. Add a **Shortcode** block (search for "Shortcode" in the block inserter).
-3. Type `[fluentplayer id="42"]` inside the block.
-4. Publish or update.
+![Gutenberg Block](/guide/public/Images/Display-Embed/shortcode/gutenberg-shortcode-2.webp)
 
 **In a widget:**
 
 1. Go to **Appearance → Widgets**.
 2. Add a **Text** or **Custom HTML** widget to your sidebar or footer.
-3. Type `[fluentplayer id="42"]` in the widget content.
+3. Type `[fluentplayer id="133"]` in the widget content.
 4. Save.
 
 **In a theme template (PHP):**
 
+If you are a developer, you can call the player directly in your code:
+
 ```php
-<?php echo do_shortcode('[fluentplayer id="42"]'); ?>
+<?php echo do_shortcode('[fluentplayer id="133"]'); ?>
 ```
+
+>![Note]
+>If you enter an **ID** that doesn't exist, the player will simply not appear on the page. Always double-check your **Media List** to ensure you are using the correct ID.
+
 
 ## Common questions
 
@@ -65,9 +79,9 @@ If you ever change the video source, poster, or preset for a media item, every p
 Yes. Use a separate shortcode for each video:
 
 ```
-[fluentplayer id="42"]
+[fluentplayer id="129"]
 
-[fluentplayer id="55"]
+[fluentplayer id="133"]
 ```
 
 **Can I use the shortcode inside a tab or accordion?**
@@ -78,9 +92,4 @@ Yes, as long as the tab or accordion plugin supports shortcodes (most do).
 
 The shortcode outputs nothing — the page will look as if the shortcode is not there. No error message is shown to visitors.
 
-## Next steps
 
-- [Embed with Block](/guide/display-embed/block) — Prefer a visual approach? Use the Gutenberg block instead.
-- [Timestamp Links](/guide/display-embed/timestamp-links) — Create clickable "jump to" links for your video.
-- [Customize the Player](/guide/customize/) — Change how the player looks and behaves.
-- [Shortcodes Reference](/reference/shortcodes) — See all shortcodes in one place.

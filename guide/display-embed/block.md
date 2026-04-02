@@ -1,3 +1,8 @@
+---
+title: "Embed with Block"
+description: "Add the Fluent Player Gutenberg block, pick video sources (YouTube, Mux, Bunny, etc.), and use the dedicated media editor vs posts—links to the full block sidebar docs."
+---
+
 # Embed with Block
 
 If you use the WordPress block editor (Gutenberg), you can add Fluent Player using the **FluentPlayer Media** block. The inserter lists it as **Fluent Player** / **FluentPlayer Media** (registered name: `fluent-player/media`).
