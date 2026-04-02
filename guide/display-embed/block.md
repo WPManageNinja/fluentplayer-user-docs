@@ -30,7 +30,7 @@ You can add a video to any post or page by following these steps:
 
 ## Available Video Sources
 
-When you insert a new block, you can choose from several high-performance sources. Here, you will get offers **one-click source** buttons. In Fluent Player Pro these commonly include:
+When you insert a new block, you can choose from several high-performance sources. Here, you will get offer **one-click source** buttons. In Fluent Player Pro these commonly include:
 
  * **Media Library:** Pick a video file already uploaded to your WordPress site.
  * **YouTube / Vimeo:** Simply paste a link from these platforms.
