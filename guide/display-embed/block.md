@@ -16,32 +16,27 @@ You can add a video to any post or page by following these steps:
 2. Click the **(+)** button to add a new block and search for "**FluentPlayer**".
 3. Select the **Fluent Player** or **FluentPlayer Media** block from the list.
 
-![Add FluentPlayer](/guide/public/Images/Display-Embed/embed-with-block/fluentplayer-1.webp)
+![Add FluentPlayer](/guide/public/display-embed/block/fluentplayer-1.webp)
 
 4. Once the block appears, you have two choices:
   * **Select Existing Media:** Use the dropdown menu to pick a video you have already created.
   * **Add New Media:** Choose a source button **(like YouTube, Vimeo, or Media Library)** to add a fresh video.
 
-![Add New Media](/guide/public/Images/Display-Embed/embed-with-block/add-the-media-2.webp)
+![Add New Media](/guide/public/display-embed/block/add-the-media-2.webp)
 
 5. If adding a new source, **paste** your link (e.g., a YouTube URL) and click the **Add Video** button.
 
-![Youtube Source](/guide/public/Images/Display-Embed/embed-with-block/youtube-source-3.webp)
+![Youtube Source](/guide/public/display-embed/block/youtube-source-3.webp)
 
 ## Available Video Sources
 
 When you insert a new block, you can choose from several high-performance sources. Here, you will get offers **one-click source** buttons. In Fluent Player Pro these commonly include:
 
-| Source | Purpose |
-|--------|---------|
-| **Media Library** | Pick a file already in WordPress. |
-| **YouTube** | Paste a YouTube URL (shorts/long URLs supported). |
-| **Vimeo** | Paste a Vimeo URL. |
-| **Bunny Stream** | BunnyCDN Stream libraries / videos. |
-| **BunnyCDN Storage** | Files in Bunny storage zones. |
-| **Mux** | On-demand Mux assets. |
-| **Mux Live** | Mux live streams. |
-| **Audio** | Audio-focused media. |
+ * **Media Library:** Pick a video file already uploaded to your WordPress site.
+ * **YouTube / Vimeo:** Simply paste a link from these platforms.
+ * **Bunny Stream / Storage (Pro):** Connect to your Bunny.net account for fast global delivery.
+ * **Mux / Mux Live (Pro):** Use Mux for professional streaming and live broadcasts.
+ * **Audio:** Use this for podcasts or voice-only files.
 
 Availability depends on your plan and **Settings → Storage** integrations.
 

@@ -11,7 +11,7 @@ To configure your video source, navigate to **Fluent Player → Media** in your 
 
 ## Supported video sources
 
-![Video Source](/guide/public/Images/Managing-your-media/Video-Source/video-source-1.webp)
+![Video Source](/guide/public/videos-and-media/video-sources/video-source-1.webp)
 
 ### 1. WordPress Media Library
 
@@ -37,7 +37,7 @@ Fluent Player offers YouTube-specific options in [Settings](/reference/settings)
 
 **Best for:** Videos already hosted on YouTube, or when you want YouTube's free hosting.
 
-![Youtube Source](/guide/public/Images/Managing-your-media/Video-Source/youtube-source-2.webp)
+![Youtube Source](/guide/public/videos-and-media/video-sources/youtube-source-2.webp)
 
 ### 3. Vimeo
 
@@ -51,7 +51,7 @@ https://vimeo.com/123456789
 
 **Best for:** Professional hosting on Vimeo, portfolios, or when you already use Vimeo for delivery.
 
-![Vimeo Source](/guide/public/Images/Managing-your-media/Video-Source/vimeo-3.webp)
+![Vimeo Source](/guide/public/videos-and-media/video-sources/vimeo-3.webp)
 
 ### 4. Mux and Mux Live (Pro)
 

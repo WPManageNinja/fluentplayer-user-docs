@@ -26,7 +26,7 @@ Every video you create is assigned a unique ID and a ready-to-use shortcode.
  3. You will find the **ID (e.g., #129)** at the start of the row and the full **ShortCode** (e.g., [fluentplayer id='129']) in its own column.
  4. **Copy** the code exactly as shown.
 
-![Find your Shortcode](/guide/public/Images/Display-Embed/shortcode/find-your-shortcode.webp)
+![Find your Shortcode](/guide/public/display-embed/shortcode/find-your-shortcode.webp)
 
 ![Medial ID]()
 
@@ -51,7 +51,7 @@ If you ever change the video source, poster, or preset for a media item, every p
 3. **Paste** your code (e.g., `[fluentplayer id="133"]`) into the box.
 4. Click **Publish or Update** to see your video live.
 
-![Gutenberg Block](/guide/public/Images/Display-Embed/shortcode/gutenberg-shortcode-2.webp)
+![Gutenberg Block](/guide/public/display-embed/shortcode/gutenberg-shortcode-2.webp)
 
 **In a widget:**
 

@@ -14,17 +14,17 @@ Adding a video (Media) is the first step toward getting your content in front of
 1. In your WordPress admin, go to **Fluent Player → Media** (the **Media** section in **Fluent Player Pro**).
 2. Click **Add Media** (or **Add New** / **+**, depending on the screen) to create a new item.
 
-![Add Media](/guide/public/Images/Managing-your-media/adding-and-ediitng-video/add-media-1.webp)
+![Add Media](/guide/public/videos-and-media/adding-videos/add-media-1.webp)
 
 3. Give your media a **title**. This is for your reference in the admin and can also appear in the player header on the [dedicated player URL](/guide/display-embed/dedicated-player-url).
 
 **Example:** If you are adding a product demo video, you might title it "Product Demo — Getting Started."
 
-![Add title](/guide/public/Images/Managing-your-media/adding-and-ediitng-video/enter-title-and-url-2.webp)
+![Add title](/guide/public/videos-and-media/adding-videos/enter-title-and-url-2.webp)
 
 4. Set the **video source**. This is the URL or file that the player will load. See [Video Sources](/guide/videos-and-media/video-sources) for all the options.
 
-![Set Video Source](/guide/public/Images/Managing-your-media/adding-and-ediitng-video/add-video-source-3.webp)
+![Set Video Source](/guide/public/videos-and-media/adding-videos/add-video-source-3.webp)
 
 5. Optionally, add a **poster image**. This is the thumbnail that viewers see before they click play. A good poster makes your video look more professional and inviting.
 6. Choose a **preset** that controls the player's look and controls. See [Presets](/guide/customize/presets) for details.
@@ -34,7 +34,7 @@ Adding a video (Media) is the first step toward getting your content in front of
 You do not need to configure everything at once. You can always come back and change the video source, poster, preset, or any other setting later.
 :::
 
-![Publish](/guide/public/Images/Managing-your-media/adding-and-ediitng-video/publish-4.webp)
+![Publish](/guide/public/videos-and-media/adding-videos/publish-4.webp)
 
 ## Editing an existing media item
 

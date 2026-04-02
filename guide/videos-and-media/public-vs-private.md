@@ -41,7 +41,7 @@ When a media item is set to **private** (the default):
 3. Toggle it **on** to make the dedicated URL publicly accessible, or **off** to keep it private.
 4. Latsly, click on the **Save** button.
 
-![Change Visibility](/guide/public/Images/Managing-your-media/Visibilty/change-visibility-1.webp)
+![Change Visibility](/guide/public/videos-and-media/public-vs-private/change-visibility-1.webp)
 
 ## What visibility does NOT affect
 

@@ -26,7 +26,7 @@ If you have subtitles in a different format, there are many free online converte
 2. In the media editor, find the **subtitles** section.
 3. Upload your subtitle file (`.vtt` or `.srt`).
 
-![Subtitle](/guide/public/Images/Managing-your-media/subtitle/subtitle-1.webp)
+![Subtitle](/guide/public/videos-and-media/subtitles/subtitle-1.webp)
 
 4. If prompted, set the **language** for the subtitle track (for example, English, Spanish, French).
 5. Save the media.
@@ -39,7 +39,7 @@ You can add **multiple subtitle tracks** for different languages. Viewers can sw
 2. In the subtitles section, remove the track you no longer need.
 3. Save the media.
 
-![Remove Subtitle](/guide/public/Images/Managing-your-media/subtitle/remove-subtitle-2.webp)
+![Remove Subtitle](/guide/public/videos-and-media/subtitles/remove-subtitle-2.webp)
 
 ## Styling captions on the player
 

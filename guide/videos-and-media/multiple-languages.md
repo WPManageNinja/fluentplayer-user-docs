@@ -26,7 +26,7 @@ To set up different language versions, follow these simple steps:
  3. **Set the Primary Language:** Choose the main language of your video (e.g., English) from the **Primary Language** dropdown menu.
  4. **Turn on the Feature:** Switch the **toggle** for **Enable Multi-Language** to the "on" position. This adds a language selector to the player so viewers can switch manually.
 
-![Enable Multi-Language](/guide/public/Images/Managing-your-media/multi-language/enable-multi-language-1.webp)
+![Enable Multi-Language](/guide/public/videos-and-media/multiple-languages/enable-multi-language-1.webp)
 
 ## Adding and Managing Additional Languages
 
@@ -34,12 +34,12 @@ Once the feature is enabled, you can link and manage your translated video versi
 
  * **Adding a Language:** Click the **+ Add New** button. Select the language code and choose the corresponding media file from the dropdown, then click **Add**.
 
- ![Adding a Language](/guide/public/Images/Managing-your-media/multi-language/additional-language-2.webp)
+ ![Adding a Language](/guide/public/videos-and-media/multiple-languages/additional-language-2.webp)
 
  * **Editing a Language:** If you need to change the video file linked to a language, click the **Edit** button on the specific language card.
  * **Removing a Language:** To delete a language option, click the **Trash/Delete** icon on the right side of the language card.
 
- ![Edit or Remove Language](/guide/public/Images/Managing-your-media/multi-language/edit-or-remove-3.webp)
+ ![Edit or Remove Language](/guide/public/videos-and-media/multiple-languages/edit-or-remove-3.webp)
 
 ## Automatic language switching
 
