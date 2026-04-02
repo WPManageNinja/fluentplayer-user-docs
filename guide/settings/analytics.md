@@ -1,127 +1,86 @@
 # Analytics Settings
 
-**Fluent Player → Settings → Analytics**
+Welcome to the Analytics settings! If you have ever wondered who is watching your videos, how long they stay, and exactly when they stop watching, this is where you turn those insights on.
 
-The Analytics section has **two tabs** side by side:
+We give you two powerful ways to track your video engagement side-by-side: our beautifully detailed, built-in Fluent Player Analytics and a seamless integration with Google Analytics.
 
-- **Fluent Player Analytics** — Native video tracking stored in your WordPress database (Pro only)
-- **Google Analytics** — Send video events to a GA4 property (free and Pro)
 
-Click **Save Settings** (top right) after making changes on either tab.
 
----
+## Setting Up Fluent Player Analytics (Pro)
 
-## Fluent Player Analytics tab
+Our built-in analytics are like having a private command center right inside your WordPress dashboard. You do not need to log into any external websites to see how your videos are performing. Once you turn this on, a brand new **Analytics** menu will appear under Fluent Player in your WordPress sidebar.
 
-::: info Pro feature
-Built-in analytics require **Fluent Player Pro**. After enabling, the **Analytics** menu item appears under Fluent Player in the WordPress sidebar.
-:::
+### How to activate your native tracking:
+1. Navigate to **Fluent Player -> Settings -> Analytics**.
+2. Click on the **Fluent Player Analytics** tab.
+3. Toggle **Enable Analytics** to the ON position. This tells your website to instantly start recording viewer data!
 
-### Options
+![Analytics](/guide/public/settings/analytics/analytics-1.webp)
 
-| Option | Description |
-|--------|-------------|
-| **Enable Analytics** | Master toggle — *"Track video plays and engagement metrics natively."* Turning this on activates the tracking pipeline and creates the analytics database tables. |
-| **Auto Cleanup Analytics Data** | When enabled, old analytics rows are automatically deleted on a schedule. |
-| **Retention (days)** | How many days of data to keep when auto cleanup is running. Data older than this value is removed. Example: `30`. |
+4. We highly recommend toggling on **Auto Cleanup Analytics Data**. Video tracking can create a lot of data over time, and this keeps your database fast and healthy.
+5. If you enable auto-cleanup, enter a number in the **Retention (days)** box. For example, typing `30` means we will automatically delete stats that are older than a month.
+6. Click **Save Settings**.
 
-Fluent Player also runs a **daily WordPress cron** task (`fluent_player/daily_cleanup`) that can clean up **auto-draft** media and similar housekeeping — separate from analytics retention but part of keeping your library tidy.
+![Analytics](/guide/public/settings/analytics/analytics-2.webp)
 
-### What is tracked (once enabled)
+### What exactly do we track for you?
+Once activated, we silently and securely record:
+* **Plays:** How many times a viewer clicked play.
+* **Watch time:** The total amount of hours or minutes people spent watching.
+* **Progress milestones:** We track when viewers hit the 25%, 50%, 75%, and 100% marks of your video.
+* **Top videos & users:** Easily see your most popular content and your most engaged logged-in viewers.
+* **Retention graphs:** A beautiful chart showing exactly where viewers lose interest and drop off.
+* **Geographic location:** See what countries your audience is watching from.
 
-| Metric | Description |
-|--------|-------------|
-| Plays | Total number of times a video starts |
-| Watch time | Total time viewers have spent watching |
-| Progress milestones | 25%, 50%, 75%, 100% completion events |
-| Top videos | Most-played or most-watched content |
-| Top users | Most-engaged logged-in viewers |
-| Devices | Browser and device breakdown |
-| Retention | Per-video chart of where viewers drop off |
-| Location | Geographic breakdown of views |
-| New vs returning | Viewer recency within a date range |
+> **🔍 Example:** To keep your media library as tidy as your database, FluentPlayer also runs a quiet daily background task that cleans up "auto-draft" media items you never finished creating!
 
-### How tracking works
+## Connecting Google Analytics
 
-When analytics are enabled, the player sends events via the WordPress AJAX action `fluent_player_track_event`. The handler validates a nonce, applies a rate limit (up to ~30 requests per minute per IP), and stores media ID, watch duration, and completion percentage.
+Do you already use Google Analytics 4 (GA4) to track your website traffic? You can send your video events straight to Google! This feature is entirely free and available to all FluentPlayer users.
 
-### Using the analytics dashboard
+### Events we send to Google:
+Whenever someone watches a video, we tell Google exactly which video it is (by sending the video ID and title) and trigger an event when they:
+* Play the video.
+* Reach a Progress milestone (25%, 50%, 75%, 100%).
+* Complete the video.
 
-After enabling, open **Fluent Player → Analytics** in the WordPress sidebar to access the dashboard views: Overview, Top Videos, Top Users, and per-video/per-user detail pages with retention charts.
+### How to set it up:
 
-**Related:** [Built-in Analytics guide](/guide/integrations/analytics) — full dashboard walkthrough.
+#### Option A: You already have Google Analytics on your site (Highly Recommended!)
+If your WordPress theme or another plugin is already loading Google Analytics, use this method. It prevents your website from loading heavy Google scripts twice, keeping your site blazing fast.
 
----
+1. Navigate to **Fluent Player -> Settings -> Analytics**.
+2. Click the **Google Analytics** tab.
+3. Toggle on **Enable Google Analytics**.
 
-## Google Analytics tab
+![Analytics](/guide/public/settings/analytics/analytics-3.webp)
 
-Google Analytics integration is available in **both the free and Pro** versions of Fluent Player.
+4. Toggle on **Use existing on-page tag**.
+5. Click **Save Settings**.
 
-### Options
+![Analytics](/guide/public/settings/analytics/analytics-5.webp)
 
-| Option | Description |
-|--------|-------------|
-| **Enable Google Analytics** | Master toggle — *"Send video analytics events to Google Analytics."* |
-| **Use existing on-page tag** | *"Use an existing Google Analytics tag on your page instead of loading a new one."* When **on**, Fluent Player **does not inject a second** `gtag.js` / GA snippet — it sends video events through the **already loaded** global `gtag` (or equivalent) from your theme or another plugin. When **off**, Fluent Player may load its own tag using the measurement ID you provide. Use **on** whenever your site already loads Google Analytics to avoid duplicate scripts and double-counting issues. |
+#### Option B: You do not have Google Analytics on your site yet
+If you want FluentPlayer to load Google Analytics for you, use this method.
 
-A **Measurement ID** field (`G-XXXXXXXXXX`) appears when Fluent Player should load GA for you. If you only use **Use existing on-page tag**, your existing site configuration supplies the measurement ID to GA; Fluent Player still needs **Enable Google Analytics** turned on so it knows to fire events.
+1. First, grab your GA4 web stream measurement ID from your Google Analytics account (under *Admin -> Data streams*). It will look something like `G-XXXXXXXXXX`.
+2. Navigate to **Fluent Player -> Settings -> Analytics**.
+3. Click the **Google Analytics** tab and toggle on **Enable Google Analytics**.
+4. Make sure **Use existing on-page tag** is turned OFF.
+5. Paste your **Measurement ID** into the box that appears.
+6. Click **Save Settings**.
 
-### Events sent to GA
+![Analytics](/guide/public/settings/analytics/analytics-4.webp)
 
-| Event | When it fires |
-|-------|--------------|
-| **Play** | Viewer starts playing a video |
-| **Progress** | Viewer reaches 25%, 50%, 75%, 100% milestones |
-| **Complete** | Video finishes playing |
+> **⚠️ Troubleshooting:** Did you just set this up but don't see any video data in Google Analytics? Don't panic! Standard GA4 reports often take up to 24 hours to process new data. If you want to confirm it is working immediately, check the *Real-time reports* section inside your Google Analytics dashboard.
 
-Each event includes the video ID and title so you can filter by individual videos in GA4 reports.
+## Choosing Your Analytics Path
 
-### Setup options
+You might be wondering: "Which one should I use?" The good news is that you can safely run both at the same time! We recommend using our built-in analytics for detailed, day-to-day checks on specific videos, and Google Analytics to see how your videos fit into your broader marketing campaigns.
 
-**Option A — Use an existing tag (recommended for most sites)**
-
-1. Make sure GA is already loading on your site (via theme, a GA plugin, or gtag).
-2. Enable **Enable Google Analytics**.
-3. Enable **Use existing on-page tag**.
-4. Save Settings.
-
-**Option B — New measurement ID**
-
-1. Get your GA4 web stream measurement ID from **Google Analytics → Admin → Data streams** (`G-XXXXXXXXXX`).
-2. Enable **Enable Google Analytics**.
-3. Enter the **Measurement ID**.
-4. Save Settings.
-
-::: tip
-Events may take a few hours to appear in GA4 standard reports. Use **GA4 → Real-time reports** for immediate confirmation that events are being received.
-:::
-
-### Viewing data in GA4
-
-1. Open your GA4 property.
-2. Go to **Reports → Engagement → Events**.
-3. Filter by the video event names sent by Fluent Player.
-
-### Built-in analytics vs Google Analytics
-
-| | Built-in Analytics | Google Analytics |
-|---|-------------------|-----------------|
-| **Where data lives** | Your WordPress database | Google's servers |
-| **Requires Pro** | Yes | No |
-| **Dashboard** | Inside WordPress admin | Google Analytics UI |
-| **Per-video retention chart** | Yes | Not built-in |
-| **Per-user stats** | Yes (logged-in users) | Limited |
-| **Best for** | Detailed video-specific insights | Marketing analysis alongside site data |
-
-You can use **both simultaneously**. Built-in analytics give you rich WordPress-native dashboards; Google Analytics gives you a broader marketing picture.
-
-**Related:** [Google Analytics guide](/guide/integrations/google-analytics) — full setup and GA4 reporting walkthrough.
-
----
-
-## Next steps
-
-- [Built-in Analytics guide](/guide/integrations/analytics) — Dashboard views, retention charts, per-user stats.
-- [Google Analytics guide](/guide/integrations/google-analytics) — Viewing events in GA4, measurement ID setup.
-- [Export](/guide/settings/export) — Download captured email data (separate from analytics data).
-- [Settings Overview](/guide/settings/) — All settings sections at a glance.
+| Feature | Built-in Analytics (Pro) | Google Analytics (Free/Pro) |
+| :--- | :--- | :--- |
+| **Where do you view the data?** | Right inside your WordPress Admin. | Over on the Google Analytics website. |
+| **Can I see per-video drop-off charts?** | Yes, absolutely! | No, not without complex custom setups. |
+| **Can I track specific logged-in users?** | Yes, you can see exactly who watched what. | Very limited (Google tracks anonymously). |
+| **Best used for...** | Deep-diving into your video content and audience. | Big-picture marketing and overall website traffic. |
