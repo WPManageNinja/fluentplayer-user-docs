@@ -1,44 +1,54 @@
+---
+title: "Fluent Player block & media editor"
+description: "Use the FluentPlayer Media block and sidebar: dedicated media editor vs posts, Media vs Block tabs, and every panel from branding and presets to layers, timed content, and subtitles."
+---
+
 # Fluent Player block & media editor
 
-Fluent Player configures video through the **FluentPlayer Media** block (`fluent-player/media`). The same block and **sidebar panels** appear in two different places. This section documents **every panel** under the **Block** (and **Media**) tabs in detail.
+The **FluentPlayer Media** block (`fluent-player/media`) is the core of your video experience. Whether you are creating a standalone video or adding one to a blog post, you will use the same sidebar panels to control how your player looks and acts.
 
-## Two places you edit the block
+## Two Ways to Edit Your Video
 
-### 1. Dedicated media editor (Fluent Player only)
+You will see the Fluent Player editor in **two** different parts of WordPress, but the settings remain the same:
 
-When you use **Add Media**, **Fluent Player → Media → Add Media**, or open an existing item under **Fluent Player → Media**, WordPress opens a **full-screen style editing experience** focused on that media item. Here you are **not** building a normal post: **only the Fluent Player block** is in play—paragraphs, columns, and other Gutenberg blocks are not part of this canvas. All player options live in the **Fluent Player** UI and the right sidebar (**Media** and **Block** tabs). The block is typically **locked** so the document stays a single, consistent media configuration.
+### 1. The Dedicated Media Editor
 
-### 2. Post or page (normal block editor)
+When you go to **Fluent Player → Media → Add Media**, you enter a focused, full-screen editor.
 
-On a **post or page**, you insert **FluentPlayer Media** from the block inserter like any other block. You can mix it with headings, images, and other blocks. The **same Block sidebar panels** apply when the Fluent Player block is selected.
+ * **Single Purpose:** This screen is designed only for configuring your video.
+ * **Locked Layout:** You won't see options for paragraphs or columns here—just the Fluent Player block and its settings.
+ * **Organization:** All your player options live in the **Block** and **Media** tabs in the right sidebar.
 
-In both cases, the **Block** tab holds the detailed player settings described in the pages below.
+### 2. Standard Posts or Pages
 
-## Right sidebar: Media vs Block
+You can also add the **FluentPlayer Media** block while writing a normal post or page.
 
-| Tab | Role |
-|-----|------|
-| [**Media vs Block tabs**](/guide/block-editor/media-tab) | **Media** — context for the saved media item (title, status, and media-level actions where shown). **Block** — full player configuration: branding, preset, chapters, overlays, layers, etc. |
+ * **Mixed Content:** You can place the video anywhere among your headings, text, and images.
+ * **Same Controls:** When you click on the video block, the same sidebar panels appear to help you customize the player.
 
-Most day-to-day tuning happens under **Block**.
 
-## Block sidebar panels (order of these docs)
+## Right Sidebar: Media vs. Block Tabs
 
-Panels appear as **collapsible sections** in the Block sidebar (order can match your plugin version):
+The sidebar is split into two main tabs to keep things organized:
 
-| Doc | Panel |
-|-----|--------|
-| [Branding](/guide/block-editor/branding) | Custom branding, logo, colors for this embed |
-| [General settings](/guide/block-editor/general-settings) | Title, poster, aspect ratio, autoplay, resume, load strategy, etc. |
-| [Preset](/guide/block-editor/preset) | Built-in and custom presets |
-| [Chapters](/guide/block-editor/chapters) | Chapter markers and titles |
-| [Text & button overlays](/guide/block-editor/overlays) | Timed text/button overlays on the video |
-| [Interactive layers](/guide/block-editor/interactive-layers) | Forms, CTA, email capture, hotspots, ads, shortcode layers |
-| [Timed content area](/guide/block-editor/timed-content) | Content region below the player (Pro) |
-| [Multi-language](/guide/block-editor/multi-language) | Primary language and language selector |
-| [Subtitles](/guide/block-editor/subtitles) | Upload tracks in the editor |
-| [Timestamp links](/guide/block-editor/timestamp-links) | Generated shortcode snippets to copy |
-| [Advanced](/guide/block-editor/advanced) | Extra CSS classes on the wrapper |
+ * **Media Tab:** This covers high-level details like the video title, status (Public/Private), and media-level actions.
+ * **Block Tab:** This is where the magic happens. You will find almost all your daily settings here, including branding, presets, and interactive layers.
+
+![Media and Block Tab](/guide/public/block-editor/index/media-and-block-tab-1.webp)
+
+## Exploring the Block Sidebar Panels
+
+The settings in the editor are organized into collapsible sections to help you customize your video. Here is a point-by-point breakdown of what you can control in each panel:
+
+ * **Branding**: Add your own logo and choose custom colors to make the player match your brand identity.
+ * **General Settings**: Manage the video title, upload a poster image, and set behaviors like autoplay or aspect ratio.
+ * **Preset**: Select from built-in or custom templates that control the overall skin and button layout of your player.
+ * **Chapters**: Create a list of markers that allow viewers to skip to specific sections of the video.
+ * **Interactive Layers**: Add powerful engagement tools like email capture forms, Call-to-Action (CTA) buttons, and hotspots directly over your video.
+ * **Timed Content Area (Pro)**: Design a special area below the player where text, buttons, or lists appear at exact timestamps.
+ * **Multi-Language**: Set the primary language of your video and enable a selector so viewers can switch between different audio versions.
+ * **Subtitles**: Upload and manage caption tracks to make your content more accessible to everyone.
+ * **Timestamp Links**: Quickly copy shortcode snippets that allow you to create "Jump to" links within your page text.
 
 ## Overrides vs global Settings
 
@@ -48,9 +58,5 @@ Many options **override** [global Settings](/guide/settings/) or [presets](/guid
 
 Exact behavior can vary by option; each page notes **global vs override** where it matters.
 
-## Next steps
-
-- [Media vs Block Tabs](/guide/block-editor/media-tab) — Understand what each sidebar tab does.
-- [Embed with Block](/guide/display-embed/block) — How to insert the Fluent Player block and choose a video source.
-- [Adding and Editing Videos](/guide/videos-and-media/adding-videos) — Create media items in the Fluent Player library.
-- [Settings](/guide/settings/) — Site-wide defaults that these block settings can override.
+[!Note]
+>If you change a color in the **Block** sidebar, it will ignore your **Global Settings** for that specific video only.
