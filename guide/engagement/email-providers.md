@@ -17,7 +17,7 @@ When you use the [email capture overlay](/guide/engagement/email-capture), the e
 
 Fluent Player supports three email providers:
 
----
+![Emial Provider](/guide/public/engagement/email-providers/email-provider-1.webp)
 
 ## FluentCRM (Free)
 
@@ -38,7 +38,7 @@ Fluent Player supports three email providers:
 
 **Best for:** Anyone who wants to keep everything on their own WordPress site without relying on external services.
 
----
+![Emial Provider](/guide/public/engagement/email-providers/email-provider-2.webp)
 
 ## Mailchimp (Pro)
 
@@ -54,7 +54,7 @@ Fluent Player supports three email providers:
 
 **Best for:** Users who already run their email marketing through Mailchimp and want subscriber data in one place.
 
----
+![Emial Provider](/guide/public/engagement/email-providers/email-provider-4.webp)
 
 ## Webhook (Pro)
 
@@ -73,7 +73,8 @@ A **webhook** sends captured email data to any URL you specify. This is the most
 
 **Best for:** Users who use a CRM or automation platform that supports webhooks — such as Zapier, Make, HubSpot, ActiveCampaign, or any custom API.
 
----
+![Emial Provider](/guide/public/engagement/email-providers/email-provider-3.webp)
+
 
 ## Which provider should I choose?
 
