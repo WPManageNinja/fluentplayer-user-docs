@@ -3,7 +3,7 @@ title: "Media vs Block tabs"
 description: "Learn the Fluent Player Media and Block sidebar tabs: document-level media fields vs player configuration, what saves where, and when to use each tab."
 ---
 
-# Media vs Block tabs
+# Media vs Block Tabs
 
 When you select the **FluentPlayer Media block** in the WordPress editor, the right sidebar (Inspector) displays two distinct tabs: **Media** and **Block**. While both tabs are used to manage the same video, they control different aspects of your content.
 
