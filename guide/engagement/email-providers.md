@@ -91,9 +91,4 @@ You can only use **one email provider** per email capture configuration. Choose 
 
 After setting up a provider under Settings, open the [email capture overlay](/guide/engagement/email-capture) configuration for your media item or preset and select the provider there. This tells Fluent Player where to route captured emails.
 
-## Next steps
 
-- [Email Capture Overlay](/guide/engagement/email-capture) — Configure the email gate on the player.
-- [CTA and Action Bar](/guide/engagement/cta-and-action-bar) — Other overlay types for engagement.
-- [Global Settings → Email Integrations](/guide/settings/integrations) — Full setup guide with advanced filter options.
-- [Export Data](/guide/settings/export) — Download captured emails as CSV, JSON, or ODS.
