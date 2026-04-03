@@ -1,36 +1,45 @@
+---
+title: "Media vs Block tabs"
+description: "Learn the Fluent Player Media and Block sidebar tabs: document-level media fields vs player configuration, what saves where, and when to use each tab."
+---
+
 # Media vs Block tabs
 
-When the **FluentPlayer Media** block is selected, the WordPress editor **right sidebar** (Inspector) has two tabs at the top: **Media** and **Block**. Both relate to the same video, but they answer different questions.
+When you select the **FluentPlayer Media block** in the WordPress editor, the right sidebar (Inspector) displays two distinct tabs: **Media** and **Block**. While both tabs are used to manage the same video, they control different aspects of your content.
 
 ## Media tab
 
-Use the **Media** tab for **context about the saved media item** (when your block is tied to Fluent Player media in the database):
+The **Media** tab focuses on the high-level details and "document-level" settings of your video entry in the database. Think of this as the administrative home for the video record.
 
-- **Document-level** fields that belong to the media post itself—commonly **title**, **slug** (if exposed), **visibility** / status, and actions that affect the **media record** rather than only the canvas preview.
-- In the **dedicated media editor** (Fluent Player → Media), this tab is where you align what is stored on the **media item** with what you see in the list table.
+ * **Media Context:** It provides information about the saved media item, such as its Status (e.g., Published) and the **Publish** date.
+ * **Permalink & Slug:** You can view or edit the video's Slug, which determines its dedicated URL.
+ * **Record Actions:** This tab includes high-level actions that affect the entire media record, such as the **Trash** button.
+ * **Menu Options:** A **three-dot** menu allows you to quickly **View**, **Rename**, or **Trash** the media item.
 
-Exact controls depend on your Fluent Player version and whether you are on a **post** (embed) vs **media** document.
+>[!Note]
+>If you are using the dedicated editor **(Fluent Player → Media)**, this tab ensures the information in your media list matches what you see on the screen.
 
-::: tip
-If you only see one tab or minimal options, your screen may be focused on **Block** settings—select the block and switch to **Media** to check.
-:::
+![Media Tab](/guide/public/block-editor/media-tab/media-tab-1.webp)
+
 
 ## Block tab
 
-The **Block** tab holds **Fluent Player player configuration** for this embed:
+The **Block** tab is where you will spend most of your time customizing the actual playback experience and appearance of the player.
 
-- Branding, General settings, Preset, Chapters, overlays, Interactive layers, Timed content, Multi-language, Subtitles, Timestamp links, Advanced.
+ * **Player Configuration:** This tab holds all the visual and interactive settings for the embed.
+ * **Customization Panels:** You can access specific panels to manage Branding, General Settings, Presets, Chapters, Overlays, and Interactive Layers.
+ * **Advanced Features:** This is also where you configure Multi-Language support, upload Subtitles, and generate Timestamp Links.
 
-This is where you spend most of your time when styling playback, adding chapters, or configuring layers. Every panel in this section of the docs lives under the **Block** tab unless stated otherwise.
+![Block Tab](/guide/public/block-editor/media-tab/block-tab-2.webp)
 
-## Which tab saves what?
 
-- Changes under **Block** usually map to **media settings** (stored with the media ID) when you are editing a **saved** media item, so embeds that use that ID pick up the same configuration.
-- On a **post**, the block still references a **media ID** after you complete the source flow; saving the post persists the association. Saving **media-specific** options typically updates the **Fluent Player media** record via the plugin’s REST layer (behavior matches your version).
+## Which Tab Saves What?
 
-If something does not appear on the front end, confirm you **saved** the post or media and that you are viewing the correct **media ID**.
+Understanding how your changes are stored ensures your video looks correct everywhere it is embedded.
 
-## Next steps
+ * **Media Settings:** Changes made in the **Block** tab are usually saved directly to the **Media ID**. This means any other page using that same **Media ID** will automatically pick up your new styling and settings.
+ * **Post Association:** When adding a video to a standard post, the block saves the association with that specific Media ID.
+ * **Live Updates:** Saving your changes typically updates the media record across your site via the plugin's background system.
 
-- [Overview](/guide/block-editor/) — Two editing contexts (dedicated media vs post/page)
-- [Branding](/guide/block-editor/branding) — First Block panel in the docs list
+Use the **Media** tab to manage the "identity" of your video (titles, slugs, and status) and the **Block** tab to design the "experience" (colors, buttons, and interactivity). Always remember to click **Save** or **Update** to ensure your changes go live on the front end.
+
