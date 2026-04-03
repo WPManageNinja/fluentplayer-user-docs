@@ -21,21 +21,12 @@ Fluent Player includes a set of overlay tools designed to turn passive viewers i
 
 ## How engagement features work
 
-All engagement overlays are configured either at the **preset level** (applying to every video that uses that preset) or **per media** (for a specific video only). The per-media setting always wins if both are configured.
-
-**The priority order:**
-
-```
-Per-media setting → Preset setting → No overlay shown
-```
+All engagement overlays are configured **per media** through the **Interactive Layers** panel. Each media item has its own set of layers that you can add, configure, and remove independently.
 
 ## Where to configure
 
-1. **Preset level** — Go to **Fluent Player → Settings** and open your preset. Any engagement overlays you configure here apply to every video using that preset.
-2. **Per-media level** — Go to **Fluent Player → Media**, open a media item, and configure the overlay in the **Interactive Layers** panel. This overrides the preset for that video only.
+1. Go to **Fluent Player → Media** and open the media item you want to configure.
+2. In the right sidebar, expand the **Interactive Layers** panel.
+3. Click **+ Add Layer** to open the **Manage Layers** dialog.
+4. Choose the layer type you want to add (e.g., Email Capture, CTA, Hotspot, Ad, Fluent Forms, or Shortcode).
 
-## Next steps
-
-- [Email Capture Overlay](/guide/engagement/email-capture) — Set up the email gate and grow your list.
-- [CTA and Action Bar](/guide/engagement/cta-and-action-bar) — Drive clicks and conversions with overlay prompts.
-- [Email Providers](/guide/engagement/email-providers) — Connect your CRM or email marketing platform.
