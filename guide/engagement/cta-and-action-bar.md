@@ -7,124 +7,117 @@ next:
   link: '/guide/engagement/email-providers'
 ---
 
-# CTA and Action Bar
+# CTA (Call-to-Action) Overlay
 
-Fluent Player includes two overlay features designed to drive engagement and conversions during playback: the **CTA (call-to-action) overlay** and the **action bar**. Both appear on the player at specific moments and can be configured independently or used together.
+The **CTA overlay** is a popup that appears over the video at a specific time to prompt the viewer to take an action — like visiting a link, signing up, or watching another video. The video pauses while the overlay is on screen, so the viewer's full attention is on your message.
 
----
+## How it works
 
-## CTA Overlay
+At a time you choose — for example, 2 minutes into the video — playback pauses and a full-screen overlay appears with whatever content you have designed in the built-in editor. The viewer can interact with the overlay (click a button, read your message) or skip past it if you allow skipping. Playback resumes once the overlay is dismissed.
 
-The CTA overlay is a popup that appears over the video to prompt the viewer to take an action — like visiting a link, signing up, or watching another video.
+## Setting up a CTA overlay
 
-### How it works
+1. Go to **Fluent Player → Media** and open the media item you want to add a CTA to.
+2. In the right sidebar, expand the **Interactive Layers** panel.
+3. Click **+ Add Layer** to open the **Manage Layers** dialog.
 
-At a configured point during playback — or at the end of the video — the player pauses and shows a full overlay with a headline, description, and a button. The video does not resume until the viewer clicks the button or dismisses the overlay (if skipping is allowed).
+![Call to Action](/guide/public/engagement/cta-and-action-bar/cta-1.webp)
 
-### Configuration options
+4. Under **Choose Layer Type**, select **CTA**.
 
-| Option | Description | Example |
-|--------|-------------|---------|
-| **Enabled** | Turn the CTA overlay on or off | On |
-| **Percentage** | When to show it (% of video watched) | `80` |
-| **Show at end** | Show when the video finishes instead of at a percentage | On |
-| **Allow skip** | Let the viewer dismiss the overlay without clicking the button | On |
-| **Headline** | Main heading text | "Ready to take the next step?" |
-| **Description** | Supporting text below the headline | "Click the button below to learn more." |
-| **Button text** | Button label | "Learn More" |
-| **Button link** | Where the button goes (URL) | `https://example.com/pricing` |
-| **Open in new tab** | Open the link in a new browser tab | On |
-| **Button background color** | Button fill color | `#4e9cf6` |
-| **Button text color** | Button label color | `#ffffff` |
-| **Border radius** | Button corner roundness (px) | `4` |
+![Call to Action](/guide/public/engagement/cta-and-action-bar/cta-2.webp)
 
-### Example: end-of-video upsell
+5. Set the **Start Time** and design your content in the editor (see below).
+6. Click **Add Layer** to save, then click **Save** to publish your changes.
 
-You have a product demo and want to direct viewers to your pricing page after they finish watching:
+Once saved, the CTA layer appears in the **Interactive Layers** panel with its name and trigger time. You can click **Edit** to update it or the trash icon to remove it.
 
-- **Show at end:** On
-- **Headline:** "Like what you see?"
-- **Description:** "Start your free trial today."
-- **Button text:** "Get Started"
-- **Button link:** `https://example.com/signup`
+## Configuration options
 
----
+### Start Time
 
-## Action Bar
+Set the exact moment the CTA overlay appears using **Hours**, **Minutes**, and **Seconds** fields. For example, setting Minutes to `02` triggers the overlay at the 2-minute mark.
 
-The action bar is a **slim bar** that appears at the top or bottom of the player. It shows a text message and an optional button. Unlike the CTA overlay, the action bar does not pause the video — it slides in while playback continues.
+### Content editor
 
-### How it works
+The CTA overlay uses a **rich text editor** — the same kind of editor you use when writing WordPress posts. You design the overlay content directly, so what you see in the editor is what the viewer sees on screen.
 
-At a configured point during playback, a bar slides into view with your message. The viewer can interact with it or close it, while the video keeps playing in the background.
+The editor has two modes:
 
-### Configuration options
+- **Visual** — A toolbar with formatting options. Design your overlay by typing and styling text directly.
+- **Code** — Switch to raw HTML if you need precise control over the markup.
 
-| Option | Description | Example |
-|--------|-------------|---------|
-| **Enabled** | Turn the action bar on or off | On |
-| **Position** | Where the bar appears on the player | `bottom` |
-| **Text** | The message to display | "Like this content?" |
-| **Text size** | Font size in pixels | `20` |
-| **Background color** | Bar background | `rgba(0,0,0,0.8)` |
-| **Button type** | Type of button: none, link, YouTube subscribe | `link` |
-| **Button text** | Button label | "Click Here" |
-| **Button link** | Where the button goes | `https://example.com` |
-| **Open in new tab** | Open the link in a new tab | On |
-| **Button color** | Button background | `#4e9cf6` |
-| **Button text color** | Button label color | `#ffffff` |
-| **YouTube channel** | Your channel URL (when button type is subscribe) | `https://youtube.com/@yourchannel` |
-| **Show close** | Let the viewer close the bar | On |
-| **Percentage start** | When the bar appears (% of video) | `0` (from the start) |
+The Visual toolbar includes:
 
-### Example: YouTube subscribe prompt
+| Tool | What it does |
+|------|-------------|
+| **Heading** | Change text to a heading level (Heading 2, Heading 3, etc.) |
+| **Button** | Insert a clickable button — set the label, link URL, and whether it opens in a new tab |
+| **Bold / Italic / Underline / Strikethrough** | Standard text formatting |
+| **Text color** | Change the color of selected text |
+| **Link** | Turn selected text into a hyperlink |
+| **Blockquote** | Add a styled quote block |
+| **Code** | Format text as inline code |
+| **Alignment** | Align content left, center, or right |
+| **Add media** | Insert an image or other WordPress media into the overlay |
 
-You embed YouTube videos and want to encourage viewers to subscribe:
+There are no separate fields for headline, description, or button — you build the entire overlay in one editor, giving you full control over layout and styling.
 
-- **Text:** "Enjoying this video?"
-- **Button type:** YouTube subscribe
-- **YouTube channel:** `https://youtube.com/@yourchannel`
-- **Show close:** On
-- **Position:** bottom
+![Call to Action](/guide/public/engagement/cta-and-action-bar/cta-3.webp)
 
-### Example: promotional banner
+### Completion Type
 
-You want to show a limited-time offer while the viewer watches:
+This dropdown controls what counts as "completing" the overlay — in other words, what the viewer needs to do before the layer is dismissed and playback resumes.
 
-- **Text:** "Limited time: 30% off all courses"
-- **Button text:** "Claim Offer"
-- **Button link:** `https://example.com/sale`
-- **Percentage start:** `20` (appears after 20% of the video is watched)
+| Option | What it means |
+|--------|--------------|
+| **Link Click** | The layer completes when the viewer clicks a link or button inside the overlay. This is the default and works well for most CTAs. |
+| **Auto Dismiss** | The layer disappears on its own after a set duration — no viewer interaction required. Useful for brief announcements or reminders that should not block playback for long. |
+| **Skip Only** | The layer stays on screen until the viewer manually skips it. There is no automatic dismissal and no link-click requirement — the viewer simply clicks **Skip** when they are ready to continue. |
 
----
+### Allow Skip
 
-## CTA vs Action Bar — which one to use?
+When this toggle is **on**, a **Skip** button appears on the player so the viewer can dismiss the overlay without clicking your CTA. When it is **off**, the viewer must interact with the overlay (for example, click the button) before the video continues.
 
-| | CTA Overlay | Action Bar |
-|---|-------------|------------|
-| Appearance | Full overlay covering the video | Slim bar at top or bottom |
-| Pauses video? | Yes | No |
-| Intrusiveness | High — demands immediate attention | Low — subtle and non-blocking |
-| Best for | End-of-video prompts, hard CTAs | Soft prompts, ongoing offers, subscribe buttons |
+### Layer Background
 
-You can use both at the same time. A common pattern is an action bar that slides in early with a soft message, plus a CTA overlay that triggers at the end of the video with a direct offer.
+Pick a **Background Color** for the overlay area behind your content. Use this to ensure your text is readable against the video frame underneath — for example, a semi-transparent dark background makes white text easy to read.
 
-## Where to configure
+::: tip
+Keep your CTA content short and focused. A strong heading, one line of supporting text, and a single button is the most effective pattern. Too much content in an overlay can overwhelm the viewer.
+:::
 
-Both are configured under **Interactive Layers** in the block editor — either in a [preset](/guide/customize/presets) (applies to all videos using that preset) or per media (for a specific video only).
+## Example: end-of-video upsell
 
-## Other layer types
+You have a product demo and want to direct viewers to your pricing page near the end:
 
-Depending on your version of Fluent Player, the layer system also includes:
+- **Start Time:** `0h 15m 0s` (near the end of a 17-minute video)
+- **Content:**
+  - Heading: "Like what you see?"
+  - Text: "Start your free trial today."
+  - Button: "Get Started" → links to `https://example.com/signup`
 
-- **Hotspots** — Clickable icons or points over the video (for example, product pins).
-- **Ad layers** — Inline image or video ads inside the player timeline.
-- **Form layers** — When **Fluent Forms** is installed, you can embed a Fluent Forms form directly inside the player.
+## Example: mid-video resource link
 
-These use the same preset/media configuration approach as the CTA and action bar. See the [Feature Catalog](/reference/feature-catalog) for a full list.
+You are recording a tutorial and want to share a downloadable resource at the 5-minute mark:
 
-## Next steps
+- **Start Time:** `0h 5m 0s`
+- **Content:**
+  - Heading: "Grab the cheat sheet"
+  - Text: "Download the companion PDF to follow along."
+  - Button: "Download Now" → links to your resource URL
 
-- [Email Capture Overlay](/guide/engagement/email-capture) — Gate the video behind an email form.
-- [Presets](/guide/customize/presets) — Configure overlays at the preset level so they apply to multiple videos.
-- [Captions and Branding](/guide/customize/captions-and-branding) — Style the player's visual identity.
+## Editing a CTA layer
+
+After you add a CTA layer, it appears in the **Interactive Layers** panel in the right sidebar. Each layer shows the **layer type** (CTA), its **trigger time** (e.g., 2:00), an **Edit** button, and a **delete** icon.
+
+To make changes to an existing layer:
+
+1. Click **Edit** on the layer in the Interactive Layers panel.
+2. The **Edit Layer** dialog opens — it looks the same as the creation dialog, with all your previously configured settings (Start Time, content, Completion Type, Allow Skip, and Layer Background).
+3. Make your changes.
+4. Click **Update Layer** to save.
+
+You can add multiple CTA layers to the same media item — for example, one at the 2-minute mark and another near the end.
+
+![Call to Action](/guide/public/engagement/cta-and-action-bar/cta-4.webp)
