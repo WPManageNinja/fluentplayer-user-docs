@@ -1,3 +1,8 @@
+---
+title: "Text & button overlays (Block sidebar)"
+description: "Timed text and button overlays on the video: add overlays, timing, links, styling, and how they differ from Interactive layers."
+---
+
 # Text & button overlays (Block sidebar)
 
 **Location:** **Block** tab → **Text/Button Overlays** (or similarly named panel).

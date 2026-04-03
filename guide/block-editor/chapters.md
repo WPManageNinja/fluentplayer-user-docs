@@ -1,3 +1,8 @@
+---
+title: "Chapters (Block sidebar)"
+description: "Add and edit video chapters in the Block sidebar: start times, titles, ordering, and how viewers jump between sections in the player."
+---
+
 # Chapters (Block sidebar)
 
 **Location:** **Block** tab → **Chapters** panel.

@@ -1,3 +1,8 @@
+---
+title: "Interactive layers (Block sidebar)"
+description: "Configure Interactive Layers: forms, email capture, CTAs, hotspots, ads, and more—filters, ordering, and how layers sit on the timeline."
+---
+
 # Interactive layers (Block sidebar)
 
 **Location:** **Block** tab → **Interactive Layers** panel.

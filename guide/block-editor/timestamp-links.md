@@ -1,3 +1,8 @@
+---
+title: "Timestamp links (Block sidebar)"
+description: "Generate fluentplayer_timestamp shortcodes from the Block sidebar: set time, link text, copy snippets for jump-to links in posts and widgets."
+---
+
 # Timestamp links (Block sidebar)
 
 **Location:** **Block** tab → **Timestamp Links** panel.

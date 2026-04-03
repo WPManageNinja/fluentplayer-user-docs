@@ -1,3 +1,8 @@
+---
+title: "Timed content area (Block sidebar)"
+description: "Fluent Player Pro timed content below the player: toggle the region, inner blocks, and sync with playback for lessons and structured layouts."
+---
+
 # Timed content area (Block sidebar)
 
 **Location:** **Block** tab → **Timed Content Area** (or **Timed Content**).

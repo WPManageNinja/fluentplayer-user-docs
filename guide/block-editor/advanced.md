@@ -1,3 +1,8 @@
+---
+title: "Advanced (Block sidebar)"
+description: "Fluent Player Block Advanced panel: additional CSS classes on the block wrapper, optional WordPress HTML anchor, and scoping theme CSS to one embed."
+---
+
 # Advanced (Block sidebar)
 
 **Location:** **Block** tab → **Advanced** panel (may be grouped with WordPress core **Advanced** block options on some versions).

@@ -1,3 +1,8 @@
+---
+title: "Branding (Block sidebar)"
+description: "Turn on custom branding per media, set logo and colors in the Block sidebar, and override global Fluent Player branding when needed."
+---
+
 # Branding (Block sidebar)
 
 **Location:** Select the FluentPlayer Media block → right sidebar → **Block** tab → **Branding** panel.

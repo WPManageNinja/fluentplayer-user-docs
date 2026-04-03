@@ -1,44 +1,74 @@
+---
+title: "General settings (Block sidebar)"
+description: "Block sidebar General Settings: title, poster, aspect ratio, playback and loading options, and how they override presets and global behaviors."
+---
+
 # General settings (Block sidebar)
 
-**Location:** **Block** tab → **General Settings** panel.
+The **General Settings** panel allows you to control the fundamental behavior and display options for your video. You can customize everything from how the video loads to its automatic playback rules.
 
-These options control **identity, layout, loading, and playback behavior** for this player. Many overlap with [presets](/guide/customize/presets) and [player behaviors](/guide/customize/behaviors); values here **override** preset/global defaults for this media or embed where applicable.
+### Access the Global Settings
 
-## Title and appearance
+To access these settings, go to **Fluent Player → Media**, and either click **Add Media** or select an existing media item. Once in the editor, ensure the **Block** tab is selected in the right sidebar to find the **General Settings** section.
 
-| Control | Purpose |
-|---------|---------|
-| **Title** | Display name for the video in the player UI and admin lists. |
-| **Title overlay** | When enabled, shows the title in the **top** area of the player (often when paused or on hover—exact behavior matches your skin/version). |
-| **Poster** | **Poster image** shown before play or as fallback. Upload or pick from the media library. |
-| **Aspect ratio** | Forces a **container ratio** (for example **16:9**, **4:3**, **original**). **Original** keeps the source’s intrinsic ratio where possible. If set to **default**, global [default aspect ratio](/guide/settings/general) may apply. |
+## Settings Overview
 
-## Loading and performance
+### 1. Title and Title Overlay
 
-| Control | Purpose |
-|---------|---------|
-| **Load strategy** | Controls **when** heavy player assets load (for example lazy load vs eager). Labels vary by version; choose based on whether this embed is above the fold or in a tabbed layout. |
+ * **Title:** Enter the internal name for your video. This is used for organization within your **Media List**.
+ * **Title Overlay:** When enabled, the video title will appear in the top-left corner of the player when the video is paused or hovered over. You can use the "tag" icon to insert dynamic **[Smartcodes](//guide/integrations/smartcodes-personalization)** for personalized titles.
 
-Use **lazy** or deferred strategies for long pages with many embeds to protect Core Web Vitals.
+### 2. Poster Image
 
-## Playback behavior
+The **Poster Image** is the thumbnail viewers see before the video starts.
 
-| Control | Purpose |
-|---------|---------|
-| **Autoplay mode** | Typical options: **Off**, **Autoplay**, **Muted autoplay**. Browsers often block autoplay with sound; **muted** autoplay is the reliable default for auto-start. |
-| **Play inline on mobile** | Keeps playback **inside the layout** on phones instead of forcing fullscreen (where supported). |
-| **Remember playback position** | Per-embed **resume**. Stores position in the viewer’s browser for this media. Works together with Pro **Enable Auto Resume Playback** in [Settings → General](/guide/settings/general)—both may need to be on for resume to behave as expected. |
+ - Click **Change** to select an image from your WordPress Media Library or upload a new one.
+ - A professional poster image makes your content more inviting and improves click-through rates.
 
-See also [Player behaviors](/guide/customize/behaviors) for preset-level behavior names.
+### 3. Aspect Ratio
 
-## Order of precedence (typical)
+Control the shape of your video player to match your content.
 
-**Block / media settings → preset → [Settings](/guide/settings/) global**
+ * **Original:** Matches the native dimensions of your video file.
+ * **Presets:** Choose from common ratios like Wide (16:9), Standard (4:3), Square (1:1), or Classic (2:3).
 
-Not every field exists at every level; if something is missing in the block UI, check the **active preset**.
 
-## Next steps
+![Title and Title Overlay](/guide/public/block-editor/general-settings/title-and-title-overlay-1.webp)
 
-- [Preset](/guide/block-editor/preset) — Choose the preset that supplies the baseline look and behavior for this video.
-- [Branding](/guide/block-editor/branding) — Override the logo and colors for this specific player instance.
-- [Player Behaviors](/guide/customize/behaviors) — Full guide on autoplay, muted, resume, and end-of-video behavior.
+### 4. Load Strategy
+
+This determines when the video data starts loading, which can significantly impact your website's speed.
+
+ * **On Play Click:** The video only loads once a user clicks play. This is the best option for page speed.
+ * **When Scrolled Into View:** The video begins loading only when the player becomes visible on the user's screen.
+ * **After Page Loads:** The video starts loading once the rest of the website content is finished.
+ * **Immediately:** The video loads as soon as the page is opened. Use this sparingly as it can slow down your site.
+
+![Load Strategy](/guide/public/block-editor/general-settings/load-strategy-2.webp)
+
+### 5. Autoplay Mode
+
+Set the player to start automatically when the page loads.
+
+ * **No Autoplay:** The video stays still until the user clicks play.
+ * **Autoplay with Sound:** The video starts playing with audio enabled (Note: many browsers block this by default).
+ * **Muted Autoplay:** The video starts playing silently. This is the most reliable way to use autoplay across all devices.
+
+### 6. Play Inline On Mobile
+
+When enabled, this allows the video to play directly within the webpage on mobile devices rather than forcing it into a full-screen system player.
+
+### 7. Remember Playback Position
+
+This user-friendly feature allows viewers to resume the video exactly where they left off if they return to the page later.
+
+### 8. Video End Screen
+
+Decide what viewers see once the video finishes playing.
+
+ * **Show Poster Image:** Displays your thumbnail again at the end.
+ * **Loop Video:** Automatically restarts the video from the beginning for continuous playback.
+
+![Video End Screen](/guide/public/block-editor/general-settings/video-end-screen-3.webp)
+
+The **General Settings** panel provides the essential building blocks for your video player. By carefully choosing your **Load Strategy** and **Autoplay** rules, you can create a high-performance viewing experience that doesn't sacrifice your website's loading speed.

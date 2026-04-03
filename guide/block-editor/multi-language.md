@@ -1,3 +1,8 @@
+---
+title: "Multi-language (Block sidebar)"
+description: "Block sidebar Multi-Language: primary language, enable the selector, and prerequisites for alternate tracks or linked media in Fluent Player."
+---
+
 # Multi-language (Block sidebar)
 
 **Location:** **Block** tab → **Multi-Language** panel.

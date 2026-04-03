@@ -1,3 +1,8 @@
+---
+title: "Preset (Block sidebar)"
+description: "Choose a Fluent Player preset from the Block sidebar: built-in skins, custom presets, and how they bundle controls, colors, and behavior."
+---
+
 # Preset (Block sidebar)
 
 **Location:** **Block** tab → **Preset** panel.
