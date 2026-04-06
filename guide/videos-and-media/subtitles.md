@@ -31,7 +31,7 @@ If you have subtitles in a different format, there are many free online converte
 4. If prompted, set the **language** for the subtitle track (for example, English, Spanish, French).
 5. Save the media.
 
-You can add **multiple subtitle tracks** for different languages. Viewers can switch between them using the **captions toggle** on the control bar and, when the **Settings** menu is enabled, the **Captions** entry inside that menu — see [Skins and Controls](/guide/customize/skins-and-controls).
+You can add **multiple subtitle tracks** for different languages. Viewers can switch between them using the **captions toggle** on the control bar and, when the **Settings** menu is enabled, the **Captions** entry inside that menu — see [Creating Custom Presets](/guide/customize/creating-custom-presets).
 
 ## Removing subtitles
 

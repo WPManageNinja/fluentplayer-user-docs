@@ -106,7 +106,7 @@ const guideGroups = [
     items: [
       { text: 'Overview', link: '/guide/customize/' },
       { text: 'Presets', link: '/guide/customize/presets' },
-      { text: 'Skins and Controls', link: '/guide/customize/skins-and-controls' },
+      { text: 'Creating Custom Presets (Pro)', link: '/guide/customize/creating-custom-presets' },
       { text: 'Player Behaviors', link: '/guide/customize/behaviors' },
       { text: 'Captions and Branding', link: '/guide/customize/captions-and-branding' },
     ],

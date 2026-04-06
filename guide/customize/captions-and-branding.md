@@ -90,7 +90,7 @@ Use a small, semi-transparent logo so it does not distract from the video. A PNG
 ## Next steps
 
 - [Subtitles](/guide/videos-and-media/subtitles) — Add subtitle tracks to your videos.
-- [Skins and Controls](/guide/customize/skins-and-controls) — Make sure the captions toggle is enabled so viewers can turn subtitles on and off.
+- [Creating Custom Presets](/guide/customize/creating-custom-presets) — Make sure the captions toggle is enabled so viewers can turn subtitles on and off.
 - [Presets](/guide/customize/presets) — Set branding and caption styles at the preset level.
 - [Branding Settings](/guide/settings/branding) — All branding options with Live Interactive Preview.
 - [General Settings](/guide/settings/general) — Default preset and custom CSS.

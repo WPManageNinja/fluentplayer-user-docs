@@ -43,7 +43,7 @@ Per-media overrides → Preset settings → Global defaults (Settings)
 | Topic | What it controls |
 |-------|-----------------|
 | [Presets](/guide/customize/presets) | Reusable player configurations — seven built-in presets plus custom ones (Pro) |
-| [Skins and Controls](/guide/customize/skins-and-controls) | Player visual skin and which control buttons are shown |
+| [Creating Custom Presets (Pro)](/guide/customize/creating-custom-presets) | Create your own presets with custom skins, controls, behaviors, and engagement overlays |
 | [Player Behaviors](/guide/customize/behaviors) | Autoplay, muted start, resume position, and what happens when the video ends |
 | [Captions and Branding](/guide/customize/captions-and-branding) | Subtitle text styling, brand color, and site logo on the player |
 

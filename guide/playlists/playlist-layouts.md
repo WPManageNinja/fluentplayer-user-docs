@@ -26,7 +26,7 @@ The Standard layout shows the **main video player** with a **playlist list** bes
 | **Show thumbnail info** | Show title, duration, or other info on or next to thumbnails. |
 | **Title position** | Title **on** the thumbnail (overlay) or **below** it — also covered in [playlist settings](/guide/playlists/playlist-settings). |
 
-The [playlist toggle](/guide/customize/skins-and-controls) on the player lets viewers show or hide the sidebar when your skin exposes it.
+The [playlist toggle](/guide/customize/creating-custom-presets) on the player lets viewers show or hide the sidebar when your skin exposes it.
 
 ### Best for
 
@@ -94,7 +94,7 @@ The Grid layout shows videos as a **multi-column thumbnail grid** — ideal for 
 | **Enable modal playback** | Turn modal playback on or off for the chosen mode. |
 | **Show info in modal** | Show extra title or metadata inside the modal (`modalShowInfo`-style options). |
 
-An **info** control may appear on the player in grid + modal setups — see [Skins and Controls](/guide/customize/skins-and-controls).
+An **info** control may appear on the player in grid + modal setups — see [Creating Custom Presets](/guide/customize/creating-custom-presets).
 
 ### Grid layout options
 

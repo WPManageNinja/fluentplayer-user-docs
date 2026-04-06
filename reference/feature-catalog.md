@@ -52,7 +52,7 @@ This page is a **structured checklist** of Fluent Player capabilities as impleme
 
 **Skins** used in defaults: **classic**, **modern**, **simple**, **standard**, **floating**, **minimal** (Ambient preset uses **minimal** skin with special behaviors).
 
-See [Presets](/guide/customize/presets) and [Skins and Controls](/guide/customize/skins-and-controls).
+See [Presets](/guide/customize/presets) and [Creating Custom Presets](/guide/customize/creating-custom-presets).
 
 ---
 

@@ -83,7 +83,7 @@ Open the post or page on the front end of your site. You should see the Fluent P
 
 Now that you have your first video embedded, here are some things to try:
 
-- [Customize the look](/guide/customize/skins-and-controls) — Change the skin, show or hide controls.
+- [Customize the look](/guide/customize/creating-custom-presets) — Create custom presets with your own skin, controls, and behaviors.
 - [Add subtitles](/guide/videos-and-media/subtitles) — Upload subtitle files for accessibility.
 - [Add an email capture overlay](/guide/engagement/email-capture) — Collect emails from your viewers.
 - [Create a playlist](/guide/playlists/) (Pro) — Group videos together.

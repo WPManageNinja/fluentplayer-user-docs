@@ -47,7 +47,7 @@ You can update your videos at any time, and the changes will automatically refle
    - The **video source** (swap to a different video or update the URL).
    - The **poster image**.
    - The **preset** (change how the player looks).
-   - Player-specific settings like [controls](/guide/customize/skins-and-controls), [behaviors](/guide/customize/behaviors), [overlays](/guide/engagement/email-capture), and more.
+   - Player-specific settings like [controls](/guide/customize/creating-custom-presets), [behaviors](/guide/customize/behaviors), [overlays](/guide/engagement/email-capture), and more.
 4. Click **Update** (or **Publish**) to save your changes.
 
 ## Understanding the media editor

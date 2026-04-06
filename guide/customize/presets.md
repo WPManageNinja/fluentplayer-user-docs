@@ -16,7 +16,7 @@ Fluent Player ships with **seven** built-in presets. Each has a **slug** (used i
 
 - **Skin:** Classic  
 - **Controls:** Full set — backward/forward, play, progress, time, volume, playback speed, fullscreen, PIP, center play, captions, **chapters**.  
-- **Settings menu:** Off (speed is available as its own control; **quality** appears as its own control for HLS when applicable — see [Skins and Controls](/guide/customize/skins-and-controls)).  
+- **Settings menu:** Off (speed is available as its own control; **quality** appears as its own control for HLS when applicable — see [Creating Custom Presets](/guide/customize/creating-custom-presets)).  
 - **Best for:** General-purpose videos where viewers need every control, including chapters.
 
 ![Presets](/guide/public/customize/presets/preset-1.webp)

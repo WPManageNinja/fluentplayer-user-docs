@@ -57,7 +57,7 @@ This is more aggressive than disabling individual controls — it removes the en
 
 ## Touch gestures
 
-On phones and tablets, viewers can use **tap** to play/pause and show or hide controls, **double-tap left/right** to seek backward or forward by about 10 seconds, and **double-tap** in some areas to toggle fullscreen. See [Skins and Controls](/guide/customize/skins-and-controls#touch-gestures-mobile-and-touch-screens) for the full table.
+On phones and tablets, viewers can use **tap** to play/pause and show or hide controls, **double-tap left/right** to seek backward or forward by about 10 seconds, and **double-tap** in some areas to toggle fullscreen.
 
 ## Where to configure behaviors
 
@@ -79,6 +79,6 @@ On phones and tablets, viewers can use **tap** to play/pause and show or hide co
 
 ## Next steps
 
-- [Skins and Controls](/guide/customize/skins-and-controls) — Control which buttons appear.
+- [Creating Custom Presets](/guide/customize/creating-custom-presets) — Control which buttons appear.
 - [Presets](/guide/customize/presets) — Set behaviors at the preset level.
 - [Email Capture Overlay](/guide/engagement/email-capture) — Gate part of the video behind an email form.

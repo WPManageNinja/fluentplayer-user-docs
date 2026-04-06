@@ -91,7 +91,7 @@ See [Captions and Branding](/guide/customize/captions-and-branding).
 
 ### Can I hide specific player controls?
 
-Yes. Under [Skins and Controls](/guide/customize/skins-and-controls), you can toggle individual controls on or off — such as the fullscreen button, playback speed, PIP (picture-in-picture), and more. Control visibility can be set at the preset level or overridden per video.
+Yes. When [creating a custom preset](/guide/customize/creating-custom-presets), you can toggle individual controls on or off — such as the fullscreen button, playback speed, PIP (picture-in-picture), and more. Control visibility can be set at the preset level or overridden per video.
 
 ---
 
