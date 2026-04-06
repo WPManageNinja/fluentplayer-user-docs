@@ -5,31 +5,40 @@ description: "Add and edit video chapters in the Block sidebar: start times, tit
 
 # Chapters (Block sidebar)
 
-**Location:** **Block** tab → **Chapters** panel.
+**Chapters** allow you to break your video into labeled sections, much like YouTube chapters. This helps viewers navigate long videos and jump straight to the parts they find most interesting.
 
-**Chapters** split the timeline into labeled sections (like YouTube chapters). Viewers can jump between sections when the skin exposes a chapter list or progress interaction.
+To manage your video markers, select the **FluentPlayer** block and open the **Chapters** panel in the **Block** tab.
 
-## Add a chapter
+![Chapter](/guide/public/block-editor/chapters/chapters-1.webp)
 
-1. Click **+ Add Chapter** (or equivalent).
-2. A **modal** opens with:
-   - **Video preview** — scrub to verify timing.
-   - **Start Time** — set **hours**, **minutes**, and **seconds** where the chapter begins.
-   - **Chapter Title** — label shown in the chapter list.
-3. Confirm with **Add Chapter** or cancel with **Cancel**.
+## Adding a Chapter
 
-## Rules and tips
+Click the **+ Add Chapter** button to create a new chapter. A popup window will appear where you can set up the chapter details.
 
-- **Start times** must be **non-decreasing** in practice—if you add chapters out of order, fix times so they make sense for seekers.
-- **First chapter** often starts at **0:00**; later chapters start at their respective marks.
-- **Duration** is implicit: each chapter runs until the next chapter (or end of video).
+ * **Start Time:** Enter the exact time (Hours, Minutes, and Seconds) where the new chapter should begin.
+ * **Chapter Title:** Add a clear and descriptive name for the chapter (e.g., "Introduction" or "Introduction").
+ * **Video Preview:** Use the preview player to move through the video and make sure your selected time is correct.
 
-## Editing and removal
+After completing all the fields, click **Add Chapter** to save your changes.
 
-Use the chapter list in the panel to **edit** times/titles or **remove** a chapter (icons vary by version). Saving the media or post persists changes.
+![Adding a Chapter](/guide/public/block-editor/chapters/adding-a-chapter-2.webp)
 
-## Next steps
+## Managing Your Chapters
 
-- [Timestamp Links (Block)](/guide/block-editor/timestamp-links) — Generate shortcode snippets that link directly to a timecode in this video.
-- [Timestamp Links (Embed)](/guide/display-embed/timestamp-links) — Use `[fluentplayer_timestamp]` shortcodes inside your post content.
-- [Player Editor Overview](/guide/block-editor/) — Full list of all Block sidebar panels.
+Once you have added chapters, they will appear in a list within the Chapters panel. From here, you can easily organize your video's structure:
+
+ * **Edit:** Click the **Edit** button on any chapter to modify its title or start time.
+ * **Remove:** Use the **Trash/Delete** icon to remove a chapter from the list.
+ * **Time Display:** The panel clearly shows the start time and title for every marker you have created.
+
+![Managing Your Chapters](/guide/public/block-editor/chapters/edit-3.webp)
+
+### Important Rules
+
+ * **Sequential Timing:** Ensure your start times increase in order (e.g., 0:01, 4:40, etc.) so the timeline makes sense for the viewer.
+ * **First Chapter:** It is common practice to set your first chapter at **0:00** to label the beginning of your video.
+ * **Automatic Duration:** Each chapter automatically ends when the next one begins, or when the video reaches the end.
+
+Chapters turn a long, daunting video into a collection of easy-to-digest segments. By taking a few minutes to label your content, you provide a much better experience for your viewers and help them find the information they need faster.
+
+
