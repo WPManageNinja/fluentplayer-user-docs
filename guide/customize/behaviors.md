@@ -4,6 +4,8 @@
 
 ## Available behaviors
 
+![Behaviors](/guide/public/customize/behaviors/behaviors-1.webp)
+
 ### Autoplay
 
 When enabled, the video starts playing as soon as the page loads.
@@ -68,17 +70,3 @@ On phones and tablets, viewers can use **tap** to play/pause and show or hide co
 
 **Example:** You use the "Modern" preset which has autoplay off. For one specific media item, you override autoplay to be on. Only that video autoplays; all other "Modern" videos do not.
 
-## Recommended configurations
-
-| Scenario | Autoplay | Muted autoplay | Save position | Plays inline |
-|----------|----------|---------------|---------------|-------------|
-| Blog post video | Off | Off | Off | On |
-| Course / training | Off | Off | On | On |
-| Hero background | Off | On | Off | On |
-| Landing page demo | Off | Off | Off | On |
-
-## Next steps
-
-- [Creating Custom Presets](/guide/customize/creating-custom-presets) — Control which buttons appear.
-- [Presets](/guide/customize/presets) — Set behaviors at the preset level.
-- [Email Capture Overlay](/guide/engagement/email-capture) — Gate part of the video behind an email form.
