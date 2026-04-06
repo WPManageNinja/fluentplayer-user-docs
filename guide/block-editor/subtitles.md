@@ -5,29 +5,45 @@ description: "Upload VTT or SRT captions in the Block sidebar, manage multiple t
 
 # Subtitles (Block sidebar)
 
-**Location:** **Block** tab → **Subtitles** panel.
+**Subtitles** (also known as captions) help make your videos easier to understand for a wider audience. They are useful for people who are deaf or hard of hearing, those watching in noisy environments, or viewers who speak different languages.
 
-Upload **subtitle or caption files** for this media so viewers can turn captions on in the player. This is the **in-editor** path; conceptually it matches [Subtitles](/guide/videos-and-media/subtitles) for the media library workflow.
+Fluent Player allows you to easily add and manage subtitle tracks for your videos directly from the **block** editor.
 
-## Supported formats
+#### Why Use Subtitles?
 
-| Format | Notes |
-|--------|--------|
-| **.vtt** | WebVTT — preferred for web players. |
-| **.srt** | SubRip — commonly accepted; may be converted or handled client-side per version. |
+ * **Accessibility:** Required by many regulations and digital best practices.
+ * **Better Engagement:** Videos with subtitles often receive more watch time.
+ * **Multilingual Reach:** Offer subtitles in multiple languages without needing to create separate video files.
+ * **SEO:** Search engines can read your subtitle text to better understand and index your video content.
 
-Use the **Subtitles** control to **upload** or **replace** files. Multiple tracks may be supported for different languages—pair with [Multi-language](/guide/block-editor/multi-language) when applicable.
+## How to Add Subtitles
 
-## Label and default track
+Follow these steps to upload a caption track to your video:
 
-Depending on version, you can set **track label** (e.g. “English”) and which track is **default**. The first track is often default if not specified.
+1. Select the **FluentPlayer** block and navigate to the **Block** tab in the right-hand sidebar.
+2. Expand the **Subtitles** panel.
+3. Click the **Subtitles** button (with the upload icon) to open your **WordPress Media Library**.
+4. **Upload or Select:** Drag and drop your **.vtt** or **.srt** subtitle file, or select one you have already uploaded.
+5. Click **Select** to confirm.
+
+After adding the file, you will see the subtitle track listed with its language (for example, English) and file name.
+
+## Managing and Removing Tracks
+
+ * **Multiple Tracks:** You can repeat the upload process to add subtitle files for different languages. If you want to know more about **Multi-Language**, read this [Documentation](/guide/block-editor/multi-language).
+ * **Edit:** Click the **pencil/edit** icon next to a track if you need to replace the file.
+ * **Remove:** Click the **trash/delete** icon to instantly remove a subtitle track from your video.
+ * **Save:** Always remember to click **Save** or **Update** at the top of the editor to apply your changes to the live player.
+
+>[!Tip]
+>For the best compatibility on the web, we recommend using the **WebVTT (.vtt)** format. If you only have **.srt** files, many free online converters can change them to **.vtt** in seconds.
+
+![Add Subtitles](/guide/public/block-editor/subtitles/subtitles-1.webp)
 
 ## Styling
 
-Caption **appearance** (font size, colors) may be controlled in [presets](/guide/customize/presets) or [Captions and Branding](/guide/customize/captions-and-branding), not only in this upload panel.
+The appearance of your captions such as font size, color, and overall style is not controlled only in the subtitle upload panel. You can customize these settings from the [Presets](/guide/customize/presets) or the [Captions and Branding](/guide/customize/captions-and-branding) section to match your video player design.
 
-## Next steps
 
-- [Subtitles (Videos & Media)](/guide/videos-and-media/subtitles) — The full subtitle workflow, including supported formats and sample VTT.
-- [Multiple Languages (Block)](/guide/block-editor/multi-language) — Add a language selector when you have multiple audio or subtitle tracks.
-- [Captions and Branding](/guide/customize/captions-and-branding) — Control the visual appearance of caption text.
+Adding subtitles is a quick way to make your content more professional and inclusive. By using the Subtitles panel, you can ensure that every viewer regardless of their environment or hearing ability can fully engage with your message.
+
