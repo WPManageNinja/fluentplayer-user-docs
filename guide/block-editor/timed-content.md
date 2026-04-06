@@ -28,8 +28,6 @@ You can customize the appearance of the timed content region to match your websi
  * **Background Color:** Click the color circle to pick a background for the entire timed content region.
  * **Text Color:** Choose a default color for any text placed inside this area.
 
-![Time Content Area](/guide/public/block-editor/timed-content/time-content-area-1.webp)
-
 ## Adding Dynamic Content
 
 The Timed Content Area functions like a "mini" editor inside your media entry:
