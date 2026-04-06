@@ -108,7 +108,6 @@ const guideGroups = [
       { text: 'Presets', link: '/guide/customize/presets' },
       { text: 'Creating Custom Presets (Pro)', link: '/guide/customize/creating-custom-presets' },
       { text: 'Player Behaviors', link: '/guide/customize/behaviors' },
-      { text: 'Captions and Branding', link: '/guide/customize/captions-and-branding' },
     ],
   },
   {
