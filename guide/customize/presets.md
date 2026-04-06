@@ -19,6 +19,8 @@ Fluent Player ships with **seven** built-in presets. Each has a **slug** (used i
 - **Settings menu:** Off (speed is available as its own control; **quality** appears as its own control for HLS when applicable — see [Skins and Controls](/guide/customize/skins-and-controls)).  
 - **Best for:** General-purpose videos where viewers need every control, including chapters.
 
+![Presets](/guide/public/customize/presets/preset-1.webp)
+
 ### Modern (`course`)
 
 - **Skin:** Modern  
@@ -26,11 +28,15 @@ Fluent Player ships with **seven** built-in presets. Each has a **slug** (used i
 - **Behaviors:** **Save play position** is enabled in the default preset data (together with [resume playback](/guide/customize/behaviors) at the site level when using Pro).  
 - **Best for:** Courses, polished marketing pages — this is the **default preset for new installs** (`course`).
 
+![Presets](/guide/public/customize/presets/preset-2.webp)
+
 ### Simple (`simple`)
 
 - **Skin:** Simple  
 - **Controls:** Play, progress bar, fullscreen, center play — **volume control is off** in default data for a minimal chrome.  
 - **Best for:** Clean pages where viewers only need play/seek and fullscreen.
+
+![Presets](/guide/public/customize/presets/preset-3.webp)
 
 ### Standard (`standard`)
 
@@ -39,11 +45,15 @@ Fluent Player ships with **seven** built-in presets. Each has a **slug** (used i
 - **Controls:** Similar to Modern plus **chapters**; **save play position** on in default data; **control bar blur** can be enabled for a frosted-glass bar.  
 - **Best for:** Layouts that use the “classic top + bottom” style with chapters.
 
+![Presets](/guide/public/customize/presets/preset-4.webp)
+
 ### Floating (`floating`)
 
 - **Skin:** Floating  
 - **Controls:** Transparent control bar; **backward** and **forward** skips are **off** in default data; **PIP** is **off**; playback speed enabled; **control bar blur** can be enabled.  
 - **Best for:** Cinematic or overlay-style players where controls float over the video.
+
+![Presets](/guide/public/customize/presets/preset-5.webp)
 
 ### Minimal (`minimal`)
 
@@ -51,11 +61,15 @@ Fluent Player ships with **seven** built-in presets. Each has a **slug** (used i
 - **Controls:** Only **center play** — no visible bar (click video to play/pause).  
 - **Best for:** Hero sections or when chrome would distract (non-looping).
 
+![Presets](/guide/public/customize/presets/preset-6.webp)
+
 ### Ambient (`ambient`)
 
 - **Skin:** Minimal (same skin component as Minimal)  
 - **Behaviors:** Tuned for **background** use: **muted-style autoplay** pattern, **loop** on end, **all control areas hidden** in default data.  
 - **Best for:** Ambient background video loops (subject to browser autoplay rules).
+
+![Presets](/guide/public/customize/presets/preset-7.webp)
 
 ## Choosing a preset for a media item
 
@@ -66,6 +80,8 @@ Fluent Player ships with **seven** built-in presets. Each has a **slug** (used i
 
 The video will now use all the settings from that preset. If you want to change something for just this video (like turning off autoplay), you can override it in the media editor without affecting the preset itself.
 
+![Presets](/guide/public/customize/presets/preset-8.webp)
+
 ## Setting the global default preset
 
 The global default preset is applied to new media items and to any media that does not specify a preset.
@@ -75,11 +91,15 @@ The global default preset is applied to new media items and to any media that do
 3. Select the preset you want as the default (fresh installs often use **Modern** / slug `course`).
 4. Save.
 
+![Presets](/guide/public/customize/presets/preset-9.webp)
+
 ## Creating custom presets (Pro)
 
 With Fluent Player Pro, you can **create, edit, and delete** your own presets. Custom presets must use a **slug that is not one of the seven reserved slugs** above.
 
 Custom presets work just like the built-in ones — they appear in the preset list and can be selected per media.
+
+![Presets](/guide/public/customize/presets/preset-10.webp)
 
 ## How preset inheritance works
 
@@ -90,10 +110,3 @@ Here is the order of priority when Fluent Player builds the final player:
 3. **Per-media overrides** — Individual settings on the media item override the preset.
 
 **Example:** The **Modern** preset has autoplay off. On a specific media, you turn autoplay on. That media will autoplay; all other media using **Modern** will not.
-
-## Next steps
-
-- [Skins and Controls](/guide/customize/skins-and-controls) — How skins map to these presets and every toggle.
-- [Player Behaviors](/guide/customize/behaviors) — Autoplay, resume, end behavior (e.g. Ambient loop).
-- [Feature Catalog](/reference/feature-catalog) — Full preset slug list in one table.
-- [Settings Reference](/reference/settings) — Global default preset setting.
