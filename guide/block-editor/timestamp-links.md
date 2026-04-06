@@ -5,32 +5,35 @@ description: "Generate fluentplayer_timestamp shortcodes from the Block sidebar:
 
 # Timestamp links (Block sidebar)
 
-**Location:** **Block** tab → **Timestamp Links** panel.
+**Timestamp Links** are powerful shortcode snippets that allow you to create clickable text to jump to a specific second in your video. These are perfect for "Skip to" navigation in blog posts, course notes, or help documentation.
 
-This panel helps you build **`[fluentplayer_timestamp …]`** shortcode snippets that **seek to a time** in **this** video when clicked—useful for “jump to 1:30” links in posts, emails, or lesson notes.
+To find these snippets, select the **FluentPlayer** block and open the **Timestamp Links** panel in the **Block** tab.
 
-## What the UI provides
+## How to Generate a Link
 
-| Element | Purpose |
-|---------|---------|
-| **Time** | Target **seek time** (often minutes:seconds or hours:minutes:seconds—match your UI). |
-| **Link text** | Visible anchor text for the shortcode content. |
-| **Generated shortcode** | Read-only preview of the full shortcode with **`media_id`** (or equivalent) filled for this media. |
-| **Copy** | Copies the shortcode to the clipboard for pasting into the block editor, Classic editor, or widgets. |
+The UI provides a pre-filled shortcode to save you time and prevent errors:
+
+ * **Timestamp Link Shortcode:** This field contains the full shortcode, including the correct **Media ID** for your specific video.
+ * **Copy Icon:** Click the **copy icon** on the right side of the shortcode box to instantly save the code to your clipboard.
+ * **Shortcode Format:** The generated code looks like this: `[fluentplayer_timestamp time=""]`.
 
 Exact attribute names match [Shortcodes Reference](/reference/shortcodes) (`time`, `media_id`, inner content for the link label).
 
-## Using copied shortcodes
+## Customizing the Shortcode
 
-Paste the shortcode in:
+Once you have copied the code, you can customize it for your specific needs:
 
-- A **Paragraph** or **Shortcode** block (if your theme allows shortcodes in blocks).
-- **Classic** editor or **widget** areas that process shortcodes.
+ * **Setting the Time:** Enter the exact jump time inside the `time=""` attribute. You can use minutes:seconds `(e.g., 1:30)` or total seconds `(e.g., 90)`.
+ * **Adding Link Text:** Place your desired label between the opening and closing tags.
+ `Example: [fluentplayer_timestamp time="2:15" media_id="129"]Watch the Demo[/fluentplayer_timestamp].`
 
-Front-end behavior: click → player seeks (or opens [dedicated URL](/guide/display-embed/dedicated-player-url) flows depending on setup).
+![Timestand Link](/guide/public/block-editor/timestamp-links/timestamp-links-1.webp)
 
-## Next steps
+### Where to Use Timestamp Links
 
-- [Timestamp Links (Embed)](/guide/display-embed/timestamp-links) — Full guide on using `[fluentplayer_timestamp]` shortcodes in your content.
-- [Chapters (Block)](/guide/block-editor/chapters) — Add named chapter markers to the video timeline.
-- [Shortcodes Reference](/reference/shortcodes) — Full attribute list for all Fluent Player shortcodes.
+You can paste these shortcodes into almost any area of your WordPress site:
+
+ * **Block Editor:** Paste them into a **Shortcode** block or a standard **Paragraph** block.
+ * **Classic Editor:** Simply paste the code directly into the text editor.
+ * **Widgets:** Use them in **Text** or **Custom HTML** widgets in your sidebar or footer.
+
