@@ -5,41 +5,38 @@ description: "Turn on custom branding per media, set logo and colors in the Bloc
 
 # Branding (Block sidebar)
 
-**Location:** Select the FluentPlayer Media block → right sidebar → **Block** tab → **Branding** panel.
+The **Branding** panel allows you to personalize your video player with your own logo and custom color scheme. You can use this section to ensure a single video matches a specific marketing campaign or brand identity, even if it differs from your global site settings.
 
-This panel controls **whether this player uses custom branding** and, when enabled, **logo and colors** for **this media or embed**. It can **override** [global branding in Settings](/guide/settings/branding).
+To access these options, select your **FluentPlayer** block and open the **Branding** section under the **Block** tab in the right-hand sidebar.
 
 ## Use custom branding
 
-| Control | Purpose |
-|---------|---------|
-| **Use custom branding** (toggle) | When **off**, the player uses **global** branding from **Fluent Player → Settings → Branding** (and preset defaults). When **on**, the fields below apply to **this** configuration only. |
+By default, Fluent Player uses the global branding settings configured in your plugin's main settings.
 
-Turn it on when a single video needs a different logo or colors than the rest of the site.
+ * **Toggle Switch:** Enable **Use Custom Branding** to override the global settings for this specific video.
+ * **Purpose:** **Turn** this on when you need a unique logo or specific colors for a single media item or embed.
 
-## When custom branding is on
+### Logo Settings
 
-| Control | Detail |
-|---------|--------|
-| **Logo** | Upload or replace a **logo image** shown on the player (often PNG with transparency). May show minimum size hints in the UI. |
-| **Brand color** | Accent color (progress bar, highlights). Overrides the global brand color for this player when custom branding is enabled. |
-| **Control bar color** | Background of the bottom control bar; can be a solid or semi-transparent value. |
+Once custom branding is enabled, you can add a watermark or brand logo directly to the player interface.
 
-The **dedicated media editor** may show a **live preview** in other parts of the app; in the block sidebar you are still editing the same underlying settings.
+ * **Logo Upload:** Click **Upload or Change** to select an image (such as a transparent PNG) from your media library.
+ * **Logo Link:** You can add a URL to the **Logo Link** field so that viewers are taken to a specific page when they click your logo.
+ * **Logo Width (PX):** Use the slider or input box to precisely adjust the size of your logo.
+ * **Logo Position:** Choose exactly where the logo appears on the player: **Top Left, Top Right, Bottom Left, or Bottom Right.**
 
-## Interaction with Settings and presets
+### Color Customization
 
-- **Global:** [Settings → Branding](/guide/settings/branding) sets defaults for the whole site.
-- **Preset:** Each [preset](/guide/customize/presets) can carry its own style; **Block → Preset** chooses which preset applies.
-- **This panel:** Wins for **logo and colors** when **Use custom branding** is on and values are set.
+You can fine-tune the player's colors to create a cohesive look for your content.
 
-## Common workflows
+ * **Brand Color:** This controls the accent color used for the progress bar and other highlights.
+ * **Control Bar Color:** Adjust the background color of the bottom control bar to be solid or semi-transparent.
+ * **Color Picker:** Click the color circles to open a palette where you can select a preset color or enter a custom hex code.
 
-1. **One campaign video with different colors** — Enable custom branding; set brand and control bar colors; save.
-2. **Watermark only on one video** — Enable custom branding; upload logo; set position if exposed in your UI.
+![Branding](/guide/public/block-editor/branding/branding-1.webp)
 
-## Next steps
 
-- [Captions and Branding](/guide/customize/captions-and-branding) — Set site-wide caption styling and brand color globally.
-- [General Settings](/guide/block-editor/general-settings) — Configure title, poster image, and playback options for this video.
-- [Settings → Branding](/guide/settings/branding) — Set the global defaults that this panel can override.
+The **Branding** panel provides the flexibility to make every video feel unique. Whether you are adding a simple watermark or completely changing the player's color scheme, these settings allow you to maintain brand consistency across all your video content.
+
+
+
