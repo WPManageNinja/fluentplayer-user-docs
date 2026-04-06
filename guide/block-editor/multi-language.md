@@ -5,24 +5,38 @@ description: "Block sidebar Multi-Language: primary language, enable the selecto
 
 # Multi-language (Block sidebar)
 
-**Location:** **Block** tab → **Multi-Language** panel.
+If your audience speaks different languages, **Fluent Player** allows you to offer **alternate versions** of the same video. This is perfect for videos with different voiceovers or narrations.
 
-Use this when the same video should support **multiple audio or subtitle tracks** tied to **languages** (workflow depends on how you structured sources and tracks in Fluent Player).
+Unlike subtitles, which just add text over the screen, the **Multi-Language** feature swaps the entire video file so the viewer hears the audio in their preferred language.
 
-## Typical controls
+## How to Enable Multiple Languages
 
-| Control | Purpose |
-|---------|---------|
-| **Primary language** | Default language shown or selected first for the viewer. |
-| **Enable multi-language** | When **on**, the player can show a **language selector** (dropdown or similar) so viewers switch languages where alternate tracks exist. |
+To set up different language versions, follow these simple steps:
 
-## Prerequisites
+1. Open the video you want to edit in **Fluent Player → Media**.
+2. In the right-hand sidebar, click on the **Multi-Language** tab to expand it.
+3. **Set the Primary Language:** Choose the main language of your video (e.g., English) from the **Primary Language** dropdown menu.
+4. **Turn on the Feature:** Switch the **toggle** for **Enable Multi-Language** to the "on" position. This adds a language selector to the player so viewers can switch manually.
 
-- **Alternate tracks** (audio and/or subtitles) must exist for each language you want to offer—often configured per media or via [Subtitles](/guide/block-editor/subtitles) and source-specific options.
-- Labels and flags may use the plugin’s **language list** (passed from PHP to the editor).
+![Multi-Language](/guide/public/block-editor/multi-language/multi-language-1.webp)
 
-## Next steps
+## Adding and Managing Additional Languages
 
-- [Multiple Languages](/guide/videos-and-media/multiple-languages) — How language mappings work and how viewers switch languages.
-- [Subtitles (Block)](/guide/block-editor/subtitles) — Upload subtitle tracks directly in the block editor.
-- [Captions and Branding](/guide/customize/captions-and-branding) — Style how subtitle text appears on the player.
+Once the feature is enabled, you can link and manage your translated video versions:
+
+ * **Adding a Language:** Click the **+ Add New** button. Select the language code from the **Language** dropdown and choose the corresponding media file from the **Video** dropdown, then click the **Add** button.
+ * **Editing a Language:** If you need to change the video file linked to a language, click the **Edit** button on the specific language card.
+ * **Removing a Language:** To delete a language option, click the **Trash/Delete** icon on the right side of the language card.
+
+![Managing Additional Language](/guide/public/block-editor/multi-language/additional-language-2.webp)
+
+### How the Player Works for Viewers
+
+ * **Automatic Switching:** When a person visits your site, **Fluent Player** detects their browser language. If you have a matching video version, it can load that version automatically.
+ * **Manual Choice:** **Viewers** can also use the language selector in the player controls to pick their preferred language at any time.
+
+
+>[!Note]
+>Make sure you have already uploaded your translated videos as separate media items before trying to link them in the Multi-Language settings.
+
+Using Multiple Languages makes your content more professional and accessible to a global audience. It is the best way to handle videos where the spoken words change, ensuring everyone understands your message clearly.
