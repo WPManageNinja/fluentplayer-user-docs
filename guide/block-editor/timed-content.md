@@ -5,31 +5,48 @@ description: "Fluent Player Pro timed content below the player: toggle the regio
 
 # Timed content area (Block sidebar)
 
-**Location:** **Block** tab → **Timed Content Area** (or **Timed Content**).
+The **Timed Content Area** is a Pro-exclusive feature that allows you to display dynamic content directly beneath your video player. This region is perfect for showing lesson notes, download buttons, or supplementary information that syncs with your video.
+
+To configure this feature, go to **Fluent Player → Media**, open your media item, and navigate to the **Timed Content Area** panel under the **Block** tab.
 
 ::: info Pro feature
-Timed content **below the player** is a **Fluent Player Pro** capability. The free plugin may hide or limit this panel.
+This feature is only available in **Fluent Player Pro**. If you are using the free version, this panel may be hidden or restricted.
 :::
 
-This panel controls **content that appears under the video** in the player layout—often synchronized with playback or structured as **inner blocks** in the media document.
+## Enabling the Timed Content Area
 
-## Panel options (typical)
+Before adding content, you must activate the region for your specific video:
 
-| Control | Purpose |
-|---------|---------|
-| **Show timed content** | Master toggle for showing the region below the player. |
-| **Padding** | Space around the inner content (CSS-like values or presets). |
-| **Background color** | Background for the timed content region. |
-| **Text color** | Default text color for content in the region. |
+ * **Show Timed Content:** **Toggle** this switch to the **ON** position to reveal the content area below the player.
+ * **Visual Controls:** Once enabled, the player interface will display a new "Timed Content" section where you can begin building your layout.
 
-## Inner blocks
+## Design and Styling
 
-On the **dedicated media editor** screen, you may edit **inner blocks** below the player (paragraphs, lists, custom HTML—within what Fluent Player allows). Those blocks are **part of the media** and render with the player when this embed is used.
+You can customize the appearance of the timed content region to match your website's design:
 
-Changes may sync via the plugin **REST API** when edited from different contexts; save the media after edits.
+ * **Padding:** Use the slider to adjust the space around your content. You can set this in pixels (PX) and use the Reset icon to return to default values.
+ * **Background Color:** Click the color circle to pick a background for the entire timed content region.
+ * **Text Color:** Choose a default color for any text placed inside this area.
 
-## Next steps
+![Time Content Area](/guide/public/block-editor/timed-content/time-content-area-1.webp)
 
-- [Adding and Editing Videos](/guide/videos-and-media/adding-videos) — Full walkthrough of the media editor where timed content inner blocks live.
-- [Text & Button Overlays](/guide/block-editor/overlays) — Timed text/button overlays that appear on top of the video (different from the region below the player).
-- [Feature Catalog](/reference/feature-catalog) — Full Pro feature matrix.
+## Adding Dynamic Content
+
+The Timed Content Area functions like a "mini" editor inside your media entry:
+
+ * **Add Content:** Click the **+ Add Content** button within the Timed Content box to insert new elements.
+ * **Inner Blocks:** You can add various Gutenberg-style blocks, such as paragraphs, lists, and buttons.
+
+![Add Content](/guide/public/block-editor/timed-content/add-content-2.webp)
+
+ * **Timing Control:** These blocks are designed to be shown at specific times during video playback, making them perfect for "revealing" a resource at the exact moment it is mentioned in the video.
+
+
+![Timing Control](/guide/public/block-editor/timed-content/set-time-range-3.webp)
+
+The Timed Content Area turns a simple video into a structured learning or marketing experience
+
+
+
+
+
