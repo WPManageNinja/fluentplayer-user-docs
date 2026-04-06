@@ -21,6 +21,8 @@ Replace `10` with your playlist ID. The playlist will appear where you placed th
 - In **Fluent Player → Playlists**, the ID appears next to each playlist (for example, `#10`).
 - When editing a playlist, check the browser URL.
 
+![Embed Playlist](/guide/public/playlists/embed-playlist/embed-playlist-1.webp)
+
 ### Step-by-step
 
 **In the Classic Editor:**
@@ -47,6 +49,8 @@ Replace `10` with your playlist ID. The playlist will appear where you placed th
 5. Publish or update.
 
 The block shows a preview in the editor and renders the same output as the shortcode on the front end.
+
+![Embed Playlist](/guide/public/playlists/embed-playlist/embed-playlist-2.webp)
 
 ## What the front end looks like
 
@@ -77,9 +81,3 @@ Changes are immediate. If you add or remove a video from the playlist, every pag
 **Can I embed a playlist in a widget?**
 
 Yes, as long as the widget supports shortcodes. Use `[fluentplaylist id="10"]` in a Text or Custom HTML widget.
-
-## Next steps
-
-- [Creating a Playlist](/guide/playlists/creating-playlists) — Build or modify a playlist.
-- [Playlist Layouts](/guide/playlists/playlist-layouts) — Change the layout style.
-- [Shortcodes Reference](/reference/shortcodes) — All shortcode details.
