@@ -21,18 +21,17 @@ Each playlist has:
 
 | Use case | How playlists help |
 |----------|-------------------|
-| **Online courses** | Organize lessons in order with progress tracking (Learning layout) |
+| **Online courses** | Organize lessons in order so viewers can follow step by step |
 | **Tutorial series** | Let viewers watch related tutorials in sequence |
 | **Product demos** | Group all product videos in one place |
-| **Video libraries** | Display a large catalog with search and filtering (Grid layout) |
+| **Video libraries** | Display a large catalog in a browsable grid (Grid layout) |
 
 ## Playlist layouts
 
-Fluent Player Pro offers three layout options:
+Fluent Player Pro offers two layout styles:
 
-- **Standard** — A video player with a list of videos (with thumbnails) on the side. Good for simple series.
-- **Learning** — Designed for courses. Tracks progress, marks completion, supports chapters, and can lock future videos until the current one is completed.
-- **Grid** — Displays videos in a grid with columns, pagination, and optional search/filters. Good for large collections.
+- **Standard** — A video player with a playlist sidebar showing thumbnails. Good for series, tutorials, and courses.
+- **Grid** — Displays videos in a multi-column thumbnail grid. Good for large libraries and catalogs.
 
 Learn more in [Playlist Layouts](/guide/playlists/playlist-layouts).
 
