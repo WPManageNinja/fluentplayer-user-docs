@@ -47,6 +47,3 @@ Per-media overrides → Preset settings → Global defaults (Settings)
 | [Player Behaviors](/guide/customize/behaviors) | Autoplay, muted start, resume position, and what happens when the video ends |
 | [Captions and Branding](/guide/customize/captions-and-branding) | Subtitle text styling, brand color, and site logo on the player |
 
-## Next steps
-
-Start with [Presets](/guide/customize/presets) to understand the foundation, then explore the specific areas that interest you.
