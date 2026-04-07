@@ -5,29 +5,26 @@ description: "Fluent Player Block Advanced panel: additional CSS classes on the 
 
 # Advanced (Block sidebar)
 
-**Location:** **Block** tab → **Advanced** panel (may be grouped with WordPress core **Advanced** block options on some versions).
+The **Advanced** panel provides specialized options for developers or users who want to apply custom styling and navigation anchors to their video players. This section allows you to go beyond the standard player settings and integrate the player more deeply with your website's custom code.
 
-## Additional CSS class(es)
+To access these settings, select your **FluentPlayer** block and expand the **Advanced** panel at the bottom of the **Block** tab.
 
-| Control | Purpose |
-|---------|---------|
-| **Additional CSS class(es)** | One or more **space-separated** class names added to the **block wrapper** in the editor and on the front end. |
+## Additional CSS Class(es)
 
-Use this to:
+This field is used to add unique identifiers to the specific player you are currently editing.
 
-- Target **this** embed with custom CSS in **Appearance → Customize → Additional CSS** or your theme.
-- Scope styles under a unique class without changing global Fluent Player CSS.
+ * **Custom Styling:** Enter one or more CSS class names separated by spaces ``(e.g., special-promo-video lesson-blue)``.
+ * **Targeting:** Use these classes in your theme’s stylesheet or under **Appearance → Customize → Additional CSS** to apply specific design rules to only this video.
+ * **Scoped Styles:** This is the best way to change the appearance of a single video without affecting every other player on your site.
 
-**Example:** `my-course-lesson fp-lesson-3`
+![Additional CSS](/guide/public/block-editor/advanced/addittional-css-1.webp)
 
-Do **not** paste full CSS here—only **class names**.
+## HTML Anchor
 
-## Block anchor (WordPress)
+If your version of WordPress supports it, you may also see an HTML Anchor field within this section.
 
-If your site uses **HTML anchors** for blocks, the core **Advanced** section may expose an **HTML anchor** field for deep links (`#fragment`). Fluent Player does not replace this; it is standard Gutenberg behavior when enabled.
+ * **Deep Linking:** By entering a unique word (like `intro-video`), you create a direct link to that specific part of your page.
+ * **Usage:** You can then link to the video from anywhere else by using a URL ending in `#intro-video`.
+ * **Standard Behavior:** This follows standard WordPress Gutenberg functionality, making it easy to use alongside other blocks.
 
-## Next steps
-
-- [Settings → General: Custom CSS](/guide/settings/general) — Add global CSS that applies to every player on your site.
-- [Embed with Block](/guide/display-embed/block) — Overview of the FluentPlayer Media block.
-- [Player Editor Overview](/guide/block-editor/) — Full list of all Block sidebar panels.
+The Advanced panel is your gateway to deeper customization. By using **Additional CSS** Classes and **HTML Anchors**, you can ensure your video player fits perfectly into your site's custom design and navigation structure.
