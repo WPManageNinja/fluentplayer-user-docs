@@ -33,9 +33,10 @@ Downloading your lead data is a simple three-step process:
 
 **Go to Export:** Navigate to the Export section within the Fluent Player Settings.
 **Choose Your Format:** Select your preferred file type using the toggle buttons:
- * * **CSV:** Best for Excel, Google Sheets, and importing into most CRMs.
+ * **CSV:** Best for Excel, Google Sheets, and importing into most CRMs.
  * **JSON:** Ideal for developers or technical API imports.
  * **ODS:** Used for OpenDocument spreadsheets like LibreOffice Calc.
+ 
 **Download:** Click the **Export Email List** button. The file will be generated and downloaded to your computer immediately.
 
 ![Export Your List](/guide/public/settings/export/export-email-list-1.webp)
