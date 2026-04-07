@@ -3,40 +3,52 @@ title: "Text & button overlays (Block sidebar)"
 description: "Timed text and button overlays on the video: add overlays, timing, links, styling, and how they differ from Interactive layers."
 ---
 
-# Text & button overlays (Block sidebar)
+# Text & Button Overlays (Block sidebar)
 
-**Location:** **Block** tab → **Text/Button Overlays** (or similarly named panel).
+**Text & Button Overlays** are timed interactive elements that appear directly on top of your video. They are perfect for highlighting key points, providing resource links, or adding calls-to-action (CTAs) without pausing the video.
 
-These are **timed overlays** that appear **on top of the video** for a window of time—text, optional **link**, styling, and sometimes **motion**. They differ from **[Interactive layers](/guide/block-editor/interactive-layers)** (forms, CTAs as layers) but can work alongside them.
+To manage your overlays, select the **FluentPlayer** block and open the **Text/Button Overlays** panel in the **Block** tab.
 
-## Add an overlay
+## Adding an Overlay
 
-1. Click **+ Add Overlay** (opens **Add Video Overlay** or similar).
-2. Configure the fields below.
-3. Save or confirm to add it to the list; repeat for multiple overlays.
+Follow these steps to create a new overlay for your video:
 
-## Overlay fields (typical)
+1. Click the **+ Add Overlay** button to open the configuration window.
 
-| Field | Purpose |
-|-------|---------|
-| **Start time** | When the overlay **appears** (synced to playback time). |
-| **Duration** | How many **seconds** the overlay stays visible. |
-| **Text** | Main copy (may support basic formatting depending on version). |
-| **Link URL** | Optional URL when the viewer clicks the overlay. |
-| **Dynamic position** | When enabled, the overlay may **move** on an interval (attention-grabbing; use sparingly). |
-| **Position** | Fixed corner or region (e.g. top-left, bottom-right) when not using dynamic position. |
-| **Background color** | Backing color behind text (often rgba). |
-| **Text color** | Foreground color. |
+![Adding an Overlay](/guide/public/block-editor/overlays/text-button-overlay-1.webp)
 
-Default title for a new overlay may show as **Untitled Overlay** until you rename it (if your UI supports names per overlay).
+2. **Start Time:** Enter the exact hour, minute, and second when the overlay should appear.
+3. **Duration (Seconds):** Use the slider or input box to set how many seconds the overlay stays on the screen.
+4. **Overlay Text:** Enter your message in the text field. You can also click the **three-dot** icon to insert dynamic values, such as the viewer’s name or email.
+5. **Link URL:** If you want the overlay to be clickable, paste a website address here.
+6. **Position:** Choose where the overlay stays on the video: Top Left, Top Right, Bottom Left, or Bottom Right.
+7. **Colors:** Select a Background Color and Text Color to ensure your message is easy to read.
+8. Click **Add Overlay** to save.
 
-## Ordering and overlap
+![Customize Overlay](/guide/public/block-editor/overlays/customize-the-overlay-2.webp)
 
-- Multiple overlays can exist; **start time + duration** define visibility.
-- If two overlays overlap in time, **stacking order** follows the list or z-index rules in your build—avoid overlapping critical CTAs in the same region.
+## Dynamic Positioning and Animation
 
-## Next steps
+For a more eye-catching effect, you can make your overlays move:
 
-- [Interactive Layers](/guide/block-editor/interactive-layers) — Add forms, email capture, hotspots, and richer interactive elements.
-- [CTA and Action Bar](/guide/engagement/cta-and-action-bar) — Full-screen CTA popups and slim message bars.
-- [Email Capture Overlay](/guide/engagement/email-capture) — Gate the video behind an email form.
+ * **Dynamic Position:** **Toggle** this on to move the overlay to random positions during playback.
+ * **Reposition Interval:** Set how often (in seconds) the overlay should change its location.
+ * **Animation Style:** Choose how the overlay enters and exits the screen, such as **Slide**, **Fade**, or **Instant**.
+
+![Dynamic Position](/guide/public/block-editor/overlays/dynamic-position-3.webp)
+
+### Managing Your Overlays
+
+Once saved, your overlays appear in a list within the sidebar panel:
+
+ * **Edit:** Click the **Edit** icon on any overlay to change its timing, text, or styling.
+ * **Delete:** To remove an overlay, click the Trash icon and confirm your choice in the popup.
+
+>[!Tip]
+>Use the Video Preview inside the overlay window to scrub through your video and see exactly where and when your overlay will appear before you save it.
+
+![Edit or Delete](/guide/public/block-editor/overlays/edit-or-delete-4.webp)
+
+By using Smartcodes and Dynamic Positioning, you can create personalized and engaging content that encourages your viewers to take action.
+
+
