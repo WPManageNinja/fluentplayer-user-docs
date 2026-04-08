@@ -1,12 +1,12 @@
 # Integrations Overview
 
-Fluent Player can connect to external services to extend what it can do. These integrations cover **video hosting**, **email marketing**, and **analytics** — helping you deliver, track, and grow your video content.
+Fluent Player connects with powerful external services to expand your video capabilities. These integrations cover **video hosting**, **email marketing**, and **analytics**, helping you deliver high-quality content while growing your audience.
 
 ## Available integrations
 
 ### Video hosting (Pro)
 
-Instead of hosting videos only on your own server, you can connect to professional platforms for encoding and delivery.
+Professional hosting ensures faster loading and a better viewer experience by offloading video delivery from your server.
 
 - **[Mux](/guide/integrations/mux)** — HLS streaming, direct uploads, live streams, optional signed URLs, webhooks, AI captions, and optional Mux Data analytics. In the block editor you can pick **Mux** or **Mux Live** as the source; credentials are configured under **Settings → Storage**.
 - **[BunnyCDN Stream](/guide/integrations/bunnycdn-stream)** — Use Bunny's video streaming platform. Upload and manage videos in Bunny libraries, then select them in Fluent Player.
@@ -22,14 +22,14 @@ Capture viewer emails with the [email capture overlay](/guide/engagement/email-c
 
 ### Analytics
 
-Understand how your viewers interact with your videos:
+Track how your audience interacts with your content to make data-driven decisions.
 
-- **[Built-in Analytics](/guide/integrations/analytics)** (Pro) — A dashboard inside WordPress that shows plays, watch time, top videos, viewer behavior, and more.
-- **[Google Analytics](/guide/integrations/google-analytics)** (free) — Send player events (play, progress, complete) to your GA4 property.
+- **[Built-in Analytics(Pro)](/guide/integrations/analytics)** (Pro) — A dashboard inside WordPress that shows plays, watch time, top videos, viewer behavior, and more.
+- **[Google Analytics (free)](/guide/integrations/google-analytics)** (free) — Send player events (play, progress, complete) to your GA4 property.
 
 ### Community and personalization
 
-- **[FluentCommunity](/guide/integrations/fluent-community)** (Pro) — Embed Fluent Player media inside FluentCommunity posts and portal content.
+- **[FluentCommunity (Pro)](/guide/integrations/fluent-community)** (Pro) — Embed Fluent Player media inside FluentCommunity posts and portal content.
 - **[Smartcodes and personalization](/guide/integrations/smartcodes-personalization)** — Use FluentCRM merge tags (for example the contact first-name tag) in supported player text when FluentCRM is installed.
 
 ## Where to configure integrations
@@ -45,6 +45,9 @@ Most integration settings are found in **Fluent Player → Settings**. Some inte
 | FluentCommunity block | Requires FluentCommunity; embed from the community editor |
 | FluentCRM smartcodes | **Settings → Integrations** (FluentCRM) + supported text fields |
 | Export email list | **Settings → Export** |
+
+>[!Note]
+>Video storage providers (Mux/Bunny) and Email providers (Mailchimp/FluentCRM) are located in separate tabs under the Settings menu. Ensure you are in the correct section before configuring.
 
 ## Topics in this section
 
