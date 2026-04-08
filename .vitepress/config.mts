@@ -148,7 +148,7 @@ const guideGroups = [
     ],
   },
   {
-    text: 'Troubleshooting & FAQ',
+    text: 'Troubleshooting & Support',
     items: [
       { text: 'Common Issues & Fixes', link: '/guide/troubleshooting/' },
       { text: 'Frequently Asked Questions', link: '/guide/troubleshooting/faq' },
