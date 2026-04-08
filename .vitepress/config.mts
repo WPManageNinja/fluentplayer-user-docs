@@ -159,7 +159,7 @@ const guideGroups = [
 export default defineConfig({
   title: 'FluentPlayer',
   lang: 'en-US',
-  lastUpdated: true,
+  lastUpdated: false,
   /**
    * `false` = `.html` URLs — works on GitHub Pages and simple static hosts (refresh / deep links OK).
    * Set `true` only if your host rewrites URLs (e.g. Netlify) — otherwise pages can 404 after deploy.
