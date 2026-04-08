@@ -189,8 +189,9 @@ export default defineConfig({
     /** Logo only in the navbar (no text beside it). `config.title` still sets the HTML `<title>`. */
     siteTitle: false,
     nav: [
-      { text: 'Guide', link: '/guide/' },
-      { text: 'Reference', link: '/reference/' },
+      { text: 'Home', link: '/guide/' },
+      { text: 'Website', link: 'https://fluentplayer.com/' },
+      { text: 'Changelog', link: '/guide/changelog' },
     ],
 
     notFound: {
@@ -200,32 +201,8 @@ export default defineConfig({
     },
 
     sidebar: {
-      '/': [
-        ...guideGroups,
-        {
-          text: 'Reference',
-          items: [
-            { text: 'Reference Overview', link: '/reference/' },
-            { text: 'Feature Catalog', link: '/reference/feature-catalog' },
-            { text: 'Shortcodes Reference', link: '/reference/shortcodes' },
-            { text: 'Settings Reference', link: '/reference/settings' },
-            { text: 'Plugin Overview (Technical)', link: '/reference/plugin-overview' },
-          ],
-        },
-      ],
+      '/': guideGroups,
       '/guide/': guideGroups,
-      '/reference/': [
-        {
-          text: 'Reference',
-          items: [
-            { text: 'Reference Overview', link: '/reference/' },
-            { text: 'Feature Catalog', link: '/reference/feature-catalog' },
-            { text: 'Shortcodes Reference', link: '/reference/shortcodes' },
-            { text: 'Settings Reference', link: '/reference/settings' },
-            { text: 'Plugin Overview (Technical)', link: '/reference/plugin-overview' },
-          ],
-        },
-      ],
     },
 
     socialLinks: [

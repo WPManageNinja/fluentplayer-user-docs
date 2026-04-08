@@ -12,9 +12,6 @@ hero:
     - theme: brand
       text: Get Started
       link: /guide/
-    - theme: alt
-      text: Reference
-      link: /reference/
 features:
   - icon: 🚀
     title: Getting Started
