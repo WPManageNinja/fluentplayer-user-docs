@@ -43,7 +43,7 @@ You can add **multiple subtitle tracks** for different languages. Viewers can sw
 
 ## Styling captions on the player
 
-You can change how captions look on screen — font size, text color, and background color. These settings are part of the preset or can be set per media. See [Captions and Branding](/guide/customize/captions-and-branding) for details.
+You can change how captions look on screen — font size, text color, and background color. These settings are part of the preset or can be set per media. See [Branding & Appearance](/guide/block-editor/branding) for details.
 
 ## Example: a simple WebVTT file
 

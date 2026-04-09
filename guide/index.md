@@ -62,4 +62,4 @@ Here is the typical workflow:
 
 - [Installation](/guide/installation) — Install and activate the plugin on your site.
 - [Quick Start](/guide/quick-start) — Create your first video and embed it in under 5 minutes.
-- [Feature Catalog](/reference/feature-catalog) — See every built-in preset, shortcode, block, and Pro feature in one place.
+- [Player Customization](/guide/customize/) — Presets, behaviors, and styling options in one place.

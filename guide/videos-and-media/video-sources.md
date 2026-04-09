@@ -30,7 +30,7 @@ Paste a YouTube video URL. Fluent Player will use the YouTube embed player with 
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
 ```
 
-Fluent Player offers YouTube-specific options in [Settings](/reference/settings):
+Fluent Player offers YouTube-specific options in [Settings](/guide/settings/):
 
 - **Privacy mode** — Uses YouTube's privacy-enhanced mode so cookies are not set until the viewer clicks play.
 - **Subscribe button** — Optionally shows a YouTube subscribe button on the player.

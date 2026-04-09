@@ -42,7 +42,7 @@ After adding the file, you will see the subtitle track listed with its language 
 
 ## Styling
 
-The appearance of your captions such as font size, color, and overall style is not controlled only in the subtitle upload panel. You can customize these settings from the [Presets](/guide/customize/presets) or the [Captions and Branding](/guide/customize/captions-and-branding) section to match your video player design.
+The appearance of your captions such as font size, color, and overall style is not controlled only in the subtitle upload panel. You can customize these settings from the [Presets](/guide/customize/presets) or the [Branding & Appearance](/guide/block-editor/branding) section to match your video player design.
 
 
 Adding subtitles is a quick way to make your content more professional and inclusive. By using the Subtitles panel, you can ensure that every viewer regardless of their environment or hearing ability can fully engage with your message.

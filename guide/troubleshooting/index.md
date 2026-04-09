@@ -103,5 +103,5 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 ## Next steps
 
 - [Frequently Asked Questions](/guide/troubleshooting/faq) — Quick answers to common questions.
-- [Reference → Feature Catalog](/reference/feature-catalog) — Full list of features and where they live.
-- [Plugin Overview (Technical)](/reference/plugin-overview) — Developer-level architecture reference.
+- [Player Customization](/guide/customize/) — Full list of customization topics and where they live.
+- [Documentation home](/guide/) — Browse all guides from installation through integrations.

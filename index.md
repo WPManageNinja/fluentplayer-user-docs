@@ -43,11 +43,11 @@ features:
     details: Mux, BunnyCDN, built-in analytics, and Google Analytics.
     link: /guide/integrations/
     linkText: Explore 
-  - icon: 📖
-    title: Reference
-    details: Feature catalog, shortcodes, settings, and technical overview.
-    link: /reference/
-    linkText: View Reference 
+  - icon: ⚙️
+    title: Global Settings
+    details: Branding, performance, storage, analytics, and export from one place.
+    link: /guide/settings/
+    linkText: Open Settings
 ---
 
 <!-- Optional: extra content below the feature cards can go here -->

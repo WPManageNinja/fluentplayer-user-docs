@@ -17,7 +17,7 @@ The UI provides a pre-filled shortcode to save you time and prevent errors:
  * **Copy Icon:** Click the **copy icon** on the right side of the shortcode box to instantly save the code to your clipboard.
  * **Shortcode Format:** The generated code looks like this: `[fluentplayer_timestamp time=""]`.
 
-Exact attribute names match [Shortcodes Reference](/reference/shortcodes) (`time`, `media_id`, inner content for the link label).
+Exact attribute names match [Shortcode embed](/guide/display-embed/shortcode) (`time`, `media_id`, inner content for the link label).
 
 ## Customizing the Shortcode
 

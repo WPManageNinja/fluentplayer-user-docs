@@ -3,8 +3,8 @@ prev:
   text: 'Common Issues & Fixes'
   link: '/guide/troubleshooting/'
 next:
-  text: 'Reference Overview'
-  link: '/reference/'
+  text: 'Changelog'
+  link: '/guide/changelog'
 ---
 
 # Frequently Asked Questions
@@ -85,7 +85,7 @@ See [Presets](/guide/customize/presets) for a full breakdown of each built-in pr
 
 Yes. The **brand color** applies to the progress bar, active controls, and accent elements across the player. Set it globally under **Fluent Player → Settings → Branding**, or override it per-media using the Branding panel in the block editor.
 
-See [Captions and Branding](/guide/customize/captions-and-branding).
+See [Branding & Appearance](/guide/block-editor/branding) and [Settings → Branding](/guide/settings/branding).
 
 ---
 
@@ -148,5 +148,5 @@ Fluent Player Pro includes three layouts: **Standard** (player + sidebar list), 
 ## Next steps
 
 - [Common Issues & Fixes](/guide/troubleshooting/) — Specific symptoms and resolutions.
-- [Feature Catalog](/reference/feature-catalog) — Complete list of all features.
-- [Plugin Overview (Technical)](/reference/plugin-overview) — Architecture, hooks, and REST API reference.
+- [Player Customization](/guide/customize/) — Presets, behaviors, and how the player looks.
+- [Documentation home](/guide/) — All guides from installation through integrations.

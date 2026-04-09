@@ -44,7 +44,7 @@ Once Mux is connected:
 
 1. Go to **Fluent Player → Media** and create or edit a media item.
 2. Choose **Mux** as the video source type (or pick an existing Mux asset from the library, depending on the UI flow).
-3. Publish the media and embed it with the **[fluentplayer](/reference/shortcodes)** shortcode or the **Fluent Player** block.
+3. Publish the media and embed it with the **[fluentplayer](/guide/display-embed/shortcode)** shortcode or the **Fluent Player** block.
 
 The player receives HLS URLs (and, when configured, signed URLs and DRM-related tokens) through the same rendering pipeline as other sources. Poster images and thumbnails typically use Mux’s `image.mux.com` URLs unless you override them.
 
