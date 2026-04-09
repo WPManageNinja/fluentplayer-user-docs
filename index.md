@@ -6,8 +6,8 @@ hero:
   text: WordPress Video & Media Plugin
   tagline: Powerful, flexible video player with playlists, email capture, and analytics — all from your WordPress site.
   image:
-    src: /logo.svg
-    alt: FluentPlayer
+    src: /brand/Hero-Image-2.webp
+    alt: Fluent Player
   actions:
     - theme: brand
       text: Get Started

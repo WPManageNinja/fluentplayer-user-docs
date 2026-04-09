@@ -58,8 +58,4 @@ Here is the typical workflow:
 5. **Convert viewers** with email capture and CTAs. See [Engagement & Conversion](/guide/engagement/).
 6. **Go further** with playlists, Mux or BunnyCDN, and analytics. See [Playlists](/guide/playlists/) and [Integrations](/guide/integrations/).
 
-## Next steps
 
-- [Installation](/guide/installation) — Install and activate the plugin on your site.
-- [Quick Start](/guide/quick-start) — Create your first video and embed it in under 5 minutes.
-- [Player Customization](/guide/customize/) — Presets, behaviors, and styling options in one place.

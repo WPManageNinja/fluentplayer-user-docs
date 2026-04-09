@@ -157,14 +157,16 @@ const guideGroups = [
 ]
 
 export default defineConfig({
+  /** Must match deploy URL (e.g. `/repo-name/` on GitHub Pages project sites). See `resolveBase()`. */
+  base,
   title: 'FluentPlayer',
   lang: 'en-US',
   lastUpdated: false,
   /**
-   * `false` = `.html` URLs — works on GitHub Pages and simple static hosts (refresh / deep links OK).
-   * Set `true` only if your host rewrites URLs (e.g. Netlify) — otherwise pages can 404 after deploy.
+   * Clean URLs hide `.html` from links.
+   * Ensure your host rewrites route requests to the generated HTML files.
    */
-  cleanUrls: false,
+  cleanUrls: true,
 
   /** Repo README is for GitHub only; excluding avoids an extra `/readme` route. */
   srcExclude: ['README.md'],
@@ -192,6 +194,7 @@ export default defineConfig({
       { text: 'Home', link: '/guide/' },
       { text: 'Website', link: 'https://fluentplayer.com/' },
       { text: 'Changelog', link: '/guide/changelog' },
+      { text: 'Support', link: '/guide/support' },
     ],
 
     notFound: {
