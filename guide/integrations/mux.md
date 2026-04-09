@@ -32,18 +32,7 @@ Copy your **Token ID** and **Token Secret** for later use.
 >[!Note]
 >The Token Secret is only shown once in the Mux dashboard; be sure to save it securely.
 
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-1. Go to **Fluent Player → Media** and create or edit a media item.
-2. Choose **Mux** as the video source type (or pick an existing Mux asset from the library, depending on the UI flow).
-3. Publish the media and embed it with the **[fluentplayer](/guide/display-embed/shortcode)** shortcode or the **Fluent Player** block.
-=======
 ![Copy Token and Secret](/guide/public/integrations/mux/save-token-3.webp)
->>>>>>> Stashed changes
-=======
-![Copy Token and Secret](/guide/public/integrations/mux/save-token-3.webp)
->>>>>>> Stashed changes
 
 ### Generate Singing Key (Optional)
 
@@ -76,11 +65,11 @@ A popup window will appear. Now, **paste** the **webhook secret** here. You will
 
 ## Connect Mux to FluentPlayer
 
--In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage**. 
--Find the **Mux** row and click **Configure**.
--Enable the **Enable Integration** toggle. 
--**Paste** your **Token ID** and **Token Secret** into the designated fields.
--Click **Test Connection** to verify the credentials. Click **Save Settings** button to save it.
+ - In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage**. 
+ - Find the **Mux** row and click **Configure**.
+ - Enable the **Enable Integration** toggle. 
+ - **Paste** your **Token ID** and **Token Secret** into the designated fields.
+ - Click **Test Connection** to verify the credentials. Click **Save Settings** button to save it.
 
 ## Configure Optional Settings
 
@@ -97,7 +86,7 @@ Navigate to **FluentPlayer → Media** and click **Add Media**. In the Source se
 
 ![Mux Video Source](/guide/public/integrations/mux/mux-or-mux-video-11.webp)
 
-Also, you can direct upload Mux Video from here by clicking the **Upload Video** **(must mux be configure before do it)**.
+Now, you can **search** the **Mux Media assets** here. Also, you can direct upload Mux Video from here by clicking the **Upload Video** **(must mux be configure before do it)**.
 
 ![Upload Video](/guide/public/integrations/mux/mux-video-13.webp)
 
