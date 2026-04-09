@@ -12,9 +12,9 @@ const theme: Theme = {
   enhanceApp({ app }) {
     app.component('VPNavBarTitle', VPNavBarTitle)
     app.component('NotFound', NotFound)
-    app.component('ZoomableImage')
-    app.component('ZoomableImage', ZoomableImage)
-    
+    if (!app.component('ZoomableImage')) {
+      app.component('ZoomableImage', ZoomableImage)
+    }
   },
 }
 
