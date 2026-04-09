@@ -11,8 +11,6 @@ next:
 
 Need help with Fluent Player? This page shows the fastest way to contact support and what details to include so the team can troubleshoot your issue quickly.
 
----
-
 ## Before you contact support
 
 Please check these resources first:
@@ -23,16 +21,12 @@ Please check these resources first:
 
 If the issue still remains, open a support ticket.
 
----
-
 ## How to contact support
 
 1. Visit the [WPManageNinja support portal](https://wpmanageninja.com/support-tickets/).
 2. Sign in with your WPManageNinja account.
 3. Create a new ticket for **Fluent Player**.
 4. Add the required details listed below.
-
----
 
 ## What to include in your ticket
 
@@ -46,13 +40,9 @@ Providing complete information helps the support team reproduce the issue and gi
 - **Screenshots or screen recordings:** Especially useful for UI, overlay, and playback issues.
 - **Environment details:** WordPress version, PHP version, Fluent Player version, active theme, and key plugins.
 
----
-
 ## Response time and support hours
 
 The support team typically replies during standard business hours, Monday through Friday. Response time may vary based on ticket volume and complexity, but every valid request is reviewed.
-
----
 
 ## Tips for faster resolution
 
@@ -60,8 +50,6 @@ The support team typically replies during standard business hours, Monday throug
 - Temporarily disable caching/optimization plugins while testing.
 - If possible, share temporary staging access for deeper investigation.
 - Keep all follow-ups in the same ticket so context is not lost.
-
----
 
 ## Need product updates?
 
