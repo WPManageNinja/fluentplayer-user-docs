@@ -157,6 +157,8 @@ const guideGroups = [
 ]
 
 export default defineConfig({
+  /** Must match deploy URL (e.g. `/repo-name/` on GitHub Pages project sites). See `resolveBase()`. */
+  base,
   title: 'FluentPlayer',
   lang: 'en-US',
   lastUpdated: false,
@@ -192,6 +194,7 @@ export default defineConfig({
       { text: 'Home', link: '/guide/' },
       { text: 'Website', link: 'https://fluentplayer.com/' },
       { text: 'Changelog', link: '/guide/changelog' },
+      { text: 'Support', link: '/guide/support' },
     ],
 
     notFound: {
