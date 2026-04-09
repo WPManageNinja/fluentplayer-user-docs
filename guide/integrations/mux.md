@@ -15,7 +15,7 @@ Mux is available only with **FluentPlayer Pro**. Install and activate the free F
  * **AI Captions:** Automatically generate subtitles in multiple languages using Mux’s AI transcription service.
  * **Mux Data:** Use your Environment Key to monitor playback quality and performance analytics alongside Fluent Player’s native tracking.
 
-## 1. Generate API Credentials in Mux
+## Generate API Credentials in Mux
 
 To connect the platforms, you first need to create access tokens in your Mux account:
 
@@ -36,7 +36,7 @@ Copy your **Token ID** and **Token Secret** for later use.
 
 ![Copy Token and Secret](/guide/public/integrations/mux/save-token-3.webp)
 
-## 2. Generate a Singing Key (Optional)
+## Generate a Singing Key (Optional)
 
 If you plan to use restricted/private content, you need a Signing Key:
 
