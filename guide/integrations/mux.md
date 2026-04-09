@@ -34,9 +34,13 @@ Copy your **Token ID** and **Token Secret** for later use.
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 1. Go to **Fluent Player → Media** and create or edit a media item.
 2. Choose **Mux** as the video source type (or pick an existing Mux asset from the library, depending on the UI flow).
 3. Publish the media and embed it with the **[fluentplayer](/guide/display-embed/shortcode)** shortcode or the **Fluent Player** block.
+=======
+![Copy Token and Secret](/guide/public/integrations/mux/save-token-3.webp)
+>>>>>>> Stashed changes
 =======
 ![Copy Token and Secret](/guide/public/integrations/mux/save-token-3.webp)
 >>>>>>> Stashed changes
