@@ -58,5 +58,6 @@ Many options **override** [global Settings](/guide/settings/) or [presets](/guid
 
 Exact behavior can vary by option; each page notes **global vs override** where it matters.
 
-[!Note]
->If you change a color in the **Block** sidebar, it will ignore your **Global Settings** for that specific video only.
+:::info
+If you change a color in the **Block** sidebar, it will ignore your **Global Settings** for that specific video only.
+:::
