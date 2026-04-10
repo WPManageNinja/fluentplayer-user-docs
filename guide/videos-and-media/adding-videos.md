@@ -7,7 +7,7 @@ description: "Learn how to create, edit, and manage media in Fluent Player, incl
 
 This guide explains how to manage your video content within Fluent Player. You can create, organize, and update your media directly from your WordPress dashboard without touching a single line of code.
 
-## Creating a new media item
+## Creating a New Media Item
 
 Adding a video (Media) is the first step toward getting your content in front of your audience.
 
@@ -36,30 +36,28 @@ You do not need to configure everything at once. You can always come back and ch
 
 ![Publish](/guide/public/videos-and-media/adding-videos/publish-4.webp)
 
-## Editing an existing media item
+## Editing an Existing Media Item
 
-You can update your videos at any time, and the changes will automatically reflect wherever the video is embedded.
+You can update your videos at any time, and the changes will automatically reflect everywhere the video is embedded on your site.
 
 1. Go to **Fluent Player → Media**.
-2. Find the media in the list and click on it.
-3. The media editor opens. Here you can change:
-   - The **title**.
-   - The **video source** (swap to a different video or update the URL).
-   - The **poster image**.
-   - The **preset** (change how the player looks).
+2. Find the media in the list and click on its title to open the editor.
+3. Modify any settings, including:
+   - The **Video Source** (to swap URLs or files).
+   - The **Poster Image** or **Player Preset**.
    - Player-specific settings like [controls](/guide/customize/creating-custom-presets), [behaviors](/guide/customize/behaviors), [overlays](/guide/engagement/email-capture), and more.
+   - Interactive Layers such as email capture, CTAs, or the action bar.
 4. Click **Update** (or **Publish**) to save your changes.
 
-## Understanding the media editor
+## Understanding the Media Editor
 
-When you open a media item, you will see the Fluent Player block editor. This is where all the settings live:
+The media editor is organized into logical sections to help you find settings quickly:
 
-- **Source section** — The video URL or file (including [Mux or Bunny](/guide/videos-and-media/video-sources) when using Pro).
-- **Poster** — The thumbnail image.
-- **Preset** — The player template (controls, skin, behaviors).
-- **Overlays** — Email capture, CTA, action bar (if configured).
-- **Advanced** — Subtitles, language, custom CSS, and more.
-- **Timed content** (Pro) — Inner blocks below the player (text, lists, buttons) saved with the media; see [Embed with Block](/guide/display-embed/block#timed-content-pro).
+ * **Source Section:** Manage the video URL or professional hosting connections like [Mux or Bunny](/guide/videos-and-media/video-sources).
+ * **Poster & Preset:** Control the thumbnail and the visual template of the player.
+ * **Overlays:** Configure engagement tools like email capture and CTA buttons.
+ * **[Timed Content (Pro)](/guide/display-embed/block#timed-content-pro):** Add text, lists, or buttons that appear below the player at specific timestamps.
+ * **Advanced Settings:** Manage subtitles, multi-language tracks, and custom CSS.
 
 On the **media list** screen, use the **status filters** to narrow the list:
 
@@ -72,9 +70,7 @@ On the **media list** screen, use the **status filters** to narrow the list:
 
 Search still works across titles and IDs as supported by your version.
 
-Each section is explained in its own doc page — use the sidebar to navigate.
-
-## Finding the media ID
+## Finding the Media ID
 
 Every media item has a unique **ID** (a number). You need this ID when embedding the video with a shortcode like `[fluentplayer id="42"]` (or `[fluentmedia id="42"]`).
 
