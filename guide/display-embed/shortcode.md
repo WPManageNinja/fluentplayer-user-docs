@@ -28,8 +28,6 @@ Every video you create is assigned a unique ID and a ready-to-use shortcode.
 
 ![Find your Shortcode](/guide/public/display-embed/shortcode/find-your-shortcode.webp)
 
-![Medial ID]()
-
 ## Shortcode attributes
 
 | Attribute | Required | Description |
