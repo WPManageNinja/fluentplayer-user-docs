@@ -110,7 +110,7 @@ Use the right-hand sidebar under the **Lesson** tab to manage specific lesson de
 ![Documents & Files Manage](/guide/public/integrations/fluent-community/documents-and-files-3.webp)
 
 >[!Note]
->If you use the Media Embed sidebar option, it will override or work alongside the main player block. Ensure your Oembed link is correct to prevent playback errors.
+>To save server storage, it is highly recommended to restrict video uploads to **Admins** and **Moderators** only via the **Player Settings** in the community configuration panel.
 
-The FluentCommunity integration turns a simple video into a comprehensive learning experience.
+By combining advanced playback controls with direct community uploads and lesson-specific features like document attachments, FluentPlayer provides a seamless, distraction-free environment for both social interaction and professional learning.
 
