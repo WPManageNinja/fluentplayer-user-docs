@@ -1,6 +1,6 @@
 # FluentCommunity (Pro)
 
-**FluentCommunity** allows you to build powerful learning management systems and community portals. By integrating with FluentPlayer, you can deliver high-quality video lessons while providing students with additional resources, interactive comments, and personalized experiences.
+The **FluentPlayer** integration allows you to transform your FluentCommunity portal into a fully branded, professional, and video-enabled experience. Instead of relying on the default look of third-party embeds, Fluent Player ensures all video content from community posts to course lessons is consistent and perfectly matches your community’s style.
 
 #### What you need
 
@@ -10,16 +10,69 @@
 
 ## Core Integration Features
 
-The integration provides a dedicated suite of tools within the lesson editor to enhance the student experience:
-
- * **Media Embed Options:** Choose between **Oembed** (pasting a simple URL from YouTube or Vimeo) or **Custom HTML** (pasting iframe code) directly within the lesson sidebar.
- * **Lesson Engagement:** **Enable** or **disable** comments specifically for video lessons to foster student discussion.
- * **Lesson Duration:** Manually set the expected minutes and seconds for a lesson to give students a clear timeline.
- * **Public Previews:** **Toggle** the **Free Preview Lesson** option to allow non-enrolled users to view the content before joining the course.
- * **Smartcodes:** Use personalized tags like <code v-pre>{{user.display_name}}</code> or <code v-pre>{{user.user_email}}</code> within your lesson content to greet members individually.
- * **Resource Management:** **Attach downloadable files** such as PDFs or worksheets directly to the video via the **Documents & Files** section.
+ * **Member Video Uploads:** Allow members to upload videos directly to community Spaces in formats like MP4, M3U8, and MOV.
+ * **Unified Branding:** Force external links (YouTube, Vimeo, HLS) to render with your custom Fluent Player design and brand colors.
+ * **Lesson Resources:** Attach downloadable files (PDFs, worksheets) directly to your video lessons.
+ * **Smartcodes:** Personalize lesson content using tags like `##user.display_name##` to greet students individually.
 
 ## Step By Step Configuration
+
+### 1. Enabling the Integration
+
+If you do not have Fluent Player installed, you can do so directly from your portal:
+
+ - Go to **FluentCommunity > Settings > Features & Addons**.
+ - Find the FluentPlayer module under **Recommended Plugins** and click **Install FluentPlayer**.
+
+![Install FluentPlayer](/guide/public/integrations/fluent-community/install-fluentplayer-1.webp)
+
+ - Once installed, click the **Player Settings** button on the FluentPlayer module to open the configuration panel.
+ - Toggle **Enable FluentPlayer** to **ON**.
+
+
+
+### 2. Customizing Appearance and Behaviors
+
+In the Player Settings slide-in panel, you can fine-tune how videos look and act:
+
+ * **Select Player Skin:** Choose from layouts like **Modern, Classic, Simple, Floating, or Minimal**.
+ * **Set Brand Color:** Define a primary hex color for the progress bar and active controls.
+ * **Toggle Controls:** Enable or disable specific buttons like **Volume**, **Fullscreen**, **Picture** in Picture, or the **Captions** Toggle.
+ * **Set [Behaviors](/guide/customize/behaviors):** **Configure Muted Autoplay** for feed environments or **Save Play Position** so members can resume videos exactly where they left off.
+
+### 3. Managing Video Uploads & Embeds
+
+Control how your community members interact with video content:
+
+ * **Enable Video Uploads:** **Turn** this toggle **ON** to allow direct file uploads in community posts.
+ * **Permissions:** Restrict who can upload videos choose from Admins, Admins and Moderators, or Everyone.
+ * **Play Embedded Videos With Fluent Player:** Turn this **ON** to force external links (like YouTube or Vimeo) to use your custom branded player.
+
+![Customize FluentPlayer](/guide/public/integrations/fluent-community/customize-fluentplayer-2.webp)
+
+## How to Add Videos to Community Posts or Spaces
+
+Once permissions are configured, members can easily share video content within the community feed:
+
+ - Navigate to the community **Feed** or a specific **Space**.
+ - Click the "What's happening?" box to create a new post.
+ - Click the **Video Icon** in the post toolbar.
+
+![Create Post](/guide/public/integrations/fluent-community/whats-happening-3.webp)
+
+ - Choose your source in the Attach Video popup:
+
+   * **Oembed:** **Paste** a simple URL (e.g., from YouTube or Vimeo).
+   * **HTML Code:** Paste an iframe or custom embed code.
+   * **Upload Video:** Drag and drop or select a video file from your device.
+ - Click **Embed** or **Upload**.
+ - Select your target **Space** and click **Post**.
+
+![Post](/guide/public/integrations/fluent-community/post-4.webp)
+
+## How to Add Video Lessons to Courses
+
+For course creators, FluentPlayer integrates directly into the lesson editor using the Gutenberg block system:
 
 ### 1. Adding the Player Block
 
@@ -29,17 +82,18 @@ Open your lesson editor and click the **(+) icon** to search for the **FluentPla
 
 You can select an existing video from your **library** or add a new one from sources like **Bunny Stream, Mux, or YouTube**.
 
-### 2. Managing Lesson Settings (Sidebar)
+### 2. Configuring Lesson Settings (Sidebar)
 
-On the right-hand sidebar under the **Lesson** tab, configure the following:
+Use the right-hand sidebar under the **Lesson** tab to manage specific lesson details:
 
- * **Video Control:** Ensure Enable Video Embed is checked to display your player.
- * **Media Embed:** Switch between **Oembed** and **Custom HTML** to paste external links or iframe codes.
- * **Duration:** Input the total length of the video lesson.
+ * **Video Visibility:** Ensure **Enable Video Embed** is checked.
+ * **Media Embed:** You can also use the sidebar to paste **Oembed** links or **Custom HTML** if you prefer not to use the block editor.
+ * **Lesson Duration:** Input the total length of the video so students can track their progress.
+ * **Comments:** **Toggle** comments ON to allow students to discuss the lesson content.
 
 ![Mange Lesson setting feature](/guide/public/integrations/fluent-community/integration-feature-2.webp)
 
-### 3. Attaching Student Resources
+### 3. Attaching Documents 
 
  - Scroll to the **Documents & Files** section in the sidebar.
  - Click **Manage Documents & Files**.
