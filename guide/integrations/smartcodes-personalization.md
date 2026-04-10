@@ -1,28 +1,73 @@
+---
+title: "Smartcodes and Personalization (FluentCRM)"
+description: "Use Fluent Player Pro Smartcodes with FluentCRM to personalize titles, overlays, email capture, and timed content with merge tags like contact first name."
+---
+
 # Smartcodes and Personalization (FluentCRM)
 
-When **FluentCRM** is installed, Fluent Player can resolve **smartcodes** (merge tags) inside player-related text — for example in overlays, titles, or other fields that support personalization.
+With **Fluent Player Pro**, you can create a truly personalized viewing experience by using **Smartcodes**. When integrated with **FluentCRM**, the player can dynamically replace placeholders with real user data—like a viewer's name or email—directly inside the video player’s text elements.
 
-## What are smartcodes?
+### What are Smartcodes?
 
-Smartcodes look like double-brace placeholders — for example the FluentCRM **contact first name** tag written as <code v-pre>{{contact.first_name}}</code> — or similar tags for other fields. They are placeholders that FluentCRM replaces with data from the **current contact** when the page is rendered for a logged-in or identified visitor.
+Smartcodes are dynamic placeholders (merge tags) that look like double braces, such as <code v-pre>{{contact.first_name}}</code>. When a logged-in user or a known contact views your video, Fluent Player automatically replaces these tags with the specific information stored in their **FluentCRM** profile.
 
-## How Fluent Player uses them
+---
 
-The plugin parses smartcodes when preparing media for the front end. That means you can personalize copy that appears in or around the player — for example:
+### Where to use Smartcodes
 
-- A welcome line in an overlay: greet the viewer by first name using the same tag syntax in your overlay text.
-- Dynamic titles or descriptions where the UI allows custom text.
+You can insert Smartcodes into several areas of the player to engage your audience:
 
-Smartcodes only work when FluentCRM is available and the viewer is associated with a contact record. Anonymous visitors typically see the literal tag or empty replacement, depending on FluentCRM behavior and your template.
+* **Video Titles:** Create a personalized welcome by adding a name to the title overlay.
+* **Interactive Layers:** Use them inside CTA buttons or Text Overlays (e.g., *"Hey <code v-pre>{{contact.first_name}}</code>, check this out!"*).
+* **Email Capture:** Pre-fill or personalize the message on your lead generation forms.
+* **Timed Content:** Display personalized instructions or notes in the area below the player.
 
-## Configuration
+---
 
-1. Connect FluentCRM under **Fluent Player → Settings → Integrations** if you have not already. See [Email Providers](/guide/engagement/email-providers).
-2. In the media or block editor, enter smartcodes in fields that support custom text (check the field help in your Fluent Player version).
-3. Test while logged in as a user linked to a FluentCRM contact.
+## How to Configure Personalization
 
-## Next steps
+### 1. Connect FluentCRM
 
-- [Email Capture Overlay](/guide/engagement/email-capture) — Collect emails and sync with FluentCRM.
-- [Email Providers](/guide/engagement/email-providers) — FluentCRM, Mailchimp, Webhook.
-- [Integrations Overview](/guide/integrations/) — Other integrations.
+* Go to **Fluent Player Pro** → **Settings** → **Integrations**.
+* Locate the **FluentCRM** card and ensure it is **Enabled**.
+
+>[!Note]
+>Since FluentCRM is WordPress-native, no API keys are required.
+
+![Connect FluentCRM](/guide/public/integrations/smartcodes-personalization/enable-fluentcrm-1.webp)
+
+### 2. Insert Smartcodes in the Editor
+
+* Open your video in the **Media** editor.
+* In the **Block** tab, look for any text field (like **Title Overlay** or **Overlay Text/Button**).
+* Click the **three-dot icon** next to the text field to open the Smartcode selector.
+* Choose the data you want to display (e.g., First Name, Email, Profile Link).
+
+![Connect FluentCRM](/guide/public/integrations/smartcodes-personalization/overlay-text-2.webp)
+
+### 3. Test the Experience
+
+* Log in to your site as a test user that exists in your FluentCRM contact list.
+* View the page containing your video. The placeholders should now show your actual contact details.
+
+---
+
+## Available Smartcode Examples
+
+| Data Type | Smartcode |
+| :--- | :--- |
+| **First Name** | <code v-pre>{{contact.first_name}}</code> |
+| **Email Address** | <code v-pre>{{contact.user_email}}</code> |
+| **Full Name** | <code v-pre>{{contact.full_name}}</code> |
+| **Profile Link** | <code v-pre>{{user.profile_link}}</code> |
+
+---
+
+::: warning Important
+Smartcodes only work for **identified** visitors (logged-in users or those who have previously submitted a form). Anonymous visitors will typically see the default text or an empty space.
+:::
+
+
+Smartcodes take your video marketing to the next level by making every viewer feel seen. Whether you are greeting a student in a course or offering a personalized deal to a lead, this integration helps build a stronger connection with your audience.
+
+
