@@ -1,6 +1,6 @@
 # Subtitles
 
-Subtitles (also called captions) make your videos accessible to more viewers — people who are deaf or hard of hearing, viewers watching in a noisy environment, or anyone who speaks a different language. Fluent Player makes it easy to add subtitle tracks to any media item.
+Subtitles (also called captions) make your videos accessible to more viewers — people who are watching in a noisy environment, or anyone who speaks a different language. Fluent Player makes it easy to add subtitle tracks to any media item.
 
 ## Why use subtitles?
 
