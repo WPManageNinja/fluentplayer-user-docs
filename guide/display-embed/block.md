@@ -57,7 +57,7 @@ When the block is selected, a **Block** tab will appear in the right-hand sideba
 
 ## Playlist Block
 
-Alongside the single-video block, Fluent Player also provides a **Fluent Player Playlist** Gutenberg block. This lets you embed an entire playlist — a grouped collection of videos — directly into any post or page.
+Alongside the Fluent Player block, Fluent Player also provides a **Fluent Player Playlist** Gutenberg block. This lets you embed an entire playlist — a grouped collection of videos — directly into any post or page.
 
 To use it:
 
