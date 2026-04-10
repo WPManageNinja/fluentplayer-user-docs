@@ -39,8 +39,8 @@ You can insert Smartcodes into several areas of the player to engage your audien
 ### 2. Insert Smartcodes in the Editor
 
 * Open your video in the **Media** editor.
-* In the **Block** tab, look for any text field (like **Title Overlay** or **Overlay Text/Button**).
-* Click the **three-dot icon** next to the text field to open the Smartcode selector.
+* In the **Block** tab, look for any text field like **Title Overlay** or **[Overlay Text/Button](/guide/block-editor/overlays)**.
+* Click the **Tag icon (three-dot)** next to the text field to open the Smartcode selector.
 * Choose the data you want to display (e.g., First Name, Email, Profile Link).
 
 ![Connect FluentCRM](/guide/public/integrations/smartcodes-personalization/overlay-text-2.webp)

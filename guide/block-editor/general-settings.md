@@ -16,7 +16,7 @@ To access these settings, go to **Fluent Player → Media**, and either click **
 ### 1. Title and Title Overlay
 
  * **Title:** Enter the internal name for your video. This is used for organization within your **Media List**.
- * **Title Overlay:** When enabled, the video title will appear in the top-left corner of the player when the video is paused or hovered over. You can use the "tag" icon to insert dynamic **[Smartcodes](//guide/integrations/smartcodes-personalization)** for personalized titles.
+ * **Title Overlay:** When enabled, the video title will appear in the top-left corner of the player when the video is paused or hovered over. You can use the "tag" icon to insert dynamic **[Smartcodes](/guide/integrations/smartcodes-personalization)** for personalized titles.
 
 ### 2. Poster Image
 
