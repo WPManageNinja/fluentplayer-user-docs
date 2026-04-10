@@ -5,26 +5,30 @@ description: "Understand how Fluent Player media items work: titles, IDs, publis
 
 # Videos & Media Overview
 
-In Fluent Player, every video you add is called a **media** item. Think of it like a blog post, but instead of text content, it holds a video along with all its settings — the source URL, poster image, subtitles, player controls, and more.
+In Fluent Player, every video you add is called a **Media** item. Think of it like a blog post, but instead of text content, it holds a video along with all its settings the source URL, poster image, subtitles, player controls, and more.
 
 This section covers everything about creating and managing your video content.
 
-## What is a "media" in Fluent Player?
+## What is a "Media" in Fluent Player?
 
-A media is a single video entry in your Fluent Player library. Behind the scenes, WordPress stores it as a custom post type, but you do not need to worry about that. All you need to know is:
+A Media item is the core building block of the plugin. It acts as a dedicated container for your video content and its associated data. Here is what you need to know:
 
-- Each media has a **title**, a **video source**, and optional extras like a poster image and subtitles.
-- Each media has an **ID** (a number like `42`) that you use when embedding it.
-- Media items can be **published** (visible on the front end) or saved as **drafts** (not visible yet).
+ * **Custom Settings:** Each **Media** item stores its own video source, poster image, and player behavior settings.
+ * **Unique Identity (ID):** Every video is assigned a unique **Media ID** (e.g., #105). You will use this ID to embed your video into pages or posts using shortcodes.
+ * **Status Control:** Media can be set to **Published** (live), **Draft** (in-progress), or **Private**, giving you full control over visibility.
 
-## Where to manage your media
+## Managing Your Video Library
 
-Go to **Fluent Player → Media** in your WordPress admin. This is your video library — you can:
+You can manage all your content from one central location. To access your library, navigate to **Fluent Player > Media** in your WordPress dashboard.
 
-- See all your media items in a list.
-- Create new media.
-- Edit existing media (change the video source, update settings, etc.).
-- Delete media you no longer need.
+From this screen, you can:
+
+ * **Add New Media:** Create a fresh video entry using the "Add Media" button.
+ * **Edit Content:** Update video sources, change presets, or add chapters to existing videos.
+ * **Filter & Search:** Quickly find specific videos using the status filters (All, Public, Draft) or the search bar.
+ * **Delete Media:** Remove content you no longer need.
+
+![Video Library](/guide/public/videos-and-media/index/video-media-1.webp)
 
 ## Topics in this section
 
@@ -36,6 +40,3 @@ Go to **Fluent Player → Media** in your WordPress admin. This is your video li
 | [Multiple Languages](/guide/videos-and-media/multiple-languages) | How to offer the same video in different languages |
 | [Public vs Private Visibility](/guide/videos-and-media/public-vs-private) | Who can see your video on the dedicated player URL |
 
-## Next steps
-
-Start with [Adding and Editing Videos](/guide/videos-and-media/adding-videos) to create your first media item, or jump to any topic above that interests you.
