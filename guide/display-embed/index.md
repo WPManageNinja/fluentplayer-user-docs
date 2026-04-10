@@ -48,14 +48,7 @@ When you use a shortcode or block, Fluent Player handles the technical work behi
 2. **Fetching Data:** The plugin pulls the specific settings for that ID, such as the video source, player preset, and any overlays.
 3. **Rendering:** The plugin generates the necessary HTML and inserts the player into your page for the viewer. The viewer sees a fully working player.
 
-![Important] 
->Your video source URL is **not** hardcoded into the shortcode. Because the shortcode uses the **Media ID**, you can change the video file or source in the Fluent Player dashboard, and it will automatically update everywhere the video is embedded.
-
-## Topics in this section
-
-- [Embed with Shortcode](/guide/display-embed/shortcode)
-- [Embed with Block](/guide/display-embed/block)
-- [Dedicated Player URL](/guide/display-embed/dedicated-player-url)
-- [Timestamp Links](/guide/display-embed/timestamp-links)
-
+:::info
+Your video source URL is **not** hardcoded into the shortcode. Because the shortcode uses the **Media ID**, you can change the video file or source in the Fluent Player dashboard, and it will automatically update everywhere the video is embedded.
+:::
 

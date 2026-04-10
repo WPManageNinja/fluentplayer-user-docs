@@ -3,7 +3,7 @@ title: "Embed with Block"
 description: "Add the Fluent Player Gutenberg block, pick video sources (YouTube, Mux, Bunny, etc.), and use the dedicated media editor vs posts—links to the full block sidebar docs."
 ---
 
-# Embed with Block
+# Embed with Gutenberg Block
 
 The Gutenberg Block is the easiest way to add videos if you prefer a visual, drag-and-drop experience.
 If you use the WordPress block editor (Gutenberg), you can add Fluent Player using the **FluentPlayer Media** block. The inserter lists it as **Fluent Player** / **FluentPlayer Media** (registered name: `fluent-player/media`).
@@ -54,6 +54,22 @@ In both cases, configuration uses the same **right sidebar** (**Media** and **Bl
 When the block is selected, a **Block** tab will appear in the right-hand sidebar. This is where you can fine-tune every part of your player. For each panel (Branding, General settings, Preset, Chapters, overlays, layers, timed content, multi-language, subtitles, timestamp links, Advanced) lives here:
 
 **[Fluent Player Block & Media Editor](/guide/block-editor/)**
+
+## Playlist Block
+
+Alongside the Fluent Player block, Fluent Player also provides a **Fluent Player Playlist** Gutenberg block. This lets you embed an entire playlist — a grouped collection of videos — directly into any post or page.
+
+To use it:
+
+1. Click the **(+)** button in the block editor and search for "**Fluent Player Playlist**" or "**playlist**".
+2. Select the block and pick your playlist from the dropdown (or enter the playlist ID).
+3. Publish or update — the playlist renders on the front end with whichever layout (Standard, Grid, etc.) you configured.
+
+::: info Pro feature
+The Playlist block requires **Fluent Player Pro**.
+:::
+
+For full details on creating playlists, choosing layouts, and embedding options, see the **[Playlists documentation](/guide/playlists/)**.
 
 ## Block vs shortcode
 
