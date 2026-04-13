@@ -30,19 +30,6 @@ To start using Bunny Stream, you first need to link your account to Fluent Playe
 
  ![Integrate BunnyCDN](/guide/public/integrations/bunnycdn-stream/integration-03.webp)
 
-
-### Configure 
-
-
-1. Go to **Fluent Player → Settings → Storage** in your WordPress admin.
-2. Open **BunnyCDN Stream** and configure it there.
-3. Enter your **API key**.
-4. If prompted, enter your **library** details (pull zone or library ID).
-5. Click **Test connection** to make sure Fluent Player can reach Bunny.
-6. **Save** the settings.
-
-Once connected, Fluent Player can browse your Bunny Stream libraries and videos.
-
 ## Using Bunny Stream as a video source
 
 Once connected, you can easily select your Bunny videos when creating new media.
@@ -67,7 +54,7 @@ Fluent Player Pro allows you to handle common video management tasks without lea
  * **Update Metadata:** Edit video titles and descriptions from the WordPress UI.
  * **Delete Assets:** Remove videos from your Bunny account when they are no longer needed.
 
-**Related:** [Video Sources](/guide/videos-and-media/video-sources) — Choosing Bunny as a source.
+**Related:** [Video Sources](/guide/videos-and-media/video-sources) - Choosing Bunny as a source.
 
 ## Bunny Stream vs Bunny Storage
 
