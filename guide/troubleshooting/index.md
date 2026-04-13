@@ -98,10 +98,4 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 - **Mux:** Double-check your Access Token ID and Secret Key from the Mux dashboard. Tokens are only visible once when created — if you've lost the secret, create a new token. See [Mux integration](/guide/integrations/mux).
 - **Bunny Stream:** Confirm your API key and Library ID are correct. The Library ID is found in the Bunny Stream dashboard under your video library settings. See [Bunny Stream integration](/guide/integrations/bunnycdn-stream).
 
----
 
-## Next steps
-
-- [Frequently Asked Questions](/guide/troubleshooting/faq) — Quick answers to common questions.
-- [Player Customization](/guide/customize/) — Full list of customization topics and where they live.
-- [Documentation home](/guide/) — Browse all guides from installation through integrations.

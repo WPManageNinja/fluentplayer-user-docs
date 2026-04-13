@@ -48,8 +48,3 @@ You may be able to:
 
 This lets you manage your hosted videos without leaving WordPress.
 
-## Next steps
-
-- [BunnyCDN Stream (Pro)](/guide/integrations/bunnycdn-stream) — The full video platform with encoding.
-- [Video Sources](/guide/videos-and-media/video-sources) — All source types.
-- [Integrations Overview](/guide/integrations/) — All integrations.

@@ -74,8 +74,4 @@ If a button is not visible in your build, check that Stream credentials are save
 
 Most users should use **Bunny Stream**. Use [Bunny Storage](/guide/integrations/bunnycdn-storage) only if you already have pre-encoded files and want simple file hosting.
 
-## Next steps
 
-- [BunnyCDN Storage (Pro)](/guide/integrations/bunnycdn-storage) — The storage alternative.
-- [Video Sources](/guide/videos-and-media/video-sources) — All source types at a glance.
-- [Integrations Overview](/guide/integrations/) — All available integrations.
