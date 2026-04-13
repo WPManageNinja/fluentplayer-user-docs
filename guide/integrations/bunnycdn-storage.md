@@ -1,6 +1,7 @@
 # BunnyCDN Storage (Pro)
 
-**BunnyCDN Storage** (also called Bunny Storage) lets you host video files in Bunny's storage zones and serve them through their global CDN. Unlike Bunny Stream, it does not encode your videos — you upload ready-to-play files (like MP4s) and serve them directly.
+**BunnyCDN Storage** (Edge Storage) allows you to host your video files on Bunny.net’s global infrastructure instead of your own WordPress server. This is an ideal solution for self-hosted videos, as it offloads the storage and bandwidth burden, ensuring your site remains fast while providing a high-performance playback experience for your viewers.
+
 
 ::: info Pro feature
 BunnyCDN Storage integration requires **Fluent Player Pro**.
@@ -14,42 +15,92 @@ BunnyCDN Storage integration requires **Fluent Player Pro**.
 
 For most users, [Bunny Stream](/guide/integrations/bunnycdn-stream) is the better choice because it handles encoding automatically. Use Bunny Storage when you have specific files you want to host as-is.
 
-## What you need
+## How to Connect BunnyCDN Storage
 
-- A **Bunny CDN account**. Sign up at [bunny.net](https://bunny.net).
-- A **storage zone** created in your Bunny dashboard.
-- Your storage zone **name** and **API key** (or access credentials).
+To integrate your Bunny storage zones with FluentPlayer, follow these steps:
 
-## How to connect
+### 1. Get Credentials from BunnyCDN
 
-1. Go to **Fluent Player → Settings → Storage** in your WordPress admin.
-2. Open **BunnyCDN Storage** and configure it there.
-3. Enter your **storage zone name** and **API key**.
-4. Click **Test connection** to verify.
-5. **Save** the settings.
+First, log into your [Bunny account](https://dash.bunny.net/auth/login?pk_buttonlocation=menu), then go to **Storage** from the left sidebar and click on **Add Storage Zone**.
 
-## Using Bunny Storage as a video source
+![Storage](/guide/public/integrations/bunnycdn-storage/storage-1.webp)
 
-1. Go to **Fluent Player → Media** and create or edit a media item.
-2. In the source section, choose **BunnyCDN Storage** as the source type.
-3. Browse or select the **video file** in your storage zone.
-4. Save the media.
+A pop-up will appear to set up the **Storage Zone** settings. Now choose your preferred **Storage Tier** (Standard). Then, select the **Main Storage Region** based on your users’ location. Finally, click on the **Add Storage Zone** button.
 
-Playback does **not** always use a public direct file URL in the browser. Fluent Player can route video through a **stream proxy** endpoint on your WordPress site (`bunny/storage/stream`-style REST path). That way, **private** or **non-public** storage files can be played without exposing the raw Bunny URL to visitors. You still configure credentials and permissions in Bunny; the plugin handles secure delivery through WordPress when this mode applies.
+>[!Note]
+>Keep track of the Main Storage Region you select, as you’ll need this information later when configuring BunnyCDN with FluentPlayer.
 
-## Managing files from WordPress
+![Add Storage Zone](/guide/public/integrations/bunnycdn-storage/add-storage-zone-2.webp)
+
+#### Connect Pull Zone
+
+Go to the **Storage Zone** you just created, then select **Connected Pull Zones** from the left sidebar and click on the **+ Connected Pull Zone** button.
+
+![Connected Pull Zone](/guide/public/integrations/bunnycdn-storage/connect-pull-zone-3.webp)
+
+A **Pull Zone** setup popup will appear. Start by entering a **name** for your Pull Zone. Then, set the **Origin Type** to **Storage Zone** and select your created **Storage Zone** from the dropdown.
+
+Next, choose a **Tier** based on your needs. Once everything is set, click **Add Pull Zone** to save your configuration.
+
+![Add Pull Zone](/guide/public/integrations/bunnycdn-storage/add-pull-zone-4.webp)
+
+You will now see your **Pull Zone Hostname**. **Enable** the **Linked hostnames** and **copy** this hostname and keep it for later use. This hostname is your **BunnyCDN public URL**, which you will need to enter in the FluentPlayer Bunny configuration settings.
+
+![Hostname](/guide/public/integrations/bunnycdn-storage/hostnames-5.webp)
+
+#### Authentication Key
+
+Go to the **Token authebntication** under the **Security**. Now, copy the **Url token authentication key** for FluentPlayer settings storage use.
+
+![Authentication Key](/guide/public/integrations/bunnycdn-storage/token-authentication-6.webp)
+
+#### API & Credentials
+
+Go to the Storage Zone you created and open the **FTP & API Access** tab from the left sidebar. Here, you will find your **Username** and **Password**. **Copy** both for later use.
+
+>[!Note]
+>The Username is your BunnyCDN Storage Zone name and the Password is your BunnyCDN API key.
+
+![Username and Password](/guide/public/integrations/bunnycdn-storage/ftp-api-access-7.webp)
+
+
+### 2. Configure FluentPlayer Settings
+
+In your WordPress dashboard, navigate to **FluentPlayer → Settings → Storage**.
+
+Under the BunnyCDN Storage section:
+
+ - Toggle **Enable Integration** to turn it on.
+ - Enter your **Storage User Name** (your BunnyCDN storage username).
+ - Enter the **Storage Hostname** (e.g., storage.bunnycdn.com).
+ - Enter your **Storage Password / API Key**.
+ - Provide your **CDN Hostname (Pull Zone)** for video delivery.
+ - (Optional) Enter your **CDN Security Key** if **token authentication** is enabled.
+
+Finally, click **Save Settings** to connect FluentPlayer with your BunnyCDN storage.
+
+![Configure FluentPlayer Settings](/guide/public/integrations/bunnycdn-storage/Bunny-cdn-storage-8.webp)
+
+### 3. Adding a Video from Bunny Storage
+
+ - Navigate to **FluentPlayer > Media** and click **Add Media**.
+ - Choose **BunnyCDN Storage** as your video source.
+
+![Adding Video](/guide/public/integrations/bunnycdn-storage/bunnycdn-storage-9.webp)
+
+#### Managing files from WordPress
 
 You may be able to:
 
-- **List** all video files in your storage zone.
-- **Upload** new video files from WordPress.
-- **Create folders** — Add directories inside the storage zone from WordPress (REST: create directory) to keep large libraries organized.
-- **Delete** files from the storage zone.
+ - **List:** all video files in your storage zone.
+ - **Upload:** new video files from WordPress.
+ - **Create folders:** Add directories inside the storage zone from WordPress (REST: create directory) to keep large libraries organized.
+ - **Delete:** files from the storage zone.
 
-This lets you manage your hosted videos without leaving WordPress.
+ This lets you manage your hosted videos without leaving WordPress.
 
-## Next steps
+![Adding Video with Fluentplayer](/guide/public/integrations/bunnycdn-storage/add-video-bunnycdn-10.webp)
 
-- [BunnyCDN Stream (Pro)](/guide/integrations/bunnycdn-stream) — The full video platform with encoding.
-- [Video Sources](/guide/videos-and-media/video-sources) — All source types.
-- [Integrations Overview](/guide/integrations/) — All integrations.
+
+
+
