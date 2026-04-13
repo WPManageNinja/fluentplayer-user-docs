@@ -1,30 +1,38 @@
 # BunnyCDN Stream (Pro)
 
-**BunnyCDN Stream** (also called Bunny Stream) is a video streaming platform from Bunny CDN. It handles video encoding, storage, and delivery through a global CDN — so your videos load fast for viewers anywhere in the world.
+**BunnyCDN Stream** (also called Bunny Stream) is a high-performance video streaming platform that handles video encoding, storage, and global delivery. 
 
-With Fluent Player Pro, you can connect your Bunny Stream account and use it as a video source directly from the WordPress admin.
+With FluentPlayer Pro, you can connect your Bunny account to manage and stream your library directly from your WordPress admin, ensuring your videos load fast for viewers anywhere in the world.
 
 ::: info Pro feature
 BunnyCDN Stream integration requires **Fluent Player Pro**.
 :::
 
-## Why use Bunny Stream?
+## Get the API Key
 
-| Benefit | Description |
-|---------|-------------|
-| **Fast loading** | Videos are delivered from servers closest to the viewer |
-| **Automatic encoding** | Bunny encodes your videos into multiple qualities |
-| **No server load** | Your WordPress server does not handle video traffic |
-| **Scalable** | Handles any amount of traffic without slowing down |
-| **Cost-effective** | Pay-as-you-go pricing, often cheaper than traditional CDNs |
+First, login to your [BunnyCDN Account](https://dash.bunny.net/auth/login?pk_buttonlocation=menu). Then, go **Account Settings > API Key**. Now, **copy** this **API key** for FluentPlayer configure.
 
-## What you need
+![API Key](/guide/public/integrations/bunnycdn-stream/bunny-api-key-1.webp)
 
-- A **Bunny CDN account** with Stream enabled. Sign up at [bunny.net](https://bunny.net).
-- Your **API key** from Bunny (found in your Bunny dashboard under Account → API Keys).
-- A **Stream library** created in your Bunny dashboard with at least one uploaded video.
+## How to Connect BunnyCDN Stream
 
-## How to connect
+To start using Bunny Stream, you first need to link your account to Fluent Player using your API key.
+
+ - In your WordPress admin, navigate to **Fluent Player Pro → Settings → Storage**.
+ - Locate the **BunnyCDN Stream** card and click **Configure**.
+
+ ![Configure](/guide/public/integrations/bunnycdn-stream/configure-2.webp)
+
+ - Toggle the **Enable Integration** switch to the ON position.
+ - Enter your **API Key** (found in your Bunny dashboard under Account → API Keys).
+ - Click the **Test Connection** button to verify the integration.
+ - Click **Save Settings**.
+
+ ![Integrate BunnyCDN](/guide/public/integrations/bunnycdn-stream/integration-03.webp)
+
+
+### Configure 
+
 
 1. Go to **Fluent Player → Settings → Storage** in your WordPress admin.
 2. Open **BunnyCDN Stream** and configure it there.
@@ -37,29 +45,27 @@ Once connected, Fluent Player can browse your Bunny Stream libraries and videos.
 
 ## Using Bunny Stream as a video source
 
-After connecting, here is how to use a Bunny Stream video in Fluent Player:
+Once connected, you can easily select your Bunny videos when creating new media.
 
 1. Go to **Fluent Player → Media** and create or edit a media item.
-2. In the source section, choose **BunnyCDN** or **Bunny Stream** as the source type.
+2. In the source section, choose **Bunny Stream** as the source type.
 3. Select the **library** (if you have multiple).
 4. Select the **video** you want to use.
 5. Save the media.
 
 The player will now stream the video from Bunny's CDN when viewers watch it on your site.
 
+![Bunny Stream as a video source](/guide/public/integrations/bunnycdn-stream/bunny-stream-04.webp)
+
 ## Managing videos from WordPress
 
-From **Fluent Player Pro** you can manage much of your Bunny Stream library without opening the Bunny dashboard for every task:
 
-| Action | What to do |
-|--------|------------|
-| **Browse** | Open the media source picker and choose your Stream library and video. |
-| **Upload** | Use the upload flow in the plugin (REST: upload endpoint) to send a file from WordPress to Bunny Stream; wait for processing to finish before embedding. |
-| **Update metadata** | Change title, description, or other supported fields from the WordPress UI where exposed (REST: update video by ID). |
-| **Delete** | Remove a video from Bunny Stream when the UI offers delete — confirm you no longer need the asset anywhere on your site. |
-| **Collections** | Create and manage **collections** (folders/groups in Bunny) via the plugin’s collection endpoints — group videos for easier browsing when you have many assets. |
+Fluent Player Pro allows you to handle common video management tasks without leaving your site:
 
-If a button is not visible in your build, check that Stream credentials are saved and that your Pro version includes the management screens.
+ * **Browse Libraries:** View all your Bunny Stream libraries and videos directly in the media picker.
+ * **Upload Videos:** Send video files from WordPress to Bunny Stream for automatic encoding.
+ * **Update Metadata:** Edit video titles and descriptions from the WordPress UI.
+ * **Delete Assets:** Remove videos from your Bunny account when they are no longer needed.
 
 **Related:** [Video Sources](/guide/videos-and-media/video-sources) — Choosing Bunny as a source.
 
@@ -74,8 +80,5 @@ If a button is not visible in your build, check that Stream credentials are save
 
 Most users should use **Bunny Stream**. Use [Bunny Storage](/guide/integrations/bunnycdn-storage) only if you already have pre-encoded files and want simple file hosting.
 
-## Next steps
+Integrating BunnyCDN Stream provides a professional, scalable hosting solution that reduces server load and ensures fast video playback for users worldwide.
 
-- [BunnyCDN Storage (Pro)](/guide/integrations/bunnycdn-storage) — The storage alternative.
-- [Video Sources](/guide/videos-and-media/video-sources) — All source types at a glance.
-- [Integrations Overview](/guide/integrations/) — All available integrations.
