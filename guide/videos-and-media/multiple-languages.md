@@ -15,7 +15,7 @@ Unlike subtitles, which just add text over the screen, the **Multi-Language** fe
  * **Manual Choice:** Viewers can also use the language selector in the player controls to pick their preferred language at any time.
 
 >[!Note]
->Make sure you have already uploaded your translated videos as separate media items before trying to link them in the Multi-Language settings.
+>Make sure you have already uploaded your translated videos as separate media items before trying to link them in the **Multi-Language** settings.
 
 ## How to Enable Multiple Languages
 
@@ -24,7 +24,7 @@ To set up different language versions, follow these simple steps:
  1. Go to **Fluent Player → Media** and open the video you want to edit. 
  2. In the right-hand sidebar, click on the **Multi-Language** tab to expand it.
  3. **Set the Primary Language:** Choose the main language of your video (e.g., English) from the **Primary Language** dropdown menu.
- 4. **Turn on the Feature:** Switch the **toggle** for **Enable Multi-Language** to the "on" position. This adds a language selector to the player so viewers can switch manually.
+ 4. **Turn on the Feature:** Switch the **toggle** for **Enable Multi-Language** to the "**on**" position. This adds a language selector to the player so viewers can switch manually.
 
 ![Enable Multi-Language](/guide/public/videos-and-media/multiple-languages/enable-multi-language-1.webp)
 
@@ -51,8 +51,8 @@ If no mapping exists for the viewer's language, the primary video plays as usual
 
 The player can request a different language version after load using authenticated AJAX:
 
-- **`fluent_player_switch_language`** — Pass `original_media_id` and the `fluent_player_frontend` nonce to receive the mapped media payload.
-- **`fluent_player_get_media`** — Fetch a media record by `media_id` with the same nonce (used when refreshing data after changes).
+- **`fluent_player_switch_language`:** Pass `original_media_id` and the `fluent_player_frontend` nonce to receive the mapped media payload.
+- **`fluent_player_get_media`:** Fetch a media record by `media_id` with the same nonce (used when refreshing data after changes).
 
 These require a valid nonce; they are primarily for the interactive language control in the player UI.
 
@@ -67,6 +67,6 @@ Automatic switching is great for international audiences, but make sure you actu
 | **Multiple languages** | Videos with voiceover or narration in different languages (different audio tracks) |
 | **[Subtitles](/guide/videos-and-media/subtitles)** | Same video with translated text overlays |
 
-You can use both at the same time — for example, a Spanish-narrated video with French subtitles.
+You can use both at the same time for example, a Spanish-narrated video with French subtitles.
 
 
