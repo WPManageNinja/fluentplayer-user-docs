@@ -33,13 +33,17 @@ If your subtitles are in a different format, use a free online converter to save
 
 You can add **multiple subtitle tracks** for different languages. Viewers can switch between them using the **captions toggle** on the control bar and, when the **Settings** menu is enabled, the **Captions** entry inside that menu see [Creating Custom Presets](/guide/customize/creating-custom-presets).
 
-## Managing and Styling Captions
+### Removing Subtitles
 
- * **Removing subtitles:** To delete a subtitle track, simply open the **Subtitles** panel in the media editor and click the **Trash** icon next to the file you want to remove.
+1. Open the media in the editor.
+2. In the subtitles section, remove the track you no longer need.
+3. Save the media.
 
 ![Remove Subtitle](/guide/public/videos-and-media/subtitles/remove-subtitle-2.webp)
 
- * **Visual Styling:** You can customize the font size, text color, and background opacity of your captions to match your brand. These settings can be found in your **Preset** configuration or overridden in the **[Branding](/guide/block-editor/branding)** panel of a specific video.
+### Styling captions on the player
+
+You can change how captions look on screen font size, text color, and background color. These settings are part of the preset or can be set per media. See [Branding & Appearance](/guide/block-editor/branding) for details.
 
 ## Example: a simple WebVTT file
 
