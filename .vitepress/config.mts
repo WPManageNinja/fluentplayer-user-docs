@@ -143,6 +143,7 @@ const guideGroups = [
       { text: 'Bunny Storage (Pro)', link: '/guide/integrations/bunnycdn-storage' },
       { text: 'Built-in Analytics (Pro)', link: '/guide/integrations/analytics' },
       { text: 'Google Analytics', link: '/guide/integrations/google-analytics' },
+      { text: 'Mailchimp (Pro)', link: '/guide/integrations/mailchip-integration' },
       { text: 'Webhook (Pro)', link: '/guide/integrations/webhook-integration' },
       { text: 'FluentCommunity (Pro)', link: '/guide/integrations/fluent-community' },
       { text: 'Smartcodes (FluentCRM)', link: '/guide/integrations/smartcodes-personalization' },

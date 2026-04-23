@@ -114,3 +114,20 @@ If you use authentication headers, avoid using high-privilege credentials. Use s
 | One webhook fails, others succeed | Partial failure across multiple endpoints | Review endpoint logs and fix failing target |
 
 Webhook integration gives you flexible lead routing without depending on a fixed third-party plugin list.
+
+## Frequently Asked Questions
+
+**Can I send data to more than one webhook per video?**
+Yes. You can create multiple webhook endpoints in the global settings. Each video preset targets one specific webhook. If you need to fan out to several services from a single submission, use a relay endpoint — for example, a multi-step Zapier Zap — that distributes the data on the receiving side.
+
+**Is the webhook sent synchronously?**
+Yes, by default. The request is sent during the email collection process with a 15-second timeout. If the request times out or fails, the error is logged and any remaining webhooks are still attempted. If your endpoint is slow, consider offloading processing to an async queue on the receiving end.
+
+**What happens if my endpoint is temporarily unavailable?**
+Fluent Player Pro does not retry failed deliveries automatically. If your endpoint is down at the time of a submission, the delivery will fail and be logged. Consider adding retry logic on your endpoint side or using a queuing service as an intermediary.
+
+**Does the webhook work alongside FluentCRM or Mailchimp?**
+Each video preset supports one active email provider at a time (FluentCRM, Mailchimp, or Webhook). You can assign different providers to different videos. If you need both FluentCRM and a webhook to fire for the same video, set up a FluentCRM automation to forward new contacts to your external service.
+
+**Can I use HTTP instead of HTTPS?**
+HTTP is technically accepted, but strongly discouraged in production since email data would be transmitted unencrypted. Always use HTTPS endpoints in live environments.
