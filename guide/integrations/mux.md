@@ -61,9 +61,8 @@ Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is f
 
 ![Webhook](/guide/public/integrations/mux/webhooks-7.webp)
 
-A popup window will appear. **Paste** the **URL** and save. Mux will provide a **Webhook Secret**.
-
-**Copy** that secret back into the **Webhook Secret** field in your **FluentPlayer** settings.
+ - A popup window will appear. **Paste** the **URL** and save. Mux will provide a **Webhook Secret**.
+ - **Copy** that secret back into the **Webhook Secret** field in your **FluentPlayer** settings.
 
 ![Webhook Secret](/guide/public/integrations/mux/create-webhook-8.webp)
 
@@ -108,7 +107,7 @@ Once connected, you can use Mux assets anywhere on your site:
 
 ![Shortcode](/guide/public/integrations/mux/paste-shortcode-14.webp)
 
-## Mux and Fluent Player analytics
+## Mux and Fluent Player Analytics
 
 You can use **both**:
 
@@ -124,4 +123,4 @@ You can use **both**:
 | Playback errors with signed URLs enabled | Signing key pair must be generated and stored per the integration; clock skew and URL expiry can affect playback. |
 
 
-Integrating Mux with Fluent Player Pro provides a scalable, professional-grade video delivery system within WordPress. From adaptive HLS streaming to real-time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management
+Integrating Mux with **Fluent Player Pro** provides a scalable, professional-grade video delivery system within WordPress. From adaptive HLS streaming to real-time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management
