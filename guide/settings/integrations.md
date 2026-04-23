@@ -16,7 +16,7 @@ Navigating your available integrations is simple. You can use the search bar on 
 
 Each integration card displays a brief description, a status badge (Enabled or Disabled), and a **Configure** button to manage your connection settings.
 
-![Integrattions](/guide/public/settings/integrations/integrations-1.webp)
+![Integrattions](/guide/public/integrations/webhook/integrations-1.webp)
 
 ## FluentCRM
 
