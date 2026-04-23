@@ -1,4 +1,4 @@
-## Webhook Integration (Pro)
+# Webhook Integration (Pro)
 
 The **Webhook integration** lets you send email leads captured by Fluent Player to any external HTTP endpoint in real time. It is useful when you want to connect Fluent Player with tools that do not have a native integration.
 
