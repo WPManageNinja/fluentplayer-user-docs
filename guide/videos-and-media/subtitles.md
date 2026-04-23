@@ -25,8 +25,8 @@ If your subtitles are in a different format, use a free online converter to save
 1. Go to **Fluent Player → Media** and open the media you want to add subtitles to.
 2. In the right-hand sidebar, click on the **Subtitles** panel under the **Block** tab.
 3. Choose your upload method:
-  * **Manual Upload:** Click the **Upload** button to add your own `.vtt` or `.srt` subtitle file from your computer.
-  * **YouTube Subtitle Import:** For YouTube videos, you can use the **Fetch** button to automatically import existing captions from YouTube.
+    * **Manual Upload:** Click the **Upload** button to add your own `.vtt` or `.srt` subtitle file from your computer.
+    * **YouTube Subtitle Import:** For YouTube videos, you can use the **Fetch** button to automatically import existing captions from YouTube.
 
 ::: warning
 YouTube subtitle import is an admin-only feature. Ensure you have permission to use the content before importing.
