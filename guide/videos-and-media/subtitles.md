@@ -4,7 +4,7 @@
 
 ## Why Use Subtitles?
 
- * **Accessibility:** Meet legal requirements and follow web best practices.
+ * **Accessibility:** Meet legal requirements and follow web best practices by supporting deaf or hard-of-hearing viewers.
  * **Higher Engagement:** Subtitled videos consistently see higher completion rates and watch time.
  * **Global Reach:** Offer translations for international viewers without needing to host separate video files.
  * **SEO Benefits:** Search engines can index your subtitle text, improving your video's discoverability.
@@ -24,14 +24,24 @@ If your subtitles are in a different format, use a free online converter to save
 
 1. Go to **Fluent Player → Media** and open the media you want to add subtitles to.
 2. In the right-hand sidebar, click on the **Subtitles** panel under the **Block** tab.
-3. **Upload** your subtitle file (`.vtt` or `.srt`).
+3. Choose your upload method:
+  * **Manual Upload:** Click the **Upload** button to add your own `.vtt` or `.srt` subtitle file from your computer.
+  * **YouTube Subtitle Import:** For YouTube videos, you can use the **Fetch** button to automatically import existing captions from YouTube.
+
+::: warning
+YouTube subtitle import is an admin-only feature. Ensure you have permission to use the content before importing.
+:::
 
 ![Subtitle](/guide/public/videos-and-media/subtitles/subtitle-1.webp)
 
 4. If prompted, set the **language** for the subtitle track (for example, English, Spanish, French).
-5. Save the media.
+5. Click **Update** or **Save** to apply the changes.
 
-You can add **multiple subtitle tracks** for different languages. Viewers can switch between them using the **captions toggle** on the control bar and, when the **Settings** menu is enabled, the **Captions** entry inside that menu see [Creating Custom Presets](/guide/customize/creating-custom-presets).
+### Advanced Subtitle Features
+
+ * **Hover Preview:** You can click **Generate Hover Preview** to create a preview of the YouTube video independently from the main subtitle import.
+ * **Managing Tracks:** You can add **multiple subtitle tracks** for different languages.Once added, subtitle tracks appear in a list where you can click **Edit** to modify them or the **Trash** icon to remove them.
+ * **Captions Toggle:** Viewers can switch between them using the **captions toggle** on the control bar and, when the **Settings** menu is enabled, the **Captions** entry inside that menu see [Creating Custom Presets](/guide/customize/creating-custom-presets).
 
 ### Removing Subtitles
 
@@ -41,9 +51,9 @@ You can add **multiple subtitle tracks** for different languages. Viewers can sw
 
 ![Remove Subtitle](/guide/public/videos-and-media/subtitles/remove-subtitle-2.webp)
 
-### Styling captions on the player
+### Styling Captions
 
-You can change how captions look on screen font size, text color, and background color. These settings are part of the preset or can be set per media. See [Branding & Appearance](/guide/block-editor/branding) for details.
+You can change how captions look on screen, including font size, text color, and background color. These settings are part of the Preset or can be customized per media item in the Branding & Appearance section. See [Branding & Appearance](/guide/block-editor/branding) for details.
 
 ## Example: a simple WebVTT file
 
