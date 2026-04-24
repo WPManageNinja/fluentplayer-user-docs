@@ -1,6 +1,6 @@
 # Mailchimp Integration (Pro)
 
-The **Mailchimp integration** allows you to automatically add viewers to a Mailchimp audience the moment they submit their email through your video's email gate. No third-party connector or custom code is needed. Fluent Player connects directly to the Mailchimp API.
+The **Mailchimp integration** allows you to automatically add viewers to a Mailchimp audience the moment they submit their email through your video's email capture. No third-party connector or custom code is needed. Fluent Player connects directly to the Mailchimp API.
 
 You can target a specific audience, apply tags, and control this per video so different videos can feed different lists or segments.
 
@@ -38,7 +38,7 @@ When a viewer submits their email through the email gate:
 ![Create a Key](/guide/public/integrations/mailchimp/copy-api-key-4.webp)
 
 ::: info
-Mailchimp API keys follow the format `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-us11`. The suffix (for example, `-us11`) is your data center — the plugin uses it automatically.
+Mailchimp API keys follow the format `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-us18`. The suffix (for example, `-us18`) is your data center — the plugin uses it automatically.
 :::
 
 ## Step 2: Connect Mailchimp in Fluent Player
@@ -52,7 +52,7 @@ Mailchimp API keys follow the format `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-us11`. Th
 4. Toggle (on) the **Enable Integration** option. **Paste** your API key into the **API Key** field.
 5. Click **Save Settings** the plugin will validate the key automatically.
 
-If validation fails, confirm you copied the full key including the `-us11` suffix and that it has not been revoked in your Mailchimp account.
+If validation fails, confirm you copied the full key including the `-us18` suffix and that it has not been revoked in your Mailchimp account.
 
 ![Paste API Key](/guide/public/integrations/mailchimp/paste-api-key-6.webp)
 
@@ -82,7 +82,7 @@ If the Mailing List dropdown is empty, return to Settings and confirm your API k
 
 ## Tags
 
-Tags let you segment subscribers and trigger automations based on which video they engaged with.
+Tags allows you to segment subscribers and trigger automations based on which video they engaged with.
 
 Enter tags in the **Tags** field as a comma-separated list:
 
@@ -91,7 +91,7 @@ webinar-attendee, product-demo, q2-campaign
 ```
 
 - Tags are created automatically in Mailchimp if they don't already exist.
-- If the contact already exists, new tags are **added** — existing tags are not removed.
+- If the contact already exists, new tags are **added** existing tags are not removed.
 - Different videos can have different tags, so you can track exactly where each subscriber came from.
 
 ## Subscriber and duplicate handling
@@ -99,10 +99,10 @@ webinar-attendee, product-demo, q2-campaign
 Fluent Player uses Mailchimp's **upsert** pattern when adding contacts:
 
 - **New contact:** Added to the audience as `subscribed`.
-- **Existing contact:** Record is updated and new tags are merged — no duplicate is created.
+- **Existing contact:** Record is updated and new tags are merged, no duplicate is created.
 
 ::: info
-Fluent Player always sets the subscriber status to `subscribed`, which bypasses the double opt-in step at the API level. If your Mailchimp audience has double opt-in enabled at the account level, Mailchimp may still send a confirmation email — this is controlled by your Mailchimp settings, not the plugin.
+Fluent Player always sets the subscriber status to `subscribed`, which bypasses the double opt-in step at the API level. If your Mailchimp audience has double opt-in enabled at the account level, Mailchimp may still send a confirmation email. This is controlled by your Mailchimp settings, not the plugin.
 :::
 
 ## Troubleshooting
@@ -127,4 +127,4 @@ Fluent Player sets the status to `subscribed` at the API level, which bypasses d
 No duplicate is created. The existing contact is updated and any new tags from the second video are added to their profile.
 
 **Do I need a paid Mailchimp plan?**
-No. The Mailchimp API is available on free and paid plans. The plugin works with any Mailchimp plan — just check API rate limits if you expect high submission volumes.
+No. The Mailchimp API is available on free and paid plans. The plugin works with any Mailchimp plan. Just check API rate limits if you expect high submission volumes.
