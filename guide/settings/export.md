@@ -1,23 +1,23 @@
 ---
 title: "Export"
-description: "Export email capture submissions from Fluent Player as CSV, JSON, or ODS for backups, analysis, and imports into other tools."
+description: "Export email capture submissions from FluentPlayer as CSV, JSON, or ODS for backups, analysis, and imports into other tools."
 ---
 
 # Export
 
 The **Export** feature allows you to download a local copy of all the data collected through your video's email capture overlays. This is an essential tool for keeping backups of your leads or moving your subscriber list to another platform.
 
-To access this feature, navigate to **Fluent Player → Settings** and click on the **Export** tab.
+To access this feature, navigate to **FluentPlayer → Settings** and click on the **Export** tab.
 
 ::: info Pro feature
-The Export section requires **Fluent Player Pro**.
+The Export section requires **FluentPlayer Pro**.
 :::
 
-The Export section lets you download the email addresses (and any other data) collected through [Fluent Player's email capture overlays](/guide/engagement/email-capture) as a file.
+The Export section lets you download the email addresses (and any other data) collected through [FluentPlayer's email capture overlays](/guide/engagement/email-capture) as a file.
 
 ## What Data is Exported?
 
-When you run an export, Fluent Player pulls the raw submission data stored directly in your WordPress database. This includes:
+When you run an export, FluentPlayer pulls the raw submission data stored directly in your WordPress database. This includes:
 
  * **Email Addresses:** The primary contact info submitted by viewers.
  * **Names:** Any name data collected alongside the email.
@@ -25,13 +25,13 @@ When you run an export, Fluent Player pulls the raw submission data stored direc
  * **Timestamps:** Exactly when the lead was captured.
 
  >[!Note]
- >While Fluent Player can sync leads to external tools like FluentCRM or Mailchimp in real-time, this export serves as a standalone backup of the data stored on your own server.
+ >While FluentPlayer can sync leads to external tools like FluentCRM or Mailchimp in real-time, this export serves as a standalone backup of the data stored on your own server.
 
 ## How to Export Your List
 
 Downloading your lead data is a simple three-step process:
 
-**Go to Export:** Navigate to the Export section within the Fluent Player Settings.
+**Go to Export:** Navigate to the Export section within the FluentPlayer Settings.
 **Choose Your Format:** Select your preferred file type using the toggle buttons:
  * **CSV:** Best for Excel, Google Sheets, and importing into most CRMs.
  * **JSON:** Ideal for developers or technical API imports.

@@ -1,6 +1,6 @@
 ---
 title: "Advanced (Block sidebar)"
-description: "Fluent Player Block Advanced panel: additional CSS classes on the block wrapper, optional WordPress HTML anchor, and scoping theme CSS to one embed."
+description: "FluentPlayer Block Advanced panel: additional CSS classes on the block wrapper, optional WordPress HTML anchor, and scoping theme CSS to one embed."
 ---
 
 # Advanced (Block sidebar)

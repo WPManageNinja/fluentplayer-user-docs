@@ -9,7 +9,7 @@ next:
 
 # Email Capture Overlay
 
-The **email capture overlay** pauses the video and shows a signup form to the viewer. They enter their email address — and optionally subscribe to your list — before they can continue watching. It is one of Fluent Player's most effective tools for growing your email list without any third-party pop-up plugins.
+The **email capture overlay** pauses the video and shows a signup form to the viewer. They enter their email address — and optionally subscribe to your list — before they can continue watching. It is one of FluentPlayer's most effective tools for growing your email list without any third-party pop-up plugins.
 
 ## How it works
 
@@ -17,7 +17,7 @@ At a configured point during playback — for example, at the 1-minute mark — 
 
 ## Setting up email capture
 
-1. Go to **Fluent Player → Media** and open the media item you want to gate.
+1. Go to **FluentPlayer → Media** and open the media item you want to gate.
 2. In the right sidebar, expand the **Interactive Layers** panel.
 3. Click **+ Add Layer** to open the **Manage Layers** dialog.
 
@@ -70,7 +70,7 @@ Email providers are configured directly inside the Email Capture layer — not i
 
 5. Click **Add** to attach the provider to this layer.
 
-You can add multiple providers to a single Email Capture layer if needed. Fluent Player supports:
+You can add multiple providers to a single Email Capture layer if needed. FluentPlayer supports:
 
 - **FluentCRM** — Adds contacts directly to your WordPress-native CRM with list and tag assignments.
 - **Mailchimp** — Sends subscribers to a Mailchimp audience.

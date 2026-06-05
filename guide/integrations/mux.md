@@ -1,9 +1,9 @@
 # Mux (Pro)
 
-**Mux** is a professional video platform for hosting, streaming, and analyzing video. Fluent Player Pro includes a full **Mux integration** so you can connect your Mux account, upload or link assets, use **HLS playback**, optional **signed URLs** for protected content, **live streaming**, **AI-generated captions**, and **Mux Data** playback analytics — without leaving WordPress.
+**Mux** is a professional video platform for hosting, streaming, and analyzing video. FluentPlayer Pro includes a full **Mux integration** so you can connect your Mux account, upload or link assets, use **HLS playback**, optional **signed URLs** for protected content, **live streaming**, **AI-generated captions**, and **Mux Data** playback analytics — without leaving WordPress.
 
 ::: info Pro feature
-Mux is available only with **FluentPlayer Pro**. Install and activate the free Fluent Player plugin first, then activate Pro.
+Mux is available only with **FluentPlayer Pro**. Install and activate the free FluentPlayer plugin first, then activate Pro.
 :::
 
 ## Why use Mux?
@@ -13,7 +13,7 @@ Mux is available only with **FluentPlayer Pro**. Install and activate the free F
  * **Live Streaming:** Create and manage live broadcasts via the Mux API, seamlessly integrated into the plugin’s REST layer.
  * **Advanced Security:** Protect your content with **Signed Playback URLs**. The integration also supports **Mux Playback Restrictions**, allowing you to define granular delivery rules.
  * **AI Captions:** Automatically generate subtitles in multiple languages using Mux’s AI transcription service.
- * **Mux Data:** Use your Environment Key to monitor playback quality and performance analytics alongside Fluent Player’s native tracking.
+ * **Mux Data:** Use your Environment Key to monitor playback quality and performance analytics alongside FluentPlayer’s native tracking.
 
 ## Generate API Credentials in Mux
 
@@ -103,11 +103,11 @@ Once connected, you can use Mux assets anywhere on your site:
 
 ![Upload Video](/guide/public/integrations/mux/mux-video-13.webp)
 
- * **Publish:** Once an asset is selected, publish the media item to generate a shortcode or use the Fluent Player Gutenberg block.
+ * **Publish:** Once an asset is selected, publish the media item to generate a shortcode or use the FluentPlayer Gutenberg block.
 
 ![Shortcode](/guide/public/integrations/mux/paste-shortcode-14.webp)
 
-## Mux and Fluent Player Analytics
+## Mux and FluentPlayer Analytics
 
 You can use **both**:
 
@@ -123,4 +123,4 @@ You can use **both**:
 | Playback errors with signed URLs enabled | Signing key pair must be generated and stored per the integration; clock skew and URL expiry can affect playback. |
 
 
-Integrating Mux with **Fluent Player Pro** provides a scalable, professional-grade video delivery system within WordPress. From adaptive HLS streaming to real-time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management
+Integrating Mux with **FluentPlayer Pro** provides a scalable, professional-grade video delivery system within WordPress. From adaptive HLS streaming to real-time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management

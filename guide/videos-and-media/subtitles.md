@@ -11,7 +11,7 @@
 
 ## Supported formats
 
-Fluent Player supports these subtitle file formats:
+FluentPlayer supports these subtitle file formats:
 
 - **WebVTT** (`.vtt`): The most common web subtitle format. Recommended.
 - **SRT** (`.srt`): A simple, widely-used subtitle format.
@@ -22,7 +22,7 @@ If your subtitles are in a different format, use a free online converter to save
 
 ## How to Add Subtitles to a Video
 
-1. Go to **Fluent Player → Media** and open the media you want to add subtitles to.
+1. Go to **FluentPlayer → Media** and open the media you want to add subtitles to.
 2. In the right-hand sidebar, click on the **Subtitles** panel under the **Block** tab.
 3. Choose your upload method:
     * **Manual Upload:** Click the **Upload** button to add your own `.vtt` or `.srt` subtitle file from your computer.
@@ -63,7 +63,7 @@ Here is what a basic `.vtt` subtitle file looks like:
 WEBVTT
 
 00:00:01.000 --> 00:00:04.000
-Welcome to Fluent Player.
+Welcome to FluentPlayer.
 
 00:00:05.000 --> 00:00:08.000
 In this video, we will show you the basics.

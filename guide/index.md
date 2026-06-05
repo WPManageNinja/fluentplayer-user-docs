@@ -1,10 +1,10 @@
-# What is Fluent Player?
+# What is FluentPlayer?
 
-**Fluent Player** is a WordPress plugin that lets you add beautiful, customizable video players to your website. Whether you want to embed a single video on a blog post or build a full video course with playlists, Fluent Player gives you everything you need — right from your WordPress dashboard.
+**FluentPlayer** is a WordPress plugin that lets you add beautiful, customizable video players to your website. Whether you want to embed a single video on a blog post or build a full video course with playlists, FluentPlayer gives you everything you need — right from your WordPress dashboard.
 
 ## Who is it for?
 
-Fluent Player is built for anyone who uses WordPress and wants to display video content. You do not need any coding knowledge to use it. If you can write a blog post in WordPress, you can use Fluent Player.
+FluentPlayer is built for anyone who uses WordPress and wants to display video content. You do not need any coding knowledge to use it. If you can write a blog post in WordPress, you can use FluentPlayer.
 
 Some common use cases:
 
@@ -15,7 +15,7 @@ Some common use cases:
 
 ## Free vs Pro
 
-Fluent Player comes in two versions. This documentation matches **Fluent Player and Fluent Player Pro 1.0.4** (see your **Plugins** screen if you use a different release).
+FluentPlayer comes in two versions. This documentation matches **FluentPlayer and FluentPlayer Pro 1.0.4** (see your **Plugins** screen if you use a different release).
 
 | Feature | Free | Pro |
 |---------|------|-----|
@@ -52,7 +52,7 @@ The **free version** handles everything you need for embedding and customizing s
 Here is the typical workflow:
 
 1. **Install** the plugin (free, and Pro if needed). See [Installation](/guide/installation).
-2. **Add a video** under Fluent Player → Media. Choose your video source and configure the player. See [Adding and Editing Videos](/guide/videos-and-media/adding-videos).
+2. **Add a video** under FluentPlayer → Media. Choose your video source and configure the player. See [Adding and Editing Videos](/guide/videos-and-media/adding-videos).
 3. **Embed it** on any page or post using a shortcode or Gutenberg block. See [Embedding Your Player](/guide/display-embed/). For every option in the **Block** sidebar (including the dedicated **Add Media** editor), see [Player Editor](/guide/block-editor/).
 4. **Customize** the look and behavior with presets, skins, and branding. See [Player Customization](/guide/customize/).
 5. **Convert viewers** with email capture and CTAs. See [Engagement & Conversion](/guide/engagement/).

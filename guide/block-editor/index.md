@@ -1,22 +1,22 @@
 ---
-title: "Fluent Player block & media editor"
+title: "FluentPlayer block & media editor"
 description: "Use the FluentPlayer Media block and sidebar: dedicated media editor vs posts, Media vs Block tabs, and every panel from branding and presets to layers, timed content, and subtitles."
 ---
 
-# Fluent Player block & media editor
+# FluentPlayer block & media editor
 
 The **FluentPlayer Media** block (`fluent-player/media`) is the core of your video experience. Whether you are creating a standalone video or adding one to a blog post, you will use the same sidebar panels to control how your player looks and acts.
 
 ## Two Ways to Edit Your Video
 
-You will see the Fluent Player editor in **two** different parts of WordPress, but the settings remain the same:
+You will see the FluentPlayer editor in **two** different parts of WordPress, but the settings remain the same:
 
 ### 1. The Dedicated Media Editor
 
-When you go to **Fluent Player → Media → Add Media**, you enter a focused, full-screen editor.
+When you go to **FluentPlayer → Media → Add Media**, you enter a focused, full-screen editor.
 
  * **Single Purpose:** This screen is designed only for configuring your video.
- * **Locked Layout:** You won't see options for paragraphs or columns here—just the Fluent Player block and its settings.
+ * **Locked Layout:** You won't see options for paragraphs or columns here—just the FluentPlayer block and its settings.
  * **Organization:** All your player options live in the **Block** and **Media** tabs in the right sidebar.
 
 ### 2. Standard Posts or Pages

@@ -9,7 +9,7 @@ next:
 
 # Player Customization
 
-Fluent Player gives you precise control over how the player looks and behaves across your entire site — from the visual skin and control layout to playback behaviors and branding. This section covers everything related to the player's **appearance and behavior**.
+FluentPlayer gives you precise control over how the player looks and behaves across your entire site — from the visual skin and control layout to playback behaviors and branding. This section covers everything related to the player's **appearance and behavior**.
 
 ::: tip Looking for email capture or CTAs?
 Engagement overlays (email capture, CTA, action bar, email providers) have moved to [**Engagement & Conversion**](/guide/engagement/). This section covers visual and behavioral customization only.
@@ -17,7 +17,7 @@ Engagement overlays (email capture, CTA, action bar, email providers) have moved
 
 ## How customization works
 
-Fluent Player uses a **two-level system**:
+FluentPlayer uses a **two-level system**:
 
 1. **Presets** — Reusable player templates that define the skin, controls, and behaviors. Think of a preset as a "profile" for how the player looks and acts. Any video assigned to a preset inherits its settings.
 
@@ -33,9 +33,9 @@ Per-media overrides → Preset settings → Global defaults (Settings)
 
 | Location | What you can configure |
 |----------|----------------------|
-| **Fluent Player → Settings → General** | Default preset for the whole site |
-| **Fluent Player → Settings → Branding** | Site-wide brand color, logo, and control bar color |
-| **Fluent Player → Media → Edit a media** | Override preset, skin, controls, and behaviors for one video |
+| **FluentPlayer → Settings → General** | Default preset for the whole site |
+| **FluentPlayer → Settings → Branding** | Site-wide brand color, logo, and control bar color |
+| **FluentPlayer → Media → Edit a media** | Override preset, skin, controls, and behaviors for one video |
 | **Preset configuration (Pro)** | Create and edit fully custom presets |
 
 ## What you can customize

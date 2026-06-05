@@ -3,7 +3,7 @@
 Once you have [created a playlist](/guide/playlists/creating-playlists), you can show it on any post or page using a **shortcode** or a **Gutenberg block**. The process is very similar to [embedding a single video](/guide/display-embed/shortcode).
 
 ::: info Pro feature
-Embedding playlists requires **Fluent Player Pro**.
+Embedding playlists requires **FluentPlayer Pro**.
 :::
 
 ## Option 1: Shortcode
@@ -18,7 +18,7 @@ Replace `10` with your playlist ID. The playlist will appear where you placed th
 
 ### Where to find the playlist ID
 
-- In **Fluent Player → Playlists**, the ID appears next to each playlist (for example, `#10`).
+- In **FluentPlayer → Playlists**, the ID appears next to each playlist (for example, `#10`).
 - When editing a playlist, check the browser URL.
 
 ![Embed Playlist](/guide/public/playlists/embed-playlist/embed-playlist-1.webp)
@@ -44,7 +44,7 @@ Replace `10` with your playlist ID. The playlist will appear where you placed th
 
 1. Edit a post or page in the block editor.
 2. Click the **+** button to add a block.
-3. Search for **"Fluent Player Playlist"** or **"playlist"**.
+3. Search for **"FluentPlayer Playlist"** or **"playlist"**.
 4. Select the block and choose your playlist from the dropdown (or enter the ID).
 5. Publish or update.
 

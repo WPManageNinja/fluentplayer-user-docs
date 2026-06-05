@@ -22,7 +22,7 @@ The video starts playing automatically **with the sound muted**. This is allowed
 
 ### Save play position
 
-When enabled, Fluent Player remembers where the viewer stopped watching. The next time they visit the page, the video resumes from where they left off.
+When enabled, FluentPlayer remembers where the viewer stopped watching. The next time they visit the page, the video resumes from where they left off.
 
 **Common use case:** Online courses or training videos where viewers may watch in multiple sessions.
 

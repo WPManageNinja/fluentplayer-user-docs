@@ -1,6 +1,6 @@
 # YouTube Settings
 
-The YouTube section controls how Fluent Player handles **YouTube video embeds** across your site. These settings apply globally to all media items that use YouTube as the source.
+The YouTube section controls how FluentPlayer handles **YouTube video embeds** across your site. These settings apply globally to all media items that use YouTube as the source.
 
 ## Privacy-Enhanced Mode
 
@@ -20,7 +20,7 @@ When enabled, a YouTube Subscribe button appears below (or near) the YouTube vid
 
 ![YouTube Settings](/guide/public/settings/youtube/youtube-settings-1.webp)
 
-Behind the scenes, Fluent Player can call YouTube’s channel metadata so the subscribe control shows the correct channel name and branding when the button is enabled.
+Behind the scenes, FluentPlayer can call YouTube’s channel metadata so the subscribe control shows the correct channel name and branding when the button is enabled.
 
 ## Saving changes
 

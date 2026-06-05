@@ -9,7 +9,7 @@ next:
 
 # Common Issues & Fixes
 
-This page covers the most common problems users run into with Fluent Player and how to resolve them. If you don't find your answer here, check the [FAQ](/guide/troubleshooting/faq) or reach out to support.
+This page covers the most common problems users run into with FluentPlayer and how to resolve them. If you don't find your answer here, check the [FAQ](/guide/troubleshooting/faq) or reach out to support.
 
 ---
 
@@ -19,10 +19,10 @@ This page covers the most common problems users run into with Fluent Player and 
 
 | Likely cause | Fix |
 |---|---|
-| Invalid or expired video source URL | Go to **Fluent Player → Media**, open the media item, and verify the source URL or file is accessible. |
+| Invalid or expired video source URL | Go to **FluentPlayer → Media**, open the media item, and verify the source URL or file is accessible. |
 | Mux or Bunny Stream asset still processing | Newly uploaded assets can take a few minutes to become ready. Wait 2–5 minutes and refresh. |
 | Wrong video ID in shortcode or block | Check that the `id` in your shortcode (`[fluentplayer id="123"]`) matches the actual Media ID shown in the media editor. |
-| YouTube video is restricted | If the YouTube video has embedding disabled by its owner, Fluent Player cannot play it. |
+| YouTube video is restricted | If the YouTube video has embedding disabled by its owner, FluentPlayer cannot play it. |
 | Mixed content (HTTP/HTTPS) | Your site must be served over HTTPS. A video source on HTTP will be blocked by browsers on an HTTPS site. |
 
 ---
@@ -31,10 +31,10 @@ This page covers the most common problems users run into with Fluent Player and 
 
 **Symptom:** You have autoplay enabled, but the video doesn't start automatically on page load.
 
-Browsers block autoplay with audio by default. This is a **browser security policy**, not a Fluent Player limitation.
+Browsers block autoplay with audio by default. This is a **browser security policy**, not a FluentPlayer limitation.
 
 **How to fix it:**
-- Enable **Muted autoplay**: The player will start automatically if the video is muted. Go to **Fluent Player → Media → Player Behaviors** and enable **Muted** along with **Autoplay**.
+- Enable **Muted autoplay**: The player will start automatically if the video is muted. Go to **FluentPlayer → Media → Player Behaviors** and enable **Muted** along with **Autoplay**.
 - The **Ambient** [preset](/guide/customize/presets) is specifically tuned for background autoplay — it mutes the video and loops it automatically.
 
 ::: tip
@@ -74,8 +74,8 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 
 | Likely cause | Fix |
 |---|---|
-| Not on Pro | Built-in Analytics requires Fluent Player Pro. Free version does not include the analytics dashboard. |
-| Rate limiting active | To prevent spam, Fluent Player applies a short cooldown per viewer per video. Multiple views in quick succession may be skipped. |
+| Not on Pro | Built-in Analytics requires FluentPlayer Pro. Free version does not include the analytics dashboard. |
+| Rate limiting active | To prevent spam, FluentPlayer applies a short cooldown per viewer per video. Multiple views in quick succession may be skipped. |
 | Caching plugin interference | If your page is served from a full-page cache, AJAX calls (including analytics pings) may not fire. Exclude the relevant pages from caching. |
 | Google Analytics not seeing events | Make sure you have entered the correct GA4 Measurement ID under **Settings → Analytics → Google Analytics**. See [Google Analytics integration](/guide/integrations/google-analytics). |
 
@@ -85,8 +85,8 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 
 **Symptom:** The player appears without styles — controls are missing or the layout is visually broken.
 
-1. **Check for JavaScript errors** — Open your browser's developer console (F12) and look for JavaScript errors. A conflicting plugin may be breaking Fluent Player's scripts.
-2. **Check for CSS conflicts** — Your theme may be globally overriding styles. Try the **Custom CSS** field in **Fluent Player → Settings → General** to target `.fluent-player` specifically.
+1. **Check for JavaScript errors** — Open your browser's developer console (F12) and look for JavaScript errors. A conflicting plugin may be breaking FluentPlayer's scripts.
+2. **Check for CSS conflicts** — Your theme may be globally overriding styles. Try the **Custom CSS** field in **FluentPlayer → Settings → General** to target `.fluent-player` specifically.
 3. **Try a different preset** — The active [preset](/guide/customize/presets) might have unusual settings. Switch to the **Default** preset to see if the issue is preset-specific.
 
 ---

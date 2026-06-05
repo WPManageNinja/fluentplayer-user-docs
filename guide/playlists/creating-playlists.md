@@ -1,18 +1,18 @@
 # Creating a Playlist
 
-This guide walks you through creating a playlist in Fluent Player Pro, adding videos to it, and configuring its settings.
+This guide walks you through creating a playlist in FluentPlayer Pro, adding videos to it, and configuring its settings.
 
 ::: info Pro feature
-Creating playlists requires **Fluent Player Pro**.
+Creating playlists requires **FluentPlayer Pro**.
 :::
 
 ## Before you start
 
-Make sure you have already created the media items (videos) that you want to include. Each video should be set up under **Fluent Player → Media**. See [Adding and Editing Videos](/guide/videos-and-media/adding-videos) if you have not done this yet.
+Make sure you have already created the media items (videos) that you want to include. Each video should be set up under **FluentPlayer → Media**. See [Adding and Editing Videos](/guide/videos-and-media/adding-videos) if you have not done this yet.
 
 ## Step 1: Create a new playlist
 
-1. In your WordPress admin, go to **Fluent Player → Playlists**.
+1. In your WordPress admin, go to **FluentPlayer → Playlists**.
 2. Click the `Add Playlist` button to add a new playlist.
 3. Give it a descriptive **title** — for example, "WordPress Basics Course" or "Product Demo Series."
 
@@ -24,7 +24,7 @@ Make sure you have already created the media items (videos) that you want to inc
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-2.webp)
 
-2. Select existing media items from your Fluent Player library. Each item shows its title.
+2. Select existing media items from your FluentPlayer library. Each item shows its title.
 3. Add as many videos as you need.
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-3.webp)
@@ -56,14 +56,14 @@ Each layout has its own settings — see [Playlist Layouts](/guide/playlists/pla
 Click **Save** (or **Publish**) to save the playlist. It now has an **ID** that you will use to embed it.
 
 ::: tip Finding the playlist ID
-The ID appears in the playlist list under **Fluent Player → Playlists** (for example, `#10`). You will need this when embedding with `[fluentplaylist id="10"]`.
+The ID appears in the playlist list under **FluentPlayer → Playlists** (for example, `#10`). You will need this when embedding with `[fluentplaylist id="10"]`.
 :::
 
 ## Editing an existing playlist
 
 To change a playlist later:
 
-1. Go to **Fluent Player → Playlists**.
+1. Go to **FluentPlayer → Playlists**.
 2. Click on the playlist you want to edit.
 3. Add or remove media, reorder items, change the layout, or update settings.
 4. Save.

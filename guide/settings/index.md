@@ -1,11 +1,11 @@
 # Settings Overview
 
-The **Settings** screen is the global control panel for Fluent Player. All site-wide defaults — branding, storage integrations, analytics, email providers, and more — are configured here.
+The **Settings** screen is the global control panel for FluentPlayer. All site-wide defaults — branding, storage integrations, analytics, email providers, and more — are configured here.
 
 ## How to open Settings
 
-1. In your WordPress admin, go to **Fluent Player** (or **Fluent Player Pro**) in the left sidebar.
-2. Click **Settings** — either the **gear icon** in the plugin header bar, or the **Settings** item under the Fluent Player menu in the WordPress sidebar.
+1. In your WordPress admin, go to **FluentPlayer** (or **FluentPlayer Pro**) in the left sidebar.
+2. Click **Settings** — either the **gear icon** in the plugin header bar, or the **Settings** item under the FluentPlayer menu in the WordPress sidebar.
 3. Use the **inner settings sidebar** (on the left of the settings screen) to switch between sections.
 
 ![Settings](/guide/public/settings/index/settings-1.webp)
@@ -20,11 +20,11 @@ The **Settings** screen is the global control panel for Fluent Player. All site-
 | [**Integrations**](/guide/settings/integrations) | Email/lead capture providers: FluentCRM, Webhook, Mailchimp |
 | [**Storage**](/guide/settings/storage) | Video hosting connections: BunnyCDN Stream, BunnyCDN Storage, Mux |
 | [**YouTube**](/guide/settings/youtube) | Privacy-enhanced mode, Subscribe button for YouTube sources |
-| [**Analytics**](/guide/settings/analytics) | Built-in Fluent Player Analytics and Google Analytics (two separate tabs) |
+| [**Analytics**](/guide/settings/analytics) | Built-in FluentPlayer Analytics and Google Analytics (two separate tabs) |
 | [**Export**](/guide/settings/export) | Download captured email submissions as CSV, JSON, or ODS |
 
 ::: info Pro vs Free
-Some sections (**Storage**, **Analytics → Fluent Player Analytics**, **Export**) require **Fluent Player Pro**. The free plugin shows fewer sections. The settings sidebar only displays sections relevant to your active license.
+Some sections (**Storage**, **Analytics → FluentPlayer Analytics**, **Export**) require **FluentPlayer Pro**. The free plugin shows fewer sections. The settings sidebar only displays sections relevant to your active license.
 :::
 
 ## Settings vs per-media overrides
@@ -33,8 +33,8 @@ Settings control **global defaults**. Many options can be overridden at narrower
 
 | Scope | How to access |
 |-------|--------------|
-| **Global** (Settings) | Fluent Player → Settings |
-| **Preset** | Fluent Player → Settings → General → Default preset (edit a preset) |
-| **Per media** | Edit a media item in the Fluent Player → Media editor |
-| **Per block** | Fluent Player block sidebar in the Gutenberg editor |
+| **Global** (Settings) | FluentPlayer → Settings |
+| **Preset** | FluentPlayer → Settings → General → Default preset (edit a preset) |
+| **Per media** | Edit a media item in the FluentPlayer → Media editor |
+| **Per block** | FluentPlayer block sidebar in the Gutenberg editor |
 

@@ -1,16 +1,16 @@
 ---
 title: "Timed content area (Block sidebar)"
-description: "Fluent Player Pro timed content below the player: toggle the region, inner blocks, and sync with playback for lessons and structured layouts."
+description: "FluentPlayer Pro timed content below the player: toggle the region, inner blocks, and sync with playback for lessons and structured layouts."
 ---
 
 # Timed content area (Block sidebar)
 
 The **Timed Content Area** is a Pro-exclusive feature that allows you to display dynamic content directly beneath your video player. This region is perfect for showing lesson notes, download buttons, or supplementary information that syncs with your video.
 
-To configure this feature, go to **Fluent Player → Media**, open your media item, and navigate to the **Timed Content Area** panel under the **Block** tab.
+To configure this feature, go to **FluentPlayer → Media**, open your media item, and navigate to the **Timed Content Area** panel under the **Block** tab.
 
 ::: info Pro feature
-This feature is only available in **Fluent Player Pro**. If you are using the free version, this panel may be hidden or restricted.
+This feature is only available in **FluentPlayer Pro**. If you are using the free version, this panel may be hidden or restricted.
 :::
 
 ## Enabling the Timed Content Area

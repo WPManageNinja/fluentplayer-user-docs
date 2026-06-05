@@ -17,7 +17,7 @@ At a time you choose — for example, 2 minutes into the video — playback paus
 
 ## Setting up a CTA overlay
 
-1. Go to **Fluent Player → Media** and open the media item you want to add a CTA to.
+1. Go to **FluentPlayer → Media** and open the media item you want to add a CTA to.
 2. In the right sidebar, expand the **Interactive Layers** panel.
 3. Click **+ Add Layer** to open the **Manage Layers** dialog.
 

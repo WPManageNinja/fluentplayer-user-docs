@@ -1,6 +1,6 @@
 ---
 title: "Public vs Private Visibility"
-description: "Learn how Fluent Player public and private visibility affects the dedicated player URL, how it differs from embeds and playlists, and how to change the setting."
+description: "Learn how FluentPlayer public and private visibility affects the dedicated player URL, how it differs from embeds and playlists, and how to change the setting."
 ---
 
 # Public vs Private Visibility
@@ -36,7 +36,7 @@ When a media item is set to **Private** (the default):
 
 ## How to Change Sisibility
 
-1. Go to **Fluent Player → Media** and open the media item.
+1. Go to **FluentPlayer → Media** and open the media item.
 2. In the media settings, look for the **Public visibility** option.
 3. Toggle it **on** to make the dedicated URL publicly accessible, or **off** to keep it private.
 4. Latsly, click on the **Save** button.

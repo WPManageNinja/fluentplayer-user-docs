@@ -9,7 +9,7 @@ description: "Use the fluentplayer_timestamp shortcode to jump the player to a t
 
 ## How it works
 
-When a viewer clicks a timestamp link, the Fluent Player on that same page automatically seeks to the exact time defined in the link. To make this work, the **Media ID** in your timestamp link must match the **ID** of the player embedded on the page.
+When a viewer clicks a timestamp link, the FluentPlayer on that same page automatically seeks to the exact time defined in the link. To make this work, the **Media ID** in your timestamp link must match the **ID** of the player embedded on the page.
 
 ## Finding the Shortcode
 

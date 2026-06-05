@@ -9,7 +9,7 @@ The **General Settings** panel allows you to control the fundamental behavior an
 
 ### Access the Global Settings
 
-To access these settings, go to **Fluent Player → Media**, and either click **Add Media** or select an existing media item. Once in the editor, ensure the **Block** tab is selected in the right sidebar to find the **General Settings** section.
+To access these settings, go to **FluentPlayer → Media**, and either click **Add Media** or select an existing media item. Once in the editor, ensure the **Block** tab is selected in the right sidebar to find the **General Settings** section.
 
 ## Settings Overview
 

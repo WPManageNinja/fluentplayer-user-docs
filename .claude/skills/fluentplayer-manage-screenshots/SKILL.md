@@ -1,13 +1,13 @@
 ---
 name: fluentplayer-manage-screenshots
-description: 'Add and standardize screenshots in the Fluent Player VitePress docs (fluentplayer-user-docs). Enforces the repo convention: per-page images live at guide/public/<section>/<page>/<name>.webp, are referenced in markdown with the matching root-relative /guide/public/... path, use the .webp format, keep a .gitkeep in each directory, and have meaningful alt text. Validates that references resolve and finds orphans. USE FOR: add screenshots, embed images, fix image paths, standardize images, rename screenshots, broken image. DO NOT USE FOR: brand/logo assets (those live in root public/), creating a whole new page (use fluentplayer-add-doc-page), or non-image edits.'
+description: 'Add and standardize screenshots in the FluentPlayer VitePress docs (fluentplayer-user-docs). Enforces the repo convention: per-page images live at guide/public/<section>/<page>/<name>.webp, are referenced in markdown with the matching root-relative /guide/public/... path, use the .webp format, keep a .gitkeep in each directory, and have meaningful alt text. Validates that references resolve and finds orphans. USE FOR: add screenshots, embed images, fix image paths, standardize images, rename screenshots, broken image. DO NOT USE FOR: brand/logo assets (those live in root public/), creating a whole new page (use fluentplayer-add-doc-page), or non-image edits.'
 license: MIT
 compatibility: Operates on the fluentplayer-user-docs VitePress repo. Image conversion (if needed) requires cwebp or ImageMagick.
 metadata:
   project: fluentplayer-user-docs
 ---
 
-# Manage Fluent Player screenshots
+# Manage FluentPlayer screenshots
 
 Keep documentation images consistent with how the site already stores and references them.
 

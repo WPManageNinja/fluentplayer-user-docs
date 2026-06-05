@@ -1,6 +1,6 @@
 # Integrations Overview
 
-Fluent Player connects with powerful external services to expand your video capabilities. These integrations cover **video hosting**, **email marketing**, and **analytics**, helping you deliver high-quality content while growing your audience.
+FluentPlayer connects with powerful external services to expand your video capabilities. These integrations cover **video hosting**, **email marketing**, and **analytics**, helping you deliver high-quality content while growing your audience.
 
 ## Available integrations
 
@@ -9,7 +9,7 @@ Fluent Player connects with powerful external services to expand your video capa
 Professional hosting ensures faster loading and a better viewer experience by offloading video delivery from your server.
 
 - **[Mux](/guide/integrations/mux)** — HLS streaming, direct uploads, live streams, optional signed URLs, webhooks, AI captions, and optional Mux Data analytics. In the block editor you can pick **Mux** or **Mux Live** as the source; credentials are configured under **Settings → Storage**.
-- **[BunnyCDN Stream](/guide/integrations/bunnycdn-stream)** — Use Bunny's video streaming platform. Upload and manage videos in Bunny libraries, then select them in Fluent Player.
+- **[BunnyCDN Stream](/guide/integrations/bunnycdn-stream)** — Use Bunny's video streaming platform. Upload and manage videos in Bunny libraries, then select them in FluentPlayer.
 - **[BunnyCDN Storage](/guide/integrations/bunnycdn-storage)** — Host video files in Bunny's storage zones. Upload from WordPress and use storage files as video sources.
 
 ### Email marketing
@@ -29,18 +29,18 @@ Track how your audience interacts with your content to make data-driven decision
 
 ### Community and personalization
 
-- **[FluentCommunity (Pro)](/guide/integrations/fluent-community)** (Pro) — Embed Fluent Player media inside FluentCommunity posts and portal content.
+- **[FluentCommunity (Pro)](/guide/integrations/fluent-community)** (Pro) — Embed FluentPlayer media inside FluentCommunity posts and portal content.
 - **[Smartcodes and personalization](/guide/integrations/smartcodes-personalization)** — Use FluentCRM merge tags (for example the contact first-name tag) in supported player text when FluentCRM is installed.
 
 ## Where to configure integrations
 
-Most integration settings are found in **Fluent Player → Settings**. Some integrations have their own sections or tabs. Here is a quick map:
+Most integration settings are found in **FluentPlayer → Settings**. Some integrations have their own sections or tabs. Here is a quick map:
 
 | Integration | Where to configure |
 |-------------|-------------------|
 | Mux, BunnyCDN Stream, BunnyCDN Storage | **Settings → Storage** (filter chips **All** / **BunnyCDN** / **Mux**; each row has **Configure**) |
 | FluentCRM / Mailchimp / Webhook | **Settings → Integrations** (filters **All** / **Email Service Provider** / **Others**) |
-| Built-in Analytics | **Settings → Analytics** → **Fluent Player Analytics** tab |
+| Built-in Analytics | **Settings → Analytics** → **FluentPlayer Analytics** tab |
 | Google Analytics | **Settings → Analytics** → **Google Analytics** tab |
 | FluentCommunity block | Requires FluentCommunity; embed from the community editor |
 | FluentCRM smartcodes | **Settings → Integrations** (FluentCRM) + supported text fields |

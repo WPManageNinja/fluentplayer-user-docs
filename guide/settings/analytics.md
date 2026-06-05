@@ -2,17 +2,17 @@
 
 Welcome to the Analytics settings! If you have ever wondered who is watching your videos, how long they stay, and exactly when they stop watching, this is where you turn those insights on.
 
-We give you two powerful ways to track your video engagement side-by-side: our beautifully detailed, built-in Fluent Player Analytics and a seamless integration with Google Analytics.
+We give you two powerful ways to track your video engagement side-by-side: our beautifully detailed, built-in FluentPlayer Analytics and a seamless integration with Google Analytics.
 
 
 
-## Setting Up Fluent Player Analytics (Pro)
+## Setting Up FluentPlayer Analytics (Pro)
 
-Our built-in analytics are like having a private command center right inside your WordPress dashboard. You do not need to log into any external websites to see how your videos are performing. Once you turn this on, a brand new **Analytics** menu will appear under Fluent Player in your WordPress sidebar.
+Our built-in analytics are like having a private command center right inside your WordPress dashboard. You do not need to log into any external websites to see how your videos are performing. Once you turn this on, a brand new **Analytics** menu will appear under FluentPlayer in your WordPress sidebar.
 
 ### How to activate your native tracking:
-1. Navigate to **Fluent Player -> Settings -> Analytics**.
-2. Click on the **Fluent Player Analytics** tab.
+1. Navigate to **FluentPlayer -> Settings -> Analytics**.
+2. Click on the **FluentPlayer Analytics** tab.
 3. Toggle **Enable Analytics** to the ON position. This tells your website to instantly start recording viewer data!
 
 ![Analytics](/guide/public/settings/analytics/analytics-1.webp)
@@ -49,7 +49,7 @@ Whenever someone watches a video, we tell Google exactly which video it is (by s
 #### Option A: You already have Google Analytics on your site (Highly Recommended!)
 If your WordPress theme or another plugin is already loading Google Analytics, use this method. It prevents your website from loading heavy Google scripts twice, keeping your site blazing fast.
 
-1. Navigate to **Fluent Player -> Settings -> Analytics**.
+1. Navigate to **FluentPlayer -> Settings -> Analytics**.
 2. Click the **Google Analytics** tab.
 3. Toggle on **Enable Google Analytics**.
 
@@ -64,7 +64,7 @@ If your WordPress theme or another plugin is already loading Google Analytics, u
 If you want FluentPlayer to load Google Analytics for you, use this method.
 
 1. First, grab your GA4 web stream measurement ID from your Google Analytics account (under *Admin -> Data streams*). It will look something like `G-XXXXXXXXXX`.
-2. Navigate to **Fluent Player -> Settings -> Analytics**.
+2. Navigate to **FluentPlayer -> Settings -> Analytics**.
 3. Click the **Google Analytics** tab and toggle on **Enable Google Analytics**.
 4. Make sure **Use existing on-page tag** is turned OFF.
 5. Paste your **Measurement ID** into the box that appears.

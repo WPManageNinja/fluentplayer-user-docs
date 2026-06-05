@@ -1,11 +1,11 @@
 ---
 title: "Multi-language (Block sidebar)"
-description: "Block sidebar Multi-Language: primary language, enable the selector, and prerequisites for alternate tracks or linked media in Fluent Player."
+description: "Block sidebar Multi-Language: primary language, enable the selector, and prerequisites for alternate tracks or linked media in FluentPlayer."
 ---
 
 # Multi-language (Block sidebar)
 
-If your audience speaks different languages, **Fluent Player** allows you to offer **alternate versions** of the same video. This is perfect for videos with different voiceovers or narrations.
+If your audience speaks different languages, **FluentPlayer** allows you to offer **alternate versions** of the same video. This is perfect for videos with different voiceovers or narrations.
 
 Unlike subtitles, which just add text over the screen, the **Multi-Language** feature swaps the entire video file so the viewer hears the audio in their preferred language.
 
@@ -13,7 +13,7 @@ Unlike subtitles, which just add text over the screen, the **Multi-Language** fe
 
 To set up different language versions, follow these simple steps:
 
-1. Open the video you want to edit in **Fluent Player → Media**.
+1. Open the video you want to edit in **FluentPlayer → Media**.
 2. In the right-hand sidebar, click on the **Multi-Language** tab to expand it.
 3. **Set the Primary Language:** Choose the main language of your video (e.g., English) from the **Primary Language** dropdown menu.
 4. **Turn on the Feature:** Switch the **toggle** for **Enable Multi-Language** to the "on" position. This adds a language selector to the player so viewers can switch manually.
@@ -32,7 +32,7 @@ Once the feature is enabled, you can link and manage your translated video versi
 
 ### How the Player Works for Viewers
 
- * **Automatic Switching:** When a person visits your site, **Fluent Player** detects their browser language. If you have a matching video version, it can load that version automatically.
+ * **Automatic Switching:** When a person visits your site, **FluentPlayer** detects their browser language. If you have a matching video version, it can load that version automatically.
  * **Manual Choice:** **Viewers** can also use the language selector in the player controls to pick their preferred language at any time.
 
 

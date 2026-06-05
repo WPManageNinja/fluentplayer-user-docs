@@ -8,7 +8,7 @@ import { withBase } from 'vitepress'
     <h1 class="title">Page not found</h1>
     <div class="divider" />
     <blockquote class="quote">
-      This page doesn't exist. Use the menu or go back to the Fluent Player docs.
+      This page doesn't exist. Use the menu or go back to the FluentPlayer docs.
     </blockquote>
     <div class="action">
       <a class="link" :href="withBase('/')" aria-label="go to home">

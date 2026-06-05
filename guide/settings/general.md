@@ -36,7 +36,7 @@ A dropdown that sets the aspect ratio for all players (for example **Original**,
 
 **Checkbox:** Enable Auto Resume Playback — *"Let your users resume watching from where they left off."*
 
-When this global toggle is on, Fluent Player Pro stores playback position in the viewer's browser. The next time they open the page with that video, it starts from where they stopped.
+When this global toggle is on, FluentPlayer Pro stores playback position in the viewer's browser. The next time they open the page with that video, it starts from where they stopped.
 
 ![General Settings](/guide/public/settings/general/general-settings-2.webp)
 
@@ -52,7 +52,7 @@ Position is stored in the viewer's browser. Switching devices or clearing browse
 
 ### Custom CSS
 
-A text area for global CSS that applies to every Fluent Player instance on your site. The UI suggests scoping your rules:
+A text area for global CSS that applies to every FluentPlayer instance on your site. The UI suggests scoping your rules:
 
 ```css
 .fluent-player {
@@ -65,7 +65,7 @@ Use this for minor tweaks not covered by presets (for example, adjusting progres
 
 ### Custom JavaScript
 
-A **Custom JS** field (code editor) lets you add site-wide JavaScript that runs in the context of Fluent Player on your pages. Use it only when you need small scripted behaviors that the UI does not expose — and **test thoroughly** on staging first.
+A **Custom JS** field (code editor) lets you add site-wide JavaScript that runs in the context of FluentPlayer on your pages. Use it only when you need small scripted behaviors that the UI does not expose — and **test thoroughly** on staging first.
 
 ![General Settings](/guide/public/settings/general/general-settings-3.webp)
 

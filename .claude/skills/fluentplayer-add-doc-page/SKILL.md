@@ -1,13 +1,13 @@
 ---
 name: fluentplayer-add-doc-page
-description: 'Scaffold a new page in the Fluent Player VitePress docs (fluentplayer-user-docs) following every repo convention: create the markdown file with frontmatter, create its screenshot directory + .gitkeep, wire it into the guideGroups sidebar in .vitepress/config.mts, apply (Pro) labels, and verify with docs:build. USE FOR: add a new doc page, create a guide page, new FluentPlayer doc, document a feature, add a page to the sidebar. DO NOT USE FOR: editing existing page prose, screenshots only (use fluentplayer-manage-screenshots), the changelog (use fluentplayer-changelog), or non-FluentPlayer repos.'
+description: 'Scaffold a new page in the FluentPlayer VitePress docs (fluentplayer-user-docs) following every repo convention: create the markdown file with frontmatter, create its screenshot directory + .gitkeep, wire it into the guideGroups sidebar in .vitepress/config.mts, apply (Pro) labels, and verify with docs:build. USE FOR: add a new doc page, create a guide page, new FluentPlayer doc, document a feature, add a page to the sidebar. DO NOT USE FOR: editing existing page prose, screenshots only (use fluentplayer-manage-screenshots), the changelog (use fluentplayer-changelog), or non-FluentPlayer repos.'
 license: MIT
 compatibility: Operates on the fluentplayer-user-docs VitePress repo. Requires Node/npm and git.
 metadata:
   project: fluentplayer-user-docs
 ---
 
-# Add a Fluent Player doc page
+# Add a FluentPlayer doc page
 
 Scaffold a new documentation page end-to-end so it matches the existing site and appears in navigation. The VitePress sidebar is **hand-wired** in `.vitepress/config.mts` — a new file is invisible until it is added to the `guideGroups` array. This skill never skips that step.
 
@@ -47,7 +47,7 @@ Start with frontmatter, then a single `# H1`. The repo is inconsistent about fro
 ```markdown
 ---
 title: "Vimeo (Pro)"
-description: "Connect Vimeo as a video source in Fluent Player and embed Vimeo-hosted videos in the player."
+description: "Connect Vimeo as a video source in FluentPlayer and embed Vimeo-hosted videos in the player."
 ---
 
 # Vimeo (Pro)
@@ -70,7 +70,7 @@ House style for the body:
   :::
 
   ::: info Pro feature
-  This feature requires **Fluent Player Pro**.
+  This feature requires **FluentPlayer Pro**.
   :::
   ```
 

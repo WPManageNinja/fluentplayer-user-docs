@@ -1,10 +1,10 @@
 # Playlist Appearance, Spacing, and Behavior
 
-After you choose a [playlist layout](/guide/playlists/playlist-layouts), Fluent Player Pro lets you fine-tune how the playlist looks and behaves on the front end — colors, typography, borders, autoplay, and more. These settings apply to the playlist container and list/grid around the player, not to the inner video player controls (those follow each media item's [preset](/guide/customize/presets)).
+After you choose a [playlist layout](/guide/playlists/playlist-layouts), FluentPlayer Pro lets you fine-tune how the playlist looks and behaves on the front end — colors, typography, borders, autoplay, and more. These settings apply to the playlist container and list/grid around the player, not to the inner video player controls (those follow each media item's [preset](/guide/customize/presets)).
  
 ## Where to find these options
  
-Edit your playlist under **Fluent Player → Playlists**, then look at the right-hand sidebar. You will find four collapsible panels: **General Settings**, **Layout**, **Appearance**, and **Advanced**. Click any panel header to expand it. Save the playlist when you are done.
+Edit your playlist under **FluentPlayer → Playlists**, then look at the right-hand sidebar. You will find four collapsible panels: **General Settings**, **Layout**, **Appearance**, and **Advanced**. Click any panel header to expand it. Save the playlist when you are done.
  
 ## General Settings
  

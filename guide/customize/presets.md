@@ -10,7 +10,7 @@ A **preset** is a saved player configuration that you can apply to any media ite
 
 ## Built-in presets
 
-Fluent Player ships with **seven** built-in presets. Each has a **slug** (used in settings and the database) and a **display name** (what you see in the UI). These slugs are **reserved**: even on Pro, you cannot delete a built-in preset (you can still add your own custom presets).
+FluentPlayer ships with **seven** built-in presets. Each has a **slug** (used in settings and the database) and a **display name** (what you see in the UI). These slugs are **reserved**: even on Pro, you cannot delete a built-in preset (you can still add your own custom presets).
 
 ### Default (`default`)
 
@@ -73,7 +73,7 @@ Fluent Player ships with **seven** built-in presets. Each has a **slug** (used i
 
 ## Choosing a preset for a media item
 
-1. Go to **Fluent Player → Media** and open a media item.
+1. Go to **FluentPlayer → Media** and open a media item.
 2. In the media editor, find the **preset** option.
 3. Select the preset you want (for example, **Modern**).
 4. Save.
@@ -86,7 +86,7 @@ The video will now use all the settings from that preset. If you want to change 
 
 The global default preset is applied to new media items and to any media that does not specify a preset.
 
-1. Go to **Fluent Player → Settings**.
+1. Go to **FluentPlayer → Settings**.
 2. Find the **default preset** option (under Presets / General, depending on the UI version).
 3. Select the preset you want as the default (fresh installs often use **Modern** / slug `course`).
 4. Save.
@@ -95,7 +95,7 @@ The global default preset is applied to new media items and to any media that do
 
 ## Creating custom presets (Pro)
 
-With Fluent Player Pro, you can **create, edit, and delete** your own presets. Custom presets must use a **slug that is not one of the seven reserved slugs** above.
+With FluentPlayer Pro, you can **create, edit, and delete** your own presets. Custom presets must use a **slug that is not one of the seven reserved slugs** above.
 
 Custom presets work just like the built-in ones — they appear in the preset list and can be selected per media.
 
@@ -103,7 +103,7 @@ Custom presets work just like the built-in ones — they appear in the preset li
 
 ## How preset inheritance works
 
-Here is the order of priority when Fluent Player builds the final player:
+Here is the order of priority when FluentPlayer builds the final player:
 
 1. **Global default preset** — The baseline from Settings.
 2. **Chosen preset** — If the media specifies a preset, it replaces the global default for that item.

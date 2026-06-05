@@ -5,7 +5,7 @@
 With FluentPlayer Pro, you can connect your Bunny account to manage and stream your library directly from your WordPress admin, ensuring your videos load fast for viewers anywhere in the world.
 
 ::: info Pro feature
-BunnyCDN Stream integration requires **Fluent Player Pro**.
+BunnyCDN Stream integration requires **FluentPlayer Pro**.
 :::
 
 ## Get the API Key
@@ -16,9 +16,9 @@ First, login to your [BunnyCDN Account](https://dash.bunny.net/auth/login?pk_but
 
 ## How to Connect BunnyCDN Stream
 
-To start using Bunny Stream, you first need to link your account to Fluent Player using your API key.
+To start using Bunny Stream, you first need to link your account to FluentPlayer using your API key.
 
- - In your WordPress admin, navigate to **Fluent Player Pro → Settings → Storage**.
+ - In your WordPress admin, navigate to **FluentPlayer Pro → Settings → Storage**.
  - Locate the **BunnyCDN Stream** card and click **Configure**.
 
  ![Configure](/guide/public/integrations/bunnycdn-stream/configure-2.webp)
@@ -34,7 +34,7 @@ To start using Bunny Stream, you first need to link your account to Fluent Playe
 
 Once connected, you can easily select your Bunny videos when creating new media.
 
-1. Go to **Fluent Player → Media** and create or edit a media item.
+1. Go to **FluentPlayer → Media** and create or edit a media item.
 2. In the source section, choose **Bunny Stream** as the source type.
 3. Select the **library** (if you have multiple).
 4. Select the **video** you want to use.
@@ -47,7 +47,7 @@ The player will now stream the video from Bunny's CDN when viewers watch it on y
 ## Managing videos from WordPress
 
 
-Fluent Player Pro allows you to handle common video management tasks without leaving your site:
+FluentPlayer Pro allows you to handle common video management tasks without leaving your site:
 
  * **Browse Libraries:** View all your Bunny Stream libraries and videos directly in the media picker.
  * **Upload Videos:** Send video files from WordPress to Bunny Stream for automatic encoding.

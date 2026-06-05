@@ -4,7 +4,7 @@
 
 
 ::: info Pro feature
-BunnyCDN Storage integration requires **Fluent Player Pro**.
+BunnyCDN Storage integration requires **FluentPlayer Pro**.
 :::
 
 ## When to use Bunny Storage
@@ -99,7 +99,7 @@ You may be able to:
 
  This lets you manage your hosted videos without leaving WordPress.
 
-![Adding Video with Fluentplayer](/guide/public/integrations/bunnycdn-storage/add-video-bunnycdn-10.webp)
+![Adding Video with FluentPlayer](/guide/public/integrations/bunnycdn-storage/add-video-bunnycdn-10.webp)
 
 
 

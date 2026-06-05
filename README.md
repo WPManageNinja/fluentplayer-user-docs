@@ -1,12 +1,12 @@
-# Fluent Player – User Documentation
+# FluentPlayer – User Documentation
 
-Official user documentation for [Fluent Player](https://fluentplayer.com), the WordPress video and media plugin by WPManageNinja.
+Official user documentation for [FluentPlayer](https://fluentplayer.com), the WordPress video and media plugin by WPManageNinja.
 
 Built with [VitePress](https://vitepress.dev/).
 
 ## What's Inside
 
-This documentation covers everything users need to get started with and master Fluent Player:
+This documentation covers everything users need to get started with and master FluentPlayer:
 
 - **Getting Started** – Installation, quick start, and overview
 - **Videos & Media** – Adding videos, sources, subtitles, multi-language audio, visibility

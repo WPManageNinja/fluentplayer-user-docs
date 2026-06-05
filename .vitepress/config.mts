@@ -30,7 +30,7 @@ const guideGroups = [
   {
     text: 'Get Started',
     items: [
-      { text: 'What is Fluent Player?', link: '/guide/' },
+      { text: 'What is FluentPlayer?', link: '/guide/' },
       { text: 'Installation', link: '/guide/installation' },
       { text: 'Quick Start', link: '/guide/quick-start' },
     ],
@@ -201,7 +201,7 @@ export default defineConfig({
 
     notFound: {
       title: 'Page not found',
-      quote: "This page doesn't exist. Use the menu or go back to the Fluent Player docs.",
+      quote: "This page doesn't exist. Use the menu or go back to the FluentPlayer docs.",
       linkText: 'Take me home',
     },
 

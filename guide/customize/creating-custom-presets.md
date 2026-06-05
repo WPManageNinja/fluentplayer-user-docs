@@ -1,6 +1,6 @@
 # Creating Custom Presets (Pro)
 
-With Fluent Player Pro, you can create your own **custom presets** — fully tailored player configurations that define the skin, controls, behaviors, caption styles, and even engagement overlays like email capture, CTAs, and action bars. Once created, a custom preset works just like the built-in ones and can be applied to any media item on your site.
+With FluentPlayer Pro, you can create your own **custom presets** — fully tailored player configurations that define the skin, controls, behaviors, caption styles, and even engagement overlays like email capture, CTAs, and action bars. Once created, a custom preset works just like the built-in ones and can be applied to any media item on your site.
 
 ## Why create a custom preset?
 
@@ -13,7 +13,7 @@ The seven built-in presets cover common use cases, but they cannot be modified. 
 
 ## How to create a custom preset
 
-1. Go to **Fluent Player → Media → Add Media** and open any media item.
+1. Go to **FluentPlayer → Media → Add Media** and open any media item.
 
 ![Custom Preset](/guide/public/customize/custom-preset/custom-preset-1.webp)
 

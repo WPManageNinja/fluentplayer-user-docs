@@ -7,7 +7,7 @@ description: "Upload VTT or SRT captions in the Block sidebar, manage multiple t
 
 **Subtitles** (also known as captions) help make your videos easier to understand for a wider audience. They are useful for people who are deaf or hard of hearing, those watching in noisy environments, or viewers who speak different languages.
 
-Fluent Player allows you to easily add and manage subtitle tracks for your videos directly from the **block** editor.
+FluentPlayer allows you to easily add and manage subtitle tracks for your videos directly from the **block** editor.
 
 #### Why Use Subtitles?
 

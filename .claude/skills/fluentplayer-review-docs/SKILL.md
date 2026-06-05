@@ -1,13 +1,13 @@
 ---
 name: fluentplayer-review-docs
-description: 'Pre-publish audit of the Fluent Player VitePress docs (fluentplayer-user-docs). Runs docs:build to catch dead links, checks every guide page is wired into the guideGroups sidebar, flags Pro features missing a (Pro) label, verifies screenshot references resolve to files on disk (and finds orphans), catches known alt-text/spelling typos, and flags empty/placeholder pages. Produces a structured report and offers fixes. USE FOR: review the docs, lint docs, pre-publish check, audit the documentation, find broken links, check the sidebar, before committing docs. DO NOT USE FOR: creating a new page (use fluentplayer-add-doc-page) or writing content.'
+description: 'Pre-publish audit of the FluentPlayer VitePress docs (fluentplayer-user-docs). Runs docs:build to catch dead links, checks every guide page is wired into the guideGroups sidebar, flags Pro features missing a (Pro) label, verifies screenshot references resolve to files on disk (and finds orphans), catches known alt-text/spelling typos, and flags empty/placeholder pages. Produces a structured report and offers fixes. USE FOR: review the docs, lint docs, pre-publish check, audit the documentation, find broken links, check the sidebar, before committing docs. DO NOT USE FOR: creating a new page (use fluentplayer-add-doc-page) or writing content.'
 license: MIT
 compatibility: Operates on the fluentplayer-user-docs VitePress repo. Requires Node/npm and git.
 metadata:
   project: fluentplayer-user-docs
 ---
 
-# Review the Fluent Player docs
+# Review the FluentPlayer docs
 
 A read-only audit pass over the docs site. Gather findings first, present a structured report, then offer to apply fixes — do not auto-edit content without the user's go-ahead.
 
@@ -39,7 +39,7 @@ The sidebar is hand-wired in `.vitepress/config.mts` (`guideGroups`). Cross-chec
 
 ### 3. Free/Pro labeling
 
-For each page whose body clearly describes a Pro-only feature (mentions "Pro", "requires Fluent Player Pro", or a Pro integration like Mux/Bunny/Mailchimp/Webhook/playlists/analytics), check that **(Pro)** appears in the `# H1` and in its `guideGroups` sidebar `text`. Report mismatches. (This is a heuristic — present for human confirmation, don't auto-add.)
+For each page whose body clearly describes a Pro-only feature (mentions "Pro", "requires FluentPlayer Pro", or a Pro integration like Mux/Bunny/Mailchimp/Webhook/playlists/analytics), check that **(Pro)** appears in the `# H1` and in its `guideGroups` sidebar `text`. Report mismatches. (This is a heuristic — present for human confirmation, don't auto-add.)
 
 ### 4. Screenshot references resolve
 

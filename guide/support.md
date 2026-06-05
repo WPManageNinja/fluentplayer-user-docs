@@ -9,7 +9,7 @@ next:
 
 # Support
 
-Need help with Fluent Player? This page shows the fastest way to contact support and what details to include so the team can troubleshoot your issue quickly.
+Need help with FluentPlayer? This page shows the fastest way to contact support and what details to include so the team can troubleshoot your issue quickly.
 
 ## Before you contact support
 
@@ -25,7 +25,7 @@ If the issue still remains, open a support ticket.
 
 1. Visit the [WPManageNinja support portal](https://wpmanageninja.com/support-tickets/).
 2. Sign in with your WPManageNinja account.
-3. Create a new ticket for **Fluent Player**.
+3. Create a new ticket for **FluentPlayer**.
 4. Add the required details listed below.
 
 ## What to include in your ticket
@@ -38,7 +38,7 @@ Providing complete information helps the support team reproduce the issue and gi
 - **Page URL(s):** Link to the page where the player is embedded.
 - **Error message(s):** Full text from browser console, WordPress debug logs, or plugin notices.
 - **Screenshots or screen recordings:** Especially useful for UI, overlay, and playback issues.
-- **Environment details:** WordPress version, PHP version, Fluent Player version, active theme, and key plugins.
+- **Environment details:** WordPress version, PHP version, FluentPlayer version, active theme, and key plugins.
 
 ## Response time and support hours
 

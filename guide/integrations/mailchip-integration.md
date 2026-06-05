@@ -1,18 +1,18 @@
 # Mailchimp Integration (Pro)
 
-The **Mailchimp integration** allows you to automatically add viewers to a Mailchimp audience the moment they submit their email through your video's email capture. No third-party connector or custom code is needed. Fluent Player connects directly to the Mailchimp API.
+The **Mailchimp integration** allows you to automatically add viewers to a Mailchimp audience the moment they submit their email through your video's email capture. No third-party connector or custom code is needed. FluentPlayer connects directly to the Mailchimp API.
 
 You can target a specific audience, apply tags, and control this per video so different videos can feed different lists or segments.
 
 ::: info Pro feature
-Mailchimp integration requires **Fluent Player Pro**. The Pro plugin depends on the free Fluent Player plugin. Keep both active.
+Mailchimp integration requires **FluentPlayer Pro**. The Pro plugin depends on the free FluentPlayer plugin. Keep both active.
 :::
 
 #### How it works
 
 When a viewer submits their email through the email gate:
 
-1. Fluent Player stores the submission and triggers the email provider.
+1. FluentPlayer stores the submission and triggers the email provider.
 2. The Mailchimp provider fetches the audience ID and tags from the preset.
 3. A request is sent to the Mailchimp API to add or update the contact.
 4. If the email already exists in the audience, the record is updated no duplicates are created.
@@ -29,7 +29,7 @@ When a viewer submits their email through the email gate:
 
 ![Create a Key](/guide/public/integrations/mailchimp/create-a-key-2.webp)
 
-4. Now, give it a label (for example, `Fluent Player`), and click on the **Generate key** button. 
+4. Now, give it a label (for example, `FluentPlayer`), and click on the **Generate key** button. 
 
 ![Create a Key](/guide/public/integrations/mailchimp/generate-key-3.webp)
 
@@ -41,9 +41,9 @@ When a viewer submits their email through the email gate:
 Mailchimp API keys follow the format `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-us18`. The suffix (for example, `-us18`) is your data center — the plugin uses it automatically.
 :::
 
-## Step 2: Connect Mailchimp in Fluent Player
+## Step 2: Connect Mailchimp in FluentPlayer
 
-1. In your WordPress dashboard, go to **Fluent Player → Settings**.
+1. In your WordPress dashboard, go to **FluentPlayer → Settings**.
 2. Open the **Integrations** tab.
 3. Find the **Mailchimp** and click **Configure**.
 
@@ -61,7 +61,7 @@ If validation fails, confirm you copied the full key including the `-us18` suffi
 
 Once your API key is saved:
 
-1. Open any media item in **Fluent Player → Media**.
+1. Open any media item in **FluentPlayer → Media**.
 2. Go to the **[Email Capture / Email Provider](/guide/engagement/email-capture)** settings.
 3. Select **Mailchimp** as the provider.
 4. Choose the **Mailing List** (audience) from the dropdown — it loads directly from your Mailchimp account.
@@ -96,13 +96,13 @@ webinar-attendee, product-demo, q2-campaign
 
 ## Subscriber and duplicate handling
 
-Fluent Player uses Mailchimp's **upsert** pattern when adding contacts:
+FluentPlayer uses Mailchimp's **upsert** pattern when adding contacts:
 
 - **New contact:** Added to the audience as `subscribed`.
 - **Existing contact:** Record is updated and new tags are merged, no duplicate is created.
 
 ::: info
-Fluent Player always sets the subscriber status to `subscribed`, which bypasses the double opt-in step at the API level. If your Mailchimp audience has double opt-in enabled at the account level, Mailchimp may still send a confirmation email. This is controlled by your Mailchimp settings, not the plugin.
+FluentPlayer always sets the subscriber status to `subscribed`, which bypasses the double opt-in step at the API level. If your Mailchimp audience has double opt-in enabled at the account level, Mailchimp may still send a confirmation email. This is controlled by your Mailchimp settings, not the plugin.
 :::
 
 ## Troubleshooting
@@ -121,7 +121,7 @@ Fluent Player always sets the subscriber status to `subscribed`, which bypasses 
 Yes. The mailing list is selected per video preset, so different videos can feed different audiences.
 
 **Will subscribers get a double opt-in email?**
-Fluent Player sets the status to `subscribed` at the API level, which bypasses double opt-in programmatically. If your Mailchimp audience requires double opt-in at the account level, Mailchimp may still send a confirmation email.
+FluentPlayer sets the status to `subscribed` at the API level, which bypasses double opt-in programmatically. If your Mailchimp audience requires double opt-in at the account level, Mailchimp may still send a confirmation email.
 
 **What happens if the same viewer submits their email on two different videos?**
 No duplicate is created. The existing contact is updated and any new tags from the second video are added to their profile.

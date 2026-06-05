@@ -1,15 +1,15 @@
 ---
 title: "Smartcodes and Personalization (FluentCRM)"
-description: "Use Fluent Player Pro Smartcodes with FluentCRM to personalize titles, overlays, email capture, and timed content with merge tags like contact first name."
+description: "Use FluentPlayer Pro Smartcodes with FluentCRM to personalize titles, overlays, email capture, and timed content with merge tags like contact first name."
 ---
 
 # Smartcodes and Personalization (FluentCRM)
 
-With **Fluent Player Pro**, you can create a truly personalized viewing experience by using **Smartcodes**. When integrated with **FluentCRM**, the player can dynamically replace placeholders with real user data—like a viewer's name or email—directly inside the video player’s text elements.
+With **FluentPlayer Pro**, you can create a truly personalized viewing experience by using **Smartcodes**. When integrated with **FluentCRM**, the player can dynamically replace placeholders with real user data—like a viewer's name or email—directly inside the video player’s text elements.
 
 ### What are Smartcodes?
 
-Smartcodes are dynamic placeholders (merge tags) that look like double braces, such as <code v-pre>{{contact.first_name}}</code>. When a logged-in user or a known contact views your video, Fluent Player automatically replaces these tags with the specific information stored in their **FluentCRM** profile.
+Smartcodes are dynamic placeholders (merge tags) that look like double braces, such as <code v-pre>{{contact.first_name}}</code>. When a logged-in user or a known contact views your video, FluentPlayer automatically replaces these tags with the specific information stored in their **FluentCRM** profile.
 
 ---
 
@@ -28,7 +28,7 @@ You can insert Smartcodes into several areas of the player to engage your audien
 
 ### 1. Connect FluentCRM
 
-* Go to **Fluent Player Pro** → **Settings** → **Integrations**.
+* Go to **FluentPlayer Pro** → **Settings** → **Integrations**.
 * Locate the **FluentCRM** card and ensure it is **Enabled**.
 
 >[!Note]

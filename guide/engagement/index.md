@@ -9,7 +9,7 @@ next:
 
 # Engagement & Conversion
 
-Fluent Player includes a set of overlay tools designed to turn passive viewers into active leads and customers. These tools go beyond appearance — they directly drive email signups, clicks, and conversions without your viewers leaving the video.
+FluentPlayer includes a set of overlay tools designed to turn passive viewers into active leads and customers. These tools go beyond appearance — they directly drive email signups, clicks, and conversions without your viewers leaving the video.
 
 ## What you can do
 
@@ -25,7 +25,7 @@ All engagement overlays are configured **per media** through the **Interactive L
 
 ## Where to configure
 
-1. Go to **Fluent Player → Media** and open the media item you want to configure.
+1. Go to **FluentPlayer → Media** and open the media item you want to configure.
 2. In the right sidebar, expand the **Interactive Layers** panel.
 3. Click **+ Add Layer** to open the **Manage Layers** dialog.
 4. Choose the layer type you want to add (e.g., Email Capture, CTA, Hotspot, Ad, Fluent Forms, or Shortcode).

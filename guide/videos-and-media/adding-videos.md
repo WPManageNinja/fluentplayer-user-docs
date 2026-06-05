@@ -1,17 +1,17 @@
 ---
 title: "Adding and Editing Videos"
-description: "Learn how to create, edit, and manage media in Fluent Player, including video sources, presets, posters, and media IDs."
+description: "Learn how to create, edit, and manage media in FluentPlayer, including video sources, presets, posters, and media IDs."
 ---
 
 # Adding and Editing Videos
 
-This guide explains how to manage your video content within Fluent Player. You can create, organize, and update your media directly from your WordPress dashboard without touching a single line of code.
+This guide explains how to manage your video content within FluentPlayer. You can create, organize, and update your media directly from your WordPress dashboard without touching a single line of code.
 
 ## Creating a New Media Item
 
 Adding a video (Media) is the first step toward getting your content in front of your audience.
 
-1. In your WordPress admin, go to **Fluent Player → Media** (the **Media** section in **Fluent Player Pro**).
+1. In your WordPress admin, go to **FluentPlayer → Media** (the **Media** section in **FluentPlayer Pro**).
 2. Click **Add Media** (or **Add New** / **+**, depending on the screen) to create a new item.
 
 ![Add Media](/guide/public/videos-and-media/adding-videos/add-media-1.webp)
@@ -40,7 +40,7 @@ You do not need to configure everything at once. You can always come back and ch
 
 You can update your videos at any time, and the changes will automatically reflect everywhere the video is embedded on your site.
 
-1. Go to **Fluent Player → Media**.
+1. Go to **FluentPlayer → Media**.
 2. Find the media in the list and click on its title to open the editor.
 3. Modify any settings, including:
    - The **Video Source** (to swap URLs or files).

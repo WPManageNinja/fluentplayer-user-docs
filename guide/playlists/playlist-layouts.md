@@ -1,6 +1,6 @@
 # Playlist Layouts
 
-When you create a playlist, you choose a **layout** that controls how it is displayed on the front end. Fluent Player offers two layout styles — **Standard** and **Grid** — each designed for a different use case.
+When you create a playlist, you choose a **layout** that controls how it is displayed on the front end. FluentPlayer offers two layout styles — **Standard** and **Grid** — each designed for a different use case.
 
 To configure the layout, open a playlist and expand the **Layout** panel in the right sidebar.
 

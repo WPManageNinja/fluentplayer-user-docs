@@ -1,9 +1,9 @@
 # Storage Settings
 
-The Storage section is where you connect external **video hosting** providers to Fluent Player Pro. Once connected, you can choose these providers as video sources when adding or editing media items.
+The Storage section is where you connect external **video hosting** providers to FluentPlayer Pro. Once connected, you can choose these providers as video sources when adding or editing media items.
 
 ::: info Pro feature
-All storage integrations require **Fluent Player Pro**.
+All storage integrations require **FluentPlayer Pro**.
 :::
 
 ::: info Note
@@ -22,7 +22,7 @@ Each integration card displays a brief description, a status badge (Enabled or D
 
 ## BunnyCDN Stream
 
-**BunnyCDN Stream** is a video streaming CDN with encoding, multi-bitrate delivery, and global edge nodes. Fluent Player can browse your Bunny Stream libraries and serve HLS video directly.
+**BunnyCDN Stream** is a video streaming CDN with encoding, multi-bitrate delivery, and global edge nodes. FluentPlayer can browse your Bunny Stream libraries and serve HLS video directly.
 
 ### What you need
 
@@ -32,18 +32,18 @@ Each integration card displays a brief description, a status badge (Enabled or D
 
 ### How to connect
 
-1. Go to **Fluent Player → Settings → Storage**.
+1. Go to **FluentPlayer → Settings → Storage**.
 2. Click **Configure** on the **BunnyCDN Stream** row.
 3. Enter your **API key**.
 4. Enter your **library** details (pull zone or library ID) if prompted.
-5. Click **Test connection** to verify Fluent Player can reach Bunny.
+5. Click **Test connection** to verify FluentPlayer can reach Bunny.
 6. **Save** the settings.
 
 ### Using BunnyCDN Stream as a video source
 
 After connecting:
 
-1. Go to **Fluent Player → Media** and create or edit a media item.
+1. Go to **FluentPlayer → Media** and create or edit a media item.
 2. Choose **BunnyCDN Stream** as the source type.
 3. Select the **library** (if you have multiple).
 4. Select the **video** you want to use.
@@ -63,7 +63,7 @@ After connecting:
 
 ### How to connect
 
-1. Go to **Fluent Player → Settings → Storage**.
+1. Go to **FluentPlayer → Settings → Storage**.
 2. Click **Configure** on the **BunnyCDN Storage** row.
 3. Enter your **storage zone name** and **API key**.
 4. Click **Test connection** to verify.
@@ -73,7 +73,7 @@ After connecting:
 
 After connecting:
 
-1. Go to **Fluent Player → Media** and create or edit a media item.
+1. Go to **FluentPlayer → Media** and create or edit a media item.
 2. Choose **BunnyCDN Storage** as the source type.
 3. Browse or select the **video file** in your storage zone.
 4. Save the media.
@@ -82,17 +82,17 @@ After connecting:
 
 ## Mux
 
-**Mux** is a professional video platform with adaptive HLS streaming, live streaming, AI-generated captions, signed URL playback, and Mux Data analytics. Fluent Player Pro provides a full Mux integration including webhook support for asset-ready events.
+**Mux** is a professional video platform with adaptive HLS streaming, live streaming, AI-generated captions, signed URL playback, and Mux Data analytics. FluentPlayer Pro provides a full Mux integration including webhook support for asset-ready events.
 
 ### What you need
 
 - A [Mux](https://mux.com) account.
 - A Mux **API access token** with **Mux Video** permissions (read and write), from **Mux dashboard → Settings → API access tokens**.
-- Fluent Player **Pro** active on your site.
+- FluentPlayer **Pro** active on your site.
 
 ### How to connect
 
-1. Go to **Fluent Player → Settings → Storage**.
+1. Go to **FluentPlayer → Settings → Storage**.
 2. Click **Configure** on the **Mux** row.
 3. Enter your **Token ID** and **Token Secret** from the Mux dashboard.
 4. Click **Test connection** to confirm the credentials work.
@@ -111,7 +111,7 @@ After connecting:
 
 After connecting:
 
-1. Go to **Fluent Player → Media** and create or edit a media item.
+1. Go to **FluentPlayer → Media** and create or edit a media item.
 2. Choose **Mux** as the source type.
 3. Select an existing Mux asset or enter the playback ID.
 4. Save the media.

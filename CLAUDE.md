@@ -6,9 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository overview
 
-This is the **end-user documentation site** for **Fluent Player** — a WordPress video and media player plugin by WPManageNinja. The site is built with [VitePress](https://vitepress.dev/) (v1.6+, Vue 3) and deployed to GitHub Pages.
+This is the **end-user documentation site** for **FluentPlayer** — a WordPress video and media player plugin by WPManageNinja. The site is built with [VitePress](https://vitepress.dev/) (v1.6+, Vue 3) and deployed to GitHub Pages.
 
-> **You are editing user-facing documentation, not plugin source code.** All content lives under `guide/` in Markdown. The current documented release is **Fluent Player Free and Pro 1.0.4**.
+> **You are editing user-facing documentation, not plugin source code.** All content lives under `guide/` in Markdown. The current documented release is **FluentPlayer Free and Pro 1.0.4**.
 
 ---
 
@@ -45,7 +45,7 @@ npm run docs:build:gh-pages   # Build with base /fluentplayer-user-docs/ for Git
 │   └── dist/                   # Build output (gitignored; may be stale — not authoritative)
 │
 ├── guide/                      # ALL documentation content (Markdown)
-│   ├── index.md                # "What is Fluent Player?" (section landing)
+│   ├── index.md                # "What is FluentPlayer?" (section landing)
 │   ├── installation.md
 │   ├── quick-start.md
 │   ├── changelog.md            # NOTE: currently empty, but linked from top nav

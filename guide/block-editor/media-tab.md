@@ -1,6 +1,6 @@
 ---
 title: "Media vs Block tabs"
-description: "Learn the Fluent Player Media and Block sidebar tabs: document-level media fields vs player configuration, what saves where, and when to use each tab."
+description: "Learn the FluentPlayer Media and Block sidebar tabs: document-level media fields vs player configuration, what saves where, and when to use each tab."
 ---
 
 # Media vs Block Tabs
@@ -17,7 +17,7 @@ The **Media** tab focuses on the high-level details and "document-level" setting
  * **Menu Options:** A **three-dot** menu allows you to quickly **View**, **Rename**, or **Trash** the media item.
 
 >[!Note]
->If you are using the dedicated editor **(Fluent Player → Media)**, this tab ensures the information in your media list matches what you see on the screen.
+>If you are using the dedicated editor **(FluentPlayer → Media)**, this tab ensures the information in your media list matches what you see on the screen.
 
 ![Media Tab](/guide/public/block-editor/media-tab/media-tab-1.webp)
 

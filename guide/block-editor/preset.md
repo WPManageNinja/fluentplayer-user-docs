@@ -1,17 +1,17 @@
 ---
 title: "Preset (Block sidebar)"
-description: "Choose a Fluent Player preset from the Block sidebar: built-in skins, custom presets, and how they bundle controls, colors, and behavior."
+description: "Choose a FluentPlayer preset from the Block sidebar: built-in skins, custom presets, and how they bundle controls, colors, and behavior."
 ---
 
 # Preset (Block sidebar)
 
 The **Presets** panel is where you define the overall "look and feel" of your video player. Instead of adjusting every single button and color for every video, you can choose a preset to instantly apply a professional skin and a pre-configured set of controls.
 
-To find these options, go to **Fluent Player → Media**, open your video, and look for the **Preset** section under the **Block** tab.
+To find these options, go to **FluentPlayer → Media**, open your video, and look for the **Preset** section under the **Block** tab.
 
 ## Choosing a Visual Style
 
-Fluent Player provides a visual grid of built-in styles. Simply click a thumbnail to apply that look to your player:
+FluentPlayer provides a visual grid of built-in styles. Simply click a thumbnail to apply that look to your player:
 
  * **Default:** This is a balanced and familiar layout that works well for most use cases. It provides all standard controls in a clear and user-friendly way, making it a safe choice if you want a reliable and professional look without extra customization.
  * **Modern:** The Modern style offers a clean and updated design with a sleek appearance. It is ideal if you want your video player to match a contemporary website design and provide a polished viewing experience.
@@ -53,7 +53,7 @@ The following controls are available for your custom preset:
 
 ## Built-in presets
 
-Fluent Player ships with **seven** built-in presets (names may appear with thumbnails in the grid):
+FluentPlayer ships with **seven** built-in presets (names may appear with thumbnails in the grid):
 
 | Preset | Character |
 |--------|-----------|
@@ -72,7 +72,7 @@ Click a preset to select it; the UI usually shows a **checkmark** or border on t
 | Action | Purpose |
 |--------|---------|
 | **Duplicate** (icon on a preset) | Creates a **copy** you can customize—useful as a starting point for a custom look. |
-| **+ Add New** | Creates a **new custom preset** (availability may require **Fluent Player Pro** or a sufficient plan). |
+| **+ Add New** | Creates a **new custom preset** (availability may require **FluentPlayer Pro** or a sufficient plan). |
 
 Custom presets appear in the same grid and can be chosen for any media item.
 

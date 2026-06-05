@@ -1,11 +1,11 @@
 ---
 title: "Embed with Shortcode"
-description: "Embed Fluent Player with [fluentplayer id=\"…\"] or [fluentmedia] in posts, widgets, and templates—find the media ID, optional attributes, and common questions."
+description: "Embed FluentPlayer with [fluentplayer id=\"…\"] or [fluentmedia] in posts, widgets, and templates—find the media ID, optional attributes, and common questions."
 ---
 
 # Embed with Shortcode
 
-The **shortcode** is the most common way to embed a Fluent Player video. It works in posts, pages, widgets, and even in theme templates.
+The **shortcode** is the most common way to embed a FluentPlayer video. It works in posts, pages, widgets, and even in theme templates.
 
 ### Basic usage
 
@@ -21,7 +21,7 @@ Replace `129` with the ID of your media item. Once added, the player will appear
 
 Every video you create is assigned a unique ID and a ready-to-use shortcode.
 
- 1. Navigate to **Fluent Player → Media**.
+ 1. Navigate to **FluentPlayer → Media**.
  2. Look at the **Media List** table.
  3. You will find the **ID (e.g., #129)** at the start of the row and the full **ShortCode** (e.g., [fluentplayer id='129']) in its own column.
  4. **Copy** the code exactly as shown.
@@ -34,7 +34,7 @@ Every video you create is assigned a unique ID and a ready-to-use shortcode.
 |-----------|----------|-------------|
 | `id` | Yes | The media (post) ID |
 
-The shortcode is intentionally simple — the video source, preset, controls, and all other settings come from the media item itself. This means you configure everything in one place (**Fluent Player → Media**) and the shortcode just references it.
+The shortcode is intentionally simple — the video source, preset, controls, and all other settings come from the media item itself. This means you configure everything in one place (**FluentPlayer → Media**) and the shortcode just references it.
 
 ::: tip
 If you ever change the video source, poster, or preset for a media item, every page that uses the shortcode for that ID will update automatically. No need to edit every page.

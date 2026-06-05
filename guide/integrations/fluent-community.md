@@ -1,17 +1,17 @@
 # FluentCommunity (Pro)
 
-The **FluentPlayer** integration allows you to transform your FluentCommunity portal into a fully branded, professional, and video-enabled experience. Instead of relying on the default look of third-party embeds, Fluent Player ensures all video content from community posts to course lessons is consistent and perfectly matches your community’s style.
+The **FluentPlayer** integration allows you to transform your FluentCommunity portal into a fully branded, professional, and video-enabled experience. Instead of relying on the default look of third-party embeds, FluentPlayer ensures all video content from community posts to course lessons is consistent and perfectly matches your community’s style.
 
 #### What you need
 
-- **Fluent Player Pro** installed and activated.
+- **FluentPlayer Pro** installed and activated.
 - **FluentCommunity** installed and your portal/community configured.
-- Media items created in **Fluent Player → Media** (or connected sources such as [Mux](/guide/integrations/mux) or [Bunny Stream](/guide/integrations/bunnycdn-stream)).
+- Media items created in **FluentPlayer → Media** (or connected sources such as [Mux](/guide/integrations/mux) or [Bunny Stream](/guide/integrations/bunnycdn-stream)).
 
 ## Core Integration Features
 
  * **Member Video Uploads:** Allow members to upload videos directly to community Spaces in formats like MP4, M3U8, and MOV.
- * **Unified Branding:** Force external links (YouTube, Vimeo, HLS) to render with your custom Fluent Player design and brand colors.
+ * **Unified Branding:** Force external links (YouTube, Vimeo, HLS) to render with your custom FluentPlayer design and brand colors.
  * **Lesson Resources:** Attach downloadable files (PDFs, worksheets) directly to your video lessons.
  * **Smartcodes:** Personalize lesson content using tags like `##user.display_name##` to greet students individually.
 
@@ -19,7 +19,7 @@ The **FluentPlayer** integration allows you to transform your FluentCommunity po
 
 ### 1. Enabling the Integration
 
-If you do not have Fluent Player installed, you can do so directly from your portal:
+If you do not have FluentPlayer installed, you can do so directly from your portal:
 
  - Go to **FluentCommunity > Settings > Features & Addons**.
  - Find the FluentPlayer module under **Recommended Plugins** and click **Install FluentPlayer**.
@@ -46,7 +46,7 @@ Control how your community members interact with video content:
 
  * **Enable Video Uploads:** **Turn** this toggle **ON** to allow direct file uploads in community posts.
  * **Permissions:** Restrict who can upload videos choose from Admins, Admins and Moderators, or Everyone.
- * **Play Embedded Videos With Fluent Player:** Turn this **ON** to force external links (like YouTube or Vimeo) to use your custom branded player.
+ * **Play Embedded Videos With FluentPlayer:** Turn this **ON** to force external links (like YouTube or Vimeo) to use your custom branded player.
 
 ![Customize FluentPlayer](/guide/public/integrations/fluent-community/customize-fluentplayer-2.webp)
 
@@ -78,7 +78,7 @@ For course creators, FluentPlayer integrates directly into the lesson editor usi
 
 Open your lesson editor and click the **(+) icon** to search for the **FluentPlayer block**.
 
-![Fluent Player Block](/guide/public/integrations/fluent-community/fluentplayer-block-1.webp)
+![FluentPlayer Block](/guide/public/integrations/fluent-community/fluentplayer-block-1.webp)
 
 You can select an existing video from your **library** or add a new one from sources like **Bunny Stream, Mux, or YouTube**.
 

@@ -1,13 +1,13 @@
 ---
 name: fluentplayer-changelog
-description: 'Write and maintain the Fluent Player docs changelog (guide/changelog.md in the fluentplayer-user-docs VitePress site). Scaffolds the page on first use (it is currently empty), then prepends a new reverse-chronological version section with user-facing Added/Changed/Fixed entries derived from release notes or git history. USE FOR: write a changelog entry, update the changelog, add a release note, document version X. DO NOT USE FOR: creating other doc pages (use fluentplayer-add-doc-page) or editing feature guides.'
+description: 'Write and maintain the FluentPlayer docs changelog (guide/changelog.md in the fluentplayer-user-docs VitePress site). Scaffolds the page on first use (it is currently empty), then prepends a new reverse-chronological version section with user-facing Added/Changed/Fixed entries derived from release notes or git history. USE FOR: write a changelog entry, update the changelog, add a release note, document version X. DO NOT USE FOR: creating other doc pages (use fluentplayer-add-doc-page) or editing feature guides.'
 license: MIT
 compatibility: Operates on the fluentplayer-user-docs VitePress repo. Requires Node/npm and git.
 metadata:
   project: fluentplayer-user-docs
 ---
 
-# Maintain the Fluent Player changelog
+# Maintain the FluentPlayer changelog
 
 Keep `guide/changelog.md` a clean, reverse-chronological, user-facing record of releases. The file is linked from the top nav (the `Changelog` item in `.vitepress/config.mts`) but is **currently empty** — the first run scaffolds it.
 
@@ -44,7 +44,7 @@ If `guide/changelog.md` is empty, create the structure:
 ```markdown
 # Changelog
 
-All notable user-facing changes to Fluent Player are documented here. The newest release is listed first.
+All notable user-facing changes to FluentPlayer are documented here. The newest release is listed first.
 
 ## v1.0.5 — 2026-06-05
 

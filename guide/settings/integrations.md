@@ -1,6 +1,6 @@
 # Integrations Settings
 
-The Integrations section manages **email and lead capture providers**. When viewers submit their email through a [Fluent Player email capture overlay](/guide/engagement/email-capture), the data is routed to whichever provider you configure here.
+The Integrations section manages **email and lead capture providers**. When viewers submit their email through a [FluentPlayer email capture overlay](/guide/engagement/email-capture), the data is routed to whichever provider you configure here.
 
 ::: info Note
 Video storage providers (Mux, BunnyCDN) are configured under [**Settings → Storage**](/guide/settings/storage) — not here. This section is for **email / CRM integrations only**.
@@ -35,11 +35,11 @@ FluentCRM is a powerful, WordPress-native CRM and email marketing plugin. Becaus
 
 ## Mailchimp (Pro)
 
-**Mailchimp** is a popular email marketing platform. With Fluent Player Pro, captured emails are sent directly to a Mailchimp audience.
+**Mailchimp** is a popular email marketing platform. With FluentPlayer Pro, captured emails are sent directly to a Mailchimp audience.
 
 **How to set it up:**
 
-1. Go to **Fluent Player → Settings → Integrations**.
+1. Go to **FluentPlayer → Settings → Integrations**.
 2. Find **Mailchimp** and click **Configure**.
 3. Enter your **Mailchimp API key** (found in your Mailchimp account under **Account → API Keys**).
 4. Select the **audience (list)** where new subscribers should be added.

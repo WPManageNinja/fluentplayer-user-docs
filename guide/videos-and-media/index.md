@@ -1,15 +1,15 @@
 ---
 title: "Videos & Media Overview"
-description: "Understand how Fluent Player media items work: titles, IDs, publishing vs drafts, where to manage videos in WordPress, and the topics covered in this section."
+description: "Understand how FluentPlayer media items work: titles, IDs, publishing vs drafts, where to manage videos in WordPress, and the topics covered in this section."
 ---
 
 # Videos & Media Overview
 
-In Fluent Player, every video you add is called a **Media** item. Think of it like a blog post, but instead of text content, it holds a video along with all its settings the source URL, poster image, subtitles, player controls, and more.
+In FluentPlayer, every video you add is called a **Media** item. Think of it like a blog post, but instead of text content, it holds a video along with all its settings the source URL, poster image, subtitles, player controls, and more.
 
 This section covers everything about creating and managing your video content.
 
-## What is a "Media" in Fluent Player?
+## What is a "Media" in FluentPlayer?
 
 A Media item is the core building block of the plugin. It acts as a dedicated container for your video content and its associated data. Here is what you need to know:
 
@@ -19,7 +19,7 @@ A Media item is the core building block of the plugin. It acts as a dedicated co
 
 ## Managing Your Video Library
 
-You can manage all your content from one central location. To access your library, navigate to **Fluent Player > Media** in your WordPress dashboard.
+You can manage all your content from one central location. To access your library, navigate to **FluentPlayer > Media** in your WordPress dashboard.
 
 From this screen, you can:
 

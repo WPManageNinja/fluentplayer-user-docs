@@ -1,29 +1,29 @@
 # Webhook Integration (Pro)
 
-The **Webhook integration** lets you send email leads captured by Fluent Player to any external HTTP endpoint in real time. It is useful when you want to connect Fluent Player with tools that do not have a native integration.
+The **Webhook integration** lets you send email leads captured by FluentPlayer to any external HTTP endpoint in real time. It is useful when you want to connect FluentPlayer with tools that do not have a native integration.
 
 ::: info Pro feature
-Webhook integration requires **Fluent Player Pro**.
+Webhook integration requires **FluentPlayer Pro**.
 :::
 
 #### Requirements
 
 Before setup, make sure you have:
 
-- **Fluent Player (free)** installed and active.
-- **Fluent Player Pro** installed and active.
+- **FluentPlayer (free)** installed and active.
+- **FluentPlayer Pro** installed and active.
 - A valid webhook endpoint URL from your external service.
 - WordPress **5.6+** and PHP **7.4+**.
 
 ::: warning
-The Pro plugin depends on the free Fluent Player plugin. Keep both active.
+The Pro plugin depends on the free FluentPlayer plugin. Keep both active.
 :::
 
 ## How it works
 
 When a viewer submits an email through your player’s email capture flow:
 
-1. Fluent Player collects the submission.
+1. FluentPlayer collects the submission.
 2. The selected email provider is triggered.
 3. If **Webhook** is selected, a request is sent to your configured endpoint.
 4. Your external service receives and processes the data.
@@ -32,7 +32,7 @@ For `POST` and `PUT`, data is sent as JSON. For `GET`, data is sent as query par
 
 ## Enable the Webhook provider
 
-1. Go to **Fluent Player → Settings**.
+1. Go to **FluentPlayer → Settings**.
 2. Open the **Integrations** tab.
 3. Find **Webhook** and click **Configure**.
 
@@ -124,7 +124,7 @@ Yes. You can create multiple webhook endpoints in the global settings. Each vide
 Yes, by default. The request is sent during the email collection process with a 15-second timeout. If the request times out or fails, the error is logged and any remaining webhooks are still attempted. If your endpoint is slow, consider offloading processing to an async queue on the receiving end.
 
 **What happens if my endpoint is temporarily unavailable?**
-Fluent Player Pro does not retry failed deliveries automatically. If your endpoint is down at the time of a submission, the delivery will fail and be logged. Consider adding retry logic on your endpoint side or using a queuing service as an intermediary.
+FluentPlayer Pro does not retry failed deliveries automatically. If your endpoint is down at the time of a submission, the delivery will fail and be logged. Consider adding retry logic on your endpoint side or using a queuing service as an intermediary.
 
 **Does the webhook work alongside FluentCRM or Mailchimp?**
 Each video preset supports one active email provider at a time (FluentCRM, Mailchimp, or Webhook). You can assign different providers to different videos. If you need both FluentCRM and a webhook to fire for the same video, set up a FluentCRM automation to forward new contacts to your external service.

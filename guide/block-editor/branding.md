@@ -1,6 +1,6 @@
 ---
 title: "Branding (Block sidebar)"
-description: "Turn on custom branding per media, set logo and colors in the Block sidebar, and override global Fluent Player branding when needed."
+description: "Turn on custom branding per media, set logo and colors in the Block sidebar, and override global FluentPlayer branding when needed."
 ---
 
 # Branding (Block sidebar)
@@ -11,7 +11,7 @@ To access these options, select your **FluentPlayer** block and open the **Brand
 
 ## Use custom branding
 
-By default, Fluent Player uses the global branding settings configured in your plugin's main settings.
+By default, FluentPlayer uses the global branding settings configured in your plugin's main settings.
 
  * **Toggle Switch:** Enable **Use Custom Branding** to override the global settings for this specific video.
  * **Purpose:** **Turn** this on when you need a unique logo or specific colors for a single media item or embed.
