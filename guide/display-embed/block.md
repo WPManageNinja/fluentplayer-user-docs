@@ -14,7 +14,7 @@ You can add a video to any post or page by following these steps:
 
 1. Open the WordPress editor for any **post** or **page**.
 2. Click the **(+)** button to add a new block and search for "**FluentPlayer**".
-3. Select the **FluentPlayer** or **FluentPlayer Media** block from the list.
+3. Select the **FluentPlayer** block from the list.
 
 ![Add FluentPlayer](/guide/public/display-embed/block/fluentplayer-1.webp)
 
