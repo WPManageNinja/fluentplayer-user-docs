@@ -157,9 +157,23 @@ When **Button Type** is set to **Link**, additional fields appear for the button
 
 ![Custom Preset](/guide/public/customize/custom-preset/custom-preset-9.webp)
 
-## Context Menu & Sharing
+## Context Menu
 
-A custom preset can also control the player's **right-click context menu** — which actions (copy link, copy link at current time, loop, playback speed, captions, picture-in-picture) appear when a viewer right-clicks the video — along with **share links**. Because these settings live on the preset, every video using it behaves the same.
+The **Context Menu** section controls what happens when a viewer right-clicks the player — FluentPlayer replaces the browser's default menu with its own set of actions. The section header shows how many items are currently enabled (for example, "6 items enabled").
+
+| Toggle | What it does |
+|--------|-------------|
+| **Enable Context Menu** | Master switch for the custom right-click menu. Turn it off to fall back to the browser's default menu. |
+| **Copy Link** | Let viewers copy a link to the video. |
+| **Copy Link At Current Time** | Copy a link that opens the video at the current timestamp — handy for pointing someone to a precise moment. |
+| **Loop** | Toggle looping for the video. |
+| **Playback Speed** | Change how fast the video plays. |
+| **Captions** | Toggle subtitles/captions (when subtitle tracks exist). |
+| **Picture in Picture** | Pop the video out into a floating mini-player. |
+
+![The Context Menu section in the Create New Preset dialog](/guide/public/customize/custom-preset/custom-preset-11.webp)
+
+Because these settings live on the preset, every video that uses it shows the same right-click menu.
 
 ## After creating your preset
 
