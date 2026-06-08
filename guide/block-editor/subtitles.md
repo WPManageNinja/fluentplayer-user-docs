@@ -9,6 +9,10 @@ description: "Upload VTT or SRT captions in the Block sidebar, manage multiple t
 
 FluentPlayer allows you to easily add and manage subtitle tracks for your videos directly from the **block** editor.
 
+::: info Free vs Pro
+Captions embedded in HLS streams play in both versions. **Uploading your own `.vtt`/`.srt` tracks** and **importing captions from YouTube** require **FluentPlayer Pro**. See the [Subtitles capability matrix](/guide/videos-and-media/subtitles#free-vs-pro) for details and limits.
+:::
+
 #### Why Use Subtitles?
 
  * **Accessibility:** Required by many regulations and digital best practices.

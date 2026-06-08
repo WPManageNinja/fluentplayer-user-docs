@@ -15,7 +15,7 @@ Some common use cases:
 
 ## Free vs Pro
 
-FluentPlayer comes in two versions. This documentation matches **FluentPlayer and FluentPlayer Pro 1.0.4** (see your **Plugins** screen if you use a different release).
+FluentPlayer comes in two versions. This documentation matches **FluentPlayer and FluentPlayer Pro 1.0.6** (see your **Plugins** screen if you use a different release).
 
 | Feature | Free | Pro |
 |---------|------|-----|
@@ -28,20 +28,24 @@ FluentPlayer comes in two versions. This documentation matches **FluentPlayer an
 | Custom CSS and JS | Yes | Yes |
 | Google Analytics events | Yes | Yes |
 | Resume playback (save position in the browser) | — | Yes |
-| Playlists (Standard, Learning, Grid) | — | Yes |
+| Playlists (Standard, Grid) | — | Yes |
 | Mux video hosting and streaming | — | Yes |
 | BunnyCDN Stream and Storage | — | Yes |
 | Built-in analytics dashboard | — | Yes |
 | Timed content below the player (block inner content) | — | Yes |
 | Mailchimp and Webhook email providers | — | Yes |
 | Create and manage custom presets | — | Yes |
+| Media tags and tag-based playlists | — | Yes |
+| Right-click context menu | Yes | Yes |
+| Player share links | — | Yes |
+| Presto Player migration | Yes | Yes |
 
 The **free version** handles everything you need for embedding and customizing single videos. The **Pro version** adds playlists, Mux and Bunny integrations, analytics, timed content, and more email providers.
 
 ## Key features at a glance
 
 - **Video players** — Embed and customize players that support WordPress uploads, external URLs, YouTube, Mux, and BunnyCDN (Pro).
-- **Playlists (Pro)** — Group videos into playlists with three layout options: Standard, Learning, and Grid.
+- **Playlists (Pro)** — Group videos into playlists with two layout options: Standard and Grid.
 - **Presets** — Save and reuse player configurations so every video looks consistent.
 - **Overlays** — Add email capture forms, calls-to-action, and action bars that appear while the video plays.
 - **Shortcodes** — Embed videos with `[fluentplayer id="123"]` (or `[fluentmedia]`) or playlists with `[fluentplaylist id="456"]` (Pro).

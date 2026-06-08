@@ -68,6 +68,7 @@ FluentPlayer provides several deep integration fields to target your audience pr
  * **Viewer is CRM Contact:** Target users based on their status in your connected CRM (like FluentCRM). You can set this to "True" or "False".
  * **Viewer has CRM Tag:** Show the layer only to contacts who have (or do not have) specific tags, allowing for highly personalized marketing.
  * **Viewer is in CRM List:** Trigger layers specifically for members of certain email lists or segments.
+ * **Viewer has submitted their email:** Show or hide the layer based on whether this viewer has already submitted their email through a capture form. Unlike the client-side rules below, this is evaluated **server-side**, so it holds even if the viewer returns later or on another page. Use it to stop asking known leads for their email again.
  * **Layer has been submitted:** This prevents a viewer from seeing the same form or CTA again if they have already interacted with it.
  * **URL Query Parameter:** A powerful tool for marketers. You can show a layer only if the visitor arrived via a specific URL (e.g., yoursite.com/video?source=facebook).
  * **This layer has been seen:** Set the layer to disappear permanently once a user has viewed it once.
