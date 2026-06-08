@@ -50,7 +50,7 @@ You will now see your **Pull Zone Hostname**. **Enable** the **Linked hostnames*
 
 #### Authentication Key
 
-Go to the **Token authebntication** under the **Security**. Now, copy the **Url token authentication key** for FluentPlayer settings storage use.
+Go to the **Token authentication** under the **Security**. Now, copy the **Url token authentication key** for FluentPlayer settings storage use.
 
 ![Authentication Key](/guide/public/integrations/bunnycdn-storage/token-authentication-6.webp)
 
@@ -100,6 +100,16 @@ You may be able to:
  This lets you manage your hosted videos without leaving WordPress.
 
 ![Adding Video with FluentPlayer](/guide/public/integrations/bunnycdn-storage/add-video-bunnycdn-10.webp)
+
+## How playback works
+
+When a visitor watches a Bunny Storage video, the player does not always hit your storage zone directly. FluentPlayer can serve the file through a **streaming proxy** endpoint, which fetches the video from your storage zone and streams it to the viewer. This keeps your storage credentials private and lets FluentPlayer apply access control.
+
+If you enabled **token authentication** on your pull zone and entered a **CDN Security Key** during setup, FluentPlayer signs the delivery URLs so they cannot be shared or hotlinked beyond their validity window.
+
+::: tip
+Use [Bunny Stream](/guide/integrations/bunnycdn-stream) when you want automatic encoding into multiple qualities. Use Bunny **Storage** (this page) when you have ready-to-play files and want simple, secured file delivery through the CDN.
+:::
 
 
 

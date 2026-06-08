@@ -112,5 +112,15 @@ Use the right-hand sidebar under the **Lesson** tab to manage specific lesson de
 >[!Note]
 >To save server storage, it is highly recommended to restrict video uploads to **Admins** and **Moderators** only via the **Player Settings** in the community configuration panel.
 
+## Embedding a playlist in lessons (Pro)
+
+Besides single videos, you can embed an entire **FluentPlayer playlist** inside FluentCommunity lessons and portal content using the **FluentPlayer Playlist** block:
+
+1. In the lesson editor, click **(+)** and search for **FluentPlayer Playlist**.
+2. Select an existing playlist (or a [tag-based playlist](/guide/playlists/tag-based-playlists)).
+3. Configure the [layout and appearance](/guide/playlists/playlist-layouts) as you would anywhere else.
+
+This is ideal for course modules where a lesson should present a sequence of videos rather than a single clip. See the [Playlists documentation](/guide/playlists/) for creating and styling playlists.
+
 By combining advanced playback controls with direct community uploads and lesson-specific features like document attachments, FluentPlayer provides a seamless, distraction-free environment for both social interaction and professional learning.
 

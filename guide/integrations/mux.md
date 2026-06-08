@@ -36,17 +36,17 @@ Copy your **Token ID** and **Token Secret** for later use.
 
 ![Copy Token and Secret](/guide/public/integrations/mux/save-token-3.webp)
 
-## Generate a Singing Key (Optional)
+## Generate a Signing Key (Optional)
 
 If you plan to use restricted/private content, you need a Signing Key:
 
 Go to **Settings → Signing Keys** and click **Generate Key**.
 
-![Singing Key](/guide/public/integrations/mux/siging-key-5.webp)
+![Signing Key](/guide/public/integrations/mux/siging-key-5.webp)
 
 A popup will display your **Key ID** and **Secret Key**. **Copy** these for the integration settings.
 
-![ Save Singing Key](/guide/public/integrations/mux/save-singing-key-6.webp)
+![Save Signing Key](/guide/public/integrations/mux/save-singing-key-6.webp)
 
 ### Configure Webhooks (Optional but Recommended)
 
@@ -88,6 +88,20 @@ Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is f
  * **Mux Data Environment Key:** Enter your environment key from the Mux Data dashboard to track playback quality analytics.
 
 ![Connect Mux to FluentPlayer](/guide/public/integrations/mux/configure-mux-10.webp)
+
+## DRM & access control (Pro)
+
+For content you need to protect, FluentPlayer's Mux integration goes beyond a public URL:
+
+- **Signed playback URLs** — When **Signed URLs** is enabled, FluentPlayer requests short-lived, signed (JWT) playback URLs for video, thumbnails, and storyboards using your Mux **Signing Key**. Links expire, so they cannot be shared or hotlinked indefinitely.
+- **DRM (Widevine / FairPlay)** — For DRM-protected Mux assets, FluentPlayer requests a DRM license token so the player can decrypt and play the stream. This provides stronger protection than signed URLs alone.
+- **Playback restrictions** — Mux's own playback-restriction rules (for example, allowed referrer domains) continue to apply on top of the above.
+
+To use these, enable **Signed URLs** in the integration and make sure you have generated a **Signing Key** (see [Generate a Signing Key](#generate-a-signing-key-optional)). DRM additionally requires that the Mux asset itself is configured for DRM in your Mux account.
+
+::: tip
+Signed URLs cover most "don't let people hotlink my video" needs. Reach for DRM only when you specifically require encrypted, license-gated playback.
+:::
 
 ## Use Mux as a Video Source
 

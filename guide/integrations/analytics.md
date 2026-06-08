@@ -44,6 +44,19 @@ The dashboard serves as your central command center for video data. It is divide
 
 ![Analytics Dasboard](/guide/public/integrations/analytics/analytics-dashboard-2.webp)
 
+## Per-user insights
+
+For **logged-in viewers**, FluentPlayer can show per-user detail beyond the aggregate dashboard. From **Top Viewers**, you can drill into an individual viewer to see their activity — the videos they watched, how far they got, and their retention. This is useful for course creators who want to see exactly how a specific student is progressing.
+
+Anonymous (logged-out) viewers are still counted in totals and unique-viewer metrics, but without a per-person profile.
+
+## Data retention & cleanup
+
+Video tracking generates a lot of rows over time. To keep your database fast:
+
+- **Auto Cleanup Analytics Data** — when enabled in [Settings → Analytics](/guide/settings/analytics), FluentPlayer automatically deletes stats older than the **Retention (days)** you set (for example, `30`).
+- **Orphan cleanup** — when you delete a media item, its associated analytics records are cleaned up as well, so you do not accumulate stats for videos that no longer exist.
+
 ## Analytics vs Google Analytics
 
 | | Built-in Analytics | Google Analytics |
