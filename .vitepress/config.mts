@@ -33,7 +33,6 @@ const guideGroups = [
       { text: 'What is FluentPlayer?', link: '/guide/' },
       { text: 'Installation', link: '/guide/installation' },
       { text: 'Quick Start', link: '/guide/quick-start' },
-      { text: 'Migrate from Presto Player', link: '/guide/migration/presto-player' },
     ],
   },
   {
@@ -110,7 +109,6 @@ const guideGroups = [
       { text: 'Presets', link: '/guide/customize/presets' },
       { text: 'Creating Custom Presets (Pro)', link: '/guide/customize/creating-custom-presets' },
       { text: 'Player Behaviors', link: '/guide/customize/behaviors' },
-      { text: 'Context Menu & Sharing', link: '/guide/customize/context-menu-and-sharing' },
     ],
   },
   {

@@ -14,7 +14,7 @@ The **Settings** screen is the global control panel for FluentPlayer. All site-w
 
 | Section | What it covers |
 |---------|----------------|
-| [**General**](/guide/settings/general) | Default preset, aspect ratio, auto resume playback, custom CSS, custom JS, uninstall cleanup, global email capture defaults |
+| [**General**](/guide/settings/general) | Default preset, aspect ratio, auto resume playback, custom CSS, custom JS |
 | [**Performance**](/guide/settings/performance) | Dynamic JS loading, AJAX progress — tuning how player scripts load for page speed |
 | [**Branding**](/guide/settings/branding) | Brand color, control bar color, logo image, logo link, logo position, logo width — with a **Live Interactive Preview** |
 | [**Integrations**](/guide/settings/integrations) | Email/lead capture providers: FluentCRM, Webhook, Mailchimp |
