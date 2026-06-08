@@ -37,6 +37,21 @@ YouTube subtitle import is an admin-only feature. Ensure you have permission to 
 4. If prompted, set the **language** for the subtitle track (for example, English, Spanish, French).
 5. Click **Update** or **Save** to apply the changes.
 
+## Free vs Pro
+
+| Capability | Free | Pro |
+|-----------|------|-----|
+| Embedded captions in HLS streams play automatically | Yes | Yes |
+| Upload your own `.vtt` / `.srt` tracks | — | Yes |
+| Import captions from YouTube (hosted subtitle service) | — | Yes |
+| Storyboard / hover preview | — | Yes |
+
+::: info Hosted subtitle service
+YouTube subtitle import and hover-preview generation are handled by FluentPlayer's hosted subtitle service (default `https://api.fluentplayer.com`, a beta service), using license-signed requests — so these require **FluentPlayer Pro** with an active license.
+:::
+
+**Limits to know:** uploaded subtitle files can be up to **5 MB** each, and a single import can select up to **10** remote tracks.
+
 ### Advanced Subtitle Features
 
  * **Hover Preview:** You can click **Generate Hover Preview** to create a preview of the YouTube video independently from the main subtitle import.
