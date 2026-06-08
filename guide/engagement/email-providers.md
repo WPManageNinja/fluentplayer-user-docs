@@ -84,8 +84,8 @@ A **webhook** sends captured email data to any URL you specify. This is the most
 | Mailchimp | Pro | Existing Mailchimp users who want subscriber data in their audience |
 | Webhook | Pro | Any CRM or automation tool that accepts incoming webhook data |
 
-::: info One provider at a time
-You can only use **one email provider** per email capture configuration. Choose the one that fits your existing workflow.
+::: info One or more providers
+You can attach **one or more email providers** to a single email capture configuration — each submission is delivered to every provider you add. Use one if you only need a single destination, or several to sync the same lead to multiple tools at once.
 :::
 
 ## Connecting the provider to email capture

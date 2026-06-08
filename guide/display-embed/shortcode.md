@@ -33,12 +33,45 @@ Every video you create is assigned a unique ID and a ready-to-use shortcode.
 | Attribute | Required | Description |
 |-----------|----------|-------------|
 | `id` | Yes | The media (post) ID |
+| `src` | No | Play a specific video URL instead of the media's saved source. |
+| `meta_key` | No | Read the video URL from a custom field on the current post. |
+| `poster` | No | Use a specific poster image URL instead of the media's saved poster. |
 
 The shortcode is intentionally simple — the video source, preset, controls, and all other settings come from the media item itself. This means you configure everything in one place (**FluentPlayer → Media**) and the shortcode just references it.
 
 ::: tip
 If you ever change the video source, poster, or preset for a media item, every page that uses the shortcode for that ID will update automatically. No need to edit every page.
 :::
+
+## Dynamic media source (advanced)
+
+Normally the player uses the source saved on the media item. The optional `src`, `meta_key`, and `poster` attributes let one media item act as a **reusable template** whose video changes per page — useful when the same player configuration (preset, overlays, branding) should wrap different videos.
+
+**Source precedence** (the first match wins):
+
+1. **`src`** — an explicit URL passed on the shortcode.
+2. **`meta_key`** — the value of a custom field on the **current post** (the post or page where the shortcode appears).
+3. The media item's **saved source** (the default when neither is provided).
+
+```text
+[fluentplayer id="12" src="https://example.com/clip.mp4"]
+[fluentplayer id="12" meta_key="video_url"]
+[fluentplayer id="12" meta_key="video_url" poster="https://example.com/cover.jpg"]
+```
+
+A YouTube or Vimeo URL works as `src` too — the provider is detected automatically.
+
+::: warning Security note
+`meta_key` reads from the current post's custom fields. Point it only at fields you control. Avoid exposing private or protected meta keys (those whose name begins with `_`) through a public shortcode, since the resolved URL is rendered into the page.
+:::
+
+::: info Developer note
+By default `meta_key` is read from the current post. Developers can change which post is used with the `fluent_player/dynamic_source_post_id` filter. (There is no `post_id` shortcode attribute — use the filter for this.)
+:::
+
+## Legacy query-string embed
+
+For backward compatibility, you can also load a media item by appending `?fluent_player_media_id=<ID>` to a URL. This is a legacy mechanism — for new content, use the shortcode or the [Gutenberg block](/guide/display-embed/block) instead.
 
 ## Using the Shortcode in Different Areas
 
