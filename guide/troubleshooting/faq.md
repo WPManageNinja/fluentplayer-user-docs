@@ -17,7 +17,7 @@ Quick answers to the most common questions about FluentPlayer.
 
 ### What is the difference between the Free and Pro versions?
 
-The Free version includes core video playback with self-hosted files, YouTube, Vimeo, external URLs, shortcodes, Gutenberg blocks, subtitles, multiple audio languages, six built-in presets, basic email capture (with FluentCRM), and the public player URL.
+The Free version includes core video playback with self-hosted files, YouTube, Vimeo, external URLs, shortcodes, Gutenberg blocks, subtitles, multiple audio languages, seven built-in presets, basic email capture (with FluentCRM), and the public player URL.
 
 The Pro version adds playlists, custom presets, Mux integration, Bunny Stream & Bunny Storage integration, Mailchimp and Webhook email providers, Built-in Analytics, Timed Content, and data export.
 
@@ -43,7 +43,7 @@ FluentPlayer works via the `[fluentplayer]` shortcode and the native WordPress (
 
 ### Which WordPress version is required?
 
-FluentPlayer requires WordPress **6.3 or higher** and PHP **7.4 or higher**. We recommend using the latest stable release of both.
+FluentPlayer requires WordPress **6.0 or higher** and PHP **7.4 or higher**. We recommend using the latest stable release of both.
 
 ---
 
@@ -65,7 +65,7 @@ Yes. Copy the shortcode or block for any media item and paste it anywhere on you
 
 ### What is the Dedicated Player URL?
 
-Every media item in FluentPlayer gets a standalone URL (for example, `/fluent-player/my-video-title/`) that shows the player on its own page. This is useful for sharing a direct link to a video without embedding it inside a post.
+Every media item in FluentPlayer gets a standalone URL (for example, `/fluent-player-media/my-video-title/`) that shows the player on its own page. This is useful for sharing a direct link to a video without embedding it inside a post.
 
 See [Dedicated Player URL](/guide/display-embed/dedicated-player-url) for how it works and how to control who can access it.
 
@@ -115,6 +115,15 @@ Yes. The **"Skip if CRM contact"** option suppresses the email gate for viewers 
 
 ---
 
+### What stops spam or duplicate email submissions?
+
+Two safeguards run automatically:
+
+- **Rate limiting** — A guest (logged-out) visitor can submit at most **3 times per 5 minutes** from the same IP address. Rapid repeat submissions beyond that are rejected. (Developers can adjust this with the `fluent_player/email_submission_rate_limit_max_attempts` and `…_window` filters.)
+- **Duplicate prevention** — If the same email is submitted again, FluentPlayer updates the existing record instead of creating a duplicate, and it does not re-trigger your providers for that repeat submission.
+
+---
+
 ## Analytics
 
 ### Does the free version include analytics?
@@ -141,7 +150,7 @@ Go to **FluentPlayer → Playlists → Add Playlist**, give it a name, and add m
 
 ### What playlist layouts are available?
 
-FluentPlayer Pro includes three layouts: **Standard** (player + sidebar list), **Learning** (course-style with progress tracking), and **Grid** (thumbnail grid overview). See [Playlist Layouts](/guide/playlists/playlist-layouts) for a comparison.
+FluentPlayer Pro includes two layouts: **Standard** (player + sidebar list) and **Grid** (thumbnail grid overview). See [Playlist Layouts](/guide/playlists/playlist-layouts) for a comparison.
 
 ---
 

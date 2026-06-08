@@ -16,7 +16,7 @@ Navigating your available integrations is simple. You can use the search bar on 
 
 Each integration card displays a brief description, a status badge (Enabled or Disabled), and a **Configure** button to manage your connection settings.
 
-![Integrattions](/guide/public/integrations/webhook/integrations-1.webp)
+![Integrations](/guide/public/integrations/webhook/integrations-1.webp)
 
 ## FluentCRM
 
@@ -73,7 +73,7 @@ A webhook sends your captured email data as an HTTP POST request to any URL you 
 | Mailchimp | Pro | Existing Mailchimp users |
 | Webhook | Pro | Any CRM or automation tool with webhook support |
 
-You can have multiple providers configured (each with Enabled/Disabled toggles), but each email capture overlay will route to a **single selected provider**.
+You can have multiple providers configured (each with Enabled/Disabled toggles), and each email capture overlay can route to **one or more selected providers** — every submission is sent to each provider you attach.
 
 ## Connecting a provider to email capture
 

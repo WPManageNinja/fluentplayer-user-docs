@@ -68,6 +68,12 @@ On the **media list** screen, use the **status filters** to narrow the list:
 | **Private** | Items restricted to authorized viewers (when your workflow uses private publishing). |
 | **Draft** | Items not yet published — good for work in progress. |
 
+Beyond status, you can also narrow the list by:
+
+- **Provider** — the video source type (WordPress, YouTube, Vimeo, Mux, Bunny Stream, Bunny Storage).
+- **Media type** — **audio** or **video**.
+- **Tag** — any [media tag](/guide/videos-and-media/media-tags) you have assigned (Pro).
+
 Search still works across titles and IDs as supported by your version.
 
 ## Finding the Media ID
