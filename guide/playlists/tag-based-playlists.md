@@ -40,13 +40,13 @@ A regular playlist uses `[fluentplaylist id="10"]`. A tag-based playlist uses `t
 ## Option 2: Playlist block
 
 1. In the block editor, add the **FluentPlayer Playlist** block.
-2. In the block settings, set the **Source** to **Tags**.
-3. Choose the tag(s) to include.
+2. Click the **By Tags** button (next to **New Playlist**).
+3. In the **Tags** field that appears, type in the **Add a tag…** box and add one or more tags.
 4. Publish or update.
 
-The block renders the same dynamic, tag-driven playlist as the shortcode.
+![The FluentPlayer Playlist block set to By Tags, with the Add a tag field](/guide/public/playlists/tag-based-playlists/tag-based-playlists-1.webp)
 
-<!-- TODO: add screenshots — guide/public/playlists/tag-based-playlists/ -->
+The block renders the same dynamic, tag-driven playlist as the shortcode. To use a fixed, hand-picked playlist instead, choose **New Playlist** or pick one from **Select Existing Playlist**.
 
 ## Good to know
 

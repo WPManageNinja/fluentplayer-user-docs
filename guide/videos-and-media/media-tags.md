@@ -20,21 +20,33 @@ Media tags require **FluentPlayer Pro**.
 ## Tagging a media item
 
 1. Go to **FluentPlayer → Media** and open (or create) a media item.
-2. Find the **Tags** field for the media.
-3. Type a tag name and confirm it. Add as many tags as you need; a video can have multiple tags.
-4. Save the media.
+2. In the right-hand sidebar, select the **Block** tab and expand the **Tags** panel (it sits between **Timed Content Area** and **Multi-Language**).
 
-New tag names are created the first time you use them, and existing tags are suggested as you type.
+![The Tags panel in the media editor's Block tab](/guide/public/videos-and-media/media-tags/media-tags-1.webp)
 
-<!-- TODO: add screenshot of the Tags field — guide/public/videos-and-media/media-tags/ -->
+3. Click the **Tags** field and start typing. Existing tags are suggested as you type — pick one from the list, or type a new name to create it. Each tag you add appears as a chip in the field.
 
-## Managing your tags
+![A tag added to a media item in the Tags panel](/guide/public/videos-and-media/media-tags/media-tags-2.webp)
 
-You can rename, merge, or delete tags from the media tag management screen. Deleting a tag removes the label from your media but does **not** delete the videos themselves.
+4. Repeat to add as many tags as you need — a video can carry several at once.
+
+![Tag autocomplete suggesting existing tags as you type](/guide/public/videos-and-media/media-tags/media-tags-3.webp)
+
+5. Click **Save draft** / **Publish** (top right) to save your changes.
+
+::: tip
+New tag names are created the first time you use them, so there is no separate "create tag" step. Reuse the suggested names to keep your tags tidy and consistent.
+:::
+
+## Removing a tag
+
+To take a tag off a media item, open the **Tags** panel and click the **×** on the tag's chip, then save the media. This only removes the label from that video — it does not delete the videos or affect other media using the same tag.
 
 ## Filtering the media list by tag
 
-On the **FluentPlayer → Media** list, use the filters to narrow the library by **tag** (alongside provider and media-type filters). This makes it easy to work with one group of videos at a time.
+The **FluentPlayer → Media** list shows a **Tags** column so you can see each video's tags at a glance. To narrow the list, click the **Filters** button (top right, next to the search icon) and use the **Tags** filter — alongside **Media Type** and **Source Provider** — to focus on one group of videos at a time. A small badge on the **Filters** button shows how many filters are active.
+
+![Filtering the media list by tag in the Filters panel](/guide/public/videos-and-media/media-tags/media-tags-4.webp)
 
 ## Next: build a playlist from a tag
 
