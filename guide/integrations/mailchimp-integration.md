@@ -23,7 +23,7 @@ When a viewer submits their email through the email gate:
 1. Log in to your [Mailchimp account](https://login.mailchimp.com/).
 2. Click your profile avatar and go to **Account & Billing**.
 
-![Mailchip Account](/guide/public/integrations/mailchimp/account-&-biling-1.webp)
+![Mailchimp Account](/guide/public/integrations/mailchimp/account-&-biling-1.webp)
 
 3. Navigate to **Extras → API Keys**. Then, Click on the **Create A Key** button.
 
@@ -68,7 +68,7 @@ Once your API key is saved:
 5. Optionally, add **Tags** (comma-separated).
 6. Save the media.
 
-![Assign Mailchip to a Video](/guide/public/integrations/mailchimp/assign-mailchip-7.webp)
+![Assign Mailchimp to a Video](/guide/public/integrations/mailchimp/assign-mailchip-7.webp)
 
 If the Mailing List dropdown is empty, return to Settings and confirm your API key is valid and saved.
 
@@ -109,7 +109,7 @@ FluentPlayer always sets the subscriber status to `subscribed`, which bypasses t
 
 | Problem | Likely reason | What to do |
 |---|---|---|
-| API key validation fails | Incomplete or revoked key | Re-copy the full key including the `-us11` suffix |
+| API key validation fails | Incomplete or revoked key | Re-copy the full key including the `-us18` suffix |
 | Mailing List dropdown is empty | No audiences in Mailchimp, or API key has no list permissions | Log in to Mailchimp and confirm an audience exists; regenerate the API key with full permissions |
 | Contact not appearing in Mailchimp | Provider not enabled or preset not saved | Confirm Mailchimp is the selected provider and re-save the media |
 | Tags not applied | Tags typed incorrectly or API error | Check for special characters; enable `WP_DEBUG` and review `debug.log` |
