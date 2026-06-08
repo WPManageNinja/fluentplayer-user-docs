@@ -33,6 +33,7 @@ const guideGroups = [
       { text: 'What is FluentPlayer?', link: '/guide/' },
       { text: 'Installation', link: '/guide/installation' },
       { text: 'Quick Start', link: '/guide/quick-start' },
+      { text: 'Migrate from Presto Player', link: '/guide/migration/presto-player' },
     ],
   },
   {
@@ -44,6 +45,7 @@ const guideGroups = [
       { text: 'Subtitles & Captions', link: '/guide/videos-and-media/subtitles' },
       { text: 'Multiple Audio Languages', link: '/guide/videos-and-media/multiple-languages' },
       { text: 'Public vs. Private Videos', link: '/guide/videos-and-media/public-vs-private' },
+      { text: 'Media Tags (Pro)', link: '/guide/videos-and-media/media-tags' },
     ],
   },
   {
@@ -108,6 +110,7 @@ const guideGroups = [
       { text: 'Presets', link: '/guide/customize/presets' },
       { text: 'Creating Custom Presets (Pro)', link: '/guide/customize/creating-custom-presets' },
       { text: 'Player Behaviors', link: '/guide/customize/behaviors' },
+      { text: 'Context Menu & Sharing', link: '/guide/customize/context-menu-and-sharing' },
     ],
   },
   {
@@ -118,6 +121,8 @@ const guideGroups = [
       { text: 'Playlist Layouts', link: '/guide/playlists/playlist-layouts' },
       { text: 'Appearance & Behavior', link: '/guide/playlists/playlist-settings' },
       { text: 'Embed a Playlist', link: '/guide/playlists/embed-playlist' },
+      { text: 'Tag-Based Playlists (Pro)', link: '/guide/playlists/tag-based-playlists' },
+      { text: 'Dedicated Playlist URL (Pro)', link: '/guide/playlists/dedicated-playlist-url' },
     ],
   },
   {
@@ -132,6 +137,7 @@ const guideGroups = [
       { text: 'YouTube', link: '/guide/settings/youtube' },
       { text: 'Analytics', link: '/guide/settings/analytics' },
       { text: 'Export Data', link: '/guide/settings/export' },
+      { text: 'Licensing (Pro)', link: '/guide/settings/licensing' },
     ],
   },
   {
@@ -143,10 +149,16 @@ const guideGroups = [
       { text: 'Bunny Storage (Pro)', link: '/guide/integrations/bunnycdn-storage' },
       { text: 'Built-in Analytics (Pro)', link: '/guide/integrations/analytics' },
       { text: 'Google Analytics', link: '/guide/integrations/google-analytics' },
-      { text: 'Mailchimp (Pro)', link: '/guide/integrations/mailchip-integration' },
+      { text: 'Mailchimp (Pro)', link: '/guide/integrations/mailchimp-integration' },
       { text: 'Webhook (Pro)', link: '/guide/integrations/webhook-integration' },
       { text: 'FluentCommunity (Pro)', link: '/guide/integrations/fluent-community' },
       { text: 'Smartcodes (FluentCRM)', link: '/guide/integrations/smartcodes-personalization' },
+    ],
+  },
+  {
+    text: 'Developer',
+    items: [
+      { text: 'Hooks & Filters Reference', link: '/guide/developer/hooks-reference' },
     ],
   },
   {
@@ -170,8 +182,13 @@ export default defineConfig({
    */
   cleanUrls: true,
 
-  /** Repo README is for GitHub only; excluding avoids an extra `/readme` route. */
-  srcExclude: ['README.md'],
+  /**
+   * Files that live in the repo but must not become site pages.
+   * - `README.md` is for GitHub only (avoids an extra `/readme` route).
+   * - `documentation-gaps.md` is an internal audit/planning artifact (it also
+   *   contains literal `{{ }}` smartcode examples that would break Vue rendering).
+   */
+  srcExclude: ['README.md', 'documentation-gaps.md'],
 
   head: [
     ['meta', { name: 'generator', content: 'FluentPlayer' }],

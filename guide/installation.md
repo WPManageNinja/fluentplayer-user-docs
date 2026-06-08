@@ -6,7 +6,7 @@ This page walks you through installing and activating FluentPlayer on your WordP
 
 Before you install, make sure your site meets these requirements:
 
-- **WordPress** 5.0 or higher
+- **WordPress** 6.0 or higher
 - **PHP** 7.4 or higher
 
 ::: tip Not sure about your PHP version?

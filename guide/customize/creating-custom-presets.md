@@ -157,6 +157,12 @@ When **Button Type** is set to **Link**, additional fields appear for the button
 
 ![Custom Preset](/guide/public/customize/custom-preset/custom-preset-9.webp)
 
+## Context Menu & Sharing
+
+A custom preset can also control the player's **right-click context menu** — which actions (copy link, copy link at current time, loop, playback speed, captions, picture-in-picture) appear when a viewer right-clicks the video — along with **share links**. Because these settings live on the preset, every video using it behaves the same.
+
+See [Context Menu & Sharing](/guide/customize/context-menu-and-sharing) for the full list of items and how to configure them.
+
 ## After creating your preset
 
 Once you click **Create Preset**, your custom preset appears in the **Preset** panel alongside the built-in ones. It shows a thumbnail preview of how the player looks with your configuration.
