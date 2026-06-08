@@ -25,7 +25,7 @@ From this screen, you can:
 
  * **Add New Media:** Create a fresh video entry using the "Add Media" button.
  * **Edit Content:** Update video sources, change presets, or add chapters to existing videos.
- * **Filter & Search:** Quickly find specific videos using the status filters (All, Public, Draft) or the search bar.
+ * **Filter & Search:** Quickly find specific videos using the status filters (All, Public, Draft), the **provider** (WordPress, YouTube, Vimeo, Mux, Bunny…), **media type** (audio or video), and **tag** filters, or the search bar.
  * **Delete Media:** Remove content you no longer need.
 
 ![Video Library](/guide/public/videos-and-media/index/video-media-1.webp)

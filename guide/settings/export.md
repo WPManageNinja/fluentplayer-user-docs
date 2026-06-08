@@ -9,9 +9,11 @@ The **Export** feature allows you to download a local copy of all the data colle
 
 To access this feature, navigate to **FluentPlayer → Settings** and click on the **Export** tab.
 
-::: info Pro feature
-The Export section requires **FluentPlayer Pro**.
+::: info Good to know
+Email capture, storage, and export all work in the **free** FluentPlayer plugin — your captured leads are never locked behind an upgrade. The Export screen simply turns that stored data into a one-click download.
 :::
+
+<!-- TODO: confirm whether the Export *settings screen* is surfaced only on Pro in the admin UI. The underlying export-emails REST route ships in the FREE plugin (app/Http/Routes/api.php). -->
 
 The Export section lets you download the email addresses (and any other data) collected through [FluentPlayer's email capture overlays](/guide/engagement/email-capture) as a file.
 
