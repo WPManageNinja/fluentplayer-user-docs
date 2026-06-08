@@ -13,7 +13,7 @@ Before setup, make sure you have:
 - **FluentPlayer (free)** installed and active.
 - **FluentPlayer Pro** installed and active.
 - A valid webhook endpoint URL from your external service.
-- WordPress **5.6+** and PHP **7.4+**.
+- WordPress **6.0+** and PHP **7.4+**.
 
 ::: warning
 The Pro plugin depends on the free FluentPlayer plugin. Keep both active.
