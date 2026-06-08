@@ -57,7 +57,6 @@ The block shows a preview in the editor and renders the same output as the short
 Depending on the [layout](/guide/playlists/playlist-layouts) you chose for the playlist:
 
 - **Standard** — A player with a video list on the side.
-- **Learning** — A course-style player with progress tracking.
 - **Grid** — A multi-column video grid.
 
 The playlist loads all the media items you added, in the order you set. Viewers can click between videos, and the player handles transitions smoothly.

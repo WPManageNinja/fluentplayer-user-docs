@@ -48,6 +48,18 @@ The Grid layout shows videos as a **multi-column thumbnail grid** — ideal for 
 | **Videos Per Page** | How many videos to show per page (e.g., `12`). Controls pagination — when you have more videos than this number, pagination appears. |
 | **Show Video Title** | Display the video title on each thumbnail in the grid. |
 | **Title Position** | Where the title appears — **Overlay on Thumbnail** or **Below Thumbnail**. |
+| **Enable Search** | Show a search box above the grid so viewers can find a video by title. |
+| **Enable Filters** | Show filter controls above the grid for narrowing the visible videos. |
+
+#### Modal options
+
+When **Video Player Mode** is set to **Modal Overlay**, these additional options apply:
+
+| Option | Description |
+|--------|-------------|
+| **Enable Fullscreen Mode** | Allow the modal player to expand to fullscreen. |
+| **Modal Layout** | How the modal is positioned — for example **Centered** (the default). |
+| **Modal Show Info** | Show the video's title and details inside the modal alongside the player. |
 
 ### Best for
 

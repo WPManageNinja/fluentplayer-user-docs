@@ -10,22 +10,36 @@ Edit your playlist under **FluentPlayer → Playlists**, then look at the right-
  
 This panel controls the top-level playback behavior of the playlist.
  
-[Screenshot: The General Settings panel expanded in the right sidebar, showing the Playlist Title field, Autoplay toggle, Continuous Play toggle, and Overlay Mode dropdown.]
- 
 | Setting | What it does |
 |---------|--------------|
 | **Playlist Title** | The name of your playlist as it appears in the editor. |
 | **Autoplay** | When on, the first video starts playing automatically when the page loads. |
 | **Continuous Play** | When on, the player automatically advances to the next video once the current one ends. |
-| **Overlay Mode** | Controls how email capture, CTA, and action bar overlays behave across the playlist. **Per Video** means each video shows its own overlays independently. |
+| **Loop** | When on, the playlist starts over from the first video after the last one finishes. |
+| **Show Navigation Buttons** | Show previous/next controls so viewers can step through the playlist. |
+| **Show Playlist Menu Toggle** | Show a button to open or collapse the playlist list (where the layout supports it). |
+| **Overlay Mode** | Controls how email capture, CTA, and action bar overlays behave across the playlist (see below). |
  
 ![Playlist General Settings](/guide/public/playlists/playlist-settings/playlist-settings-1.webp)
+
+### Overlay Mode: Per Video vs Selected Video
+
+The **Overlay Mode** decides which video's interactive layers — email capture, CTA, action bar, and text overlays — are shown while the playlist plays:
+
+- **Per Video** — Each video shows its **own** overlays and layers as it plays. Use this when every lesson or clip has its own call-to-action.
+- **Selected Video** — One chosen video's overlays are applied across the **whole** playlist, regardless of which item is playing. Use this when you want a single, consistent message for the entire playlist.
+
+### Preset Source
+
+A playlist can borrow its player chrome (controls, skin) and brand color from a specific media item's **preset**. Set a **Preset Source** media item so the playlist player matches that media's look, with brand-color sync. When no preset source is set, the playlist uses your global defaults.
+
+::: info Playlist visibility
+Like media items, a playlist can be **public** or **private**. Private playlists are not accessible on their [dedicated playlist URL](/guide/playlists/embed-playlist) to visitors without edit permission, the same way [media visibility](/guide/videos-and-media/public-vs-private) works.
+:::
  
 ## Appearance
  
 Control the playlist frame's colors, borders, and shadow so it matches your site.
- 
-[Screenshot: The Appearance panel expanded, showing Background Color, Text Color, Brand Color dropdown set to "Use Global Setting", Border Radius slider, Border Color picker, and Border Width slider.]
  
 ### Colors
  
@@ -55,8 +69,6 @@ A dropdown that lets you choose how the playlist accent color is handled:
  
 Optional overrides for playlist text (titles, labels). These controls are nested inside the **Appearance** panel.
  
-[Screenshot: The Custom Typography sub-section expanded, showing the Enable Custom Typography toggle on, Font Size set to 14, Font Weight set to Normal (400), and Line Height set to 1.4.]
- 
 | Setting | What it does |
 |---------|--------------|
 | **Enable Custom Typography** | When on, the font settings below apply to playlist text. When off, your theme's defaults apply. |
@@ -67,8 +79,6 @@ Optional overrides for playlist text (titles, labels). These controls are nested
 ## Box Shadow
  
 Add an optional shadow to give the playlist container depth. These controls are also nested inside the **Appearance** panel.
- 
-[Screenshot: The Box Shadow sub-section expanded, showing Enable Box Shadow toggled on, Shadow Color, Shadow Type set to "Drop Shadow (Outside)", and sliders for Horizontal Offset, Vertical Offset, Blur, and Spread.]
  
 | Setting | What it does |
 |---------|--------------|
@@ -85,7 +95,7 @@ Add an optional shadow to give the playlist container depth. These controls are 
 ## How this fits your workflow
  
 1. [Create a playlist](/guide/playlists/creating-playlists) and add videos.
-2. Pick a layout (Standard, Learning, or Grid) in the **Layout** panel.
+2. Pick a layout (Standard or Grid) in the **Layout** panel.
 3. Use **General Settings** to configure autoplay, continuous play, and overlay behavior.
 4. Use **Appearance** as a checklist for colors, borders, typography, and shadows.
 5. [Embed the playlist](/guide/playlists/embed-playlist) on a page and review on desktop and mobile.
