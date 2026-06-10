@@ -28,6 +28,7 @@ Paste a YouTube video URL. Fluent Player will use the YouTube embed player with 
 
 ```
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
 ```
 
 Fluent Player offers YouTube specific options in [Settings](/guide/settings/):
