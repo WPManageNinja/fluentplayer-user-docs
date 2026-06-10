@@ -5,7 +5,7 @@ description: "Learn how to create, edit, and manage media in Fluent Player, incl
 
 # Adding and Editing Videos
 
-This guide explains how to manage your video content within Fluent Player. You can create, organize, and update your media directly from your WordPress dashboard without touching a single line of code.
+Fluent Player stores each video as a **Media** item in WordPress. From **Fluent Player → Media**, you can add new videos, edit existing ones, and update settings such as the source, poster, preset, and overlays. Everything on this page is done in the admin — no code required.
 
 ## Creating a New Media Item
 
