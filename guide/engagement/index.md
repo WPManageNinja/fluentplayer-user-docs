@@ -16,7 +16,7 @@ Fluent Player includes a set of overlay tools designed to turn passive viewers i
 | Feature | What it does |
 |---------|-------------|
 | [Email Capture Overlay](/guide/engagement/email-capture) | Pause the video at a set point and ask the viewer for their email address before they can continue watching |
-| [CTA and Action Bar](/guide/engagement/cta-and-action-bar) | Show a call-to-action popup or a slim message bar at any point during playback |
+| [CTA and Action Bar](/guide/engagement/cta-and-action-bar) | Show a call to action popup or a slim message bar at any point during playback |
 | [Email Providers](/guide/engagement/email-providers) | Connect FluentCRM, Mailchimp, or a custom webhook to receive captured emails |
 
 ## How engagement features work

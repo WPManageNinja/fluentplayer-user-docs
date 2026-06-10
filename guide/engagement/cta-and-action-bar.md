@@ -7,13 +7,13 @@ next:
   link: '/guide/engagement/email-providers'
 ---
 
-# CTA (Call-to-Action) Overlay
+# CTA (Call to Action) Overlay
 
 The **CTA overlay** is a popup that appears over the video at a specific time to prompt the viewer to take an action — like visiting a link, signing up, or watching another video. The video pauses while the overlay is on screen, so the viewer's full attention is on your message.
 
 ## How it works
 
-At a time you choose — for example, 2 minutes into the video — playback pauses and a full-screen overlay appears with whatever content you have designed in the built-in editor. The viewer can interact with the overlay (click a button, read your message) or skip past it if you allow skipping. Playback resumes once the overlay is dismissed.
+At a time you choose — for example, 2 minutes into the video — playback pauses and a full screen overlay appears with whatever content you have designed in the built in editor. The viewer can interact with the overlay (click a button, read your message) or skip past it if you allow skipping. Playback resumes once the overlay is dismissed.
 
 ## Setting up a CTA overlay
 
@@ -73,7 +73,7 @@ This dropdown controls what counts as "completing" the overlay — in other word
 |--------|--------------|
 | **Link Click** | The layer completes when the viewer clicks a link or button inside the overlay. This is the default and works well for most CTAs. |
 | **Auto Dismiss** | The layer disappears on its own after a set duration — no viewer interaction required. Useful for brief announcements or reminders that should not block playback for long. |
-| **Skip Only** | The layer stays on screen until the viewer manually skips it. There is no automatic dismissal and no link-click requirement — the viewer simply clicks **Skip** when they are ready to continue. |
+| **Skip Only** | The layer stays on screen until the viewer manually skips it. There is no automatic dismissal and no link click requirement — the viewer simply clicks **Skip** when they are ready to continue. |
 
 ### Allow Skip
 
@@ -81,13 +81,13 @@ When this toggle is **on**, a **Skip** button appears on the player so the viewe
 
 ### Layer Background
 
-Pick a **Background Color** for the overlay area behind your content. Use this to ensure your text is readable against the video frame underneath — for example, a semi-transparent dark background makes white text easy to read.
+Pick a **Background Color** for the overlay area behind your content. Use this to ensure your text is readable against the video frame underneath — for example, a semi transparent dark background makes white text easy to read.
 
 ::: tip
 Keep your CTA content short and focused. A strong heading, one line of supporting text, and a single button is the most effective pattern. Too much content in an overlay can overwhelm the viewer.
 :::
 
-## Example: end-of-video upsell
+## Example: end of video upsell
 
 You have a product demo and want to direct viewers to your pricing page near the end:
 
@@ -97,7 +97,7 @@ You have a product demo and want to direct viewers to your pricing page near the
   - Text: "Start your free trial today."
   - Button: "Get Started" → links to `https://example.com/signup`
 
-## Example: mid-video resource link
+## Example: mid video resource link
 
 You are recording a tutorial and want to share a downloadable resource at the 5-minute mark:
 

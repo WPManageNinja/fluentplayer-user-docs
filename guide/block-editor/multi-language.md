@@ -1,9 +1,9 @@
 ---
-title: "Multi-language (Block sidebar)"
+title: "Multi language (Block sidebar)"
 description: "Block sidebar Multi-Language: primary language, enable the selector, and prerequisites for alternate tracks or linked media in Fluent Player."
 ---
 
-# Multi-language (Block sidebar)
+# Multi language (Block sidebar)
 
 If your audience speaks different languages, **Fluent Player** allows you to offer **alternate versions** of the same video. This is perfect for videos with different voiceovers or narrations.
 
@@ -14,7 +14,7 @@ Unlike subtitles, which just add text over the screen, the **Multi-Language** fe
 To set up different language versions, follow these simple steps:
 
 1. Open the video you want to edit in **Fluent Player → Media**.
-2. In the right-hand sidebar, click on the **Multi-Language** tab to expand it.
+2. In the right hand sidebar, click on the **Multi-Language** tab to expand it.
 3. **Set the Primary Language:** Choose the main language of your video (e.g., English) from the **Primary Language** dropdown menu.
 4. **Turn on the Feature:** Switch the **toggle** for **Enable Multi-Language** to the "on" position. This adds a language selector to the player so viewers can switch manually.
 

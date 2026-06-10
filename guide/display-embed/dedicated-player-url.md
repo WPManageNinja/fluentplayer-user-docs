@@ -1,6 +1,6 @@
 ---
 title: "Dedicated Player URL"
-description: "Fluent Player’s standalone page per media: pretty URLs, query-string form, when to share it, and how public vs private visibility affects access."
+description: "Fluent Player’s standalone page per media: pretty URLs, query string form, when to share it, and how public vs private visibility affects access."
 ---
 
 # Dedicated Player URL
@@ -19,7 +19,7 @@ The URL uses the **slug of the published media**. WordPress automatically genera
 
 ## What the page looks like
 
-The dedicated player page is a **minimal, distraction-free** layout:
+The dedicated player page is a **minimal, distraction free** layout:
 
 - A **header** showing the video title (and a "Private" badge if the media is private).
 - The **video player** centered on the page.
@@ -64,7 +64,7 @@ You don't need to construct the URL manually. WordPress creates the slug for you
 | | Dedicated URL | Shortcode / Block |
 |---|---------------|-------------------|
 | Layout | Minimal (just the player) | Inside your regular page theme |
-| Visibility control | Public/Private toggle on the media | Controlled by the page's status (published, draft, password-protected) |
+| Visibility control | Public/Private toggle on the media | Controlled by the page's status (published, draft, password protected) |
 | Best for | Sharing links, iframes | Showing videos within your site content |
 
 Most users will embed videos in posts and pages. The dedicated URL is a bonus for sharing and special use cases.

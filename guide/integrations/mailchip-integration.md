@@ -1,6 +1,6 @@
 # Mailchimp Integration (Pro)
 
-The **Mailchimp integration** allows you to automatically add viewers to a Mailchimp audience the moment they submit their email through your video's email capture. No third-party connector or custom code is needed. Fluent Player connects directly to the Mailchimp API.
+The **Mailchimp integration** allows you to automatically add viewers to a Mailchimp audience the moment they submit their email through your video's email capture. No third party connector or custom code is needed. Fluent Player connects directly to the Mailchimp API.
 
 You can target a specific audience, apply tags, and control this per video so different videos can feed different lists or segments.
 
@@ -65,7 +65,7 @@ Once your API key is saved:
 2. Go to the **[Email Capture / Email Provider](/guide/engagement/email-capture)** settings.
 3. Select **Mailchimp** as the provider.
 4. Choose the **Mailing List** (audience) from the dropdown — it loads directly from your Mailchimp account.
-5. Optionally, add **Tags** (comma-separated).
+5. Optionally, add **Tags** (comma separated).
 6. Save the media.
 
 ![Assign Mailchip to a Video](/guide/public/integrations/mailchimp/assign-mailchip-7.webp)
@@ -78,13 +78,13 @@ If the Mailing List dropdown is empty, return to Settings and confirm your API k
 |---|---|---|
 | API Key | Yes | Your Mailchimp API key. Entered once in global settings and shared across all videos. |
 | Mailing List | Yes | The Mailchimp audience to subscribe the viewer to. Set per video. |
-| Tags | No | Comma-separated tag names to apply to the subscriber (for example, `webinar, vip`). Created automatically in Mailchimp if they don't exist. |
+| Tags | No | Comma separated tag names to apply to the subscriber (for example, `webinar, vip`). Created automatically in Mailchimp if they don't exist. |
 
 ## Tags
 
 Tags allows you to segment subscribers and trigger automations based on which video they engaged with.
 
-Enter tags in the **Tags** field as a comma-separated list:
+Enter tags in the **Tags** field as a comma separated list:
 
 ```
 webinar-attendee, product-demo, q2-campaign
@@ -102,26 +102,26 @@ Fluent Player uses Mailchimp's **upsert** pattern when adding contacts:
 - **Existing contact:** Record is updated and new tags are merged, no duplicate is created.
 
 ::: info
-Fluent Player always sets the subscriber status to `subscribed`, which bypasses the double opt-in step at the API level. If your Mailchimp audience has double opt-in enabled at the account level, Mailchimp may still send a confirmation email. This is controlled by your Mailchimp settings, not the plugin.
+Fluent Player always sets the subscriber status to `subscribed`, which bypasses the double opt in step at the API level. If your Mailchimp audience has double opt in enabled at the account level, Mailchimp may still send a confirmation email. This is controlled by your Mailchimp settings, not the plugin.
 :::
 
 ## Troubleshooting
 
 | Problem | Likely reason | What to do |
 |---|---|---|
-| API key validation fails | Incomplete or revoked key | Re-copy the full key including the `-us11` suffix |
+| API key validation fails | Incomplete or revoked key | Re copy the full key including the `-us11` suffix |
 | Mailing List dropdown is empty | No audiences in Mailchimp, or API key has no list permissions | Log in to Mailchimp and confirm an audience exists; regenerate the API key with full permissions |
-| Contact not appearing in Mailchimp | Provider not enabled or preset not saved | Confirm Mailchimp is the selected provider and re-save the media |
+| Contact not appearing in Mailchimp | Provider not enabled or preset not saved | Confirm Mailchimp is the selected provider and re save the media |
 | Tags not applied | Tags typed incorrectly or API error | Check for special characters; enable `WP_DEBUG` and review `debug.log` |
-| Subscriber added but no tags | Tag request failed after successful subscribe | Partial success — check debug log for tag-specific error |
+| Subscriber added but no tags | Tag request failed after successful subscribe | Partial success — check debug log for tag specific error |
 
 ## Frequently Asked Questions
 
 **Can I use a different audience for each video?**
 Yes. The mailing list is selected per video preset, so different videos can feed different audiences.
 
-**Will subscribers get a double opt-in email?**
-Fluent Player sets the status to `subscribed` at the API level, which bypasses double opt-in programmatically. If your Mailchimp audience requires double opt-in at the account level, Mailchimp may still send a confirmation email.
+**Will subscribers get a double opt in email?**
+Fluent Player sets the status to `subscribed` at the API level, which bypasses double opt in programmatically. If your Mailchimp audience requires double opt in at the account level, Mailchimp may still send a confirmation email.
 
 **What happens if the same viewer submits their email on two different videos?**
 No duplicate is created. The existing contact is updated and any new tags from the second video are added to their profile.

@@ -1,15 +1,15 @@
 # Creating Custom Presets (Pro)
 
-With Fluent Player Pro, you can create your own **custom presets** — fully tailored player configurations that define the skin, controls, behaviors, caption styles, and even engagement overlays like email capture, CTAs, and action bars. Once created, a custom preset works just like the built-in ones and can be applied to any media item on your site.
+With Fluent Player Pro, you can create your own **custom presets** — fully tailored player configurations that define the skin, controls, behaviors, caption styles, and even engagement overlays like email capture, CTAs, and action bars. Once created, a custom preset works just like the built in ones and can be applied to any media item on your site.
 
 ## Why create a custom preset?
 
-The seven built-in presets cover common use cases, but they cannot be modified. A custom preset lets you:
+The seven built in presets cover common use cases, but they cannot be modified. A custom preset lets you:
 
 - Choose exactly which controls are visible.
 - Set specific playback behaviors (autoplay, resume, inline playback).
 - Style captions to match your brand.
-- Pre-configure engagement overlays so every video using the preset has them by default.
+- Pre configure engagement overlays so every video using the preset has them by default.
 
 ## How to create a custom preset
 
@@ -27,7 +27,7 @@ The seven built-in presets cover common use cases, but they cannot be modified. 
 
 ![Custom Preset](/guide/public/customize/custom-preset/custom-preset-3.webp)
 
-Your new preset appears in the preset grid alongside the built-in ones. Select it to apply it to the current media — or apply it to any other media item later.
+Your new preset appears in the preset grid alongside the built in ones. Select it to apply it to the current media — or apply it to any other media item later.
 
 ## Preset Name and Skin
 
@@ -55,7 +55,7 @@ The **Controls** section lets you decide which buttons and elements appear on th
 | **Playback Speed** | Let viewers watch at different speeds (0.5x, 1x, 1.5x, 2x, etc.) |
 | **Settings Menu** | A gear icon that opens a menu for quality, speed, captions, and accessibility options |
 | **Fullscreen** | Toggle fullscreen mode |
-| **Picture In Picture** | Detach the video into a floating mini-player |
+| **Picture In Picture** | Detach the video into a floating mini player |
 | **Captions Toggle** | Show or hide subtitles (if subtitle tracks are added) |
 
 ::: tip
@@ -79,7 +79,7 @@ The **Behaviors** section controls how the player acts during and after playback
 | **Hide Bottom Controls** | Hide the bottom control bar entirely |
 
 ::: tip
-Hiding all three control regions is useful for **ambient background videos** — the video plays with no visible UI. The built-in **Ambient** preset uses this pattern.
+Hiding all three control regions is useful for **ambient background videos** — the video plays with no visible UI. The built in **Ambient** preset uses this pattern.
 :::
 
 ![Custom Preset](/guide/public/customize/custom-preset/custom-preset-5.webp)
@@ -101,14 +101,14 @@ These styles apply to every video that uses this preset, so your captions stay c
 
 ## Email Capture
 
-You can pre-configure an **email capture overlay** directly inside the preset. When enabled, every video using this preset will show the email gate at the specified point — no need to add it as a layer on each media item individually.
+You can pre configure an **email capture overlay** directly inside the preset. When enabled, every video using this preset will show the email gate at the specified point — no need to add it as a layer on each media item individually.
 
 | Option | Description |
 |--------|-------------|
 | **Enable Email Capture** | Toggle on to show an email collection form over the player |
 | **Display At (%)** | When to show the overlay, as a percentage of the video watched (e.g., `0` for the very start) |
 | **Allow Skipping** | Let viewers skip the email form without entering their address |
-| **Skip For CRM Contacts** | When enabled, logged-in users who already exist as FluentCRM contacts will not see the overlay |
+| **Skip For CRM Contacts** | When enabled, logged in users who already exist as FluentCRM contacts will not see the overlay |
 | **Email Providers** | Click **+ Add Provider** to connect a provider (e.g., FluentCRM) with list and tag assignments |
 | **Email Placeholder** | Placeholder text inside the email field (e.g., "Email Address") |
 | **Headline** | Main text above the email field (e.g., "Sign up to continue watching") |
@@ -123,7 +123,7 @@ See [Email Capture Overlay](/guide/engagement/email-capture) for a deeper look a
 
 ## Call To Action
 
-The **Call To Action** section lets you pre-configure a CTA overlay that pauses the video and prompts the viewer to take an action.
+The **Call To Action** section lets you pre configure a CTA overlay that pauses the video and prompts the viewer to take an action.
 
 | Option | Description |
 |--------|-------------|
@@ -159,7 +159,7 @@ When **Button Type** is set to **Link**, additional fields appear for the button
 
 ## After creating your preset
 
-Once you click **Create Preset**, your custom preset appears in the **Preset** panel alongside the built-in ones. It shows a thumbnail preview of how the player looks with your configuration.
+Once you click **Create Preset**, your custom preset appears in the **Preset** panel alongside the built in ones. It shows a thumbnail preview of how the player looks with your configuration.
 
 To use your custom preset:
 

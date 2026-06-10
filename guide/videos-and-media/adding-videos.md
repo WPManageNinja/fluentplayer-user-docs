@@ -45,7 +45,7 @@ You can update your videos at any time, and the changes will automatically refle
 3. Modify any settings, including:
    - The **Video Source** (to swap URLs or files).
    - The **Poster Image** or **Player Preset**.
-   - Player-specific settings like [controls](/guide/customize/creating-custom-presets), [behaviors](/guide/customize/behaviors), [overlays](/guide/engagement/email-capture), and more.
+   - Player specific settings like [controls](/guide/customize/creating-custom-presets), [behaviors](/guide/customize/behaviors), [overlays](/guide/engagement/email-capture), and more.
    - Interactive Layers such as email capture, CTAs, or the action bar.
 4. Click **Update** (or **Publish**) to save your changes.
 
@@ -57,7 +57,7 @@ The media editor is organized into logical sections to help you find settings qu
  * **Poster & Preset:** Control the thumbnail and the visual template of the player.
  * **Overlays:** Configure engagement tools like email capture and CTA buttons.
  * **[Timed Content (Pro)](/guide/display-embed/block#timed-content-pro):** Add text, lists, or buttons that appear below the player at specific timestamps.
- * **Advanced Settings:** Manage subtitles, multi-language tracks, and custom CSS.
+ * **Advanced Settings:** Manage subtitles, multi language tracks, and custom CSS.
 
 On the **media list** screen, use the **status filters** to narrow the list:
 

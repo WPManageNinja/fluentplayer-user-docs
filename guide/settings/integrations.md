@@ -20,12 +20,12 @@ Each integration card displays a brief description, a status badge (Enabled or D
 
 ## FluentCRM
 
-FluentCRM is a powerful, WordPress-native CRM and email marketing plugin. Because it runs directly on your own WordPress site, integrating it with FluentPlayer requires absolutely no external API keys—it connects seamlessly!
+FluentCRM is a powerful, WordPress native CRM and email marketing plugin. Because it runs directly on your own WordPress site, integrating it with FluentPlayer requires absolutely no external API keys—it connects seamlessly!
 
 **What happens when a viewer submits their email:**
 * A contact is instantly created (or updated) within FluentCRM.
 * The contact is added to your specified lists or tags.
-* Your pre-built email sequences, newsletters, or automations trigger automatically inside FluentCRM.
+* Your pre built email sequences, newsletters, or automations trigger automatically inside FluentCRM.
 
 **How to set it up:**
 1. Ensure you have the FluentCRM plugin installed and activated on your WordPress site.
@@ -49,7 +49,7 @@ FluentCRM is a powerful, WordPress-native CRM and email marketing plugin. Becaus
 
 ## Webhook (Pro)
 
-A webhook sends your captured email data as an HTTP POST request to any URL you specify. This is your most flexible, powerful option, allowing you to route lead data to virtually any modern CRM, automation platform, or custom-built system.
+A webhook sends your captured email data as an HTTP POST request to any URL you specify. This is your most flexible, powerful option, allowing you to route lead data to virtually any modern CRM, automation platform, or custom built system.
 
 **What happens when a viewer submits their email:**
 * FluentPlayer instantly sends a POST request to your specified webhook URL.
@@ -63,13 +63,12 @@ A webhook sends your captured email data as an HTTP POST request to any URL you 
 
 > **🔍 Example:** Webhooks are perfect for connecting your video lead generation to automation tools like Zapier, Make (Integromat), n8n, HubSpot, or ActiveCampaign.
 
----
 
 ## Which provider should I use?
 
 | Provider | Plugin version | Best for |
 |----------|---------------|----------|
-| FluentCRM | Free | WordPress-native email marketing |
+| FluentCRM | Free | WordPress native email marketing |
 | Mailchimp | Pro | Existing Mailchimp users |
 | Webhook | Pro | Any CRM or automation tool with webhook support |
 

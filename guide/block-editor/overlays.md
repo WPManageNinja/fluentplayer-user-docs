@@ -5,7 +5,7 @@ description: "Timed text and button overlays on the video: add overlays, timing,
 
 # Text & Button Overlays (Block sidebar)
 
-**Text & Button Overlays** are timed interactive elements that appear directly on top of your video. They are perfect for highlighting key points, providing resource links, or adding calls-to-action (CTAs) without pausing the video.
+**Text & Button Overlays** are timed interactive elements that appear directly on top of your video. They are perfect for highlighting key points, providing resource links, or adding calls to action (CTAs) without pausing the video.
 
 To manage your overlays, select the **FluentPlayer** block and open the **Text/Button Overlays** panel in the **Block** tab.
 
@@ -19,7 +19,7 @@ Follow these steps to create a new overlay for your video:
 
 2. **Start Time:** Enter the exact hour, minute, and second when the overlay should appear.
 3. **Duration (Seconds):** Use the slider or input box to set how many seconds the overlay stays on the screen.
-4. **Overlay Text:** Enter your message in the text field. You can also click the **three-dot** icon to insert dynamic values, such as the viewer’s name or email.
+4. **Overlay Text:** Enter your message in the text field. You can also click the **three dot** icon to insert dynamic values, such as the viewer’s name or email.
 5. **Link URL:** If you want the overlay to be clickable, paste a website address here.
 6. **Position:** Choose where the overlay stays on the video: Top Left, Top Right, Bottom Left, or Bottom Right.
 7. **Colors:** Select a Background Color and Text Color to ensure your message is easy to read.
@@ -29,7 +29,7 @@ Follow these steps to create a new overlay for your video:
 
 ## Dynamic Positioning and Animation
 
-For a more eye-catching effect, you can make your overlays move:
+For a more eye catching effect, you can make your overlays move:
 
  * **Dynamic Position:** **Toggle** this on to move the overlay to random positions during playback.
  * **Reposition Interval:** Set how often (in seconds) the overlay should change its location.

@@ -7,7 +7,7 @@ description: "Turn on custom branding per media, set logo and colors in the Bloc
 
 The **Branding** panel allows you to personalize your video player with your own logo and custom color scheme. You can use this section to ensure a single video matches a specific marketing campaign or brand identity, even if it differs from your global site settings.
 
-To access these options, select your **FluentPlayer** block and open the **Branding** section under the **Block** tab in the right-hand sidebar.
+To access these options, select your **FluentPlayer** block and open the **Branding** section under the **Block** tab in the right hand sidebar.
 
 ## Use custom branding
 
@@ -27,10 +27,10 @@ Once custom branding is enabled, you can add a watermark or brand logo directly 
 
 ### Color Customization
 
-You can fine-tune the player's colors to create a cohesive look for your content.
+You can fine tune the player's colors to create a cohesive look for your content.
 
  * **Brand Color:** This controls the accent color used for the progress bar and other highlights.
- * **Control Bar Color:** Adjust the background color of the bottom control bar to be solid or semi-transparent.
+ * **Control Bar Color:** Adjust the background color of the bottom control bar to be solid or semi transparent.
  * **Color Picker:** Click the color circles to open a palette where you can select a preset color or enter a custom hex code.
 
 ![Branding](/guide/public/block-editor/branding/branding-1.webp)

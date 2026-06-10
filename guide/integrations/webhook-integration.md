@@ -92,7 +92,7 @@ If the webhook dropdown is empty, return to settings and confirm at least one we
 
 ## Security notes
 
-Webhook requests include built-in validation and sanitization:
+Webhook requests include built in validation and sanitization:
 
 - URL validation before saving/sending.
 - Allowed methods are restricted (`GET`, `POST`, `PUT`).
@@ -100,7 +100,7 @@ Webhook requests include built-in validation and sanitization:
 - Invalid/unsafe endpoints can be rejected.
 
 ::: warning
-If you use authentication headers, avoid using high-privilege credentials. Use scoped API keys whenever possible.
+If you use authentication headers, avoid using high privilege credentials. Use scoped API keys whenever possible.
 :::
 
 ## Troubleshooting
@@ -113,12 +113,12 @@ If you use authentication headers, avoid using high-privilege credentials. Use s
 | Invalid URL error | URL format is wrong | Use a full `http://` or `https://` endpoint |
 | One webhook fails, others succeed | Partial failure across multiple endpoints | Review endpoint logs and fix failing target |
 
-Webhook integration gives you flexible lead routing without depending on a fixed third-party plugin list.
+Webhook integration gives you flexible lead routing without depending on a fixed third party plugin list.
 
 ## Frequently Asked Questions
 
 **Can I send data to more than one webhook per video?**
-Yes. You can create multiple webhook endpoints in the global settings. Each video preset targets one specific webhook. If you need to fan out to several services from a single submission, use a relay endpoint — for example, a multi-step Zapier Zap — that distributes the data on the receiving side.
+Yes. You can create multiple webhook endpoints in the global settings. Each video preset targets one specific webhook. If you need to fan out to several services from a single submission, use a relay endpoint — for example, a multi step Zapier Zap — that distributes the data on the receiving side.
 
 **Is the webhook sent synchronously?**
 Yes, by default. The request is sent during the email collection process with a 15-second timeout. If the request times out or fails, the error is logged and any remaining webhooks are still attempted. If your endpoint is slow, consider offloading processing to an async queue on the receiving end.

@@ -9,7 +9,7 @@ next:
 
 # Email Capture Overlay
 
-The **email capture overlay** pauses the video and shows a signup form to the viewer. They enter their email address — and optionally subscribe to your list — before they can continue watching. It is one of Fluent Player's most effective tools for growing your email list without any third-party pop-up plugins.
+The **email capture overlay** pauses the video and shows a signup form to the viewer. They enter their email address — and optionally subscribe to your list — before they can continue watching. It is one of Fluent Player's most effective tools for growing your email list without any third party popup plugins.
 
 ## How it works
 
@@ -37,7 +37,7 @@ Your email gate is now live on every page where that media is embedded.
 |--------|-------------|---------|
 | **Start Time** | When to show the overlay — set in **Hours**, **Minutes**, and **Seconds** | `0h 1m 0s` |
 | **Allow Skipping** | Let the viewer close the overlay without entering an email | On or Off |
-| **Skip For CRM Contacts** | When enabled, logged-in users who already exist as FluentCRM contacts will not see the overlay | On or Off |
+| **Skip For CRM Contacts** | When enabled, logged in users who already exist as FluentCRM contacts will not see the overlay | On or Off |
 | **Email Placeholder** | Placeholder text inside the email field | "Email Address" |
 | **Headline** | Main text above the email field | "Sign up to continue watching" |
 | **Button Text** | Label on the submit button | "Subscribe" |
@@ -50,7 +50,7 @@ Your email gate is now live on every page where that media is embedded.
 ![Email Capture](/guide/public/engagement/email-capture/email-capture-3.webp)
 
 ::: tip
-Setting **Allow Skipping** to **Off** creates a hard gate — viewers must submit their email to watch the rest of the video. Setting it to **On** makes the overlay a soft opt-in. Hard gates collect more emails; soft gates create a better viewer experience. Choose based on your goal.
+Setting **Allow Skipping** to **Off** creates a hard gate — viewers must submit their email to watch the rest of the video. Setting it to **On** makes the overlay a soft opt in. Hard gates collect more emails; soft gates create a better viewer experience. Choose based on your goal.
 :::
 
 ## Adding an email provider
@@ -60,7 +60,7 @@ Email providers are configured directly inside the Email Capture layer — not i
 1. In the Email Capture configuration panel, find the **Email Providers** section.
 2. Click **+ Add Provider**.
 3. Choose a provider from the **Select Provider** dropdown (e.g., **FluentCRM**).
-4. Configure the provider-specific options:
+4. Configure the provider specific options:
 
 | Option | Description |
 |--------|-------------|
@@ -72,7 +72,7 @@ Email providers are configured directly inside the Email Capture layer — not i
 
 You can add multiple providers to a single Email Capture layer if needed. Fluent Player supports:
 
-- **FluentCRM** — Adds contacts directly to your WordPress-native CRM with list and tag assignments.
+- **FluentCRM** — Adds contacts directly to your WordPress native CRM with list and tag assignments.
 - **Mailchimp** — Sends subscribers to a Mailchimp audience.
 - **Webhook** — Posts email data to any URL (for Zapier, Make, HubSpot, and similar tools).
 
@@ -90,7 +90,7 @@ You recorded a 45-minute webinar and want to collect emails from anyone who watc
 - **Button Text:** "Watch Now"
 - **Provider:** FluentCRM — adds them to your "Webinar Leads" list
 
-## Example: soft opt-in on a tutorial
+## Example: soft opt in on a tutorial
 
 You have a free tutorial and want to gently ask for emails without forcing it:
 
@@ -100,6 +100,6 @@ You have a free tutorial and want to gently ask for emails without forcing it:
 - **Button Text:** "Subscribe"
 
 ::: tip Developer note
-Submissions are handled via the `fluent_player_email_submit` AJAX action (works for both guests and logged-in users). Developers can hook `fluent_player/email_collection_hooks` or use the `fluent_player/pre_process_email_submit` filter. See the [documentation home](/guide/) for related guides; for custom code, refer to the plugin’s developer hooks in the source or your IDE.
+Submissions are handled via the `fluent_player_email_submit` AJAX action (works for both guests and logged in users). Developers can hook `fluent_player/email_collection_hooks` or use the `fluent_player/pre_process_email_submit` filter. See the [documentation home](/guide/) for related guides; for custom code, refer to the plugin’s developer hooks in the source or your IDE.
 :::
 

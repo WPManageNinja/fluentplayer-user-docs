@@ -30,9 +30,9 @@ Paste a YouTube video URL. Fluent Player will use the YouTube embed player with 
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
 ```
 
-Fluent Player offers YouTube-specific options in [Settings](/guide/settings/):
+Fluent Player offers YouTube specific options in [Settings](/guide/settings/):
 
- * **Privacy mode**: Uses YouTube's privacy-enhanced mode so cookies are not set until the viewer clicks play.
+ * **Privacy mode**: Uses YouTube's privacy enhanced mode so cookies are not set until the viewer clicks play.
  * **Subscribe button**: Optionally shows a YouTube subscribe button on the player.
 
 **Best for:** Videos already hosted on YouTube, or when you want YouTube's free hosting.
@@ -41,7 +41,7 @@ Fluent Player offers YouTube-specific options in [Settings](/guide/settings/):
 
 ### 3. Vimeo
 
-Paste a **Vimeo** video URL. Fluent Player treats Vimeo as a first-class source type (validation allows `viewType: vimeo` in media settings) and loads the Vimeo player with your Fluent Player styling and options where applicable.
+Paste a **Vimeo** video URL. Fluent Player treats Vimeo as a first class source type (validation allows `viewType: vimeo` in media settings) and loads the Vimeo player with your Fluent Player styling and options where applicable.
 
 **Example:**
 
@@ -55,9 +55,9 @@ https://vimeo.com/123456789
 
 ### 4. Mux and Mux Live (Pro)
 
-In the block editor, **Mux** and **Mux Live** appear as separate source buttons: **Mux** for standard on-demand assets and **Mux Live** for live streams. 
+In the block editor, **Mux** and **Mux Live** appear as separate source buttons: **Mux** for standard on demand assets and **Mux Live** for live streams. 
 
-With Fluent Player Pro, you connect your account under **Settings → Storage** (BunnyCDN Stream, BunnyCDN Storage, and Mux rows each have **Configure**). Features include **HLS** playback, uploads, optional **Signed URLs**, **Webhooks**, and optional **AI-generated captions** for on-demand content.
+With Fluent Player Pro, you connect your account under **Settings → Storage** (BunnyCDN Stream, BunnyCDN Storage, and Mux rows each have **Configure**). Features include **HLS** playback, uploads, optional **Signed URLs**, **Webhooks**, and optional **AI generated captions** for on demand content.
 
 When a stream is configured as **Live**, the player shows a **LIVE** badge in the control bar (typically a pulsing indicator plus “LIVE” text) so viewers know they are watching a live broadcast.
 
@@ -69,7 +69,7 @@ See the full guide: [Mux (Pro)](/guide/integrations/mux).
 
 ### 5. Audio
 
-Some Fluent Player builds expose **Audio** in the block or media source picker for audio-first media (podcasts, music, voice-only files). Backend support includes audio-oriented player views. 
+Some Fluent Player builds expose **Audio** in the block or media source picker for audio first media (podcasts, music, voice only files). Backend support includes audio oriented player views. 
 
 If you do **not** see **Audio** in your version, use an **External URL** or hosted file to MP3/M4A as your workflow allows, or check release notes the dedicated Audio entry may be gated by version or still rolling out.
 
@@ -84,7 +84,7 @@ With Fluent Player Pro, you can connect to **Bunny CDN** for professional video 
  * **BunnyCDN Stream**: Use Bunny's video streaming platform. You manage libraries and videos on Bunny, then select them in Fluent Player. See [BunnyCDN Stream](/guide/integrations/bunnycdn-stream).
  * **BunnyCDN Storage**: Use Bunny's storage zones to host video files. Upload and manage files directly from WordPress. See [BunnyCDN Storage](/guide/integrations/bunnycdn-storage).
 
-**Best for:** Sites with lots of videos, high-traffic sites, or when you need fast, reliable CDN delivery worldwide.
+**Best for:** Sites with lots of videos, high traffic sites, or when you need fast, reliable CDN delivery worldwide.
 
 ![BunnyCDN](/guide/public/videos-and-media/video-sources/bunny-cdn-6.webp)
 

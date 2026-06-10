@@ -22,7 +22,7 @@ Each integration card displays a brief description, a status badge (Enabled or D
 
 ## BunnyCDN Stream
 
-**BunnyCDN Stream** is a video streaming CDN with encoding, multi-bitrate delivery, and global edge nodes. Fluent Player can browse your Bunny Stream libraries and serve HLS video directly.
+**BunnyCDN Stream** is a video streaming CDN with encoding, multi bitrate delivery, and global edge nodes. Fluent Player can browse your Bunny Stream libraries and serve HLS video directly.
 
 ### What you need
 
@@ -53,7 +53,7 @@ After connecting:
 
 ## BunnyCDN Storage
 
-**BunnyCDN Storage** lets you store video files in Bunny's storage zones and serve them through their CDN. This is useful when you want self-managed file hosting rather than a full streaming platform.
+**BunnyCDN Storage** lets you store video files in Bunny's storage zones and serve them through their CDN. This is useful when you want self managed file hosting rather than a full streaming platform.
 
 ### What you need
 
@@ -82,7 +82,7 @@ After connecting:
 
 ## Mux
 
-**Mux** is a professional video platform with adaptive HLS streaming, live streaming, AI-generated captions, signed URL playback, and Mux Data analytics. Fluent Player Pro provides a full Mux integration including webhook support for asset-ready events.
+**Mux** is a professional video platform with adaptive HLS streaming, live streaming, AI generated captions, signed URL playback, and Mux Data analytics. Fluent Player Pro provides a full Mux integration including webhook support for asset ready events.
 
 ### What you need
 
@@ -102,8 +102,8 @@ After connecting:
 
 | Option | Purpose |
 |--------|---------|
-| **Signed URLs** | Serve time-limited signed URLs for protected playback, thumbnails, and storyboards. Enable only if you need access-restricted video. |
-| **Enable auto captions** | Ask Mux to auto-generate captions for new uploads (language is configurable). |
+| **Signed URLs** | Serve time limited signed URLs for protected playback, thumbnails, and storyboards. Enable only if you need access restricted video. |
+| **Enable auto captions** | Ask Mux to auto generate captions for new uploads (language is configurable). |
 | **Webhook secret** | Verifies events from Mux (asset ready, upload failed, live events). Add a webhook endpoint in the Mux dashboard and paste the signing secret here. |
 | **Mux Data environment key** | Optional key for Mux's playback quality analytics. |
 

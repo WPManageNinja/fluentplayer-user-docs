@@ -5,7 +5,7 @@ description: "Configure Interactive Layers: forms, email capture, CTAs, hotspots
 
 # Interactive layers (Block sidebar)
 
-**Interactive Layers** are timed elements that sit on top of your video to drive engagement. Unlike simple text overlays, these layers allow viewers to interact with your content through forms, clickable hotspots, and calls-to-action (CTAs).
+**Interactive Layers** are timed elements that sit on top of your video to drive engagement. Unlike simple text overlays, these layers allow viewers to interact with your content through forms, clickable hotspots, and calls to action (CTAs).
 
 To manage your layers, select the **FluentPlayer** block and open the **Interactive Layers** panel in the **Block** tab.
 
@@ -16,7 +16,7 @@ To manage your layers, select the **FluentPlayer** block and open the **Interact
 Click the **+ Add Layer** button to open the **Manage Layers** window. From here, you can browse available layers using the following filters:
 
  * **All:** Shows every available layer type.
- * **Forms:** Displays form-related layers, such as **Fluent Forms**.
+ * **Forms:** Displays form related layers, such as **Fluent Forms**.
  * **CTA:** Filters for **Call to Action** layers designed to drive clicks.
  * **Email Capture:** Collects email addresses from viewers.
  * **Hotspot:** Shows options for creating interactive regions on the video.

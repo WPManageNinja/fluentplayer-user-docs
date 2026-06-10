@@ -10,7 +10,7 @@ Some common use cases:
 
 - **Bloggers** who want to embed videos in their posts.
 - **Course creators** who need playlists with progress tracking.
-- **Marketers** who want to capture emails or add calls-to-action inside the video player.
+- **Marketers** who want to capture emails or add calls to action inside the video player.
 - **Businesses** that want a branded, professional video experience on their website.
 
 ## Free vs Pro
@@ -21,7 +21,7 @@ Fluent Player comes in two versions. This documentation matches **Fluent Player 
 |---------|------|-----|
 | Add and embed videos | Yes | Yes |
 | Shortcode and Gutenberg block | Yes | Yes |
-| Player presets (7 built-in: Default, Modern, Simple, Standard, Floating, Minimal, Ambient + custom on Pro) | Yes | Yes |
+| Player presets (7 built in: Default, Modern, Simple, Standard, Floating, Minimal, Ambient + custom on Pro) | Yes | Yes |
 | Subtitles and captions | Yes | Yes |
 | Email capture with FluentCRM | Yes | Yes |
 | CTA overlay and action bar | Yes | Yes |
@@ -31,7 +31,7 @@ Fluent Player comes in two versions. This documentation matches **Fluent Player 
 | Playlists (Standard, Learning, Grid) | — | Yes |
 | Mux video hosting and streaming | — | Yes |
 | BunnyCDN Stream and Storage | — | Yes |
-| Built-in analytics dashboard | — | Yes |
+| Built in analytics dashboard | — | Yes |
 | Timed content below the player (block inner content) | — | Yes |
 | Mailchimp and Webhook email providers | — | Yes |
 | Create and manage custom presets | — | Yes |
@@ -43,9 +43,9 @@ The **free version** handles everything you need for embedding and customizing s
 - **Video players** — Embed and customize players that support WordPress uploads, external URLs, YouTube, Mux, and BunnyCDN (Pro).
 - **Playlists (Pro)** — Group videos into playlists with three layout options: Standard, Learning, and Grid.
 - **Presets** — Save and reuse player configurations so every video looks consistent.
-- **Overlays** — Add email capture forms, calls-to-action, and action bars that appear while the video plays.
+- **Overlays** — Add email capture forms, calls to action, and action bars that appear while the video plays.
 - **Shortcodes** — Embed videos with `[fluentplayer id="123"]` (or `[fluentmedia]`) or playlists with `[fluentplaylist id="456"]` (Pro).
-- **Analytics** — Track plays, watch time, and viewer behavior with built-in analytics (Pro) or Google Analytics.
+- **Analytics** — Track plays, watch time, and viewer behavior with built in analytics (Pro) or Google Analytics.
 
 ## How it works (the big picture)
 

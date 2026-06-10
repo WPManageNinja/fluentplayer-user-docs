@@ -31,7 +31,7 @@ Each playlist has:
 Fluent Player Pro offers two layout styles:
 
 - **Standard** — A video player with a playlist sidebar showing thumbnails. Good for series, tutorials, and courses.
-- **Grid** — Displays videos in a multi-column thumbnail grid. Good for large libraries and catalogs.
+- **Grid** — Displays videos in a multi column thumbnail grid. Good for large libraries and catalogs.
 
 Learn more in [Playlist Layouts](/guide/playlists/playlist-layouts).
 

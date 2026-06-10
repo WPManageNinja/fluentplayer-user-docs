@@ -11,7 +11,7 @@
 When enabled, the video starts playing as soon as the page loads.
 
 ::: warning Browser restrictions
-Most modern browsers block autoplay with sound. If you enable autoplay but the browser blocks it, the video will not start. Use **muted autoplay** instead for reliable auto-starting.
+Most modern browsers block autoplay with sound. If you enable autoplay but the browser blocks it, the video will not start. Use **muted autoplay** instead for reliable auto starting.
 :::
 
 ### Muted autoplay
@@ -26,7 +26,7 @@ When enabled, Fluent Player remembers where the viewer stopped watching. The nex
 
 **Common use case:** Online courses or training videos where viewers may watch in multiple sessions.
 
-In **Settings → General**, the checkbox is labeled **Enable Auto Resume Playback** under **Auto resume playback** — turn it on so Pro can store playback position in the browser. In the **block sidebar** ( **Block** tab → **General Settings** ), the per-embed toggle is **Remember Playback Position**. Use the preset’s **Save play position** behavior plus these toggles together so resume works as you expect.
+In **Settings → General**, the checkbox is labeled **Enable Auto Resume Playback** under **Auto resume playback** — turn it on so Pro can store playback position in the browser. In the **block sidebar** ( **Block** tab → **General Settings** ), the per embed toggle is **Remember Playback Position**. Use the preset’s **Save play position** behavior plus these toggles together so resume works as you expect.
 
 ::: tip
 This feature stores the position in the viewer's browser. If they switch to a different browser or device, the position will not carry over.
@@ -37,15 +37,15 @@ This feature stores the position in the viewer's browser. If they switch to a di
 This controls what happens when the video finishes playing. Common options include:
 
 - **Reset** — The video goes back to the beginning (shows the poster image).
-- **Loop** — The video **starts again from the beginning** immediately (useful for background or ambient clips). The [Ambient](/guide/customize/presets) preset uses loop-style end behavior by default.
+- **Loop** — The video **starts again from the beginning** immediately (useful for background or ambient clips). The [Ambient](/guide/customize/presets) preset uses loop style end behavior by default.
 
-Pick **Reset** for one-shot content; use **Loop** only when you intend continuous repetition (for example hero or ambient video).
+Pick **Reset** for one shot content; use **Loop** only when you intend continuous repetition (for example hero or ambient video).
 
 ### Plays inline
 
 On mobile devices, videos often go fullscreen when they start playing. When **plays inline** is enabled, the video plays inside the page without going fullscreen.
 
-**Common use case:** In-content embeds where you want the video to stay within the article layout on mobile.
+**Common use case:** In content embeds where you want the video to stay within the article layout on mobile.
 
 ### Hide control areas
 
@@ -59,7 +59,7 @@ This is more aggressive than disabling individual controls — it removes the en
 
 ## Touch gestures
 
-On phones and tablets, viewers can use **tap** to play/pause and show or hide controls, **double-tap left/right** to seek backward or forward by about 10 seconds, and **double-tap** in some areas to toggle fullscreen.
+On phones and tablets, viewers can use **tap** to play/pause and show or hide controls, **double tap left/right** to seek backward or forward by about 10 seconds, and **double tap** in some areas to toggle fullscreen.
 
 ## Where to configure behaviors
 

@@ -16,14 +16,14 @@ To access these settings, go to **Fluent Player → Media**, and either click **
 ### 1. Title and Title Overlay
 
  * **Title:** Enter the internal name for your video. This is used for organization within your **Media List**.
- * **Title Overlay:** When enabled, the video title will appear in the top-left corner of the player when the video is paused or hovered over. You can use the "tag" icon to insert dynamic **[Smartcodes](/guide/integrations/smartcodes-personalization)** for personalized titles.
+ * **Title Overlay:** When enabled, the video title will appear in the top left corner of the player when the video is paused or hovered over. You can use the "tag" icon to insert dynamic **[Smartcodes](/guide/integrations/smartcodes-personalization)** for personalized titles.
 
 ### 2. Poster Image
 
 The **Poster Image** is the thumbnail viewers see before the video starts.
 
- - Click **Change** to select an image from your WordPress Media Library or upload a new one.
- - A professional poster image makes your content more inviting and improves click-through rates.
+- Click **Change** to select an image from your WordPress Media Library or upload a new one.
+- A professional poster image makes your content more inviting and improves click through rates.
 
 ### 3. Aspect Ratio
 
@@ -56,11 +56,11 @@ Set the player to start automatically when the page loads.
 
 ### 6. Play Inline On Mobile
 
-When enabled, this allows the video to play directly within the webpage on mobile devices rather than forcing it into a full-screen system player.
+When enabled, this allows the video to play directly within the webpage on mobile devices rather than forcing it into a full screen system player.
 
 ### 7. Remember Playback Position
 
-This user-friendly feature allows viewers to resume the video exactly where they left off if they return to the page later.
+This user friendly feature allows viewers to resume the video exactly where they left off if they return to the page later.
 
 ### 8. Video End Screen
 
@@ -71,4 +71,4 @@ Decide what viewers see once the video finishes playing.
 
 ![Video End Screen](/guide/public/block-editor/general-settings/video-end-screen-3.webp)
 
-The **General Settings** panel provides the essential building blocks for your video player. By carefully choosing your **Load Strategy** and **Autoplay** rules, you can create a high-performance viewing experience that doesn't sacrifice your website's loading speed.
+The **General Settings** panel provides the essential building blocks for your video player. By carefully choosing your **Load Strategy** and **Autoplay** rules, you can create a high performance viewing experience that doesn't sacrifice your website's loading speed.

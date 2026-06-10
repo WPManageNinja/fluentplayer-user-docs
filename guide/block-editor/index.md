@@ -13,7 +13,7 @@ You will see the Fluent Player editor in **two** different parts of WordPress, b
 
 ### 1. The Dedicated Media Editor
 
-When you go to **Fluent Player → Media → Add Media**, you enter a focused, full-screen editor.
+When you go to **Fluent Player → Media → Add Media**, you enter a focused, full screen editor.
 
  * **Single Purpose:** This screen is designed only for configuring your video.
  * **Locked Layout:** You won't see options for paragraphs or columns here—just the Fluent Player block and its settings.
@@ -31,20 +31,20 @@ You can also add the **FluentPlayer Media** block while writing a normal post or
 
 The sidebar is split into two main tabs to keep things organized:
 
- * **Media Tab:** This covers high-level details like the video title, status (Public/Private), and media-level actions.
+ * **Media Tab:** This covers high level details like the video title, status (Public/Private), and media level actions.
  * **Block Tab:** This is where the magic happens. You will find almost all your daily settings here, including branding, presets, and interactive layers.
 
 ![Media and Block Tab](/guide/public/block-editor/index/media-and-block-tab-1.webp)
 
 ## Exploring the Block Sidebar Panels
 
-The settings in the editor are organized into collapsible sections to help you customize your video. Here is a point-by-point breakdown of what you can control in each panel:
+The settings in the editor are organized into collapsible sections to help you customize your video. Here is a point by point breakdown of what you can control in each panel:
 
  * **Branding**: Add your own logo and choose custom colors to make the player match your brand identity.
  * **General Settings**: Manage the video title, upload a poster image, and set behaviors like autoplay or aspect ratio.
- * **Preset**: Select from built-in or custom templates that control the overall skin and button layout of your player.
+ * **Preset**: Select from built in or custom templates that control the overall skin and button layout of your player.
  * **Chapters**: Create a list of markers that allow viewers to skip to specific sections of the video.
- * **Interactive Layers**: Add powerful engagement tools like email capture forms, Call-to-Action (CTA) buttons, and hotspots directly over your video.
+ * **Interactive Layers**: Add powerful engagement tools like email capture forms, Call to Action (CTA) buttons, and hotspots directly over your video.
  * **Timed Content Area (Pro)**: Design a special area below the player where text, buttons, or lists appear at exact timestamps.
  * **Multi-Language**: Set the primary language of your video and enable a selector so viewers can switch between different audio versions.
  * **Subtitles**: Upload and manage caption tracks to make your content more accessible to everyone.
@@ -54,7 +54,7 @@ The settings in the editor are organized into collapsible sections to help you c
 
 Many options **override** [global Settings](/guide/settings/) or [presets](/guide/customize/presets) for this media or this embed only. Typical priority:
 
-**Per-block / per-media → preset → global Settings**
+**Per block / per media → preset → global Settings**
 
 Exact behavior can vary by option; each page notes **global vs override** where it matters.
 

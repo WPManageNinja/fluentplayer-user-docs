@@ -1,6 +1,6 @@
 # Integrations Overview
 
-Fluent Player connects with powerful external services to expand your video capabilities. These integrations cover **video hosting**, **email marketing**, and **analytics**, helping you deliver high-quality content while growing your audience.
+Fluent Player connects with powerful external services to expand your video capabilities. These integrations cover **video hosting**, **email marketing**, and **analytics**, helping you deliver high quality content while growing your audience.
 
 ## Available integrations
 
@@ -16,13 +16,13 @@ Professional hosting ensures faster loading and a better viewer experience by of
 
 Capture viewer emails with the [email capture overlay](/guide/engagement/email-capture) and send them to your email marketing tool:
 
-- **FluentCRM** (free) — WordPress-native CRM. See [Email Providers](/guide/engagement/email-providers).
+- **FluentCRM** (free) — WordPress native CRM. See [Email Providers](/guide/engagement/email-providers).
 - **Mailchimp** (Pro) — Popular email marketing platform. See [Email Providers](/guide/engagement/email-providers).
 - **Webhook** (Pro) — Send email data to any URL (Zapier, HubSpot, ActiveCampaign, etc.). See [Email Providers](/guide/engagement/email-providers).
 
 ### Analytics
 
-Track how your audience interacts with your content to make data-driven decisions.
+Track how your audience interacts with your content to make data driven decisions.
 
 - **[Built-in Analytics(Pro)](/guide/integrations/analytics)** (Pro) — A dashboard inside WordPress that shows plays, watch time, top videos, viewer behavior, and more.
 - **[Google Analytics (free)](/guide/integrations/google-analytics)** (free) — Send player events (play, progress, complete) to your GA4 property.
@@ -30,7 +30,7 @@ Track how your audience interacts with your content to make data-driven decision
 ### Community and personalization
 
 - **[FluentCommunity (Pro)](/guide/integrations/fluent-community)** (Pro) — Embed Fluent Player media inside FluentCommunity posts and portal content.
-- **[Smartcodes and personalization](/guide/integrations/smartcodes-personalization)** — Use FluentCRM merge tags (for example the contact first-name tag) in supported player text when FluentCRM is installed.
+- **[Smartcodes and personalization](/guide/integrations/smartcodes-personalization)** — Use FluentCRM merge tags (for example the contact first name tag) in supported player text when FluentCRM is installed.
 
 ## Where to configure integrations
 
@@ -40,7 +40,7 @@ Most integration settings are found in **Fluent Player → Settings**. Some inte
 |-------------|-------------------|
 | Mux, BunnyCDN Stream, BunnyCDN Storage | **Settings → Storage** (filter chips **All** / **BunnyCDN** / **Mux**; each row has **Configure**) |
 | FluentCRM / Mailchimp / Webhook | **Settings → Integrations** (filters **All** / **Email Service Provider** / **Others**) |
-| Built-in Analytics | **Settings → Analytics** → **Fluent Player Analytics** tab |
+| Built in Analytics | **Settings → Analytics** → **Fluent Player Analytics** tab |
 | Google Analytics | **Settings → Analytics** → **Google Analytics** tab |
 | FluentCommunity block | Requires FluentCommunity; embed from the community editor |
 | FluentCRM smartcodes | **Settings → Integrations** (FluentCRM) + supported text fields |

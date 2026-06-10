@@ -9,7 +9,7 @@ Built with [VitePress](https://vitepress.dev/).
 This documentation covers everything users need to get started with and master Fluent Player:
 
 - **Getting Started** – Installation, quick start, and overview
-- **Videos & Media** – Adding videos, sources, subtitles, multi-language audio, visibility
+- **Videos & Media** – Adding videos, sources, subtitles, multi language audio, visibility
 - **Display & Embed** – Shortcodes, Gutenberg blocks, dedicated URLs, timestamp links
 - **Block Editor** – Full reference for the player block sidebar panels
 - **Customization** – Presets, skins, branding, controls, and player appearance

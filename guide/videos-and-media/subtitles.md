@@ -1,10 +1,10 @@
 # Subtitles
 
-**Subtitles** (also called captions) make your videos accessible to a wider audience, including non-native speakers, viewers in noisy environments, or those with hearing impairments. FluentPlayer allows you to add and manage multiple subtitle tracks for any media item with ease.
+**Subtitles** (also called captions) make your videos accessible to a wider audience, including non native speakers, viewers in noisy environments, or those with hearing impairments. FluentPlayer allows you to add and manage multiple subtitle tracks for any media item with ease.
 
 ## Why Use Subtitles?
 
- * **Accessibility:** Meet legal requirements and follow web best practices by supporting deaf or hard-of-hearing viewers.
+ * **Accessibility:** Meet legal requirements and follow web best practices by supporting deaf or hard of hearing viewers.
  * **Higher Engagement:** Subtitled videos consistently see higher completion rates and watch time.
  * **Global Reach:** Offer translations for international viewers without needing to host separate video files.
  * **SEO Benefits:** Search engines can index your subtitle text, improving your video's discoverability.
@@ -14,7 +14,7 @@
 Fluent Player supports these subtitle file formats:
 
 - **WebVTT** (`.vtt`): The most common web subtitle format. Recommended.
-- **SRT** (`.srt`): A simple, widely-used subtitle format.
+- **SRT** (`.srt`): A simple, widely used subtitle format.
 
 ::: tip
 If your subtitles are in a different format, use a free online converter to save them as a `.vtt` or `.srt` file before uploading.
@@ -23,13 +23,13 @@ If your subtitles are in a different format, use a free online converter to save
 ## How to Add Subtitles to a Video
 
 1. Go to **Fluent Player → Media** and open the media you want to add subtitles to.
-2. In the right-hand sidebar, click on the **Subtitles** panel under the **Block** tab.
+2. In the right hand sidebar, click on the **Subtitles** panel under the **Block** tab.
 3. Choose your upload method:
     * **Manual Upload:** Click the **Upload** button to add your own `.vtt` or `.srt` subtitle file from your computer.
     * **YouTube Subtitle Import:** For YouTube videos, you can use the **Fetch** button to automatically import existing captions from YouTube.
 
 ::: warning
-YouTube subtitle import is an admin-only feature. Ensure you have permission to use the content before importing.
+YouTube subtitle import is an admin only feature. Ensure you have permission to use the content before importing.
 :::
 
 ![Subtitle](/guide/public/videos-and-media/subtitles/subtitle-1.webp)

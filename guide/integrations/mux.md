@@ -1,6 +1,6 @@
 # Mux (Pro)
 
-**Mux** is a professional video platform for hosting, streaming, and analyzing video. Fluent Player Pro includes a full **Mux integration** so you can connect your Mux account, upload or link assets, use **HLS playback**, optional **signed URLs** for protected content, **live streaming**, **AI-generated captions**, and **Mux Data** playback analytics — without leaving WordPress.
+**Mux** is a professional video platform for hosting, streaming, and analyzing video. Fluent Player Pro includes a full **Mux integration** so you can connect your Mux account, upload or link assets, use **HLS playback**, optional **signed URLs** for protected content, **live streaming**, **AI generated captions**, and **Mux Data** playback analytics — without leaving WordPress.
 
 ::: info Pro feature
 Mux is available only with **FluentPlayer Pro**. Install and activate the free Fluent Player plugin first, then activate Pro.
@@ -52,17 +52,17 @@ A popup will display your **Key ID** and **Secret Key**. **Copy** these for the 
 
 Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is finished processing or if an error occurred.
 
- - In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage → Mux**.
- - **Copy** the **Webhook URL** provided in the settings.
- - In the Mux Dashboard, go to **Settings → Webhooks **and click **Create New Webhook**.
+- In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage → Mux**.
+- **Copy** the **Webhook URL** provided in the settings.
+- In the Mux Dashboard, go to **Settings → Webhooks **and click **Create New Webhook**.
 
 >[!Note]
 > Webhook functionality is essential for automatic status and metadata updates after a video finishes processing.
 
 ![Webhook](/guide/public/integrations/mux/webhooks-7.webp)
 
- - A popup window will appear. **Paste** the **URL** and save. Mux will provide a **Webhook Secret**.
- - **Copy** that secret back into the **Webhook Secret** field in your **FluentPlayer** settings.
+- A popup window will appear. **Paste** the **URL** and save. Mux will provide a **Webhook Secret**.
+- **Copy** that secret back into the **Webhook Secret** field in your **FluentPlayer** settings.
 
 ![Webhook Secret](/guide/public/integrations/mux/create-webhook-8.webp)
 
@@ -74,15 +74,15 @@ Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is f
 
 ## Connect Mux to FluentPlayer
 
- - In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage**. 
- - Find the **Mux** row and click **Configure**.
- - Enable the **Enable Integration** toggle. 
- - **Paste** your **Token ID** and **Token Secret** into the designated fields.
- - Click **Test Connection** to verify the credentials. Click **Save Settings** button to save it.
+- In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage**. 
+- Find the **Mux** row and click **Configure**.
+- Enable the **Enable Integration** toggle. 
+- **Paste** your **Token ID** and **Token Secret** into the designated fields.
+- Click **Test Connection** to verify the credentials. Click **Save Settings** button to save it.
 
 ## Configure Optional Settings
 
- * **Signed URLs:** **Enable** this if you require access-restricted playback for your videos.
+ * **Signed URLs:** **Enable** this if you require access restricted playback for your videos.
  * **Auto Captions:** **Turn** this on to have Mux automatically generate subtitles for new uploads using AI transcription.
  * **Webhook Secret:** Create a webhook in your Mux dashboard using the URL provided in the settings and paste the secret here. This allows Mux to notify WordPress when video assets are ready.
  * **Mux Data Environment Key:** Enter your environment key from the Mux Data dashboard to track playback quality analytics.
@@ -93,8 +93,8 @@ Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is f
 
 Once connected, you can use Mux assets anywhere on your site:
 
- - Go to **FluentPlayer → Media** and click **Add Media**.
- - Under **Source Type**, select **Mux or Mux Live**.
+- Go to **FluentPlayer → Media** and click **Add Media**.
+- Under **Source Type**, select **Mux or Mux Live**.
 
 ![Mux Video Source](/guide/public/integrations/mux/mux-or-mux-video-11.webp)
 
@@ -123,4 +123,4 @@ You can use **both**:
 | Playback errors with signed URLs enabled | Signing key pair must be generated and stored per the integration; clock skew and URL expiry can affect playback. |
 
 
-Integrating Mux with **Fluent Player Pro** provides a scalable, professional-grade video delivery system within WordPress. From adaptive HLS streaming to real-time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management
+Integrating Mux with **Fluent Player Pro** provides a scalable, professional grade video delivery system within WordPress. From adaptive HLS streaming to real time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management

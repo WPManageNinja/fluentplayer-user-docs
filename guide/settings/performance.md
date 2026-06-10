@@ -17,7 +17,7 @@ When **Dynamic load JS** is enabled, Fluent Player defers loading the larger pla
 | Many players per site and you want to prioritize first paint | A single hero video where instant player readiness matters most |
 | Pages where video is below the fold | Landing pages where the player is the main CTA |
 
-Exact behavior can vary by theme and caching plugins. After changing this setting, spot-check a few key pages in your browser’s developer tools (Network tab) and, if you use them, your speed testing tools.
+Exact behavior can vary by theme and caching plugins. After changing this setting, spot check a few key pages in your browser’s developer tools (Network tab) and, if you use them, your speed testing tools.
 
 ### AJAX progress
 
@@ -25,5 +25,5 @@ Exact behavior can vary by theme and caching plugins. After changing this settin
 
 ## Saving changes
 
-Click **Save Settings** after changing performance options. Clear any full-page cache or CDN cache so visitors receive the updated loading behavior.
+Click **Save Settings** after changing performance options. Clear any full page cache or CDN cache so visitors receive the updated loading behavior.
 

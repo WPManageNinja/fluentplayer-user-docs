@@ -15,7 +15,7 @@ A Media item is the core building block of the plugin. It acts as a dedicated co
 
  * **Custom Settings:** Each **Media** item stores its own video source, poster image, and player behavior settings.
  * **Unique Identity (ID):** Every video is assigned a unique **Media ID** (e.g., #105). You will use this ID to embed your video into pages or posts using shortcodes.
- * **Status Control:** Media can be set to **Published** (live), **Draft** (in-progress), or **Private**, giving you full control over visibility.
+ * **Status Control:** Media can be set to **Published** (live), **Draft** (in progress), or **Private**, giving you full control over visibility.
 
 ## Managing Your Video Library
 

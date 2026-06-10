@@ -1,6 +1,6 @@
 ---
 title: "Multiple Languages"
-description: "Set up Fluent Player Multi-Language: link alternate video files per language, enable the selector, automatic browser-language switching, and when to use it vs subtitles."
+description: "Set up Fluent Player Multi-Language: link alternate video files per language, enable the selector, automatic browser language switching, and when to use it vs subtitles."
 ---
 
 # Multiple Languages
@@ -22,7 +22,7 @@ Unlike subtitles, which just add text over the screen, the **Multi-Language** fe
 To set up different language versions, follow these simple steps:
 
  1. Go to **Fluent Player → Media** and open the video you want to edit. 
- 2. In the right-hand sidebar, click on the **Multi-Language** tab to expand it.
+ 2. In the right hand sidebar, click on the **Multi-Language** tab to expand it.
  3. **Set the Primary Language:** Choose the main language of your video (e.g., English) from the **Primary Language** dropdown menu.
  4. **Turn on the Feature:** Switch the **toggle** for **Enable Multi-Language** to the "**on**" position. This adds a language selector to the player so viewers can switch manually.
 
@@ -67,6 +67,6 @@ Automatic switching is great for international audiences, but make sure you actu
 | **Multiple languages** | Videos with voiceover or narration in different languages (different audio tracks) |
 | **[Subtitles](/guide/videos-and-media/subtitles)** | Same video with translated text overlays |
 
-You can use both at the same time for example, a Spanish-narrated video with French subtitles.
+You can use both at the same time for example, a Spanish narrated video with French subtitles.
 
 

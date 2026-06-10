@@ -16,14 +16,14 @@ When a viewer clicks a timestamp link, the Fluent Player on that same page autom
 You can easily find and copy the base shortcode directly from the block editor:
 
 1. Select your **FluentPlayer** block in the WordPress editor.
-2. In the right-hand sidebar, expand the **Timestamp Links** panel.
+2. In the right hand sidebar, expand the **Timestamp Links** panel.
 3. You will see the **Timestamp Link Shortcode** box. Click the **Copy** icon next to it to grab the code.
 
 ```
 [fluentplayer_timestamp time="1:30" media_id="129"]Jump to 1:30[/fluentplayer_timestamp]
 ```
 
-## Step-by-Step Configuration
+## Step by Step Configuration
 
 To create a custom "Skip to" link, use the following shortcode format:
 

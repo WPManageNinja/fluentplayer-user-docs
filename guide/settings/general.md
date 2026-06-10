@@ -1,6 +1,6 @@
 # General Settings
 
-The General section controls site-wide defaults that apply to every player unless overridden by a preset or a per-media setting.
+The General section controls site wide defaults that apply to every player unless overridden by a preset or a per media setting.
 
 ## Options
 
@@ -8,16 +8,16 @@ The General section controls site-wide defaults that apply to every player unles
 
 A visual grid displays all available presets. The selected preset has a checkmark and a highlighted border. This becomes the default appearance for every new media item on your site.
 
-Available built-in presets:
+Available built in presets:
 
 | Preset | Character |
 |--------|-----------|
 | **Default** | Balanced layout, standard controls |
 | **Modern** | Rounded corners, floating controls |
-| **Simple** | Minimal UI, clean and distraction-free |
+| **Simple** | Minimal UI, clean and distraction free |
 | **Standard** | Classic bar layout |
 | **Floating** | Control bar floats over the video |
-| **Minimal** | Bare-bones controls |
+| **Minimal** | Bare bones controls |
 | **Ambient** | Background loops — muted autoplay, hidden controls, tuned for ambient video use |
 
 ![General Settings](/guide/public/settings/general/general-settings-1.webp)
@@ -41,7 +41,7 @@ When this global toggle is on, Fluent Player Pro stores playback position in the
 ![General Settings](/guide/public/settings/general/general-settings-2.webp)
 
 ::: info
-This is the **global** toggle. The corresponding per-embed control in the block sidebar (**Block** tab → **General Settings**) is labeled **Remember Playback Position**. Both need to be enabled for resume to work on a specific embed.
+This is the **global** toggle. The corresponding per embed control in the block sidebar (**Block** tab → **General Settings**) is labeled **Remember Playback Position**. Both need to be enabled for resume to work on a specific embed.
 :::
 
 ::: tip
@@ -65,12 +65,12 @@ Use this for minor tweaks not covered by presets (for example, adjusting progres
 
 ### Custom JavaScript
 
-A **Custom JS** field (code editor) lets you add site-wide JavaScript that runs in the context of Fluent Player on your pages. Use it only when you need small scripted behaviors that the UI does not expose — and **test thoroughly** on staging first.
+A **Custom JS** field (code editor) lets you add site wide JavaScript that runs in the context of Fluent Player on your pages. Use it only when you need small scripted behaviors that the UI does not expose — and **test thoroughly** on staging first.
 
 ![General Settings](/guide/public/settings/general/general-settings-3.webp)
 
 ::: warning
-Custom JavaScript can affect performance and security. Avoid pasting untrusted code. Prefer [presets](/guide/customize/presets), [behaviors](/guide/customize/behaviors), and built-in integrations before relying on global JS.
+Custom JavaScript can affect performance and security. Avoid pasting untrusted code. Prefer [presets](/guide/customize/presets), [behaviors](/guide/customize/behaviors), and built in integrations before relying on global JS.
 :::
 
 ## Saving changes

@@ -25,11 +25,11 @@ When you run an export, Fluent Player pulls the raw submission data stored direc
  * **Timestamps:** Exactly when the lead was captured.
 
  >[!Note]
- >While Fluent Player can sync leads to external tools like FluentCRM or Mailchimp in real-time, this export serves as a standalone backup of the data stored on your own server.
+ >While Fluent Player can sync leads to external tools like FluentCRM or Mailchimp in real time, this export serves as a standalone backup of the data stored on your own server.
 
 ## How to Export Your List
 
-Downloading your lead data is a simple three-step process:
+Downloading your lead data is a simple three step process:
 
 **Go to Export:** Navigate to the Export section within the Fluent Player Settings.
 **Choose Your Format:** Select your preferred file type using the toggle buttons:

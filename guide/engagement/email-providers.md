@@ -13,7 +13,7 @@ next:
 For the complete configuration walkthrough including filters and advanced options, see [**Global Settings → Email Integrations**](/guide/settings/integrations).
 :::
 
-When you use the [email capture overlay](/guide/engagement/email-capture), the emails your viewers submit need to go somewhere. That "somewhere" is an **email provider** — a service that stores those emails and lets you send newsletters, automations, or follow-ups.
+When you use the [email capture overlay](/guide/engagement/email-capture), the emails your viewers submit need to go somewhere. That "somewhere" is an **email provider** — a service that stores those emails and lets you send newsletters, automations, or follow ups.
 
 Fluent Player supports three email providers:
 
@@ -80,7 +80,7 @@ A **webhook** sends captured email data to any URL you specify. This is the most
 
 | Provider | Plugin version | Best for |
 |----------|---------------|----------|
-| FluentCRM | Free | WordPress-native email marketing — no external accounts needed |
+| FluentCRM | Free | WordPress native email marketing — no external accounts needed |
 | Mailchimp | Pro | Existing Mailchimp users who want subscriber data in their audience |
 | Webhook | Pro | Any CRM or automation tool that accepts incoming webhook data |
 

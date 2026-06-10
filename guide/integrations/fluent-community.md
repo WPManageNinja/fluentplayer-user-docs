@@ -1,6 +1,6 @@
 # FluentCommunity (Pro)
 
-The **FluentPlayer** integration allows you to transform your FluentCommunity portal into a fully branded, professional, and video-enabled experience. Instead of relying on the default look of third-party embeds, Fluent Player ensures all video content from community posts to course lessons is consistent and perfectly matches your community’s style.
+The **FluentPlayer** integration allows you to transform your FluentCommunity portal into a fully branded, professional, and video enabled experience. Instead of relying on the default look of third party embeds, Fluent Player ensures all video content from community posts to course lessons is consistent and perfectly matches your community’s style.
 
 #### What you need
 
@@ -21,19 +21,19 @@ The **FluentPlayer** integration allows you to transform your FluentCommunity po
 
 If you do not have Fluent Player installed, you can do so directly from your portal:
 
- - Go to **FluentCommunity > Settings > Features & Addons**.
- - Find the FluentPlayer module under **Recommended Plugins** and click **Install FluentPlayer**.
+- Go to **FluentCommunity > Settings > Features & Addons**.
+- Find the FluentPlayer module under **Recommended Plugins** and click **Install FluentPlayer**.
 
 ![Install FluentPlayer](/guide/public/integrations/fluent-community/install-fluentplayer-1.webp)
 
- - Once installed, click the **Player Settings** button on the FluentPlayer module to open the configuration panel.
- - Toggle **Enable FluentPlayer** to **ON**.
+- Once installed, click the **Player Settings** button on the FluentPlayer module to open the configuration panel.
+- Toggle **Enable FluentPlayer** to **ON**.
 
 
 
 ### 2. Customizing Appearance and Behaviors
 
-In the Player Settings slide-in panel, you can fine-tune how videos look and act:
+In the Player Settings slide in panel, you can fine tune how videos look and act:
 
  * **Select Player Skin:** Choose from layouts like **Modern, Classic, Simple, Floating, or Minimal**.
  * **Set Brand Color:** Define a primary hex color for the progress bar and active controls.
@@ -54,19 +54,19 @@ Control how your community members interact with video content:
 
 Once permissions are configured, members can easily share video content within the community feed:
 
- - Navigate to the community **Feed** or a specific **Space**.
- - Click the "What's happening?" box to create a new post.
- - Click the **Video Icon** in the post toolbar.
+- Navigate to the community **Feed** or a specific **Space**.
+- Click the "What's happening?" box to create a new post.
+- Click the **Video Icon** in the post toolbar.
 
 ![Create Post](/guide/public/integrations/fluent-community/whats-happening-3.webp)
 
- - Choose your source in the Attach Video popup:
+- Choose your source in the Attach Video popup:
 
    * **Oembed:** **Paste** a simple URL (e.g., from YouTube or Vimeo).
    * **HTML Code:** Paste an iframe or custom embed code.
    * **Upload Video:** Drag and drop or select a video file from your device.
- - Click **Embed** or **Upload**.
- - Select your target **Space** and click **Post**.
+- Click **Embed** or **Upload**.
+- Select your target **Space** and click **Post**.
 
 ![Post](/guide/public/integrations/fluent-community/post-4.webp)
 
@@ -84,7 +84,7 @@ You can select an existing video from your **library** or add a new one from sou
 
 ### 2. Configuring Lesson Settings (Sidebar)
 
-Use the right-hand sidebar under the **Lesson** tab to manage specific lesson details:
+Use the right hand sidebar under the **Lesson** tab to manage specific lesson details:
 
  * **Video Visibility:** Ensure **Enable Video Embed** is checked.
  * **Media Embed:** You can also use the sidebar to paste **Oembed** links or **Custom HTML** if you prefer not to use the block editor.
@@ -95,22 +95,22 @@ Use the right-hand sidebar under the **Lesson** tab to manage specific lesson de
 
 ### 3. Attaching Documents 
 
- - Scroll to the **Documents & Files** section in the sidebar.
- - Click **Manage Documents & Files**.
- - A popup will appear where you can upload files that students can view and download alongside the video.
+- Scroll to the **Documents & Files** section in the sidebar.
+- Click **Manage Documents & Files**.
+- A popup will appear where you can upload files that students can view and download alongside the video.
 
 >[!Note]
 > Uploading documents requires a Pro upgrade.
 
 ### 4. Personalizing with Smartcodes
 
- - Open the **Smartcodes** dropdown in the sidebar to see a list of available tags.
- - Copy tags like `##user.profile_link##` to insert dynamic member data into your lesson description.
+- Open the **Smartcodes** dropdown in the sidebar to see a list of available tags.
+- Copy tags like `##user.profile_link##` to insert dynamic member data into your lesson description.
 
 ![Documents & Files Manage](/guide/public/integrations/fluent-community/documents-and-files-3.webp)
 
 >[!Note]
 >To save server storage, it is highly recommended to restrict video uploads to **Admins** and **Moderators** only via the **Player Settings** in the community configuration panel.
 
-By combining advanced playback controls with direct community uploads and lesson-specific features like document attachments, FluentPlayer provides a seamless, distraction-free environment for both social interaction and professional learning.
+By combining advanced playback controls with direct community uploads and lesson specific features like document attachments, FluentPlayer provides a seamless, distraction free environment for both social interaction and professional learning.
 

@@ -67,7 +67,7 @@ If you are a developer, you can call the player directly in your code:
 ```
 
 >[!Note]
->If you enter an **ID** that doesn't exist, the player will simply not appear on the page. Always double-check your **Media List** to ensure you are using the correct ID.
+>If you enter an **ID** that doesn't exist, the player will simply not appear on the page. Always double check your **Media List** to ensure you are using the correct ID.
 
 
 ## Common questions

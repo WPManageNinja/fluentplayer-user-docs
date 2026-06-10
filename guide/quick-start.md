@@ -30,7 +30,7 @@ For more details on video sources, see [Video Sources](/guide/videos-and-media/v
 
 Every video uses a **preset** that controls how the player looks and behaves. By default, the "Modern" preset is applied.
 
-You can change the preset in the media editor. Fluent Player ships with **seven** built-in presets (plus custom presets on Pro):
+You can change the preset in the media editor. Fluent Player ships with **seven** built in presets (plus custom presets on Pro):
 
 - **Default** — Full classic controls including chapters.
 - **Modern** — Sleek bar; typical default for new sites.
@@ -38,7 +38,7 @@ You can change the preset in the media editor. Fluent Player ships with **seven*
 - **Standard** — Classic layout with chapters.
 - **Floating** — Controls float over the video.
 - **Minimal** — Almost no chrome; center play only.
-- **Ambient** — Tuned for muted background / loop-style use.
+- **Ambient** — Tuned for muted background / loop style use.
 
 You can always change this later. Learn more in [Presets](/guide/customize/presets).
 

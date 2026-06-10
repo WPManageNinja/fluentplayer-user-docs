@@ -1,6 +1,6 @@
 ---
 title: "Media vs Block tabs"
-description: "Learn the Fluent Player Media and Block sidebar tabs: document-level media fields vs player configuration, what saves where, and when to use each tab."
+description: "Learn the Fluent Player Media and Block sidebar tabs: document level media fields vs player configuration, what saves where, and when to use each tab."
 ---
 
 # Media vs Block Tabs
@@ -9,12 +9,12 @@ When you select the **FluentPlayer Media block** in the WordPress editor, the ri
 
 ## Media tab
 
-The **Media** tab focuses on the high-level details and "document-level" settings of your video entry in the database. Think of this as the administrative home for the video record.
+The **Media** tab focuses on the high level details and "document level" settings of your video entry in the database. Think of this as the administrative home for the video record.
 
  * **Media Context:** It provides information about the saved media item, such as its Status (e.g., Published) and the **Publish** date.
  * **Permalink & Slug:** You can view or edit the video's Slug, which determines its dedicated URL.
- * **Record Actions:** This tab includes high-level actions that affect the entire media record, such as the **Trash** button.
- * **Menu Options:** A **three-dot** menu allows you to quickly **View**, **Rename**, or **Trash** the media item.
+ * **Record Actions:** This tab includes high level actions that affect the entire media record, such as the **Trash** button.
+ * **Menu Options:** A **three dot** menu allows you to quickly **View**, **Rename**, or **Trash** the media item.
 
 >[!Note]
 >If you are using the dedicated editor **(Fluent Player → Media)**, this tab ensures the information in your media list matches what you see on the screen.

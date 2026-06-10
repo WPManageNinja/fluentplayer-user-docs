@@ -34,7 +34,7 @@ Providing complete information helps the support team reproduce the issue and gi
 
 - **License key (Pro users):** Used to verify your active subscription.
 - **Clear problem statement:** What you expected to happen vs what happened instead.
-- **Steps to reproduce:** Exact step-by-step actions from start to issue.
+- **Steps to reproduce:** Exact step by step actions from start to issue.
 - **Page URL(s):** Link to the page where the player is embedded.
 - **Error message(s):** Full text from browser console, WordPress debug logs, or plugin notices.
 - **Screenshots or screen recordings:** Especially useful for UI, overlay, and playback issues.
@@ -49,7 +49,7 @@ The support team typically replies during standard business hours, Monday throug
 - Test with a default WordPress theme to rule out theme conflicts.
 - Temporarily disable caching/optimization plugins while testing.
 - If possible, share temporary staging access for deeper investigation.
-- Keep all follow-ups in the same ticket so context is not lost.
+- Keep all follow ups in the same ticket so context is not lost.
 
 ## Need product updates?
 

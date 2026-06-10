@@ -45,7 +45,7 @@ The order of media items in the playlist is the order viewers will see them.
 Select a [layout](/guide/playlists/playlist-layouts) for how the playlist appears on the front end:
 
 - **Standard** — Sidebar list with video thumbnails. Best for simple series.
-- **Grid** — Multi-column grid with optional search. Best for larger collections.
+- **Grid** — Multi column grid with optional search. Best for larger collections.
 
 Each layout has its own settings — see [Playlist Layouts](/guide/playlists/playlist-layouts) for details.
 

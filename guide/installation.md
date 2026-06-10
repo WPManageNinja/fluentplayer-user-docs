@@ -55,13 +55,13 @@ Once Fluent Player is active, here is what you will see:
 - Inside, you will find:
   - **Media** — List, filter (for example All, Public, Private, Draft), search, and **Add Media** to create videos.
   - **Playlists** — Create and manage playlists (Pro).
-  - **Analytics** — Built-in dashboards when Pro and analytics are enabled.
+  - **Analytics** — Built in dashboards when Pro and analytics are enabled.
   - **Settings** — Global options: default preset, branding, performance, analytics, integrations, and more.
 - Inside the Fluent Player app, the top bar usually shows the **fluentPlayer** logo, quick switches between **Media** and **Playlists**, a **Settings** (gear) icon that opens the full settings area, and **Docs** (book icon) for help.
 
 ## What to do next
 
-You are ready to add your first video. Head to [Quick Start](/guide/quick-start) for a step-by-step walkthrough.
+You are ready to add your first video. Head to [Quick Start](/guide/quick-start) for a step by step walkthrough.
 
 ## Troubleshooting
 

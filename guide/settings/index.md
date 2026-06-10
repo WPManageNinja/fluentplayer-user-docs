@@ -1,6 +1,6 @@
 # Settings Overview
 
-The **Settings** screen is the global control panel for Fluent Player. All site-wide defaults — branding, storage integrations, analytics, email providers, and more — are configured here.
+The **Settings** screen is the global control panel for Fluent Player. All site wide defaults — branding, storage integrations, analytics, email providers, and more — are configured here.
 
 ## How to open Settings
 
@@ -19,15 +19,15 @@ The **Settings** screen is the global control panel for Fluent Player. All site-
 | [**Branding**](/guide/settings/branding) | Brand color, control bar color, logo image, logo link, logo position, logo width — with a **Live Interactive Preview** |
 | [**Integrations**](/guide/settings/integrations) | Email/lead capture providers: FluentCRM, Webhook, Mailchimp |
 | [**Storage**](/guide/settings/storage) | Video hosting connections: BunnyCDN Stream, BunnyCDN Storage, Mux |
-| [**YouTube**](/guide/settings/youtube) | Privacy-enhanced mode, Subscribe button for YouTube sources |
-| [**Analytics**](/guide/settings/analytics) | Built-in Fluent Player Analytics and Google Analytics (two separate tabs) |
+| [**YouTube**](/guide/settings/youtube) | Privacy enhanced mode, Subscribe button for YouTube sources |
+| [**Analytics**](/guide/settings/analytics) | Built in Fluent Player Analytics and Google Analytics (two separate tabs) |
 | [**Export**](/guide/settings/export) | Download captured email submissions as CSV, JSON, or ODS |
 
 ::: info Pro vs Free
 Some sections (**Storage**, **Analytics → Fluent Player Analytics**, **Export**) require **Fluent Player Pro**. The free plugin shows fewer sections. The settings sidebar only displays sections relevant to your active license.
 :::
 
-## Settings vs per-media overrides
+## Settings vs per media overrides
 
 Settings control **global defaults**. Many options can be overridden at narrower scopes:
 

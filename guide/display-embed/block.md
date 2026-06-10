@@ -5,7 +5,7 @@ description: "Add the Fluent Player Gutenberg block, pick video sources (YouTube
 
 # Embed with Gutenberg Block
 
-The Gutenberg Block is the easiest way to add videos if you prefer a visual, drag-and-drop experience.
+The Gutenberg Block is the easiest way to add videos if you prefer a visual, drag and drop experience.
 If you use the WordPress block editor (Gutenberg), you can add Fluent Player using the **FluentPlayer Media** block. The inserter lists it as **Fluent Player** / **FluentPlayer Media** (registered name: `fluent-player/media`).
 
 ## How to add the block
@@ -30,13 +30,13 @@ You can add a video to any post or page by following these steps:
 
 ## Available Video Sources
 
-When you insert a new block, you can choose from several high-performance sources. Here, you will get offer **one-click source** buttons. In Fluent Player Pro these commonly include:
+When you insert a new block, you can choose from several high performance sources. Here, you will get offer **one click source** buttons. In Fluent Player Pro these commonly include:
 
  * **Media Library:** Pick a video file already uploaded to your WordPress site.
  * **YouTube / Vimeo:** Simply paste a link from these platforms.
  * **Bunny Stream / Storage (Pro):** Connect to your Bunny.net account for fast global delivery.
  * **Mux / Mux Live (Pro):** Use Mux for professional streaming and live broadcasts.
- * **Audio:** Use this for podcasts or voice-only files.
+ * **Audio:** Use this for podcasts or voice only files.
 
 Availability depends on your plan and **Settings → Storage** integrations.
 
@@ -51,7 +51,7 @@ In both cases, configuration uses the same **right sidebar** (**Media** and **Bl
 
 ## Deep Dive: Every Block sidebar panel
 
-When the block is selected, a **Block** tab will appear in the right-hand sidebar. This is where you can fine-tune every part of your player. For each panel (Branding, General settings, Preset, Chapters, overlays, layers, timed content, multi-language, subtitles, timestamp links, Advanced) lives here:
+When the block is selected, a **Block** tab will appear in the right hand sidebar. This is where you can fine tune every part of your player. For each panel (Branding, General settings, Preset, Chapters, overlays, layers, timed content, multi language, subtitles, timestamp links, Advanced) lives here:
 
 **[Fluent Player Block & Media Editor](/guide/block-editor/)**
 

@@ -14,12 +14,12 @@ The primary accent color used throughout the player — the progress bar fill, s
 
 **Example:** If your website's primary color is `#FF6B35` (orange), set this here so the progress bar and interactive controls match your site branding.
 
-Per-preset and per-media overrides exist for cases where a single video needs a different accent color. See [Presets](/guide/customize/presets).
+Per preset and per media overrides exist for cases where a single video needs a different accent color. See [Presets](/guide/customize/presets).
 
 
 ### Control bar color
 
-The background color of the bottom control bar (can be semi-transparent using an rgba value or a hex color).
+The background color of the bottom control bar (can be semi transparent using an rgba value or a hex color).
 
 ### Logo image
 
@@ -47,5 +47,5 @@ The logo is a **global** setting — it appears on every player across your site
 
 Click **Save Settings** after adjusting branding options. The Live Interactive Preview helps confirm the look before you save.
 
-Global branding (logo, control bar color) can only be set site-wide here in Settings → Branding.
+Global branding (logo, control bar color) can only be set site wide here in Settings → Branding.
 

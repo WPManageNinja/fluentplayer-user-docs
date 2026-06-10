@@ -5,7 +5,7 @@ description: "Fluent Player Pro timed content below the player: toggle the regio
 
 # Timed content area (Block sidebar)
 
-The **Timed Content Area** is a Pro-exclusive feature that allows you to display dynamic content directly beneath your video player. This region is perfect for showing lesson notes, download buttons, or supplementary information that syncs with your video.
+The **Timed Content Area** is a Pro exclusive feature that allows you to display dynamic content directly beneath your video player. This region is perfect for showing lesson notes, download buttons, or supplementary information that syncs with your video.
 
 To configure this feature, go to **Fluent Player → Media**, open your media item, and navigate to the **Timed Content Area** panel under the **Block** tab.
 
@@ -33,7 +33,7 @@ You can customize the appearance of the timed content region to match your websi
 The Timed Content Area functions like a "mini" editor inside your media entry:
 
  * **Add Content:** Click the **+ Add Content** button within the Timed Content box to insert new elements.
- * **Inner Blocks:** You can add various Gutenberg-style blocks, such as paragraphs, lists, and buttons.
+ * **Inner Blocks:** You can add various Gutenberg style blocks, such as paragraphs, lists, and buttons.
 
 ![Add Content](/guide/public/block-editor/timed-content/add-content-2.webp)
 

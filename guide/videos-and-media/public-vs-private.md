@@ -11,7 +11,7 @@ Each FluentPlayer media item has a visibility setting that specifically controls
 
 Before we talk about visibility, it helps to understand the two ways a video can appear:
 
-1. **Embedded in a Page:** You use a shortcode like `[fluentplayer id="42"]` or a Gutenberg block. The video appears inside your post or page. Visibility is controlled by the page itself (published, private, password-protected, etc.).
+1. **Embedded in a Page:** You use a shortcode like `[fluentplayer id="42"]` or a Gutenberg block. The video appears inside your post or page. Visibility is controlled by the page itself (published, private, password protected, etc.).
 
 2. **Dedicated Player URL:** Each media has its own URL like `yoursite.com/fluent-player-media/42/`. This opens a minimal page with just the player and a header. The **public/private setting** controls who can access this URL.
 
@@ -32,7 +32,7 @@ When a media item is set to **Private** (the default):
 - Visitors who open the dedicated URL see a **404 (Page Not Found)** error.
 - Only WordPress users who have **edit permission** for that post (like administrators and editors) can view the dedicated URL.
 
-**Example Use Case:** You have an internal training video that should not be publicly accessible via the direct URL. You embed it on a password-protected page instead.
+**Example Use Case:** You have an internal training video that should not be publicly accessible via the direct URL. You embed it on a password protected page instead.
 
 ## How to Change Sisibility
 
