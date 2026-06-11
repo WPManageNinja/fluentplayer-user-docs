@@ -16,7 +16,7 @@ Once you have created your video in **Fluent Player**, you need to display it on
 | **[Dedicated Player URL](/guide/display-embed/dedicated-player-url)** | Sharing a direct link to the video (in emails, social media, etc.). | Beginner |
 | **[Timestamp Links](/guide/display-embed/timestamp-links)** | Creating "chapter" links that jump to a specific moment in the video. | Intermediate |
 
-Most users will use either the **shortcode** or the **block**. Both produce the same result on the front end — the choice comes down to personal preference.
+Most users will use either the **shortcode** or the **block**. Both produce the same result on the front end the choice comes down to personal preference.
 
 ## Quick examples
 
@@ -48,7 +48,7 @@ When you use a shortcode or block, Fluent Player handles the technical work behi
 2. **Fetching Data:** The plugin pulls the specific settings for that ID, such as the video source, player preset, and any overlays.
 3. **Rendering:** The plugin generates the necessary HTML and inserts the player into your page for the viewer. The viewer sees a fully working player.
 
-:::info
-Your video source URL is **not** hardcoded into the shortcode. Because the shortcode uses the **Media ID**, you can change the video file or source in the Fluent Player dashboard, and it will automatically update everywhere the video is embedded.
+::: info
+Shortcodes and blocks reference the **Media ID**, not the video file itself. Update the source, preset, or overlays under **Fluent Player → Media**, and every embed using that ID will reflect the change — no need to edit your posts or pages again.
 :::
 

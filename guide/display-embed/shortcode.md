@@ -34,7 +34,7 @@ Every video you create is assigned a unique ID and a ready-to-use shortcode.
 |-----------|----------|-------------|
 | `id` | Yes | The media (post) ID |
 
-The shortcode is intentionally simple — the video source, preset, controls, and all other settings come from the media item itself. This means you configure everything in one place (**Fluent Player → Media**) and the shortcode just references it.
+The shortcode is intentionally simple the video source, preset, controls, and all other settings come from the media item itself. This means you configure everything in one place (**Fluent Player → Media**) and the shortcode just references it.
 
 ::: tip
 If you ever change the video source, poster, or preset for a media item, every page that uses the shortcode for that ID will update automatically. No need to edit every page.
@@ -88,6 +88,6 @@ Yes, as long as the tab or accordion plugin supports shortcodes (most do).
 
 **What happens if the media ID does not exist?**
 
-The shortcode outputs nothing — the page will look as if the shortcode is not there. No error message is shown to visitors.
+The shortcode outputs nothing the page will look as if the shortcode is not there. No error message is shown to visitors.
 
 

@@ -8,7 +8,7 @@ description: "Add the Fluent Player Gutenberg block, pick video sources (YouTube
 The Gutenberg Block is the easiest way to add videos if you prefer a visual, drag and drop experience.
 If you use the WordPress block editor (Gutenberg), you can add Fluent Player using the **FluentPlayer Media** block. The inserter lists it as **Fluent Player** / **FluentPlayer Media** (registered name: `fluent-player/media`).
 
-## How to add the block
+## How to add the Block
 
 You can add a video to any post or page by following these steps:
 
@@ -57,19 +57,22 @@ When the block is selected, a **Block** tab will appear in the right hand sideba
 
 ## Playlist Block
 
-Alongside the Fluent Player block, Fluent Player also provides a **Fluent Player Playlist** Gutenberg block. This lets you embed an entire playlist — a grouped collection of videos — directly into any post or page.
+Alongside the Fluent Player block, Fluent Player also provides a **Fluent Player Playlist** Gutenberg block. This lets you embed an entire playlist a grouped collection of videos directly into any post or page.
 
 To use it:
 
 1. Click the **(+)** button in the block editor and search for "**Fluent Player Playlist**" or "**playlist**".
 2. Select the block and pick your playlist from the dropdown (or enter the playlist ID).
-3. Publish or update — the playlist renders on the front end with whichever layout (Standard, Grid, etc.) you configured.
+
+![Select playlist](/guide/public/display-embed/block/select-palylist-6.webp)
+
+3. **Publish** or **Update** the playlist renders on the front end with whichever layout (Standard, Grid, etc.) you configured.
 
 ::: info Pro feature
 The Playlist block requires **Fluent Player Pro**.
 :::
 
-For full details on creating playlists, choosing layouts, and embedding options, see the **[Playlists documentation](/guide/playlists/)**.
+For full details on creating playlists, choosing layouts, and embedding options, see the **[Playlists documentation](/guide/playlists/creating-playlists)**.
 
 ## Block vs shortcode
 
