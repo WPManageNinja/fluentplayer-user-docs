@@ -15,7 +15,7 @@ Unlike subtitles, which just add text over the screen, the **Multi-Language** fe
  * **Manual Choice:** Viewers can also use the language selector in the player controls to pick their preferred language at any time.
 
 >[!Note]
->Make sure you have already uploaded your translated videos as separate media items before trying to link them in the **Multi-Language** settings.
+> Make sure you have already uploaded your translated videos as separate media items before trying to link them in the **Multi-Language** settings.
 
 ## How to Enable Multiple Languages
 

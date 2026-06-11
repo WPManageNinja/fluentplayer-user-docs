@@ -32,10 +32,11 @@ If your subtitles are in a different format, use a free online converter to save
 YouTube subtitle import is an admin only feature. Ensure you have permission to use the content before importing.
 :::
 
-![Subtitle](/guide/public/videos-and-media/subtitles/subtitle-1.webp)
-
 4. If prompted, set the **language** for the subtitle track (for example, English, Spanish, French).
 5. Click **Update** or **Save** to apply the changes.
+
+
+![Subtitle](/guide/public/videos-and-media/subtitles/subtitle-1.webp)
 
 ### Advanced Subtitle Features
 
