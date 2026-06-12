@@ -1,6 +1,6 @@
 # Player Behaviors
 
-**Behaviors** control what the player does automatically — whether it autoplays, remembers where the viewer stopped, and what happens when the video ends. These settings are configured in the [preset](/guide/customize/presets) and can be overridden per media.
+**Behaviors** control what the player does automatically: whether it autoplays, remembers where the viewer stopped, and what happens when the video ends. These settings are configured in the [preset](/guide/customize/presets) and can be overridden per media.
 
 ## Available behaviors
 
@@ -26,7 +26,7 @@ When enabled, Fluent Player remembers where the viewer stopped watching. The nex
 
 **Common use case:** Online courses or training videos where viewers may watch in multiple sessions.
 
-In **Settings → General**, the checkbox is labeled **Enable Auto Resume Playback** under **Auto resume playback** — turn it on so Pro can store playback position in the browser. In the **block sidebar** ( **Block** tab → **General Settings** ), the per embed toggle is **Remember Playback Position**. Use the preset’s **Save play position** behavior plus these toggles together so resume works as you expect.
+In **Settings → General**, the checkbox is labeled **Enable Auto Resume Playback** under **Auto resume playback**; turn it on so Pro can store playback position in the browser. In the **block sidebar** ( **Block** tab → **General Settings** ), the per embed toggle is **Remember Playback Position**. Use the preset’s **Save play position** behavior plus these toggles together so resume works as you expect.
 
 ::: tip
 This feature stores the position in the viewer's browser. If they switch to a different browser or device, the position will not carry over.
@@ -36,8 +36,8 @@ This feature stores the position in the viewer's browser. If they switch to a di
 
 This controls what happens when the video finishes playing. Common options include:
 
-- **Reset** — The video goes back to the beginning (shows the poster image).
-- **Loop** — The video **starts again from the beginning** immediately (useful for background or ambient clips). The [Ambient](/guide/customize/presets) preset uses loop style end behavior by default.
+- **Reset:** The video goes back to the beginning (shows the poster image).
+- **Loop:** The video **starts again from the beginning** immediately (useful for background or ambient clips). The [Ambient](/guide/customize/presets) preset uses loop style end behavior by default.
 
 Pick **Reset** for one shot content; use **Loop** only when you intend continuous repetition (for example hero or ambient video).
 
@@ -51,11 +51,11 @@ On mobile devices, videos often go fullscreen when they start playing. When **pl
 
 You can hide entire control areas for a cleaner look:
 
-- **Hide top controls** — Hides any controls at the top of the player.
-- **Hide center controls** — Hides the center play/pause overlay.
-- **Hide bottom controls** — Hides the bottom control bar entirely.
+- **Hide top controls:** Hides any controls at the top of the player.
+- **Hide center controls:** Hides the center play/pause overlay.
+- **Hide bottom controls:** Hides the bottom control bar entirely.
 
-This is more aggressive than disabling individual controls — it removes the entire area.
+This is more aggressive than disabling individual controls: it removes the entire area.
 
 ## Touch gestures
 

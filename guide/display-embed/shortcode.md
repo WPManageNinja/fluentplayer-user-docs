@@ -1,6 +1,6 @@
 ---
 title: "Embed with Shortcode"
-description: "Embed Fluent Player with [fluentplayer id=\"…\"] or [fluentmedia] in posts, widgets, and templates—find the media ID, optional attributes, and common questions."
+description: "Embed Fluent Player with [fluentplayer id=\"…\"] or [fluentmedia] in posts, widgets, and templates. Find the media ID, optional attributes, and common questions."
 ---
 
 # Embed with Shortcode

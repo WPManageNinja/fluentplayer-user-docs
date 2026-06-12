@@ -1,6 +1,6 @@
 # Built in Analytics (Pro)
 
-Fluent Player Pro includes a powerful, **built in analytics dashboard** that provides deep insights into how your audience interacts with your videos. Track everything from total plays and watch time to detailed per video retention and geographic locations—all directly from your WordPress admin.
+Fluent Player Pro includes a powerful, **built in analytics dashboard** that provides deep insights into how your audience interacts with your videos. Track everything from total plays and watch time to detailed per video retention and geographic locations, all directly from your WordPress admin.
 
 ::: info Pro feature
 Built in analytics is a **Fluent Player Pro** feature, so you need to have **Fluent Player Pro** installed and active to use it.

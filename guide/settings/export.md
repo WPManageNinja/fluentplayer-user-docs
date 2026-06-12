@@ -45,6 +45,6 @@ Downloading your lead data is a simple three step process:
 
 - If you are using **FluentCRM**, **Mailchimp**, or **Webhook** as your email provider, captured emails are already synced there in real time. Export is useful as a local backup or for bulk imports elsewhere.
 - Export downloads a snapshot at the time you click. Run it periodically if you want ongoing backups.
-- There is no date range filter on the Export screen — the download includes all stored submissions.
+- There is no date range filter on the Export screen; the download includes all stored submissions.
 
 

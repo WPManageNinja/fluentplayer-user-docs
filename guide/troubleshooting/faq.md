@@ -25,7 +25,7 @@ See the [What is Fluent Player?](/guide/) page for a full Free vs Pro comparison
 
 ### Does Fluent Player host my videos?
 
-No. Fluent Player is a **player** — it plays videos that are hosted elsewhere. You can use:
+No. Fluent Player is a **player**: it plays videos that are hosted elsewhere. You can use:
 - Your WordPress Media Library (hosted on your own server or with a storage service)
 - [Bunny Stream or Bunny Storage](/guide/integrations/bunnycdn-stream) (Pro)
 - [Mux](/guide/integrations/mux) (Pro)
@@ -46,14 +46,14 @@ Fluent Player requires WordPress **6.3 or higher** and PHP **7.4 or higher**. We
 
 ### What is the difference between the shortcode and the block?
 
-The **shortcode** (`[fluentplayer id="123"]`) works anywhere shortcodes are accepted — classic editor, page builders, widgets, and PHP templates. The **Gutenberg block** only works in the WordPress block editor but offers a richer preview and no code configuration. Both display the same player on the front end.
+The **shortcode** (`[fluentplayer id="123"]`) works anywhere shortcodes are accepted: classic editor, page builders, widgets, and PHP templates. The **Gutenberg block** only works in the WordPress block editor but offers a richer preview and no code configuration. Both display the same player on the front end.
 
 See [Shortcode Embed](/guide/display-embed/shortcode) and [Gutenberg Block](/guide/display-embed/block) for details.
 
 
 ### Can I embed the same video on multiple pages?
 
-Yes. Copy the shortcode or block for any media item and paste it anywhere on your site. Each embed is independent — the same video can appear on as many pages as you need.
+Yes. Copy the shortcode or block for any media item and paste it anywhere on your site. Each embed is independent, and the same video can appear on as many pages as you need.
 
 
 ### What is the Dedicated Player URL?
@@ -81,14 +81,14 @@ See [Branding & Appearance](/guide/block-editor/branding) and [Settings → Bran
 
 ### Can I hide specific player controls?
 
-Yes. When [creating a custom preset](/guide/customize/creating-custom-presets), you can toggle individual controls on or off — such as the fullscreen button, playback speed, PIP (picture-in-picture), and more. Control visibility can be set at the preset level or overridden per video.
+Yes. When [creating a custom preset](/guide/customize/creating-custom-presets), you can toggle individual controls on or off, such as the fullscreen button, playback speed, PIP (picture-in-picture), and more. Control visibility can be set at the preset level or overridden per video.
 
 
 ## Email Capture
 
 ### Where do captured emails go?
 
-Captured emails are sent to whichever [email provider](/guide/engagement/email-providers) you have configured — FluentCRM (Free), Mailchimp (Pro), or a custom Webhook (Pro). You must connect at least one provider before the email capture overlay can deliver emails.
+Captured emails are sent to whichever [email provider](/guide/engagement/email-providers) you have configured: FluentCRM (Free), Mailchimp (Pro), or a custom Webhook (Pro). You must connect at least one provider before the email capture overlay can deliver emails.
 
 
 ### Can I export the captured emails?
@@ -105,7 +105,7 @@ Yes. The **"Skip if CRM contact"** option suppresses the email gate for viewers 
 
 ### Does the free version include analytics?
 
-The free version does not include the Built in Analytics dashboard. You can still connect **Google Analytics** on the free plan — Fluent Player fires GA4 events automatically once you add your Measurement ID.
+The free version does not include the Built in Analytics dashboard. You can still connect **Google Analytics** on the free plan. Fluent Player fires GA4 events automatically once you add your Measurement ID.
 
 See [Google Analytics integration](/guide/integrations/google-analytics).
 
@@ -129,6 +129,6 @@ Fluent Player Pro includes three layouts: **Standard** (player + sidebar list), 
 
 ## Next steps
 
-- [Common Issues & Fixes](/guide/troubleshooting/) — Specific symptoms and resolutions.
-- [Player Customization](/guide/customize/) — Presets, behaviors, and how the player looks.
-- [Documentation home](/guide/) — All guides from installation through integrations.
+- [Common Issues & Fixes](/guide/troubleshooting/): Specific symptoms and resolutions.
+- [Player Customization](/guide/customize/): Presets, behaviors, and how the player looks.
+- [Documentation home](/guide/): All guides from installation through integrations.

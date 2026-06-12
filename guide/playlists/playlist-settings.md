@@ -1,6 +1,6 @@
 # Playlist Appearance, Spacing, and Behavior
 
-After you choose a [playlist layout](/guide/playlists/playlist-layouts), Fluent Player Pro lets you fine tune how the playlist looks and behaves on the front end — colors, typography, borders, autoplay, and more. These settings apply to the playlist container and list/grid around the player, not to the inner video player controls (those follow each media item's [preset](/guide/customize/presets)).
+After you choose a [playlist layout](/guide/playlists/playlist-layouts), Fluent Player Pro lets you fine tune how the playlist looks and behaves on the front end, including colors, typography, borders, autoplay, and more. These settings apply to the playlist container and list/grid around the player, not to the inner video player controls (those follow each media item's [preset](/guide/customize/presets)).
  
 ## Where to find these options
  
@@ -38,8 +38,8 @@ Control the playlist frame's colors, borders, and shadow so it matches your site
  
 A dropdown that lets you choose how the playlist accent color is handled:
  
-- **Use Global Setting** — Inherits the brand color from [Branding Settings](/guide/settings/branding).
-- **Custom** — Set a unique accent color for this playlist only.
+- **Use Global Setting:** Inherits the brand color from [Branding Settings](/guide/settings/branding).
+- **Custom:** Set a unique accent color for this playlist only.
  
 ### Border
  

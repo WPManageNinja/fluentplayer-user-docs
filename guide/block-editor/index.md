@@ -16,7 +16,7 @@ You will see the Fluent Player editor in **two** different parts of WordPress, b
 When you go to **Fluent Player → Media → Add Media**, you enter a focused, full screen editor.
 
  * **Single Purpose:** This screen is designed only for configuring your video.
- * **Locked Layout:** You won't see options for paragraphs or columns here—just the Fluent Player block and its settings.
+ * **Locked Layout:** You won't see options for paragraphs or columns here; just the Fluent Player block and its settings.
  * **Organization:** All your player options live in the **Block** and **Media** tabs in the right sidebar.
 
 ### 2. Standard Posts or Pages

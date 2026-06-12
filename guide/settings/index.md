@@ -1,11 +1,11 @@
 # Settings Overview
 
-The **Settings** screen is the global control panel for Fluent Player. All site wide defaults — branding, storage integrations, analytics, email providers, and more — are configured here.
+The **Settings** screen is the global control panel for Fluent Player. All site wide defaults are configured here, including branding, storage integrations, analytics, email providers, and more.
 
 ## How to open Settings
 
 1. In your WordPress admin, go to **Fluent Player** (or **Fluent Player Pro**) in the left sidebar.
-2. Click **Settings** — either the **gear icon** in the plugin header bar, or the **Settings** item under the Fluent Player menu in the WordPress sidebar.
+2. Click **Settings**: either the **gear icon** in the plugin header bar, or the **Settings** item under the Fluent Player menu in the WordPress sidebar.
 3. Use the **inner settings sidebar** (on the left of the settings screen) to switch between sections.
 
 ![Settings](/guide/public/settings/index/settings-1.webp)
@@ -15,8 +15,8 @@ The **Settings** screen is the global control panel for Fluent Player. All site 
 | Section | What it covers |
 |---------|----------------|
 | [**General**](/guide/settings/general) | Default preset, aspect ratio, auto resume playback, custom CSS, custom JS, uninstall cleanup, global email capture defaults |
-| [**Performance**](/guide/settings/performance) | Dynamic JS loading, AJAX progress — tuning how player scripts load for page speed |
-| [**Branding**](/guide/settings/branding) | Brand color, control bar color, logo image, logo link, logo position, logo width — with a **Live Interactive Preview** |
+| [**Performance**](/guide/settings/performance) | Dynamic JS loading and AJAX progress tuning for how player scripts load and page speed |
+| [**Branding**](/guide/settings/branding) | Brand color, control bar color, logo image, logo link, logo position, and logo width, with a **Live Interactive Preview** |
 | [**Integrations**](/guide/settings/integrations) | Email/lead capture providers: FluentCRM, Webhook, Mailchimp |
 | [**Storage**](/guide/settings/storage) | Video hosting connections: BunnyCDN Stream, BunnyCDN Storage, Mux |
 | [**YouTube**](/guide/settings/youtube) | Privacy enhanced mode, Subscribe button for YouTube sources |

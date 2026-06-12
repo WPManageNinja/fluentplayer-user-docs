@@ -9,7 +9,7 @@ next:
 
 # Engagement & Conversion
 
-Fluent Player includes a set of overlay tools designed to turn passive viewers into active leads and customers. These tools go beyond appearance — they directly drive email signups, clicks, and conversions without your viewers leaving the video.
+Fluent Player includes a set of overlay tools designed to turn passive viewers into active leads and customers. These tools go beyond appearance: they directly drive email signups, clicks, and conversions without your viewers leaving the video.
 
 ## What you can do
 

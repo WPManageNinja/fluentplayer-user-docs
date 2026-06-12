@@ -53,10 +53,10 @@ Once Fluent Player is active, here is what you will see:
 
 - **Fluent Player** (or **Fluent Player Pro**) in the admin sidebar.
 - Inside, you will find:
-  - **Media** — List, filter (for example All, Public, Private, Draft), search, and **Add Media** to create videos.
-  - **Playlists** — Create and manage playlists (Pro).
-  - **Analytics** — Built in dashboards when Pro and analytics are enabled.
-  - **Settings** — Global options: default preset, branding, performance, analytics, integrations, and more.
+  - **Media:** List, filter (for example All, Public, Private, Draft), search, and **Add Media** to create videos.
+  - **Playlists:** Create and manage playlists (Pro).
+  - **Analytics:** Built in dashboards when Pro and analytics are enabled.
+  - **Settings:** Global options: default preset, branding, performance, analytics, integrations, and more.
 - Inside the Fluent Player app, the top bar usually shows the **fluentPlayer** logo, quick switches between **Media** and **Playlists**, a **Settings** (gear) icon that opens the full settings area, and **Docs** (book icon) for help.
 
 ## What to do next

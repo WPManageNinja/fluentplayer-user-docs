@@ -8,29 +8,29 @@ Fluent Player connects with powerful external services to expand your video capa
 
 Professional hosting ensures faster loading and a better viewer experience by offloading video delivery from your server.
 
-- **[Mux](/guide/integrations/mux)** — HLS streaming, direct uploads, live streams, optional signed URLs, webhooks, AI captions, and optional Mux Data analytics. In the block editor you can pick **Mux** or **Mux Live** as the source; credentials are configured under **Settings → Storage**.
-- **[BunnyCDN Stream](/guide/integrations/bunnycdn-stream)** — Use Bunny's video streaming platform. Upload and manage videos in Bunny libraries, then select them in Fluent Player.
-- **[BunnyCDN Storage](/guide/integrations/bunnycdn-storage)** — Host video files in Bunny's storage zones. Upload from WordPress and use storage files as video sources.
+- **[Mux](/guide/integrations/mux):** HLS streaming, direct uploads, live streams, optional signed URLs, webhooks, AI captions, and optional Mux Data analytics. In the block editor you can pick **Mux** or **Mux Live** as the source; credentials are configured under **Settings → Storage**.
+- **[BunnyCDN Stream](/guide/integrations/bunnycdn-stream):** Use Bunny's video streaming platform. Upload and manage videos in Bunny libraries, then select them in Fluent Player.
+- **[BunnyCDN Storage](/guide/integrations/bunnycdn-storage):** Host video files in Bunny's storage zones. Upload from WordPress and use storage files as video sources.
 
 ### Email marketing
 
 Capture viewer emails with the [email capture overlay](/guide/engagement/email-capture) and send them to your email marketing tool:
 
-- **FluentCRM** (free) — WordPress native CRM. See [Email Providers](/guide/engagement/email-providers).
-- **Mailchimp** (Pro) — Popular email marketing platform. See [Email Providers](/guide/engagement/email-providers).
-- **Webhook** (Pro) — Send email data to any URL (Zapier, HubSpot, ActiveCampaign, etc.). See [Email Providers](/guide/engagement/email-providers).
+- **FluentCRM** (free): WordPress native CRM. See [Email Providers](/guide/engagement/email-providers).
+- **Mailchimp** (Pro): Popular email marketing platform. See [Email Providers](/guide/engagement/email-providers).
+- **Webhook** (Pro): Send email data to any URL (Zapier, HubSpot, ActiveCampaign, etc.). See [Email Providers](/guide/engagement/email-providers).
 
 ### Analytics
 
 Track how your audience interacts with your content to make data driven decisions.
 
-- **[Built-in Analytics(Pro)](/guide/integrations/analytics)** (Pro) — A dashboard inside WordPress that shows plays, watch time, top videos, viewer behavior, and more.
-- **[Google Analytics (free)](/guide/integrations/google-analytics)** (free) — Send player events (play, progress, complete) to your GA4 property.
+- **[Built-in Analytics(Pro)](/guide/integrations/analytics)** (Pro): A dashboard inside WordPress that shows plays, watch time, top videos, viewer behavior, and more.
+- **[Google Analytics (free)](/guide/integrations/google-analytics)** (free): Send player events (play, progress, complete) to your GA4 property.
 
 ### Community and personalization
 
-- **[FluentCommunity (Pro)](/guide/integrations/fluent-community)** (Pro) — Embed Fluent Player media inside FluentCommunity posts and portal content.
-- **[Smartcodes and personalization](/guide/integrations/smartcodes-personalization)** — Use FluentCRM merge tags (for example the contact first name tag) in supported player text when FluentCRM is installed.
+- **[FluentCommunity (Pro)](/guide/integrations/fluent-community)** (Pro): Embed Fluent Player media inside FluentCommunity posts and portal content.
+- **[Smartcodes and personalization](/guide/integrations/smartcodes-personalization):** Use FluentCRM merge tags (for example the contact first name tag) in supported player text when FluentCRM is installed.
 
 ## Where to configure integrations
 

@@ -5,7 +5,7 @@ description: "Use Fluent Player Pro Smartcodes with FluentCRM to personalize tit
 
 # Smartcodes and Personalization (FluentCRM)
 
-With **Fluent Player Pro**, you can create a truly personalized viewing experience by using **Smartcodes**. When integrated with **FluentCRM**, the player can dynamically replace placeholders with real user data—like a viewer's name or email—directly inside the video player’s text elements.
+With **Fluent Player Pro**, you can create a truly personalized viewing experience by using **Smartcodes**. When integrated with **FluentCRM**, the player can dynamically replace placeholders with real user data (like a viewer’s name or email) directly inside the video player’s text elements.
 
 ### What are Smartcodes?
 

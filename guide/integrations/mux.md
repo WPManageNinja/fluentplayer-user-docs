@@ -1,6 +1,6 @@
 # Mux (Pro)
 
-**Mux** is a professional video platform for hosting, streaming, and analyzing video. Fluent Player Pro includes a full **Mux integration** so you can connect your Mux account, upload or link assets, use **HLS playback**, optional **signed URLs** for protected content, **live streaming**, **AI generated captions**, and **Mux Data** playback analytics — without leaving WordPress.
+**Mux** is a professional video platform for hosting, streaming, and analyzing video. Fluent Player Pro includes a full **Mux integration** so you can connect your Mux account, upload or link assets, use **HLS playback**, optional **signed URLs** for protected content, **live streaming**, **AI generated captions**, and **Mux Data** playback analytics, all without leaving WordPress.
 
 ::: info Pro feature
 Mux is available only with **FluentPlayer Pro**. Install and activate the free Fluent Player plugin first, then activate Pro.
@@ -111,8 +111,8 @@ Once connected, you can use Mux assets anywhere on your site:
 
 You can use **both**:
 
-- **[Built-in Analytics](/guide/integrations/analytics)** — Viewership inside WordPress (plays, retention, top videos, locations, and more).
-- **Mux Data** (optional) — Enter the **Mux Data environment key** in the integration for Mux’s own quality and delivery analytics.
+- **[Built-in Analytics](/guide/integrations/analytics):** Viewership inside WordPress (plays, retention, top videos, locations, and more).
+- **Mux Data** (optional): Enter the **Mux Data environment key** in the integration for Mux’s own quality and delivery analytics.
 
 ## Troubleshooting
 

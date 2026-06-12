@@ -10,7 +10,7 @@ Heavy player scripts can affect how quickly your pages become interactive. Adjus
 
 ### Dynamic load JS
 
-When **Dynamic load JS** is enabled, Fluent Player defers loading the larger player JavaScript bundles until they are needed — for example when a player enters the viewport or when the user interacts with the page. When it is off, those assets may load earlier (eagerly), which can make the player ready sooner but increase initial JavaScript work on the page.
+When **Dynamic load JS** is enabled, Fluent Player defers loading the larger player JavaScript bundles until they are needed, for example when a player enters the viewport or when the user interacts with the page. When it is off, those assets may load earlier (eagerly), which can make the player ready sooner but increase initial JavaScript work on the page.
 
 | When to consider enabling | When you might leave it off |
 |---------------------------|-----------------------------|

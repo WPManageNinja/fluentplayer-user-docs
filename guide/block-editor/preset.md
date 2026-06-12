@@ -71,7 +71,7 @@ Click a preset to select it; the UI usually shows a **checkmark** or border on t
 
 | Action | Purpose |
 |--------|---------|
-| **Duplicate** (icon on a preset) | Creates a **copy** you can customize—useful as a starting point for a custom look. |
+| **Duplicate** (icon on a preset) | Creates a **copy** you can customize, useful as a starting point for a custom look. |
 | **+ Add New** | Creates a **new custom preset** (availability may require **Fluent Player Pro** or a sufficient plan). |
 
 Custom presets appear in the same grid and can be chosen for any media item.

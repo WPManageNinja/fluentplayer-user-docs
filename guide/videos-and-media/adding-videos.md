@@ -5,7 +5,7 @@ description: "Learn how to create, edit, and manage media in Fluent Player, incl
 
 # Adding and Editing Videos
 
-Fluent Player stores each video as a **Media** item in WordPress. From **Fluent Player → Media**, you can add new videos, edit existing ones, and update settings such as the source, poster, preset, and overlays. Everything on this page is done in the admin — no code required.
+Fluent Player stores each video as a **Media** item in WordPress. From **Fluent Player → Media**, you can add new videos, edit existing ones, and update settings such as the source, poster, preset, and overlays. Everything on this page is done in the admin, with no code required.
 
 ## Creating a New Media Item
 
@@ -18,7 +18,7 @@ Adding a video (Media) is the first step toward getting your content in front of
 
 3. Give your media a **title**. This is for your reference in the admin and can also appear in the player header on the [dedicated player URL](/guide/display-embed/dedicated-player-url).
 
-**Example:** If you are adding a product demo video, you might title it "Product Demo — Getting Started."
+**Example:** If you are adding a product demo video, you might title it "Product Demo: Getting Started."
 
 ![Add title](/guide/public/videos-and-media/adding-videos/enter-title-and-url-2.webp)
 
@@ -66,7 +66,7 @@ On the **media list** screen, use the **status filters** to narrow the list:
 | **All** | Every media item regardless of status. |
 | **Public** | Items published and visible according to your [visibility](/guide/videos-and-media/public-vs-private) rules. |
 | **Private** | Items restricted to authorized viewers (when your workflow uses private publishing). |
-| **Draft** | Items not yet published — good for work in progress. |
+| **Draft** | Items not yet published. Good for work in progress. |
 
 Search still works across titles and IDs as supported by your version.
 
@@ -76,5 +76,5 @@ Every media item has a unique **ID** (a number). You need this ID when embedding
 
 Here is how to find it:
 - In the **Media list**, the ID is shown next to each item (for example, `#42`).
-- When **editing** a media, check the URL in your browser — it usually contains something like `post=42`.
+- When **editing** a media, check the URL in your browser. It usually contains something like `post=42`.
 

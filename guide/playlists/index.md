@@ -1,6 +1,6 @@
 # Playlists Overview
 
-A **playlist** lets you group multiple videos together so viewers can watch them in sequence — like a course, a series, or a collection. Viewers can switch between videos without leaving the page.
+A **playlist** lets you group multiple videos together so viewers can watch them in sequence, like a course, a series, or a collection. Viewers can switch between videos without leaving the page.
 
 ::: info Pro feature
 Playlists require **Fluent Player Pro**. The free plugin shows the Playlists menu, but you need Pro to create and embed playlists.
@@ -30,8 +30,8 @@ Each playlist has:
 
 Fluent Player Pro offers two layout styles:
 
-- **Standard** — A video player with a playlist sidebar showing thumbnails. Good for series, tutorials, and courses.
-- **Grid** — Displays videos in a multi column thumbnail grid. Good for large libraries and catalogs.
+- **Standard:** A video player with a playlist sidebar showing thumbnails. Good for series, tutorials, and courses.
+- **Grid:** Displays videos in a multi column thumbnail grid. Good for large libraries and catalogs.
 
 Learn more in [Playlist Layouts](/guide/playlists/playlist-layouts).
 

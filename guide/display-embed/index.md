@@ -1,6 +1,6 @@
 ---
 title: "Display & Embed Overview"
-description: "Compare ways to show Fluent Player on your site: shortcode, Gutenberg block, dedicated player URL, and timestamp links—with quick examples and how embedding works."
+description: "Compare ways to show Fluent Player on your site: shortcode, Gutenberg block, dedicated player URL, and timestamp links, with quick examples and how embedding works."
 ---
 
 # Display & Embed Overview
@@ -49,6 +49,6 @@ When you use a shortcode or block, Fluent Player handles the technical work behi
 3. **Rendering:** The plugin generates the necessary HTML and inserts the player into your page for the viewer. The viewer sees a fully working player.
 
 ::: info
-Shortcodes and blocks reference the **Media ID**, not the video file itself. Update the source, preset, or overlays under **Fluent Player → Media**, and every embed using that ID will reflect the change — no need to edit your posts or pages again.
+Shortcodes and blocks reference the **Media ID**, not the video file itself. Update the source, preset, or overlays under **Fluent Player → Media**, and every embed using that ID will reflect the change. No need to edit your posts or pages again.
 :::
 

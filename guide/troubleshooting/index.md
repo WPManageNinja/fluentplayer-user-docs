@@ -33,7 +33,7 @@ Browsers block autoplay with audio by default. This is a **browser security poli
 
 **How to fix it:**
 - Enable **Muted autoplay**: The player will start automatically if the video is muted. Go to **Fluent Player → Media → Player Behaviors** and enable **Muted** along with **Autoplay**.
-- The **Ambient** [preset](/guide/customize/presets) is specifically tuned for background autoplay — it mutes the video and loops it automatically.
+- The **Ambient** [preset](/guide/customize/presets) is specifically tuned for background autoplay; it mutes the video and loops it automatically.
 
 ::: tip
 Even with muted autoplay, some mobile browsers (especially iOS Safari) may still block it depending on user settings. This is expected behavior across all video players on the web.
@@ -46,7 +46,7 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 
 | Likely cause | Fix |
 |---|---|
-| Shortcode typed incorrectly | Use `[fluentplayer id="123"]` — check that `id` matches the Media ID and there are no typos. |
+| Shortcode typed incorrectly | Use `[fluentplayer id="123"]` and check that `id` matches the Media ID and there are no typos. |
 | Page builder compatibility | Some page builders cache shortcodes aggressively. Clear the page builder cache and refresh. |
 | Media item is in Draft status | The media item must be **Published** for the embed to display publicly. |
 | Plugin conflict | Temporarily deactivate other plugins one at a time to identify a conflict. |
@@ -57,10 +57,10 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 
 **Symptom:** You've enabled email capture on a video, but the overlay never appears.
 
-1. **Check the percentage setting** — If it is set to `0`, the overlay triggers immediately. Make sure it is set to the percentage you intend (e.g., `5` for 5% of the video).
-2. **Check "Skip if CRM contact"** — If this is on and the viewer is already in FluentCRM, the overlay is suppressed for them by design.
-3. **Check the email provider** — The overlay requires an active [email provider](/guide/engagement/email-providers) to be configured. Go to **Settings → Integrations** and confirm your provider status shows **Enabled**.
-4. **Check per media vs preset** — Make sure the overlay is configured on the correct level (per media or preset) for the video you're testing.
+1. **Check the percentage setting:** If it is set to `0`, the overlay triggers immediately. Make sure it is set to the percentage you intend (e.g., `5` for 5% of the video).
+2. **Check "Skip if CRM contact":** If this is on and the viewer is already in FluentCRM, the overlay is suppressed for them by design.
+3. **Check the email provider:** The overlay requires an active [email provider](/guide/engagement/email-providers) to be configured. Go to **Settings → Integrations** and confirm your provider status shows **Enabled**.
+4. **Check per media vs preset:** Make sure the overlay is configured on the correct level (per media or preset) for the video you're testing.
 
 
 ## Analytics not tracking
@@ -77,17 +77,17 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 
 ## Player looks unstyled or broken
 
-**Symptom:** The player appears without styles — controls are missing or the layout is visually broken.
+**Symptom:** The player appears without styles; controls are missing or the layout is visually broken.
 
-1. **Check for JavaScript errors** — Open your browser's developer console (F12) and look for JavaScript errors. A conflicting plugin may be breaking Fluent Player's scripts.
-2. **Check for CSS conflicts** — Your theme may be globally overriding styles. Try the **Custom CSS** field in **Fluent Player → Settings → General** to target `.fluent-player` specifically.
-3. **Try a different preset** — The active [preset](/guide/customize/presets) might have unusual settings. Switch to the **Default** preset to see if the issue is preset specific.
+1. **Check for JavaScript errors:** Open your browser's developer console (F12) and look for JavaScript errors. A conflicting plugin may be breaking Fluent Player's scripts.
+2. **Check for CSS conflicts:** Your theme may be globally overriding styles. Try the **Custom CSS** field in **Fluent Player → Settings → General** to target `.fluent-player` specifically.
+3. **Try a different preset:** The active [preset](/guide/customize/presets) might have unusual settings. Switch to the **Default** preset to see if the issue is preset specific.
 
 
 ## Mux or Bunny Stream is not connecting
 
 **Symptom:** You've entered your API credentials but the integration status shows an error or "Not Connected."
 
-- **Mux:** Double check your Access Token ID and Secret Key from the Mux dashboard. Tokens are only visible once when created — if you've lost the secret, create a new token. See [Mux integration](/guide/integrations/mux).
+- **Mux:** Double check your Access Token ID and Secret Key from the Mux dashboard. Tokens are only visible once when created. If you have lost the secret, create a new token. See [Mux integration](/guide/integrations/mux).
 - **Bunny Stream:** Confirm your API key and Library ID are correct. The Library ID is found in the Bunny Stream dashboard under your video library settings. See [Bunny Stream integration](/guide/integrations/bunnycdn-stream).
 

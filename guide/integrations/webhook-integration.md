@@ -118,7 +118,7 @@ Webhook integration gives you flexible lead routing without depending on a fixed
 ## Frequently Asked Questions
 
 **Can I send data to more than one webhook per video?**
-Yes. You can create multiple webhook endpoints in the global settings. Each video preset targets one specific webhook. If you need to fan out to several services from a single submission, use a relay endpoint — for example, a multi step Zapier Zap — that distributes the data on the receiving side.
+Yes. You can create multiple webhook endpoints in the global settings. Each video preset targets one specific webhook. If you need to fan out to several services from a single submission, use a relay endpoint (for example, a multi-step Zapier Zap) that distributes the data on the receiving side.
 
 **Is the webhook sent synchronously?**
 Yes, by default. The request is sent during the email collection process with a 15-second timeout. If the request times out or fails, the error is logged and any remaining webhooks are still attempted. If your endpoint is slow, consider offloading processing to an async queue on the receiving end.

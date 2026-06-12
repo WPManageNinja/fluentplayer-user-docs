@@ -9,11 +9,11 @@ next:
 
 # CTA (Call to Action) Overlay
 
-The **CTA overlay** is a popup that appears over the video at a specific time to prompt the viewer to take an action — like visiting a link, signing up, or watching another video. The video pauses while the overlay is on screen, so the viewer's full attention is on your message.
+The **CTA overlay** is a popup that appears over the video at a specific time to prompt the viewer to take an action, such as visiting a link, signing up, or watching another video. The video pauses while the overlay is on screen, so the viewer's full attention is on your message.
 
 ## How it works
 
-At a time you choose — for example, 2 minutes into the video — playback pauses and a full screen overlay appears with whatever content you have designed in the built in editor. The viewer can interact with the overlay (click a button, read your message) or skip past it if you allow skipping. Playback resumes once the overlay is dismissed.
+At a time you choose (for example, 2 minutes into the video), playback pauses and a full screen overlay appears with whatever content you have designed in the built in editor. The viewer can interact with the overlay (click a button, read your message) or skip past it if you allow skipping. Playback resumes once the overlay is dismissed.
 
 ## Setting up a CTA overlay
 
@@ -40,19 +40,19 @@ Set the exact moment the CTA overlay appears using **Hours**, **Minutes**, and *
 
 ### Content editor
 
-The CTA overlay uses a **rich text editor** — the same kind of editor you use when writing WordPress posts. You design the overlay content directly, so what you see in the editor is what the viewer sees on screen.
+The CTA overlay uses a **rich text editor**, the same one you use when writing WordPress posts. You design the overlay content directly, so what you see in the editor is what the viewer sees on screen.
 
 The editor has two modes:
 
-- **Visual** — A toolbar with formatting options. Design your overlay by typing and styling text directly.
-- **Code** — Switch to raw HTML if you need precise control over the markup.
+- **Visual:** A toolbar with formatting options. Design your overlay by typing and styling text directly.
+- **Code:** Switch to raw HTML if you need precise control over the markup.
 
 The Visual toolbar includes:
 
 | Tool | What it does |
 |------|-------------|
 | **Heading** | Change text to a heading level (Heading 2, Heading 3, etc.) |
-| **Button** | Insert a clickable button — set the label, link URL, and whether it opens in a new tab |
+| **Button** | Insert a clickable button. Set the label, link URL, and whether it opens in a new tab. |
 | **Bold / Italic / Underline / Strikethrough** | Standard text formatting |
 | **Text color** | Change the color of selected text |
 | **Link** | Turn selected text into a hyperlink |
@@ -61,19 +61,19 @@ The Visual toolbar includes:
 | **Alignment** | Align content left, center, or right |
 | **Add media** | Insert an image or other WordPress media into the overlay |
 
-There are no separate fields for headline, description, or button — you build the entire overlay in one editor, giving you full control over layout and styling.
+There are no separate fields for headline, description, or button; you build the entire overlay in one editor, giving you full control over layout and styling.
 
 ![Call to Action](/guide/public/engagement/cta-and-action-bar/cta-3.webp)
 
 ### Completion Type
 
-This dropdown controls what counts as "completing" the overlay — in other words, what the viewer needs to do before the layer is dismissed and playback resumes.
+This dropdown controls what counts as "completing" the overlay. In other words, it determines what the viewer needs to do before the layer is dismissed and playback resumes.
 
 | Option | What it means |
 |--------|--------------|
 | **Link Click** | The layer completes when the viewer clicks a link or button inside the overlay. This is the default and works well for most CTAs. |
-| **Auto Dismiss** | The layer disappears on its own after a set duration — no viewer interaction required. Useful for brief announcements or reminders that should not block playback for long. |
-| **Skip Only** | The layer stays on screen until the viewer manually skips it. There is no automatic dismissal and no link click requirement — the viewer simply clicks **Skip** when they are ready to continue. |
+| **Auto Dismiss** | The layer disappears on its own after a set duration, with no viewer interaction required. Useful for brief announcements or reminders that should not block playback for long. |
+| **Skip Only** | The layer stays on screen until the viewer manually skips it. There is no automatic dismissal and no link click requirement; the viewer simply clicks **Skip** when they are ready to continue. |
 
 ### Allow Skip
 
@@ -81,7 +81,7 @@ When this toggle is **on**, a **Skip** button appears on the player so the viewe
 
 ### Layer Background
 
-Pick a **Background Color** for the overlay area behind your content. Use this to ensure your text is readable against the video frame underneath — for example, a semi transparent dark background makes white text easy to read.
+Pick a **Background Color** for the overlay area behind your content. Use this to ensure your text is readable against the video frame underneath. For example, a semi-transparent dark background makes white text easy to read.
 
 ::: tip
 Keep your CTA content short and focused. A strong heading, one line of supporting text, and a single button is the most effective pattern. Too much content in an overlay can overwhelm the viewer.
@@ -114,10 +114,10 @@ After you add a CTA layer, it appears in the **Interactive Layers** panel in the
 To make changes to an existing layer:
 
 1. Click **Edit** on the layer in the Interactive Layers panel.
-2. The **Edit Layer** dialog opens — it looks the same as the creation dialog, with all your previously configured settings (Start Time, content, Completion Type, Allow Skip, and Layer Background).
+2. The **Edit Layer** dialog opens. It looks the same as the creation dialog, with all your previously configured settings (Start Time, content, Completion Type, Allow Skip, and Layer Background).
 3. Make your changes.
 4. Click **Update Layer** to save.
 
-You can add multiple CTA layers to the same media item — for example, one at the 2-minute mark and another near the end.
+You can add multiple CTA layers to the same media item. For example, you can place one at the 2-minute mark and another near the end.
 
 ![Call to Action](/guide/public/engagement/cta-and-action-bar/cta-4.webp)

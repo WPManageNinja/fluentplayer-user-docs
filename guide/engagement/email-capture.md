@@ -9,11 +9,11 @@ next:
 
 # Email Capture Overlay
 
-The **email capture overlay** pauses the video and shows a signup form to the viewer. They enter their email address — and optionally subscribe to your list — before they can continue watching. It is one of Fluent Player's most effective tools for growing your email list without any third party popup plugins.
+The **email capture overlay** pauses the video and shows a signup form to the viewer. They enter their email address, and optionally subscribe to your list, before they can continue watching. It is one of Fluent Player's most effective tools for growing your email list without any third party popup plugins.
 
 ## How it works
 
-At a configured point during playback — for example, at the 1-minute mark — the player pauses and displays an overlay with a headline, an email input field, and a submit button. The viewer must enter their email to continue watching, or dismiss the overlay if skipping is allowed. Submitted emails are sent to whichever provider you have attached to the layer (for example, FluentCRM).
+At a configured point during playback (for example, at the 1-minute mark), the player pauses and displays an overlay with a headline, an email input field, and a submit button. The viewer must enter their email to continue watching, or dismiss the overlay if skipping is allowed. Submitted emails are sent to whichever provider you have attached to the layer (for example, FluentCRM).
 
 ## Setting up email capture
 
@@ -35,7 +35,7 @@ Your email gate is now live on every page where that media is embedded.
 
 | Option | Description | Example |
 |--------|-------------|---------|
-| **Start Time** | When to show the overlay — set in **Hours**, **Minutes**, and **Seconds** | `0h 1m 0s` |
+| **Start Time** | When to show the overlay, set in **Hours**, **Minutes**, and **Seconds** | `0h 1m 0s` |
 | **Allow Skipping** | Let the viewer close the overlay without entering an email | On or Off |
 | **Skip For CRM Contacts** | When enabled, logged in users who already exist as FluentCRM contacts will not see the overlay | On or Off |
 | **Email Placeholder** | Placeholder text inside the email field | "Email Address" |
@@ -50,12 +50,12 @@ Your email gate is now live on every page where that media is embedded.
 ![Email Capture](/guide/public/engagement/email-capture/email-capture-3.webp)
 
 ::: tip
-Setting **Allow Skipping** to **Off** creates a hard gate — viewers must submit their email to watch the rest of the video. Setting it to **On** makes the overlay a soft opt in. Hard gates collect more emails; soft gates create a better viewer experience. Choose based on your goal.
+Setting **Allow Skipping** to **Off** creates a hard gate: viewers must submit their email to watch the rest of the video. Setting it to **On** makes the overlay a soft opt in. Hard gates collect more emails; soft gates create a better viewer experience. Choose based on your goal.
 :::
 
 ## Adding an email provider
 
-Email providers are configured directly inside the Email Capture layer — not in a separate settings page.
+Email providers are configured directly inside the Email Capture layer, not in a separate settings page.
 
 1. In the Email Capture configuration panel, find the **Email Providers** section.
 2. Click **+ Add Provider**.
@@ -72,9 +72,9 @@ Email providers are configured directly inside the Email Capture layer — not i
 
 You can add multiple providers to a single Email Capture layer if needed. Fluent Player supports:
 
-- **FluentCRM** — Adds contacts directly to your WordPress native CRM with list and tag assignments.
-- **Mailchimp** — Sends subscribers to a Mailchimp audience.
-- **Webhook** — Posts email data to any URL (for Zapier, Make, HubSpot, and similar tools).
+- **FluentCRM:** Adds contacts directly to your WordPress native CRM with list and tag assignments.
+- **Mailchimp:** Sends subscribers to a Mailchimp audience.
+- **Webhook:** Posts email data to any URL (for Zapier, Make, HubSpot, and similar tools).
 
 ![Email Capture](/guide/public/engagement/email-capture/email-capture-4.webp)
 
@@ -88,7 +88,7 @@ You recorded a 45-minute webinar and want to collect emails from anyone who watc
 - **Allow Skipping:** Off (viewers must enter their email to continue)
 - **Headline:** "Enter your email to watch the full replay"
 - **Button Text:** "Watch Now"
-- **Provider:** FluentCRM — adds them to your "Webinar Leads" list
+- **Provider:** FluentCRM, which adds them to your "Webinar Leads" list
 
 ## Example: soft opt in on a tutorial
 

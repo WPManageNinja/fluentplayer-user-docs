@@ -18,7 +18,7 @@ Available built in presets:
 | **Standard** | Classic bar layout |
 | **Floating** | Control bar floats over the video |
 | **Minimal** | Bare bones controls |
-| **Ambient** | Background loops — muted autoplay, hidden controls, tuned for ambient video use |
+| **Ambient** | Background loops: muted autoplay, hidden controls, tuned for ambient video use |
 
 ![General Settings](/guide/public/settings/general/general-settings-1.webp)
 
@@ -34,7 +34,7 @@ A dropdown that sets the aspect ratio for all players (for example **Original**,
 
 ### Auto resume playback
 
-**Checkbox:** Enable Auto Resume Playback — *"Let your users resume watching from where they left off."*
+**Checkbox:** Enable Auto Resume Playback: *"Let your users resume watching from where they left off."*
 
 When this global toggle is on, Fluent Player Pro stores playback position in the viewer's browser. The next time they open the page with that video, it starts from where they stopped.
 
@@ -65,7 +65,7 @@ Use this for minor tweaks not covered by presets (for example, adjusting progres
 
 ### Custom JavaScript
 
-A **Custom JS** field (code editor) lets you add site wide JavaScript that runs in the context of Fluent Player on your pages. Use it only when you need small scripted behaviors that the UI does not expose — and **test thoroughly** on staging first.
+A **Custom JS** field (code editor) lets you add site wide JavaScript that runs in the context of Fluent Player on your pages. Use it only when you need small scripted behaviors that the UI does not expose. **Test thoroughly** on staging first.
 
 ![General Settings](/guide/public/settings/general/general-settings-3.webp)
 

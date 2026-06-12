@@ -1,6 +1,6 @@
 ---
 title: "Embed with Block"
-description: "Add the Fluent Player Gutenberg block, pick video sources (YouTube, Mux, Bunny, etc.), and use the dedicated media editor vs posts—links to the full block sidebar docs."
+description: "Add the Fluent Player Gutenberg block, pick video sources (YouTube, Mux, Bunny, etc.), and use the dedicated media editor vs posts, with links to the full block sidebar docs."
 ---
 
 # Embed with Gutenberg Block
@@ -44,7 +44,7 @@ Availability depends on your plan and **Settings → Storage** integrations.
 
 | Context | What you see |
 |---------|----------------|
-| **Fluent Player → Media** (Add Media / edit media) | A **dedicated editing screen** where **only the Fluent Player block** is used to configure the video—not a full post with paragraphs and other blocks. The block is usually **locked**. |
+| **Fluent Player → Media** (Add Media / edit media) | A **dedicated editing screen** where **only the Fluent Player block** is used to configure the video, not a full post with paragraphs and other blocks. The block is usually **locked**. |
 | **Post or page** | Standard block editor; Fluent Player is **one block** among others. |
 
 In both cases, configuration uses the same **right sidebar** (**Media** and **Block** tabs).

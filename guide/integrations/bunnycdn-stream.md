@@ -54,7 +54,7 @@ Fluent Player Pro allows you to handle common video management tasks without lea
  * **Update Metadata:** Edit video titles and descriptions from the WordPress UI.
  * **Delete Assets:** Remove videos from your Bunny account when they are no longer needed.
 
-**Related:** [Video Sources](/guide/videos-and-media/video-sources) — Choosing Bunny as a source.
+**Related:** [Video Sources](/guide/videos-and-media/video-sources): Choosing Bunny as a source.
 
 ## Bunny Stream vs Bunny Storage
 

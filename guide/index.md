@@ -1,6 +1,6 @@
 # What is Fluent Player?
 
-**Fluent Player** is a WordPress plugin that lets you add beautiful, customizable video players to your website. Whether you want to embed a single video on a blog post or build a full video course with playlists, Fluent Player gives you everything you need — right from your WordPress dashboard.
+**Fluent Player** is a WordPress plugin that lets you add beautiful, customizable video players to your website. Whether you want to embed a single video on a blog post or build a full video course with playlists, Fluent Player gives you everything you need, right from your WordPress dashboard.
 
 ## Who is it for?
 
@@ -40,12 +40,12 @@ The **free version** handles everything you need for embedding and customizing s
 
 ## Key features at a glance
 
-- **Video players** — Embed and customize players that support WordPress uploads, external URLs, YouTube, Mux, and BunnyCDN (Pro).
-- **Playlists (Pro)** — Group videos into playlists with three layout options: Standard, Learning, and Grid.
-- **Presets** — Save and reuse player configurations so every video looks consistent.
-- **Overlays** — Add email capture forms, calls to action, and action bars that appear while the video plays.
-- **Shortcodes** — Embed videos with `[fluentplayer id="123"]` (or `[fluentmedia]`) or playlists with `[fluentplaylist id="456"]` (Pro).
-- **Analytics** — Track plays, watch time, and viewer behavior with built in analytics (Pro) or Google Analytics.
+- **Video players:** Embed and customize players that support WordPress uploads, external URLs, YouTube, Mux, and BunnyCDN (Pro).
+- **Playlists (Pro):** Group videos into playlists with three layout options: Standard, Learning, and Grid.
+- **Presets:** Save and reuse player configurations so every video looks consistent.
+- **Overlays:** Add email capture forms, calls to action, and action bars that appear while the video plays.
+- **Shortcodes:** Embed videos with `[fluentplayer id="123"]` (or `[fluentmedia]`) or playlists with `[fluentplaylist id="456"]` (Pro).
+- **Analytics:** Track plays, watch time, and viewer behavior with built in analytics (Pro) or Google Analytics.
 
 ## How it works (the big picture)
 
