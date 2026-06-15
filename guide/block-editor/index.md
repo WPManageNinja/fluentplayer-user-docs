@@ -1,9 +1,9 @@
 ---
-title: "Fluent Player block & media editor"
+title: "Fluent Player Block & Media Editor"
 description: "Use the FluentPlayer Media block and sidebar: dedicated media editor vs posts, Media vs Block tabs, and every panel from branding and presets to layers, timed content, and subtitles."
 ---
 
-# Fluent Player block & media editor
+# Fluent Player Block & Media Editor
 
 The **FluentPlayer Media** block (`fluent-player/media`) is the core of your video experience. Whether you are creating a standalone video or adding one to a blog post, you will use the same sidebar panels to control how your player looks and acts.
 
@@ -50,7 +50,7 @@ The settings in the editor are organized into collapsible sections to help you c
  * **Subtitles**: Upload and manage caption tracks to make your content more accessible to everyone.
  * **Timestamp Links**: Quickly copy shortcode snippets that allow you to create "Jump to" links within your page text.
 
-## Overrides vs global Settings
+## Overrides vs Global Settings
 
 Many options **override** [global Settings](/guide/settings/) or [presets](/guide/customize/presets) for this media or this embed only. Typical priority:
 

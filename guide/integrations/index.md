@@ -2,9 +2,9 @@
 
 Fluent Player connects with powerful external services to expand your video capabilities. These integrations cover **video hosting**, **email marketing**, and **analytics**, helping you deliver high quality content while growing your audience.
 
-## Available integrations
+## Available Integrations
 
-### Video hosting (Pro)
+### Video Hosting (Pro)
 
 Professional hosting ensures faster loading and a better viewer experience by offloading video delivery from your server.
 
@@ -12,7 +12,7 @@ Professional hosting ensures faster loading and a better viewer experience by of
 - **[BunnyCDN Stream](/guide/integrations/bunnycdn-stream):** Use Bunny's video streaming platform. Upload and manage videos in Bunny libraries, then select them in Fluent Player.
 - **[BunnyCDN Storage](/guide/integrations/bunnycdn-storage):** Host video files in Bunny's storage zones. Upload from WordPress and use storage files as video sources.
 
-### Email marketing
+### Email Marketing
 
 Capture viewer emails with the [email capture overlay](/guide/engagement/email-capture) and send them to your email marketing tool:
 
@@ -27,12 +27,12 @@ Track how your audience interacts with your content to make data driven decision
 - **[Built-in Analytics(Pro)](/guide/integrations/analytics)** (Pro): A dashboard inside WordPress that shows plays, watch time, top videos, viewer behavior, and more.
 - **[Google Analytics (free)](/guide/integrations/google-analytics)** (free): Send player events (play, progress, complete) to your GA4 property.
 
-### Community and personalization
+### Community and Personalization
 
 - **[FluentCommunity (Pro)](/guide/integrations/fluent-community)** (Pro): Embed Fluent Player media inside FluentCommunity posts and portal content.
 - **[Smartcodes and personalization](/guide/integrations/smartcodes-personalization):** Use FluentCRM merge tags (for example the contact first name tag) in supported player text when FluentCRM is installed.
 
-## Where to configure integrations
+## Where to Configure Integrations
 
 Most integration settings are found in **Fluent Player → Settings**. Some integrations have their own sections or tabs. Here is a quick map:
 
@@ -49,7 +49,7 @@ Most integration settings are found in **Fluent Player → Settings**. Some inte
 >[!Note]
 >Video storage providers (Mux/Bunny) and Email providers (Mailchimp/FluentCRM) are located in separate tabs under the Settings menu. Ensure you are in the correct section before configuring.
 
-## Topics in this section
+## Topics in This Section
 
 | Topic | What you will learn |
 |-------|-------------------|
@@ -61,6 +61,6 @@ Most integration settings are found in **Fluent Player → Settings**. Some inte
 | [FluentCommunity (Pro)](/guide/integrations/fluent-community) | Player inside FluentCommunity |
 | [Smartcodes (FluentCRM)](/guide/integrations/smartcodes-personalization) | Personalized text with merge tags |
 
-## Next steps
+## Next Steps
 
 Pick the integration you need and follow the setup guide. If you are not sure where to start, [Google Analytics](/guide/integrations/google-analytics) is a quick win for basic tracking. For hosted streaming, choose [Mux](/guide/integrations/mux) or [BunnyCDN Stream](/guide/integrations/bunnycdn-stream) depending on your provider.

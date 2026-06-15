@@ -7,7 +7,7 @@
 BunnyCDN Storage integration requires **Fluent Player Pro**.
 :::
 
-## When to use Bunny Storage
+## When to Use Bunny Storage
 
 - You already have **pre encoded video files** (for example, MP4 files in the right quality).
 - You want **simple, cheap file hosting** with CDN delivery.
@@ -88,7 +88,7 @@ Finally, click **Save Settings** to connect FluentPlayer with your BunnyCDN stor
 
 ![Adding Video](/guide/public/integrations/bunnycdn-storage/bunnycdn-storage-9.webp)
 
-#### Managing files from WordPress
+#### Managing Files from WordPress
 
 You may be able to:
 

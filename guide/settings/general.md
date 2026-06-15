@@ -4,7 +4,7 @@ The General section controls site wide defaults that apply to every player unles
 
 ## Options
 
-### Default preset
+### Default Preset
 
 A visual grid displays all available presets. The selected preset has a checkmark and a highlighted border. This becomes the default appearance for every new media item on your site.
 
@@ -27,12 +27,12 @@ Changing the default preset does **not** affect media items that already have an
 :::
 
 
-### Default aspect ratio
+### Default Aspect Ratio
 
 A dropdown that sets the aspect ratio for all players (for example **Original**, **16:9**, **4:3**). Individual media items or blocks can override this.
 
 
-### Auto resume playback
+### Auto Resume Playback
 
 **Checkbox:** Enable Auto Resume Playback: *"Let your users resume watching from where they left off."*
 
@@ -73,6 +73,6 @@ A **Custom JS** field (code editor) lets you add site wide JavaScript that runs 
 Custom JavaScript can affect performance and security. Avoid pasting untrusted code. Prefer [presets](/guide/customize/presets), [behaviors](/guide/customize/behaviors), and built in integrations before relying on global JS.
 :::
 
-## Saving changes
+## Saving Changes
 
 Click **Save Settings** (top right of the General panel) after making changes. Settings take effect immediately for new page loads.

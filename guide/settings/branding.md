@@ -8,7 +8,7 @@ When the Branding settings panel is open, a fully functional mini player is disp
 
 ## Options
 
-### Brand color
+### Brand Color
 
 The primary accent color used throughout the player: the progress bar fill, some button highlights, and other interactive elements.
 
@@ -17,11 +17,11 @@ The primary accent color used throughout the player: the progress bar fill, some
 Per preset and per media overrides exist for cases where a single video needs a different accent color. See [Presets](/guide/customize/presets).
 
 
-### Control bar color
+### Control Bar Color
 
 The background color of the bottom control bar (can be semi transparent using an rgba value or a hex color).
 
-### Logo image
+### Logo Image
 
 Upload a logo (PNG or JPEG) that appears as a watermark overlay on the player. The UI notes the recommended minimum size. Use a small, compact logo so it does not distract from the video.
 
@@ -29,13 +29,13 @@ Upload a logo (PNG or JPEG) that appears as a watermark overlay on the player. T
 Use a PNG with a transparent background so the logo blends naturally on top of video content.
 :::
 
-### Logo link (optional)
+### Logo Link (Optional)
 
 A URL that opens when a viewer clicks the logo. Leave blank if you do not want the logo to be clickable.
 
 **Example:** `https://yoursite.com`
 
-### Logo position
+### Logo Position
 
 Choose which corner the logo appears in. In the database these map to values such as **top left**, **top right**, **bottom left**, and **bottom right** (internally prefixed for the layout engine). Pick the corner that does not cover your most important video content.
 
@@ -43,9 +43,8 @@ The logo is a **global** setting; it appears on every player across your site.
 
 ![Branding](/guide/public/settings/branding/branding-1.webp)
 
-## Saving changes
+## Saving Changes
 
 Click **Save Settings** after adjusting branding options. The Live Interactive Preview helps confirm the look before you save.
 
 Global branding (logo, control bar color) can only be set site wide here in Settings → Branding.
-

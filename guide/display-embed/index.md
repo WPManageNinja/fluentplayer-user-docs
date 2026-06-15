@@ -7,7 +7,7 @@ description: "Compare ways to show Fluent Player on your site: shortcode, Gutenb
 
 Once you have created your video in **Fluent Player**, you need to display it on your website. There are several simple ways to embed your player, depending on your workflow and where you want the video to appear.
 
-## Which method should I use?
+## Which Method Should I Use?
 
 | Method | Best for | Difficulty |
 |--------|----------|-----------|
@@ -18,7 +18,7 @@ Once you have created your video in **Fluent Player**, you need to display it on
 
 Most users will use either the **shortcode** or the **block**. Both produce the same result on the front end the choice comes down to personal preference.
 
-## Quick examples
+## Quick Examples
 
 **Shortcode (works everywhere):**
 

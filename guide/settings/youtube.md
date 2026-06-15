@@ -20,8 +20,8 @@ When enabled, a YouTube Subscribe button appears below (or near) the YouTube vid
 
 ![YouTube Settings](/guide/public/settings/youtube/youtube-settings-1.webp)
 
-Behind the scenes, Fluent Player can call YouTube’s channel metadata so the subscribe control shows the correct channel name and branding when the button is enabled.
+Behind the scenes, Fluent Player can call YouTube's channel metadata so the subscribe control shows the correct channel name and branding when the button is enabled.
 
-## Saving changes
+## Saving Changes
 
 Click **Save Settings** after adjusting YouTube options.

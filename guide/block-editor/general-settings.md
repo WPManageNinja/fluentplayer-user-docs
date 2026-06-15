@@ -1,9 +1,9 @@
 ---
-title: "General settings (Block sidebar)"
+title: "General Settings (Block sidebar)"
 description: "Block sidebar General Settings: title, poster, aspect ratio, playback and loading options, and how they override presets and global behaviors."
 ---
 
-# General settings (Block sidebar)
+# General Settings (Block sidebar)
 
 The **General Settings** panel allows you to control the fundamental behavior and display options for your video. You can customize everything from how the video loads to its automatic playback rules.
 

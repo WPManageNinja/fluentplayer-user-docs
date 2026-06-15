@@ -127,7 +127,7 @@ Go to **Fluent Player → Playlists → Add Playlist**, give it a name, and add 
 Fluent Player Pro includes three layouts: **Standard** (player + sidebar list), **Learning** (course style with progress tracking), and **Grid** (thumbnail grid overview). See [Playlist Layouts](/guide/playlists/playlist-layouts) for a comparison.
 
 
-## Next steps
+## Next Steps
 
 - [Common Issues & Fixes](/guide/troubleshooting/): Specific symptoms and resolutions.
 - [Player Customization](/guide/customize/): Presets, behaviors, and how the player looks.

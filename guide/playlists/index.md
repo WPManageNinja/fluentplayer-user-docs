@@ -6,7 +6,7 @@ A **playlist** lets you group multiple videos together so viewers can watch them
 Playlists require **Fluent Player Pro**. The free plugin shows the Playlists menu, but you need Pro to create and embed playlists.
 :::
 
-## What is a playlist?
+## What Is a Playlist?
 
 A playlist is a collection of Fluent Player media items displayed together in a single player interface. You create media items first (under Fluent Player → Media), then group them into a playlist.
 
@@ -17,7 +17,7 @@ Each playlist has:
 - A **layout** that controls how the playlist is displayed.
 - An **ID** that you use to embed it.
 
-## Why use playlists?
+## Why Use Playlists?
 
 | Use case | How playlists help |
 |----------|-------------------|
@@ -26,7 +26,7 @@ Each playlist has:
 | **Product demos** | Group all product videos in one place |
 | **Video libraries** | Display a large catalog in a browsable grid (Grid layout) |
 
-## Playlist layouts
+## Playlist Layouts
 
 Fluent Player Pro offers two layout styles:
 
@@ -35,7 +35,7 @@ Fluent Player Pro offers two layout styles:
 
 Learn more in [Playlist Layouts](/guide/playlists/playlist-layouts).
 
-## Where to manage playlists
+## Where to Manage Playlists
 
 Go to **Fluent Player → Playlists** in your WordPress admin. Here you can:
 

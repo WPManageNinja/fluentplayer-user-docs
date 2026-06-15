@@ -6,7 +6,7 @@
 Mux is available only with **FluentPlayer Pro**. Install and activate the free Fluent Player plugin first, then activate Pro.
 :::
 
-## Why use Mux?
+## Why Use Mux?
 
  * **Adaptive Streaming:** Deliver content via HLS with automatic quality switching based on the viewer’s network speed.
  * **Managed Encoding:** Mux handles the heavy lifting of video processing. Webhooks keep your WordPress site updated on asset status.

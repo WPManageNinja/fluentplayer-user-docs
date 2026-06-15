@@ -30,7 +30,7 @@ Follow these steps to connect your player to GA4:
 **Best for:** Sites without GA yet, or when you want a dedicated property for video events.
 
 
-## Viewing the data in Google Analytics
+## Viewing the Data in Google Analytics
 
 After setup, you can find video events in Google Analytics:
 
@@ -43,7 +43,7 @@ After setup, you can find video events in Google Analytics:
 It may take a few hours for events to appear in GA4 after you first set it up. Real time reports in GA4 can show events sooner.
 :::
 
-## Google Analytics vs built in analytics
+## Google Analytics vs Built-In Analytics
 
 | | Google Analytics | Built in Analytics (Pro) |
 |---|-----------------|-------------------------|

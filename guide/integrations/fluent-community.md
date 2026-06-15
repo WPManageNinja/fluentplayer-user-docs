@@ -15,7 +15,7 @@ The **FluentPlayer** integration allows you to transform your FluentCommunity po
  * **Lesson Resources:** Attach downloadable files (PDFs, worksheets) directly to your video lessons.
  * **Smartcodes:** Personalize lesson content using tags like `##user.display_name##` to greet students individually.
 
-## Step By Step Configuration
+## Step by Step Configuration
 
 ### 1. Enabling the Integration
 

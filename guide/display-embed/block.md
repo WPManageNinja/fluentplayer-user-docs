@@ -8,7 +8,7 @@ description: "Add the Fluent Player Gutenberg block, pick video sources (YouTube
 The Gutenberg Block is the easiest way to add videos if you prefer a visual, drag and drop experience.
 If you use the WordPress block editor (Gutenberg), you can add Fluent Player using the **FluentPlayer Media** block. The inserter lists it as **Fluent Player** / **FluentPlayer Media** (registered name: `fluent-player/media`).
 
-## How to add the Block
+## How to Add the Block
 
 You can add a video to any post or page by following these steps:
 
@@ -49,7 +49,7 @@ Availability depends on your plan and **Settings → Storage** integrations.
 
 In both cases, configuration uses the same **right sidebar** (**Media** and **Block** tabs).
 
-## Deep Dive: Every Block sidebar panel
+## Deep Dive: Every Block Sidebar Panel
 
 When the block is selected, a **Block** tab will appear in the right hand sidebar. This is where you can fine tune every part of your player. For each panel (Branding, General settings, Preset, Chapters, overlays, layers, timed content, multi language, subtitles, timestamp links, Advanced) lives here:
 
@@ -74,7 +74,7 @@ The Playlist block requires **Fluent Player Pro**.
 
 For full details on creating playlists, choosing layouts, and embedding options, see the **[Playlists documentation](/guide/playlists/creating-playlists)**.
 
-## Block vs shortcode
+## Block vs Shortcode
 
 | | Block | Shortcode |
 |---|-------|-----------|

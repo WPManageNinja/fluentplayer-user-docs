@@ -7,7 +7,7 @@ description: "Use the fluentplayer_timestamp shortcode to jump the player to a t
 
 **Timestamp links** are clickable text links that allow viewers to **jump to a specific moment** in your video. They are perfect for creating "Table of Contents" style navigation, allowing users to skip directly to the most relevant parts of longer content.
 
-## How it Works
+## How It Works
 
 When a viewer clicks a timestamp link, the Fluent Player on that same page automatically seeks to the exact time defined in the link. To make this work, the **Media ID** in your timestamp link must match the **ID** of the player embedded on the page.
 

@@ -12,7 +12,7 @@ With **Fluent Player Pro**, you can create a truly personalized viewing experien
 Smartcodes are dynamic placeholders (merge tags) that look like double braces, such as <code v-pre>{{contact.first_name}}</code>. When a logged in user or a known contact views your video, Fluent Player automatically replaces these tags with the specific information stored in their **FluentCRM** profile.
 
 
-### Where to use Smartcodes
+### Where to Use Smartcodes
 
 You can insert Smartcodes into several areas of the player to engage your audience:
 

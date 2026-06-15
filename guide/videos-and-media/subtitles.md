@@ -9,7 +9,7 @@
  * **Global Reach:** Offer translations for international viewers without needing to host separate video files.
  * **SEO Benefits:** Search engines can index your subtitle text, improving your video's discoverability.
 
-## Supported formats
+## Supported Formats
 
 Fluent Player supports these subtitle file formats:
 
@@ -56,7 +56,7 @@ YouTube subtitle import is an admin only feature. Ensure you have permission to 
 
 You can change how captions look on screen, including font size, text color, and background color. These settings are part of the Preset or can be customized per media item in the Branding & Appearance section. See [Branding & Appearance](/guide/block-editor/branding) for details.
 
-## Example: a simple WebVTT file
+## Example: A Simple WebVTT File
 
 Here is what a basic `.vtt` subtitle file looks like:
 

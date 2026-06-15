@@ -23,7 +23,7 @@ Replace `10` with your playlist ID. The playlist will appear where you placed th
 
 ![Embed Playlist](/guide/public/playlists/embed-playlist/embed-playlist-1.webp)
 
-### Step by step
+### Step by Step
 
 **In the Classic Editor:**
 1. Edit a post or page.
@@ -52,7 +52,7 @@ The block shows a preview in the editor and renders the same output as the short
 
 ![Embed Playlist](/guide/public/playlists/embed-playlist/embed-playlist-2.webp)
 
-## What the front end looks like
+## What the Front End Looks Like
 
 Depending on the [layout](/guide/playlists/playlist-layouts) you chose for the playlist:
 
@@ -62,7 +62,7 @@ Depending on the [layout](/guide/playlists/playlist-layouts) you chose for the p
 
 The playlist loads all the media items you added, in the order you set. Viewers can click between videos, and the player handles transitions smoothly.
 
-## Common questions
+## Common Questions
 
 **Can I put multiple playlists on the same page?**
 

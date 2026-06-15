@@ -2,7 +2,7 @@
 
 After you choose a [playlist layout](/guide/playlists/playlist-layouts), Fluent Player Pro lets you fine tune how the playlist looks and behaves on the front end, including colors, typography, borders, autoplay, and more. These settings apply to the playlist container and list/grid around the player, not to the inner video player controls (those follow each media item's [preset](/guide/customize/presets)).
  
-## Where to find these options
+## Where to Find These Options
  
 Edit your playlist under **Fluent Player → Playlists**, then look at the right hand sidebar. You will find four collapsible panels: **General Settings**, **Layout**, **Appearance**, and **Advanced**. Click any panel header to expand it. Save the playlist when you are done.
  
@@ -82,7 +82,7 @@ Add an optional shadow to give the playlist container depth. These controls are 
  
 ![Playlist Settings](/guide/public/playlists/playlist-settings/playlist-settings-3.webp)
  
-## How this fits your workflow
+## How This Fits Your Workflow
  
 1. [Create a playlist](/guide/playlists/creating-playlists) and add videos.
 2. Pick a layout (Standard, Learning, or Grid) in the **Layout** panel.

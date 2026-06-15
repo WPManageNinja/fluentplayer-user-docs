@@ -7,7 +7,7 @@ description: "Embed Fluent Player with [fluentplayer id=\"…\"] or [fluentmedia
 
 The **shortcode** is the most common way to embed a Fluent Player video. It works in posts, pages, widgets, and even in theme templates.
 
-### Basic usage
+### Basic Usage
 
 Add the following shortcode to any **post or page (recommended)**:
 
@@ -28,7 +28,7 @@ Every video you create is assigned a unique ID and a ready-to-use shortcode.
 
 ![Find your Shortcode](/guide/public/display-embed/shortcode/find-your-shortcode.webp)
 
-## Shortcode attributes
+## Shortcode Attributes
 
 | Attribute | Required | Description |
 |-----------|----------|-------------|
@@ -70,7 +70,7 @@ If you are a developer, you can call the player directly in your code:
 >If you enter an **ID** that doesn't exist, the player will simply not appear on the page. Always double check your **Media List** to ensure you are using the correct ID.
 
 
-## Common questions
+## Common Questions
 
 **Can I put multiple videos on the same page?**
 

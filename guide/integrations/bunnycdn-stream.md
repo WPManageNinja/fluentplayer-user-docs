@@ -30,7 +30,7 @@ To start using Bunny Stream, you first need to link your account to Fluent Playe
 
  ![Integrate BunnyCDN](/guide/public/integrations/bunnycdn-stream/integration-03.webp)
 
-## Using Bunny Stream as a video source
+## Using Bunny Stream as a Video Source
 
 Once connected, you can easily select your Bunny videos when creating new media.
 
@@ -44,7 +44,7 @@ The player will now stream the video from Bunny's CDN when viewers watch it on y
 
 ![Bunny Stream as a video source](/guide/public/integrations/bunnycdn-stream/bunny-stream-04.webp)
 
-## Managing videos from WordPress
+## Managing Videos from WordPress
 
 
 Fluent Player Pro allows you to handle common video management tasks without leaving your site:

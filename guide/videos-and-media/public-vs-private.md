@@ -25,7 +25,7 @@ When a media item is set to **Public**:
 
 **Example Use Case:** You want to share a video link in an email or on social media, and anyone who clicks it should be able to watch.
 
-## Private visibility
+## Private Visibility
 
 When a media item is set to **Private** (the default):
 
@@ -34,12 +34,12 @@ When a media item is set to **Private** (the default):
 
 **Example Use Case:** You have an internal training video that should not be publicly accessible via the direct URL. You embed it on a password protected page instead.
 
-## How to Change Sisibility
+## How to Change Visibility
 
 1. Go to **Fluent Player → Media** and open the media item.
 2. In the media settings, look for the **Public visibility** option.
 3. Toggle it **on** to make the dedicated URL publicly accessible, or **off** to keep it private.
-4. Latsly, click on the **Save** button.
+4. Click the **Save** button.
 
 ![Change Visibility](/guide/public/videos-and-media/public-vs-private/change-visibility-1.webp)
 

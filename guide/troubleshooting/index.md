@@ -12,7 +12,7 @@ next:
 This page covers the most common problems users run into with Fluent Player and how to resolve them. If you don't find your answer here, check the [FAQ](/guide/troubleshooting/faq) or reach out to support.
 
 
-## Video not playing
+## Video Not Playing
 
 **Symptom:** The player loads but the video won't play, or the player shows a spinner indefinitely.
 
@@ -25,7 +25,7 @@ This page covers the most common problems users run into with Fluent Player and 
 | Mixed content (HTTP/HTTPS) | Your site must be served over HTTPS. A video source on HTTP will be blocked by browsers on an HTTPS site. |
 
 
-## Autoplay is not working
+## Autoplay Is Not Working
 
 **Symptom:** You have autoplay enabled, but the video doesn't start automatically on page load.
 
@@ -40,7 +40,7 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 :::
 
 
-## Embed is not showing on the front end
+## Embed Is Not Showing on the Front End
 
 **Symptom:** You've added a shortcode or block, but the player does not appear on the published page.
 
@@ -53,7 +53,7 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 | Wrong shortcode for playlists | Playlists use `[fluentplaylist id="123"]`, not `[fluentplayer id="123"]`. |
 
 
-## Email capture overlay is not showing
+## Email Capture Overlay Is Not Showing
 
 **Symptom:** You've enabled email capture on a video, but the overlay never appears.
 
@@ -63,7 +63,7 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 4. **Check per media vs preset:** Make sure the overlay is configured on the correct level (per media or preset) for the video you're testing.
 
 
-## Analytics not tracking
+## Analytics Not Tracking
 
 **Symptom:** The Built in Analytics dashboard shows no data, or view counts are not incrementing.
 
@@ -75,7 +75,7 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 | Google Analytics not seeing events | Make sure you have entered the correct GA4 Measurement ID under **Settings → Analytics → Google Analytics**. See [Google Analytics integration](/guide/integrations/google-analytics). |
 
 
-## Player looks unstyled or broken
+## Player Looks Unstyled or Broken
 
 **Symptom:** The player appears without styles; controls are missing or the layout is visually broken.
 
@@ -84,7 +84,7 @@ Even with muted autoplay, some mobile browsers (especially iOS Safari) may still
 3. **Try a different preset:** The active [preset](/guide/customize/presets) might have unusual settings. Switch to the **Default** preset to see if the issue is preset specific.
 
 
-## Mux or Bunny Stream is not connecting
+## Mux or Bunny Stream Is Not Connecting
 
 **Symptom:** You've entered your API credentials but the integration status shows an error or "Not Connected."
 

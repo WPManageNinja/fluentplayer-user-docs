@@ -1,9 +1,9 @@
 ---
-title: "Timestamp links (Block sidebar)"
+title: "Timestamp Links (Block sidebar)"
 description: "Generate fluentplayer_timestamp shortcodes from the Block sidebar: set time, link text, copy snippets for jump to links in posts and widgets."
 ---
 
-# Timestamp links (Block sidebar)
+# Timestamp Links (Block sidebar)
 
 **Timestamp Links** are powerful shortcode snippets that allow you to create clickable text to jump to a specific second in your video. These are perfect for "Skip to" navigation in blog posts, course notes, or help documentation.
 

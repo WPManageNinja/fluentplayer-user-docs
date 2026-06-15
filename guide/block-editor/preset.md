@@ -51,7 +51,7 @@ The following controls are available for your custom preset:
 
 ![Player Controls](/guide/public/block-editor/preset/player-control-2.webp)
 
-## Built in presets
+## Built-In Presets
 
 Fluent Player ships with **seven** built in presets (names may appear with thumbnails in the grid):
 
@@ -67,7 +67,7 @@ Fluent Player ships with **seven** built in presets (names may appear with thumb
 
 Click a preset to select it; the UI usually shows a **checkmark** or border on the active choice.
 
-## Per preset actions
+## Per Preset Actions
 
 | Action | Purpose |
 |--------|---------|
@@ -76,7 +76,7 @@ Click a preset to select it; the UI usually shows a **checkmark** or border on t
 
 Custom presets appear in the same grid and can be chosen for any media item.
 
-## How preset interacts with other panels
+## How Preset Interacts with Other Panels
 
 - **Preset** sets the **baseline** for skins, controls, and many style related options.
 - **[General settings](/guide/block-editor/general-settings)**, **[Branding](/guide/block-editor/branding)**, and other Block panels **override** specific parts of the preset when you change them here.

@@ -1,9 +1,9 @@
 ---
-title: "Interactive layers (Block sidebar)"
+title: "Interactive Layers (Block sidebar)"
 description: "Configure Interactive Layers: forms, email capture, CTAs, hotspots, ads, and more. Covers filters, ordering, and how layers sit on the timeline."
 ---
 
-# Interactive layers (Block sidebar)
+# Interactive Layers (Block sidebar)
 
 **Interactive Layers** are timed elements that sit on top of your video to drive engagement. Unlike simple text overlays, these layers allow viewers to interact with your content through forms, clickable hotspots, and calls to action (CTAs).
 

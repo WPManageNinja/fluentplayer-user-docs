@@ -8,7 +8,7 @@ You can target a specific audience, apply tags, and control this per video so di
 Mailchimp integration requires **Fluent Player Pro**. The Pro plugin depends on the free Fluent Player plugin. Keep both active.
 :::
 
-#### How it works
+#### How It Works
 
 When a viewer submits their email through the email gate:
 
@@ -18,7 +18,7 @@ When a viewer submits their email through the email gate:
 4. If the email already exists in the audience, the record is updated no duplicates are created.
 5. Any configured tags are applied to the contact in the same step.
 
-## Step 1: Get your Mailchimp API key
+## Step 1: Get Your Mailchimp API Key
 
 1. Log in to your [Mailchimp account](https://login.mailchimp.com/).
 2. Click your profile avatar and go to **Account & Billing**.
@@ -57,7 +57,7 @@ If validation fails, confirm you copied the full key including the `-us18` suffi
 ![Paste API Key](/guide/public/integrations/mailchimp/paste-api-key-6.webp)
 
 
-## Step 3: Assign Mailchimp to a video
+## Step 3: Assign Mailchimp to a Video
 
 Once your API key is saved:
 
@@ -72,7 +72,7 @@ Once your API key is saved:
 
 If the Mailing List dropdown is empty, return to Settings and confirm your API key is valid and saved.
 
-## Configuration fields
+## Configuration Fields
 
 | Field | Required | Description |
 |---|---|---|
@@ -94,7 +94,7 @@ webinar-attendee, product-demo, q2-campaign
 - If the contact already exists, new tags are **added** existing tags are not removed.
 - Different videos can have different tags, so you can track exactly where each subscriber came from.
 
-## Subscriber and duplicate handling
+## Subscriber and Duplicate Handling
 
 Fluent Player uses Mailchimp's **upsert** pattern when adding contacts:
 

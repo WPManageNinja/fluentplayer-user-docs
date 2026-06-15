@@ -30,7 +30,7 @@ From this screen, you can:
 
 ![Video Library](/guide/public/videos-and-media/index/video-media-1.webp)
 
-## Topics in this section
+## Topics in This Section
 
 | Topic | What you will learn |
 |-------|-------------------|

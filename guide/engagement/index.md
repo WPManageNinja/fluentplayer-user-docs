@@ -11,7 +11,7 @@ next:
 
 Fluent Player includes a set of overlay tools designed to turn passive viewers into active leads and customers. These tools go beyond appearance: they directly drive email signups, clicks, and conversions without your viewers leaving the video.
 
-## What you can do
+## What You Can Do
 
 | Feature | What it does |
 |---------|-------------|
@@ -19,11 +19,11 @@ Fluent Player includes a set of overlay tools designed to turn passive viewers i
 | [CTA and Action Bar](/guide/engagement/cta-and-action-bar) | Show a call to action popup or a slim message bar at any point during playback |
 | [Email Providers](/guide/engagement/email-providers) | Connect FluentCRM, Mailchimp, or a custom webhook to receive captured emails |
 
-## How engagement features work
+## How Engagement Features Work
 
 All engagement overlays are configured **per media** through the **Interactive Layers** panel. Each media item has its own set of layers that you can add, configure, and remove independently.
 
-## Where to configure
+## Where to Configure
 
 1. Go to **Fluent Player → Media** and open the media item you want to configure.
 2. In the right sidebar, expand the **Interactive Layers** panel.

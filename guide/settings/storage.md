@@ -10,7 +10,7 @@ All storage integrations require **Fluent Player Pro**.
 Email and CRM providers (FluentCRM, Mailchimp, Webhook) are configured under [**Settings → Integrations**](/guide/settings/integrations), not here.
 :::
 
-## Browsing storage providers
+## Browsing Storage Providers
 
 Navigating your available integrations is simple. You can use the search bar on the right or filter the list using the tabs at the top of the screen:
 
@@ -24,13 +24,13 @@ Each integration card displays a brief description, a status badge (Enabled or D
 
 **BunnyCDN Stream** is a video streaming CDN with encoding, multi bitrate delivery, and global edge nodes. Fluent Player can browse your Bunny Stream libraries and serve HLS video directly.
 
-### What you need
+### What You Need
 
 - A [Bunny.net](https://bunny.net) account.
 - A **Stream library** created in your Bunny dashboard with at least one video uploaded.
 - Your **API key** (found in Bunny → Account → API Keys).
 
-### How to connect
+### How to Connect
 
 1. Go to **Fluent Player → Settings → Storage**.
 2. Click **Configure** on the **BunnyCDN Stream** row.
@@ -39,7 +39,7 @@ Each integration card displays a brief description, a status badge (Enabled or D
 5. Click **Test connection** to verify Fluent Player can reach Bunny.
 6. **Save** the settings.
 
-### Using BunnyCDN Stream as a video source
+### Using BunnyCDN Stream as a Video Source
 
 After connecting:
 
@@ -55,13 +55,13 @@ After connecting:
 
 **BunnyCDN Storage** lets you store video files in Bunny's storage zones and serve them through their CDN. This is useful when you want self managed file hosting rather than a full streaming platform.
 
-### What you need
+### What You Need
 
 - A [Bunny.net](https://bunny.net) account.
 - A **storage zone** created in your Bunny dashboard.
 - Your storage zone **name** and **API key** (or access credentials).
 
-### How to connect
+### How to Connect
 
 1. Go to **Fluent Player → Settings → Storage**.
 2. Click **Configure** on the **BunnyCDN Storage** row.
@@ -69,7 +69,7 @@ After connecting:
 4. Click **Test connection** to verify.
 5. **Save** the settings.
 
-### Using BunnyCDN Storage as a video source
+### Using BunnyCDN Storage as a Video Source
 
 After connecting:
 
@@ -84,13 +84,13 @@ After connecting:
 
 **Mux** is a professional video platform with adaptive HLS streaming, live streaming, AI generated captions, signed URL playback, and Mux Data analytics. Fluent Player Pro provides a full Mux integration including webhook support for asset ready events.
 
-### What you need
+### What You Need
 
 - A [Mux](https://mux.com) account.
 - A Mux **API access token** with **Mux Video** permissions (read and write), from **Mux dashboard → Settings → API access tokens**.
 - Fluent Player **Pro** active on your site.
 
-### How to connect
+### How to Connect
 
 1. Go to **Fluent Player → Settings → Storage**.
 2. Click **Configure** on the **Mux** row.
@@ -98,7 +98,7 @@ After connecting:
 4. Click **Test connection** to confirm the credentials work.
 5. **Save** the settings.
 
-### Optional Mux settings
+### Optional Mux Settings
 
 | Option | Purpose |
 |--------|---------|
@@ -107,7 +107,7 @@ After connecting:
 | **Webhook secret** | Verifies events from Mux (asset ready, upload failed, live events). Add a webhook endpoint in the Mux dashboard and paste the signing secret here. |
 | **Mux Data environment key** | Optional key for Mux's playback quality analytics. |
 
-### Using Mux as a video source
+### Using Mux as a Video Source
 
 After connecting:
 

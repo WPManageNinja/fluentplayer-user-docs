@@ -1,5 +1,5 @@
 ---
-title: "Text & button overlays (Block sidebar)"
+title: "Text & Button Overlays (Block sidebar)"
 description: "Timed text and button overlays on the video: add overlays, timing, links, styling, and how they differ from Interactive layers."
 ---
 
@@ -45,7 +45,7 @@ Once saved, your overlays appear in a list within the sidebar panel:
  * **Delete:** To remove an overlay, click the Trash icon and confirm your choice in the popup.
 
 >[!Tip]
->Use the Video Preview inside the overlay window to scrub through your video and see exactly where and when your overlay will appear before you save it.
+> Use the Video Preview inside the overlay window to scrub through your video and see exactly where and when your overlay will appear before you save it.
 
 ![Edit or Delete](/guide/public/block-editor/overlays/edit-or-delete-4.webp)
 

@@ -19,7 +19,7 @@ Before setup, make sure you have:
 The Pro plugin depends on the free Fluent Player plugin. Keep both active.
 :::
 
-## How it works
+## How It Works
 
 When a viewer submits an email through your player’s email capture flow:
 
@@ -30,7 +30,7 @@ When a viewer submits an email through your player’s email capture flow:
 
 For `POST` and `PUT`, data is sent as JSON. For `GET`, data is sent as query parameters.
 
-## Enable the Webhook provider
+## Enable the Webhook Provider
 
 1. Go to **Fluent Player → Settings**.
 2. Open the **Integrations** tab.
@@ -42,7 +42,7 @@ For `POST` and `PUT`, data is sent as JSON. For `GET`, data is sent as query par
 
 ![Enable Integration](/guide/public/integrations/webhook/enable-integrations-2.webp)
 
-## Add a webhook endpoint
+## Add a Webhook Endpoint
 
 1. Click **Add Webhook**.
 2. Fill in the fields:
@@ -61,7 +61,7 @@ For `POST` and `PUT`, data is sent as JSON. For `GET`, data is sent as query par
 - **Multiple Webhooks:** You can configure multiple webhook endpoints if you need to send data to several different services simultaneously.
 :::
 
-## Request behavior
+## Request Behavior
 
 | Method | Behavior |
 |---|---|
@@ -76,7 +76,7 @@ Default payload typically includes:
 - `source` (for example: `fluent_player`)
 - `webhook_id`
 
-## Assign Webhook to your Video/Preset
+## Assign Webhook to Your Video/Preset
 
 After creating webhook items:
 
@@ -90,7 +90,7 @@ If the webhook dropdown is empty, return to settings and confirm at least one we
 
 ![Assign Webhook](/guide/public/integrations//webhook/assign-webhook-3.webp)
 
-## Security notes
+## Security Notes
 
 Webhook requests include built in validation and sanitization:
 

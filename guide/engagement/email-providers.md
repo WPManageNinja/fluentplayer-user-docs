@@ -76,7 +76,7 @@ A **webhook** sends captured email data to any URL you specify. This is the most
 ![Emial Provider](/guide/public/engagement/email-providers/email-provider-3.webp)
 
 
-## Which provider should I choose?
+## Which Provider Should I Choose?
 
 | Provider | Plugin version | Best for |
 |----------|---------------|----------|
@@ -88,7 +88,7 @@ A **webhook** sends captured email data to any URL you specify. This is the most
 You can only use **one email provider** per email capture configuration. Choose the one that fits your existing workflow.
 :::
 
-## Connecting the provider to email capture
+## Connecting the Provider to Email Capture
 
 After setting up a provider under Settings, open the [email capture overlay](/guide/engagement/email-capture) configuration for your media item or preset and select the provider there. This tells Fluent Player where to route captured emails.
 

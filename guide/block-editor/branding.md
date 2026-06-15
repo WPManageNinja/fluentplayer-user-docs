@@ -9,7 +9,7 @@ The **Branding** panel allows you to personalize your video player with your own
 
 To access these options, select your **FluentPlayer** block and open the **Branding** section under the **Block** tab in the right hand sidebar.
 
-## Use custom branding
+## Use Custom Branding
 
 By default, Fluent Player uses the global branding settings configured in your plugin's main settings.
 

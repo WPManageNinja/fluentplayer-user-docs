@@ -11,11 +11,11 @@ next:
 
 The **email capture overlay** pauses the video and shows a signup form to the viewer. They enter their email address, and optionally subscribe to your list, before they can continue watching. It is one of Fluent Player's most effective tools for growing your email list without any third party popup plugins.
 
-## How it works
+## How It Works
 
 At a configured point during playback (for example, at the 1-minute mark), the player pauses and displays an overlay with a headline, an email input field, and a submit button. The viewer must enter their email to continue watching, or dismiss the overlay if skipping is allowed. Submitted emails are sent to whichever provider you have attached to the layer (for example, FluentCRM).
 
-## Setting up email capture
+## Setting Up Email Capture
 
 1. Go to **Fluent Player → Media** and open the media item you want to gate.
 2. In the right sidebar, expand the **Interactive Layers** panel.
@@ -31,7 +31,7 @@ At a configured point during playback (for example, at the 1-minute mark), the p
 
 Your email gate is now live on every page where that media is embedded.
 
-## Configuration options
+## Configuration Options
 
 | Option | Description | Example |
 |--------|-------------|---------|
@@ -53,7 +53,7 @@ Your email gate is now live on every page where that media is embedded.
 Setting **Allow Skipping** to **Off** creates a hard gate: viewers must submit their email to watch the rest of the video. Setting it to **On** makes the overlay a soft opt in. Hard gates collect more emails; soft gates create a better viewer experience. Choose based on your goal.
 :::
 
-## Adding an email provider
+## Adding an Email Provider
 
 Email providers are configured directly inside the Email Capture layer, not in a separate settings page.
 
@@ -80,7 +80,7 @@ You can add multiple providers to a single Email Capture layer if needed. Fluent
 
 See [Email Providers](/guide/engagement/email-providers) for the full setup guide.
 
-## Example: gating a webinar replay
+## Example: Gating a Webinar Replay
 
 You recorded a 45-minute webinar and want to collect emails from anyone who watches past the first 2 minutes:
 
@@ -90,7 +90,7 @@ You recorded a 45-minute webinar and want to collect emails from anyone who watc
 - **Button Text:** "Watch Now"
 - **Provider:** FluentCRM, which adds them to your "Webinar Leads" list
 
-## Example: soft opt in on a tutorial
+## Example: Soft Opt In on a Tutorial
 
 You have a free tutorial and want to gently ask for emails without forcing it:
 

@@ -11,11 +11,11 @@ next:
 
 The **CTA overlay** is a popup that appears over the video at a specific time to prompt the viewer to take an action, such as visiting a link, signing up, or watching another video. The video pauses while the overlay is on screen, so the viewer's full attention is on your message.
 
-## How it works
+## How It Works
 
 At a time you choose (for example, 2 minutes into the video), playback pauses and a full screen overlay appears with whatever content you have designed in the built in editor. The viewer can interact with the overlay (click a button, read your message) or skip past it if you allow skipping. Playback resumes once the overlay is dismissed.
 
-## Setting up a CTA overlay
+## Setting Up a CTA Overlay
 
 1. Go to **Fluent Player → Media** and open the media item you want to add a CTA to.
 2. In the right sidebar, expand the **Interactive Layers** panel.
@@ -32,13 +32,13 @@ At a time you choose (for example, 2 minutes into the video), playback pauses an
 
 Once saved, the CTA layer appears in the **Interactive Layers** panel with its name and trigger time. You can click **Edit** to update it or the trash icon to remove it.
 
-## Configuration options
+## Configuration Options
 
 ### Start Time
 
 Set the exact moment the CTA overlay appears using **Hours**, **Minutes**, and **Seconds** fields. For example, setting Minutes to `02` triggers the overlay at the 2-minute mark.
 
-### Content editor
+### Content Editor
 
 The CTA overlay uses a **rich text editor**, the same one you use when writing WordPress posts. You design the overlay content directly, so what you see in the editor is what the viewer sees on screen.
 
@@ -87,7 +87,7 @@ Pick a **Background Color** for the overlay area behind your content. Use this t
 Keep your CTA content short and focused. A strong heading, one line of supporting text, and a single button is the most effective pattern. Too much content in an overlay can overwhelm the viewer.
 :::
 
-## Example: end of video upsell
+## Example: End of Video Upsell
 
 You have a product demo and want to direct viewers to your pricing page near the end:
 
@@ -97,7 +97,7 @@ You have a product demo and want to direct viewers to your pricing page near the
   - Text: "Start your free trial today."
   - Button: "Get Started" → links to `https://example.com/signup`
 
-## Example: mid video resource link
+## Example: Mid Video Resource Link
 
 You are recording a tutorial and want to share a downloadable resource at the 5-minute mark:
 
@@ -107,7 +107,7 @@ You are recording a tutorial and want to share a downloadable resource at the 5-
   - Text: "Download the companion PDF to follow along."
   - Button: "Download Now" → links to your resource URL
 
-## Editing a CTA layer
+## Editing a CTA Layer
 
 After you add a CTA layer, it appears in the **Interactive Layers** panel in the right sidebar. Each layer shows the **layer type** (CTA), its **trigger time** (e.g., 2:00), an **Edit** button, and a **delete** icon.
 

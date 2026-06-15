@@ -6,7 +6,7 @@ The Integrations section manages **email and lead capture providers**. When view
 Video storage providers (Mux, BunnyCDN) are configured under [**Settings → Storage**](/guide/settings/storage), not here. This section is for **email / CRM integrations only**.
 :::
 
-## Browsing integrations
+## Browsing Integrations
 
 Navigating your available integrations is simple. You can use the search bar on the right or filter the list using the tabs at the top of the screen:
 
@@ -64,7 +64,7 @@ A webhook sends your captured email data as an HTTP POST request to any URL you 
 > **🔍 Example:** Webhooks are perfect for connecting your video lead generation to automation tools like Zapier, Make (Integromat), n8n, HubSpot, or ActiveCampaign.
 
 
-## Which provider should I use?
+## Which Provider Should I Use?
 
 | Provider | Plugin version | Best for |
 |----------|---------------|----------|
@@ -74,6 +74,6 @@ A webhook sends your captured email data as an HTTP POST request to any URL you 
 
 You can have multiple providers configured (each with Enabled/Disabled toggles), but each email capture overlay will route to a **single selected provider**.
 
-## Connecting a provider to email capture
+## Connecting a Provider to Email Capture
 
 After setting up a provider here, make sure to select it in the [Email Capture Overlay](/guide/engagement/email-capture) settings (on the preset or per media). The capture overlay and the provider are configured separately.

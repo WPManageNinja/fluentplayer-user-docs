@@ -1,9 +1,9 @@
 ---
-title: "Multi language (Block sidebar)"
+title: "Multi-Language (Block sidebar)"
 description: "Block sidebar Multi-Language: primary language, enable the selector, and prerequisites for alternate tracks or linked media in Fluent Player."
 ---
 
-# Multi language (Block sidebar)
+# Multi-Language (Block sidebar)
 
 If your audience speaks different languages, **Fluent Player** allows you to offer **alternate versions** of the same video. This is perfect for videos with different voiceovers or narrations.
 

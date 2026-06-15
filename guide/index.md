@@ -2,7 +2,7 @@
 
 **Fluent Player** is a WordPress plugin that lets you add beautiful, customizable video players to your website. Whether you want to embed a single video on a blog post or build a full video course with playlists, Fluent Player gives you everything you need, right from your WordPress dashboard.
 
-## Who is it for?
+## Who Is It For?
 
 Fluent Player is built for anyone who uses WordPress and wants to display video content. You do not need any coding knowledge to use it. If you can write a blog post in WordPress, you can use Fluent Player.
 
@@ -38,7 +38,7 @@ Fluent Player comes in two versions. This documentation matches **Fluent Player 
 
 The **free version** handles everything you need for embedding and customizing single videos. The **Pro version** adds playlists, Mux and Bunny integrations, analytics, timed content, and more email providers.
 
-## Key features at a glance
+## Key Features at a Glance
 
 - **Video players:** Embed and customize players that support WordPress uploads, external URLs, YouTube, Mux, and BunnyCDN (Pro).
 - **Playlists (Pro):** Group videos into playlists with three layout options: Standard, Learning, and Grid.
@@ -47,7 +47,7 @@ The **free version** handles everything you need for embedding and customizing s
 - **Shortcodes:** Embed videos with `[fluentplayer id="123"]` (or `[fluentmedia]`) or playlists with `[fluentplaylist id="456"]` (Pro).
 - **Analytics:** Track plays, watch time, and viewer behavior with built in analytics (Pro) or Google Analytics.
 
-## How it works (the big picture)
+## How It Works (the Big Picture)
 
 Here is the typical workflow:
 
