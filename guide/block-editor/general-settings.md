@@ -40,6 +40,7 @@ Control the shape of your video player to match your content.
 This determines when the video data starts loading, which can significantly impact your website's speed.
 
  * **On Play Click:** The video only loads once a user clicks play. This is the best option for page speed.
+ * **On Play Click (Skip Video In Editor):** Best for page speed and cost efficiency. The frontend loads the video only when the viewer clicks play. The backend editor shows only the poster image with no video requests made until you preview the post. Use this option if your video provider charges per request.
  * **When Scrolled Into View:** The video begins loading only when the player becomes visible on the user's screen.
  * **After Page Loads:** The video starts loading once the rest of the website content is finished.
  * **Immediately:** The video loads as soon as the page is opened. Use this sparingly as it can slow down your site.
