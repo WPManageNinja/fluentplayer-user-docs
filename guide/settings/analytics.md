@@ -44,43 +44,49 @@ Whenever someone watches a video, we tell Google exactly which video it is (by s
 * Reach a Progress milestone (25%, 50%, 75%, 100%).
 * Complete the video.
 
-### How to Set It Up:
+## How to Set Up Google Analytics
 
-#### Option A: You Already Have Google Analytics on Your Site (Highly Recommended!)
-If your WordPress theme or another plugin is already loading Google Analytics, use this method. It prevents your website from loading heavy Google scripts twice, keeping your site blazing fast.
+Open **Fluent Player → Settings → Analytics**, then select the **Google Analytics** tab. Choose the setup path that matches how GA4 is already installed on your site.
 
-1. Navigate to **Fluent Player -> Settings -> Analytics**.
-2. Click the **Google Analytics** tab.
-3. Toggle on **Enable Google Analytics**.
+### Use an existing on-page tag (recommended)
+
+If your theme or another plugin already loads Google Analytics, use this option. Fluent Player sends video events through that existing tag instead of loading Google scripts a second time.
+
+1. Go to **Fluent Player → Settings → Analytics**.
+2. Open the **Google Analytics** tab.
+3. Turn on **Enable Google Analytics**.
 
 ![Analytics](/guide/public/settings/analytics/analytics-3.webp)
 
-4. Toggle on **Use existing on page tag**.
+4. Turn on **Use existing on page tag**.
 5. Click **Save Settings**.
 
 ![Analytics](/guide/public/settings/analytics/analytics-5.webp)
 
-#### Option B: You Do Not Have Google Analytics on Your Site Yet
-If you want FluentPlayer to load Google Analytics for you, use this method.
+### Load GA4 through Fluent Player
 
-1. First, grab your GA4 web stream measurement ID from your Google Analytics account (under *Admin -> Data streams*). It will look something like `G-XXXXXXXXXX`.
-2. Navigate to **Fluent Player -> Settings -> Analytics**.
-3. Click the **Google Analytics** tab and toggle on **Enable Google Analytics**.
-4. Make sure **Use existing on page tag** is turned OFF.
-5. Paste your **Measurement ID** into the box that appears.
+Use this path when Google Analytics is not installed on your site yet and you want Fluent Player to load GA4 for you.
+
+1. Copy your GA4 **Measurement ID** from Google Analytics (**Admin → Data streams**). It looks like `G-XXXXXXXXXX`.
+2. Go to **Fluent Player → Settings → Analytics**.
+3. Open the **Google Analytics** tab and turn on **Enable Google Analytics**.
+4. Turn **Use existing on page tag** off.
+5. Paste your **Measurement ID** into the field that appears.
 6. Click **Save Settings**.
 
 ![Analytics](/guide/public/settings/analytics/analytics-4.webp)
 
-> **⚠️ Troubleshooting:** Did you just set this up but don't see any video data in Google Analytics? Don't panic! Standard GA4 reports often take up to 24 hours to process new data. If you want to confirm it is working immediately, check the *Real time reports* section inside your Google Analytics dashboard.
+### Troubleshooting Google Analytics data
 
-## Choosing Your Analytics Path
+Standard GA4 reports can take up to 24 hours to show new event data. To verify tracking right away, open **Reports → Realtime** in your Google Analytics dashboard and play a video on your site while watching for Fluent Player events.
 
-You might be wondering: "Which one should I use?" The good news is that you can safely run both at the same time! We recommend using our built in analytics for detailed, day to day checks on specific videos, and Google Analytics to see how your videos fit into your broader marketing campaigns.
+## Built-in Analytics vs Google Analytics
+
+You can run **both** at the same time. Use built in analytics for day to day video performance inside WordPress, and Google Analytics to see how video engagement fits your wider marketing and site traffic.
 
 | Feature | Built in Analytics (Pro) | Google Analytics (Free/Pro) |
 | :--- | :--- | :--- |
-| **Where do you view the data?** | Right inside your WordPress Admin. | Over on the Google Analytics website. |
-| **Can I see per video drop off charts?** | Yes, absolutely! | No, not without complex custom setups. |
-| **Can I track specific logged in users?** | Yes, you can see exactly who watched what. | Very limited (Google tracks anonymously). |
-| **Best used for...** | Deep diving into your video content and audience. | Big picture marketing and overall website traffic. |
+| **Where do you view the data?** | Inside your WordPress admin | In the Google Analytics dashboard |
+| **Per video drop off charts** | Yes | No, not without custom setup |
+| **Logged in user tracking** | Yes — see who watched what | Limited — mostly anonymous sessions |
+| **Best for** | Deep video and audience analysis | Marketing funnels and site wide traffic |
