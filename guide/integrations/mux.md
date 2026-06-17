@@ -54,7 +54,7 @@ Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is f
 
 - In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage → Mux**.
 - **Copy** the **Webhook URL** provided in the settings.
-- In the Mux Dashboard, go to **Settings → Webhooks **and click **Create New Webhook**.
+- In the Mux Dashboard, go to **Settings → Webhooks** and click **Create New Webhook**.
 
 >[!Note]
 > Webhook functionality is essential for automatic status and metadata updates after a video finishes processing.
@@ -116,11 +116,14 @@ You can use **both**:
 
 ## Troubleshooting
 
-| Issue | What to check |
-|-------|----------------|
-| Connection test fails | Token ID/secret, Mux Video permissions, and that the token is not revoked. |
-| Video stays “processing” | Webhook URL and secret in Mux; your site must receive HTTPS callbacks. |
-| Playback errors with signed URLs enabled | Signing key pair must be generated and stored per the integration; clock skew and URL expiry can affect playback. |
+| Problem | Likely cause | What to do |
+|---------|--------------|------------|
+| **Connection test fails** | Invalid or revoked token, or missing **Mux Video** permissions | Regenerate an access token in Mux with **Read + Write** permissions. Re copy the **Token ID** and **Token Secret** into **Fluent Player → Settings → Storage → Mux**, then run **Test Connection** again. |
+| **Video stays “processing”** | Webhook not configured or WordPress cannot receive callbacks | Confirm the **Webhook URL** and **Webhook Secret** match between Mux and Fluent Player. Your site must use **HTTPS** so Mux can deliver status updates when encoding finishes. |
+| **Playback errors with signed URLs** | Signing key missing, expired URL, or server clock skew | Generate a **Signing Key** in Mux and save the **Key ID** and **Secret Key** in the integration settings. Disable signed URLs temporarily to test basic playback, then re enable once keys are verified. |
 
+::: tip
+Most Mux issues trace back to credentials, webhooks, or signed URL keys. After changing any of these in Mux, return to **Settings → Storage → Mux**, save again, and upload or re select the asset in **Fluent Player → Media**.
+:::
 
-Integrating Mux with **Fluent Player Pro** provides a scalable, professional grade video delivery system within WordPress. From adaptive HLS streaming to real time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management
+Integrating Mux with **Fluent Player Pro** gives you adaptive HLS delivery, optional signed playback, live streaming, and analytics inside WordPress. So, you can host professional video without leaving your normal content workflow.
