@@ -43,6 +43,7 @@ const guideGroups = [
       { text: 'Video Sources', link: '/guide/videos-and-media/video-sources' },
       { text: 'Subtitles & Captions', link: '/guide/videos-and-media/subtitles' },
       { text: 'Multiple Audio Languages', link: '/guide/videos-and-media/multiple-languages' },
+      { text: 'Media Tags (Pro)', link: '/guide/videos-and-media/media-tags' },
       { text: 'Public vs. Private Videos', link: '/guide/videos-and-media/public-vs-private' },
     ],
   },
@@ -117,7 +118,9 @@ const guideGroups = [
       { text: 'Creating a Playlist', link: '/guide/playlists/creating-playlists' },
       { text: 'Playlist Layouts', link: '/guide/playlists/playlist-layouts' },
       { text: 'Appearance & Behavior', link: '/guide/playlists/playlist-settings' },
+      { text: 'Tag-Based Playlists', link: '/guide/playlists/tag-based-playlists' },
       { text: 'Embed a Playlist', link: '/guide/playlists/embed-playlist' },
+      { text: 'Dedicated Playlist URL', link: '/guide/playlists/dedicated-playlist-url' },
     ],
   },
   {
@@ -132,6 +135,7 @@ const guideGroups = [
       { text: 'YouTube', link: '/guide/settings/youtube' },
       { text: 'Analytics', link: '/guide/settings/analytics' },
       { text: 'Export Data', link: '/guide/settings/export' },
+      { text: 'Licensing', link: '/guide/settings/licensing' },
     ],
   },
   {
@@ -147,6 +151,12 @@ const guideGroups = [
       { text: 'Webhook (Pro)', link: '/guide/integrations/webhook-integration' },
       { text: 'FluentCommunity (Pro)', link: '/guide/integrations/fluent-community' },
       { text: 'Smartcodes (FluentCRM)', link: '/guide/integrations/smartcodes-personalization' },
+    ],
+  },
+  {
+    text: 'Developer',
+    items: [
+      { text: 'Hooks & Filters Reference', link: '/guide/developer/hooks-reference' },
     ],
   },
   {
