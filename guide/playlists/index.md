@@ -1,12 +1,12 @@
 # Playlists Overview
 
-A **playlist** lets you group multiple videos together so viewers can watch them in sequence — like a course, a series, or a collection. Viewers can switch between videos without leaving the page.
+A **playlist** lets you group multiple videos together so viewers can watch them in sequence, like a course, a series, or a collection. Viewers can switch between videos without leaving the page.
 
 ::: info Pro feature
 Playlists require **FluentPlayer Pro**. The free plugin shows the Playlists menu, but you need Pro to create and embed playlists.
 :::
 
-## What is a playlist?
+## What Is a Playlist?
 
 A playlist is a collection of FluentPlayer media items displayed together in a single player interface. You create media items first (under FluentPlayer → Media), then group them into a playlist.
 
@@ -17,7 +17,7 @@ Each playlist has:
 - A **layout** that controls how the playlist is displayed.
 - An **ID** that you use to embed it.
 
-## Why use playlists?
+## Why Use Playlists?
 
 | Use case | How playlists help |
 |----------|-------------------|
@@ -26,16 +26,16 @@ Each playlist has:
 | **Product demos** | Group all product videos in one place |
 | **Video libraries** | Display a large catalog in a browsable grid (Grid layout) |
 
-## Playlist layouts
+## Playlist Layouts
 
 FluentPlayer Pro offers two layout styles:
 
-- **Standard** — A video player with a playlist sidebar showing thumbnails. Good for series, tutorials, and courses.
-- **Grid** — Displays videos in a multi-column thumbnail grid. Good for large libraries and catalogs.
+- **Standard:** A video player with a playlist sidebar showing thumbnails. Good for series, tutorials, and courses.
+- **Grid:** Displays videos in a multi column thumbnail grid. Good for large libraries and catalogs.
 
 Learn more in [Playlist Layouts](/guide/playlists/playlist-layouts).
 
-## Where to manage playlists
+## Where to Manage Playlists
 
 Go to **FluentPlayer → Playlists** in your WordPress admin. Here you can:
 

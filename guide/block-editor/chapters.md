@@ -39,6 +39,6 @@ Once you have added chapters, they will appear in a list within the Chapters pan
  * **First Chapter:** It is common practice to set your first chapter at **0:00** to label the beginning of your video.
  * **Automatic Duration:** Each chapter automatically ends when the next one begins, or when the video reaches the end.
 
-Chapters turn a long, daunting video into a collection of easy-to-digest segments. By taking a few minutes to label your content, you provide a much better experience for your viewers and help them find the information they need faster.
+Chapters turn a long, daunting video into a collection of easy to digest segments. By taking a few minutes to label your content, you provide a much better experience for your viewers and help them find the information they need faster.
 
 

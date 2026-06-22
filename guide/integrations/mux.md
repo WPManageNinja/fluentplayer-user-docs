@@ -6,7 +6,7 @@
 Mux is available only with **FluentPlayer Pro**. Install and activate the free FluentPlayer plugin first, then activate Pro.
 :::
 
-## Why use Mux?
+## Why Use Mux?
 
  * **Adaptive Streaming:** Deliver content via HLS with automatic quality switching based on the viewer’s network speed.
  * **Managed Encoding:** Mux handles the heavy lifting of video processing. Webhooks keep your WordPress site updated on asset status.
@@ -52,17 +52,17 @@ A popup will display your **Key ID** and **Secret Key**. **Copy** these for the 
 
 Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is finished processing or if an error occurred.
 
- - In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage → Mux**.
- - **Copy** the **Webhook URL** provided in the settings.
- - In the Mux Dashboard, go to **Settings → Webhooks **and click **Create New Webhook**.
+- In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage → Mux**.
+- **Copy** the **Webhook URL** provided in the settings.
+- In the Mux Dashboard, go to **Settings → Webhooks** and click **Create New Webhook**.
 
 >[!Note]
 > Webhook functionality is essential for automatic status and metadata updates after a video finishes processing.
 
 ![Webhook](/guide/public/integrations/mux/webhooks-7.webp)
 
- - A popup window will appear. **Paste** the **URL** and save. Mux will provide a **Webhook Secret**.
- - **Copy** that secret back into the **Webhook Secret** field in your **FluentPlayer** settings.
+- A popup window will appear. **Paste** the **URL** and save. Mux will provide a **Webhook Secret**.
+- **Copy** that secret back into the **Webhook Secret** field in your **FluentPlayer** settings.
 
 ![Webhook Secret](/guide/public/integrations/mux/create-webhook-8.webp)
 
@@ -74,15 +74,15 @@ Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is f
 
 ## Connect Mux to FluentPlayer
 
- - In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage**. 
- - Find the **Mux** row and click **Configure**.
- - Enable the **Enable Integration** toggle. 
- - **Paste** your **Token ID** and **Token Secret** into the designated fields.
- - Click **Test Connection** to verify the credentials. Click **Save Settings** button to save it.
+- In your WordPress admin, go to **FluentPlayer Pro → Settings → Storage**. 
+- Find the **Mux** row and click **Configure**.
+- Enable the **Enable Integration** toggle. 
+- **Paste** your **Token ID** and **Token Secret** into the designated fields.
+- Click **Test Connection** to verify the credentials. Click **Save Settings** button to save it.
 
 ## Configure Optional Settings
 
- * **Signed URLs:** **Enable** this if you require access-restricted playback for your videos.
+ * **Signed URLs:** **Enable** this if you require access restricted playback for your videos.
  * **Auto Captions:** **Turn** this on to have Mux automatically generate subtitles for new uploads using AI transcription.
  * **Webhook Secret:** Create a webhook in your Mux dashboard using the URL provided in the settings and paste the secret here. This allows Mux to notify WordPress when video assets are ready.
  * **Mux Data Environment Key:** Enter your environment key from the Mux Data dashboard to track playback quality analytics.
@@ -107,8 +107,8 @@ Signed URLs cover most "don't let people hotlink my video" needs. Reach for DRM 
 
 Once connected, you can use Mux assets anywhere on your site:
 
- - Go to **FluentPlayer → Media** and click **Add Media**.
- - Under **Source Type**, select **Mux or Mux Live**.
+- Go to **FluentPlayer → Media** and click **Add Media**.
+- Under **Source Type**, select **Mux or Mux Live**.
 
 ![Mux Video Source](/guide/public/integrations/mux/mux-or-mux-video-11.webp)
 
@@ -125,16 +125,19 @@ Once connected, you can use Mux assets anywhere on your site:
 
 You can use **both**:
 
-- **[Built-in Analytics](/guide/integrations/analytics)** — Viewership inside WordPress (plays, retention, top videos, locations, and more).
-- **Mux Data** (optional) — Enter the **Mux Data environment key** in the integration for Mux’s own quality and delivery analytics.
+- **[Built-in Analytics](/guide/integrations/analytics):** Viewership inside WordPress (plays, retention, top videos, locations, and more).
+- **Mux Data** (optional): Enter the **Mux Data environment key** in the integration for Mux’s own quality and delivery analytics.
 
 ## Troubleshooting
 
-| Issue | What to check |
-|-------|----------------|
-| Connection test fails | Token ID/secret, Mux Video permissions, and that the token is not revoked. |
-| Video stays “processing” | Webhook URL and secret in Mux; your site must receive HTTPS callbacks. |
-| Playback errors with signed URLs enabled | Signing key pair must be generated and stored per the integration; clock skew and URL expiry can affect playback. |
+| Problem | Likely cause | What to do |
+|---------|--------------|------------|
+| **Connection test fails** | Invalid or revoked token, or missing **Mux Video** permissions | Regenerate an access token in Mux with **Read + Write** permissions. Re copy the **Token ID** and **Token Secret** into **Fluent Player → Settings → Storage → Mux**, then run **Test Connection** again. |
+| **Video stays “processing”** | Webhook not configured or WordPress cannot receive callbacks | Confirm the **Webhook URL** and **Webhook Secret** match between Mux and Fluent Player. Your site must use **HTTPS** so Mux can deliver status updates when encoding finishes. |
+| **Playback errors with signed URLs** | Signing key missing, expired URL, or server clock skew | Generate a **Signing Key** in Mux and save the **Key ID** and **Secret Key** in the integration settings. Disable signed URLs temporarily to test basic playback, then re enable once keys are verified. |
 
+::: tip
+Most Mux issues trace back to credentials, webhooks, or signed URL keys. After changing any of these in Mux, return to **Settings → Storage → Mux**, save again, and upload or re select the asset in **Fluent Player → Media**.
+:::
 
 Integrating Mux with **FluentPlayer Pro** provides a scalable, professional-grade video delivery system within WordPress. From adaptive HLS streaming to real-time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management

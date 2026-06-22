@@ -7,14 +7,14 @@ description: "Learn the FluentPlayer Media and Block sidebar tabs: document-leve
 
 When you select the **FluentPlayer Media block** in the WordPress editor, the right sidebar (Inspector) displays two distinct tabs: **Media** and **Block**. While both tabs are used to manage the same video, they control different aspects of your content.
 
-## Media tab
+## Media Tab
 
-The **Media** tab focuses on the high-level details and "document-level" settings of your video entry in the database. Think of this as the administrative home for the video record.
+The **Media** tab focuses on the high level details and "document level" settings of your video entry in the database. Think of this as the administrative home for the video record.
 
  * **Media Context:** It provides information about the saved media item, such as its Status (e.g., Published) and the **Publish** date.
  * **Permalink & Slug:** You can view or edit the video's Slug, which determines its dedicated URL.
- * **Record Actions:** This tab includes high-level actions that affect the entire media record, such as the **Trash** button.
- * **Menu Options:** A **three-dot** menu allows you to quickly **View**, **Rename**, or **Trash** the media item.
+ * **Record Actions:** This tab includes high level actions that affect the entire media record, such as the **Trash** button.
+ * **Menu Options:** A **three dot** menu allows you to quickly **View**, **Rename**, or **Trash** the media item.
 
 >[!Note]
 >If you are using the dedicated editor **(FluentPlayer → Media)**, this tab ensures the information in your media list matches what you see on the screen.
@@ -22,7 +22,7 @@ The **Media** tab focuses on the high-level details and "document-level" setting
 ![Media Tab](/guide/public/block-editor/media-tab/media-tab-1.webp)
 
 
-## Block tab
+## Block Tab
 
 The **Block** tab is where you will spend most of your time customizing the actual playback experience and appearance of the player.
 

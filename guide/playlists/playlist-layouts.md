@@ -13,12 +13,12 @@ The Standard layout shows the **main video player** with a **playlist sidebar** 
 | Option | Description |
 |--------|-------------|
 | **Thumbnail Ratio** | Aspect ratio of the thumbnails in the sidebar. Choose from **Landscape (16:9)**, **Portrait (9:16)**, **Square (1:1)**, **Classic (4:3)**, or **Vertical (3:4)**. |
-| **Sidebar Position** | Where the playlist sidebar appears relative to the player — **Left**, **Right**, **Top**, or **Bottom**. Use the visual picker to select a position. |
+| **Sidebar Position** | Where the playlist sidebar appears relative to the player: **Left**, **Right**, **Top**, or **Bottom**. Use the visual picker to select a position. |
 | **Show Playlist Header** | Display the playlist title and video count above the sidebar list. |
-| **Show Thumbnails** | Display video thumbnails in the sidebar. When off, items show as a text-only list. |
-| **Grid-Style Thumbnails** | Arrange thumbnails in a grid instead of a single vertical list. Useful when you have many videos and want a more compact sidebar. |
+| **Show Thumbnails** | Display video thumbnails in the sidebar. When off, items show as a text only list. |
+| **Grid Style Thumbnails** | Arrange thumbnails in a grid instead of a single vertical list. Useful when you have many videos and want a more compact sidebar. |
 | **Show Video Title** | Display the video title on each thumbnail in the sidebar. |
-| **Title Position** | Where the title appears — **Overlay on Thumbnail** (text overlaid on the image) or **Below Thumbnail** (text below the image). |
+| **Title Position** | Where the title appears: **Overlay on Thumbnail** (text overlaid on the image) or **Below Thumbnail** (text below the image). |
 | **Sidebar Width** | Width of the playlist sidebar as a percentage of the total area (e.g., `40`). Adjust with the slider. |
 
 ### Best for
@@ -35,17 +35,17 @@ A "Getting Started" tutorial series with five videos. The viewer sees the curren
 
 ## Grid
 
-The Grid layout shows videos as a **multi-column thumbnail grid** — ideal for video libraries and catalogs. The video player appears above the grid, and viewers click a thumbnail to load that video.
+The Grid layout shows videos as a **multi column thumbnail grid**, ideal for video libraries and catalogs. The video player appears above the grid, and viewers click a thumbnail to load that video.
 
 ### Options
 
 | Option | Description |
 |--------|-------------|
-| **Thumbnail Ratio** | Aspect ratio of the grid thumbnails — **Landscape (16:9)**, **Portrait (9:16)**, **Square (1:1)**, **Classic (4:3)**, or **Vertical (3:4)**. |
+| **Thumbnail Ratio** | Aspect ratio of the grid thumbnails: **Landscape (16:9)**, **Portrait (9:16)**, **Square (1:1)**, **Classic (4:3)**, or **Vertical (3:4)**. |
 | **Video Player Mode** | How the video player appears when a thumbnail is clicked. **Inline Player** loads the video in a player above the grid. **Modal Overlay** opens the video in a popup overlay on top of the page. |
 | **Player Above Grid** | Show the video player above the thumbnail grid. When on, clicking a thumbnail loads the video in the player area at the top. |
 | **Grid Columns** | Number of columns in the grid (e.g., `3`). Adjust with the slider. |
-| **Videos Per Page** | How many videos to show per page (e.g., `12`). Controls pagination — when you have more videos than this number, pagination appears. |
+| **Videos Per Page** | How many videos to show per page (e.g., `12`). Controls pagination: when you have more videos than this number, pagination appears. |
 | **Show Video Title** | Display the video title on each thumbnail in the grid. |
 | **Title Position** | Where the title appears — **Overlay on Thumbnail** or **Below Thumbnail**. |
 | **Enable Search** | Show a search box above the grid so viewers can find a video by title. |
@@ -64,7 +64,7 @@ When **Video Player Mode** is set to **Modal Overlay**, these additional options
 ### Best for
 
 - Large video libraries (20+ videos).
-- Browsing-oriented collections where strict sequential order does not matter.
+- Browsing oriented collections where strict sequential order does not matter.
 - Resource libraries, archives, and content catalogs.
 
 ### Example

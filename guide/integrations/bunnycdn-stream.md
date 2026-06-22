@@ -1,6 +1,6 @@
 # BunnyCDN Stream (Pro)
 
-**BunnyCDN Stream** (also called Bunny Stream) is a high-performance video streaming platform that handles video encoding, storage, and global delivery. 
+**BunnyCDN Stream** (also called Bunny Stream) is a high performance video streaming platform that handles video encoding, storage, and global delivery. 
 
 With FluentPlayer Pro, you can connect your Bunny account to manage and stream your library directly from your WordPress admin, ensuring your videos load fast for viewers anywhere in the world.
 
@@ -23,14 +23,14 @@ To start using Bunny Stream, you first need to link your account to FluentPlayer
 
  ![Configure](/guide/public/integrations/bunnycdn-stream/configure-2.webp)
 
- - Toggle the **Enable Integration** switch to the ON position.
- - Enter your **API Key** (found in your Bunny dashboard under Account → API Keys).
- - Click the **Test Connection** button to verify the integration.
- - Click **Save Settings**.
+- Toggle the **Enable Integration** switch to the ON position.
+- Enter your **API Key** (found in your Bunny dashboard under Account → API Keys).
+- Click the **Test Connection** button to verify the integration.
+- Click **Save Settings**.
 
  ![Integrate BunnyCDN](/guide/public/integrations/bunnycdn-stream/integration-03.webp)
 
-## Using Bunny Stream as a video source
+## Using Bunny Stream as a Video Source
 
 Once connected, you can easily select your Bunny videos when creating new media.
 
@@ -44,7 +44,7 @@ The player will now stream the video from Bunny's CDN when viewers watch it on y
 
 ![Bunny Stream as a video source](/guide/public/integrations/bunnycdn-stream/bunny-stream-04.webp)
 
-## Managing videos from WordPress
+## Managing Videos from WordPress
 
 
 FluentPlayer Pro allows you to handle common video management tasks without leaving your site:
@@ -54,18 +54,18 @@ FluentPlayer Pro allows you to handle common video management tasks without leav
  * **Update Metadata:** Edit video titles and descriptions from the WordPress UI.
  * **Delete Assets:** Remove videos from your Bunny account when they are no longer needed.
 
-**Related:** [Video Sources](/guide/videos-and-media/video-sources) - Choosing Bunny as a source.
+**Related:** [Video Sources](/guide/videos-and-media/video-sources): Choosing Bunny as a source.
 
 ## Bunny Stream vs Bunny Storage
 
 | | Bunny Stream | Bunny Storage |
 |---|-------------|---------------|
 | **Purpose** | Full video platform (encoding + CDN) | File storage + CDN delivery |
-| **Encoding** | Automatic (multiple qualities) | None (you upload ready-to-play files) |
-| **Best for** | Most video use cases | When you have pre-encoded files |
-| **Price** | Per-minute watched | Per-GB stored + transferred |
+| **Encoding** | Automatic (multiple qualities) | None (you upload ready to play files) |
+| **Best for** | Most video use cases | When you have pre encoded files |
+| **Price** | Per minute watched | Per GB stored + transferred |
 
-Most users should use **Bunny Stream**. Use [Bunny Storage](/guide/integrations/bunnycdn-storage) only if you already have pre-encoded files and want simple file hosting.
+Most users should use **Bunny Stream**. Use [Bunny Storage](/guide/integrations/bunnycdn-storage) only if you already have pre encoded files and want simple file hosting.
 
 Integrating BunnyCDN Stream provides a professional, scalable hosting solution that reduces server load and ensures fast video playback for users worldwide.
 

@@ -13,7 +13,7 @@ next:
 For the complete configuration walkthrough including filters and advanced options, see [**Global Settings → Email Integrations**](/guide/settings/integrations).
 :::
 
-When you use the [email capture overlay](/guide/engagement/email-capture), the emails your viewers submit need to go somewhere. That "somewhere" is an **email provider** — a service that stores those emails and lets you send newsletters, automations, or follow-ups.
+When you use the [email capture overlay](/guide/engagement/email-capture), the emails your viewers submit need to go somewhere. That "somewhere" is an **email provider**: a service that stores those emails and lets you send newsletters, automations, or follow ups.
 
 FluentPlayer supports three email providers:
 
@@ -48,7 +48,7 @@ FluentPlayer supports three email providers:
 
 1. Go to **FluentPlayer → Settings → Integrations**.
 2. Find **Mailchimp**, click **Configure**.
-3. Enter your **Mailchimp API key** — you can find this in your Mailchimp account under **Account → Extras → API Keys**.
+3. Enter your **Mailchimp API key**. You can find this in your Mailchimp account under **Account → Extras → API Keys**.
 4. Select the **audience (list)** where new subscribers should be added.
 5. Save.
 
@@ -58,7 +58,7 @@ FluentPlayer supports three email providers:
 
 ## Webhook (Pro)
 
-A **webhook** sends captured email data to any URL you specify. This is the most flexible option — connect it to any CRM, automation tool, or custom system that supports incoming webhooks.
+A **webhook** sends captured email data to any URL you specify. This is the most flexible option; connect it to any CRM, automation tool, or custom system that supports incoming webhooks.
 
 **What happens when a viewer submits their email:**
 - FluentPlayer sends an HTTP POST request to your webhook URL with the email data as the payload.
@@ -71,16 +71,16 @@ A **webhook** sends captured email data to any URL you specify. This is the most
 3. Enter your **webhook URL** (the endpoint where you want to receive data).
 4. Save.
 
-**Best for:** Users who use a CRM or automation platform that supports webhooks — such as Zapier, Make, HubSpot, ActiveCampaign, or any custom API.
+**Best for:** Users who use a CRM or automation platform that supports webhooks, such as Zapier, Make, HubSpot, ActiveCampaign, or any custom API.
 
 ![Emial Provider](/guide/public/engagement/email-providers/email-provider-3.webp)
 
 
-## Which provider should I choose?
+## Which Provider Should I Choose?
 
 | Provider | Plugin version | Best for |
 |----------|---------------|----------|
-| FluentCRM | Free | WordPress-native email marketing — no external accounts needed |
+| FluentCRM | Free | WordPress native email marketing; no external accounts needed |
 | Mailchimp | Pro | Existing Mailchimp users who want subscriber data in their audience |
 | Webhook | Pro | Any CRM or automation tool that accepts incoming webhook data |
 
@@ -88,7 +88,7 @@ A **webhook** sends captured email data to any URL you specify. This is the most
 You can attach **one or more email providers** to a single email capture configuration — each submission is delivered to every provider you add. Use one if you only need a single destination, or several to sync the same lead to multiple tools at once.
 :::
 
-## Connecting the provider to email capture
+## Connecting the Provider to Email Capture
 
 After setting up a provider under Settings, open the [email capture overlay](/guide/engagement/email-capture) configuration for your media item or preset and select the provider there. This tells FluentPlayer where to route captured emails.
 

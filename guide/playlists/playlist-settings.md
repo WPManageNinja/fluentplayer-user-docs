@@ -2,13 +2,13 @@
 
 After you choose a [playlist layout](/guide/playlists/playlist-layouts), FluentPlayer Pro lets you fine-tune how the playlist looks and behaves on the front end — colors, typography, borders, autoplay, and more. These settings apply to the playlist container and list/grid around the player, not to the inner video player controls (those follow each media item's [preset](/guide/customize/presets)).
  
-## Where to find these options
+## Where to Find These Options
  
 Edit your playlist under **FluentPlayer → Playlists**, then look at the right-hand sidebar. You will find four collapsible panels: **General Settings**, **Layout**, **Appearance**, and **Advanced**. Click any panel header to expand it. Save the playlist when you are done.
  
 ## General Settings
  
-This panel controls the top-level playback behavior of the playlist.
+This panel controls the top level playback behavior of the playlist.
  
 | Setting | What it does |
 |---------|--------------|
@@ -52,8 +52,8 @@ Control the playlist frame's colors, borders, and shadow so it matches your site
  
 A dropdown that lets you choose how the playlist accent color is handled:
  
-- **Use Global Setting** — Inherits the brand color from [Branding Settings](/guide/settings/branding).
-- **Custom** — Set a unique accent color for this playlist only.
+- **Use Global Setting:** Inherits the brand color from [Branding Settings](/guide/settings/branding).
+- **Custom:** Set a unique accent color for this playlist only.
  
 ### Border
  
@@ -74,7 +74,7 @@ Optional overrides for playlist text (titles, labels). These controls are nested
 | **Enable Custom Typography** | When on, the font settings below apply to playlist text. When off, your theme's defaults apply. |
 | **Font Size (PX)** | Size of the text in the playlist UI. |
 | **Font Weight** | How bold the text appears (e.g. *Normal (400)*, *Bold (700)*). |
-| **Line Height** | Vertical spacing between lines for multi-line titles. |
+| **Line Height** | Vertical spacing between lines for multi line titles. |
  
 ## Box Shadow
  
@@ -92,7 +92,7 @@ Add an optional shadow to give the playlist container depth. These controls are 
  
 ![Playlist Settings](/guide/public/playlists/playlist-settings/playlist-settings-3.webp)
  
-## How this fits your workflow
+## How This Fits Your Workflow
  
 1. [Create a playlist](/guide/playlists/creating-playlists) and add videos.
 2. Pick a layout (Standard or Grid) in the **Layout** panel.

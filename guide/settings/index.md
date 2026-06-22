@@ -2,7 +2,7 @@
 
 The **Settings** screen is the global control panel for FluentPlayer. All site-wide defaults — branding, storage integrations, analytics, email providers, and more — are configured here.
 
-## How to open Settings
+## How to Open Settings
 
 1. In your WordPress admin, go to **FluentPlayer** (or **FluentPlayer Pro**) in the left sidebar.
 2. Click **Settings** — either the **gear icon** in the plugin header bar, or the **Settings** item under the FluentPlayer menu in the WordPress sidebar.
@@ -10,7 +10,7 @@ The **Settings** screen is the global control panel for FluentPlayer. All site-w
 
 ![Settings](/guide/public/settings/index/settings-1.webp)
 
-## Settings sections
+## Settings Sections
 
 | Section | What it covers |
 |---------|----------------|
@@ -27,7 +27,7 @@ The **Settings** screen is the global control panel for FluentPlayer. All site-w
 Some sections (**Storage**, **Analytics → FluentPlayer Analytics**, **Export**) require **FluentPlayer Pro**. The free plugin shows fewer sections. The settings sidebar only displays sections relevant to your active license.
 :::
 
-## Settings vs per-media overrides
+## Settings vs Per Media Overrides
 
 Settings control **global defaults**. Many options can be overridden at narrower scopes:
 

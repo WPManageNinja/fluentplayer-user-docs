@@ -8,7 +8,7 @@ You can target a specific audience, apply tags, and control this per video so di
 Mailchimp integration requires **FluentPlayer Pro**. The Pro plugin depends on the free FluentPlayer plugin. Keep both active.
 :::
 
-#### How it works
+#### How It Works
 
 When a viewer submits their email through the email gate:
 
@@ -18,7 +18,7 @@ When a viewer submits their email through the email gate:
 4. If the email already exists in the audience, the record is updated no duplicates are created.
 5. Any configured tags are applied to the contact in the same step.
 
-## Step 1: Get your Mailchimp API key
+## Step 1: Get Your Mailchimp API Key
 
 1. Log in to your [Mailchimp account](https://login.mailchimp.com/).
 2. Click your profile avatar and go to **Account & Billing**.
@@ -38,7 +38,7 @@ When a viewer submits their email through the email gate:
 ![Create a Key](/guide/public/integrations/mailchimp/copy-api-key-4.webp)
 
 ::: info
-Mailchimp API keys follow the format `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-us18`. The suffix (for example, `-us18`) is your data center — the plugin uses it automatically.
+Mailchimp API keys follow the format `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-us18`. The suffix (for example, `-us18`) is your data center; the plugin uses it automatically.
 :::
 
 ## Step 2: Connect Mailchimp in FluentPlayer
@@ -50,41 +50,41 @@ Mailchimp API keys follow the format `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-us18`. Th
 ![Configure](/guide/public/integrations/mailchimp/configure-5.webp)
 
 4. Toggle (on) the **Enable Integration** option. **Paste** your API key into the **API Key** field.
-5. Click **Save Settings** the plugin will validate the key automatically.
+5. Click **Save Settings**. The plugin will validate the key automatically.
 
 If validation fails, confirm you copied the full key including the `-us18` suffix and that it has not been revoked in your Mailchimp account.
 
 ![Paste API Key](/guide/public/integrations/mailchimp/paste-api-key-6.webp)
 
 
-## Step 3: Assign Mailchimp to a video
+## Step 3: Assign Mailchimp to a Video
 
 Once your API key is saved:
 
 1. Open any media item in **FluentPlayer → Media**.
 2. Go to the **[Email Capture / Email Provider](/guide/engagement/email-capture)** settings.
 3. Select **Mailchimp** as the provider.
-4. Choose the **Mailing List** (audience) from the dropdown — it loads directly from your Mailchimp account.
-5. Optionally, add **Tags** (comma-separated).
+4. Choose the **Mailing List** (audience) from the dropdown; it loads directly from your Mailchimp account.
+5. Optionally, add **Tags** (comma separated).
 6. Save the media.
 
 ![Assign Mailchimp to a Video](/guide/public/integrations/mailchimp/assign-mailchip-7.webp)
 
 If the Mailing List dropdown is empty, return to Settings and confirm your API key is valid and saved.
 
-## Configuration fields
+## Configuration Fields
 
 | Field | Required | Description |
 |---|---|---|
 | API Key | Yes | Your Mailchimp API key. Entered once in global settings and shared across all videos. |
 | Mailing List | Yes | The Mailchimp audience to subscribe the viewer to. Set per video. |
-| Tags | No | Comma-separated tag names to apply to the subscriber (for example, `webinar, vip`). Created automatically in Mailchimp if they don't exist. |
+| Tags | No | Comma separated tag names to apply to the subscriber (for example, `webinar, vip`). Created automatically in Mailchimp if they don't exist. |
 
 ## Tags
 
 Tags allows you to segment subscribers and trigger automations based on which video they engaged with.
 
-Enter tags in the **Tags** field as a comma-separated list:
+Enter tags in the **Tags** field as a comma separated list:
 
 ```
 webinar-attendee, product-demo, q2-campaign
@@ -94,7 +94,7 @@ webinar-attendee, product-demo, q2-campaign
 - If the contact already exists, new tags are **added** existing tags are not removed.
 - Different videos can have different tags, so you can track exactly where each subscriber came from.
 
-## Subscriber and duplicate handling
+## Subscriber and Duplicate Handling
 
 FluentPlayer uses Mailchimp's **upsert** pattern when adding contacts:
 
@@ -111,9 +111,9 @@ FluentPlayer always sets the subscriber status to `subscribed`, which bypasses t
 |---|---|---|
 | API key validation fails | Incomplete or revoked key | Re-copy the full key including the `-us18` suffix |
 | Mailing List dropdown is empty | No audiences in Mailchimp, or API key has no list permissions | Log in to Mailchimp and confirm an audience exists; regenerate the API key with full permissions |
-| Contact not appearing in Mailchimp | Provider not enabled or preset not saved | Confirm Mailchimp is the selected provider and re-save the media |
+| Contact not appearing in Mailchimp | Provider not enabled or preset not saved | Confirm Mailchimp is the selected provider and re save the media |
 | Tags not applied | Tags typed incorrectly or API error | Check for special characters; enable `WP_DEBUG` and review `debug.log` |
-| Subscriber added but no tags | Tag request failed after successful subscribe | Partial success — check debug log for tag-specific error |
+| Subscriber added but no tags | Tag request failed after successful subscribe | Partial success. Check debug log for tag specific error |
 
 ## Frequently Asked Questions
 

@@ -1,20 +1,20 @@
 # Subtitles
 
-**Subtitles** (also called captions) make your videos accessible to a wider audience, including non-native speakers, viewers in noisy environments, or those with hearing impairments. FluentPlayer allows you to add and manage multiple subtitle tracks for any media item with ease.
+**Subtitles** (also called captions) make your videos accessible to a wider audience, including non native speakers, viewers in noisy environments, or those with hearing impairments. FluentPlayer allows you to add and manage multiple subtitle tracks for any media item with ease.
 
 ## Why Use Subtitles?
 
- * **Accessibility:** Meet legal requirements and follow web best practices by supporting deaf or hard-of-hearing viewers.
+ * **Accessibility:** Meet legal requirements and follow web best practices by supporting deaf or hard of hearing viewers.
  * **Higher Engagement:** Subtitled videos consistently see higher completion rates and watch time.
  * **Global Reach:** Offer translations for international viewers without needing to host separate video files.
  * **SEO Benefits:** Search engines can index your subtitle text, improving your video's discoverability.
 
-## Supported formats
+## Supported Formats
 
 FluentPlayer supports these subtitle file formats:
 
 - **WebVTT** (`.vtt`): The most common web subtitle format. Recommended.
-- **SRT** (`.srt`): A simple, widely-used subtitle format.
+- **SRT** (`.srt`): A simple, widely used subtitle format.
 
 ::: tip
 If your subtitles are in a different format, use a free online converter to save them as a `.vtt` or `.srt` file before uploading.
@@ -29,10 +29,8 @@ If your subtitles are in a different format, use a free online converter to save
     * **YouTube Subtitle Import:** For YouTube videos, you can use the **Fetch** button to automatically import existing captions from YouTube.
 
 ::: warning
-YouTube subtitle import is an admin-only feature. Ensure you have permission to use the content before importing.
+YouTube subtitle import is an admin only feature. Ensure you have permission to use the content before importing.
 :::
-
-![Subtitle](/guide/public/videos-and-media/subtitles/subtitle-1.webp)
 
 4. If prompted, set the **language** for the subtitle track (for example, English, Spanish, French).
 5. Click **Update** or **Save** to apply the changes.
@@ -70,7 +68,7 @@ YouTube subtitle import and hover-preview generation are handled by FluentPlayer
 
 You can change how captions look on screen, including font size, text color, and background color. These settings are part of the Preset or can be customized per media item in the Branding & Appearance section. See [Branding & Appearance](/guide/block-editor/branding) for details.
 
-## Example: a simple WebVTT file
+## Example: A Simple WebVTT File
 
 Here is what a basic `.vtt` subtitle file looks like:
 

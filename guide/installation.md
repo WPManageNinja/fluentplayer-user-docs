@@ -13,7 +13,7 @@ Before you install, make sure your site meets these requirements:
 In your WordPress admin, go to **Tools → Site Health → Info → Server**. You will see your PHP version listed there.
 :::
 
-## Installing the free plugin
+## Installing the Free Plugin
 
 **Option 1: From the WordPress plugin directory**
 
@@ -31,7 +31,7 @@ In your WordPress admin, go to **Tools → Site Health → Info → Server**. Yo
 
 After activation, you will see a new **FluentPlayer** menu in your WordPress admin sidebar.
 
-## Installing the Pro plugin
+## Installing the Pro Plugin
 
 If you have a FluentPlayer Pro license:
 
@@ -47,7 +47,7 @@ After activating Pro, the admin menu label changes to **FluentPlayer Pro**, and 
 The Pro plugin will not work without the free plugin. Always keep both plugins active if you are using Pro features.
 :::
 
-## After installation
+## After Installation
 
 Once FluentPlayer is active, here is what you will see:
 
@@ -59,9 +59,9 @@ Once FluentPlayer is active, here is what you will see:
   - **Settings** — Global options: default preset, branding, performance, analytics, integrations, and more.
 - Inside the FluentPlayer app, the top bar usually shows the **fluentPlayer** logo, quick switches between **Media** and **Playlists**, a **Settings** (gear) icon that opens the full settings area, and **Docs** (book icon) for help.
 
-## What to do next
+## What to Do Next
 
-You are ready to add your first video. Head to [Quick Start](/guide/quick-start) for a step-by-step walkthrough.
+You are ready to add your first video. Head to [Quick Start](/guide/quick-start) for a step by step walkthrough.
 
 ## Troubleshooting
 

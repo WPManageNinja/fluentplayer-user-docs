@@ -18,7 +18,7 @@ Adding a video (Media) is the first step toward getting your content in front of
 
 3. Give your media a **title**. This is for your reference in the admin and can also appear in the player header on the [dedicated player URL](/guide/display-embed/dedicated-player-url).
 
-**Example:** If you are adding a product demo video, you might title it "Product Demo — Getting Started."
+**Example:** If you are adding a product demo video, you might title it "Product Demo: Getting Started."
 
 ![Add title](/guide/public/videos-and-media/adding-videos/enter-title-and-url-2.webp)
 
@@ -45,7 +45,7 @@ You can update your videos at any time, and the changes will automatically refle
 3. Modify any settings, including:
    - The **Video Source** (to swap URLs or files).
    - The **Poster Image** or **Player Preset**.
-   - Player-specific settings like [controls](/guide/customize/creating-custom-presets), [behaviors](/guide/customize/behaviors), [overlays](/guide/engagement/email-capture), and more.
+   - Player specific settings like [controls](/guide/customize/creating-custom-presets), [behaviors](/guide/customize/behaviors), [overlays](/guide/engagement/email-capture), and more.
    - Interactive Layers such as email capture, CTAs, or the action bar.
 4. Click **Update** (or **Publish**) to save your changes.
 
@@ -57,7 +57,7 @@ The media editor is organized into logical sections to help you find settings qu
  * **Poster & Preset:** Control the thumbnail and the visual template of the player.
  * **Overlays:** Configure engagement tools like email capture and CTA buttons.
  * **[Timed Content (Pro)](/guide/display-embed/block#timed-content-pro):** Add text, lists, or buttons that appear below the player at specific timestamps.
- * **Advanced Settings:** Manage subtitles, multi-language tracks, and custom CSS.
+ * **Advanced Settings:** Manage subtitles, multi language tracks, and custom CSS.
 
 On the **media list** screen, use the **status filters** to narrow the list:
 
@@ -66,7 +66,7 @@ On the **media list** screen, use the **status filters** to narrow the list:
 | **All** | Every media item regardless of status. |
 | **Public** | Items published and visible according to your [visibility](/guide/videos-and-media/public-vs-private) rules. |
 | **Private** | Items restricted to authorized viewers (when your workflow uses private publishing). |
-| **Draft** | Items not yet published — good for work in progress. |
+| **Draft** | Items not yet published. Good for work in progress. |
 
 Beyond status, you can also narrow the list by:
 
@@ -82,5 +82,5 @@ Every media item has a unique **ID** (a number). You need this ID when embedding
 
 Here is how to find it:
 - In the **Media list**, the ID is shown next to each item (for example, `#42`).
-- When **editing** a media, check the URL in your browser — it usually contains something like `post=42`.
+- When **editing** a media, check the URL in your browser. It usually contains something like `post=42`.
 

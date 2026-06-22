@@ -18,36 +18,35 @@ Our built-in analytics are like having a private command center right inside you
 ![Analytics](/guide/public/settings/analytics/analytics-1.webp)
 
 4. We highly recommend toggling on **Auto Cleanup Analytics Data**. Video tracking can create a lot of data over time, and this keeps your database fast and healthy.
-5. If you enable auto-cleanup, enter a number in the **Retention (days)** box. For example, typing `30` means we will automatically delete stats that are older than a month.
+5. If you enable auto cleanup, enter a number in the **Retention (days)** box. For example, typing `30` means we will automatically delete stats that are older than a month.
 6. Click **Save Settings**.
 
 ![Analytics](/guide/public/settings/analytics/analytics-2.webp)
 
-### What exactly do we track for you?
+### What Exactly Do We Track for You?
 Once activated, we silently and securely record:
 * **Plays:** How many times a viewer clicked play.
 * **Watch time:** The total amount of hours or minutes people spent watching.
 * **Progress milestones:** We track when viewers hit the 25%, 50%, 75%, and 100% marks of your video.
-* **Top videos & users:** Easily see your most popular content and your most engaged logged-in viewers.
+* **Top videos & users:** Easily see your most popular content and your most engaged logged in viewers.
 * **Retention graphs:** A beautiful chart showing exactly where viewers lose interest and drop off.
 * **Geographic location:** See what countries your audience is watching from.
 
-> **🔍 Example:** To keep your media library as tidy as your database, FluentPlayer also runs a quiet daily background task that cleans up "auto-draft" media items you never finished creating!
+> **🔍 Example:** To keep your media library as tidy as your database, FluentPlayer also runs a quiet daily background task that cleans up "auto draft" media items you never finished creating!
 
 ## Connecting Google Analytics
 
 Do you already use Google Analytics 4 (GA4) to track your website traffic? You can send your video events straight to Google! This feature is entirely free and available to all FluentPlayer users.
 
-### Events we send to Google:
+### Events We Send to Google:
 Whenever someone watches a video, we tell Google exactly which video it is (by sending the video ID and title) and trigger an event when they:
 * Play the video.
 * Reach a Progress milestone (25%, 50%, 75%, 100%).
 * Complete the video.
 
-### How to set it up:
+## How to Set Up Google Analytics
 
-#### Option A: You already have Google Analytics on your site (Highly Recommended!)
-If your WordPress theme or another plugin is already loading Google Analytics, use this method. It prevents your website from loading heavy Google scripts twice, keeping your site blazing fast.
+Open **Fluent Player → Settings → Analytics**, then select the **Google Analytics** tab. Choose the setup path that matches how GA4 is already installed on your site.
 
 1. Navigate to **FluentPlayer -> Settings -> Analytics**.
 2. Click the **Google Analytics** tab.
@@ -55,13 +54,12 @@ If your WordPress theme or another plugin is already loading Google Analytics, u
 
 ![Analytics](/guide/public/settings/analytics/analytics-3.webp)
 
-4. Toggle on **Use existing on-page tag**.
+4. Turn on **Use existing on page tag**.
 5. Click **Save Settings**.
 
 ![Analytics](/guide/public/settings/analytics/analytics-5.webp)
 
-#### Option B: You do not have Google Analytics on your site yet
-If you want FluentPlayer to load Google Analytics for you, use this method.
+### Load GA4 through Fluent Player
 
 1. First, grab your GA4 web stream measurement ID from your Google Analytics account (under *Admin -> Data streams*). It will look something like `G-XXXXXXXXXX`.
 2. Navigate to **FluentPlayer -> Settings -> Analytics**.
@@ -72,15 +70,17 @@ If you want FluentPlayer to load Google Analytics for you, use this method.
 
 ![Analytics](/guide/public/settings/analytics/analytics-4.webp)
 
-> **⚠️ Troubleshooting:** Did you just set this up but don't see any video data in Google Analytics? Don't panic! Standard GA4 reports often take up to 24 hours to process new data. If you want to confirm it is working immediately, check the *Real-time reports* section inside your Google Analytics dashboard.
+### Troubleshooting Google Analytics data
 
-## Choosing Your Analytics Path
+Standard GA4 reports can take up to 24 hours to show new event data. To verify tracking right away, open **Reports → Realtime** in your Google Analytics dashboard and play a video on your site while watching for Fluent Player events.
 
-You might be wondering: "Which one should I use?" The good news is that you can safely run both at the same time! We recommend using our built-in analytics for detailed, day-to-day checks on specific videos, and Google Analytics to see how your videos fit into your broader marketing campaigns.
+## Built-in Analytics vs Google Analytics
 
-| Feature | Built-in Analytics (Pro) | Google Analytics (Free/Pro) |
+You can run **both** at the same time. Use built in analytics for day to day video performance inside WordPress, and Google Analytics to see how video engagement fits your wider marketing and site traffic.
+
+| Feature | Built in Analytics (Pro) | Google Analytics (Free/Pro) |
 | :--- | :--- | :--- |
-| **Where do you view the data?** | Right inside your WordPress Admin. | Over on the Google Analytics website. |
-| **Can I see per-video drop-off charts?** | Yes, absolutely! | No, not without complex custom setups. |
-| **Can I track specific logged-in users?** | Yes, you can see exactly who watched what. | Very limited (Google tracks anonymously). |
-| **Best used for...** | Deep-diving into your video content and audience. | Big-picture marketing and overall website traffic. |
+| **Where do you view the data?** | Inside your WordPress admin | In the Google Analytics dashboard |
+| **Per video drop off charts** | Yes | No, not without custom setup |
+| **Logged in user tracking** | Yes — see who watched what | Limited — mostly anonymous sessions |
+| **Best for** | Deep video and audience analysis | Marketing funnels and site wide traffic |

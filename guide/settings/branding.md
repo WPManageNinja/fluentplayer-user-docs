@@ -1,51 +1,72 @@
 # Branding Settings
 
-The Branding section controls the global visual identity of every player on your site — accent color, control bar, and logo. The screen includes a **Live Interactive Preview** on the right side so you can see changes in real time before saving.
+The **Branding** section under **Fluent Player → Settings** sets the global visual identity for every player on your site — brand color, control bar color, and logo. These defaults apply to all embeds unless a [preset](/guide/customize/presets) or per media [Branding panel](/guide/block-editor/branding) override takes priority.
+
+To open it, go to **Fluent Player → Settings** and select **Branding** from the inner settings sidebar. See [Settings Overview](/guide/settings/) for how global settings relate to presets and per media overrides.
 
 ## Live Interactive Preview
 
-When the Branding settings panel is open, a fully functional mini player is displayed on the right. Changes to brand color and control bar color are reflected immediately in the preview — no need to save first to see the effect.
+When the Branding panel is open, a fully functional mini player appears on the right side of the screen. Changes to **Brand Color** and **Control Bar Color** update in the preview immediately — you do not need to save first to see the effect.
 
-## Options
-
-### Brand color
-
-The primary accent color used throughout the player — the progress bar fill, some button highlights, and other interactive elements.
-
-**Example:** If your website's primary color is `#FF6B35` (orange), set this here so the progress bar and interactive controls match your site branding.
-
-Per-preset and per-media overrides exist for cases where a single video needs a different accent color. See [Presets](/guide/customize/presets).
-
-
-### Control bar color
-
-The background color of the bottom control bar (can be semi-transparent using an rgba value or a hex color).
-
-### Logo image
-
-Upload a logo (PNG or JPEG) that appears as a watermark overlay on the player. The UI notes the recommended minimum size — use a small, compact logo so it does not distract from the video.
-
-::: tip
-Use a PNG with a transparent background so the logo blends naturally on top of video content.
-:::
-
-### Logo link (optional)
-
-A URL that opens when a viewer clicks the logo. Leave blank if you do not want the logo to be clickable.
-
-**Example:** `https://yoursite.com`
-
-### Logo position
-
-Choose which corner the logo appears in. In the database these map to values such as **top left**, **top right**, **bottom left**, and **bottom right** (internally prefixed for the layout engine). Pick the corner that does not cover your most important video content.
-
-The logo is a **global** setting — it appears on every player across your site.
+Use the preview to confirm contrast and readability before you publish site wide branding changes.
 
 ![Branding](/guide/public/settings/branding/branding-1.webp)
 
-## Saving changes
+## Brand Color
 
-Click **Save Settings** after adjusting branding options. The Live Interactive Preview helps confirm the look before you save.
+**Brand Color** is the primary accent used across the player — progress bar fill, active control highlights, and other interactive elements.
 
-Global branding (logo, control bar color) can only be set site-wide here in Settings → Branding.
+**Example:** If your site’s primary color is `#FF6B35`, set it here so the player matches your theme.
 
+A single video can use a different accent when you override branding on the media item or in a preset. See [Presets](/guide/customize/presets) and [Branding (Block sidebar)](/guide/block-editor/branding).
+
+## Control Bar Color
+
+**Control Bar Color** sets the background of the bottom control bar. You can use a solid hex value or a semi transparent `rgba()` color so the bar sits cleanly over the video.
+
+**Example:** `rgba(0, 0, 0, 0.6)` gives a dark, translucent bar that keeps white control icons readable on bright footage.
+
+## Logo Image
+
+Upload a **Logo Image** (PNG or JPEG) to show a watermark on every player. The UI shows a recommended minimum size — keep the file small and compact so it does not distract from the video.
+
+::: tip
+Use a PNG with a transparent background so the logo blends naturally over video content.
+:::
+
+## Logo Link (Optional)
+
+**Logo Link** is the URL that opens when a viewer clicks the logo. Leave it blank if the logo should not be clickable.
+
+**Example:** `https://yoursite.com`
+
+## Logo Position
+
+**Logo Position** chooses which corner displays the logo:
+
+| Position | Best for |
+|----------|----------|
+| **Top left** | Standard watermark placement |
+| **Top right** | When titles or lower thirds sit on the left |
+| **Bottom left** | When action buttons cluster on the right |
+| **Bottom right** | Keeps the logo away from left aligned titles |
+
+Pick the corner that avoids covering the most important part of your video frame.
+
+## Global vs Per Media Branding
+
+| Setting | Set globally here | Override per video |
+|---------|-------------------|-------------------|
+| Brand color | Yes | [Branding panel](/guide/block-editor/branding) or preset |
+| Control bar color | Yes | [Branding panel](/guide/block-editor/branding) |
+| Logo image, link, position | Yes (site wide) | Per media via **Use Custom Branding** in the block editor |
+
+::: info
+Logo and control bar color configured here apply to every player by default. To brand one video differently, open the media in **Fluent Player → Media**, enable **Use Custom Branding** under the **Block** tab, and adjust that item’s logo and colors.
+:::
+
+## Saving Changes
+
+Click **Save Settings** in the top right of the Branding panel after you make changes. New page loads will use the updated branding immediately.
+
+If a specific embed still shows old colors or a different logo, open that media item and check whether **Use Custom Branding** or a preset override is active.

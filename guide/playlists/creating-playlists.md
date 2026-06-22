@@ -14,7 +14,7 @@ Make sure you have already created the media items (videos) that you want to inc
 
 1. In your WordPress admin, go to **FluentPlayer → Playlists**.
 2. Click the `Add Playlist` button to add a new playlist.
-3. Give it a descriptive **title** — for example, "WordPress Basics Course" or "Product Demo Series."
+3. Give it a descriptive **title**, for example, "WordPress Basics Course" or "Product Demo Series."
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-1.webp)
 
@@ -29,7 +29,7 @@ Make sure you have already created the media items (videos) that you want to inc
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-3.webp)
 
-**Example:** For a 5-lesson course, you would add 5 media items — one for each lesson.
+**Example:** For a 5-lesson course, you would add 5 media items, one for each lesson.
 
 ## Step 3: Order the videos
 
@@ -44,10 +44,10 @@ The order of media items in the playlist is the order viewers will see them.
 
 Select a [layout](/guide/playlists/playlist-layouts) for how the playlist appears on the front end:
 
-- **Standard** — Sidebar list with video thumbnails. Best for simple series.
-- **Grid** — Multi-column grid with optional search. Best for larger collections.
+- **Standard:** Sidebar list with video thumbnails. Best for simple series.
+- **Grid:** Multi column grid with optional search. Best for larger collections.
 
-Each layout has its own settings — see [Playlist Layouts](/guide/playlists/playlist-layouts) for details.
+Each layout has its own settings. See [Playlist Layouts](/guide/playlists/playlist-layouts) for details.
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-6.webp)
 
@@ -70,4 +70,4 @@ To change a playlist later:
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-5.webp)
 
-Changes take effect immediately — every page that embeds this playlist will show the updated version.
+Changes take effect immediately. Every page that embeds this playlist will show the updated version.

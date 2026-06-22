@@ -9,13 +9,13 @@ If your audience speaks different languages, FluentPlayer allows you to offer **
 
 Unlike subtitles, which just add text over the screen, the **Multi-Language** feature swaps the entire video file so the viewer hears the audio in their preferred language.
 
-## How it works for Viewers
+## How It Works for Viewers
 
  * **Automatic Switching:** When a person visits your site, FluentPlayer detects their browser language. If you have a matching video version, it can load that version automatically.
  * **Manual Choice:** Viewers can also use the language selector in the player controls to pick their preferred language at any time.
 
 >[!Note]
->Make sure you have already uploaded your translated videos as separate media items before trying to link them in the **Multi-Language** settings.
+> Make sure you have already uploaded your translated videos as separate media items before trying to link them in the **Multi-Language** settings.
 
 ## How to Enable Multiple Languages
 
@@ -41,13 +41,13 @@ Once the feature is enabled, you can link and manage your translated video versi
 
  ![Edit or Remove Language](/guide/public/videos-and-media/multiple-languages/edit-or-remove-3.webp)
 
-## Automatic language switching
+## Automatic Language Switching
 
 When FluentPlayer loads on the front end, it detects the viewer's browser language from their HTTP request headers. If a mapping exists for that language, the player switches to the correct video source automatically. The viewer does not need to do anything.
 
 If no mapping exists for the viewer's language, the primary video plays as usual.
 
-## Manual switching (AJAX)
+## Manual Switching (AJAX)
 
 The player can request a different language version after load using authenticated AJAX:
 
@@ -60,13 +60,13 @@ These require a valid nonce; they are primarily for the interactive language con
 Automatic switching is great for international audiences, but make sure you actually create the alternate media items and set up the mappings. Without mappings, the primary video always plays.
 :::
 
-## When to use multiple languages vs subtitles
+## When to Use Multiple Languages vs Subtitles
 
 | Approach | Best for |
 |----------|----------|
 | **Multiple languages** | Videos with voiceover or narration in different languages (different audio tracks) |
 | **[Subtitles](/guide/videos-and-media/subtitles)** | Same video with translated text overlays |
 
-You can use both at the same time for example, a Spanish-narrated video with French subtitles.
+You can use both at the same time for example, a Spanish narrated video with French subtitles.
 
 

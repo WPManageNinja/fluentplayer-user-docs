@@ -1,9 +1,9 @@
 ---
-title: "General settings (Block sidebar)"
+title: "General Settings (Block sidebar)"
 description: "Block sidebar General Settings: title, poster, aspect ratio, playback and loading options, and how they override presets and global behaviors."
 ---
 
-# General settings (Block sidebar)
+# General Settings (Block sidebar)
 
 The **General Settings** panel allows you to control the fundamental behavior and display options for your video. You can customize everything from how the video loads to its automatic playback rules.
 
@@ -16,14 +16,14 @@ To access these settings, go to **FluentPlayer → Media**, and either click **A
 ### 1. Title and Title Overlay
 
  * **Title:** Enter the internal name for your video. This is used for organization within your **Media List**.
- * **Title Overlay:** When enabled, the video title will appear in the top-left corner of the player when the video is paused or hovered over. You can use the "tag" icon to insert dynamic **[Smartcodes](/guide/integrations/smartcodes-personalization)** for personalized titles.
+ * **Title Overlay:** When enabled, the video title will appear in the top left corner of the player when the video is paused or hovered over. You can use the "tag" icon to insert dynamic **[Smartcodes](/guide/integrations/smartcodes-personalization)** for personalized titles.
 
 ### 2. Poster Image
 
 The **Poster Image** is the thumbnail viewers see before the video starts.
 
- - Click **Change** to select an image from your WordPress Media Library or upload a new one.
- - A professional poster image makes your content more inviting and improves click-through rates.
+- Click **Change** to select an image from your WordPress Media Library or upload a new one.
+- A professional poster image makes your content more inviting and improves click through rates.
 
 ### 3. Aspect Ratio
 
@@ -40,6 +40,7 @@ Control the shape of your video player to match your content.
 This determines when the video data starts loading, which can significantly impact your website's speed.
 
  * **On Play Click:** The video only loads once a user clicks play. This is the best option for page speed.
+ * **On Play Click (Skip Video In Editor):** Best for page speed and cost efficiency. The frontend loads the video only when the viewer clicks play. The backend editor shows only the poster image with no video requests made until you preview the post. Use this option if your video provider charges per request.
  * **When Scrolled Into View:** The video begins loading only when the player becomes visible on the user's screen.
  * **After Page Loads:** The video starts loading once the rest of the website content is finished.
  * **Immediately:** The video loads as soon as the page is opened. Use this sparingly as it can slow down your site.
@@ -56,11 +57,11 @@ Set the player to start automatically when the page loads.
 
 ### 6. Play Inline On Mobile
 
-When enabled, this allows the video to play directly within the webpage on mobile devices rather than forcing it into a full-screen system player.
+When enabled, this allows the video to play directly within the webpage on mobile devices rather than forcing it into a full screen system player.
 
 ### 7. Remember Playback Position
 
-This user-friendly feature allows viewers to resume the video exactly where they left off if they return to the page later.
+This user friendly feature allows viewers to resume the video exactly where they left off if they return to the page later.
 
 ### 8. Video End Screen
 
@@ -71,4 +72,4 @@ Decide what viewers see once the video finishes playing.
 
 ![Video End Screen](/guide/public/block-editor/general-settings/video-end-screen-3.webp)
 
-The **General Settings** panel provides the essential building blocks for your video player. By carefully choosing your **Load Strategy** and **Autoplay** rules, you can create a high-performance viewing experience that doesn't sacrifice your website's loading speed.
+The **General Settings** panel provides the essential building blocks for your video player. By carefully choosing your **Load Strategy** and **Autoplay** rules, you can create a high performance viewing experience that doesn't sacrifice your website's loading speed.

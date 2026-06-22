@@ -19,14 +19,14 @@ Engagement overlays (email capture, CTA, action bar, email providers) have moved
 
 FluentPlayer uses a **two-level system**:
 
-1. **Presets** — Reusable player templates that define the skin, controls, and behaviors. Think of a preset as a "profile" for how the player looks and acts. Any video assigned to a preset inherits its settings.
+1. **Presets:** Reusable player templates that define the skin, controls, and behaviors. Think of a preset as a "profile" for how the player looks and acts. Any video assigned to a preset inherits its settings.
 
-2. **Per-media overrides** — When editing a specific media item, you can override any preset setting for that video only. For example, you might use the **Modern** preset everywhere but disable autoplay for one particular tutorial.
+2. **Per media overrides:** When editing a specific media item, you can override any preset setting for that video only. For example, you might use the **Modern** preset everywhere but disable autoplay for one particular tutorial.
 
 **The priority order:**
 
 ```
-Per-media overrides → Preset settings → Global defaults (Settings)
+Per media overrides → Preset settings → Global defaults (Settings)
 ```
 
 ## Where to find customization settings
@@ -42,7 +42,7 @@ Per-media overrides → Preset settings → Global defaults (Settings)
 
 | Topic | What it controls |
 |-------|-----------------|
-| [Presets](/guide/customize/presets) | Reusable player configurations — seven built-in presets plus custom ones (Pro) |
+| [Presets](/guide/customize/presets) | Reusable player configurations: seven built in presets plus custom ones (Pro) |
 | [Creating Custom Presets (Pro)](/guide/customize/creating-custom-presets) | Create your own presets with custom skins, controls, behaviors, and engagement overlays |
 | [Player Behaviors](/guide/customize/behaviors) | Autoplay, muted start, resume position, and what happens when the video ends |
 | [Branding & Appearance](/guide/block-editor/branding) | Subtitle text styling, brand color, and site logo on the player (see also [Settings → Branding](/guide/settings/branding)) |

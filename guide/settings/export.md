@@ -31,7 +31,7 @@ When you run an export, FluentPlayer pulls the raw submission data stored direct
 
 ## How to Export Your List
 
-Downloading your lead data is a simple three-step process:
+Downloading your lead data is a simple three step process:
 
 **Go to Export:** Navigate to the Export section within the FluentPlayer Settings.
 **Choose Your Format:** Select your preferred file type using the toggle buttons:
@@ -45,8 +45,12 @@ Downloading your lead data is a simple three-step process:
 
 ## Tips
 
-- If you are using **FluentCRM**, **Mailchimp**, or **Webhook** as your email provider, captured emails are already synced there in real time. Export is useful as a local backup or for bulk imports elsewhere.
-- Export downloads a snapshot at the time you click. Run it periodically if you want ongoing backups.
-- There is no date range filter on the Export screen — the download includes all stored submissions.
+::: tip
+**When to export:** If you use **FluentCRM**, **Mailchimp**, or a **Webhook** provider, leads still sync to that service automatically. Export is best for a local backup, audits, or moving data into another tool in bulk.
+
+**Snapshot only:** Each download reflects submissions stored at the moment you click **Export Email List**. Schedule exports regularly if you want an ongoing archive.
+
+**No date filter:** The Export screen does not filter by date range. Every stored submission in WordPress is included in the file.
+:::
 
 

@@ -8,7 +8,7 @@ description: "Add the FluentPlayer Gutenberg block, pick video sources (YouTube,
 The Gutenberg Block is the easiest way to add videos if you prefer a visual, drag-and-drop experience.
 If you use the WordPress block editor (Gutenberg), you can add FluentPlayer using the **FluentPlayer Media** block. The inserter lists it as **FluentPlayer** / **FluentPlayer Media** (registered name: `fluent-player/media`).
 
-## How to add the block
+## How to Add the Block
 
 You can add a video to any post or page by following these steps:
 
@@ -36,7 +36,7 @@ When you insert a new block, you can choose from several high-performance source
  * **YouTube / Vimeo:** Simply paste a link from these platforms.
  * **Bunny Stream / Storage (Pro):** Connect to your Bunny.net account for fast global delivery.
  * **Mux / Mux Live (Pro):** Use Mux for professional streaming and live broadcasts.
- * **Audio:** Use this for podcasts or voice-only files.
+ * **Audio:** Use this for podcasts or voice only files.
 
 Availability depends on your plan and **Settings → Storage** integrations.
 
@@ -49,9 +49,9 @@ Availability depends on your plan and **Settings → Storage** integrations.
 
 In both cases, configuration uses the same **right sidebar** (**Media** and **Block** tabs).
 
-## Deep Dive: Every Block sidebar panel
+## Deep Dive: Every Block Sidebar Panel
 
-When the block is selected, a **Block** tab will appear in the right-hand sidebar. This is where you can fine-tune every part of your player. For each panel (Branding, General settings, Preset, Chapters, overlays, layers, timed content, multi-language, subtitles, timestamp links, Advanced) lives here:
+When the block is selected, a **Block** tab will appear in the right hand sidebar. This is where you can fine tune every part of your player. For each panel (Branding, General settings, Preset, Chapters, overlays, layers, timed content, multi language, subtitles, timestamp links, Advanced) lives here:
 
 **[FluentPlayer Block & Media Editor](/guide/block-editor/)**
 
@@ -63,15 +63,18 @@ To use it:
 
 1. Click the **(+)** button in the block editor and search for "**FluentPlayer Playlist**" or "**playlist**".
 2. Select the block and pick your playlist from the dropdown (or enter the playlist ID).
-3. Publish or update — the playlist renders on the front end with whichever layout (Standard, Grid, etc.) you configured.
+
+![Select playlist](/guide/public/display-embed/block/select-palylist-6.webp)
+
+3. **Publish** or **Update** the playlist renders on the front end with whichever layout (Standard, Grid, etc.) you configured.
 
 ::: info Pro feature
 The Playlist block requires **FluentPlayer Pro**.
 :::
 
-For full details on creating playlists, choosing layouts, and embedding options, see the **[Playlists documentation](/guide/playlists/)**.
+For full details on creating playlists, choosing layouts, and embedding options, see the **[Playlists documentation](/guide/playlists/creating-playlists)**.
 
-## Block vs shortcode
+## Block vs Shortcode
 
 | | Block | Shortcode |
 |---|-------|-----------|

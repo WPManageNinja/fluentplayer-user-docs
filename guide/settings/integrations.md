@@ -3,10 +3,10 @@
 The Integrations section manages **email and lead capture providers**. When viewers submit their email through a [FluentPlayer email capture overlay](/guide/engagement/email-capture), the data is routed to whichever provider you configure here.
 
 ::: info Note
-Video storage providers (Mux, BunnyCDN) are configured under [**Settings → Storage**](/guide/settings/storage) — not here. This section is for **email / CRM integrations only**.
+Video storage providers (Mux, BunnyCDN) are configured under [**Settings → Storage**](/guide/settings/storage), not here. This section is for **email / CRM integrations only**.
 :::
 
-## Browsing integrations
+## Browsing Integrations
 
 Navigating your available integrations is simple. You can use the search bar on the right or filter the list using the tabs at the top of the screen:
 
@@ -20,12 +20,12 @@ Each integration card displays a brief description, a status badge (Enabled or D
 
 ## FluentCRM
 
-FluentCRM is a powerful, WordPress-native CRM and email marketing plugin. Because it runs directly on your own WordPress site, integrating it with FluentPlayer requires absolutely no external API keys—it connects seamlessly!
+FluentCRM is a powerful, WordPress native CRM and email marketing plugin. Because it runs directly on your own WordPress site, integrating it with FluentPlayer requires absolutely no external API keys; it connects seamlessly.
 
 **What happens when a viewer submits their email:**
 * A contact is instantly created (or updated) within FluentCRM.
 * The contact is added to your specified lists or tags.
-* Your pre-built email sequences, newsletters, or automations trigger automatically inside FluentCRM.
+* Your pre built email sequences, newsletters, or automations trigger automatically inside FluentCRM.
 
 **How to set it up:**
 1. Ensure you have the FluentCRM plugin installed and activated on your WordPress site.
@@ -49,7 +49,7 @@ FluentCRM is a powerful, WordPress-native CRM and email marketing plugin. Becaus
 
 ## Webhook (Pro)
 
-A webhook sends your captured email data as an HTTP POST request to any URL you specify. This is your most flexible, powerful option, allowing you to route lead data to virtually any modern CRM, automation platform, or custom-built system.
+A webhook sends your captured email data as an HTTP POST request to any URL you specify. This is your most flexible, powerful option, allowing you to route lead data to virtually any modern CRM, automation platform, or custom built system.
 
 **What happens when a viewer submits their email:**
 * FluentPlayer instantly sends a POST request to your specified webhook URL.
@@ -58,23 +58,22 @@ A webhook sends your captured email data as an HTTP POST request to any URL you 
 **How to set it up:**
 1. Navigate to **FluentPlayer -> Settings -> Integrations**.
 2. Locate the Webhook card and click **Configure**.
-3. Enter your Webhook URL—this is the exact endpoint address that should receive the data.
+3. Enter your Webhook URL, which is the exact endpoint address that should receive the data.
 4. Click **Save** to activate the integration.
 
 > **🔍 Example:** Webhooks are perfect for connecting your video lead generation to automation tools like Zapier, Make (Integromat), n8n, HubSpot, or ActiveCampaign.
 
----
 
-## Which provider should I use?
+## Which Provider Should I Use?
 
 | Provider | Plugin version | Best for |
 |----------|---------------|----------|
-| FluentCRM | Free | WordPress-native email marketing |
+| FluentCRM | Free | WordPress native email marketing |
 | Mailchimp | Pro | Existing Mailchimp users |
 | Webhook | Pro | Any CRM or automation tool with webhook support |
 
 You can have multiple providers configured (each with Enabled/Disabled toggles), and each email capture overlay can route to **one or more selected providers** — every submission is sent to each provider you attach.
 
-## Connecting a provider to email capture
+## Connecting a Provider to Email Capture
 
 After setting up a provider here, make sure to select it in the [Email Capture Overlay](/guide/engagement/email-capture) settings (on the preset or per media). The capture overlay and the provider are configured separately.

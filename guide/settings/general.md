@@ -1,38 +1,38 @@
 # General Settings
 
-The General section controls site-wide defaults that apply to every player unless overridden by a preset or a per-media setting.
+The **General** section under **Fluent Player → Settings** sets site wide defaults for every player on your site. Use it to choose the default preset and aspect ratio, enable resume playback, and add global custom CSS or JavaScript. These values apply everywhere unless a [preset](/guide/customize/presets) or a per media setting overrides them.
 
-## Options
+To open it, go to **Fluent Player → Settings** and select **General** from the inner settings sidebar. See [Settings Overview](/guide/settings/) for how global settings relate to presets and per media overrides.
 
-### Default preset
+## Default Preset
 
-A visual grid displays all available presets. The selected preset has a checkmark and a highlighted border. This becomes the default appearance for every new media item on your site.
-
-Available built-in presets:
+The preset grid shows every available player skin. The selected preset has a checkmark and a highlighted border. That choice becomes the default look and behavior for new media items that do not pick a different preset.
 
 | Preset | Character |
 |--------|-----------|
-| **Default** | Balanced layout, standard controls |
-| **Modern** | Rounded corners, floating controls |
-| **Simple** | Minimal UI, clean and distraction-free |
-| **Standard** | Classic bar layout |
+| **Default** | Balanced layout with standard controls |
+| **Modern** | Rounded corners and floating controls |
+| **Simple** | Minimal UI, clean and distraction free |
+| **Standard** | Classic control bar layout |
 | **Floating** | Control bar floats over the video |
-| **Minimal** | Bare-bones controls |
-| **Ambient** | Background loops — muted autoplay, hidden controls, tuned for ambient video use |
+| **Minimal** | Bare bones controls |
+| **Ambient** | Muted autoplay, hidden controls, loop on end — tuned for background video |
 
 ![General Settings](/guide/public/settings/general/general-settings-1.webp)
 
 ::: tip
-Changing the default preset does **not** affect media items that already have an explicit preset assigned. It only applies to new media or media with no preset override.
+Changing the default preset does **not** update media that already has an explicit preset assigned. It applies to new media and to items with no preset override.
 :::
 
+You can create additional skins with [custom presets](/guide/customize/creating-custom-presets) (Pro) and set one of those as the site default here.
 
-### Default aspect ratio
+## Default Aspect Ratio
 
-A dropdown that sets the aspect ratio for all players (for example **Original**, **16:9**, **4:3**). Individual media items or blocks can override this.
+Use the **Default Aspect Ratio** dropdown to set how players size themselves site wide. Common options include **Original**, **16:9**, and **4:3**.
 
+Individual media items and block embeds can override this under **Block** tab → **General Settings** when a specific video needs a different ratio.
 
-### Auto resume playback
+## Auto Resume Playback
 
 **Checkbox:** Enable Auto Resume Playback — *"Let your users resume watching from where they left off."*
 
@@ -40,14 +40,23 @@ When this global toggle is on, FluentPlayer Pro stores playback position in the 
 
 ![General Settings](/guide/public/settings/general/general-settings-2.webp)
 
+Resume playback works at three levels. All relevant toggles should be on for a given embed:
+
+| Level | Where to enable |
+|-------|-----------------|
+| **Global** | **Settings → General** → **Enable Auto Resume Playback** |
+| **Preset** | **Save play position** in the preset’s [behaviors](/guide/customize/behaviors) |
+| **Per embed** | **Block** tab → **General Settings** → **Remember Playback Position** |
+
 ::: info
-This is the **global** toggle. The corresponding per-embed control in the block sidebar (**Block** tab → **General Settings**) is labeled **Remember Playback Position**. Both need to be enabled for resume to work on a specific embed.
+The global toggle in Settings and the per embed **Remember Playback Position** control work together. Enable both (plus the preset behavior when you use presets) so resume works as expected on a specific video.
 :::
 
 ::: tip
-Position is stored in the viewer's browser. Switching devices or clearing browser data will reset it.
+Playback position is stored in the viewer’s browser. It does not carry over to another device or browser, and clearing site data will reset it.
 :::
 
+## Custom CSS
 
 
 ### Custom CSS
@@ -60,19 +69,22 @@ A text area for global CSS that applies to every FluentPlayer instance on your s
 }
 ```
 
-Use this for minor tweaks not covered by presets (for example, adjusting progress bar height or tooltip colors). For larger style changes, consider creating or editing a [preset](/guide/customize/presets) instead.
+Use this for small tweaks that presets do not cover — for example, progress bar height or tooltip colors. For larger visual changes, edit or create a [preset](/guide/customize/presets) instead of relying on global CSS alone.
 
+If the player looks broken after a theme update, check for CSS conflicts here and in your theme before changing other settings. See [Common Issues & Fixes](/guide/troubleshooting/) for troubleshooting tips.
 
-### Custom JavaScript
+## Custom JavaScript
 
 A **Custom JS** field (code editor) lets you add site-wide JavaScript that runs in the context of FluentPlayer on your pages. Use it only when you need small scripted behaviors that the UI does not expose — and **test thoroughly** on staging first.
 
 ![General Settings](/guide/public/settings/general/general-settings-3.webp)
 
 ::: warning
-Custom JavaScript can affect performance and security. Avoid pasting untrusted code. Prefer [presets](/guide/customize/presets), [behaviors](/guide/customize/behaviors), and built-in integrations before relying on global JS.
+Custom JavaScript can affect performance and security. Do not paste untrusted code. Prefer [presets](/guide/customize/presets), [behaviors](/guide/customize/behaviors), and built in integrations before adding global JS. Test on staging before deploying to production.
 :::
 
-## Saving changes
+## Saving Changes
 
-Click **Save Settings** (top right of the General panel) after making changes. Settings take effect immediately for new page loads.
+Click **Save Settings** in the top right of the General panel after you make changes. New page loads will use the updated defaults immediately.
+
+Per media and block overrides still take priority. If a video does not reflect a global change, open that media item and confirm it is not overriding the setting at the preset or block level.

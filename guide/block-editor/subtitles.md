@@ -1,6 +1,6 @@
 ---
 title: "Subtitles (Block sidebar)"
-description: "Upload VTT or SRT captions in the Block sidebar, manage multiple tracks, and pair subtitles with multi-language where applicable."
+description: "Upload VTT or SRT captions in the Block sidebar, manage multiple tracks, and pair subtitles with multi language where applicable."
 ---
 
 # Subtitles (Block sidebar)
@@ -24,7 +24,7 @@ Captions embedded in HLS streams play in both versions. **Uploading your own `.v
 
 Follow these steps to upload a caption track to your video:
 
-1. Select the **FluentPlayer** block and navigate to the **Block** tab in the right-hand sidebar.
+1. Select the **FluentPlayer** block and navigate to the **Block** tab in the right hand sidebar.
 2. Expand the **Subtitles** panel.
 3. Click the **Subtitles** button (with the upload icon) to open your **WordPress Media Library**.
 4. **Upload or Select:** Drag and drop your **.vtt** or **.srt** subtitle file, or select one you have already uploaded.
