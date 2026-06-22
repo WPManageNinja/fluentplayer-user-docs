@@ -1,8 +1,8 @@
 # General Settings
 
-The **General** section under **Fluent Player → Settings** sets site wide defaults for every player on your site. Use it to choose the default preset and aspect ratio, enable resume playback, and add global custom CSS or JavaScript. These values apply everywhere unless a [preset](/guide/customize/presets) or a per media setting overrides them.
+The **General** section under **Fluent Player → Settings** sets site wide defaults for every player on your site. Use it to choose the default preset and aspect ratio, enable resume playback, and add global custom CSS or JavaScript. These values apply everywhere unless a [preset](/presets) or a per media setting overrides them.
 
-To open it, go to **Fluent Player → Settings** and select **General** from the inner settings sidebar. See [Settings Overview](/guide/settings/) for how global settings relate to presets and per media overrides.
+To open it, go to **Fluent Player → Settings** and select **General** from the inner settings sidebar. See [Settings Overview](/settings) for how global settings relate to presets and per media overrides.
 
 ## Default Preset
 
@@ -24,7 +24,7 @@ The preset grid shows every available player skin. The selected preset has a che
 Changing the default preset does **not** update media that already has an explicit preset assigned. It applies to new media and to items with no preset override.
 :::
 
-You can create additional skins with [custom presets](/guide/customize/creating-custom-presets) (Pro) and set one of those as the site default here.
+You can create additional skins with [custom presets](/creating-custom-presets) (Pro) and set one of those as the site default here.
 
 ## Default Aspect Ratio
 
@@ -45,7 +45,7 @@ Resume playback works at three levels. All relevant toggles should be on for a g
 | Level | Where to enable |
 |-------|-----------------|
 | **Global** | **Settings → General** → **Enable Auto Resume Playback** |
-| **Preset** | **Save play position** in the preset’s [behaviors](/guide/customize/behaviors) |
+| **Preset** | **Save play position** in the preset’s [behaviors](/behaviors) |
 | **Per embed** | **Block** tab → **General Settings** → **Remember Playback Position** |
 
 ::: info
@@ -69,9 +69,9 @@ A text area for global CSS that applies to every FluentPlayer instance on your s
 }
 ```
 
-Use this for small tweaks that presets do not cover — for example, progress bar height or tooltip colors. For larger visual changes, edit or create a [preset](/guide/customize/presets) instead of relying on global CSS alone.
+Use this for small tweaks that presets do not cover — for example, progress bar height or tooltip colors. For larger visual changes, edit or create a [preset](/presets) instead of relying on global CSS alone.
 
-If the player looks broken after a theme update, check for CSS conflicts here and in your theme before changing other settings. See [Common Issues & Fixes](/guide/troubleshooting/) for troubleshooting tips.
+If the player looks broken after a theme update, check for CSS conflicts here and in your theme before changing other settings. See [Common Issues & Fixes](/troubleshooting) for troubleshooting tips.
 
 ## Custom JavaScript
 
@@ -80,7 +80,7 @@ A **Custom JS** field (code editor) lets you add site-wide JavaScript that runs 
 ![General Settings](/guide/public/settings/general/general-settings-3.webp)
 
 ::: warning
-Custom JavaScript can affect performance and security. Do not paste untrusted code. Prefer [presets](/guide/customize/presets), [behaviors](/guide/customize/behaviors), and built in integrations before adding global JS. Test on staging before deploying to production.
+Custom JavaScript can affect performance and security. Do not paste untrusted code. Prefer [presets](/presets), [behaviors](/behaviors), and built in integrations before adding global JS. Test on staging before deploying to production.
 :::
 
 ## Saving Changes

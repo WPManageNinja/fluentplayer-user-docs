@@ -7,7 +7,7 @@ All storage integrations require **FluentPlayer Pro**.
 :::
 
 ::: info Note
-Email and CRM providers (FluentCRM, Mailchimp, Webhook) are configured under [**Settings → Integrations**](/guide/settings/integrations), not here.
+Email and CRM providers (FluentCRM, Mailchimp, Webhook) are configured under [**Settings → Integrations**](/email-integrations), not here.
 :::
 
 ## Browsing Storage Providers
@@ -49,7 +49,7 @@ After connecting:
 4. Select the **video** you want to use.
 5. Save the media.
 
-**Related:** [BunnyCDN Stream integration guide](/guide/integrations/bunnycdn-stream) for advanced options.
+**Related:** [BunnyCDN Stream integration guide](/bunnycdn-stream) for advanced options.
 
 ## BunnyCDN Storage
 
@@ -78,7 +78,7 @@ After connecting:
 3. Browse or select the **video file** in your storage zone.
 4. Save the media.
 
-**Related:** [BunnyCDN Storage integration guide](/guide/integrations/bunnycdn-storage) for file management options.
+**Related:** [BunnyCDN Storage integration guide](/bunnycdn-storage) for file management options.
 
 ## Mux
 
@@ -116,4 +116,4 @@ After connecting:
 3. Select an existing Mux asset or enter the playback ID.
 4. Save the media.
 
-**Related:** [Mux integration guide](/guide/integrations/mux) for live streaming, signed URLs, and advanced API details.
+**Related:** [Mux integration guide](/mux) for live streaming, signed URLs, and advanced API details.

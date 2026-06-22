@@ -11,10 +11,10 @@ Once you have created your video in **FluentPlayer**, you need to display it on 
 
 | Method | Best for | Difficulty |
 |--------|----------|-----------|
-| **[Shortcode](/guide/display-embed/shortcode)** | Any post, page, or widget. Works with both Classic and Block editors. | Beginner |
-| **[Gutenberg Block](/guide/display-embed/block)** | Block editor users who prefer a visual, drag and drop workflow. | Beginner |
-| **[Dedicated Player URL](/guide/display-embed/dedicated-player-url)** | Sharing a direct link to the video (in emails, social media, etc.). | Beginner |
-| **[Timestamp Links](/guide/display-embed/timestamp-links)** | Creating "chapter" links that jump to a specific moment in the video. | Intermediate |
+| **[Shortcode](/shortcode)** | Any post, page, or widget. Works with both Classic and Block editors. | Beginner |
+| **[Gutenberg Block](/block)** | Block editor users who prefer a visual, drag and drop workflow. | Beginner |
+| **[Dedicated Player URL](/dedicated-player-url)** | Sharing a direct link to the video (in emails, social media, etc.). | Beginner |
+| **[Timestamp Links](/timestamp-links)** | Creating "chapter" links that jump to a specific moment in the video. | Intermediate |
 
 Most users will use either the **shortcode** or the **block**. Both produce the same result on the front end the choice comes down to personal preference.
 

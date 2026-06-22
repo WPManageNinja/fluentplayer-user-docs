@@ -125,7 +125,7 @@ Once connected, you can use Mux assets anywhere on your site:
 
 You can use **both**:
 
-- **[Built-in Analytics](/guide/integrations/analytics):** Viewership inside WordPress (plays, retention, top videos, locations, and more).
+- **[Built-in Analytics](/built-in-analytics):** Viewership inside WordPress (plays, retention, top videos, locations, and more).
 - **Mux Data** (optional): Enter the **Mux Data environment key** in the integration for Mux’s own quality and delivery analytics.
 
 ## Troubleshooting

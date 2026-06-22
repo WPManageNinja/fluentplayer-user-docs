@@ -5,7 +5,7 @@ description: "Learn how FluentPlayer public and private visibility affects the d
 
 # Public vs Private Visibility
 
-Each FluentPlayer media item has a visibility setting that specifically controls access to its [dedicated player URL](/guide/display-embed/dedicated-player-url). This setting is independent of how you embed videos into your standard WordPress posts and pages.
+Each FluentPlayer media item has a visibility setting that specifically controls access to its [dedicated player URL](/dedicated-player-url). This setting is independent of how you embed videos into your standard WordPress posts and pages.
 
 ## Embeds and the Dedicated Player URL
 

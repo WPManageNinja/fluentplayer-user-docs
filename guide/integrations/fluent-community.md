@@ -6,7 +6,7 @@ The **FluentPlayer** integration allows you to transform your FluentCommunity po
 
 - **FluentPlayer Pro** installed and activated.
 - **FluentCommunity** installed and your portal/community configured.
-- Media items created in **FluentPlayer → Media** (or connected sources such as [Mux](/guide/integrations/mux) or [Bunny Stream](/guide/integrations/bunnycdn-stream)).
+- Media items created in **FluentPlayer → Media** (or connected sources such as [Mux](/mux) or [Bunny Stream](/bunnycdn-stream)).
 
 ## Core Integration Features
 
@@ -38,7 +38,7 @@ In the Player Settings slide in panel, you can fine tune how videos look and act
  * **Select Player Skin:** Choose from layouts like **Modern, Classic, Simple, Floating, or Minimal**.
  * **Set Brand Color:** Define a primary hex color for the progress bar and active controls.
  * **Toggle Controls:** Enable or disable specific buttons like **Volume**, **Fullscreen**, **Picture** in Picture, or the **Captions** Toggle.
- * **Set [Behaviors](/guide/customize/behaviors):** **Configure Muted Autoplay** for feed environments or **Save Play Position** so members can resume videos exactly where they left off.
+ * **Set [Behaviors](/behaviors):** **Configure Muted Autoplay** for feed environments or **Save Play Position** so members can resume videos exactly where they left off.
 
 ### 3. Managing Video Uploads & Embeds
 
@@ -117,10 +117,10 @@ Use the right hand sidebar under the **Lesson** tab to manage specific lesson de
 Besides single videos, you can embed an entire **FluentPlayer playlist** inside FluentCommunity lessons and portal content using the **FluentPlayer Playlist** block:
 
 1. In the lesson editor, click **(+)** and search for **FluentPlayer Playlist**.
-2. Select an existing playlist (or a [tag-based playlist](/guide/playlists/tag-based-playlists)).
-3. Configure the [layout and appearance](/guide/playlists/playlist-layouts) as you would anywhere else.
+2. Select an existing playlist (or a [tag-based playlist](/tag-based-playlists)).
+3. Configure the [layout and appearance](/playlist-layouts) as you would anywhere else.
 
-This is ideal for course modules where a lesson should present a sequence of videos rather than a single clip. See the [Playlists documentation](/guide/playlists/) for creating and styling playlists.
+This is ideal for course modules where a lesson should present a sequence of videos rather than a single clip. See the [Playlists documentation](/playlists) for creating and styling playlists.
 
 By combining advanced playback controls with direct community uploads and lesson-specific features like document attachments, FluentPlayer provides a seamless, distraction-free environment for both social interaction and professional learning.
 

@@ -52,7 +52,7 @@ The settings in the editor are organized into collapsible sections to help you c
 
 ## Overrides vs Global Settings
 
-Many options **override** [global Settings](/guide/settings/) or [presets](/guide/customize/presets) for this media or this embed only. Typical priority:
+Many options **override** [global Settings](/settings) or [presets](/presets) for this media or this embed only. Typical priority:
 
 **Per block / per media → preset → global Settings**
 

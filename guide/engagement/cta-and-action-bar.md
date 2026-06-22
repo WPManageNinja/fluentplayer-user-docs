@@ -1,10 +1,10 @@
 ---
 prev:
   text: 'Email Capture Overlay'
-  link: '/guide/engagement/email-capture'
+  link: '/email-capture'
 next:
   text: 'Email Providers'
-  link: '/guide/engagement/email-providers'
+  link: '/email-providers'
 ---
 
 # CTA (Call to Action) Overlay

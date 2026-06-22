@@ -16,7 +16,7 @@ FluentPlayer ships with **seven** built-in presets. Each has a **slug** (used in
 
 - **Skin:** Classic  
 - **Controls:** Full set: backward/forward, play, progress, time, volume, playback speed, fullscreen, PIP, center play, captions, **chapters**.  
-- **Settings menu:** Off (speed is available as its own control; **quality** appears as its own control for HLS when applicable; see [Creating Custom Presets](/guide/customize/creating-custom-presets)).  
+- **Settings menu:** Off (speed is available as its own control; **quality** appears as its own control for HLS when applicable; see [Creating Custom Presets](/creating-custom-presets)).  
 - **Best for:** General purpose videos where viewers need every control, including chapters.
 
 ![Presets](/guide/public/customize/presets/preset-1.webp)
@@ -25,7 +25,7 @@ FluentPlayer ships with **seven** built-in presets. Each has a **slug** (used in
 
 - **Skin:** Modern  
 - **Controls:** Full bar with **settings** menu; playback speed is folded into settings (not a duplicate control).  
-- **Behaviors:** **Save play position** is enabled in the default preset data (together with [resume playback](/guide/customize/behaviors) at the site level when using Pro).  
+- **Behaviors:** **Save play position** is enabled in the default preset data (together with [resume playback](/behaviors) at the site level when using Pro).  
 - **Best for:** Courses, polished marketing pages. This is the **default preset for new installs** (`course`).
 
 ![Presets](/guide/public/customize/presets/preset-2.webp)

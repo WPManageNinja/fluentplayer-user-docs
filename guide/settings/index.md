@@ -14,14 +14,14 @@ The **Settings** screen is the global control panel for FluentPlayer. All site-w
 
 | Section | What it covers |
 |---------|----------------|
-| [**General**](/guide/settings/general) | Default preset, aspect ratio, auto resume playback, custom CSS, custom JS |
-| [**Performance**](/guide/settings/performance) | Dynamic JS loading, AJAX progress — tuning how player scripts load for page speed |
-| [**Branding**](/guide/settings/branding) | Brand color, control bar color, logo image, logo link, logo position, logo width — with a **Live Interactive Preview** |
-| [**Integrations**](/guide/settings/integrations) | Email/lead capture providers: FluentCRM, Webhook, Mailchimp |
-| [**Storage**](/guide/settings/storage) | Video hosting connections: BunnyCDN Stream, BunnyCDN Storage, Mux |
-| [**YouTube**](/guide/settings/youtube) | Privacy-enhanced mode, Subscribe button for YouTube sources |
-| [**Analytics**](/guide/settings/analytics) | Built-in FluentPlayer Analytics and Google Analytics (two separate tabs) |
-| [**Export**](/guide/settings/export) | Download captured email submissions as CSV, JSON, or ODS |
+| [**General**](/general) | Default preset, aspect ratio, auto resume playback, custom CSS, custom JS |
+| [**Performance**](/performance) | Dynamic JS loading, AJAX progress — tuning how player scripts load for page speed |
+| [**Branding**](/branding) | Brand color, control bar color, logo image, logo link, logo position, logo width — with a **Live Interactive Preview** |
+| [**Integrations**](/email-integrations) | Email/lead capture providers: FluentCRM, Webhook, Mailchimp |
+| [**Storage**](/storage) | Video hosting connections: BunnyCDN Stream, BunnyCDN Storage, Mux |
+| [**YouTube**](/youtube) | Privacy-enhanced mode, Subscribe button for YouTube sources |
+| [**Analytics**](/analytics) | Built-in FluentPlayer Analytics and Google Analytics (two separate tabs) |
+| [**Export**](/export) | Download captured email submissions as CSV, JSON, or ODS |
 
 ::: info Pro vs Free
 Some sections (**Storage**, **Analytics → FluentPlayer Analytics**, **Export**) require **FluentPlayer Pro**. The free plugin shows fewer sections. The settings sidebar only displays sections relevant to your active license.

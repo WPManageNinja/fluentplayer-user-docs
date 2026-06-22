@@ -53,7 +53,7 @@ In both cases, configuration uses the same **right sidebar** (**Media** and **Bl
 
 When the block is selected, a **Block** tab will appear in the right hand sidebar. This is where you can fine tune every part of your player. For each panel (Branding, General settings, Preset, Chapters, overlays, layers, timed content, multi language, subtitles, timestamp links, Advanced) lives here:
 
-**[FluentPlayer Block & Media Editor](/guide/block-editor/)**
+**[FluentPlayer Block & Media Editor](/block-editor)**
 
 ## Playlist Block
 
@@ -72,14 +72,14 @@ To use it:
 The Playlist block requires **FluentPlayer Pro**.
 :::
 
-For full details on creating playlists, choosing layouts, and embedding options, see the **[Playlists documentation](/guide/playlists/creating-playlists)**.
+For full details on creating playlists, choosing layouts, and embedding options, see the **[Playlists documentation](/creating-playlists)**.
 
 ## Block vs Shortcode
 
 | | Block | Shortcode |
 |---|-------|-----------|
 | Editor | Block editor (or dedicated media screen) | Anywhere shortcodes run |
-| Configuration | Full **Block** sidebar; see [block & media editor](/guide/block-editor/) | Typically `id` only; options live on the media |
+| Configuration | Full **Block** sidebar; see [block & media editor](/block-editor) | Typically `id` only; options live on the media |
 
-For shortcodes, see [Embed with Shortcode](/guide/display-embed/shortcode).
+For shortcodes, see [Embed with Shortcode](/shortcode).
 

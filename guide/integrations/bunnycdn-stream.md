@@ -54,7 +54,7 @@ FluentPlayer Pro allows you to handle common video management tasks without leav
  * **Update Metadata:** Edit video titles and descriptions from the WordPress UI.
  * **Delete Assets:** Remove videos from your Bunny account when they are no longer needed.
 
-**Related:** [Video Sources](/guide/videos-and-media/video-sources): Choosing Bunny as a source.
+**Related:** [Video Sources](/video-sources): Choosing Bunny as a source.
 
 ## Bunny Stream vs Bunny Storage
 
@@ -65,7 +65,7 @@ FluentPlayer Pro allows you to handle common video management tasks without leav
 | **Best for** | Most video use cases | When you have pre encoded files |
 | **Price** | Per minute watched | Per GB stored + transferred |
 
-Most users should use **Bunny Stream**. Use [Bunny Storage](/guide/integrations/bunnycdn-storage) only if you already have pre encoded files and want simple file hosting.
+Most users should use **Bunny Stream**. Use [Bunny Storage](/bunnycdn-storage) only if you already have pre encoded files and want simple file hosting.
 
 Integrating BunnyCDN Stream provides a professional, scalable hosting solution that reduces server load and ensures fast video playback for users worldwide.
 

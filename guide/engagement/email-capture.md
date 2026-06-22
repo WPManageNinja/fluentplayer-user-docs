@@ -1,10 +1,10 @@
 ---
 prev:
   text: 'Engagement & Conversion'
-  link: '/guide/engagement/'
+  link: '/engagement'
 next:
   text: 'CTA and Action Bar'
-  link: '/guide/engagement/cta-and-action-bar'
+  link: '/cta-and-action-bar'
 ---
 
 # Email Capture Overlay
@@ -66,7 +66,7 @@ You can add multiple providers to a single Email Capture layer if needed. Fluent
 * **Mailchimp:** Sends subscribers to a Mailchimp audience.
 * **Webhook:** Posts email data to any URL (for Zapier, Make, HubSpot, and similar tools).
 
-See [Email Providers](/guide/engagement/email-providers) for the full setup guide.
+See [Email Providers](/email-providers) for the full setup guide.
 
 ## Content
 
@@ -132,5 +132,5 @@ You have a free tutorial and want to gently ask for emails without forcing it:
 * **Button Text:** "Subscribe"
 
 ::: tip Developer note
-Submissions are handled via the `fluent_player_email_submit` AJAX action (works for both guests and logged in users). Developers can hook `fluent_player/email_collection_hooks` or use the `fluent_player/pre_process_email_submit` filter. See the [documentation home](/guide/) for related guides; for custom code, refer to the plugin’s developer hooks in the source or your IDE.
+Submissions are handled via the `fluent_player_email_submit` AJAX action (works for both guests and logged in users). Developers can hook `fluent_player/email_collection_hooks` or use the `fluent_player/pre_process_email_submit` filter. See the [documentation home](/introduction) for related guides; for custom code, refer to the plugin’s developer hooks in the source or your IDE.
 :::

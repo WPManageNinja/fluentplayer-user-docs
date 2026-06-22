@@ -79,6 +79,6 @@ Custom presets appear in the same grid and can be chosen for any media item.
 ## How Preset Interacts with Other Panels
 
 - **Preset** sets the **baseline** for skins, controls, and many style related options.
-- **[General settings](/guide/block-editor/general-settings)**, **[Branding](/guide/block-editor/branding)**, and other Block panels **override** specific parts of the preset when you change them here.
+- **[General settings](/general-settings)**, **[Branding](/branding-appearance)**, and other Block panels **override** specific parts of the preset when you change them here.
 
 

@@ -8,7 +8,7 @@ Creating playlists requires **FluentPlayer Pro**.
 
 ## Before you start
 
-Make sure you have already created the media items (videos) that you want to include. Each video should be set up under **FluentPlayer → Media**. See [Adding and Editing Videos](/guide/videos-and-media/adding-videos) if you have not done this yet.
+Make sure you have already created the media items (videos) that you want to include. Each video should be set up under **FluentPlayer → Media**. See [Adding and Editing Videos](/adding-videos) if you have not done this yet.
 
 ## Step 1: Create a new playlist
 
@@ -42,12 +42,12 @@ The order of media items in the playlist is the order viewers will see them.
 
 ## Step 4: Choose a layout
 
-Select a [layout](/guide/playlists/playlist-layouts) for how the playlist appears on the front end:
+Select a [layout](/playlist-layouts) for how the playlist appears on the front end:
 
 - **Standard:** Sidebar list with video thumbnails. Best for simple series.
 - **Grid:** Multi column grid with optional search. Best for larger collections.
 
-Each layout has its own settings. See [Playlist Layouts](/guide/playlists/playlist-layouts) for details.
+Each layout has its own settings. See [Playlist Layouts](/playlist-layouts) for details.
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-6.webp)
 

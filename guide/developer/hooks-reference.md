@@ -15,7 +15,7 @@ Hook names and signatures can change between releases. Test customizations on st
 
 | Filter | Purpose |
 |--------|---------|
-| `fluent_player/dynamic_source_overrides` | Filter the resolved source overrides (URL, provider, poster) for a [dynamic shortcode](/guide/display-embed/shortcode#dynamic-media-source-advanced). |
+| `fluent_player/dynamic_source_overrides` | Filter the resolved source overrides (URL, provider, poster) for a [dynamic shortcode](/shortcode#dynamic-media-source-advanced). |
 | `fluent_player/dynamic_source_post_id` | Change which post a `meta_key` source is read from (defaults to the current post). |
 
 ## Email capture & providers
@@ -39,7 +39,7 @@ The front-end submission is handled by the `fluent_player_email_submit` AJAX act
 | `fluent_player_switch_language` | Return the mapped media payload for a requested language (requires the `fluent_player_frontend` nonce). |
 | `fluent_player_get_media` | Fetch a media record by `media_id` (same nonce). |
 
-See [Multiple Languages](/guide/videos-and-media/multiple-languages) for how these power the in-player language switcher.
+See [Multiple Languages](/multiple-languages) for how these power the in-player language switcher.
 
 ## Finding more hooks
 
@@ -51,4 +51,4 @@ grep -rn "apply_filters( 'fluent_player" .
 grep -rn "do_action( 'fluent_player" .
 ```
 
-If you build something reusable on top of these hooks, consider sharing it with the team via [Support](/guide/support).
+If you build something reusable on top of these hooks, consider sharing it with the team via [Support](/support).

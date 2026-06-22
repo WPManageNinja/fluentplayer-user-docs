@@ -117,7 +117,7 @@ You can pre configure an **email capture overlay** directly inside the preset. W
 | **Button Color** | Background and text color of the submit button |
 | **Border Radius (PX)** | Roundness of the button corners (e.g., `4`) |
 
-See [Email Capture Overlay](/guide/engagement/email-capture) for a deeper look at how email capture works.
+See [Email Capture Overlay](/email-capture) for a deeper look at how email capture works.
 
 ![Custom Preset](/guide/public/customize/custom-preset/custom-preset-7.webp)
 
@@ -134,7 +134,7 @@ The **Call To Action** section lets you pre configure a CTA overlay that pauses 
 | **Completion Type** | What counts as "completing" the overlay; for example, **Link Click** means the viewer must click a link or button |
 | **Allow Skipping** | Let viewers skip the CTA without clicking |
 
-See [CTA Overlay](/guide/engagement/cta-and-action-bar) for more details on how the CTA overlay works.
+See [CTA Overlay](/cta-and-action-bar) for more details on how the CTA overlay works.
 
 ![Custom Preset](/guide/public/customize/custom-preset/custom-preset-8.webp)
 

@@ -5,7 +5,7 @@ description: "Every FluentPlayer playlist has its own standalone URL for sharing
 
 # Dedicated Playlist URL (Pro)
 
-Just like a single media item has a [dedicated player URL](/guide/display-embed/dedicated-player-url), every **playlist** has its own standalone page. This is handy when you want to share a whole series or course with a single link instead of embedding it inside a post.
+Just like a single media item has a [dedicated player URL](/dedicated-player-url), every **playlist** has its own standalone page. This is handy when you want to share a whole series or course with a single link instead of embedding it inside a post.
 
 ::: info Pro feature
 Playlists (and their dedicated URLs) require **FluentPlayer Pro**.
@@ -27,18 +27,18 @@ https://yoursite.com/fluent-playlist/playlist-10/
 
 ## What the page shows
 
-The dedicated playlist page renders the playlist on its own — the player plus the list or grid of videos, in whichever [layout](/guide/playlists/playlist-layouts) and [appearance](/guide/playlists/playlist-settings) you configured — without your surrounding site content.
+The dedicated playlist page renders the playlist on its own — the player plus the list or grid of videos, in whichever [layout](/playlist-layouts) and [appearance](/playlist-settings) you configured — without your surrounding site content.
 
 ## Who can access it
 
-Access follows the playlist's **visibility** setting, the same way [media visibility](/guide/videos-and-media/public-vs-private) works:
+Access follows the playlist's **visibility** setting, the same way [media visibility](/public-vs-private) works:
 
 - **Public** — Anyone with the link can open and watch the playlist.
 - **Private** — Only WordPress users who can edit the playlist (such as administrators and editors) can view it; everyone else gets a 404.
 
 ## When to use it vs embedding
 
-| | Dedicated playlist URL | Embedded ([shortcode / block](/guide/playlists/embed-playlist)) |
+| | Dedicated playlist URL | Embedded ([shortcode / block](/embed-playlist)) |
 |---|---|---|
 | Layout | Standalone page (just the playlist) | Inside your regular page theme |
 | Best for | Sharing a course/series by link | Showing a playlist within your site content |
@@ -46,4 +46,4 @@ Access follows the playlist's **visibility** setting, the same way [media visibi
 
 <!-- TODO: add screenshot of a dedicated playlist page — guide/public/playlists/dedicated-playlist-url/ -->
 
-To embed a playlist inside a page instead, see [Embed a Playlist](/guide/playlists/embed-playlist).
+To embed a playlist inside a page instead, see [Embed a Playlist](/embed-playlist).

@@ -11,42 +11,42 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/
+      link: /introduction
 features:
   - icon: 🚀
     title: Getting Started
     details: Learn the basics and embed your first video in minutes.
-    link: /guide/
+    link: /introduction
     linkText: Get Started 
   - icon: 🎬
     title: Videos & Media
     details: Add videos, subtitles, multiple languages, and control visibility.
-    link: /guide/videos-and-media/
+    link: /videos-and-media
     linkText: Learn More 
   - icon: 📺
     title: Display & Embed
     details: Use shortcodes, Gutenberg blocks, dedicated URLs, and timestamp links.
-    link: /guide/display-embed/
+    link: /display-embed
     linkText: Explore 
   - icon: 🎨
     title: Customize the Player
     details: Presets, skins, controls, email capture, CTA overlays, and branding.
-    link: /guide/customize/
+    link: /customize
     linkText: Customize 
   - icon: 📋
     title: Playlists (Pro)
     details: Group videos into playlists with Standard, Learning, or Grid layouts.
-    link: /guide/playlists/
+    link: /playlists
     linkText: Create Playlists 
   - icon: 🔌
     title: Integrations & Analytics
     details: Mux, BunnyCDN, built-in analytics, and Google Analytics.
-    link: /guide/integrations/
+    link: /integrations
     linkText: Explore 
   - icon: ⚙️
     title: Global Settings
     details: Branding, performance, storage, analytics, and export from one place.
-    link: /guide/settings/
+    link: /settings
     linkText: Open Settings
 ---
 

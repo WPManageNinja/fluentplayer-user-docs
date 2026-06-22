@@ -65,7 +65,7 @@ Automatic switching is great for international audiences, but make sure you actu
 | Approach | Best for |
 |----------|----------|
 | **Multiple languages** | Videos with voiceover or narration in different languages (different audio tracks) |
-| **[Subtitles](/guide/videos-and-media/subtitles)** | Same video with translated text overlays |
+| **[Subtitles](/subtitles)** | Same video with translated text overlays |
 
 You can use both at the same time for example, a Spanish narrated video with French subtitles.
 

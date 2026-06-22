@@ -1,19 +1,19 @@
 ---
 prev:
   text: 'CTA and Action Bar'
-  link: '/guide/engagement/cta-and-action-bar'
+  link: '/cta-and-action-bar'
 next:
   text: 'Player Customization'
-  link: '/guide/customize/'
+  link: '/customize'
 ---
 
 # Email Providers
 
 ::: tip Full setup walkthrough
-For the complete configuration walkthrough including filters and advanced options, see [**Global Settings → Email Integrations**](/guide/settings/integrations).
+For the complete configuration walkthrough including filters and advanced options, see [**Global Settings → Email Integrations**](/email-integrations).
 :::
 
-When you use the [email capture overlay](/guide/engagement/email-capture), the emails your viewers submit need to go somewhere. That "somewhere" is an **email provider**: a service that stores those emails and lets you send newsletters, automations, or follow ups.
+When you use the [email capture overlay](/email-capture), the emails your viewers submit need to go somewhere. That "somewhere" is an **email provider**: a service that stores those emails and lets you send newsletters, automations, or follow ups.
 
 FluentPlayer supports three email providers:
 
@@ -90,6 +90,6 @@ You can attach **one or more email providers** to a single email capture configu
 
 ## Connecting the Provider to Email Capture
 
-After setting up a provider under Settings, open the [email capture overlay](/guide/engagement/email-capture) configuration for your media item or preset and select the provider there. This tells FluentPlayer where to route captured emails.
+After setting up a provider under Settings, open the [email capture overlay](/email-capture) configuration for your media item or preset and select the provider there. This tells FluentPlayer where to route captured emails.
 
 

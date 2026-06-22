@@ -75,15 +75,23 @@ Every `guide/<section>/` folder contains an `index.md` (the section overview/lan
 
 ### Sidebar and navigation
 
-- **`guideGroups`** in `config.mts` is the single source of truth for all navigation. It is bound to **both** the `/` and `/guide/` sidebar keys so they stay in sync.
+- **`guideGroups`** in `config.mts` is the single source of truth for all navigation. It is bound to the `/` sidebar key (every page is served from the site root).
 - **Adding a new page requires adding its link to `guideGroups`** — VitePress does not auto-generate the sidebar from the filesystem. A page not listed there is reachable by URL but invisible in navigation.
 - The top `nav` (Home, Website, Changelog, Support) and the 404 page text are also defined in `config.mts`.
+
+### Flat URL structure (rewrites)
+
+- **Files keep their `guide/<section>/` folders on disk, but every page is served from the site root.** This is done with the `rewrites` map in `config.mts` (e.g. `guide/block-editor/general-settings.md` → `/general-settings`).
+- Section landing pages (`guide/<section>/index.md`) map to their section name (e.g. `/block-editor`); `guide/index.md` maps to `/introduction`.
+- A few slugs are disambiguated to avoid collisions: `block-editor/branding` → `/branding-appearance`, `settings/integrations` → `/email-integrations`, `block-editor/subtitles` → `/block-subtitles`, `block-editor/timestamp-links` → `/block-timestamp-links`, `integrations/analytics` → `/built-in-analytics`.
+- **Adding a new page also requires adding a `rewrites` entry** mapping its source path to its flat `<slug>.md`. Keep slugs globally unique.
+- Image assets under `guide/public/...` are **not** affected by `rewrites` (those paths only remap pages); keep referencing screenshots with the full `/guide/public/...` path.
 
 ### Base path
 
 - Resolved dynamically by `resolveBase()` in `config.mts`. Defaults to `/`; reads the `VITEPRESS_BASE` env var, otherwise auto-detects GitHub Pages project sites from `GITHUB_ACTIONS` + `GITHUB_REPOSITORY`.
 - Internal asset references that need the prefix use the resolved `base` constant (e.g. the favicon in `head`).
-- **In Markdown, always use root-relative links** (`/guide/...`) — VitePress applies the base prefix automatically at build time.
+- **In Markdown, always use root-relative links to the flat slug** (e.g. `/general-settings`, `/block-editor`) — VitePress applies the base prefix automatically at build time. Do not use the old `/guide/<section>/...` form.
 
 ### Custom theme behaviors
 
@@ -112,9 +120,9 @@ Follow these to stay consistent with existing pages.
 
 ### Links and anchors
 
-- Cross-references use root-relative paths, e.g. `/guide/videos-and-media/subtitles`.
-- Anchors target generated heading slugs, e.g. `/guide/display-embed/block#timed-content-pro`.
-- Do **not** use relative paths (`../subtitles`) — they are fragile with `cleanUrls: true`.
+- Cross-references use root-relative flat slugs, e.g. `/subtitles` (not `/guide/videos-and-media/subtitles`).
+- Anchors target generated heading slugs, e.g. `/block#timed-content-pro`.
+- Do **not** use relative paths (`../subtitles`) or the old `/guide/<section>/...` form — both are fragile with `cleanUrls: true` and the flat `rewrites`.
 
 ### Images and assets
 
@@ -135,8 +143,9 @@ Follow these to stay consistent with existing pages.
 ## Checklist: adding a new doc page
 
 1. Create the Markdown file under `guide/` (e.g. `guide/section/new-feature.md`).
-2. Add its entry to `guideGroups` in `.vitepress/config.mts`.
-3. If it is a section landing page, name it `index.md` and place it first in its group.
-4. Put any screenshots in `guide/public/section/new-feature/` and reference them via `/guide/public/...`.
-5. Label any Pro-only features with **(Pro)** in the heading and the sidebar entry.
-6. Run `npm run docs:build` to verify no broken links before committing.
+2. Add a `rewrites` entry in `.vitepress/config.mts` mapping the source path to a globally-unique flat slug (e.g. `'guide/section/new-feature.md': 'new-feature.md'` → `/new-feature`).
+3. Add its entry to `guideGroups` in `.vitepress/config.mts` using the flat link (e.g. `link: '/new-feature'`).
+4. If it is a section landing page, name it `index.md`, map it to the section slug (e.g. `'guide/section/index.md': 'section.md'`), and place it first in its group.
+5. Put any screenshots in `guide/public/section/new-feature/` and reference them via `/guide/public/...` (image paths are not rewritten).
+6. Label any Pro-only features with **(Pro)** in the heading and the sidebar entry.
+7. Run `npm run docs:build` to verify no broken links before committing.

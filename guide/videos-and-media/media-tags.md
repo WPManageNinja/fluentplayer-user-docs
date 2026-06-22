@@ -5,7 +5,7 @@ description: "Organize your FluentPlayer media library with tags, then filter th
 
 # Media Tags (Pro)
 
-**Media tags** let you organize your video library with simple labels — like `tutorial`, `webinar`, or `product-demo` — so you can group related videos, filter your media list, and build [tag-based playlists](/guide/playlists/tag-based-playlists) that update automatically.
+**Media tags** let you organize your video library with simple labels — like `tutorial`, `webinar`, or `product-demo` — so you can group related videos, filter your media list, and build [tag-based playlists](/tag-based-playlists) that update automatically.
 
 ::: info Pro feature
 Media tags require **FluentPlayer Pro**.
@@ -15,7 +15,7 @@ Media tags require **FluentPlayer Pro**.
 
 - **Find videos fast** — Filter a large media library down to a single topic.
 - **Group without moving** — A video can carry several tags at once, so it can belong to many groups.
-- **Power dynamic playlists** — A [tag-based playlist](/guide/playlists/tag-based-playlists) shows every video that shares a tag, and new videos with that tag appear automatically.
+- **Power dynamic playlists** — A [tag-based playlist](/tag-based-playlists) shows every video that shares a tag, and new videos with that tag appear automatically.
 
 ## Tagging a media item
 
@@ -50,4 +50,4 @@ The **FluentPlayer → Media** list shows a **Tags** column so you can see each 
 
 ## Next: build a playlist from a tag
 
-Once your media is tagged, you can create a playlist that pulls in every video with a given tag automatically. See [Tag-Based Playlists](/guide/playlists/tag-based-playlists).
+Once your media is tagged, you can create a playlist that pulls in every video with a given tag automatically. See [Tag-Based Playlists](/tag-based-playlists).

@@ -8,7 +8,7 @@ Webhook integration requires **FluentPlayer Pro**.
 
 ## How It Works
 
-Webhook integration connects your [email capture overlay](/guide/engagement/email-capture) to any external system that accepts HTTP requests. You configure endpoints once in WordPress, then choose which endpoint each video should use.
+Webhook integration connects your [email capture overlay](/email-capture) to any external system that accepts HTTP requests. You configure endpoints once in WordPress, then choose which endpoint each video should use.
 
 - **FluentPlayer (free)** installed and active.
 - **FluentPlayer Pro** installed and active.
@@ -76,7 +76,7 @@ See [What your endpoint receives](#what-your-endpoint-receives) above for typica
 Global webhook setup and per video routing are configured separately.
 
 1. Open a media item under **Fluent Player → Media** (or the preset that should use the webhook).
-2. Go to **[Email Capture / Email Provider](/guide/engagement/email-capture)** settings.
+2. Go to **[Email Capture / Email Provider](/email-capture)** settings.
 3. Select **Webhook** as the provider.
 4. Choose the endpoint from **Select Webhook**.
 5. Save the media item or preset.

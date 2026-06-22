@@ -15,7 +15,7 @@ Email capture, storage, and export all work in the **free** FluentPlayer plugin 
 
 <!-- TODO: confirm whether the Export *settings screen* is surfaced only on Pro in the admin UI. The underlying export-emails REST route ships in the FREE plugin (app/Http/Routes/api.php). -->
 
-The Export section lets you download the email addresses (and any other data) collected through [FluentPlayer's email capture overlays](/guide/engagement/email-capture) as a file.
+The Export section lets you download the email addresses (and any other data) collected through [FluentPlayer's email capture overlays](/email-capture) as a file.
 
 ## What Data is Exported?
 

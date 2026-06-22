@@ -30,7 +30,7 @@ Paste a YouTube video URL. FluentPlayer will use the YouTube embed player with y
 https://www.youtube.com/watch?v=Dc1hCvKk8WQ&t
 ```
 
-FluentPlayer offers YouTube-specific options in [Settings](/guide/settings/):
+FluentPlayer offers YouTube-specific options in [Settings](/settings):
 
  * **Privacy mode**: Uses YouTube's privacy enhanced mode so cookies are not set until the viewer clicks play.
  * **Subscribe button**: Optionally shows a YouTube subscribe button on the player.
@@ -63,7 +63,7 @@ When a stream is configured as **Live**, the player shows a **LIVE** badge in th
 
 **Best for:** Teams that want Mux Video API workflows, adaptive streaming, or live streaming from Mux.
 
-See the full guide: [Mux (Pro)](/guide/integrations/mux).
+See the full guide: [Mux (Pro)](/mux).
 
 ![Mux](/guide/public/videos-and-media/video-sources/mux-4.webp)
 
@@ -81,8 +81,8 @@ When available, use the same **FluentPlayer → Media** workflow as video; the p
 
 With FluentPlayer Pro, you can connect to **Bunny CDN** for professional video hosting. There are two options:
 
- * **BunnyCDN Stream**: Use Bunny's video streaming platform. You manage libraries and videos on Bunny, then select them in FluentPlayer. See [BunnyCDN Stream](/guide/integrations/bunnycdn-stream).
- * **BunnyCDN Storage**: Use Bunny's storage zones to host video files. Upload and manage files directly from WordPress. See [BunnyCDN Storage](/guide/integrations/bunnycdn-storage).
+ * **BunnyCDN Stream**: Use Bunny's video streaming platform. You manage libraries and videos on Bunny, then select them in FluentPlayer. See [BunnyCDN Stream](/bunnycdn-stream).
+ * **BunnyCDN Storage**: Use Bunny's storage zones to host video files. Upload and manage files directly from WordPress. See [BunnyCDN Storage](/bunnycdn-storage).
 
 **Best for:** Sites with lots of videos, high traffic sites, or when you need fast, reliable CDN delivery worldwide.
 

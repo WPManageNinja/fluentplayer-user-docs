@@ -41,7 +41,7 @@ If you have a FluentPlayer Pro license:
 4. Upload the Pro zip file and click **Install Now**.
 5. Click **Activate**.
 
-After activating Pro, the admin menu label changes to **FluentPlayer Pro**, and additional features like [Playlists](/guide/playlists/), [Mux](/guide/integrations/mux), [BunnyCDN](/guide/integrations/bunnycdn-stream), [timed content](/guide/display-embed/block#timed-content-pro) in the media block, and [Analytics](/guide/integrations/analytics) become available.
+After activating Pro, the admin menu label changes to **FluentPlayer Pro**, and additional features like [Playlists](/playlists), [Mux](/mux), [BunnyCDN](/bunnycdn-stream), [timed content](/block#timed-content-pro) in the media block, and [Analytics](/built-in-analytics) become available.
 
 ::: warning Important
 The Pro plugin will not work without the free plugin. Always keep both plugins active if you are using Pro features.
@@ -61,7 +61,7 @@ Once FluentPlayer is active, here is what you will see:
 
 ## What to Do Next
 
-You are ready to add your first video. Head to [Quick Start](/guide/quick-start) for a step by step walkthrough.
+You are ready to add your first video. Head to [Quick Start](/quick-start) for a step by step walkthrough.
 
 ## Troubleshooting
 

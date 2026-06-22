@@ -62,7 +62,7 @@ If validation fails, confirm you copied the full key including the `-us18` suffi
 Once your API key is saved:
 
 1. Open any media item in **FluentPlayer → Media**.
-2. Go to the **[Email Capture / Email Provider](/guide/engagement/email-capture)** settings.
+2. Go to the **[Email Capture / Email Provider](/email-capture)** settings.
 3. Select **Mailchimp** as the provider.
 4. Choose the **Mailing List** (audience) from the dropdown; it loads directly from your Mailchimp account.
 5. Optionally, add **Tags** (comma separated).

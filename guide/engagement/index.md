@@ -1,10 +1,10 @@
 ---
 prev:
   text: 'Interactive Layers'
-  link: '/guide/block-editor/interactive-layers'
+  link: '/interactive-layers'
 next:
   text: 'Email Capture Overlay'
-  link: '/guide/engagement/email-capture'
+  link: '/email-capture'
 ---
 
 # Engagement & Conversion
@@ -15,9 +15,9 @@ FluentPlayer includes a set of overlay tools designed to turn passive viewers in
 
 | Feature | What it does |
 |---------|-------------|
-| [Email Capture Overlay](/guide/engagement/email-capture) | Pause the video at a set point and ask the viewer for their email address before they can continue watching |
-| [CTA and Action Bar](/guide/engagement/cta-and-action-bar) | Show a call to action popup or a slim message bar at any point during playback |
-| [Email Providers](/guide/engagement/email-providers) | Connect FluentCRM, Mailchimp, or a custom webhook to receive captured emails |
+| [Email Capture Overlay](/email-capture) | Pause the video at a set point and ask the viewer for their email address before they can continue watching |
+| [CTA and Action Bar](/cta-and-action-bar) | Show a call to action popup or a slim message bar at any point during playback |
+| [Email Providers](/email-providers) | Connect FluentCRM, Mailchimp, or a custom webhook to receive captured emails |
 
 ## How Engagement Features Work
 

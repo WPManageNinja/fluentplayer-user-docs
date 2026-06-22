@@ -1,9 +1,9 @@
 # Integrations Settings
 
-The Integrations section manages **email and lead capture providers**. When viewers submit their email through a [FluentPlayer email capture overlay](/guide/engagement/email-capture), the data is routed to whichever provider you configure here.
+The Integrations section manages **email and lead capture providers**. When viewers submit their email through a [FluentPlayer email capture overlay](/email-capture), the data is routed to whichever provider you configure here.
 
 ::: info Note
-Video storage providers (Mux, BunnyCDN) are configured under [**Settings → Storage**](/guide/settings/storage), not here. This section is for **email / CRM integrations only**.
+Video storage providers (Mux, BunnyCDN) are configured under [**Settings → Storage**](/storage), not here. This section is for **email / CRM integrations only**.
 :::
 
 ## Browsing Integrations
@@ -76,4 +76,4 @@ You can have multiple providers configured (each with Enabled/Disabled toggles),
 
 ## Connecting a Provider to Email Capture
 
-After setting up a provider here, make sure to select it in the [Email Capture Overlay](/guide/engagement/email-capture) settings (on the preset or per media). The capture overlay and the provider are configured separately.
+After setting up a provider here, make sure to select it in the [Email Capture Overlay](/email-capture) settings (on the preset or per media). The capture overlay and the provider are configured separately.

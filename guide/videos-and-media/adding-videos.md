@@ -16,18 +16,18 @@ Adding a video (Media) is the first step toward getting your content in front of
 
 ![Add Media](/guide/public/videos-and-media/adding-videos/add-media-1.webp)
 
-3. Give your media a **title**. This is for your reference in the admin and can also appear in the player header on the [dedicated player URL](/guide/display-embed/dedicated-player-url).
+3. Give your media a **title**. This is for your reference in the admin and can also appear in the player header on the [dedicated player URL](/dedicated-player-url).
 
 **Example:** If you are adding a product demo video, you might title it "Product Demo: Getting Started."
 
 ![Add title](/guide/public/videos-and-media/adding-videos/enter-title-and-url-2.webp)
 
-4. Set the **video source**. This is the URL or file that the player will load. See [Video Sources](/guide/videos-and-media/video-sources) for all the options.
+4. Set the **video source**. This is the URL or file that the player will load. See [Video Sources](/video-sources) for all the options.
 
 ![Set Video Source](/guide/public/videos-and-media/adding-videos/add-video-source-3.webp)
 
 5. Optionally, add a **poster image**. This is the thumbnail that viewers see before they click play. A good poster makes your video look more professional and inviting.
-6. Choose a **preset** that controls the player's look and controls. See [Presets](/guide/customize/presets) for details.
+6. Choose a **preset** that controls the player's look and controls. See [Presets](/presets) for details.
 7. Click **Publish** to make it live, or **Save as Draft** to come back later.
 
 ::: tip
@@ -45,7 +45,7 @@ You can update your videos at any time, and the changes will automatically refle
 3. Modify any settings, including:
    - The **Video Source** (to swap URLs or files).
    - The **Poster Image** or **Player Preset**.
-   - Player specific settings like [controls](/guide/customize/creating-custom-presets), [behaviors](/guide/customize/behaviors), [overlays](/guide/engagement/email-capture), and more.
+   - Player specific settings like [controls](/creating-custom-presets), [behaviors](/behaviors), [overlays](/email-capture), and more.
    - Interactive Layers such as email capture, CTAs, or the action bar.
 4. Click **Update** (or **Publish**) to save your changes.
 
@@ -53,10 +53,10 @@ You can update your videos at any time, and the changes will automatically refle
 
 The media editor is organized into logical sections to help you find settings quickly:
 
- * **Source Section:** Manage the video URL or professional hosting connections like [Mux or Bunny](/guide/videos-and-media/video-sources).
+ * **Source Section:** Manage the video URL or professional hosting connections like [Mux or Bunny](/video-sources).
  * **Poster & Preset:** Control the thumbnail and the visual template of the player.
  * **Overlays:** Configure engagement tools like email capture and CTA buttons.
- * **[Timed Content (Pro)](/guide/display-embed/block#timed-content-pro):** Add text, lists, or buttons that appear below the player at specific timestamps.
+ * **[Timed Content (Pro)](/block#timed-content-pro):** Add text, lists, or buttons that appear below the player at specific timestamps.
  * **Advanced Settings:** Manage subtitles, multi language tracks, and custom CSS.
 
 On the **media list** screen, use the **status filters** to narrow the list:
@@ -64,7 +64,7 @@ On the **media list** screen, use the **status filters** to narrow the list:
 | Filter | What it shows |
 |--------|----------------|
 | **All** | Every media item regardless of status. |
-| **Public** | Items published and visible according to your [visibility](/guide/videos-and-media/public-vs-private) rules. |
+| **Public** | Items published and visible according to your [visibility](/public-vs-private) rules. |
 | **Private** | Items restricted to authorized viewers (when your workflow uses private publishing). |
 | **Draft** | Items not yet published. Good for work in progress. |
 
@@ -72,7 +72,7 @@ Beyond status, you can also narrow the list by:
 
 - **Provider** — the video source type (WordPress, YouTube, Vimeo, Mux, Bunny Stream, Bunny Storage).
 - **Media type** — **audio** or **video**.
-- **Tag** — any [media tag](/guide/videos-and-media/media-tags) you have assigned (Pro).
+- **Tag** — any [media tag](/media-tags) you have assigned (Pro).
 
 Search still works across titles and IDs as supported by your version.
 

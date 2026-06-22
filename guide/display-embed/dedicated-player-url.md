@@ -38,7 +38,7 @@ This makes it ideal for sharing or embedding in iframes.
 
 ## Who Can Access the URL?
 
-This depends on the [visibility setting](/guide/videos-and-media/public-vs-private):
+This depends on the [visibility setting](/public-vs-private):
 
 - **Public media**: Anyone with the link can watch the video.
 - **Private media**: Only WordPress users who can edit the post (like admins or editors) can view it. Everyone else sees a 404 error.

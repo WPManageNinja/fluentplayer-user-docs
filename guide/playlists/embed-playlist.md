@@ -1,6 +1,6 @@
 # Embed a Playlist
 
-Once you have [created a playlist](/guide/playlists/creating-playlists), you can show it on any post or page using a **shortcode** or a **Gutenberg block**. The process is very similar to [embedding a single video](/guide/display-embed/shortcode).
+Once you have [created a playlist](/creating-playlists), you can show it on any post or page using a **shortcode** or a **Gutenberg block**. The process is very similar to [embedding a single video](/shortcode).
 
 ::: info Pro feature
 Embedding playlists requires **FluentPlayer Pro**.
@@ -54,7 +54,7 @@ The block shows a preview in the editor and renders the same output as the short
 
 ## What the Front End Looks Like
 
-Depending on the [layout](/guide/playlists/playlist-layouts) you chose for the playlist:
+Depending on the [layout](/playlist-layouts) you chose for the playlist:
 
 - **Standard** — A player with a video list on the side.
 - **Grid** — A multi-column video grid.

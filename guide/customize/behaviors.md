@@ -1,6 +1,6 @@
 # Player Behaviors
 
-**Behaviors** define how the player acts on its own autoplay, muted start, resume playback, loop or reset on end, inline mobile playback, and hiding control areas. Set them on a [preset](/guide/customize/presets) to apply the same rules across many videos, or override them on a single media item when one embed needs different rules.
+**Behaviors** define how the player acts on its own autoplay, muted start, resume playback, loop or reset on end, inline mobile playback, and hiding control areas. Set them on a [preset](/presets) to apply the same rules across many videos, or override them on a single media item when one embed needs different rules.
 
 ## Available Behaviors
 
@@ -37,7 +37,7 @@ This feature stores the position in the viewer's browser. If they switch to a di
 This controls what happens when the video finishes playing. Common options include:
 
 * **Reset:** The video goes back to the beginning (shows the poster image).
-* **Loop:** The video **starts again from the beginning** immediately (useful for background or ambient clips). The [Ambient](/guide/customize/presets) preset uses loop style end behavior by default.
+* **Loop:** The video **starts again from the beginning** immediately (useful for background or ambient clips). The [Ambient](/presets) preset uses loop style end behavior by default.
 
 Pick **Reset** for one shot content; use **Loop** only when you intend continuous repetition (for example hero or ambient video).
 

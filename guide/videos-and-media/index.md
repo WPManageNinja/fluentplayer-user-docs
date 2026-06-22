@@ -34,9 +34,9 @@ From this screen, you can:
 
 | Topic | What you will learn |
 |-------|-------------------|
-| [Adding and Editing Videos](/guide/videos-and-media/adding-videos) | How to create a new video and edit existing ones |
-| [Video Sources](/guide/videos-and-media/video-sources) | The different ways to provide a video (upload, URL, YouTube, BunnyCDN) |
-| [Subtitles](/guide/videos-and-media/subtitles) | How to add and remove subtitle tracks |
-| [Multiple Languages](/guide/videos-and-media/multiple-languages) | How to offer the same video in different languages |
-| [Public vs Private Visibility](/guide/videos-and-media/public-vs-private) | Who can see your video on the dedicated player URL |
+| [Adding and Editing Videos](/adding-videos) | How to create a new video and edit existing ones |
+| [Video Sources](/video-sources) | The different ways to provide a video (upload, URL, YouTube, BunnyCDN) |
+| [Subtitles](/subtitles) | How to add and remove subtitle tracks |
+| [Multiple Languages](/multiple-languages) | How to offer the same video in different languages |
+| [Public vs Private Visibility](/public-vs-private) | Who can see your video on the dedicated player URL |
 

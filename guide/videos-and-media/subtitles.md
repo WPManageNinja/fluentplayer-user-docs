@@ -54,7 +54,7 @@ YouTube subtitle import and hover-preview generation are handled by FluentPlayer
 
  * **Hover Preview:** You can click **Generate Hover Preview** to create a preview of the YouTube video independently from the main subtitle import.
  * **Managing Tracks:** You can add **multiple subtitle tracks** for different languages.Once added, subtitle tracks appear in a list where you can click **Edit** to modify them or the **Trash** icon to remove them.
- * **Captions Toggle:** Viewers can switch between them using the **captions toggle** on the control bar and, when the **Settings** menu is enabled, the **Captions** entry inside that menu see [Creating Custom Presets](/guide/customize/creating-custom-presets).
+ * **Captions Toggle:** Viewers can switch between them using the **captions toggle** on the control bar and, when the **Settings** menu is enabled, the **Captions** entry inside that menu see [Creating Custom Presets](/creating-custom-presets).
 
 ### Removing Subtitles
 
@@ -66,7 +66,7 @@ YouTube subtitle import and hover-preview generation are handled by FluentPlayer
 
 ### Styling Captions
 
-You can change how captions look on screen, including font size, text color, and background color. These settings are part of the Preset or can be customized per media item in the Branding & Appearance section. See [Branding & Appearance](/guide/block-editor/branding) for details.
+You can change how captions look on screen, including font size, text color, and background color. These settings are part of the Preset or can be customized per media item in the Branding & Appearance section. See [Branding & Appearance](/branding-appearance) for details.
 
 ## Example: A Simple WebVTT File
 

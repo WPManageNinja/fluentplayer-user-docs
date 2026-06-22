@@ -4,7 +4,7 @@ This guide will walk you through creating your first video and embedding it on a
 
 ## What you will need
 
-- FluentPlayer installed and activated (see [Installation](/guide/installation)).
+- FluentPlayer installed and activated (see [Installation](/installation)).
 - A video file URL (this can be a YouTube link, a direct MP4 URL, or a file in your WordPress Media Library).
 
 While you are logged in as an administrator, the **WordPress admin bar** (top of the screen on the front end) may include a quick link to **FluentPlayer** for faster access to media and settings — useful when previewing a page and jumping straight into the plugin.
@@ -24,7 +24,7 @@ While you are logged in as an administrator, the **WordPress admin bar** (top of
    - Or select a file from your WordPress Media Library.
 3. Optionally, add a **poster image** (the thumbnail shown before the video plays).
 
-For more details on video sources, see [Video Sources](/guide/videos-and-media/video-sources).
+For more details on video sources, see [Video Sources](/video-sources).
 
 ## Step 3: Choose a preset
 
@@ -40,7 +40,7 @@ You can change the preset in the media editor. FluentPlayer ships with **seven**
 - **Minimal:** Almost no chrome; center play only.
 - **Ambient:** Tuned for muted background / loop style use.
 
-You can always change this later. Learn more in [Presets](/guide/customize/presets).
+You can always change this later. Learn more in [Presets](/presets).
 
 ## Step 4: Publish the media
 
@@ -83,8 +83,8 @@ Open the post or page on the front end of your site. You should see the FluentPl
 
 Now that you have your first video embedded, here are some things to try:
 
-- [Customize the look](/guide/customize/creating-custom-presets): Create custom presets with your own skin, controls, and behaviors.
-- [Add subtitles](/guide/videos-and-media/subtitles): Upload subtitle files for accessibility.
-- [Add an email capture overlay](/guide/engagement/email-capture): Collect emails from your viewers.
-- [Create a playlist](/guide/playlists/) (Pro): Group videos together.
-- [Set up analytics](/guide/integrations/analytics) (Pro): Track who is watching and for how long.
+- [Customize the look](/creating-custom-presets): Create custom presets with your own skin, controls, and behaviors.
+- [Add subtitles](/subtitles): Upload subtitle files for accessibility.
+- [Add an email capture overlay](/email-capture): Collect emails from your viewers.
+- [Create a playlist](/playlists) (Pro): Group videos together.
+- [Set up analytics](/built-in-analytics) (Pro): Track who is watching and for how long.

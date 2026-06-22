@@ -5,7 +5,7 @@ description: "Build a FluentPlayer playlist dynamically from media tags using th
 
 # Tag-Based Playlists (Pro)
 
-A **tag-based playlist** is built automatically from your [media tags](/guide/videos-and-media/media-tags) instead of a hand-picked list of videos. You choose one or more tags, and the playlist shows every media item that carries them — so when you add a new video with that tag, it appears in the playlist automatically.
+A **tag-based playlist** is built automatically from your [media tags](/media-tags) instead of a hand-picked list of videos. You choose one or more tags, and the playlist shows every media item that carries them — so when you add a new video with that tag, it appears in the playlist automatically.
 
 ::: info Pro feature
 Tag-based playlists require **FluentPlayer Pro**.
@@ -31,10 +31,10 @@ Combine multiple tags with commas:
 [fluentplaylist tags="tutorial,getting-started"]
 ```
 
-The playlist renders every media item that matches the tag(s), using your configured playlist [layout](/guide/playlists/playlist-layouts) and [appearance](/guide/playlists/playlist-settings).
+The playlist renders every media item that matches the tag(s), using your configured playlist [layout](/playlist-layouts) and [appearance](/playlist-settings).
 
 ::: tip
-A regular playlist uses `[fluentplaylist id="10"]`. A tag-based playlist uses `tags="…"` instead of `id`. See [Embed a Playlist](/guide/playlists/embed-playlist) for the standard form.
+A regular playlist uses `[fluentplaylist id="10"]`. A tag-based playlist uses `tags="…"` instead of `id`. See [Embed a Playlist](/embed-playlist) for the standard form.
 :::
 
 ## Option 2: Playlist block
@@ -50,5 +50,5 @@ The block renders the same dynamic, tag-driven playlist as the shortcode. To use
 
 ## Good to know
 
-- Only [tagged media](/guide/videos-and-media/media-tags) appears — tag your videos first.
+- Only [tagged media](/media-tags) appears — tag your videos first.
 - Because the list is dynamic, the playlist updates as you tag or untag videos; there is no fixed order to maintain by hand.

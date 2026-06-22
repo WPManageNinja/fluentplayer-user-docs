@@ -39,5 +39,5 @@ Click **Deactivate** to release the license on this site — for example, before
 
 ## Related
 
-- [Installation](/guide/installation) — installing the free and Pro plugins.
-- [Settings Overview](/guide/settings/) — all global settings sections.
+- [Installation](/installation) — installing the free and Pro plugins.
+- [Settings Overview](/settings) — all global settings sections.

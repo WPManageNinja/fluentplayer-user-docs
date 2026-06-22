@@ -1,8 +1,8 @@
 # Branding Settings
 
-The **Branding** section under **Fluent Player → Settings** sets the global visual identity for every player on your site — brand color, control bar color, and logo. These defaults apply to all embeds unless a [preset](/guide/customize/presets) or per media [Branding panel](/guide/block-editor/branding) override takes priority.
+The **Branding** section under **Fluent Player → Settings** sets the global visual identity for every player on your site — brand color, control bar color, and logo. These defaults apply to all embeds unless a [preset](/presets) or per media [Branding panel](/branding-appearance) override takes priority.
 
-To open it, go to **Fluent Player → Settings** and select **Branding** from the inner settings sidebar. See [Settings Overview](/guide/settings/) for how global settings relate to presets and per media overrides.
+To open it, go to **Fluent Player → Settings** and select **Branding** from the inner settings sidebar. See [Settings Overview](/settings) for how global settings relate to presets and per media overrides.
 
 ## Live Interactive Preview
 
@@ -18,7 +18,7 @@ Use the preview to confirm contrast and readability before you publish site wide
 
 **Example:** If your site’s primary color is `#FF6B35`, set it here so the player matches your theme.
 
-A single video can use a different accent when you override branding on the media item or in a preset. See [Presets](/guide/customize/presets) and [Branding (Block sidebar)](/guide/block-editor/branding).
+A single video can use a different accent when you override branding on the media item or in a preset. See [Presets](/presets) and [Branding (Block sidebar)](/branding-appearance).
 
 ## Control Bar Color
 
@@ -57,8 +57,8 @@ Pick the corner that avoids covering the most important part of your video frame
 
 | Setting | Set globally here | Override per video |
 |---------|-------------------|-------------------|
-| Brand color | Yes | [Branding panel](/guide/block-editor/branding) or preset |
-| Control bar color | Yes | [Branding panel](/guide/block-editor/branding) |
+| Brand color | Yes | [Branding panel](/branding-appearance) or preset |
+| Control bar color | Yes | [Branding panel](/branding-appearance) |
 | Logo image, link, position | Yes (site wide) | Per media via **Use Custom Branding** in the block editor |
 
 ::: info

@@ -1,6 +1,6 @@
 # Playlist Appearance, Spacing, and Behavior
 
-After you choose a [playlist layout](/guide/playlists/playlist-layouts), FluentPlayer Pro lets you fine-tune how the playlist looks and behaves on the front end — colors, typography, borders, autoplay, and more. These settings apply to the playlist container and list/grid around the player, not to the inner video player controls (those follow each media item's [preset](/guide/customize/presets)).
+After you choose a [playlist layout](/playlist-layouts), FluentPlayer Pro lets you fine-tune how the playlist looks and behaves on the front end — colors, typography, borders, autoplay, and more. These settings apply to the playlist container and list/grid around the player, not to the inner video player controls (those follow each media item's [preset](/presets)).
  
 ## Where to Find These Options
  
@@ -34,7 +34,7 @@ The **Overlay Mode** decides which video's interactive layers — email capture,
 A playlist can borrow its player chrome (controls, skin) and brand color from a specific media item's **preset**. Set a **Preset Source** media item so the playlist player matches that media's look, with brand-color sync. When no preset source is set, the playlist uses your global defaults.
 
 ::: info Playlist visibility
-Like media items, a playlist can be **public** or **private**. Private playlists are not accessible on their [dedicated playlist URL](/guide/playlists/embed-playlist) to visitors without edit permission, the same way [media visibility](/guide/videos-and-media/public-vs-private) works.
+Like media items, a playlist can be **public** or **private**. Private playlists are not accessible on their [dedicated playlist URL](/embed-playlist) to visitors without edit permission, the same way [media visibility](/public-vs-private) works.
 :::
  
 ## Appearance
@@ -52,7 +52,7 @@ Control the playlist frame's colors, borders, and shadow so it matches your site
  
 A dropdown that lets you choose how the playlist accent color is handled:
  
-- **Use Global Setting:** Inherits the brand color from [Branding Settings](/guide/settings/branding).
+- **Use Global Setting:** Inherits the brand color from [Branding Settings](/branding).
 - **Custom:** Set a unique accent color for this playlist only.
  
 ### Border
@@ -94,11 +94,11 @@ Add an optional shadow to give the playlist container depth. These controls are 
  
 ## How This Fits Your Workflow
  
-1. [Create a playlist](/guide/playlists/creating-playlists) and add videos.
+1. [Create a playlist](/creating-playlists) and add videos.
 2. Pick a layout (Standard or Grid) in the **Layout** panel.
 3. Use **General Settings** to configure autoplay, continuous play, and overlay behavior.
 4. Use **Appearance** as a checklist for colors, borders, typography, and shadows.
-5. [Embed the playlist](/guide/playlists/embed-playlist) on a page and review on desktop and mobile.
+5. [Embed the playlist](/embed-playlist) on a page and review on desktop and mobile.
  
 
  

@@ -1,10 +1,10 @@
 ---
 prev:
   text: 'Frequently Asked Questions'
-  link: '/guide/troubleshooting/faq'
+  link: '/faq'
 next:
   text: 'Changelog'
-  link: '/guide/changelog'
+  link: '/changelog'
 ---
 
 # Support
@@ -15,9 +15,9 @@ Need help with FluentPlayer? This page shows the fastest way to contact support 
 
 Please check these resources first:
 
-- [Common Issues & Fixes](/guide/troubleshooting/) for known problems and direct solutions.
-- [Frequently Asked Questions](/guide/troubleshooting/faq) for quick answers.
-- Relevant setup guides (installation, embed, presets, integrations) in the [documentation home](/guide/).
+- [Common Issues & Fixes](/troubleshooting) for known problems and direct solutions.
+- [Frequently Asked Questions](/faq) for quick answers.
+- Relevant setup guides (installation, embed, presets, integrations) in the [documentation home](/introduction).
 
 If the issue still remains, open a support ticket.
 
@@ -53,4 +53,4 @@ The support team typically replies during standard business hours, Monday throug
 
 ## Need Product Updates?
 
-For release notes and recent improvements, see the [Changelog](/guide/changelog).
+For release notes and recent improvements, see the [Changelog](/changelog).

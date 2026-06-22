@@ -71,7 +71,7 @@ By default `meta_key` is read from the current post. Developers can change which
 
 ## Legacy query-string embed
 
-For backward compatibility, you can also load a media item by appending `?fluent_player_media_id=<ID>` to a URL. This is a legacy mechanism — for new content, use the shortcode or the [Gutenberg block](/guide/display-embed/block) instead.
+For backward compatibility, you can also load a media item by appending `?fluent_player_media_id=<ID>` to a URL. This is a legacy mechanism — for new content, use the shortcode or the [Gutenberg block](/block) instead.
 
 ## Using the Shortcode in Different Areas
 

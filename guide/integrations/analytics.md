@@ -17,7 +17,7 @@ Built-in analytics is a **FluentPlayer Pro** feature, so you need to have **Flue
 
 To activate native tracking and access your private command center:
 
- 1. Navigate to **FluentPlayer Pro > [Settings → Analytics](/guide/settings/analytics)**.
+ 1. Navigate to **FluentPlayer Pro > [Settings → Analytics](/analytics)**.
  2. Stay on the FluentPlayer Analytics tab.
  3. Toggle **Enable Analytics** to the **ON** position.
  4. Click **Save Settings** in the top right corner.
@@ -54,7 +54,7 @@ Anonymous (logged-out) viewers are still counted in totals and unique-viewer met
 
 Video tracking generates a lot of rows over time. To keep your database fast:
 
-- **Auto Cleanup Analytics Data** — when enabled in [Settings → Analytics](/guide/settings/analytics), FluentPlayer automatically deletes stats older than the **Retention (days)** you set (for example, `30`).
+- **Auto Cleanup Analytics Data** — when enabled in [Settings → Analytics](/analytics), FluentPlayer automatically deletes stats older than the **Retention (days)** you set (for example, `30`).
 - **Orphan cleanup** — when you delete a media item, its associated analytics records are cleaned up as well, so you do not accumulate stats for videos that no longer exist.
 
 ## Analytics vs Google Analytics
@@ -67,5 +67,5 @@ Video tracking generates a lot of rows over time. To keep your database fast:
 | **Detail level** | Per video retention, per user stats | Event based (play, progress, complete) |
 | **Requires Pro** | Yes | No (free) |
 
-You can use **both at the same time**. Built in analytics give you WordPress native dashboards with rich detail. [Google Analytics](/guide/integrations/google-analytics) sends events to GA4 for broader marketing analysis.
+You can use **both at the same time**. Built in analytics give you WordPress native dashboards with rich detail. [Google Analytics](/google-analytics) sends events to GA4 for broader marketing analysis.
 
