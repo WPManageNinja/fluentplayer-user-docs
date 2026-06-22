@@ -29,7 +29,7 @@ Track how your audience interacts with your content to make data driven decision
 
 ### Community and Personalization
 
-- **[FluentCommunity (Pro)](/fluent-community)** (Pro) — Embed FluentPlayer media inside FluentCommunity posts and portal content.
+- **[FluentCommunity](/fluent-community)** — Embed FluentPlayer media inside FluentCommunity posts and portal content.
 - **[Smartcodes and personalization](/smartcodes-personalization)** — Use FluentCRM merge tags (for example the contact first-name tag) in supported player text when FluentCRM is installed.
 
 ## Where to Configure Integrations
@@ -58,7 +58,7 @@ Most integration settings are found in **FluentPlayer → Settings**. Some integ
 | [BunnyCDN Storage (Pro)](/bunnycdn-storage) | Use Bunny Storage for video files |
 | [Built-in Analytics (Pro)](/built-in-analytics) | Track plays, watch time, and viewer behavior |
 | [Google Analytics (Pro)](/google-analytics) | Send player events to GA4 |
-| [FluentCommunity (Pro)](/fluent-community) | Player inside FluentCommunity |
+| [FluentCommunity](/fluent-community) | Player inside FluentCommunity |
 | [Smartcodes (FluentCRM)](/smartcodes-personalization) | Personalized text with merge tags |
 
 ## Next Steps

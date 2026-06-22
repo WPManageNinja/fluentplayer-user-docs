@@ -24,6 +24,7 @@ FluentPlayer comes in two versions. This documentation matches **FluentPlayer an
 | Player presets (7 built in: Default, Modern, Simple, Standard, Floating, Minimal, Ambient + custom on Pro) | Yes | Yes |
 | Subtitles and captions | Yes | Yes |
 | Email capture with FluentCRM | Yes | Yes |
+| Text & button overlays | — | Yes |
 | CTA overlay | — | Yes |
 | Custom CSS | Yes | Yes |
 | Google Analytics events | — | Yes |

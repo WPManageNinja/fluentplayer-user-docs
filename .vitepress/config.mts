@@ -86,7 +86,7 @@ const guideGroups = [
         text: 'Interactive Elements',
         collapsed: false,
         items: [
-          { text: 'Text & Button Overlays', link: '/overlays' },
+          { text: 'Text & Button Overlays (Pro)', link: '/overlays' },
           { text: 'Interactive Layers', link: '/interactive-layers' },
           { text: 'Advanced', link: '/advanced' },
         ],
@@ -149,7 +149,7 @@ const guideGroups = [
       { text: 'Google Analytics (Pro)', link: '/google-analytics' },
       { text: 'Mailchimp (Pro)', link: '/mailchimp-integration' },
       { text: 'Webhook (Pro)', link: '/webhook-integration' },
-      { text: 'FluentCommunity (Pro)', link: '/fluent-community' },
+      { text: 'FluentCommunity', link: '/fluent-community' },
       { text: 'Smartcodes (FluentCRM)', link: '/smartcodes-personalization' },
     ],
   },

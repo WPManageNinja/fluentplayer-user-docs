@@ -1,15 +1,15 @@
-# FluentCommunity (Pro)
+# FluentCommunity
 
 The **FluentPlayer** integration allows you to transform your FluentCommunity portal into a fully branded, professional, and video-enabled experience. Instead of relying on the default look of third-party embeds, FluentPlayer ensures all video content from community posts to course lessons is consistent and perfectly matches your community’s style.
 
 #### What you need
 
-- **FluentPlayer Pro** installed and activated.
+- **FluentPlayer** installed and activated.
 - **FluentCommunity** installed and your portal/community configured.
 - Media items created in **FluentPlayer → Media** (or connected sources such as [Mux](/mux) or [Bunny Stream](/bunnycdn-stream)).
 
-::: info Free vs Pro
-The **basic FluentCommunity media block** ships in the **free** plugin and activates automatically once FluentCommunity is installed. The features documented on this page — forced/unified branding, member upload permissions, document attachments, [Smartcodes](/smartcodes-personalization), and the [FluentPlayer Playlist block](/tag-based-playlists) — require **FluentPlayer Pro**.
+::: info Free integration
+The FluentCommunity integration is **free** — it activates automatically once FluentCommunity is installed, and the features on this page (member uploads, unified branding, document attachments, and [Smartcodes](/smartcodes-personalization)) work on the free plugin. The only Pro-gated part is embedding a **FluentPlayer Playlist** inside a lesson, because [Playlists](/playlists) is a separate Pro feature.
 :::
 
 ## Core Integration Features
@@ -102,9 +102,6 @@ Use the right hand sidebar under the **Lesson** tab to manage specific lesson de
 - Scroll to the **Documents & Files** section in the sidebar.
 - Click **Manage Documents & Files**.
 - A popup will appear where you can upload files that students can view and download alongside the video.
-
->[!Note]
-> Uploading documents requires a Pro upgrade.
 
 ### 4. Personalizing with Smartcodes
 

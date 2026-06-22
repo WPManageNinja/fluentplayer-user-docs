@@ -1,9 +1,9 @@
 ---
-title: "Text & Button Overlays (Block sidebar)"
+title: "Text & Button Overlays (Pro)"
 description: "Timed text and button overlays on the video: add overlays, timing, links, styling, and how they differ from Interactive layers."
 ---
 
-# Text & Button Overlays (Block sidebar)
+# Text & Button Overlays (Pro)
 
 Text & Button Overlays are timed interactive elements that appear directly on top of your video. They are perfect for highlighting key points, providing resource links, or adding calls to action (CTAs) without pausing the video.
 
@@ -13,8 +13,8 @@ To manage your overlays, select the **FluentPlayer** block and open the **Text/B
 
 Click the **+ Add Overlay** button to open the **Add Video Overlay** configuration window. The settings are organized into collapsible accordion sections:
 
-::: info Free vs Pro
-The free plugin lets you add **one** text/button overlay per video. **FluentPlayer Pro** removes this limit so you can add multiple timed overlays to the same video.
+::: info Pro feature
+Text & Button Overlays require **FluentPlayer Pro**. The **Text/Button Overlays** panel is available only when Pro is active; with the free plugin the panel is not available.
 :::
 
 ![Adding an Overlay](/guide/public/block-editor/overlays/text-button-overlay-1.webp)
