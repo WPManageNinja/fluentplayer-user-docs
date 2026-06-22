@@ -13,6 +13,10 @@ To manage your overlays, select the **FluentPlayer** block and open the **Text/B
 
 Click the **+ Add Overlay** button to open the **Add Video Overlay** configuration window. The settings are organized into collapsible accordion sections:
 
+::: info Free vs Pro
+The free plugin lets you add **one** text/button overlay per video. **FluentPlayer Pro** removes this limit so you can add multiple timed overlays to the same video.
+:::
+
 ![Adding an Overlay](/guide/public/block-editor/overlays/text-button-overlay-1.webp)
 
 * **Display Section:**

@@ -25,7 +25,7 @@ Capture viewer emails with the [email capture overlay](/email-capture) and send 
 Track how your audience interacts with your content to make data driven decisions.
 
 - **[Built-in Analytics(Pro)](/built-in-analytics)** (Pro): A dashboard inside WordPress that shows plays, watch time, top videos, viewer behavior, and more.
-- **[Google Analytics (free)](/google-analytics)** (free): Send player events (play, progress, complete) to your GA4 property.
+- **[Google Analytics (Pro)](/google-analytics)** (Pro): Send player events (play, progress, complete) to your GA4 property.
 
 ### Community and Personalization
 
@@ -57,10 +57,10 @@ Most integration settings are found in **FluentPlayer → Settings**. Some integ
 | [BunnyCDN Stream (Pro)](/bunnycdn-stream) | Connect Bunny Stream for video hosting |
 | [BunnyCDN Storage (Pro)](/bunnycdn-storage) | Use Bunny Storage for video files |
 | [Built-in Analytics (Pro)](/built-in-analytics) | Track plays, watch time, and viewer behavior |
-| [Google Analytics](/google-analytics) | Send player events to GA4 |
+| [Google Analytics (Pro)](/google-analytics) | Send player events to GA4 |
 | [FluentCommunity (Pro)](/fluent-community) | Player inside FluentCommunity |
 | [Smartcodes (FluentCRM)](/smartcodes-personalization) | Personalized text with merge tags |
 
 ## Next Steps
 
-Pick the integration you need and follow the setup guide. If you are not sure where to start, [Google Analytics](/google-analytics) is a quick win for basic tracking. For hosted streaming, choose [Mux](/mux) or [BunnyCDN Stream](/bunnycdn-stream) depending on your provider.
+Pick the integration you need and follow the setup guide. If you are not sure where to start and you have Pro, [Google Analytics](/google-analytics) is a quick win for basic tracking. For hosted streaming, choose [Mux](/mux) or [BunnyCDN Stream](/bunnycdn-stream) depending on your provider.

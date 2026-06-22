@@ -33,9 +33,9 @@ Every video you create is assigned a unique ID and a ready-to-use shortcode.
 | Attribute | Required | Description |
 |-----------|----------|-------------|
 | `id` | Yes | The media (post) ID |
-| `src` | No | Play a specific video URL instead of the media's saved source. |
-| `meta_key` | No | Read the video URL from a custom field on the current post. |
-| `poster` | No | Use a specific poster image URL instead of the media's saved poster. |
+| `source_url` | No | Play a specific video URL instead of the media's saved source. |
+| `source_meta` | No | Read the video URL from a custom field on the current post. |
+| `source_poster` | No | Use a specific poster image URL instead of the media's saved poster. |
 
 The shortcode is intentionally simple — the video source, preset, controls, and all other settings come from the media item itself. This means you configure everything in one place (**FluentPlayer → Media**) and the shortcode just references it.
 
@@ -45,28 +45,28 @@ If you ever change the video source, poster, or preset for a media item, every p
 
 ## Dynamic media source (advanced)
 
-Normally the player uses the source saved on the media item. The optional `src`, `meta_key`, and `poster` attributes let one media item act as a **reusable template** whose video changes per page — useful when the same player configuration (preset, overlays, branding) should wrap different videos.
+Normally the player uses the source saved on the media item. The optional `source_url`, `source_meta`, and `source_poster` attributes let one media item act as a **reusable template** whose video changes per page — useful when the same player configuration (preset, overlays, branding) should wrap different videos.
 
 **Source precedence** (the first match wins):
 
-1. **`src`** — an explicit URL passed on the shortcode.
-2. **`meta_key`** — the value of a custom field on the **current post** (the post or page where the shortcode appears).
+1. **`source_url`** — an explicit URL passed on the shortcode.
+2. **`source_meta`** — the value of a custom field on the **current post** (the post or page where the shortcode appears).
 3. The media item's **saved source** (the default when neither is provided).
 
 ```text
-[fluentplayer id="12" src="https://example.com/clip.mp4"]
-[fluentplayer id="12" meta_key="video_url"]
-[fluentplayer id="12" meta_key="video_url" poster="https://example.com/cover.jpg"]
+[fluentplayer id="12" source_url="https://example.com/clip.mp4"]
+[fluentplayer id="12" source_meta="video_url"]
+[fluentplayer id="12" source_meta="video_url" source_poster="https://example.com/cover.jpg"]
 ```
 
-A YouTube or Vimeo URL works as `src` too — the provider is detected automatically.
+A YouTube or Vimeo URL works as `source_url` too — the provider is detected automatically.
 
 ::: warning Security note
-`meta_key` reads from the current post's custom fields. Point it only at fields you control. Avoid exposing private or protected meta keys (those whose name begins with `_`) through a public shortcode, since the resolved URL is rendered into the page.
+`source_meta` reads from the current post's custom fields. Point it only at fields you control. Avoid exposing private or protected meta keys (those whose name begins with `_`) through a public shortcode, since the resolved URL is rendered into the page.
 :::
 
 ::: info Developer note
-By default `meta_key` is read from the current post. Developers can change which post is used with the `fluent_player/dynamic_source_post_id` filter. (There is no `post_id` shortcode attribute — use the filter for this.)
+By default `source_meta` is read from the current post. Developers can change which post is used with the `fluent_player/dynamic_source_post_id` filter. (There is no `post_id` shortcode attribute — use the filter for this.)
 :::
 
 ## Legacy query-string embed

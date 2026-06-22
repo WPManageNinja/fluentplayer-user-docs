@@ -43,18 +43,15 @@ Once the feature is enabled, you can link and manage your translated video versi
 
 ## Automatic Language Switching
 
-When FluentPlayer loads on the front end, it detects the viewer's browser language from their HTTP request headers. If a mapping exists for that language, the player switches to the correct video source automatically. The viewer does not need to do anything.
+When the player loads on the front end, it reads the viewer's browser language in the page itself. If a mapping exists for that language, the player selects the matching video source automatically. The viewer does not need to do anything.
 
 If no mapping exists for the viewer's language, the primary video plays as usual.
 
-## Manual Switching (AJAX)
+## Manual Switching
 
-The player can request a different language version after load using authenticated AJAX:
+All linked language sources are sent to the player when the page loads, so switching happens **in the browser** with no extra page request. When a viewer picks a language from the selector in the player controls, the player swaps to that source instantly and resumes playback.
 
-- **`fluent_player_switch_language`:** Pass `original_media_id` and the `fluent_player_frontend` nonce to receive the mapped media payload.
-- **`fluent_player_get_media`:** Fetch a media record by `media_id` with the same nonce (used when refreshing data after changes).
-
-These require a valid nonce; they are primarily for the interactive language control in the player UI.
+Because the mappings are already loaded with the player, there is no separate API call or login required to change languages.
 
 ::: tip
 Automatic switching is great for international audiences, but make sure you actually create the alternate media items and set up the mappings. Without mappings, the primary video always plays.

@@ -13,7 +13,7 @@ The **FluentPlayer** integration allows you to transform your FluentCommunity po
  * **Member Video Uploads:** Allow members to upload videos directly to community Spaces in formats like MP4, M3U8, and MOV.
  * **Unified Branding:** Force external links (YouTube, Vimeo, HLS) to render with your custom FluentPlayer design and brand colors.
  * **Lesson Resources:** Attach downloadable files (PDFs, worksheets) directly to your video lessons.
- * **Smartcodes:** Personalize lesson content using tags like `##user.display_name##` to greet students individually.
+ * **Smartcodes:** Personalize lesson content using tags like <code v-pre>{{user.display_name}}</code> to greet students individually.
 
 ## Step by Step Configuration
 
@@ -105,7 +105,7 @@ Use the right hand sidebar under the **Lesson** tab to manage specific lesson de
 ### 4. Personalizing with Smartcodes
 
 - Open the **Smartcodes** dropdown in the sidebar to see a list of available tags.
-- Copy tags like `##user.profile_link##` to insert dynamic member data into your lesson description.
+- Copy tags like <code v-pre>{{user.display_name}}</code> to insert dynamic member data into your lesson description.
 
 ![Documents & Files Manage](/guide/public/integrations/fluent-community/documents-and-files-3.webp)
 

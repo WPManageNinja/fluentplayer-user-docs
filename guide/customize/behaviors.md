@@ -20,11 +20,15 @@ The video starts playing automatically **with the sound muted**. This is allowed
 
 **Common use case:** Background or hero videos that play silently until the viewer interacts.
 
-### Save Play Position
+### Save Play Position (Pro)
 
 When enabled, FluentPlayer remembers where the viewer stopped watching. The next time they visit the page, the video resumes from where they left off.
 
 **Common use case:** Online courses or training videos where viewers may watch in multiple sessions.
+
+::: info Pro feature
+Resume playback requires **FluentPlayer Pro**. In the free plugin the toggle shows a Pro prompt and the player never restores the saved position, so resume does not work without Pro.
+:::
 
 In **Settings → General**, the checkbox is labeled **Enable Auto Resume Playback** under **Auto resume playback**; turn it on so Pro can store playback position in the browser. In the **block sidebar** ( **Block** tab → **General Settings** ), the per embed toggle is **Remember Playback Position**. Use the preset’s **Save play position** behavior plus these toggles together so resume works as you expect.
 

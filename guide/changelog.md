@@ -13,7 +13,7 @@ All notable user-facing changes to FluentPlayer and FluentPlayer Pro are documen
 
 ### Added
 
-- **Dynamic shortcode source** — override a media item's saved source right from the shortcode using `src`, `meta_key`, and `poster` attributes (for example, `[fluentplayer id="12" meta_key="video_url"]` to read the URL from a post's custom field). See [Embed with Shortcode](/shortcode).
+- **Dynamic shortcode source** — override a media item's saved source right from the shortcode using `source_url`, `source_meta`, and `source_poster` attributes (for example, `[fluentplayer id="12" source_meta="video_url"]` to read the URL from a post's custom field). See [Embed with Shortcode](/shortcode).
 - **Unified media list filters** in the admin dashboard — filter your media by provider, media type, and tags.
 - **Player share links and a right-click context menu** (Pro) — copy a link, copy a link at the current time, and toggle options like loop, playback speed, captions, and picture-in-picture.
 - **Playlist navigation controls** (Pro).

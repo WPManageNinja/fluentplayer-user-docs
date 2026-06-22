@@ -2,7 +2,9 @@
 
 FluentPlayer allows you to send video interaction data directly to your **Google Analytics (GA4)** property. This integration helps you track video performance—such as plays, progress, and completions—alongside your other website traffic data. 
 
-Unlike the [built-in analytics](/built-in-analytics) (Pro), Google Analytics integration is available in the **free** version of FluentPlayer.
+::: info Pro feature
+The Google Analytics integration requires **FluentPlayer Pro**. Your GA4 account is free, but FluentPlayer only sends video events to GA4 when Pro is active. Without Pro, the Analytics settings show an upgrade prompt and no events are sent.
+:::
 
 ## Tracked Video Events
 
@@ -47,7 +49,7 @@ It may take a few hours for events to appear in GA4 after you first set it up. R
 
 | | Google Analytics | Built in Analytics (Pro) |
 |---|-----------------|-------------------------|
-| **Cost** | Free (GA4 is free) | Requires Pro |
+| **Plan** | Requires Pro (GA4 account is free) | Requires Pro |
 | **Where to view** | Google Analytics UI | WordPress admin |
 | **Best for** | Marketing analysis, combining with other GA data | Detailed per video and per user insights |
 | **Per video retention** | Not built in (needs custom setup) | Included |

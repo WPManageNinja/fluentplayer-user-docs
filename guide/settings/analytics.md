@@ -34,9 +34,13 @@ Once activated, we silently and securely record:
 
 > **🔍 Example:** To keep your media library as tidy as your database, FluentPlayer also runs a quiet daily background task that cleans up "auto draft" media items you never finished creating!
 
-## Connecting Google Analytics
+## Connecting Google Analytics (Pro)
 
-Do you already use Google Analytics 4 (GA4) to track your website traffic? You can send your video events straight to Google! This feature is entirely free and available to all FluentPlayer users.
+Do you already use Google Analytics 4 (GA4) to track your website traffic? You can send your video events straight to Google!
+
+::: info Pro feature
+Sending FluentPlayer video events to GA4 requires **FluentPlayer Pro**. Your GA4 account is free, but the integration only fires events when Pro is active.
+:::
 
 ### Events We Send to Google:
 Whenever someone watches a video, we tell Google exactly which video it is (by sending the video ID and title) and trigger an event when they:
@@ -78,7 +82,7 @@ Standard GA4 reports can take up to 24 hours to show new event data. To verify t
 
 You can run **both** at the same time. Use built in analytics for day to day video performance inside WordPress, and Google Analytics to see how video engagement fits your wider marketing and site traffic.
 
-| Feature | Built in Analytics (Pro) | Google Analytics (Free/Pro) |
+| Feature | Built in Analytics (Pro) | Google Analytics (Pro) |
 | :--- | :--- | :--- |
 | **Where do you view the data?** | Inside your WordPress admin | In the Google Analytics dashboard |
 | **Per video drop off charts** | Yes | No, not without custom setup |

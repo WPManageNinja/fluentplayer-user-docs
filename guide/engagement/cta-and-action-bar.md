@@ -7,9 +7,13 @@ next:
   link: '/email-providers'
 ---
 
-# CTA (Call to Action) Overlay
+# CTA (Call to Action) Overlay (Pro)
 
 The **CTA overlay** is a popup that appears over the video at a specific time to prompt the viewer to take an action, such as visiting a link, signing up, or watching another video. The video pauses while the overlay is on screen, so the viewer's full attention is on your message.
+
+::: info Pro feature
+The CTA layer requires **FluentPlayer Pro**. In the free plugin, only the **Fluent Forms** layer and the **Email Capture** layer are available in the Interactive Layers panel.
+:::
 
 ## How It Works
 

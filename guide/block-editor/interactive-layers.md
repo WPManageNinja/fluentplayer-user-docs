@@ -27,12 +27,16 @@ Click the **+ Add Layer** button to open the **Manage Layers** window. From here
 
 Each layer type serves a specific marketing or educational purpose:
 
- * **Fluent Forms:** Embed a complete Fluent Forms form at a specific time in the video. You can choose your form from a dropdown, set its position, and even adjust its width and height percentage.
- * **Call to Action (CTA):** Create a prominent overlay to prompt an action. You can design the content using a rich text editor and set whether it pauses the video until the viewer clicks.
- * **Email Capture:** Collect viewer emails directly within the player. These connect to your configured Email Providers like FluentCRM or Mailchimp.
- * **Hotspot:** Add clickable icons or dots to the video. You can customize the icon, add a tooltip, and set a target URL for when the viewer clicks the hotspot.
- * **Ad:** Place a timed advertisement over your video. You can upload an image, set a "Skip" timer, and customize the color of the skip progress bar.
- * **Shortcode:** Display the output of any WordPress shortcode as a layer. This is highly flexible for adding custom content from other plugins.
+ * **Fluent Forms (Free):** Embed a complete Fluent Forms form at a specific time in the video. You can choose your form from a dropdown, set its position, and even adjust its width and height percentage.
+ * **Email Capture (Free):** Collect viewer emails directly within the player. These connect to your configured Email Providers like FluentCRM or Mailchimp.
+ * **Call to Action (CTA) (Pro):** Create a prominent overlay to prompt an action. You can design the content using a rich text editor and set whether it pauses the video until the viewer clicks.
+ * **Hotspot (Pro):** Add clickable icons or dots to the video. You can customize the icon, add a tooltip, and set a target URL for when the viewer clicks the hotspot.
+ * **Ad (Pro):** Place a timed advertisement over your video. You can upload an image, set a "Skip" timer, and customize the color of the skip progress bar.
+ * **Shortcode (Pro):** Display the output of any WordPress shortcode as a layer. This is highly flexible for adding custom content from other plugins.
+
+::: info Free vs Pro
+Only the **Fluent Forms** and **Email Capture** layers are available in the free plugin. The **CTA**, **Hotspot**, **Ad**, and **Shortcode** layers require **FluentPlayer Pro**.
+:::
 
 ![Layer Types](/guide/public/block-editor/interactive-layers/manage-layer-2.webp)
 

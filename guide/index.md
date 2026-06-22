@@ -24,9 +24,9 @@ FluentPlayer comes in two versions. This documentation matches **FluentPlayer an
 | Player presets (7 built in: Default, Modern, Simple, Standard, Floating, Minimal, Ambient + custom on Pro) | Yes | Yes |
 | Subtitles and captions | Yes | Yes |
 | Email capture with FluentCRM | Yes | Yes |
-| CTA overlay and action bar | Yes | Yes |
-| Custom CSS and JS | Yes | Yes |
-| Google Analytics events | Yes | Yes |
+| CTA overlay | — | Yes |
+| Custom CSS | Yes | Yes |
+| Google Analytics events | — | Yes |
 | Resume playback (save position in the browser) | — | Yes |
 | Playlists (Standard, Grid) | — | Yes |
 | Mux video hosting and streaming | — | Yes |
@@ -49,7 +49,7 @@ The **free version** handles everything you need for embedding and customizing s
 - **Presets** — Save and reuse player configurations so every video looks consistent.
 - **Overlays** — Add email capture forms, calls-to-action, and action bars that appear while the video plays.
 - **Shortcodes** — Embed videos with `[fluentplayer id="123"]` (or `[fluentmedia]`) or playlists with `[fluentplaylist id="456"]` (Pro).
-- **Analytics** — Track plays, watch time, and viewer behavior with built-in analytics (Pro) or Google Analytics.
+- **Analytics** — Track plays, watch time, and viewer behavior with built-in analytics or Google Analytics (both Pro).
 
 ## How It Works (the Big Picture)
 

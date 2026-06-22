@@ -146,7 +146,7 @@ const guideGroups = [
       { text: 'Bunny Stream (Pro)', link: '/bunnycdn-stream' },
       { text: 'Bunny Storage (Pro)', link: '/bunnycdn-storage' },
       { text: 'Built-in Analytics (Pro)', link: '/built-in-analytics' },
-      { text: 'Google Analytics', link: '/google-analytics' },
+      { text: 'Google Analytics (Pro)', link: '/google-analytics' },
       { text: 'Mailchimp (Pro)', link: '/mailchimp-integration' },
       { text: 'Webhook (Pro)', link: '/webhook-integration' },
       { text: 'FluentCommunity (Pro)', link: '/fluent-community' },

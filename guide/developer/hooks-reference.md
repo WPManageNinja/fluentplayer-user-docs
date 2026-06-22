@@ -16,7 +16,7 @@ Hook names and signatures can change between releases. Test customizations on st
 | Filter | Purpose |
 |--------|---------|
 | `fluent_player/dynamic_source_overrides` | Filter the resolved source overrides (URL, provider, poster) for a [dynamic shortcode](/shortcode#dynamic-media-source-advanced). |
-| `fluent_player/dynamic_source_post_id` | Change which post a `meta_key` source is read from (defaults to the current post). |
+| `fluent_player/dynamic_source_post_id` | Change which post a `source_meta` source is read from (defaults to the current post). |
 
 ## Email capture & providers
 
@@ -31,15 +31,6 @@ Hook names and signatures can change between releases. Test customizations on st
 | `fluent_player/email_submission_rate_limit_window` | Change the rate-limit window in seconds (default 5 minutes). |
 
 The front-end submission is handled by the `fluent_player_email_submit` AJAX action (works for both guests and logged-in users).
-
-## Multi-language AJAX actions
-
-| Action | Purpose |
-|--------|---------|
-| `fluent_player_switch_language` | Return the mapped media payload for a requested language (requires the `fluent_player_frontend` nonce). |
-| `fluent_player_get_media` | Fetch a media record by `media_id` (same nonce). |
-
-See [Multiple Languages](/multiple-languages) for how these power the in-player language switcher.
 
 ## Finding more hooks
 

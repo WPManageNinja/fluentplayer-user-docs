@@ -14,7 +14,7 @@ The **Settings** screen is the global control panel for FluentPlayer. All site-w
 
 | Section | What it covers |
 |---------|----------------|
-| [**General**](/general) | Default preset, aspect ratio, auto resume playback, custom CSS, custom JS |
+| [**General**](/general) | Default preset, aspect ratio, auto resume playback, custom CSS |
 | [**Performance**](/performance) | Dynamic JS loading, AJAX progress — tuning how player scripts load for page speed |
 | [**Branding**](/branding) | Brand color, control bar color, logo image, logo link, logo position, logo width — with a **Live Interactive Preview** |
 | [**Integrations**](/email-integrations) | Email/lead capture providers: FluentCRM, Webhook, Mailchimp |
@@ -24,7 +24,7 @@ The **Settings** screen is the global control panel for FluentPlayer. All site-w
 | [**Export**](/export) | Download captured email submissions as CSV, JSON, or ODS |
 
 ::: info Pro vs Free
-Some sections (**Storage**, **Analytics → FluentPlayer Analytics**, **Export**) require **FluentPlayer Pro**. The free plugin shows fewer sections. The settings sidebar only displays sections relevant to your active license.
+**Storage** and **both Analytics tabs** (FluentPlayer Analytics and Google Analytics) require **FluentPlayer Pro**. **Export** is available on the **free** plugin. The free plugin shows fewer sections, and the settings sidebar only displays sections relevant to your active license.
 :::
 
 ## Settings vs Per Media Overrides

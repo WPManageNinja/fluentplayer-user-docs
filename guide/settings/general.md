@@ -1,6 +1,6 @@
 # General Settings
 
-The **General** section under **Fluent Player → Settings** sets site wide defaults for every player on your site. Use it to choose the default preset and aspect ratio, enable resume playback, and add global custom CSS or JavaScript. These values apply everywhere unless a [preset](/presets) or a per media setting overrides them.
+The **General** section under **Fluent Player → Settings** sets site wide defaults for every player on your site. Use it to choose the default preset and aspect ratio, enable resume playback, and add global custom CSS. These values apply everywhere unless a [preset](/presets) or a per media setting overrides them.
 
 To open it, go to **Fluent Player → Settings** and select **General** from the inner settings sidebar. See [Settings Overview](/settings) for how global settings relate to presets and per media overrides.
 
@@ -58,9 +58,6 @@ Playback position is stored in the viewer’s browser. It does not carry over to
 
 ## Custom CSS
 
-
-### Custom CSS
-
 A text area for global CSS that applies to every FluentPlayer instance on your site. The UI suggests scoping your rules:
 
 ```css
@@ -72,16 +69,6 @@ A text area for global CSS that applies to every FluentPlayer instance on your s
 Use this for small tweaks that presets do not cover — for example, progress bar height or tooltip colors. For larger visual changes, edit or create a [preset](/presets) instead of relying on global CSS alone.
 
 If the player looks broken after a theme update, check for CSS conflicts here and in your theme before changing other settings. See [Common Issues & Fixes](/troubleshooting) for troubleshooting tips.
-
-## Custom JavaScript
-
-A **Custom JS** field (code editor) lets you add site-wide JavaScript that runs in the context of FluentPlayer on your pages. Use it only when you need small scripted behaviors that the UI does not expose — and **test thoroughly** on staging first.
-
-![General Settings](/guide/public/settings/general/general-settings-3.webp)
-
-::: warning
-Custom JavaScript can affect performance and security. Do not paste untrusted code. Prefer [presets](/presets), [behaviors](/behaviors), and built in integrations before adding global JS. Test on staging before deploying to production.
-:::
 
 ## Saving Changes
 
