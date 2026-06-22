@@ -8,6 +8,10 @@ The **FluentPlayer** integration allows you to transform your FluentCommunity po
 - **FluentCommunity** installed and your portal/community configured.
 - Media items created in **FluentPlayer → Media** (or connected sources such as [Mux](/mux) or [Bunny Stream](/bunnycdn-stream)).
 
+::: info Free vs Pro
+The **basic FluentCommunity media block** ships in the **free** plugin and activates automatically once FluentCommunity is installed. The features documented on this page — forced/unified branding, member upload permissions, document attachments, [Smartcodes](/smartcodes-personalization), and the [FluentPlayer Playlist block](/tag-based-playlists) — require **FluentPlayer Pro**.
+:::
+
 ## Core Integration Features
 
  * **Member Video Uploads:** Allow members to upload videos directly to community Spaces in formats like MP4, M3U8, and MOV.
