@@ -11,6 +11,24 @@ All notable user-facing changes to FluentPlayer and FluentPlayer Pro are documen
 
 ## FluentPlayer (Free)
 
+### 1.0.7 — June 22, 2026
+
+- Feature: Presto Player migration — media, per-video color, thumbnails, YouTube no-cookie settings, and email submissions
+- Feature: Update Playlist flow for the playlist block (Pro)
+- Feature: Back button in the media editor header
+- Feature: Unsaved changes guard on the settings page
+- Improvement: All Media and Settings quick links in the plugins row
+- Improvement: Skeleton loaders across the settings and analytics pages
+- Improvement: Sortable columns and refined visibility controls in the media and playlist tables
+- Improvement: Accessibility pass across the admin — accessible names, keyboard navigation, and AA contrast
+- Improvement: Throttle player time-update handlers to reduce per-frame work and improve smoothness
+- Fix: Let the assigned preset control resume-playback (Pro)
+- Fix: Make YouTube Privacy-Enhanced Mode actually toggle the embed and poster hosts
+- Fix: Load the timed-content frontend script once across all render paths
+- Fix: Pro-gate the Google Analytics gtag enqueue
+- Fix: Honor `|fallback` on contact smartcodes when no CRM contact is present
+- Fix: Neutralize spreadsheet formula injection in email exports
+
 ### 1.0.6 — May 20, 2026
 
 - Feature: Dynamic custom-field source on `[fluentplayer]` — `source_url`, `source_meta`, `source_poster` attributes for per-render URL override without mutating saved media
@@ -137,6 +155,13 @@ All notable user-facing changes to FluentPlayer and FluentPlayer Pro are documen
 - Feature: media search with collapsible header and debounce
 
 ## FluentPlayer Pro
+
+### 1.0.7 — June 22, 2026
+
+- Feature: Update Playlist flow for the playlist block
+- Improvement: Sortable columns and refined visibility controls in playlist tables
+- Fix: Pro-gate the Google Analytics gtag enqueue
+- Fix: Let the assigned preset control resume-playback
 
 ### 1.0.6 — May 15, 2026
 
