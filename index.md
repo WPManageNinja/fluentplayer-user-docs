@@ -3,7 +3,7 @@ layout: home
 title: FluentPlayer
 hero:
   name: FluentPlayer
-  text: WordPress Video & Media Plugin
+  text: Video & Media Plugin for WordPress
   tagline: Powerful, flexible video player with playlists, email capture, and analytics — all from your WordPress site.
   image:
     src: /brand/Hero-Image-2.webp
