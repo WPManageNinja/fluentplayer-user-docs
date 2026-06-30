@@ -114,7 +114,7 @@ Two safeguards run automatically:
 
 ### Does the free version include analytics?
 
-The free version does not include the Built-in Analytics dashboard. You can still connect **Google Analytics** on the free plan — FluentPlayer fires GA4 events automatically once you add your Measurement ID.
+No. The free version does not include the Built-in Analytics dashboard, and **Google Analytics** also requires **FluentPlayer Pro** — GA4 events only fire when Pro is active. On the free plan the Analytics settings show an upgrade prompt and no events are sent.
 
 See [Google Analytics integration](/google-analytics).
 

@@ -65,7 +65,7 @@ Video tracking generates a lot of rows over time. To keep your database fast:
 | **Dashboard** | Inside WordPress admin | Google Analytics UI |
 | **Setup** | Toggle on in Settings | Enter measurement ID |
 | **Detail level** | Per video retention, per user stats | Event based (play, progress, complete) |
-| **Requires Pro** | Yes | No (free) |
+| **Requires Pro** | Yes | Yes |
 
 You can use **both at the same time**. Built in analytics give you WordPress native dashboards with rich detail. [Google Analytics](/google-analytics) sends events to GA4 for broader marketing analysis.
 

@@ -15,14 +15,15 @@ Some common use cases:
 
 ## Free vs Pro
 
-FluentPlayer comes in two versions. This documentation matches **FluentPlayer and FluentPlayer Pro 1.0.6** (see your **Plugins** screen if you use a different release).
+FluentPlayer comes in two versions. This documentation matches **FluentPlayer and FluentPlayer Pro 1.0.7** (see your **Plugins** screen if you use a different release).
 
 | Feature | Free | Pro |
 |---------|------|-----|
 | Add and embed videos | Yes | Yes |
 | Shortcode and Gutenberg block | Yes | Yes |
 | Player presets (7 built in: Default, Modern, Simple, Standard, Floating, Minimal, Ambient + custom on Pro) | Yes | Yes |
-| Subtitles and captions | Yes | Yes |
+| Subtitles & captions (HLS auto-play) | Yes | Yes |
+| Upload your own subtitle tracks (.vtt/.srt) | — | Yes |
 | Email capture with FluentCRM | Yes | Yes |
 | Text & button overlays | — | Yes |
 | CTA overlay | — | Yes |
