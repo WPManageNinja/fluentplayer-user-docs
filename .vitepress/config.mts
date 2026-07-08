@@ -36,6 +36,12 @@ const guideGroups = [
     ],
   },
   {
+    text: 'Migration',
+    items: [
+      { text: 'Migrate from Presto Player (Pro)', link: '/presto-player-migration' },
+    ],
+  },
+  {
     text: 'Managing Your Media',
     items: [
       { text: 'Overview', link: '/videos-and-media' },
@@ -229,6 +235,7 @@ export default defineConfig({
     'guide/integrations/mux.md': 'mux.md',
     'guide/integrations/smartcodes-personalization.md': 'smartcodes-personalization.md',
     'guide/integrations/webhook-integration.md': 'webhook-integration.md',
+    'guide/migration/presto-player.md': 'presto-player-migration.md',
     'guide/playlists/creating-playlists.md': 'creating-playlists.md',
     'guide/playlists/dedicated-playlist-url.md': 'dedicated-playlist-url.md',
     'guide/playlists/embed-playlist.md': 'embed-playlist.md',
