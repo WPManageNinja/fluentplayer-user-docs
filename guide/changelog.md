@@ -7,261 +7,384 @@ next: false
 
 # Changelog
 
-All notable user-facing changes to FluentPlayer and FluentPlayer Pro are documented here. The newest release is listed first. The free plugin and the Pro extension keep separate changelogs, shown below. Items marked **(Pro)** require FluentPlayer Pro.
+Stay updated with the latest features, improvements, and bug fixes in FluentPlayer. The newest release is listed first, and items marked **(Pro)** require FluentPlayer Pro.
 
-## FluentPlayer (Free)
+## FluentPlayer v1.1.0
 
-### 1.0.9 — June 30, 2026
+_Released on July 6, 2026_
 
-- Feature: Customize the confirmation message shown after someone submits the email-capture form
-- Feature: Set a custom color and background for the play button
-- Feature: FluentCRM Double optin email support
-- Feature: Bulk actions in the media list — trash, restore, and change the status of multiple items at once
-- Improvement: Honor WordPress's built-in password protection on the player — protected videos and audio now unlock right on the page
-- Improvement: Honor WordPress's native scheduling for media — set a future publish date and see a clear Scheduled status and time
-- Improvement: Cleaner, more compact media list and a thumbnail with the media type shown in the title
-- Improvement: Refined, more compact media editor — unified setting cards
-- Improvement: Show or hide columns in the media list to fit the table to what you need
-- Improvement: Redesigned player right-click menu with item icons and a refreshed look
-- Improvement: Spot overlapping timed content at a glance and edit each item inline
-- Improvement: Clearer permanent-delete confirmation so media isn't removed by mistake
-- Improvement: Faster-loading admin dashboard
-- Security: Hardened the player's styling output against injection
-- Fix: The video preview now shows while you scrub in the layer, overlay, and chapter editors
-- Fix: On-screen layers such as email capture now correctly hold keyboard focus
-- Fix: Audio tracks in a mixed playlist now play in the audio player
-- Fix: The playlist player now fills the available width and its menu toggle works reliably
-- Fix: YouTube playback and lesson settings now work correctly inside FluentCommunity
-- Fix: Restored the YouTube and Analytics toggles on the settings page
-- Fix: Reliability and rate-limiting improvements for the FluentCRM double opt-in flow
-- Fix: The Default Aspect Ratio option now displays correctly in settings
-- Fix: Renamed "Poster Image" to "Thumbnail" in the media block for clarity
+::: code-group
 
-### 1.0.8 — June 22, 2026
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds the option to use a FluentPlayer video as a FluentCommunity lesson's feature media
+```
 
-- Maintenance: Internal improvements, compatibility, and stability updates
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves the YouTube paused cover button to use your brand color and hide YouTube's default play button
+• Improves the player vignette overlay
+• Improves FluentCommunity lessons by hiding in-video form layers during lesson playback
+```
 
-### 1.0.7 — June 22, 2026
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes players not re-initializing when switching lessons in FluentCommunity
+• Fixes the loading overlay blocking clicks before the player is ready
+• Fixes YouTube subscribe button styling being overridden by aggressive theme CSS
+```
 
-- Feature: Presto Player migration — media, per-video color, thumbnails, YouTube no-cookie settings, and email submissions
-- Feature: Update Playlist flow for the playlist block (Pro)
-- Feature: Back button in the media editor header
-- Feature: Unsaved changes guard on the settings page
-- Improvement: All Media and Settings quick links in the plugins row
-- Improvement: Skeleton loaders across the settings and analytics pages
-- Improvement: Sortable columns and refined visibility controls in the media and playlist tables
-- Improvement: Accessibility pass across the admin — accessible names, keyboard navigation, and AA contrast
-- Improvement: Throttle player time-update handlers to reduce per-frame work and improve smoothness
-- Fix: Let the assigned preset control resume-playback (Pro)
-- Fix: Make YouTube Privacy-Enhanced Mode actually toggle the embed and poster hosts
-- Fix: Load the timed-content frontend script once across all render paths
-- Fix: Pro-gate the Google Analytics gtag enqueue
-- Fix: Honor `|fallback` on contact smartcodes when no CRM contact is present
-- Fix: Neutralize spreadsheet formula injection in email exports
+:::
 
-### 1.0.6 — May 20, 2026
+## FluentPlayer v1.0.9
 
-- Feature: Dynamic custom-field source on `[fluentplayer]` — `source_url`, `source_meta`, `source_poster` attributes for per-render URL override without mutating saved media
-- Feature: Playlist player navigation controls (previous / next) (Pro)
-- Feature: Player share links and context menu
-- Feature: Preset Source media and Auto brand color mode for playlists (Pro)
-- Feature: Unified media list filters in the admin dashboard
-- Feature: Timed content support inside FluentCommunity lessons
-- Improvement: Mux Data analytics payload and reusable field link
-- Improvement: Branding settings logo UX — image-only picker, position active state, conditional fields, clickable preview
-- Improvement: Plugin Check and i18n compliance pass
-- Improvement: Poster-only editor preview mode in Gutenberg
-- Improvement: Self-heal default presets, row actions a11y
-- Improvement: Bound Presto Player migration queries to the active batch / already-migrated set
-- Improvement: Internal modularity refactor across services and controllers
-- Improvement: Quick links dropdown in the media block toolbar
-- Improvement: Media replace editor back button flow
-- Improvement: RTL support across player and admin
-- Fix: Undefined `$default_settings` warning in the player template
-- Fix: iOS Safari being forced to muted when autoplay is disabled
-- Fix: Preset behavior runtime key normalization
-- Fix: Playlist sidebar collapse on initial mobile load (Pro)
-- Fix: Playlist Block keyboard a11y and frontend grid poster (Pro)
-- Fix: Admin media tag filter contract alignment with REST response shape
-- Fix: Default `preload` to `metadata` for lighter initial page weight
-- Fix: Multi-language locale keys alignment
-- Fix: Dedicated player page wide and full block alignment
-- Fix: Duplicate provider replays in email capture submissions
-- Fix: Stream email exports instead of buffering the full set in memory
-- Fix: Remove per-item tag queries from media pagination (N+1)
-- Fix: Email attachment path traversal hardening
-- Fix: Bind analytics and email capture events to the rendered media nonce
-- Fix: Timed content editor spacing controls
-- Fix: Keyboard focus states across player UI
-- Fix: Raw admin exception messages exposure
-- Fix: Presto instant page visibility mapping
-- Fix: Playlist loop setting wiring and menu toggle support (Pro)
+_Released on June 29, 2026_
 
-### 1.0.5 — April 24, 2026
+::: code-group
 
-- Feature: Ambient preset layers
-- Feature: Fluent Community block apiVersion 3 support
-- Feature: Support for CRM shortcodes in timed content and dynamic layers
-- Feature: Presto Player migration tooling for importing media, presets, playlists, settings, analytics, and content rewrites
-- Improvement: Preset template consistency
-- Improvement: Default preset slug resolution, fluent_player embed alignment, and media list table widths
-- Security: Hardening and package safety across plugin directories
-- Fix: YouTube Shorts zoom and crop issues on the frontend
-- Fix: Audio player volume controls on mobile devices
-- Fix: Iframe permission guarding and YouTube cross-player message race conditions
-- Fix: Original aspect ratio fallback to 16:9 when source dimensions are unavailable
-- Fix: Provider config redaction, unpublished language media filtering, and media settings cache invalidation
-- Fix: Auto-draft cleanup bounds, PHP 8.4 compatibility
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds a customizable confirmation message after someone submits the email-capture form
+• Adds a custom color and background for the play button
+• Adds FluentCRM double opt-in email support
+• Adds bulk actions in the media list — trash, restore, and change the status of multiple items at once
+```
 
-### 1.0.4 — March 17, 2026
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves WordPress password-protected media so protected videos and audio unlock right on the page
+• Improves support for WordPress native scheduling — set a future publish date with a clear Scheduled status and time
+• Improves the media list with a cleaner, more compact layout and a thumbnail showing the media type in the title
+• Improves the media editor with a refined, more compact layout and unified setting cards
+• Improves the media list with show/hide columns to fit the table to what you need
+• Improves the player right-click menu with item icons and a refreshed look
+• Improves overlapping timed content so each item is easy to spot and edit inline
+• Improves the permanent-delete confirmation so media isn't removed by mistake
+• Improves admin dashboard loading speed
+```
 
-- Feature: Mux live streaming and VOD provider support
-- Feature: playlist overlay mode setting to playlist block (Pro)
-- Feature: FluentCRM smart code inserter to timed content
-- Feature: configurable thumbnail aspect ratio for all playlist layouts (Pro)
-- Feature: dynamic overlay positioning
-- Improvement: audio player layout and flash prevention
-- Improvement: settings menu mobile responsiveness
-- Improvement: scroll performance and YouTube HD thumbnails
-- Improvement: admin UX and block enhancements
-- Fix: settings menu showing duplicate Playback and Accessibility items
-- Fix: settings menu item styling broken by skin-standard size constraint
-- Fix: JS-PHP connection issues and PHP 8.x compatibility
-- Fix: grid playlist thumbnails display override from Kadence slider (Pro)
-- Fix: mute icon not updating when volume slider reaches zero
-- Fix: stuck autoplay detection
-- Fix: playlist overlay and modal playback bugs (Pro)
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Hardens the player's styling output against injection
+• Fixes the video preview not showing while scrubbing in the layer, overlay, and chapter editors
+• Fixes on-screen layers such as email capture not holding keyboard focus
+• Fixes audio tracks in a mixed playlist not playing in the audio player
+• Fixes the playlist player not filling the available width and its menu toggle not working reliably
+• Fixes YouTube playback and lesson settings inside FluentCommunity
+• Fixes the missing YouTube and Analytics toggles on the settings page
+• Fixes reliability and rate-limiting in the FluentCRM double opt-in flow
+• Fixes the Default Aspect Ratio option not displaying correctly in settings
+• Fixes clarity by renaming "Poster Image" to "Thumbnail" in the media block
+```
 
-### 1.0.3 — March 10, 2026
+:::
 
-- Feature: keyboard action bezel animations with accessibility controls
-- Feature: settings menu with Playback and Accessibility submenus
-- Feature: ambient preset for looping background video with no controls
-- Feature: shortcode and Fluent ecosystem blocks support in timed content
-- Feature: text color support and makes title optional for form layer
-- Improvement: video duration column in admin media list
-- Improvement: seamless loop for muted autoplay instead of countdown
-- Improvement: Gutenberg block UI polish and CSS cleanup
-- Improvement: lazy-load for better performance
-- Fix: prevent auto-scroll to second video on page load
-- Fix: autoplay on chapter modal and time input glitch
-- Fix: ambient loop restart timing for YouTube embeds
+## FluentPlayer v1.0.8
 
-### 1.0.2 — February 28, 2026
+_Released on June 22, 2026_
 
-- Fix: PHP 8.x compatibility
-- Fix: YouTube replay buffering and iframe visibility
-- Refactor: Code refactored for better maintainability
+::: code-group
 
-### 1.0.1 — February 24, 2026
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves internal stability, compatibility, and maintenance
+```
 
-- Fix: apiVersion 3 YouTube block and iframe issue
-- Fix: handleEmailSubmit signature mismatch
+:::
 
-### 1.0.0 — September 22, 2025
+## FluentPlayer v1.0.7
 
-- Initial release of FluentPlayer
-- Feature: video player powered by Vidstack with HLS support
-- Feature: audio player with dedicated audio layout
-- Feature: YouTube and Vimeo embed support with auto poster and title sync
-- Feature: self-hosted media file support (MP4, WebM, MP3, etc.)
-- Feature: Gutenberg block for the media player (playlist block is Pro)
-- Feature: `[fluentplayer]` shortcode (`[fluentplaylist]` is Pro)
-- Feature: playlist support with sidebar and grid layouts (Pro)
-- Feature: drag-and-drop admin dashboard built with Vue 3
-- Feature: player presets (Standard, Floating, Simple, Minimal) with customizable colors
-- Feature: configurable aspect ratios (16:9, 4:3, 1:1, 9:16, 3:2, original)
-- Feature: playback speed control
-- Feature: chapter support with custom time markers
-- Feature: subtitle/caption support
-- Feature: overlay layers system (CTA, email capture, custom HTML)
-- Feature: email capture with FluentCRM integration
-- Feature: timed content for showing overlays at specific timestamps
-- Feature: autoplay with browser mute policy handling
-- Feature: global control bar color and brand color settings
-- Feature: Google Analytics integration (optional)
-- Feature: live preview in admin editor
-- Feature: copy shortcode from media list
-- Feature: media search with collapsible header and debounce
+_Released on June 22, 2026_
 
-## FluentPlayer Pro
+::: code-group
 
-### 1.0.7 — June 22, 2026
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds Presto Player migration — media, per-video color, thumbnails, YouTube no-cookie settings, and email submissions
+• Adds an updated Playlist flow for the playlist block (Pro)
+• Adds a back button in the media editor header
+• Adds an unsaved-changes guard on the settings page
+```
 
-- Feature: Update Playlist flow for the playlist block
-- Improvement: Sortable columns and refined visibility controls in playlist tables
-- Fix: Pro-gate the Google Analytics gtag enqueue
-- Fix: Let the assigned preset control resume-playback
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves the plugins row with All Media and Settings quick links
+• Improves the settings and analytics pages with skeleton loaders
+• Improves the media and playlist tables with sortable columns and refined visibility controls
+• Improves admin accessibility — accessible names, keyboard navigation, and AA contrast
+• Improves playback smoothness by throttling player time-update handlers
+```
 
-### 1.0.6 — May 15, 2026
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes the assigned preset not controlling resume-playback (Pro)
+• Fixes YouTube Privacy-Enhanced Mode not toggling the embed and poster hosts
+• Fixes the timed-content frontend script loading more than once across render paths
+• Fixes the Google Analytics gtag enqueue not being Pro-gated
+• Fixes |fallback on contact smartcodes not being honored when no CRM contact is present
+• Hardens email exports against spreadsheet formula injection
+```
 
-- Feature: Player share links and context menu
-- Feature: Playlist navigation controls
-- Feature: Playlist preset source selection with brand color sync from preset source
-- Improvement: Internal modularity refactor across services and controllers
-- Fix: Reject analytics events for replayed or invalid media IDs
-- Fix: Stop returning raw admin exception messages
-- Fix: Normalize timed content padding in the frontend renderer
+:::
 
-### 1.0.5 — April 24, 2026
+## FluentPlayer v1.0.6
 
-- Feature: Support for FluentCRM based conditions
-- Feature: Condition support in Dynamic layer, Email Capture & More
-- Feature: Media tag management support
-- Feature: YouTube subtitle import through the external subtitle service, including caption and hover preview support
-- Feature: Tag-based playlist rendering shortcode
-- Feature: FluentCommunity playlist block support
-- Improvement: Playlist aspect ratio alignment and legacy ratio handling cleanup
-- Security: Hardening across TLS, signed URLs, analytics, playlist layout guards, and Bunny Storage upload path traversal
-- Fix: Playlist asset cache busting now uses the active free plugin version
-- Fix: Mux signed media URLs, signing key settings copy, and playlist window.fluent_player YouTube settings
-- Fix: Bunny Storage CDN signing, Stream asset tokens, and missing tag options service wiring
-- Fix: Analytics unique viewers now count anonymous viewers and preserve dominant country and device per user
-- Fix: Bunny browser uncategorized video filter for root-level video browsing
-- Fix: Debounced YouTube subscriber count lookup in preset editor
+_Released on May 20, 2026_
 
-### 1.0.4 — March 17, 2026
+::: code-group
 
-- Feature: FluentCRM smartcode parsing for timed content
-- Feature: Mux integration with API client, service, controller, and routes
-- Feature: Configurable playlist aspect ratio selection for all playlist layouts
-- Feature: Playlist per-video overlay and layers support
-- Feature: BunnyCDN signed URL support for Stream and Storage
-- Security: Stronger output escaping across playlist layout templates
-- Improvement: Analytics tracker behavior with fewer unnecessary flush calls on play/pause
-- Feature: Timed content rendering and API controller
-- Feature: Shortcode processing in timed content output
-- Improvement: Playlist player gesture controls
-- Fix: PHP 8.x compatibility issues
-- Fix: Subtitle endpoints querying non-existent wp_medias table
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds a dynamic custom-field source on [fluentplayer] — source_url, source_meta, and source_poster attributes for per-render URL override without mutating saved media
+• Adds playlist player navigation controls, previous and next (Pro)
+• Adds player share links and a context menu
+• Adds Preset Source media and Auto brand color mode for playlists (Pro)
+• Adds unified media list filters in the admin dashboard
+• Adds timed content support inside FluentCommunity lessons
+```
 
-### 1.0.2 — February 28, 2026
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves the Mux Data analytics payload and reusable field link (Pro)
+• Improves the branding logo UX — image-only picker, position active state, conditional fields, and clickable preview
+• Improves Plugin Check and i18n compliance
+• Improves the Gutenberg poster-only editor preview mode
+• Improves default preset self-healing and row-action accessibility
+• Improves Presto Player migration by bounding queries to the active batch and already-migrated set
+• Improves internal modularity across services and controllers
+• Improves the media block toolbar with a quick links dropdown
+• Improves the media replace editor back-button flow
+• Improves RTL support across the player and admin
+```
 
-- Feature: BunnyCDN subtitles import and HLS MP4 fallback
-- Fix: Caption `srclang` validation
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes an undefined default settings warning in the player template
+• Fixes iOS Safari being forced to muted when autoplay is disabled
+• Fixes preset behavior runtime key normalization
+• Fixes playlist sidebar collapse on initial mobile load (Pro)
+• Fixes Playlist Block keyboard accessibility and the frontend grid poster (Pro)
+• Fixes the admin media tag filter to match the REST response shape
+• Fixes initial page weight by defaulting preload to metadata
+• Fixes multi-language locale key alignment
+• Fixes dedicated player page wide and full block alignment
+• Fixes duplicate provider replays in email capture submissions
+• Fixes email exports to stream instead of buffering the full set in memory
+• Fixes an N+1 by removing per-item tag queries from media pagination
+• Hardens email attachment paths against traversal
+• Fixes analytics and email capture events not being bound to the rendered media nonce
+• Fixes timed content editor spacing controls
+• Fixes keyboard focus states across the player UI
+• Fixes raw admin exception messages being exposed
+• Fixes Presto instant page visibility mapping
+• Fixes playlist loop setting wiring and menu toggle support (Pro)
+```
 
-### 1.0.1 — February 24, 2026
+:::
 
-- Feature: `.srt` subtitle file support
-- Feature: Manageable captions from preset
-- Feature: Alignment support for playlist block
-- Improvement: Analytics service with percentage tracking
-- Improvement: BunnyCDN Storage upload performance
-- Fix: BunnyCDN video playback
+## FluentPlayer v1.0.5
 
-### 1.0.0 — February 10, 2026
+_Released on April 24, 2026_
 
-- Feature: Initial release of FluentPlayer Pro
-- Feature: Playlist system with Standard and Grid layouts
-- Feature: Playlist Gutenberg block with dedicated CPT
-- Feature: Playlist visibility (public/private) and slug-based permalinks
-- Feature: BunnyCDN Stream integration for video delivery
-- Feature: BunnyCDN Storage integration with streaming proxy and upload
-- Feature: Mailchimp email provider integration
-- Feature: Webhook email provider integration
-- Feature: Player analytics with view tracking and audience retention
-- Feature: Google Analytics event integration
-- Feature: Preset management (CRUD) with customizable settings
-- Feature: Player subtitles/captions support
-- Feature: Sidebar width and title position settings for playlists
-- Feature: Brand color and control bar color customization
+::: code-group
+
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds ambient preset layers (Pro)
+• Adds Fluent Community block apiVersion 3 support
+• Adds support for CRM shortcodes in timed content and dynamic layers
+• Adds Presto Player migration tooling for importing media, presets, playlists, settings, analytics, and content rewrites
+• Adds support for FluentCRM-based conditions (Pro)
+• Adds condition support in the dynamic layer, email capture, and more (Pro)
+• Adds media tag management (Pro)
+• Adds YouTube subtitle import through the external subtitle service, including caption and hover preview support (Pro)
+• Adds a tag-based playlist rendering shortcode (Pro)
+• Adds FluentCommunity playlist block support (Pro)
+```
+
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves preset template consistency
+• Improves default preset slug resolution, fluent_player embed alignment, and media list table widths
+• Improves playlist aspect ratio alignment and cleans up legacy ratio handling (Pro)
+```
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Hardens plugin directories across packaging and safety
+• Hardens TLS, signed URLs, analytics, playlist layout guards, and Bunny Storage upload path traversal (Pro)
+• Fixes YouTube Shorts zoom and crop issues on the frontend
+• Fixes audio player volume controls on mobile devices
+• Fixes iframe permission guarding and YouTube cross-player message race conditions
+• Fixes original aspect ratio fallback to 16:9 when source dimensions are unavailable
+• Fixes provider config redaction, unpublished language media filtering, and media settings cache invalidation
+• Fixes auto-draft cleanup bounds and PHP 8.4 compatibility
+• Fixes playlist asset cache busting to use the active free plugin version (Pro)
+• Fixes Mux signed media URLs, signing key settings copy, and playlist YouTube settings (Pro)
+• Fixes Bunny Storage CDN signing, Stream asset tokens, and missing tag options service wiring (Pro)
+• Fixes analytics unique viewers to count anonymous viewers and preserve dominant country and device per user (Pro)
+• Fixes the Bunny browser uncategorized video filter for root-level browsing (Pro)
+• Fixes the debounced YouTube subscriber count lookup in the preset editor (Pro)
+```
+
+:::
+
+## FluentPlayer v1.0.4
+
+_Released on March 17, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds Mux live streaming and VOD provider support (Pro)
+• Adds a playlist overlay mode setting to the playlist block (Pro)
+• Adds a FluentCRM smart-code inserter to timed content
+• Adds configurable thumbnail aspect ratio for all playlist layouts (Pro)
+• Adds dynamic overlay positioning
+• Adds a Mux integration with API client, service, controller, and routes (Pro)
+• Adds playlist per-video overlay and layers support (Pro)
+• Adds BunnyCDN signed URL support for Stream and Storage (Pro)
+• Adds timed content rendering and API controller (Pro)
+• Adds shortcode processing in timed content output (Pro)
+```
+
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves audio player layout and prevents flash
+• Improves settings menu mobile responsiveness
+• Improves scroll performance and YouTube HD thumbnails
+• Improves admin UX and block enhancements
+• Improves the analytics tracker with fewer unnecessary flush calls on play and pause (Pro)
+• Improves playlist player gesture controls (Pro)
+```
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Hardens output escaping across playlist layout templates (Pro)
+• Fixes the settings menu showing duplicate Playback and Accessibility items
+• Fixes settings menu item styling broken by the skin-standard size constraint
+• Fixes JS-PHP connection issues and PHP 8.x compatibility
+• Fixes grid playlist thumbnails being overridden by the Kadence slider (Pro)
+• Fixes the mute icon not updating when the volume slider reaches zero
+• Fixes stuck autoplay detection
+• Fixes playlist overlay and modal playback bugs (Pro)
+• Fixes subtitle endpoints querying a non-existent wp_medias table (Pro)
+```
+
+:::
+
+## FluentPlayer v1.0.3
+
+_Released on March 10, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds keyboard action bezel animations with accessibility controls
+• Adds a settings menu with Playback and Accessibility submenus
+• Adds an ambient preset for looping background video with no controls (Pro)
+• Adds shortcode and Fluent ecosystem block support in timed content
+• Adds text color support and makes the title optional for the form layer
+```
+
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves the admin media list with a video duration column
+• Improves muted autoplay with a seamless loop instead of a countdown
+• Improves Gutenberg block UI polish and CSS cleanup
+• Improves performance with lazy-loading
+```
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes auto-scroll to the second video on page load
+• Fixes autoplay on the chapter modal and a time-input glitch
+• Fixes ambient loop restart timing for YouTube embeds (Pro)
+```
+
+:::
+
+## FluentPlayer v1.0.2
+
+_Released on February 28, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds BunnyCDN subtitles import and HLS MP4 fallback (Pro)
+```
+
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves maintainability with a code refactor
+```
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes PHP 8.x compatibility
+• Fixes YouTube replay buffering and iframe visibility
+• Fixes caption srclang validation (Pro)
+```
+
+:::
+
+## FluentPlayer v1.0.1
+
+_Released on February 24, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds .srt subtitle file support (Pro)
+• Adds manageable captions from the preset (Pro)
+• Adds alignment support for the playlist block (Pro)
+```
+
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves the analytics service with percentage tracking (Pro)
+• Improves BunnyCDN Storage upload performance (Pro)
+```
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes the apiVersion 3 YouTube block and iframe issue
+• Fixes a handleEmailSubmit signature mismatch
+• Fixes BunnyCDN video playback (Pro)
+```
+
+:::
+
+## FluentPlayer Pro v1.0.0
+
+_Released on February 10, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds the initial release of FluentPlayer Pro
+• Adds a playlist system with Standard and Grid layouts
+• Adds a playlist Gutenberg block with a dedicated CPT
+• Adds playlist visibility (public/private) and slug-based permalinks
+• Adds BunnyCDN Stream integration for video delivery
+• Adds BunnyCDN Storage integration with streaming proxy and upload
+• Adds Mailchimp email provider integration
+• Adds Webhook email provider integration
+• Adds player analytics with view tracking and audience retention
+• Adds Google Analytics event integration
+• Adds preset management (CRUD) with customizable settings
+• Adds player subtitles and captions support
+• Adds sidebar width and title position settings for playlists
+• Adds brand color and control bar color customization
+```
+
+:::
+
+## FluentPlayer v1.0.0
+
+_Released on September 22, 2025_
+
+::: code-group
+
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds the initial release of FluentPlayer
+• Adds a video player powered by Vidstack with HLS support
+• Adds an audio player with a dedicated audio layout
+• Adds YouTube and Vimeo embed support with auto poster and title sync
+• Adds self-hosted media file support (MP4, WebM, MP3, and more)
+• Adds a Gutenberg block for the media player (playlist block is Pro)
+• Adds the [fluentplayer] shortcode ([fluentplaylist] is Pro)
+• Adds a drag-and-drop admin dashboard built with Vue 3
+• Adds player presets (Standard, Floating, Simple, Minimal) with customizable colors
+• Adds configurable aspect ratios (16:9, 4:3, 1:1, 9:16, 3:2, original)
+• Adds playback speed control
+• Adds chapter support with custom time markers
+• Adds subtitle and caption support
+• Adds an overlay layers system (CTA, email capture, custom HTML)
+• Adds email capture with FluentCRM integration
+• Adds timed content for showing overlays at specific timestamps
+• Adds autoplay with browser mute policy handling
+• Adds global control bar color and brand color settings
+• Adds optional Google Analytics integration
+• Adds a live preview in the admin editor
+• Adds copy-shortcode from the media list
+• Adds media search with a collapsible header and debounce
+```
+
+:::
