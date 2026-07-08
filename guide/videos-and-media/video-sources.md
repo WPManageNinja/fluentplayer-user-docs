@@ -1,6 +1,6 @@
 ---
 title: "Video Sources"
-description: "Explore supported video source types in FluentPlayer, including WordPress, external URLs, YouTube, Vimeo, Mux, BunnyCDN, and audio."
+description: "Explore supported video source types in FluentPlayer, including WordPress, external URLs, YouTube, Vimeo, Mux, BunnyCDN, Cloudflare, and audio."
 ---
 
 # Video Sources
@@ -88,11 +88,22 @@ With FluentPlayer Pro, you can connect to **Bunny CDN** for professional video h
 
 ![BunnyCDN](/guide/public/videos-and-media/video-sources/bunny-cdn-6.webp)
 
+### 7. Cloudflare R2 and Stream (Pro)
+
+With FluentPlayer Pro, you can host and deliver your videos on **Cloudflare**. There are two options:
+
+ * **Cloudflare R2**: S3-compatible object storage with zero egress fees. Upload ready-to-play files to a bucket and serve them through Cloudflare.
+ * **Cloudflare Stream**: Cloudflare's managed video platform with automatic encoding, adaptive HLS, and per-video signed playback.
+
+Connect either one under **Settings → Storage**, then choose it as the source when adding media. See [Cloudflare R2 & Stream (Pro)](/cloudflare).
+
+**Best for:** Sites that already use Cloudflare, want zero egress costs (R2), or want hands-off encoding and adaptive streaming (Stream).
+
 ## How to Set the Video Source
 
 1. Go to **FluentPlayer → Media** and create or edit a media item.
 2. In the media editor, look for the **Source** section.
-3. Choose the source type. Free: **WordPress**, **YouTube**, **Vimeo**, **Audio**. Pro: **URL** (external/direct-file), **Mux**, and **BunnyCDN**.
+3. Choose the source type. Free: **WordPress**, **YouTube**, **Vimeo**, **Audio**. Pro: **URL** (external/direct-file), **Mux**, **BunnyCDN**, and **Cloudflare**.
 4. Enter the **URL** or select the file.
 5. **Save** the media.
 
