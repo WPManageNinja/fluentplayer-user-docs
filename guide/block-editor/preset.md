@@ -53,7 +53,7 @@ The following controls are available for your custom preset:
 
 ## Built-In Presets
 
-FluentPlayer ships with **seven** built-in presets (names may appear with thumbnails in the grid):
+FluentPlayer ships with **seven** built-in presets:
 
 | Preset | Character |
 |--------|-----------|
@@ -65,7 +65,7 @@ FluentPlayer ships with **seven** built-in presets (names may appear with thumbn
 | **Minimal** | Very light UI |
 | **Ambient** | Ambient / atmospheric styling |
 
-Click a preset to select it; the UI usually shows a **checkmark** or border on the active choice.
+Click a preset to select it; the active preset shows a **checkmark** or border.
 
 ## Per Preset Actions
 

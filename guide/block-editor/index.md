@@ -59,7 +59,7 @@ Many options **override** [global Settings](/settings) or [presets](/presets) fo
 
 **Per block / per media → preset → global Settings**
 
-Exact behavior can vary by option; each page notes **global vs override** where it matters.
+Whether a setting is global or a per-media override is noted on each page.
 
 :::info
 If you change a color in the **Block** sidebar, it will ignore your **Global Settings** for that specific video only.

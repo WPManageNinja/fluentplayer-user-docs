@@ -37,9 +37,9 @@ The **Block** tab is where you will spend most of your time customizing the actu
 
 Understanding how your changes are stored ensures your video looks correct everywhere it is embedded.
 
- * **Media Settings:** Changes made in the **Block** tab are usually saved directly to the **Media ID**. This means any other page using that same **Media ID** will automatically pick up your new styling and settings.
+ * **Media Settings:** Changes made in the **Block** tab are saved directly to the **Media ID**. This means any other page using that same **Media ID** will automatically pick up your new styling and settings.
  * **Post Association:** When adding a video to a standard post, the block saves the association with that specific Media ID.
- * **Live Updates:** Saving your changes typically updates the media record across your site via the plugin's background system.
+ * **Live Updates:** Saving updates the media record everywhere it is embedded via the plugin's background system.
 
 Use the **Media** tab to manage the "identity" of your video (titles, slugs, and status) and the **Block** tab to design the "experience" (colors, buttons, and interactivity). Always remember to click **Save** or **Update** to ensure your changes go live on the front end.
 
