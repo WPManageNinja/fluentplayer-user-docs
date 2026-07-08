@@ -11,6 +11,8 @@ Professional hosting ensures faster loading and a better viewer experience by of
 - **[Mux](/mux)** — HLS streaming, direct uploads, live streams, optional signed URLs, webhooks, AI captions, and optional Mux Data analytics. In the block editor you can pick **Mux** or **Mux Live** as the source; credentials are configured under **Settings → Storage**.
 - **[BunnyCDN Stream](/bunnycdn-stream)** — Use Bunny's video streaming platform. Upload and manage videos in Bunny libraries, then select them in FluentPlayer.
 - **[BunnyCDN Storage](/bunnycdn-storage)** — Host video files in Bunny's storage zones. Upload from WordPress and use storage files as video sources.
+- **[Cloudflare R2](/cloudflare)** — S3-compatible object storage with zero egress fees. Host ready-to-play files in an R2 bucket and serve them through Cloudflare.
+- **[Cloudflare Stream](/cloudflare)** — Cloudflare's managed video platform with automatic encoding, adaptive HLS, and per-video signed playback.
 
 ### Email Marketing
 
@@ -38,7 +40,7 @@ Most integration settings are found in **FluentPlayer → Settings**. Some integ
 
 | Integration | Where to configure |
 |-------------|-------------------|
-| Mux, BunnyCDN Stream, BunnyCDN Storage | **Settings → Storage** (filter chips **All** / **BunnyCDN** / **Mux**; each row has **Configure**) |
+| Mux, BunnyCDN Stream, BunnyCDN Storage, Cloudflare R2, Cloudflare Stream | **Settings → Storage** (each provider row has **Configure**) |
 | FluentCRM / Mailchimp / Webhook | **Settings → Integrations** (filters **All** / **Email Service Provider** / **Others**) |
 | Built-in Analytics | **Settings → Analytics** → **FluentPlayer Analytics** tab |
 | Google Analytics | **Settings → Analytics** → **Google Analytics** tab |
@@ -56,6 +58,7 @@ Most integration settings are found in **FluentPlayer → Settings**. Some integ
 | [Mux (Pro)](/mux) | Connect Mux for streaming, uploads, and live video |
 | [BunnyCDN Stream (Pro)](/bunnycdn-stream) | Connect Bunny Stream for video hosting |
 | [BunnyCDN Storage (Pro)](/bunnycdn-storage) | Use Bunny Storage for video files |
+| [Cloudflare R2 & Stream (Pro)](/cloudflare) | Host on Cloudflare R2 or stream with Cloudflare Stream |
 | [Built-in Analytics (Pro)](/built-in-analytics) | Track plays, watch time, and viewer behavior |
 | [Google Analytics (Pro)](/google-analytics) | Send player events to GA4 |
 | [Mailchimp (Pro)](/mailchimp-integration) | Add email leads to a Mailchimp audience |
