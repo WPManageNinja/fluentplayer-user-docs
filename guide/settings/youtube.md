@@ -25,3 +25,8 @@ Behind the scenes, FluentPlayer can call YouTube’s channel metadata so the sub
 ## Saving Changes
 
 Click **Save Settings** after adjusting YouTube options.
+
+## Related pages
+
+- [Video Sources](/video-sources) — how to add a YouTube video to a player
+- [Settings Overview](/settings) — all global FluentPlayer settings

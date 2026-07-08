@@ -45,7 +45,7 @@ You can update your videos at any time, and the changes will automatically refle
 3. Modify any settings, including:
    - The **Video Source** (to swap URLs or files).
    - The **Poster Image** or **Player Preset**.
-   - Player specific settings like [controls](/creating-custom-presets), [behaviors](/behaviors), [overlays](/email-capture), and more.
+   - Player specific settings like [controls](/creating-custom-presets), [behaviors](/behaviors), [overlays](/overlays), and more.
    - Interactive Layers such as email capture, CTAs, or the action bar.
 4. Click **Update** (or **Publish**) to save your changes.
 

@@ -39,4 +39,5 @@ From this screen, you can:
 | [Subtitles](/subtitles) | How to add and remove subtitle tracks |
 | [Multiple Languages](/multiple-languages) | How to offer the same video in different languages |
 | [Public vs Private Visibility](/public-vs-private) | Who can see your video on the dedicated player URL |
+| [Media Tags (Pro)](/media-tags) | Organize videos with tags for filtering and playlists |
 
