@@ -8,7 +8,7 @@ Playlists require **FluentPlayer Pro**. The free plugin shows the Playlists menu
 
 ## What Is a Playlist?
 
-A playlist is a collection of FluentPlayer media items displayed together in a single player interface. You create media items first (under FluentPlayer → Media), then group them into a playlist.
+A playlist is a collection of FluentPlayer media items displayed together in a single player interface. You [create media items](/adding-videos) first (under FluentPlayer → Media), then group them into a playlist.
 
 Each playlist has:
 
@@ -43,3 +43,9 @@ Go to **FluentPlayer → Playlists** in your WordPress admin. Here you can:
 - Add, remove, and reorder media items.
 - Choose a layout and configure its options.
 - Delete playlists you no longer need.
+
+## Related pages
+
+- [Creating a Playlist](/creating-playlists) — the step-by-step starting point
+- [Embed a Playlist](/embed-playlist) — show a playlist on a post or page
+- [Dedicated Playlist URL (Pro)](/dedicated-playlist-url) — share a playlist on its own page

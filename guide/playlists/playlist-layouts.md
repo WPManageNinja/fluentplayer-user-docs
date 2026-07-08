@@ -1,6 +1,6 @@
 # Playlist Layouts
 
-When you create a playlist, you choose a **layout** that controls how it is displayed on the front end. FluentPlayer offers two layout styles — **Standard** and **Grid** — each designed for a different use case.
+When you [create a playlist](/creating-playlists), you choose a **layout** that controls how it is displayed on the front end. FluentPlayer offers two layout styles — **Standard** and **Grid** — each designed for a different use case.
 
 To configure the layout, open a playlist and expand the **Layout** panel in the right sidebar.
 
@@ -74,4 +74,9 @@ Fifty product tutorials in a **3-column** grid, **12 per page**, with the **Inli
 ![Layout Standard](/guide/public/playlists/playlist-layouts/layout-grid-2.webp)
 
 You can change the layout at any time by editing the playlist and selecting a different style in the **Layout** panel. The front end updates on the next page load.
+
+## Related pages
+
+- [Appearance & Behavior](/playlist-settings) — colors, autoplay, and other playlist options
+- [Embed a Playlist](/embed-playlist) — put the finished playlist on a page
 

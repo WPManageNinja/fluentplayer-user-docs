@@ -63,7 +63,7 @@ Now let's show the video on your site. You have two options:
 [fluentplayer id="42"]
 ```
 
-You can also use the legacy alias `[fluentmedia id="42"]`; both are identical. Replace `42` with your actual media ID.
+You can also use the legacy alias `[fluentmedia id="42"]`; both are identical. Replace `42` with your actual media ID. For every attribute, see [Embed with Shortcode](/shortcode).
 
 3. Publish or update the post.
 
