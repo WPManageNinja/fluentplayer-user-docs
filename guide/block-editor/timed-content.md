@@ -42,7 +42,12 @@ The Timed Content Area functions like a "mini" editor inside your media entry:
 
 ![Timing Control](/guide/public/block-editor/timed-content/set-time-range-3.webp)
 
-The Timed Content Area turns a simple video into a structured learning or marketing experience
+The Timed Content Area turns a simple video into a structured learning or marketing experience.
+
+## Related pages
+
+- [Editor Overview](/block-editor) — back to all Block sidebar panels
+- [Interactive Layers](/interactive-layers) — timed forms, CTAs, and hotspots on top of the video
 
 
 

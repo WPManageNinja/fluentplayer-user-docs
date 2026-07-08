@@ -37,3 +37,8 @@ You can paste these shortcodes into almost any area of your WordPress site:
  * **Classic Editor:** Simply paste the code directly into the text editor.
  * **Widgets:** Use them in **Text** or **Custom HTML** widgets in your sidebar or footer.
 
+## Related pages
+
+- [Chapters](/chapters) — in-player section markers viewers can click
+- [Shortcode Embed](/shortcode) — full reference for the shortcode attributes
+

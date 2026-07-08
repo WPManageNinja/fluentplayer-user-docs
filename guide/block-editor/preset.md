@@ -25,7 +25,7 @@ FluentPlayer provides a visual grid of built-in styles. Simply click a thumbnail
 
 ## Creating a Custom Preset
 
-If the built in styles don't fit your needs, you can create your own by clicking the **+ Add New** button. This opens a powerful editor where you can customize every detail:
+If the built in styles don't fit your needs, you can create your own by clicking the **+ Add New** button. This opens a powerful editor where you can customize every detail. For a full walkthrough, see [Creating Custom Presets](/creating-custom-presets).
 
 ### 1. Basic Identity
 
