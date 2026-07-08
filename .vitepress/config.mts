@@ -143,6 +143,7 @@ const guideGroups = [
     items: [
       { text: 'Integrations Overview', link: '/integrations' },
       { text: 'Mux (Pro)', link: '/mux' },
+      { text: 'Gumlet (Pro)', link: '/gumlet' },
       { text: 'Bunny Stream (Pro)', link: '/bunnycdn-stream' },
       { text: 'Bunny Storage (Pro)', link: '/bunnycdn-storage' },
       { text: 'Built-in Analytics (Pro)', link: '/built-in-analytics' },
@@ -226,6 +227,7 @@ export default defineConfig({
     'guide/integrations/google-analytics.md': 'google-analytics.md',
     'guide/integrations/index.md': 'integrations.md',
     'guide/integrations/mailchimp-integration.md': 'mailchimp-integration.md',
+    'guide/integrations/gumlet.md': 'gumlet.md',
     'guide/integrations/mux.md': 'mux.md',
     'guide/integrations/smartcodes-personalization.md': 'smartcodes-personalization.md',
     'guide/integrations/webhook-integration.md': 'webhook-integration.md',
