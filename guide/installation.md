@@ -41,7 +41,7 @@ If you have a FluentPlayer Pro license:
 4. Upload the Pro zip file and click **Install Now**.
 5. Click **Activate**.
 
-After activating Pro, the admin menu label changes to **FluentPlayer Pro**, and additional features like [Playlists](/playlists), [Mux](/mux), [BunnyCDN](/bunnycdn-stream), [timed content](/block#timed-content-pro) in the media block, and [Analytics](/built-in-analytics) become available.
+After activating Pro, the admin menu label changes to **FluentPlayer Pro**, and additional features like [Playlists](/playlists), [Mux](/mux), [BunnyCDN](/bunnycdn-stream), [Cloudflare R2 & Stream](/cloudflare), [timed content](/block#timed-content-pro) in the media block, and [Analytics](/built-in-analytics) become available.
 
 ::: warning Important
 The Pro plugin will not work without the free plugin. Always keep both plugins active if you are using Pro features.

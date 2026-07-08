@@ -117,3 +117,43 @@ After connecting:
 4. Save the media.
 
 **Related:** [Mux integration guide](/mux) for live streaming, signed URLs, and advanced API details.
+
+## Cloudflare R2
+
+**Cloudflare R2** is S3-compatible object storage with **zero egress fees**. You upload ready-to-play video files to a bucket and FluentPlayer serves them through Cloudflare's global network.
+
+### What You Need
+
+- A [Cloudflare](https://dash.cloudflare.com/login) account with **R2 Object Storage** enabled.
+- An R2 **bucket** with its **Public Development URL** (or a custom domain) enabled.
+- An R2 **API token** with **Object Read & Write** permission, giving you an **Access Key ID** and **Secret Access Key**.
+
+### How to Connect
+
+1. Go to **FluentPlayer → Settings → Storage**.
+2. Click **Configure** on the **Cloudflare R2** row.
+3. Enter your **Account ID**, **Access Key**, **Secret Key**, **Bucket Name**, and **Bucket Public URL** (and an optional sub-folder).
+4. Click **Test Connection** to verify.
+5. **Save** the settings.
+
+**Related:** [Cloudflare R2 & Stream integration guide](/cloudflare) for the full step-by-step setup on the Cloudflare side.
+
+## Cloudflare Stream
+
+**Cloudflare Stream** is a fully managed video platform that encodes your uploads into adaptive HLS and supports per-video signed playback — a good fit when you want Cloudflare to handle encoding for you.
+
+### What You Need
+
+- A [Cloudflare](https://dash.cloudflare.com/login) account with **Stream** enabled.
+- Your Cloudflare **Account ID** (shown on the Stream page sidebar).
+- An **API Token** with **Stream Read + Edit** permissions.
+
+### How to Connect
+
+1. Go to **FluentPlayer → Settings → Storage**.
+2. Click **Configure** on the **Cloudflare Stream** row.
+3. Enter your **Account ID** and **API Token**.
+4. Click **Test Connection** to verify.
+5. **Save** the settings.
+
+**Related:** [Cloudflare R2 & Stream integration guide](/cloudflare) for details on both Cloudflare options.
