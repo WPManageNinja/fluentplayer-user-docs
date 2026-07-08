@@ -29,6 +29,7 @@ const base = resolveBase()
 const guideGroups = [
   {
     text: 'Get Started',
+    collapsed: true,
     items: [
       { text: 'What is FluentPlayer?', link: '/introduction' },
       { text: 'Installation', link: '/installation' },
@@ -36,13 +37,8 @@ const guideGroups = [
     ],
   },
   {
-    text: 'Migration',
-    items: [
-      { text: 'Migrate from Presto Player (Pro)', link: '/presto-player-migration' },
-    ],
-  },
-  {
     text: 'Managing Your Media',
+    collapsed: true,
     items: [
       { text: 'Overview', link: '/videos-and-media' },
       { text: 'Adding and Editing Videos', link: '/adding-videos' },
@@ -55,6 +51,7 @@ const guideGroups = [
   },
   {
     text: 'Embedding Your Player',
+    collapsed: true,
     items: [
       { text: 'Embedding Overview', link: '/display-embed' },
       { text: 'Shortcode Embed', link: '/shortcode' },
@@ -65,12 +62,13 @@ const guideGroups = [
   },
   {
     text: 'Player Editor',
+    collapsed: true,
     items: [
       { text: 'Editor Overview', link: '/block-editor' },
       { text: 'Media vs Block Tabs', link: '/media-tab' },
       {
         text: 'Core Settings',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'General Settings', link: '/general-settings' },
           { text: 'Preset', link: '/preset' },
@@ -79,7 +77,7 @@ const guideGroups = [
       },
       {
         text: 'Content Structure',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Chapters', link: '/chapters' },
           { text: 'Timestamp Links', link: '/block-timestamp-links' },
@@ -90,7 +88,7 @@ const guideGroups = [
       },
       {
         text: 'Interactive Elements',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Text & Button Overlays (Pro)', link: '/overlays' },
           { text: 'Interactive Layers', link: '/interactive-layers' },
@@ -101,6 +99,7 @@ const guideGroups = [
   },
   {
     text: 'Engagement & Conversion',
+    collapsed: true,
     items: [
       { text: 'Overview', link: '/engagement' },
       { text: 'Email Capture Overlay', link: '/email-capture' },
@@ -110,6 +109,7 @@ const guideGroups = [
   },
   {
     text: 'Player Customization',
+    collapsed: true,
     items: [
       { text: 'Overview', link: '/customize' },
       { text: 'Presets', link: '/presets' },
@@ -119,6 +119,7 @@ const guideGroups = [
   },
   {
     text: 'Playlists (Pro)',
+    collapsed: true,
     items: [
       { text: 'Overview', link: '/playlists' },
       { text: 'Creating a Playlist', link: '/creating-playlists' },
@@ -131,6 +132,7 @@ const guideGroups = [
   },
   {
     text: 'Global Settings',
+    collapsed: true,
     items: [
       { text: 'Settings Overview', link: '/settings' },
       { text: 'General', link: '/general' },
@@ -146,6 +148,7 @@ const guideGroups = [
   },
   {
     text: 'Integrations',
+    collapsed: true,
     items: [
       { text: 'Integrations Overview', link: '/integrations' },
       { text: 'Mux (Pro)', link: '/mux' },
@@ -160,13 +163,22 @@ const guideGroups = [
     ],
   },
   {
+    text: 'Migration',
+    collapsed: true,
+    items: [
+      { text: 'Migrate from Presto Player (Pro)', link: '/presto-player-migration' },
+    ],
+  },
+  {
     text: 'Developer',
+    collapsed: true,
     items: [
       { text: 'Hooks & Filters Reference', link: '/hooks-reference' },
     ],
   },
   {
     text: 'Troubleshooting & Support',
+    collapsed: true,
     items: [
       { text: 'Common Issues & Fixes', link: '/troubleshooting' },
       { text: 'Frequently Asked Questions', link: '/faq' },
