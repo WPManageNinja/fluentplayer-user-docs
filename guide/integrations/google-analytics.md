@@ -58,3 +58,8 @@ It may take a few hours for events to appear in GA4 after you first set it up. R
 **Recommendation:** If you have FluentPlayer Pro, use **both**. Built-in analytics give you rich, video-specific insights inside WordPress. Google Analytics gives you a broader marketing picture.
 
 Using Google Analytics with FluentPlayer is a great way to see how video content contributes to your overall website goals.
+
+## Related pages
+
+- [Built-in Analytics (Pro)](/built-in-analytics) — the in-WordPress dashboard you can run alongside GA4
+- [Analytics Settings](/analytics) — enable both analytics options from one screen

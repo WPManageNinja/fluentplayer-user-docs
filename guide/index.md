@@ -58,7 +58,7 @@ The **free version** handles everything you need for embedding and customizing s
 Here is the typical workflow:
 
 1. **Install** the plugin (free, and Pro if needed). See [Installation](/installation).
-2. **Add a video** under FluentPlayer → Media. Choose your video source and configure the player. See [Adding and Editing Videos](/adding-videos).
+2. **Add a video** under FluentPlayer → Media. Choose your video source and configure the player. See [Adding and Editing Videos](/adding-videos) or the [Managing Your Media](/videos-and-media) overview.
 3. **Embed it** on any page or post using a shortcode or Gutenberg block. See [Embedding Your Player](/display-embed). For every option in the **Block** sidebar (including the dedicated **Add Media** editor), see [Player Editor](/block-editor).
 4. **Customize** the look and behavior with presets, skins, and branding. See [Player Customization](/customize).
 5. **Convert viewers** with email capture and CTAs. See [Engagement & Conversion](/engagement).

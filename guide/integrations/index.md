@@ -17,8 +17,8 @@ Professional hosting ensures faster loading and a better viewer experience by of
 Capture viewer emails with the [email capture overlay](/email-capture) and send them to your email marketing tool:
 
 - **FluentCRM** (free): WordPress native CRM. See [Email Providers](/email-providers).
-- **Mailchimp** (Pro): Popular email marketing platform. See [Email Providers](/email-providers).
-- **Webhook** (Pro): Send email data to any URL (Zapier, HubSpot, ActiveCampaign, etc.). See [Email Providers](/email-providers).
+- **Mailchimp** (Pro): Popular email marketing platform. See [Mailchimp Integration](/mailchimp-integration).
+- **Webhook** (Pro): Send email data to any URL (Zapier, HubSpot, ActiveCampaign, etc.). See [Webhook Integration](/webhook-integration).
 
 ### Analytics
 
@@ -58,6 +58,8 @@ Most integration settings are found in **FluentPlayer → Settings**. Some integ
 | [BunnyCDN Storage (Pro)](/bunnycdn-storage) | Use Bunny Storage for video files |
 | [Built-in Analytics (Pro)](/built-in-analytics) | Track plays, watch time, and viewer behavior |
 | [Google Analytics (Pro)](/google-analytics) | Send player events to GA4 |
+| [Mailchimp (Pro)](/mailchimp-integration) | Add email leads to a Mailchimp audience |
+| [Webhook (Pro)](/webhook-integration) | Send email leads to any external URL |
 | [FluentCommunity](/fluent-community) | Player inside FluentCommunity |
 | [Smartcodes (FluentCRM)](/smartcodes-personalization) | Personalized text with merge tags |
 
