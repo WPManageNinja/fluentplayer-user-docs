@@ -26,3 +26,8 @@ Exact behavior can vary by theme and caching plugins. After changing this settin
 ## Saving Changes
 
 Click **Save Settings** after changing performance options. Clear any full page cache or CDN cache so visitors receive the updated loading behavior.
+
+## Related pages
+
+- [Settings Overview](/settings) — all global FluentPlayer settings
+- [General Settings](/general) — core plugin options

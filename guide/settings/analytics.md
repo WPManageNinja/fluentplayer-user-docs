@@ -2,7 +2,7 @@
 
 Welcome to the Analytics settings! If you have ever wondered who is watching your videos, how long they stay, and exactly when they stop watching, this is where you turn those insights on.
 
-We give you two powerful ways to track your video engagement side-by-side: our beautifully detailed, built-in FluentPlayer Analytics and a seamless integration with Google Analytics.
+We give you two powerful ways to track your video engagement side-by-side: our beautifully detailed, [built-in FluentPlayer Analytics](/built-in-analytics) and a seamless [integration with Google Analytics](/google-analytics).
 
 
 
