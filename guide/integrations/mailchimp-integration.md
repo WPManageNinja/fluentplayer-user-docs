@@ -128,3 +128,8 @@ No duplicate is created. The existing contact is updated and any new tags from t
 
 **Do I need a paid Mailchimp plan?**
 No. The Mailchimp API is available on free and paid plans. The plugin works with any Mailchimp plan. Just check API rate limits if you expect high submission volumes.
+
+## Related pages
+
+- [Email Providers](/email-providers) — overview of every provider you can connect
+- [Webhook Integration](/webhook-integration) — send leads to any external URL instead

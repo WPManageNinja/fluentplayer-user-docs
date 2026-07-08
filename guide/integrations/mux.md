@@ -140,4 +140,9 @@ You can use **both**:
 Most Mux issues trace back to credentials, webhooks, or signed URL keys. After changing any of these in Mux, return to **Settings → Storage → Mux**, save again, and upload or re select the asset in **Fluent Player → Media**.
 :::
 
-Integrating Mux with **FluentPlayer Pro** provides a scalable, professional-grade video delivery system within WordPress. From adaptive HLS streaming to real-time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management
+Integrating Mux with **FluentPlayer Pro** provides a scalable, professional-grade video delivery system within WordPress. From adaptive HLS streaming to real-time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management.
+
+## Related pages
+
+- [Video Sources](/video-sources) — where Mux fits among all source types
+- [Gutenberg Block](/block) — embed your connected Mux asset on a page

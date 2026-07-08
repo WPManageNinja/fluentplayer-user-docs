@@ -128,3 +128,8 @@ Each video uses one active email provider at a time (FluentCRM, Mailchimp, or We
 
 **Can I use HTTP instead of HTTPS?**
 HTTP may be accepted in testing, but use **HTTPS** in production so email data is encrypted in transit.
+
+## Related pages
+
+- [Email Providers](/email-providers) — overview of every provider you can connect
+- [Mailchimp Integration](/mailchimp-integration) — a native option if you use Mailchimp
