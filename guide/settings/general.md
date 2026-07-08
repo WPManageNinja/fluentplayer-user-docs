@@ -16,7 +16,7 @@ The preset grid shows every available player skin. The selected preset has a che
 | **Standard** | Classic control bar layout |
 | **Floating** | Control bar floats over the video |
 | **Minimal** | Bare bones controls |
-| **Ambient** | Muted autoplay, hidden controls, loop on end — tuned for background video |
+| **Ambient** (Pro) | Muted autoplay, hidden controls, loop on end — tuned for background video |
 
 ![General Settings](/guide/public/settings/general/general-settings-1.webp)
 

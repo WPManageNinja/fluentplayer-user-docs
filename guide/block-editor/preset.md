@@ -19,7 +19,7 @@ FluentPlayer provides a visual grid of built-in styles. Simply click a thumbnail
  * **Standard:** The Standard style follows a traditional video player layout with clearly visible controls. It feels familiar to most users, making it easy to use without any learning curve.
  * **Floating:** In this style, the player controls appear as overlays on top of the video. This gives a more modern feel while keeping the interface less cluttered and maximizing the video viewing area.
  * **Minimal:** The Minimal preset removes extra elements and keeps the interface very light. It is perfect when you want a clean look with very few controls visible, especially for distraction free viewing.
- * **Ambient:** This style creates a more immersive viewing experience by blending the player visually with its surroundings. It is useful when you want to give your video a more engaging and visually appealing presentation.
+ * **Ambient (Pro):** This style creates a more immersive viewing experience by blending the player visually with its surroundings. It is useful when you want to give your video a more engaging and visually appealing presentation.
 
 ![Set Visual Style](/guide/public/block-editor/preset/preset-1.webp)
 
@@ -53,7 +53,7 @@ The following controls are available for your custom preset:
 
 ## Built-In Presets
 
-FluentPlayer ships with **seven** built-in presets:
+FluentPlayer ships with **seven** built-in presets (six free; the **Ambient** preset requires Pro):
 
 | Preset | Character |
 |--------|-----------|
@@ -63,7 +63,7 @@ FluentPlayer ships with **seven** built-in presets:
 | **Standard** | Classic control bar |
 | **Floating** | Floating style controls |
 | **Minimal** | Very light UI |
-| **Ambient** | Ambient / atmospheric styling |
+| **Ambient** (Pro) | Ambient / atmospheric styling |
 
 Click a preset to select it; the active preset shows a **checkmark** or border.
 

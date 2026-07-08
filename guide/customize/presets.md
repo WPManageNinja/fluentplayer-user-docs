@@ -10,7 +10,7 @@ A **preset** is a saved player configuration that you can apply to any media ite
 
 ## Built in presets
 
-FluentPlayer ships with **seven** built-in presets. Each has a **slug** (used in settings and the database) and a **display name** (what you see in the UI). These slugs are **reserved**: even on Pro, you cannot delete a built-in preset (you can still add your own custom presets).
+FluentPlayer ships with **seven** built-in presets — **six are available in the free plugin**, and the **Ambient** preset requires **FluentPlayer Pro**. Each has a **slug** (used in settings and the database) and a **display name** (what you see in the UI). These slugs are **reserved**: even on Pro, you cannot delete a built-in preset (you can still add your own custom presets).
 
 ### Default (`default`)
 
@@ -63,7 +63,7 @@ FluentPlayer ships with **seven** built-in presets. Each has a **slug** (used in
 
 ![Presets](/guide/public/customize/presets/preset-6.webp)
 
-### Ambient (`ambient`)
+### Ambient (`ambient`) (Pro)
 
 - **Skin:** Minimal (same skin component as Minimal)  
 - **Behaviors:** Tuned for **background** use: **muted style autoplay** pattern, **loop** on end, **all control areas hidden** in default data.  

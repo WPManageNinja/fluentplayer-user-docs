@@ -22,6 +22,7 @@ The **Settings** screen is the global control panel for FluentPlayer. All site-w
 | [**YouTube**](/youtube) | Privacy-enhanced mode, Subscribe button for YouTube sources |
 | [**Analytics**](/analytics) | Built-in FluentPlayer Analytics and Google Analytics (two separate tabs) |
 | [**Export**](/export) | Download captured email submissions as CSV, JSON, or ODS |
+| [**Migration (Pro)**](/presto-player-migration) | Import your global settings, presets, and media from Presto Player |
 | [**Licensing (Pro)**](/licensing) | Activate your Pro license and enable automatic updates |
 
 ::: info Pro vs Free

@@ -33,7 +33,7 @@ Browsers block autoplay with audio by default. This is a **browser security poli
 
 **How to fix it:**
 - Enable **Muted autoplay**: The player will start automatically if the video is muted. Go to **FluentPlayer → Media → Player Behaviors** and enable **Muted** along with **Autoplay**.
-- The **Ambient** [preset](/presets) is specifically tuned for background autoplay — it mutes the video and loops it automatically.
+- The **Ambient** [preset](/presets) (Pro) is specifically tuned for background autoplay — it mutes the video and loops it automatically.
 
 ::: tip
 Even with muted autoplay, some mobile browsers (especially iOS Safari) may still block it depending on user settings. This is expected behavior across all video players on the web.

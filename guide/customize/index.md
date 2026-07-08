@@ -42,7 +42,7 @@ Per media overrides → Preset settings → Global defaults (Settings)
 
 | Topic | What it controls |
 |-------|-----------------|
-| [Presets](/presets) | Reusable player configurations: seven built in presets plus custom ones (Pro) |
+| [Presets](/presets) | Reusable player configurations: six free built-in presets, plus the Ambient and custom presets (Pro) |
 | [Creating Custom Presets (Pro)](/creating-custom-presets) | Create your own presets with custom skins, controls, behaviors, and engagement overlays |
 | [Player Behaviors](/behaviors) | Autoplay, muted start, resume position, and what happens when the video ends |
 | [Branding & Appearance](/branding-appearance) | Subtitle text styling, brand color, and site logo on the player (see also [Settings → Branding](/branding)) |

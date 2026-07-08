@@ -21,7 +21,8 @@ FluentPlayer comes in two versions. This documentation matches **FluentPlayer an
 |---------|------|-----|
 | Add and embed videos | Yes | Yes |
 | Shortcode and Gutenberg block | Yes | Yes |
-| Player presets (7 built in: Default, Modern, Simple, Standard, Floating, Minimal, Ambient + custom on Pro) | Yes | Yes |
+| Player presets (6 built in: Default, Modern, Simple, Standard, Floating, Minimal) | Yes | Yes |
+| Ambient preset | — | Yes |
 | Subtitles & captions (HLS auto-play) | Yes | Yes |
 | Upload your own subtitle tracks (.vtt/.srt) | — | Yes |
 | Email capture with FluentCRM | Yes | Yes |
@@ -46,7 +47,7 @@ The **free version** handles everything you need for embedding and customizing s
 
 ## Key Features at a Glance
 
-- **Video players** — Embed and customize players that support WordPress uploads, external URLs, YouTube, Mux, and BunnyCDN (Pro).
+- **Video players** — Embed and customize players that support WordPress uploads, YouTube, Vimeo, and audio, plus external URLs, Mux, and BunnyCDN on Pro.
 - **Playlists (Pro)** — Group videos into playlists with two layout options: Standard and Grid.
 - **Presets** — Save and reuse player configurations so every video looks consistent.
 - **Overlays** — Add email capture forms, calls-to-action, and action bars that appear while the video plays.

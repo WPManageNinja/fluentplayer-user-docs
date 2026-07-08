@@ -71,7 +71,7 @@ See the full guide: [Mux (Pro)](/mux).
 
 FluentPlayer supports **Audio** for audio-first media such as podcasts, music, and voice-only recordings. Select **Audio** in the block or **FluentPlayer → Media** source picker, and the player switches to an audio-oriented view.
 
-Use the same media workflow as video — the player adapts to the media type you choose. Upload a file (MP3, M4A) or point to an external audio URL.
+Use the same media workflow as video — the player adapts to the media type you choose. Upload an MP3 or M4A file. (Loading audio from an external URL requires **FluentPlayer Pro**.)
 
 **Best for:** Podcasts, music tracks, interviews, or any voice-only content.
 
@@ -92,7 +92,7 @@ With FluentPlayer Pro, you can connect to **Bunny CDN** for professional video h
 
 1. Go to **FluentPlayer → Media** and create or edit a media item.
 2. In the media editor, look for the **Source** section.
-3. Choose the source type (WordPress, URL, YouTube, Mux, or BunnyCDN when using Pro).
+3. Choose the source type. Free: **WordPress**, **YouTube**, **Vimeo**, **Audio**. Pro: **URL** (external/direct-file), **Mux**, and **BunnyCDN**.
 4. Enter the **URL** or select the file.
 5. **Save** the media.
 

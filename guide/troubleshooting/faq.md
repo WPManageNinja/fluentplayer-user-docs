@@ -16,9 +16,9 @@ Quick answers to the most common questions about FluentPlayer.
 
 ### What is the difference between the Free and Pro versions?
 
-The Free version includes core video playback with self-hosted files, YouTube, Vimeo, external URLs, shortcodes, Gutenberg blocks, subtitles, multiple audio languages, seven built-in presets, basic email capture (with FluentCRM), and the public player URL.
+The Free version includes core video playback with self-hosted files, YouTube, Vimeo, shortcodes, Gutenberg blocks, subtitles, multiple audio languages, six built-in presets, basic email capture (with FluentCRM), and the public player URL.
 
-The Pro version adds playlists, custom presets, Mux integration, Bunny Stream & Bunny Storage integration, Mailchimp and Webhook email providers, Built in Analytics, Timed Content, and data export.
+The Pro version adds external URLs and HLS streaming, playlists, the Ambient preset and custom presets, Mux integration, Bunny Stream & Bunny Storage integration, Mailchimp and Webhook email providers, Built in Analytics, Timed Content, and data export.
 
 See the [What is FluentPlayer?](/introduction) page for a full Free vs Pro comparison table.
 
@@ -27,9 +27,10 @@ See the [What is FluentPlayer?](/introduction) page for a full Free vs Pro compa
 
 No. FluentPlayer is a **player** — it plays videos that are hosted elsewhere. You can use:
 - Your WordPress Media Library (hosted on your own server or with a storage service)
+- YouTube or Vimeo links
 - [Bunny Stream or Bunny Storage](/bunnycdn-stream) (Pro)
 - [Mux](/mux) (Pro)
-- External URLs (YouTube, Vimeo, direct MP4 links, etc.)
+- External or direct-file URLs and HLS streams (Pro)
 
 
 ### Is FluentPlayer compatible with my page builder?
@@ -67,7 +68,7 @@ See [Dedicated Player URL](/dedicated-player-url) for how it works and how to co
 
 ### How many presets can I use?
 
-FluentPlayer ships with **seven built-in presets** (Default, Modern, Simple, Standard, Floating, Minimal, Ambient). With Pro, you can create an unlimited number of **custom presets** on top of the seven built-ins.
+FluentPlayer ships with **seven built-in presets** — six free (Default, Modern, Simple, Standard, Floating, Minimal) plus the Pro-only **Ambient** preset. With Pro, you can also create an unlimited number of **custom presets** on top of the built-ins.
 
 See [Presets](/presets) for a full breakdown of each built in preset.
 

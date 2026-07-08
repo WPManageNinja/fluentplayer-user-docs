@@ -5,7 +5,7 @@ This guide will walk you through creating your first video and embedding it on a
 ## What you will need
 
 - FluentPlayer installed and activated (see [Installation](/installation)).
-- A video file URL (this can be a YouTube link, a direct MP4 URL, or a file in your WordPress Media Library).
+- A YouTube or Vimeo link, or a file in your WordPress Media Library. (External or direct-file URLs, such as a hosted MP4, require **FluentPlayer Pro**.)
 
 While you are logged in as an administrator, the **WordPress admin bar** (top of the screen on the front end) may include a quick link to **FluentPlayer** for faster access to media and settings — useful when previewing a page and jumping straight into the plugin.
 
@@ -18,10 +18,10 @@ While you are logged in as an administrator, the **WordPress admin bar** (top of
 ## Step 2: Set the video source
 
 1. In the media editor, find the **video source** section.
-2. Enter your video URL. For example:
+2. Set your video source. For example:
    - A YouTube link: `https://www.youtube.com/watch?v=dQw4w9WgXcQ`
-   - A direct MP4 URL: `https://example.com/my-video.mp4`
-   - Or select a file from your WordPress Media Library.
+   - A Vimeo link, or a file from your WordPress Media Library.
+   - A direct MP4 or other external URL (requires **FluentPlayer Pro**).
 3. Optionally, add a **poster image** (the thumbnail shown before the video plays).
 
 For more details on video sources, see [Video Sources](/video-sources).
@@ -30,7 +30,7 @@ For more details on video sources, see [Video Sources](/video-sources).
 
 Every video uses a **preset** that controls how the player looks and behaves. By default, the "Modern" preset is applied.
 
-You can change the preset in the media editor. FluentPlayer ships with **seven** built-in presets (plus custom presets on Pro):
+You can change the preset in the media editor. FluentPlayer ships with **six** free built-in presets (the Ambient preset and custom presets require Pro):
 
 - **Default:** Full classic controls including chapters.
 - **Modern:** Sleek bar; typical default for new sites.
@@ -38,7 +38,7 @@ You can change the preset in the media editor. FluentPlayer ships with **seven**
 - **Standard:** Classic layout with chapters.
 - **Floating:** Controls float over the video.
 - **Minimal:** Almost no chrome; center play only.
-- **Ambient:** Tuned for muted background / loop style use.
+- **Ambient (Pro):** Tuned for muted background / loop style use.
 
 You can always change this later. Learn more in [Presets](/presets).
 
