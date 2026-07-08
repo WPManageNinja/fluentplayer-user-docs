@@ -57,7 +57,7 @@ Once FluentPlayer is active, here is what you will see:
   - **Playlists** — Create and manage playlists (Pro).
   - **Analytics** — Built-in dashboards when Pro and analytics are enabled.
   - **Settings** — Global options: default preset, branding, performance, analytics, integrations, and more.
-- Inside the FluentPlayer app, the top bar usually shows the **fluentPlayer** logo, quick switches between **Media** and **Playlists**, a **Settings** (gear) icon that opens the full settings area, and **Docs** (book icon) for help.
+- Inside the FluentPlayer app, the top bar shows the **fluentPlayer** logo, quick switches between **Media** and **Playlists**, a **Settings** (gear) icon that opens the full settings area, and **Docs** (book icon) for help.
 
 ## What to Do Next
 

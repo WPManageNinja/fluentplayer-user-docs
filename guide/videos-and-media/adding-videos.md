@@ -74,7 +74,7 @@ Beyond status, you can also narrow the list by:
 - **Media type** — **audio** or **video**.
 - **Tag** — any [media tag](/media-tags) you have assigned (Pro).
 
-Search still works across titles and IDs as supported by your version.
+Use the search bar to find media by title or ID.
 
 ## Finding the Media ID
 
@@ -82,5 +82,5 @@ Every media item has a unique **ID** (a number). You need this ID when embedding
 
 Here is how to find it:
 - In the **Media list**, the ID is shown next to each item (for example, `#42`).
-- When **editing** a media, check the URL in your browser. It usually contains something like `post=42`.
+- When **editing** a media, check the URL in your browser. It contains `post=<ID>` (for example, `post=42`).
 

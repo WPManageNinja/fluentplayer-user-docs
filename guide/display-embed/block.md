@@ -44,7 +44,7 @@ Availability depends on your plan and **Settings → Storage** integrations. See
 
 | Context | What you see |
 |---------|----------------|
-| **FluentPlayer → Media** (Add Media / edit media) | A **dedicated editing screen** where **only the FluentPlayer block** is used to configure the video—not a full post with paragraphs and other blocks. The block is usually **locked**. |
+| **FluentPlayer → Media** (Add Media / edit media) | A **dedicated editing screen** where **only the FluentPlayer block** is used to configure the video—not a full post with paragraphs and other blocks. The block is **locked**. |
 | **Post or page** | Standard block editor; FluentPlayer is **one block** among others. |
 
 In both cases, configuration uses the same **right sidebar** (**Media** and **Block** tabs).
@@ -79,7 +79,7 @@ For full details on creating playlists, choosing layouts, and embedding options,
 | | Block | Shortcode |
 |---|-------|-----------|
 | Editor | Block editor (or dedicated media screen) | Anywhere shortcodes run |
-| Configuration | Full **Block** sidebar; see [block & media editor](/block-editor) | Typically `id` only; options live on the media |
+| Configuration | Full **Block** sidebar; see [block & media editor](/block-editor) | `id` only; options live on the media |
 
 For shortcodes, see [Embed with Shortcode](/shortcode).
 

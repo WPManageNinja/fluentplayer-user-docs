@@ -77,7 +77,7 @@ The free **`user`** group includes `display_name`, `first_name`, `last_name`, `e
 | **Full Name** | <code v-pre>{{contact.full_name}}</code> |
 
 ::: warning Important
-Smartcodes only work for **identified** visitors (logged in users or those who have previously submitted a form). Anonymous visitors will typically see the default text or an empty space. The `contact` tags also require the viewer to exist in FluentCRM.
+Smartcodes only work for **identified** visitors (logged in users or those who have previously submitted a form). Anonymous visitors see the fallback (default) text. The `contact` tags also require the viewer to exist in FluentCRM.
 :::
 
 

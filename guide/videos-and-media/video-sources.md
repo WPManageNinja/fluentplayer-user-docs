@@ -41,7 +41,7 @@ FluentPlayer offers YouTube-specific options in [Settings](/settings):
 
 ### 3. Vimeo
 
-Paste a **Vimeo** video URL. FluentPlayer treats Vimeo as a first-class source type (validation allows `viewType: vimeo` in media settings) and loads the Vimeo player with your FluentPlayer styling and options where applicable.
+Paste a **Vimeo** video URL. FluentPlayer treats Vimeo as a first-class source type (validation allows `viewType: vimeo` in media settings) and loads the Vimeo player with your FluentPlayer styling and options.
 
 **Example:**
 
@@ -59,7 +59,7 @@ In the block editor, **Mux** and **Mux Live** appear as separate source buttons:
 
 With FluentPlayer Pro, you connect your account under **Settings → Storage** (BunnyCDN Stream, BunnyCDN Storage, and Mux rows each have **Configure**). Features include **HLS** playback, uploads, optional **Signed URLs**, **Webhooks**, and optional **AI-generated captions** for on-demand content.
 
-When a stream is configured as **Live**, the player shows a **LIVE** badge in the control bar (typically a pulsing indicator plus “LIVE” text) so viewers know they are watching a live broadcast.
+When a stream is configured as **Live**, the player shows a **LIVE** badge in the control bar (a pulsing indicator plus “LIVE” text) so viewers know they are watching a live broadcast.
 
 **Best for:** Teams that want Mux Video API workflows, adaptive streaming, or live streaming from Mux.
 

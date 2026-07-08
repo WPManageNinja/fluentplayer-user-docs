@@ -4,7 +4,7 @@ The Performance section controls how the player loads JavaScript on your site. T
 
 ## Why This Matters
 
-Heavy player scripts can affect how quickly your pages become interactive. Adjusting when those assets load can improve **LCP** (Largest Contentful Paint) and **TBT** (Total Blocking Time) on pages where the player is not above the fold, at the cost of a slightly later player initialization in some cases.
+Heavy player scripts can affect how quickly your pages become interactive. Adjusting when those assets load can improve **LCP** (Largest Contentful Paint) and **TBT** (Total Blocking Time) on pages where the player is not above the fold, at the cost of a slightly later player initialization.
 
 ## Options
 
