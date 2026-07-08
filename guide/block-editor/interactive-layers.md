@@ -28,7 +28,7 @@ Click the **+ Add Layer** button to open the **Manage Layers** window. From here
 Each layer type serves a specific marketing or educational purpose:
 
  * **Fluent Forms (Free):** Embed a complete Fluent Forms form at a specific time in the video. You can choose your form from a dropdown, set its position, and even adjust its width and height percentage.
- * **Email Capture (Free):** Collect viewer emails directly within the player. These connect to your configured Email Providers like FluentCRM or Mailchimp.
+ * **Email Capture (Free):** Collect viewer emails directly within the player. These connect to your configured [Email Providers](/email-providers) like FluentCRM or Mailchimp.
  * **Call to Action (CTA) (Pro):** Create a prominent overlay to prompt an action. You can design the content using a rich text editor and set whether it pauses the video until the viewer clicks.
  * **Hotspot (Pro):** Add clickable icons or dots to the video. You can customize the icon, add a tooltip, and set a target URL for when the viewer clicks the hotspot.
  * **Ad (Pro):** Place a timed advertisement over your video. You can upload an image, set a "Skip" timer, and customize the color of the skip progress bar.
@@ -92,6 +92,12 @@ Once you have added a layer, it will appear in a list within the sidebar panel.
 >Always test your layers on a mobile device. Small targets like Hotspots can be difficult to tap on a smartphone screen, so ensure they are large enough for a good user experience.
 
 Interactive Layers turn your videos into powerful conversion tools. By carefully timing forms, CTAs, and hotspots, you can guide your viewers toward taking the next step whether that's signing up for a newsletter or clicking a product link at the exact moment they are most engaged.
+
+## Related pages
+
+- [Email Capture Overlay](/email-capture) — set up the email capture layer in detail
+- [CTA and Action Bar](/cta-and-action-bar) — configure call-to-action layers
+- [Text & Button Overlays (Pro)](/overlays) — simpler, non-interactive overlays
 
 
 

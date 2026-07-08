@@ -34,6 +34,8 @@ The sidebar is split into two main tabs to keep things organized:
  * **Media Tab:** This covers high level details like the video title, status (Public/Private), and media level actions.
  * **Block Tab:** This is where the magic happens. You will find almost all your daily settings here, including branding, presets, and interactive layers.
 
+For a closer look at what each tab controls and where your changes are saved, see [Media vs Block Tabs](/media-tab).
+
 ![Media and Block Tab](/guide/public/block-editor/index/media-and-block-tab-1.webp)
 
 ## Exploring the Block Sidebar Panels
@@ -43,12 +45,13 @@ The settings in the editor are organized into collapsible sections to help you c
  * **Branding**: Add your own logo and choose custom colors to make the player match your brand identity.
  * **General Settings**: Manage the video title, upload a poster image, and set behaviors like autoplay or aspect ratio.
  * **Preset**: Select from built in or custom templates that control the overall skin and button layout of your player.
- * **Chapters**: Create a list of markers that allow viewers to skip to specific sections of the video.
- * **Interactive Layers**: Add powerful engagement tools like email capture forms, Call to Action (CTA) buttons, and hotspots directly over your video.
- * **Timed Content Area (Pro)**: Design a special area below the player where text, buttons, or lists appear at exact timestamps.
+ * **[Chapters](/chapters)**: Create a list of markers that allow viewers to skip to specific sections of the video.
+ * **[Interactive Layers](/interactive-layers)**: Add powerful engagement tools like email capture forms, Call to Action (CTA) buttons, and hotspots directly over your video.
+ * **[Timed Content Area (Pro)](/timed-content)**: Design a special area below the player where text, buttons, or lists appear at exact timestamps.
  * **Multi-Language**: Set the primary language of your video and enable a selector so viewers can switch between different audio versions.
- * **Subtitles**: Upload and manage caption tracks to make your content more accessible to everyone.
+ * **[Subtitles](/block-subtitles)**: Upload and manage caption tracks to make your content more accessible to everyone.
  * **Timestamp Links**: Quickly copy shortcode snippets that allow you to create "Jump to" links within your page text.
+ * **[Advanced](/advanced)**: Add custom CSS classes and an HTML anchor to integrate the player with your theme.
 
 ## Overrides vs Global Settings
 
