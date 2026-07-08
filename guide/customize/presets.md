@@ -87,8 +87,8 @@ The video will now use all the settings from that preset. If you want to change 
 The global default preset is applied to new media items and to any media that does not specify a preset.
 
 1. Go to **FluentPlayer → Settings**.
-2. Find the **default preset** option (under Presets / General, depending on the UI version).
-3. Select the preset you want as the default (fresh installs often use **Modern** / slug `course`).
+2. Find the **Default preset** option under **Settings → General**.
+3. Select the preset you want as the default (fresh installs use **Modern** / slug `course` by default).
 4. Save.
 
 ![Presets](/guide/public/customize/presets/preset-9.webp)

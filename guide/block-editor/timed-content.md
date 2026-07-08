@@ -10,7 +10,7 @@ The **Timed Content Area** is a Pro exclusive feature that allows you to display
 To configure this feature, go to **FluentPlayer → Media**, open your media item, and navigate to the **Timed Content Area** panel under the **Block** tab.
 
 ::: info Pro feature
-This feature is only available in **FluentPlayer Pro**. If you are using the free version, this panel may be hidden or restricted.
+This feature is available only in **FluentPlayer Pro**.
 :::
 
 ## Enabling the Timed Content Area

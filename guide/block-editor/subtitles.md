@@ -1,6 +1,6 @@
 ---
 title: "Subtitles (Block sidebar)"
-description: "Upload VTT or SRT captions in the Block sidebar, manage multiple tracks, and pair subtitles with multi language where applicable."
+description: "Upload VTT or SRT captions in the Block sidebar, manage multiple tracks, and pair subtitles with multi-language tracks."
 ---
 
 # Subtitles (Block sidebar)
