@@ -28,3 +28,8 @@ If your version of WordPress supports it, you may also see an HTML Anchor field 
  * **Standard Behavior:** This follows standard WordPress Gutenberg functionality, making it easy to use alongside other blocks.
 
 The Advanced panel is your gateway to deeper customization. By using **Additional CSS** Classes and **HTML Anchors**, you can ensure your video player fits perfectly into your site's custom design and navigation structure.
+
+## Related pages
+
+- [Editor Overview](/block-editor) — back to all Block sidebar panels
+- [Hooks & Filters Reference](/hooks-reference) — developer hooks for deeper customization

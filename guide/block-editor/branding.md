@@ -11,7 +11,7 @@ To access these options, select your **FluentPlayer** block and open the **Brand
 
 ## Use Custom Branding
 
-By default, FluentPlayer uses the global branding settings configured in your plugin's main settings.
+By default, FluentPlayer uses the [global branding settings](/branding) configured in your plugin's main settings.
 
  * **Toggle Switch:** Enable **Use Custom Branding** to override the global settings for this specific video.
  * **Purpose:** **Turn** this on when you need a unique logo or specific colors for a single media item or embed.
@@ -37,6 +37,11 @@ You can fine tune the player's colors to create a cohesive look for your content
 
 
 The **Branding** panel provides the flexibility to make every video feel unique. Whether you are adding a simple watermark or completely changing the player's color scheme, these settings allow you to maintain brand consistency across all your video content.
+
+## Related pages
+
+- [Global Branding](/branding) — set the site-wide defaults this panel overrides
+- [Preset](/preset) — bundle branding with a reusable player skin
 
 
 

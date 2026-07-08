@@ -41,4 +41,9 @@ Once you have added chapters, they will appear in a list within the Chapters pan
 
 Chapters turn a long, daunting video into a collection of easy to digest segments. By taking a few minutes to label your content, you provide a much better experience for your viewers and help them find the information they need faster.
 
+## Related pages
+
+- [Timestamp Links](/block-timestamp-links) — create clickable "jump to" links in your page text
+- [Editor Overview](/block-editor) — back to all Block sidebar panels
+
 
