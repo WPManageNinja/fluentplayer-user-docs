@@ -22,7 +22,7 @@ At a time you choose (for example, 2 minutes into the video), playback pauses an
 ## Setting Up a CTA Overlay
 
 1. Go to **FluentPlayer → Media** and open the media item you want to add a CTA to.
-2. In the right sidebar, expand the **Interactive Layers** panel.
+2. In the right sidebar, expand the [Interactive Layers](/interactive-layers) panel.
 3. Click **+ Add Layer** to open the **Manage Layers** dialog.
 
 ![Interactive Layers panel](/guide/public/engagement/cta-and-action-bar/cta-1.webp)
@@ -122,3 +122,9 @@ You are recording a tutorial and want to share a downloadable resource at the 5 
   * Heading: "Grab the cheat sheet"
   * Text: "Download the companion PDF to follow along."
   * Button: "Download Now" → links to your resource URL
+
+## Related pages
+
+- [Email Capture Overlay](/email-capture) — collect emails instead of driving a click
+- [Text & Button Overlays (Pro)](/overlays) — lighter overlays that don't pause the video
+- [Email Providers](/email-providers) — connect captured contacts to your CRM

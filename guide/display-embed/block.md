@@ -38,7 +38,7 @@ When you insert a new block, you can choose from several high-performance source
  * **Mux / Mux Live (Pro):** Use Mux for professional streaming and live broadcasts.
  * **Audio:** Use this for podcasts or voice only files.
 
-Availability depends on your plan and **Settings → Storage** integrations.
+Availability depends on your plan and **Settings → Storage** integrations. See [Video Sources](/video-sources) for details on each option.
 
 ## Dedicated Media Editor vs Normal Post
 

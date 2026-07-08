@@ -75,9 +75,14 @@ Yes. The shortcode outputs a custom HTML element that you can target with CSS. B
 
 **Can I use timestamp links with a playlist?**
 
-Timestamp links are designed for single media items. For playlists, you typically navigate between videos using the playlist interface instead.
+Timestamp links are designed for single media items. For [playlists](/playlists), you typically navigate between videos using the playlist interface instead.
 
 **Can I put the timestamp links in a sidebar or widget?**
 
 The timestamp link needs the player to be on the same page to work. If the player is in the main content and the link is in a sidebar widget, it should still work as long as they are rendered on the same page.
+
+## Related pages
+
+- [Chapters](/chapters) — built-in, in-player section markers viewers can click
+- [Shortcode Embed](/shortcode) — the player shortcode these links control
 
