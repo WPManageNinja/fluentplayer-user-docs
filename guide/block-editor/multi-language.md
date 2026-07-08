@@ -7,7 +7,7 @@ description: "Block sidebar Multi-Language: primary language, enable the selecto
 
 If your audience speaks different languages, **FluentPlayer** allows you to offer **alternate versions** of the same video. This is perfect for videos with different voiceovers or narrations.
 
-Unlike subtitles, which just add text over the screen, the **Multi-Language** feature swaps the entire video file so the viewer hears the audio in their preferred language.
+Unlike [subtitles](/subtitles), which just add text over the screen, the **Multi-Language** feature swaps the entire video file so the viewer hears the audio in their preferred language.
 
 ## How to Enable Multiple Languages
 
@@ -40,3 +40,8 @@ Once the feature is enabled, you can link and manage your translated video versi
 >Make sure you have already uploaded your translated videos as separate media items before trying to link them in the Multi-Language settings.
 
 Using Multiple Languages makes your content more professional and accessible to a global audience. It is the best way to handle videos where the spoken words change, ensuring everyone understands your message clearly.
+
+## Related pages
+
+- [Subtitles & Captions](/subtitles) — add on-screen text tracks instead of alternate audio
+- [Multiple Audio Languages](/multiple-languages) — the broader guide to language versions

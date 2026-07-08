@@ -27,8 +27,8 @@ The **Media** tab focuses on the high level details and "document level" setting
 The **Block** tab is where you will spend most of your time customizing the actual playback experience and appearance of the player.
 
  * **Player Configuration:** This tab holds all the visual and interactive settings for the embed.
- * **Customization Panels:** You can access specific panels to manage Branding, General Settings, Presets, Chapters, Overlays, and Interactive Layers.
- * **Advanced Features:** This is also where you configure Multi-Language support, upload Subtitles, and generate Timestamp Links.
+ * **Customization Panels:** You can access specific panels to manage Branding, General Settings, [Presets](/preset), Chapters, Overlays, and [Interactive Layers](/interactive-layers).
+ * **Advanced Features:** This is also where you configure Multi-Language support, upload [Subtitles](/block-subtitles), and generate [Timestamp Links](/block-timestamp-links).
 
 ![Block Tab](/guide/public/block-editor/media-tab/block-tab-2.webp)
 
@@ -42,4 +42,10 @@ Understanding how your changes are stored ensures your video looks correct every
  * **Live Updates:** Saving your changes typically updates the media record across your site via the plugin's background system.
 
 Use the **Media** tab to manage the "identity" of your video (titles, slugs, and status) and the **Block** tab to design the "experience" (colors, buttons, and interactivity). Always remember to click **Save** or **Update** to ensure your changes go live on the front end.
+
+## Related pages
+
+- [General Settings](/general-settings) — title, poster, autoplay, and aspect ratio in the Block tab
+- [Preset](/preset) — pick the player skin and control layout
+- [Interactive Layers](/interactive-layers) — add forms, email capture, CTAs, and hotspots
 

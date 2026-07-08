@@ -24,7 +24,7 @@ Text & Button Overlays require **FluentPlayer Pro**. The **Text/Button Overlays*
   * **Duration (Seconds):** Use the slider, click the plus/minus buttons, or type in the input box to set how many seconds the overlay stays visible.
 
 * **Content Section:**
-  * **Overlay Text:** Click the accordion to expand and enter your custom message in the text field. You can also use the three dot menu icon to insert dynamic **Smartcodes**.
+  * **Overlay Text:** Click the accordion to expand and enter your custom message in the text field. You can also use the three dot menu icon to insert dynamic [Smartcodes](/smartcodes-personalization).
   * **Link URL:** Paste a website link if you want your overlay text or button to be clickable.
 
 ![Customize Overlay](/guide/public/block-editor/overlays/customize-the-overlay-2.webp)
@@ -57,3 +57,8 @@ Once saved, your overlays will appear in an organized list within the right side
 :::
 
 By combining custom colors, crisp animations, and dynamic positioning, the Text & Button Overlays panel gives you full creative control to drive engagement and interactive behaviors directly inside your media layouts.
+
+## Related pages
+
+- [Interactive Layers](/interactive-layers) — clickable forms, CTAs, and hotspots (vs. these static overlays)
+- [CTA and Action Bar](/cta-and-action-bar) — persistent call-to-action buttons
