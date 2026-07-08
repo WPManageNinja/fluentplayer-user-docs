@@ -69,11 +69,11 @@ See the full guide: [Mux (Pro)](/mux).
 
 ### 5. Audio
 
-Some FluentPlayer builds expose **Audio** in the block or media source picker for audio-first media (podcasts, music, voice-only files). Backend support includes audio-oriented player views. 
+FluentPlayer supports **Audio** for audio-first media such as podcasts, music, and voice-only recordings. Select **Audio** in the block or **FluentPlayer → Media** source picker, and the player switches to an audio-oriented view.
 
-If you do **not** see **Audio** in your version, use an **External URL** or hosted file to MP3/M4A as your workflow allows, or check release notes the dedicated Audio entry may be gated by version or still rolling out.
+Use the same media workflow as video — the player adapts to the media type you choose. Upload a file (MP3, M4A) or point to an external audio URL.
 
-When available, use the same **FluentPlayer → Media** workflow as video; the player adapts to the media type you choose.
+**Best for:** Podcasts, music tracks, interviews, or any voice-only content.
 
 ![Audio](/guide/public/videos-and-media/video-sources/audio-5.webp)
 
