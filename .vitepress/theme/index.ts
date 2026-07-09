@@ -3,6 +3,7 @@ import type { Theme } from 'vitepress'
 import CustomLayout from './layout-1.vue'
 import VPNavBarTitle from './components/VPNavBarTitle.vue'
 import NotFound from './components/NotFound.vue'
+import ZoomableImage from './components/ZoomableImage.vue'
 import './styles/brand.css'
 
 const theme: Theme = {
@@ -11,6 +12,7 @@ const theme: Theme = {
   enhanceApp({ app }) {
     app.component('VPNavBarTitle', VPNavBarTitle)
     app.component('NotFound', NotFound)
+    app.component('ZoomableImage', ZoomableImage)
   },
 }
 
