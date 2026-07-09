@@ -1,65 +1,93 @@
 # Google Analytics
 
-FluentPlayer allows you to send video interaction data directly to your **Google Analytics (GA4)** property. This integration helps you track video performance such as plays, progress, and completions alongside your other website traffic data. 
+FluentPlayer can send video interaction events directly to your **Google Analytics 4 (GA4)** property. This lets you track plays, progress milestones, and completions alongside all your other website data — all inside your existing GA4 dashboard.
 
 ::: info Pro feature
-The Google Analytics integration requires **FluentPlayer Pro**. Your GA4 account is free, but FluentPlayer only sends video events to GA4 when Pro is active. Without Pro, the Analytics settings show an upgrade prompt and no events are sent.
+The Google Analytics integration requires **FluentPlayer Pro**. Your GA4 account is free, but FluentPlayer only sends video events when Pro is active. Without Pro, the Analytics settings page shows an upgrade prompt and no events are sent.
 :::
 
 ## Tracked Video Events
 
 When a viewer interacts with a video, FluentPlayer automatically sends the following events to GA4:
 
- * **Play:** Fired when a viewer starts playing a video.
- * **Progress:** Sent when viewers reach specific milestones (25%, 50%, 75%, and 100%).
- * **Complete:** Triggered when the video finishes playing.
+| Event | When it fires |
+|-------|--------------|
+| **Play** | Viewer starts playing the video |
+| **Progress** | Viewer reaches 25%, 50%, 75%, or 100% of the video |
+| **Complete** | Video finishes playing |
 
-Each event includes metadata like the **Video ID** and **Title**, allowing you to create detailed reports for individual videos within your Google Analytics dashboard.
+Each event includes the **Video ID** and **Video Title**, so you can filter and compare performance across individual videos inside GA4.
 
-## How to Set Up Google Analytics
+## Step 1: Set Up a Data Stream in GA4
 
-Follow these steps to connect your player to GA4:
+Before connecting FluentPlayer, you need a GA4 **Measurement ID**. If you already have one, skip to [Step 2](#step-2-enable-google-analytics-in-fluentplayer).
 
- - Navigate to **FluentPlayer > Settings > [Analytics](/analytics)**.
- - Select the **Google Analytics** tab.
- - Toggle **Enable Google Analytics** to the ON position.
+1. Open [Google Analytics](https://analytics.google.com/) and go to your GA4 property.
+2. In the left sidebar, click **Admin** (gear icon at the bottom).
+3. Under the **Property** column, click **Data Streams**.
+4. Click **Add stream** → **Web**.
 
-![Set Up Analytics](/guide/public/integrations/google-analytics/enable-google-analytics-1.webp)
+![Add a web data stream in GA4](/guide/public/integrations/google-analytics/add-stream-data-2.webp)
 
-**Use existing on-page tag:** Enable this if your site already has GA4 installed via your theme or another plugin.
-**Measurement ID:** If your site does not have GA4 installed, enter your **Measurement ID** (e.g., G-XXXXXXXXXX) to let FluentPlayer load the tag for you.
+5. Enter your **Website URL** and a **Stream name** (for example, "My WordPress Site").
+6. Click **Create stream**.
 
-**Best for:** Sites without GA yet, or when you want a dedicated property for video events.
+![Data stream setup — URL and stream name fields](/guide/public/integrations/google-analytics/set-up-stream-data-3.webp)
 
+7. Once the stream is created, copy the **Measurement ID** (format: `G-XXXXXXXXXX`) shown at the top right of the stream details panel. You will need this in the next step.
 
-## Viewing the Data in Google Analytics
+## Step 2: Enable Google Analytics in FluentPlayer
 
-After setup, you can find video events in Google Analytics:
+1. In your WordPress admin, go to **FluentPlayer → Settings → [Analytics](/analytics)**.
+2. Open the **Google Analytics** tab.
+3. Toggle **Enable Google Analytics** to **ON**.
 
-1. Go to your GA4 property.
-2. Navigate to **Reports → Engagement → Events** (or use Explore).
-3. Look for the video-related events sent by FluentPlayer.
-4. Filter or create reports based on video ID, title, or event type.
+![Enable Google Analytics in FluentPlayer settings](/guide/public/integrations/google-analytics/enable-google-analytics-1.webp)
 
-::: tip
-It may take a few hours for events to appear in GA4 after you first set it up. Real time reports in GA4 can show events sooner.
+4. Choose one of the two connection methods:
+
+   - **Use existing on-page tag** — Enable this if GA4 is already installed on your site via your theme, another plugin, or Google Tag Manager. FluentPlayer will attach its events to the existing GA4 instance without loading a second tag.
+   - **Measurement ID** — If your site does not have GA4 installed yet, paste the `G-XXXXXXXXXX` ID you copied in Step 1. FluentPlayer will load the GA4 tag automatically.
+
+5. Click **Save Settings**.
+
+## Step 3: Test the Integration
+
+Play a video on your site, then verify that events are arriving in GA4.
+
+1. In GA4, go to **Reports → Realtime**.
+2. Play a video on your WordPress site.
+3. You should see the **play** event appear within a few seconds under the **Event count by Event name** card.
+
+![GA4 Realtime report showing FluentPlayer video events](/guide/public/integrations/google-analytics/test-5.webp)
+
+::: tip Events not appearing?
+Standard GA4 reports can take **24–48 hours** to process data. Use **Realtime** reports to confirm events are arriving immediately after setup.
 :::
+
+## Viewing Video Data in GA4
+
+After events start flowing, you can explore them in several places:
+
+- **Reports → Engagement → Events** — See total counts for `play`, `progress`, and `complete` events.
+- **Explore** — Build a custom funnel or free-form report, filtering by event name and video title to compare drop-off across videos.
+- **Realtime** — Confirm events are firing live during a test play.
+
+To filter by a specific video, use the **video_title** or **video_id** event parameter as a secondary dimension in your reports.
 
 ## Google Analytics vs Built-In Analytics
 
-| | Google Analytics | Built in Analytics (Pro) |
-|---|-----------------|-------------------------|
-| **Plan** | Requires Pro (GA4 account is free) | Requires Pro |
-| **Where to view** | Google Analytics UI | WordPress admin |
-| **Best for** | Marketing analysis, combining with other GA data | Detailed per video and per user insights |
-| **Per video retention** | Not built in (needs custom setup) | Included |
-| **Per user tracking** | Limited (anonymous by default) | Included (logged in users) |
+| | Google Analytics (GA4) | Built-In Analytics (Pro) |
+|---|---|---|
+| **Plan required** | FluentPlayer Pro (GA4 account is free) | FluentPlayer Pro |
+| **Where you view it** | Google Analytics UI | WordPress admin |
+| **Best for** | Marketing analysis; combining with other site data | Per-video and per-viewer insights |
+| **Audience retention** | Not built in (needs custom setup) | Included |
+| **Per-user tracking** | Limited (anonymous by default) | Included for logged-in users |
 
-**Recommendation:** If you have FluentPlayer Pro, use **both**. Built-in analytics give you rich, video-specific insights inside WordPress. Google Analytics gives you a broader marketing picture.
+**Recommendation:** Use **both** if you have FluentPlayer Pro. Built-in analytics give rich, video-specific insights inside WordPress. Google Analytics connects your video data to the rest of your site traffic for a broader marketing picture.
 
-Using Google Analytics with FluentPlayer is a great way to see how video content contributes to your overall website goals.
+## Related Pages
 
-## Related pages
-
-- [Built-in Analytics (Pro)](/built-in-analytics) — the in-WordPress dashboard you can run alongside GA4
-- [Analytics Settings](/analytics) — enable both analytics options from one screen
+- [Built-In Analytics (Pro)](/built-in-analytics) — the in-WordPress video analytics dashboard
+- [Analytics Settings](/analytics) — enable and configure both analytics options from one screen
