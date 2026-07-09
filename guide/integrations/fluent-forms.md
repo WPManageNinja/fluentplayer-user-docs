@@ -83,4 +83,4 @@ Once you have finished configuring the form, publish it and copy the page URL. O
 
 All data collected through the embedded form is stored inside **Fluent Forms → Entries** in your WordPress admin exactly the same place as submissions from any other Fluent Forms form on your site. No extra setup is needed to capture or export entries.
 
-
+![Entry View](/guide/public/integrations/fluent-forms/entries-8.webp)
