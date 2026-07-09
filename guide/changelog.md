@@ -9,6 +9,25 @@ next: false
 
 Stay updated with the latest features, improvements, and bug fixes in FluentPlayer. The newest release is listed first, and items marked **(Pro)** require FluentPlayer Pro.
 
+## FluentPlayer v1.2.0
+
+_Released on July 8, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves resume playback so it can now be set per video, overriding the preset (Pro)
+```
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes the frontend language switcher button not being clickable
+• Fixes the selected hotspot icon not staying visible in the picker preview
+• Fixes the admin top-nav dropdown being hidden behind the WordPress admin bar
+• Fixes the media-select search icon overlapping the input text
+```
+
+:::
+
 ## FluentPlayer v1.1.0
 
 _Released on July 6, 2026_
