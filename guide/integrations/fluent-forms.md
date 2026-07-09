@@ -1,9 +1,9 @@
-# Fluent Forms
+# Fluent Forms 
 
 The **Fluent Forms** integration lets you embed a form directly over your video player at a precise timestamp during playback. Use it to run in-video quizzes, collect viewer feedback, or gate content behind a form submission all without any coding.
 
 ::: info Pro feature
-The Fluent Forms layer requires **FluentPlayer Pro** and the **Fluent Forms** plugin. Install and activate both before following the steps below.
+The Fluent Forms layer requires **FluentPlayer** and the **Fluent Forms** plugin. Install and activate both before following the steps below.
 :::
 
 ### Before You Begin
