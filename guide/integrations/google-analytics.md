@@ -1,6 +1,6 @@
 # Google Analytics
 
-FluentPlayer allows you to send video interaction data directly to your **Google Analytics (GA4)** property. This integration helps you track video performance—such as plays, progress, and completions—alongside your other website traffic data. 
+FluentPlayer allows you to send video interaction data directly to your **Google Analytics (GA4)** property. This integration helps you track video performance such as plays, progress, and completions alongside your other website traffic data. 
 
 ::: info Pro feature
 The Google Analytics integration requires **FluentPlayer Pro**. Your GA4 account is free, but FluentPlayer only sends video events to GA4 when Pro is active. Without Pro, the Analytics settings show an upgrade prompt and no events are sent.
