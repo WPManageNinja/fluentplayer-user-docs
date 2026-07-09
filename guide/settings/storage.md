@@ -118,6 +118,35 @@ After connecting:
 
 **Related:** [Mux integration guide](/mux) for live streaming, signed URLs, and advanced API details.
 
+## Gumlet
+
+**Gumlet** is a professional video hosting and streaming platform that automatically optimizes and encodes your uploads into adaptive HLS, with optional signed-URL playback for protected content. FluentPlayer can browse your Gumlet collections and serve videos directly.
+
+### What You Need
+
+- A [Gumlet](https://gumlet.com) account with a video **collection**.
+- An **API key** with the **Video Admin** role (from Gumlet → **Developers → API Keys**).
+- Your **Collection ID** (from the collection's dashboard URL).
+
+### How to Connect
+
+1. Go to **FluentPlayer → Settings → Storage**.
+2. Click **Configure** on the **Gumlet** row.
+3. Toggle on **Enable Integration**, then enter your **API Key** and **Collection ID** (and an optional **Live Source ID**).
+4. Optionally enable **Signed URLs** and paste your workspace **Signing Secret** for secure playback.
+5. **Save** the settings.
+
+### Using Gumlet as a Video Source
+
+After connecting:
+
+1. Go to **FluentPlayer → Media** and create or edit a media item.
+2. Choose **Gumlet** as the source type.
+3. Browse your Gumlet collection and select the **video** you want to use.
+4. Save the media.
+
+**Related:** [Gumlet integration guide](/gumlet) for the full step-by-step setup, including signed URLs and live sources.
+
 ## Cloudflare R2
 
 **Cloudflare R2** is S3-compatible object storage with **zero egress fees**. You upload ready-to-play video files to a bucket and FluentPlayer serves them through Cloudflare's global network.

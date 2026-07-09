@@ -1,6 +1,6 @@
 ---
 title: "Video Sources"
-description: "Explore supported video source types in FluentPlayer, including WordPress, external URLs, YouTube, Vimeo, Mux, BunnyCDN, Cloudflare, and audio."
+description: "Explore supported video source types in FluentPlayer, including WordPress, external URLs, YouTube, Vimeo, Mux, Gumlet, BunnyCDN, Cloudflare, and audio."
 ---
 
 # Video Sources
@@ -99,11 +99,19 @@ Connect either one under **Settings → Storage**, then choose it as the source 
 
 **Best for:** Sites that already use Cloudflare, want zero egress costs (R2), or want hands-off encoding and adaptive streaming (Stream).
 
+### 8. Gumlet (Pro)
+
+With FluentPlayer Pro, you can host and deliver videos through **Gumlet**, a professional platform that automatically optimizes and encodes your uploads for adaptive HLS streaming. Connect your account under **Settings → Storage**, then browse your Gumlet collections and pick an asset when adding media. Enable **signed URLs** for secure, hotlink-protected playback of premium content.
+
+**Best for:** Sites that want automatic video optimization, adaptive streaming, and secure signed-URL delivery from a managed platform.
+
+See the full guide: [Gumlet (Pro)](/gumlet).
+
 ## How to Set the Video Source
 
 1. Go to **FluentPlayer → Media** and create or edit a media item.
 2. In the media editor, look for the **Source** section.
-3. Choose the source type. Free: **WordPress**, **YouTube**, **Vimeo**, **Audio**. Pro: **URL** (external/direct-file), **Mux**, **BunnyCDN**, and **Cloudflare**.
+3. Choose the source type. Free: **WordPress**, **YouTube**, **Vimeo**, **Audio**. Pro: **URL** (external/direct-file), **Mux**, **Gumlet**, **BunnyCDN**, and **Cloudflare**.
 4. Enter the **URL** or select the file.
 5. **Save** the media.
 
