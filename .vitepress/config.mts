@@ -66,6 +66,7 @@ const guideGroups = [
     items: [
       { text: 'Editor Overview', link: '/block-editor' },
       { text: 'Media vs Block Tabs', link: '/media-tab' },
+      { text: 'Interactive Layers', link: '/interactive-layers' },
       {
         text: 'Core Settings',
         collapsed: true,
@@ -84,14 +85,7 @@ const guideGroups = [
           { text: 'Subtitles', link: '/block-subtitles' },
           { text: 'Multiple Languages', link: '/multi-language' },
           { text: 'Timed Content Area (Pro)', link: '/timed-content' },
-        ],
-      },
-      {
-        text: 'Interactive Elements',
-        collapsed: true,
-        items: [
           { text: 'Text & Button Overlays (Pro)', link: '/overlays' },
-          { text: 'Interactive Layers', link: '/interactive-layers' },
           { text: 'Advanced', link: '/advanced' },
         ],
       },

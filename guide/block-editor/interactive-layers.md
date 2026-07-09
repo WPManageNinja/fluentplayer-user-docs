@@ -5,7 +5,7 @@ description: "Configure Interactive Layers: forms, email capture, CTAs, hotspots
 
 # Interactive Layers (Block sidebar)
 
-**Interactive Layers** are timed elements that sit on top of your video to drive engagement. Unlike simple text overlays, these layers allow viewers to interact with your content through forms, clickable hotspots, and calls to action (CTAs).
+**Interactive Layers** are timed elements that sit on top of your video to drive engagement. Unlike simple [text overlays](/overlays), these layers allow viewers to interact with your content through forms, clickable hotspots, and calls to action (CTAs).
 
 To manage your layers, select the **FluentPlayer** block and open the **Interactive Layers** panel in the **Block** tab.
 
@@ -28,8 +28,8 @@ Click the **+ Add Layer** button to open the **Manage Layers** window. From here
 Each layer type serves a specific marketing or educational purpose:
 
  * **Fluent Forms (Free):** Embed a complete Fluent Forms form at a specific time in the video. You can choose your form from a dropdown, set its position, and even adjust its width and height percentage.
- * **Email Capture (Free):** Collect viewer emails directly within the player. These connect to your configured [Email Providers](/email-providers) like FluentCRM or Mailchimp.
- * **Call to Action (CTA) (Pro):** Create a prominent overlay to prompt an action. You can design the content using a rich text editor and set whether it pauses the video until the viewer clicks.
+ * **[Email Capture](/email-capture) (Free):** Collect viewer emails directly within the player. These connect to your configured [Email Providers](/email-providers) like FluentCRM or Mailchimp.
+ * **[Call to Action (CTA)](/cta-and-action-bar) (Pro):** Create a prominent overlay to prompt an action. You can design the content using a rich text editor and set whether it pauses the video until the viewer clicks.
  * **Hotspot (Pro):** Add clickable icons or dots to the video. You can customize the icon, add a tooltip, and set a target URL for when the viewer clicks the hotspot.
  * **Ad (Pro):** Place a timed advertisement over your video. You can upload an image, set a "Skip" timer, and customize the color of the skip progress bar.
  * **Shortcode (Pro):** Display the output of any WordPress shortcode as a layer. This is highly flexible for adding custom content from other plugins.
@@ -54,8 +54,7 @@ Every layer includes standard controls to ensure it appears exactly when and whe
 
 ### Advanced Conditions
 
-The Conditions section in **FluentPlayer** allows you to transform static video overlays into smart, dynamic elements. By setting specific rules, you can control exactly who sees a layer based on their **login** status, **CRM** data, or even their **behavior** on your site.
-
+The Conditions section in **FluentPlayer** allows you to transform static video overlays into smart, dynamic elements. By setting specific rules, you can control exactly who sees a layer based on their **login** status, **CRM** data, or even their **behavior** on your site. While conditions decide *who* sees a layer, you can personalize *what* it says with [Smartcodes and Personalization](/smartcodes-personalization) to insert the viewer's name or CRM contact data.
 
 #### Setting Up Visibility Rules
 
@@ -93,11 +92,7 @@ Once you have added a layer, it will appear in a list within the sidebar panel.
 
 Interactive Layers turn your videos into powerful conversion tools. By carefully timing forms, CTAs, and hotspots, you can guide your viewers toward taking the next step whether that's signing up for a newsletter or clicking a product link at the exact moment they are most engaged.
 
-## Related pages
 
-- [Email Capture Overlay](/email-capture) — set up the email capture layer in detail
-- [CTA and Action Bar](/cta-and-action-bar) — configure call-to-action layers
-- [Text & Button Overlays (Pro)](/overlays) — simpler, non-interactive overlays
 
 
 
