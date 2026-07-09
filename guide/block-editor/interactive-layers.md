@@ -27,9 +27,19 @@ Click the **+ Add Layer** button to open the **Manage Layers** window. From here
 
 Each layer type serves a specific marketing or educational purpose:
 
+
  * **Fluent Forms (Free):** Embed a complete Fluent Forms form at a specific time in the video. You can choose your form from a dropdown, set its position, and even adjust its width and height percentage.
  * **[Email Capture](/email-capture) (Free):** Collect viewer emails directly within the player. These connect to your configured [Email Providers](/email-providers) like FluentCRM or Mailchimp.
  * **[Call to Action (CTA)](/cta-and-action-bar) (Pro):** Create a prominent overlay to prompt an action. You can design the content using a rich text editor and set whether it pauses the video until the viewer clicks.
+
+ * **[Fluent Forms (Free)](/fluent-forms):** Embed a complete Fluent Forms form at a specific time in the video. You can choose your form from a dropdown, set its position, and even adjust its width and height percentage.
+ * **Email Capture (Free):** Collect viewer emails directly within the player. These connect to your configured [Email Providers](/email-providers) like FluentCRM or Mailchimp.
+
+ > [!Note]
+ > To use FluentCRM as your email provider, follow the setup guide in the [FluentCRM documentation](/fluentcrm).
+
+ * **Call to Action (CTA) (Pro):** Create a prominent overlay to prompt an action. You can design the content using a rich text editor and set whether it pauses the video until the viewer clicks.
+
  * **Hotspot (Pro):** Add clickable icons or dots to the video. You can customize the icon, add a tooltip, and set a target URL for when the viewer clicks the hotspot.
  * **Ad (Pro):** Place a timed advertisement over your video. You can upload an image, set a "Skip" timer, and customize the color of the skip progress bar.
  * **Shortcode (Pro):** Display the output of any WordPress shortcode as a layer. This is highly flexible for adding custom content from other plugins.
