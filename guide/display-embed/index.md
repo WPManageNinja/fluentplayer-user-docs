@@ -49,6 +49,6 @@ When you use a shortcode or block, FluentPlayer handles the technical work behin
 3. **Rendering:** The plugin generates the necessary HTML and inserts the player into your page for the viewer. The viewer sees a fully working player.
 
 :::info
-Your video source URL is **not** hardcoded into the shortcode. Because the shortcode uses the **Media ID**, you can change the video file or source in the FluentPlayer dashboard, and it will automatically update everywhere the video is embedded.
+Your video source URL is **not** hardcoded into the shortcode. Because the shortcode uses the **Media ID**, you can change the video file or source in the FluentPlayer dashboard, and it will automatically update everywhere the video is embedded. Advanced users can go further and have the source replaced dynamically per page from post meta — see [Dynamic media source](/shortcode#dynamic-media-source-advanced).
 :::
 

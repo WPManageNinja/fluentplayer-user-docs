@@ -32,12 +32,12 @@ Every video you create is assigned a unique ID and a ready-to-use shortcode.
 
 | Attribute | Required | Description |
 |-----------|----------|-------------|
-| `id` | Yes | The media (post) ID |
+| `id` | Yes | The media (post) ID. It supplies the player **template and configuration** (preset, controls, overlays, branding). By default it also provides the video source, but that source can be replaced dynamically — see [Dynamic media source](#dynamic-media-source-advanced). |
 | `source_url` | No | Play a specific video URL instead of the media's saved source. |
 | `source_meta` | No | Read the video URL from a custom field on the current post. |
 | `source_poster` | No | Use a specific poster image URL instead of the media's saved poster. |
 
-The shortcode is intentionally simple — the video source, preset, controls, and all other settings come from the media item itself. This means you configure everything in one place (**FluentPlayer → Media**) and the shortcode just references it.
+The shortcode is intentionally simple — the preset, controls, and all other configuration come from the media item itself. This means you configure everything in one place (**FluentPlayer → Media**) and the shortcode just references it. The video source defaults to the one saved on the media item, but it can be replaced per page — see [Dynamic media source](#dynamic-media-source-advanced) below.
 
 ::: tip
 If you ever change the video source, poster, or preset for a media item, every page that uses the shortcode for that ID will update automatically. No need to edit every page.
@@ -46,6 +46,8 @@ If you ever change the video source, poster, or preset for a media item, every p
 ## Dynamic media source (advanced)
 
 Normally the player uses the source saved on the media item. The optional `source_url`, `source_meta`, and `source_poster` attributes let one media item act as a **reusable template** whose video changes per page — useful when the same player configuration (preset, overlays, branding) should wrap different videos.
+
+In this mode the `id` no longer determines which video plays; it only supplies the player **template and configuration**. The actual video source is resolved dynamically — either from the URL passed on the shortcode (`source_url`) or, most commonly, from a custom field (meta) on the current post (`source_meta`).
 
 **Source precedence** (the first match wins):
 
@@ -60,6 +62,20 @@ Normally the player uses the source saved on the media item. The optional `sourc
 ```
 
 A YouTube or Vimeo URL works as `source_url` too — the provider is detected automatically.
+
+### Example: play a video stored in a custom field
+
+Say each post stores its video URL in a custom field named `youtube_url` and you want one consistent player for all of them:
+
+1. In **FluentPlayer → Media**, create **one** media item. Configure the preset, controls, overlays, and branding you want — this item is your reusable **template**. The source you set here is only a fallback; it does not need to match any specific post (you can leave it as a placeholder).
+2. Copy its **ID** (e.g. `#12`).
+3. In each post — or once in your theme template — add the shortcode with `source_meta` pointing at your field:
+
+```text
+[fluentplayer id="12" source_meta="youtube_url"]
+```
+
+Every post now renders the same template but plays the URL from its own `youtube_url` field. You reuse the **same `id`** everywhere — you do **not** create a separate media item for each video. The `id` supplies the player template and configuration; the video source comes from the field.
 
 ::: warning Security note
 `source_meta` reads from the current post's custom fields. Point it only at fields you control. Avoid exposing private or protected meta keys (those whose name begins with `_`) through a public shortcode, since the resolved URL is rendered into the page.
