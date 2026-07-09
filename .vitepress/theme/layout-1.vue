@@ -2,6 +2,7 @@
   import DefaultTheme from 'vitepress/theme'
   import Feedback from './components/Feedback.vue'
   import NotFound from './components/NotFound.vue'
+  import ImageZoom from './components/ImageZoom.vue'
   import { onMounted, watch } from 'vue'
   import { useRoute } from 'vitepress'
 
@@ -35,6 +36,9 @@
     </template>
     <template #not-found>
       <NotFound />
+    </template>
+    <template #layout-bottom>
+      <ImageZoom />
     </template>
   </Layout>
 </template>

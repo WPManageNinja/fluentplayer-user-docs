@@ -1,6 +1,5 @@
 /// <reference types="node" />
 import { defineConfig } from 'vitepress'
-import { zoomablePlugin } from './theme/plugin-zoomable'
 
 /**
  * Asset base path. Default is **`/`** so local dev and preview use:
@@ -345,8 +344,5 @@ export default defineConfig({
 
   markdown: {
     lineNumbers: true,
-    config: (md) => {
-      md.use(zoomablePlugin)
-    },
   },
 })
