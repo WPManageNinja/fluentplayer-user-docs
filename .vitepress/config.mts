@@ -130,7 +130,6 @@ const guideGroups = [
     items: [
       { text: 'Settings Overview', link: '/settings' },
       { text: 'General', link: '/general' },
-      { text: 'Performance', link: '/performance' },
       { text: 'Branding', link: '/branding' },
       { text: 'Email Integrations', link: '/email-integrations' },
       { text: 'Storage', link: '/storage' },
@@ -265,7 +264,6 @@ export default defineConfig({
     'guide/settings/index.md': 'settings.md',
     'guide/settings/integrations.md': 'email-integrations.md',
     'guide/settings/licensing.md': 'licensing.md',
-    'guide/settings/performance.md': 'performance.md',
     'guide/settings/storage.md': 'storage.md',
     'guide/settings/youtube.md': 'youtube.md',
     'guide/support.md': 'support.md',

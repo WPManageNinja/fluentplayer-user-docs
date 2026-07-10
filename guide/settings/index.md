@@ -15,7 +15,6 @@ The **Settings** screen is the global control panel for FluentPlayer. All site-w
 | Section | What it covers |
 |---------|----------------|
 | [**General**](/general) | Default preset, aspect ratio, auto resume playback, custom CSS |
-| [**Performance**](/performance) | Dynamic JS loading, AJAX progress — tuning how player scripts load for page speed |
 | [**Branding**](/branding) | Brand color, control bar color, logo image, logo link, logo position, logo width — with a **Live Interactive Preview** |
 | [**Integrations**](/email-integrations) | Email/lead capture providers: FluentCRM, Webhook, Mailchimp |
 | [**Storage**](/storage) | Video hosting connections: BunnyCDN Stream, BunnyCDN Storage, Mux |
