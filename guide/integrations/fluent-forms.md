@@ -2,15 +2,11 @@
 
 The **Fluent Forms** integration lets you embed a form directly over your video player at a precise timestamp during playback. Use it to run in-video quizzes, collect viewer feedback, or gate content behind a form submission all without any coding.
 
-::: info Pro feature
-The Fluent Forms layer requires **FluentPlayer** and the **Fluent Forms** plugin. Install and activate both before following the steps below.
-:::
-
 ### Before You Begin
 
 Make sure the following are in place before adding a form layer:
 
-- The **Fluent Forms** plugin is installed and active on your WordPress site.
+- The **Fluent Forms (free)** plugin is installed and active on your WordPress site.
 - You have already **[created the form](https://docs.fluentforms.com/create-a-form)** you want to embed inside Fluent Forms.
 - You have a **video added** to FluentPlayer that you want to attach the form to.
 
@@ -66,12 +62,11 @@ Expand the **Controls** panel to set the viewer's submission options.
 
 Click **Add Layer** at the bottom of the pop-up to apply the form layer.
 
-![Skip Control](/guide/public/integrations/fluent-forms/skip-control-6.webp)
-
 ::: warning
 Disabling the Skip button means viewers **must** fill out and submit the form to continue watching. Use this only when the form is genuinely required to proceed.
 :::
 
+![Skip Control](/guide/public/integrations/fluent-forms/skip-control-6.webp)
 
 ### Preview the Form
 
