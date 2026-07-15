@@ -24,6 +24,8 @@ Each playlist contains:
  * **Product Demos:** Group all relevant product feature videos together in one central hub.
  * **Video Libraries:** Display a massive video catalog with columns, pagination, and search options.
 
+![Playlist Overview](/guide/public/playlists/playlist-overview/overview-1.webp)
+
 ## Playlist Layouts
 
 FluentPlayer Pro offers two layout styles:
