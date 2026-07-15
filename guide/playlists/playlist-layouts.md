@@ -1,57 +1,54 @@
 # Playlist Layouts
 
-When you [create a playlist](/creating-playlists), you choose a **layout** that controls how it is displayed on the front end. FluentPlayer offers two layout styles — **Standard** and **Grid** — each designed for a different use case.
+When you [create a playlist](/creating-playlists), you choose a layout that controls how it is displayed on the front end. FluentPlayer Pro offers two distinct layout styles **Standard** and **Grid** each designed for a different use case to help viewers browse and watch your video collections seamlessly.
 
-To configure the layout, open a playlist and expand the **Layout** panel in the right sidebar.
+To configure the layout, open your playlist and expand the **Layout** panel in the right sidebar under the **Block** tab.
 
-## Standard
+## Standard Layout
 
-The Standard layout shows the **main video player** with a **playlist sidebar** beside it. Each item in the sidebar displays a thumbnail and title, making it easy for viewers to browse and switch between videos.
+The Standard layout shows the main video player with an interactive playlist sidebar positioned beside it. Each item in the sidebar displays a thumbnail and title, making it easy for viewers to browse and switch between sequential videos.
 
-### Options
+### Features and Options
 
-| Option | Description |
-|--------|-------------|
-| **Thumbnail Ratio** | Aspect ratio of the thumbnails in the sidebar. Choose from **Landscape (16:9)**, **Portrait (9:16)**, **Square (1:1)**, **Classic (4:3)**, or **Vertical (3:4)**. |
-| **Sidebar Position** | Where the playlist sidebar appears relative to the player: **Left**, **Right**, **Top**, or **Bottom**. Use the visual picker to select a position. |
-| **Show Playlist Header** | Display the playlist title and video count above the sidebar list. |
-| **Show Thumbnails** | Display video thumbnails in the sidebar. When off, items show as a text only list. |
-| **Grid Style Thumbnails** | Arrange thumbnails in a grid instead of a single vertical list. Useful when you have many videos and want a more compact sidebar. |
-| **Show Video Title** | Display the video title on each thumbnail in the sidebar. |
-| **Title Position** | Where the title appears: **Overlay on Thumbnail** (text overlaid on the image) or **Below Thumbnail** (text below the image). |
-| **Sidebar Width** | Width of the playlist sidebar as a percentage of the total area (e.g., `40`). Adjust with the slider. |
+- **Player Ratio:** Select the aspect ratio for your main player from the dropdown menu, choosing Default (Original) or other standard dimensional presets.
 
-### Best for
+- **Sidebar Position:** Place the playlist sidebar strip relative to the main player. Click the visual block selector to choose **Left**, **Right**, **Top**, or **Bottom**.
 
-- Video series, tutorials, episodes, and demos.
-- Playlists where viewers browse and click between videos.
-- Small to medium collections (5–20 videos).
+- **Show Playlist Header:** Toggle this switch on to display the playlist title and total video count directly above the sidebar list.
 
-### Example
+- **Show Thumbnails:** Enable this option on to display video thumbnails in the sidebar. When toggled off, items show as a text-only list.
 
-A "Getting Started" tutorial series with five videos. The viewer sees the current video with the other four listed in a **Right** sidebar at **40%** width, with **Landscape** thumbnails and titles overlaid on each thumbnail.
+- **Grid-Style Thumbnails:** Enable this switch to arrange thumbnails in a grid instead of a single vertical list, which is highly useful for a compact sidebar layout when you have many videos.
+
+- **Show Video Title:** Switch this toggle on to display the video title on each thumbnail item in the sidebar.
+
+- **Title Position:** Choose where the text appears using the dropdown menu, selecting either **Overlay on Thumbnail** or **Below Thumbnail**.
+
+- **Sidebar Width:** Use the slider or click the plus/minus buttons to set the width of the playlist sidebar as a percentage of the total player area (e.g., 40).
+
+**Best For:** Video series, ordered tutorials, episodes, product demos, and small to medium collections containing 5–20 videos where sequential browsing is preferred.
 
 ![Layout Standard](/guide/public/playlists/playlist-layouts/layout-standard-1.webp)
 
-## Grid
+## Grid Layout
 
-The Grid layout shows videos as a **multi column thumbnail grid**, ideal for video libraries and catalogs. The video player appears above the grid, and viewers click a thumbnail to load that video.
+The Grid layout arranges your videos into a multi-column thumbnail catalog grid. This style is perfect for large video archives, catalogs, and resource libraries where strict sequential watching does not matter.
 
-### Options
+### Features and Options
 
-| Option | Description |
-|--------|-------------|
-| **Thumbnail Ratio** | Aspect ratio of the grid thumbnails: **Landscape (16:9)**, **Portrait (9:16)**, **Square (1:1)**, **Classic (4:3)**, or **Vertical (3:4)**. |
-| **Video Player Mode** | How the video player appears when a thumbnail is clicked. **Inline Player** loads the video in a player above the grid. **Modal Overlay** opens the video in a popup overlay on top of the page. |
-| **Player Above Grid** | Show the video player above the thumbnail grid. When on, clicking a thumbnail loads the video in the player area at the top. |
-| **Grid Columns** | Number of columns in the grid (e.g., `3`). Adjust with the slider. |
-| **Videos Per Page** | How many videos to show per page (e.g., `12`). Controls pagination: when you have more videos than this number, pagination appears. |
-| **Show Video Title** | Display the video title on each thumbnail in the grid. |
-| **Title Position** | Where the title appears — **Overlay on Thumbnail** or **Below Thumbnail**. |
-| **Enable Search** | Show a search box above the grid so viewers can find a video by title. |
-| **Enable Filters** | Show filter controls above the grid for narrowing the visible videos. |
+- **Video Player Mode:** Use the dropdown menu to select how a video opens when a thumbnail is clicked. Select **Inline Player** to load the video in a player block positioned above the grid, or select **Modal Overlay** to open the video in a popup overlay on top of the page.
 
-#### Modal options
+- **Player Above Grid:** Toggle this setting on to show the video player block above the thumbnail grid layout. Clicking any thumbnail instantly loads that video into the active player area at the top.
+
+- **Grid Columns:** Move the slider or type a number to set the number of columns in your grid layout (e.g., 3).
+
+- **Videos Per Page:** Set how many videos to display per page (e.g., 12) to control pagination and keep your pages loading fast.
+
+- **Show Video Title:** Toggle this switch on to display the title text on each thumbnail item within the grid layout.
+
+- **Title Position:** Select from the dropdown option to position the title text either as **Overlay on Thumbnail** or **Below Thumbnail**.
+
+#### Modal Options
 
 When **Video Player Mode** is set to **Modal Overlay**, these additional options apply:
 
@@ -61,22 +58,8 @@ When **Video Player Mode** is set to **Modal Overlay**, these additional options
 | **Modal Layout** | How the modal is positioned — for example **Centered** (the default). |
 | **Modal Show Info** | Show the video's title and details inside the modal alongside the player. |
 
-### Best for
-
-- Large video libraries (20+ videos).
-- Browsing oriented collections where strict sequential order does not matter.
-- Resource libraries, archives, and content catalogs.
-
-### Example
-
-Fifty product tutorials in a **3-column** grid, **12 per page**, with the **Inline Player** mode. Viewers click a thumbnail and the video loads in the player above the grid. Each thumbnail shows the video title overlaid on the image.
+**Best For:** Large video libraries (20+ videos), content catalogs, archives, and browsing-oriented resource centers.
 
 ![Layout Standard](/guide/public/playlists/playlist-layouts/layout-grid-2.webp)
 
-You can change the layout at any time by editing the playlist and selecting a different style in the **Layout** panel. The front end updates on the next page load.
-
-## Related pages
-
-- [Appearance & Behavior](/playlist-settings) — colors, autoplay, and other playlist options
-- [Embed a Playlist](/embed-playlist) — put the finished playlist on a page
-
+The Layout panel provides the essential building blocks to structure your video collections. By choosing the Standard layout for step-by-step series or the Grid layout for vast video libraries, you can create a highly professional viewing experience tailored precisely to your content.
