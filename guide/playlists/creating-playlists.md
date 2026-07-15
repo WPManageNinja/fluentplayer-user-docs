@@ -1,73 +1,58 @@
 # Creating a Playlist
 
-This guide walks you through creating a playlist in FluentPlayer Pro, adding videos to it, and configuring its settings.
+A **playlist** lets you group multiple videos together so viewers can watch them in sequence like a course, a series, or a collection. Viewers can switch between videos seamlessly without ever leaving the page.
 
 ::: info Pro feature
-Creating playlists requires **FluentPlayer Pro**.
+Creating and embedding playlists requires **FluentPlayer Pro**. The free version displays the Playlists menu, but you must upgrade to Pro to build playlists.
 :::
 
-## Before you start
+## Before You Start
 
-Make sure you have already created the media items (videos) that you want to include. Each video should be set up under **FluentPlayer → Media**. See [Adding and Editing Videos](/adding-videos) if you have not done this yet.
+Make sure you have already created the individual media items (videos) that you want to include. Each video should be fully set up under **FluentPlayer → Media** before you proceed. See [Adding and Editing Videos](/adding-videos) if you have not done this yet.
 
-## Step 1: Create a new playlist
+## Step 1: Create a New Playlist
 
-1. In your WordPress admin, go to **FluentPlayer → Playlists**.
-2. Click the `Add Playlist` button to add a new playlist.
-3. Give it a descriptive **title**, for example, "WordPress Basics Course" or "Product Demo Series."
+In your WordPress admin dashboard, navigate to **FluentPlayer → Playlists** and click the button to add a new playlist. Enter a descriptive title (for example, "WordPress Basics Course" or "Product Demo Series") to identify it easily in your admin area.
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-1.webp)
 
-## Step 2: Add media items
+## Step 2: Add Media Items
 
-1. In the playlist editor, you will see `Add Media` button to add media (videos).
+In the playlist editor, click the **Add Media** button.
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-2.webp)
 
-2. Select existing media items from your FluentPlayer library. Each item shows its title.
-3. Add as many videos as you need.
+Select the existing media items from your FluentPlayer library by clicking on their titles. Add as many videos as your collection requires.
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-3.webp)
 
-**Example:** For a 5-lesson course, you would add 5 media items, one for each lesson.
+## Step 3: Order Your Videos
 
-## Step 3: Order the videos
-
-The order of media items in the playlist is the order viewers will see them.
-
-- **Drag and drop** (or use up/down controls) to rearrange the items.
-- You will also get Edit or Delete option here to edit or remove the media.
+Arrange your videos in the order viewers will watch them. Use **drag-and-drop** (or the up/down controls) to rearrange items so introductory content appears first and advanced content plays later. You can also edit or remove individual items from this view.
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-4.webp)
 
-## Step 4: Choose a layout
+## Step 4: Choose a Layout Style
 
-Select a [layout](/playlist-layouts) for how the playlist appears on the front end:
+Expand the **Layout** panel to choose how the playlist appears on the front end:
 
-- **Standard:** Sidebar list with video thumbnails. Best for simple series.
-- **Grid:** Multi column grid with optional search. Best for larger collections.
+- **Standard:** Sidebar list with video thumbnails. Best for series and sequential browsing.
+- **Grid:** Multi-column catalog grid. Best for larger collections and browsing-oriented libraries.
 
-Each layout has its own settings. See [Playlist Layouts](/playlist-layouts) for details.
+See [Playlist Layouts](/playlist-layouts) for all available options and settings.
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-6.webp)
 
-## Step 5: Save
+## Step 5: Save and Publish
 
-Click **Save** (or **Publish**) to save the playlist. It now has an **ID** that you will use to embed it.
+Click **Save** (or **Publish**) to save your configurations. Once saved, your playlist will automatically generate a unique **ID** (e.g., `#10`) that you will use when embedding it.
 
 ::: tip Finding the playlist ID
-The ID appears in the playlist list under **FluentPlayer → Playlists** (for example, `#10`). You will need this when embedding with `[fluentplaylist id="10"]`.
+You can locate your playlist ID under **FluentPlayer → Playlists** or by checking the browser URL when editing the playlist. You will need this ID when embedding via shortcode: `[fluentplaylist id="10"]`.
 :::
 
-## Editing an existing playlist
+## Editing an Existing Playlist
 
-To change a playlist later:
-
-1. Go to **FluentPlayer → Playlists**.
-2. Click on the playlist you want to edit.
-3. Add or remove media, reorder items, change the layout, or update settings.
-4. Save.
+If you need to modify a playlist later, go to **FluentPlayer → Playlists**, click the playlist to open it, and make your changes. Any added, removed, or reordered videos update immediately on every live page where that playlist is embedded.
 
 ![Creating Playlist](/guide/public/playlists/creating-playlists/creating-playlist-5.webp)
-
-Changes take effect immediately. Every page that embeds this playlist will show the updated version.
