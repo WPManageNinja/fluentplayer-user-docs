@@ -1,104 +1,87 @@
 # Playlist Appearance, Spacing, and Behavior
 
-After you choose a [playlist layout](/playlist-layouts), FluentPlayer Pro lets you fine-tune how the playlist looks and behaves on the front end — colors, typography, borders, autoplay, and more. These settings apply to the playlist container and list/grid around the player, not to the inner video player controls (those follow each media item's [preset](/presets)).
- 
+After choosing a [playlist layout](/playlist-layouts), FluentPlayer Pro lets you fine-tune how the playlist looks and behaves on the front end. These settings control the visual style and operational settings of the playlist container, sidebar, or grid surrounding the video player.
+
 ## Where to Find These Options
- 
-Edit your playlist under **FluentPlayer → Playlists**, then look at the right-hand sidebar. You will find four collapsible panels: **General Settings**, **Layout**, **Appearance**, and **Advanced**. Click any panel header to expand it. Save the playlist when you are done.
- 
-## General Settings
- 
-This panel controls the top level playback behavior of the playlist.
- 
-| Setting | What it does |
-|---------|--------------|
-| **Playlist Title** | The name of your playlist as it appears in the editor. |
-| **Autoplay** | When on, the first video starts playing automatically when the page loads. |
-| **Continuous Play** | When on, the player automatically advances to the next video once the current one ends. |
-| **Loop** | When on, the playlist starts over from the first video after the last one finishes. |
-| **Show Navigation Buttons** | Show previous/next controls so viewers can step through the playlist. |
-| **Show Playlist Menu Toggle** | Show a button to open or collapse the playlist list (where the layout supports it). |
-| **Overlay Mode** | Controls how email capture, CTA, and action bar overlays behave across the playlist (see below). |
- 
-![Playlist General Settings](/guide/public/playlists/playlist-settings/playlist-settings-1.webp)
 
-### Overlay Mode: Per Video vs Selected Video
+To customize these features, go to **Fluent Player → Playlists** in your WordPress dashboard and open your playlist item. On the right-hand sidebar under the **Block** tab, you can access and configure the **Appearance, Typography, Spacing**, and **Behavior** panels.
 
-The **Overlay Mode** decides which video's interactive layers — email capture, CTA, action bar, and text overlays — are shown while the playlist plays:
+## General Behavior and Display
 
-- **Per Video** — Each video shows its **own** overlays and layers as it plays. Use this when every lesson or clip has its own call-to-action.
-- **Selected Video** — One chosen video's overlays are applied across the **whole** playlist, regardless of which item is playing. Use this when you want a single, consistent message for the entire playlist.
+ * **Playlist Title:** Enter or update the title of your playlist for internal organization and display.
 
-### Preset Source
+ * **Autoplay:** Toggle this switch on to start playing the first video automatically when the page loads.
 
-A playlist can borrow its player chrome (controls, skin) and brand color from a specific media item's **preset**. Set a **Preset Source** media item so the playlist player matches that media's look, with brand-color sync. When no preset source is set, the playlist uses your global defaults.
+ * **Continuous Play:** Enable this to automatically advance to and play the next video in the queue as soon as the current video ends.
+
+ * **Loop Playlist:** Switch this on to jump back and restart the playlist from the first video after the last video finishes.
+
+ * **Show Previous / Next Buttons:** Toggle this on to display navigation control arrows in the player chrome so viewers can click through tracks.
+
+ * **Show Playlist Menu Toggle:** Show or hide a dedicated menu button in the player chrome that lets viewers collapse or expand the playlist list area.
+
+ * **Preset Source:** Choose a specific media item's preset from the dropdown menu. The playlist will copy that video's look, controls, player skin, and brand color. If left unselected, it defaults to your global site presets.
+ 
+ * **Overlay Mode:** Choose between **Per Video** (each video displays its own email captures, CTAs, and action bars as it plays) or **Selected Video** (applies one chosen video's interactive layers across the entire playlist duration).
 
 ::: info Playlist visibility
 Like media items, a playlist can be **public** or **private**. Private playlists are not accessible on their [dedicated playlist URL](/embed-playlist) to visitors without edit permission, the same way [media visibility](/public-vs-private) works.
 :::
- 
-## Appearance
- 
-Control the playlist frame's colors, borders, and shadow so it matches your site.
- 
-### Colors
- 
-| Setting | What it does |
-|---------|--------------|
-| **Background Color** | Background behind the playlist list or grid. |
-| **Text Color** | Color for titles and labels in the playlist UI. |
- 
-### Brand Color
- 
-A dropdown that lets you choose how the playlist accent color is handled:
- 
-- **Use Global Setting:** Inherits the brand color from [Branding Settings](/branding).
-- **Custom:** Set a unique accent color for this playlist only.
- 
-### Border
- 
-| Setting | What it does |
-|---------|--------------|
-| **Border Radius (PX)** | How rounded the playlist container corners are (e.g. `8` for a soft card look, `0` for sharp corners). |
-| **Border Color** | The color of the border around the playlist container. |
-| **Border Width (PX)** | How thick the border is. Set to `0` for no visible border. |
- 
-![Playlist Settings](/guide/public/playlists/playlist-settings/playlist-settings-2.webp)
- 
-## Custom Typography
- 
-Optional overrides for playlist text (titles, labels). These controls are nested inside the **Appearance** panel.
- 
-| Setting | What it does |
-|---------|--------------|
-| **Enable Custom Typography** | When on, the font settings below apply to playlist text. When off, your theme's defaults apply. |
-| **Font Size (PX)** | Size of the text in the playlist UI. |
-| **Font Weight** | How bold the text appears (e.g. *Normal (400)*, *Bold (700)*). |
-| **Line Height** | Vertical spacing between lines for multi line titles. |
- 
-## Box Shadow
- 
-Add an optional shadow to give the playlist container depth. These controls are also nested inside the **Appearance** panel.
- 
-| Setting | What it does |
-|---------|--------------|
-| **Enable Box Shadow** | Master toggle for the shadow effect. |
-| **Shadow Color** | The color of the shadow. |
-| **Shadow Type** | **Drop Shadow (Outside)** extends the shadow around the container. |
-| **Horizontal Offset (PX)** | Moves the shadow left or right. |
-| **Vertical Offset (PX)** | Moves the shadow up or down. |
-| **Blur (PX)** | Controls how soft or sharp the shadow edges are. |
-| **Spread (PX)** | Expands or contracts the shadow beyond the container's boundary. |
- 
-![Playlist Settings](/guide/public/playlists/playlist-settings/playlist-settings-3.webp)
- 
-## How This Fits Your Workflow
- 
-1. [Create a playlist](/creating-playlists) and add videos.
-2. Pick a layout (Standard or Grid) in the **Layout** panel.
-3. Use **General Settings** to configure autoplay, continuous play, and overlay behavior.
-4. Use **Appearance** as a checklist for colors, borders, typography, and shadows.
-5. [Embed the playlist](/embed-playlist) on a page and review on desktop and mobile.
- 
 
- 
+![Playlist General Settings](/guide/public/playlists/playlist-settings/playlist-settings-1.webp)
+
+## Appearance Styles
+
+Control the playlist frame's colors, borders, separator, and shadow so it matches your site.
+
+ * **Background Color:** Select a custom background color for the playlist list or grid area.
+
+ * **Text Color:** Pick the color for all titles, labels, and metadata text in the playlist interface.
+
+ * **Brand Color:** Choose **Auto (match preset source media)** to inherit the accent colors automatically, use global branding settings, or apply a unique custom accent color to this playlist.
+
+ * **Border Radius (PX):** Use the slider or input box to set how rounded the playlist container corners are (e.g., 14px).
+
+ * **Border Color:** Select a custom color for the outline frame of the playlist container.
+
+ * **Border Width (PX):** Set the thickness of your border frame. Setting this to 0 removes the visible border outline entirely.
+
+ * **Player / Playlist Separator:** Choose the visual style of the line dividing the player and the sidebar list, selecting from **None, Line,** or **Space**.
+
+ * **Line Width (PX):** Adjust the slider or type a value to define the thickness of your separator line.
+
+![Playlist Settings](/guide/public/playlists/playlist-settings/playlist-settings-2.webp)
+
+## Custom Typography
+
+Optional overrides for playlist text (titles, labels). These controls are nested inside the **Appearance** panel.
+
+ * **Enable Custom Typography:** Enable this switch to the on position to override your standard theme fonts and text settings for the playlist text elements.
+
+ * **Font Size (PX):** Move the slider or change the number to set the exact text size for playlist item titles and labels.
+
+ * **Font Weight:** Select how thick or bold your text appears from the dropdown menu (e.g., Normal 400 or Bold 700).
+
+ * **Line Height:** Use the slider or type a value to adjust the vertical spacing between lines for multi-line video titles.
+
+## Box Shadow Layouts
+
+Add an optional shadow to give the playlist container depth. These controls are also nested inside the **Appearance** panel.
+
+ * **Enable Box Shadow:** Enable this master switch on to apply a depth shadow frame around the playlist layout container.
+
+ * **Shadow Color:** Click the color box to select your shadow color highlight.
+
+ * **Shadow Type:** Pick your shadow projection type, such as **Drop Shadow** (Outside) or **Inset** (Inside).
+
+ * **Horizontal Offset (PX):** Adjust the slider to move your shadow left or right.
+
+ * **Vertical Offset (PX):** Adjust the slider to push your shadow up or down.
+
+ * **Blur (PX):** Define how soft, blurred, or sharp the edges of your box shadow container appear.
+
+ * **Spread (PX):** Expand or contract the overall scale and boundary limits of your shadow effect.
+
+![Playlist Settings](/guide/public/playlists/playlist-settings/playlist-settings-3.webp)
+
+The appearance and behavior panels provide a comprehensive toolset to customize your video collections. By establishing automated continuous playback, syncing preset skins, and adjusting custom text layouts or box shadows, you can match your playlists perfectly to your website design.
