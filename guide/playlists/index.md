@@ -1,30 +1,28 @@
 # Playlists Overview
 
-A **playlist** lets you group multiple videos together so viewers can watch them in sequence, like a course, a series, or a collection. Viewers can switch between videos without leaving the page.
+A **playlist** lets you group multiple videos together so viewers can watch them in sequence like a course, a series, or a collection. Viewers can switch between videos seamlessly without ever leaving the page.
 
 ::: info Pro feature
-Playlists require **FluentPlayer Pro**. The free plugin shows the Playlists menu, but you need Pro to create and embed playlists.
+Playlists require **Fluent Player Pro**. The free version displays the Playlists menu, but you must upgrade to Pro to create and embed playlists on your site.
 :::
 
 ## What Is a Playlist?
 
-A playlist is a collection of FluentPlayer media items displayed together in a single player interface. You [create media items](/adding-videos) first (under FluentPlayer → Media), then group them into a playlist.
+A playlist is a collection of Fluent Player media items displayed together in a single player interface. You simply create your [media items](/adding-videos) first under Fluent Player → Media, and then group them together into a structured playlist.
 
-Each playlist has:
+Each playlist contains:
 
-- A **title** (for example, "Getting Started Course").
-- A **list of media items** in a specific order.
-- A **layout** that controls how the playlist is displayed.
-- An **ID** that you use to embed it.
+ - A title for internal organization (e.g., "WordPress Basics Course").
+ - A list of media items arranged in your preferred playback order.
+ - A specialized layout that controls how the collection displays on the front end.
+ - A unique ID used to easily embed the playlist anywhere on your site.
 
 ## Why Use Playlists?
 
-| Use case | How playlists help |
-|----------|-------------------|
-| **Online courses** | Organize lessons in order so viewers can follow step by step |
-| **Tutorial series** | Let viewers watch related tutorials in sequence |
-| **Product demos** | Group all product videos in one place |
-| **Video libraries** | Display a large catalog in a browsable grid (Grid layout) |
+ * **Online Courses:** Organize lessons in a strict step-by-step order with built-in progress tracking.
+ * **Tutorial Series:** Allow viewers to watch related guides and walkthroughs sequentially.
+ * **Product Demos:** Group all relevant product feature videos together in one central hub.
+ * **Video Libraries:** Display a massive video catalog with columns, pagination, and search options.
 
 ## Playlist Layouts
 
@@ -37,15 +35,11 @@ Learn more in [Playlist Layouts](/playlist-layouts).
 
 ## Where to Manage Playlists
 
-Go to **FluentPlayer → Playlists** in your WordPress admin. Here you can:
+Navigate to **Fluent Player → Playlists** in your WordPress admin sidebar. From this central dashboard, you can:
 
-- Create new playlists.
-- Add, remove, and reorder media items.
-- Choose a layout and configure its options.
-- Delete playlists you no longer need.
+ - Create new video playlists from scratch.
+ - Add, remove, or drag-and-drop to reorder media items.
+ - Select your layout style and fine-tune its specific display options.
+ - Delete old playlists you no longer need on your site.
 
-## Related pages
-
-- [Creating a Playlist](/creating-playlists) — the step-by-step starting point
-- [Embed a Playlist](/embed-playlist) — show a playlist on a post or page
-- [Dedicated Playlist URL (Pro)](/dedicated-playlist-url) — share a playlist on its own page
+The Playlists Overview hub provides the perfect foundation for organizing multiple video files into high-converting collections
