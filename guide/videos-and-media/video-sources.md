@@ -51,6 +51,8 @@ https://vimeo.com/123456789
 
 **Best for:** Professional hosting on Vimeo, portfolios, or when you already use Vimeo for delivery.
 
+See the full guide: [Vimeo](/vimeo).
+
 ![Vimeo Source](/guide/public/videos-and-media/video-sources/vimeo-3.webp)
 
 ### 4. Mux and Mux Live (Pro)

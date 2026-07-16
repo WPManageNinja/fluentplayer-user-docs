@@ -8,6 +8,7 @@ FluentPlayer connects with powerful external services to expand your video capab
 
 Professional hosting ensures faster loading and a better viewer experience by offloading video delivery from your server.
 
+- **[Vimeo](/vimeo)** (Free) — Play any Vimeo-hosted video by pasting its URL. No account connection or embed code needed — just copy the video link from Vimeo and add it as a source.
 - **[Mux](/mux)** — HLS streaming, direct uploads, live streams, optional signed URLs, webhooks, AI captions, and optional Mux Data analytics. In the block editor you can pick **Mux** or **Mux Live** as the source; credentials are configured under **Settings → Storage**.
 - **[Gumlet](/gumlet)** — Professional video hosting with adaptive HLS streaming, automatic optimization, and secure signed-URL playback. Browse your Gumlet collections and select assets directly in FluentPlayer.
 - **[BunnyCDN Stream](/bunnycdn-stream)** — Use Bunny's video streaming platform. Upload and manage videos in Bunny libraries, then select them in FluentPlayer.
@@ -56,6 +57,7 @@ Most integration settings are found in **FluentPlayer → Settings**. Some integ
 
 | Topic | What you will learn |
 |-------|-------------------|
+| [Vimeo](/vimeo) | Play Vimeo videos by pasting the video URL |
 | [Mux (Pro)](/mux) | Connect Mux for streaming, uploads, and live video |
 | [Gumlet (Pro)](/gumlet) | Connect Gumlet for optimized hosting and secure streaming |
 | [BunnyCDN Stream (Pro)](/bunnycdn-stream) | Connect Bunny Stream for video hosting |
