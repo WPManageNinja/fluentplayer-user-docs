@@ -1,6 +1,6 @@
 # Elementor Widget (Pro)
 
-FluentPlayer Pro includes native **Elementor widgets** for both the video player and playlist. You can drag them into any Elementor section or column and configure every setting directly inside the Elementor panel — no shortcode needed.
+FluentPlayer Pro includes native **Elementor widgets** for both the video player and playlist. You can drag them into any Elementor section or column and configure every setting directly inside the Elementor panel - no shortcode needed.
 
 ::: info Pro feature
 The Elementor widget requires **FluentPlayer Pro**. The free version supports [Shortcode](/shortcode) and [Gutenberg Block](/block) embeds.
@@ -10,24 +10,34 @@ The Elementor widget requires **FluentPlayer Pro**. The free version supports [S
 
 1. Open a page in the **Elementor** editor.
 2. In the widget search panel, type **FluentPlayer**.
-3. Drag the **FluentPlayer** widget into any section or column.
+3. Click the **Fluent Player** widget to insert it into your layout.
 
-4. In the left panel, open the **Content** tab and select the **Media** item you want to display from the dropdown.
-5. The player renders live inside the Elementor canvas.
+![Fluent Player Widget](/guide/public/display-embed/elementor/fluent-player-1.webp)
 
-[Screenshot: FluentPlayer widget in the Elementor panel showing the Media dropdown and live player preview]
+4. In the left panel, open the **Content** tab. Under the **Media** section, click the **Select Media** dropdown.
 
-6. Click **Update** to save the page.
+![Select Media](/guide/public/display-embed/elementor/add-video-2.webp)
+
+5. Search and select the media item you want to display. Once selected, the player renders live in the Elementor canvas. The **General Settings** panel appears below with options including **Title**, **Title Overlay**, **Aspect Ratio**, and **Load Strategy**.
+6. Click **Publish** to save your changes.
+
+![After Adding Video](/guide/public/display-embed/elementor/after-adding-video-3.webp)
 
 ## Adding the FluentPlayer Playlist Widget
 
 1. In the widget search panel, type **FluentPlayer Playlist**.
-2. Drag the **FluentPlayer Playlist** widget into any section.
-3. In the **Content** tab, select the **Playlist** from the dropdown.
-4. Choose a **Layout** (Standard or Grid) and configure display options.
-5. Click **Update** to save.
+2. Click the **Fluent Player Playlist** widget to insert it.
 
-[Screenshot: FluentPlayer Playlist widget settings in Elementor showing playlist selector and layout options]
+![Fluent Player Playlist Widget](/guide/public/display-embed/elementor/fluentplayer-playlist-4.webp)
+
+3. In the **Content** tab, click the **Select Playlist** dropdown and choose a playlist from the list.
+
+![Select Playlist](/guide/public/display-embed/elementor/adding-playlist-5.webp)
+
+4. Once selected, the playlist renders live in the canvas. The **General Settings** panel appears below with options including **Playlist Title**, **Autoplay**, **Continuous Play**, and **Show Previous / Next Buttons**.
+5. Click **Publish** to save your changes.
+
+![After Adding Playlist](/guide/public/display-embed/elementor/after-adding-playlist-6.webp)
 
 ## Available Settings
 
@@ -35,19 +45,14 @@ The Elementor widget exposes the same settings as the [Gutenberg Block](/block-e
 
 | Panel | What you can configure |
 |-------|----------------------|
-| **General Settings** | Media source, poster image, preset selection |
+| **General Settings** | Title, title overlay, thumbnail, aspect ratio, load strategy |
 | **Branding & Appearance** | Logo, colors, player skin overrides |
 | **Interactive Layers** | Email capture, CTA, Hotspots, Fluent Forms, Ads |
 | **Chapters** | Chapter markers and titles |
-| **Subtitles** | Subtitle tracks |
+| **Subtitles** | Subtitle tracks and caption styling |
 | **Multiple Languages** | Audio language tracks |
 | **Timed Content (Pro)** | Content blocks that appear below the player at timestamps |
 | **Overlays (Pro)** | Text and button overlays |
 | **Advanced** | Custom CSS, visibility rules |
 
-## Related Pages
 
-- [Shortcode Embed](/shortcode) — embed using `[fluentplayer id="42"]` in any editor
-- [Gutenberg Block](/block) — native WordPress block editor widget
-- [Divi 5 Module](/divi) — FluentPlayer module for Divi 5
-- [Embedding Overview](/display-embed) — compare all embed methods
