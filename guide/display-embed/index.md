@@ -13,10 +13,12 @@ Once you have created your video in **FluentPlayer**, you need to display it on 
 |--------|----------|-----------|
 | **[Shortcode](/shortcode)** | Any post, page, or widget. Works with both Classic and Block editors. | Beginner |
 | **[Gutenberg Block](/block)** | Block editor users who prefer a visual, drag and drop workflow. | Beginner |
+| **[Elementor Widget](/elementor)** | Elementor page builder users drag the FluentPlayer widget into any section. | Beginner |
+| **[Divi 5 Module](/divi)** | Divi 5 builder users add the FluentPlayer module to any row or section. | Beginner |
 | **[Dedicated Player URL](/dedicated-player-url)** | Sharing a direct link to the video (in emails, social media, etc.). | Beginner |
 | **[Timestamp Links](/timestamp-links)** | Creating "chapter" links that jump to a specific moment in the video. | Intermediate |
 
-Most users will use either the **shortcode** or the **block**. Both produce the same result on the front end the choice comes down to personal preference.
+Most users will use the **shortcode**, the **Gutenberg block**, or their page builder's native widget or module. All options produce the same result on the front end the choice comes down to which tool you build pages with.
 
 ## Quick Examples
 

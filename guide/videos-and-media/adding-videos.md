@@ -36,6 +36,17 @@ You do not need to configure everything at once. You can always come back and ch
 
 ![Publish](/guide/public/videos-and-media/adding-videos/publish-4.webp)
 
+## Adding Media by URL
+
+FluentPlayer lets you add videos by simply pasting a media URL. The plugin automatically detects the video provider, so you don't need to select it manually.
+
+You can:
+
+- Paste a **YouTube, Vimeo, Mux, Bunny, Gumlet**, or **Cloudflare** video URL, and FluentPlayer will automatically select the correct provider.
+- Paste the URL of a video already uploaded to your **WordPress Media Library**, and FluentPlayer will automatically link it to the existing media file without requiring another upload.
+
+![Adding Media URL](/guide/public/videos-and-media/adding-videos/adding-media-url-5.webp)
+
 ## Editing an Existing Media Item
 
 You can update your videos at any time, and the changes will automatically reflect everywhere the video is embedded on your site.

@@ -20,7 +20,15 @@ Upload a video file (like an MP4) to your WordPress Media Library and select it 
  * **Best for:** Small videos, simple sites, or when you want everything stored on your own server.
  * **Setup:** Select the "WordPress" option in the source section and pick a file from your library.
 
-### 2. YouTube
+### 2. URL (Auto-detect) (Pro)
+
+Paste any supported video URL and FluentPlayer automatically identifies the provider YouTube, Vimeo, Mux, Bunny, Gumlet, Cloudflare, or a direct file link. If the URL points to a file already in your WordPress Media Library, FluentPlayer resolves it to that library attachment instead of treating it as an external link.
+
+**Best for:** Quickly adding media without manually selecting a source type; migrating existing URLs in bulk; same-site WordPress uploads you want to reference by URL.
+
+![Video Source URL](/guide/public/videos-and-media/video-sources/add-media-by-url-1.webp)
+
+### 3. YouTube
 
 Paste a YouTube video URL. FluentPlayer will use the YouTube embed player with your customized settings on top.
 
@@ -39,7 +47,7 @@ FluentPlayer offers YouTube-specific options in [Settings](/settings):
 
 ![Youtube Source](/guide/public/videos-and-media/video-sources/youtube-source-2.webp)
 
-### 3. Vimeo
+### 4. Vimeo
 
 Paste a **Vimeo** video URL. FluentPlayer treats Vimeo as a first-class source type (validation allows `viewType: vimeo` in media settings) and loads the Vimeo player with your FluentPlayer styling and options.
 
@@ -55,7 +63,7 @@ See the full guide: [Vimeo](/vimeo).
 
 ![Vimeo Source](/guide/public/videos-and-media/video-sources/vimeo-3.webp)
 
-### 4. Mux and Mux Live (Pro)
+### 5. Mux and Mux Live (Pro)
 
 In the block editor, **Mux** and **Mux Live** appear as separate source buttons: **Mux** for standard on demand assets and **Mux Live** for live streams. 
 
@@ -69,17 +77,17 @@ See the full guide: [Mux (Pro)](/mux).
 
 ![Mux](/guide/public/videos-and-media/video-sources/mux-4.webp)
 
-### 5. Audio
+### 6. Audio
 
-FluentPlayer supports **Audio** for audio-first media such as podcasts, music, and voice-only recordings. Select **Audio** in the block or **FluentPlayer → Media** source picker, and the player switches to an audio-oriented view.
+FluentPlayer supports audio playback for content such as podcasts, music, interviews, and voice recordings. Select Audio as the media type, and the player will automatically switch to an audio-optimized layout.
 
-Use the same media workflow as video — the player adapts to the media type you choose. Upload an MP3 or M4A file. (Loading audio from an external URL requires **FluentPlayer Pro**.)
+You can upload audio files, such as **MP3** or **M4A**, use an external audio URL (Pro), or play audio hosted on supported CDN providers, including **BunnyCDN, Cloudflare, Gumlet**, and **Mux**.
 
-**Best for:** Podcasts, music tracks, interviews, or any voice-only content.
+**Best for:** Podcasts, music, interviews, audiobooks, and other voice-only content.
 
 ![Audio](/guide/public/videos-and-media/video-sources/audio-5.webp)
 
-### 6. BunnyCDN (Pro)
+### 7. BunnyCDN (Pro)
 
 With FluentPlayer Pro, you can connect to **Bunny CDN** for professional video hosting. There are two options:
 
@@ -90,7 +98,7 @@ With FluentPlayer Pro, you can connect to **Bunny CDN** for professional video h
 
 ![BunnyCDN](/guide/public/videos-and-media/video-sources/bunny-cdn-6.webp)
 
-### 7. Cloudflare R2 and Stream (Pro)
+### 8. Cloudflare R2 and Stream (Pro)
 
 With FluentPlayer Pro, you can host and deliver your videos on **Cloudflare**. There are two options:
 
@@ -101,7 +109,7 @@ Connect either one under **Settings → Storage**, then choose it as the source 
 
 **Best for:** Sites that already use Cloudflare, want zero egress costs (R2), or want hands-off encoding and adaptive streaming (Stream).
 
-### 8. Gumlet (Pro)
+### 9. Gumlet (Pro)
 
 With FluentPlayer Pro, you can host and deliver videos through **Gumlet**, a professional platform that automatically optimizes and encodes your uploads for adaptive HLS streaming. Connect your account under **Settings → Storage**, then browse your Gumlet collections and pick an asset when adding media. Enable **signed URLs** for secure, hotlink-protected playback of premium content.
 
@@ -113,7 +121,7 @@ See the full guide: [Gumlet (Pro)](/gumlet).
 
 1. Go to **FluentPlayer → Media** and create or edit a media item.
 2. In the media editor, look for the **Source** section.
-3. Choose the source type. Free: **WordPress**, **YouTube**, **Vimeo**, **Audio**. Pro: **URL** (external/direct-file), **Mux**, **Gumlet**, **BunnyCDN**, and **Cloudflare**.
+3. Choose the source type, or paste any URL and let FluentPlayer auto-detect it. Free: **WordPress**, **YouTube**, **Vimeo**, **Audio**. Pro: **URL** (auto-detect/external), **Mux**, **Gumlet**, **BunnyCDN**, and **Cloudflare**.
 4. Enter the **URL** or select the file.
 5. **Save** the media.
 

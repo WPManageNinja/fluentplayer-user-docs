@@ -2,6 +2,10 @@
 
 With FluentPlayer Pro, you can create your own **custom presets** — fully tailored player configurations that define the skin, controls, behaviors, caption styles, and even engagement overlays like email capture, CTAs, and action bars. Once created, a custom preset works just like the built-in ones and can be applied to any media item on your site.
 
+::: info Who can create presets?
+WordPress users with the **Editor** role (or higher) can create and manage custom presets. This can be adjusted using the `fluent_player/authoring_capability` filter if your site uses custom roles.
+:::
+
 ## Why create a custom preset?
 
 The seven built in presets cover common use cases, but they cannot be modified. A custom preset lets you:

@@ -9,6 +9,10 @@ description: "Configure Interactive Layers: forms, email capture, CTAs, hotspots
 
 To manage your layers, select the **FluentPlayer** block and open the **Interactive Layers** panel in the **Block** tab.
 
+::: info Who can manage layers?
+WordPress users with the **Editor** role (or higher) can add, configure, and delete Interactive Layers. This can be adjusted using the `fluent_player/authoring_capability` filter.
+:::
+
 ![Interactive Layer](/guide/public/block-editor/interactive-layers/interactive-layer-1.webp)
 
 ## Managing Your Layers
@@ -30,9 +34,8 @@ Each layer type serves a specific marketing or educational purpose:
  * **[Fluent Forms (Free)](/fluent-forms):** Embed a complete Fluent Forms form at a specific time in the video. You can choose your form from a dropdown, set its position, and even adjust its width and height percentage.
  * **[Email Capture](/email-capture) (Free):** Collect viewer emails directly within the player. These connect to your configured [Email Providers](/email-providers) like FluentCRM or Mailchimp.
 
- > [!Note]
- > To use FluentCRM as your email provider, follow the setup guide in the [FluentCRM documentation](/fluentcrm).
- 
+ To use FluentCRM as your email provider, see the [FluentCRM integration guide](/fluentcrm).
+
  * **[Call to Action (CTA)](/cta-and-action-bar) (Pro):** Create a prominent overlay to prompt an action. You can design the content using a rich text editor and set whether it pauses the video until the viewer clicks.
  * **Hotspot (Pro):** Add clickable icons or dots to the video. You can customize the icon, add a tooltip, and set a target URL for when the viewer clicks the hotspot.
  * **Ad (Pro):** Place a timed advertisement over your video. You can upload an image, set a "Skip" timer, and customize the color of the skip progress bar.
@@ -91,8 +94,9 @@ Once you have added a layer, it will appear in a list within the sidebar panel.
 
 ![Edit Or Delete](/guide/public/block-editor/interactive-layers/edit-or-delete-layer-4.webp)
 
->[!Tip]
->Always test your layers on a mobile device. Small targets like Hotspots can be difficult to tap on a smartphone screen, so ensure they are large enough for a good user experience.
+::: tip
+Always test your layers on a mobile device. Small targets like Hotspots can be difficult to tap on a smartphone screen, so ensure they are large enough for a good user experience.
+:::
 
 Interactive Layers turn your videos into powerful conversion tools. By carefully timing forms, CTAs, and hotspots, you can guide your viewers toward taking the next step whether that's signing up for a newsletter or clicking a product link at the exact moment they are most engaged.
 
