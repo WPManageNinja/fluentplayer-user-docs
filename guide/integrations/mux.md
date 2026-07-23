@@ -24,15 +24,16 @@ Click **Create Token**.
 
 ![Access Token](/guide/public/integrations/mux/access-token-1.webp)
 
-A popup will appear. Now, provide a **Name** for the token and ensure you select **Mux Video** permissions **(Read + Write)**. 
+A popup will appear. Provide a **Name** for the token and ensure you select **Mux Video** permissions **(Read + Write)**.
 
 ![Access Token](/guide/public/integrations/mux/create-access-token-2.webp)
 
 Copy your **Token ID** and **Token Secret** for later use.
 
 
->[!Note]
->The Token Secret is only shown once in the Mux dashboard; be sure to save it securely.
+::: info
+The Token Secret is only shown once in the Mux dashboard; be sure to save it securely.
+:::
 
 ![Copy Token and Secret](/guide/public/integrations/mux/save-token-3.webp)
 
@@ -56,8 +57,9 @@ Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is f
 - **Copy** the **Webhook URL** provided in the settings.
 - In the Mux Dashboard, go to **Settings → Webhooks** and click **Create New Webhook**.
 
->[!Note]
-> Webhook functionality is essential for automatic status and metadata updates after a video finishes processing.
+::: info
+Webhook functionality is essential for automatic status and metadata updates after a video finishes processing.
+:::
 
 ![Webhook](/guide/public/integrations/mux/webhooks-7.webp)
 
@@ -68,7 +70,7 @@ Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is f
 
 ### Mux Data Environment Key (Optional)
 
-**Copy** the **Environment Key** from the **Mux Dashboard** top right corner for future use purpose.
+**Copy** the **Environment Key** from the top-right corner of the **Mux Dashboard** for later use.
 
 ![Environment Key](/guide/public/integrations/mux/enviroment-key-9.webp)
 
@@ -128,22 +130,37 @@ You can use **both**:
 - **[Built-in Analytics](/built-in-analytics):** Viewership inside WordPress (plays, retention, top videos, locations, and more).
 - **Mux Data** (optional): Enter the **Mux Data environment key** in the integration for Mux’s own quality and delivery analytics.
 
-## Use Mux as a Audio Source
+## Use Mux as an Audio Source
 
-In addition to standard video hosting, you can link and play audio tracks from your Mux account using a public playback stream link:
+In addition to video, you can browse and play audio assets from your Mux account directly inside FluentPlayer.
 
-- Log in to your **Mux** account and navigate to your **audio** assets library.
-- Click on your target asset to open its details page, then open the **Playback and Thumbnails** tab.
+### Browse from the Mux Library
+
+1. Go to **FluentPlayer → Media** and click **Add Media**.
+2. Select **Mux** from the source picker.
+
+![Audio add](/guide/public/integrations/mux/audio-add-15.webp)
+
+3. Click on your target audio asset from the list to add it instantly.
+
+![Audio add](/guide/public/integrations/mux/audio-15.webp)
+
+### Add via Public Playback URL
+
+Alternatively, you can add a Mux audio asset using its public playback URL:
+
+1. Log in to your **Mux** account and navigate to your audio assets library.
+2. Click on your target asset to open its details page, then open the **Playback and Thumbnails** tab.
 
 ![Playback and Thumbnails](/guide/public/integrations/mux/playback-and-thumnails-15.webp)
 
-- Locate the **Play your audio** section and click on **Choose and integrate a player**.
-- **Copy** the public playback stream URL (ending in **.m3u8**) provided in the field.
+3. Locate the **Play your audio** section and click **Choose and integrate a player**.
+4. Copy the public playback stream URL (ending in **.m3u8**).
 
 ![Copy](/guide/public/integrations/mux/copy-media-url-16.webp)
 
-- In your WordPress admin, go to **Fluent Player → Media** and click **Add Media**.
-- **Paste** the copied Mux stream link into the **Paste a Media URL** field, and click **Add Media** to finalize your audio asset.
+5. In your WordPress admin, go to **FluentPlayer → Media** and click **Add Media**.
+6. Paste the copied URL into the **Paste a Media URL** field and click **Add Media**.
 
 ![Paste Media url](/guide/public/integrations/mux/add-media-17.webp)
 
