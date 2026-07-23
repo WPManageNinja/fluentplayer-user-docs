@@ -1,142 +1,261 @@
 ---
 title: "Embed with Shortcode"
-description: "Embed FluentPlayer with [fluentplayer id=\"…\"] or [fluentmedia] in posts, widgets, and templates—find the media ID, optional attributes, and common questions."
+description: "Embed FluentPlayer with [fluentplayer id=\"…\"] in posts, widgets, page builders, and templates — covering saved media, dynamic URLs, custom fields, and playback overrides."
 ---
 
 # Embed with Shortcode
 
-The **shortcode** is the most common way to embed a FluentPlayer video. It works in posts, pages, widgets, and even in theme templates.
+The shortcode is the simplest and most flexible way to embed a FluentPlayer player anywhere on your site. It works in posts, pages, widgets, page builders, and even inside your theme templates.
 
-### Basic Usage
+A shortcode can reference a saved media item, play a video from a dynamic URL, or combine both using a saved media item as a reusable player template while supplying the video source at embed time.
 
-Add the following shortcode to any **post or page (recommended)**:
+## Basic Usage
 
-```
+Add the following shortcode to any post or page:
+
+```text
 [fluentplayer id="129"]
 ```
 
-Replace `129` with the ID of your media item. Once added, the player will appear exactly where you place the shortcode.
+Replace `129` with the ID of your media item.
+
+When the page loads, FluentPlayer displays the player exactly where you placed the shortcode, using the media item's saved settings, including:
+
+- Video source
+- Poster image
+- Player preset
+- Controls
+- Branding
+- Overlay layers
+- Playback behavior
 
 ## Find Your Shortcode
 
-Every video you create is assigned a unique ID and a ready-to-use shortcode.
+Every media item automatically receives its own shortcode.
 
- 1. Navigate to **FluentPlayer → Media**.
- 2. Look at the **Media List** table.
- 3. You will find the **ID (e.g., #129)** at the start of the row and the full **ShortCode** (e.g., [fluentplayer id='129']) in its own column.
- 4. **Copy** the code exactly as shown.
+To find it:
+
+1. Navigate to **FluentPlayer → Media**.
+2. Locate your media item.
+3. The **ID** appears at the beginning of the row (for example **#129**).
+4. The **Shortcode** column contains a ready-to-use shortcode, such as `[fluentplayer id="129"]`.
+
+Copy and paste this shortcode wherever you want the player to appear.
 
 ![Find your Shortcode](/guide/public/display-embed/shortcode/find-your-shortcode.webp)
 
 ## Shortcode Attributes
 
+The shortcode supports both saved media items and dynamic media sources.
+
 | Attribute | Required | Description |
 |-----------|----------|-------------|
-| `id` | Yes | The media (post) ID. It supplies the player **template and configuration** (preset, controls, overlays, branding). By default it also provides the video source, but that source can be replaced dynamically — see [Dynamic media source](#dynamic-media-source-advanced). |
-| `source_url` | No | Play a specific video URL instead of the media's saved source. |
-| `source_meta` | No | Read the video URL from a custom field on the current post. |
-| `source_poster` | No | Use a specific poster image URL instead of the media's saved poster. |
+| `id` | No | The media item ID. Provides the player template, preset, controls, overlays, branding, and default media source. |
+| `source_url` | No | Plays a specific media URL instead of the media item's saved source. |
+| `source_meta` | No | Reads the media URL from a custom field on the current post or page. |
+| `source_poster` | No | Uses a custom poster image URL instead of the saved poster. |
+| `preset` | No | Overrides the player preset for this embed only. |
+| `autoplay` | No | Enables or disables autoplay for this embed. Use `muted` as the value for muted autoplay. |
+| `muted` | No | Starts playback muted. |
+| `loop` | No | Repeats playback automatically. |
+| `plays_inline` | No | Plays inline on supported mobile devices instead of entering fullscreen. |
+| `controls` | No | Shows or hides the player controls (`0` hides all control bars). |
+| `preload` | No | Overrides the preload behavior (`none`, `metadata`, or `auto`). |
+| `ratio` | No | Sets the player aspect ratio (e.g. `16:9`). |
+| `aspect_ratio` | No | Alias for `ratio`. |
+| `start` | No | Starts playback from a specific time (in whole seconds). |
+| `class` | No | Adds custom CSS classes to the player wrapper. |
 
-The shortcode is intentionally simple — the preset, controls, and all other configuration come from the media item itself. This means you configure everything in one place (**FluentPlayer → Media**) and the shortcode just references it. The video source defaults to the one saved on the media item, but it can be replaced per page — see [Dynamic media source](#dynamic-media-source-advanced) below.
-
-::: tip
-If you ever change the video source, poster, or preset for a media item, every page that uses the shortcode for that ID will update automatically. No need to edit every page.
+::: info
+All playback override attributes only affect the current shortcode. They do not modify the saved media item.
 :::
 
-## Dynamic media source (advanced)
+## Default Behavior
 
-Normally the player uses the source saved on the media item. The optional `source_url`, `source_meta`, and `source_poster` attributes let one media item act as a **reusable template** whose video changes per page — useful when the same player configuration (preset, overlays, branding) should wrap different videos.
+By default, the shortcode uses the configuration stored on the selected media item.
 
-In this mode the `id` no longer determines which video plays; it only supplies the player **template and configuration**. The actual video source is resolved dynamically — either from the URL passed on the shortcode (`source_url`) or, most commonly, from a custom field (meta) on the current post (`source_meta`).
+This includes preset, controls, branding, overlay layers, playback settings, poster image, and default media source. If you update the media item later, every shortcode using that media ID automatically reflects those changes.
 
-**Source precedence** (the first match wins):
+When playback override attributes are supplied, only those specific settings are overridden for that individual embed.
 
-1. **`source_url`** — an explicit URL passed on the shortcode.
-2. **`source_meta`** — the value of a custom field on the **current post** (the post or page where the shortcode appears).
-3. The media item's **saved source** (the default when neither is provided).
+## Dynamic Media Sources
+
+One of FluentPlayer's most powerful features is the ability to supply a media source at embed time.
+
+Instead of always using the media item's saved video, you can provide:
+
+- A direct media URL
+- A YouTube URL
+- A Vimeo URL
+- A supported CDN provider URL
+- A custom field containing a media URL
+
+FluentPlayer automatically detects the media provider from the supplied URL. The `id` attribute is optional when using a dynamic media source.
+
+### Source Priority
+
+When multiple source options are available, FluentPlayer uses the following order:
+
+1. `source_url`
+2. `source_meta`
+3. The media item's saved source (when `id` is provided)
+
+The first available source is used.
+
+### Embedding a URL Without a Saved Media Item
+
+You can create a player without saving a media item. Simply provide a media URL:
 
 ```text
-[fluentplayer id="12" source_url="https://example.com/clip.mp4"]
-[fluentplayer id="12" source_meta="video_url"]
-[fluentplayer id="12" source_meta="video_url" source_poster="https://example.com/cover.jpg"]
+[fluentplayer source_url="https://example.com/video.mp4"]
 ```
 
-A YouTube or Vimeo URL works as `source_url` too — the provider is detected automatically.
+Or a YouTube or Vimeo URL — the provider is detected automatically:
 
-### Example: play a video stored in a custom field
+```text
+[fluentplayer source_url="https://www.youtube.com/watch?v=abc123"]
+```
 
-Say each post stores its video URL in a custom field named `youtube_url` and you want one consistent player for all of them:
+When no media item is supplied, FluentPlayer uses the site's default player preset. To apply a specific preset, add the `preset` attribute:
 
-1. In **FluentPlayer → Media**, create **one** media item. Configure the preset, controls, overlays, and branding you want — this item is your reusable **template**. The source you set here is only a fallback; it does not need to match any specific post (you can leave it as a placeholder).
-2. Copy its **ID** (e.g. `#12`).
-3. In each post — or once in your theme template — add the shortcode with `source_meta` pointing at your field:
+```text
+[fluentplayer source_url="https://example.com/video.mp4" preset="minimal"]
+```
+
+### Using a Saved Media Item as a Template
+
+A common workflow is to use a saved media item for player configuration while supplying a different video source. The media item provides the preset, controls, branding, overlay layers, and playback configuration; the shortcode provides the media source.
+
+```text
+[fluentplayer id="12" source_url="https://example.com/video.mp4"]
+```
+
+Or load the URL from a custom field:
+
+```text
+[fluentplayer id="12" source_meta="video_url"]
+```
+
+You can also override the poster image:
+
+```text
+[fluentplayer id="12" source_meta="video_url" source_poster="https://example.com/poster.jpg"]
+```
+
+## Playback Overrides
+
+The shortcode can override playback behavior without modifying the saved media item:
+
+```text
+[fluentplayer id="12" autoplay="true" muted="true" controls="0"]
+```
+
+Or combined with a dynamic source:
+
+```text
+[fluentplayer source_url="https://example.com/video.mp4" preset="minimal" autoplay="true"]
+```
+
+## Example: Play Videos Stored in a Custom Field
+
+Suppose each blog post stores its video URL in a custom field named `youtube_url`. Instead of creating a separate media item for every post:
+
+1. Create one media item in **FluentPlayer → Media**.
+2. Configure its preset, branding, controls, overlays, and playback settings.
+3. Copy its ID (for example **12**).
+4. Add this shortcode wherever the player should appear:
 
 ```text
 [fluentplayer id="12" source_meta="youtube_url"]
 ```
 
-Every post now renders the same template but plays the URL from its own `youtube_url` field. You reuse the **same `id`** everywhere — you do **not** create a separate media item for each video. The `id` supplies the player template and configuration; the video source comes from the field.
+Every post now uses the same player configuration while playing the video stored in its own `youtube_url` custom field.
 
 ::: warning Security note
-`source_meta` reads from the current post's custom fields. Point it only at fields you control. Avoid exposing private or protected meta keys (those whose name begins with `_`) through a public shortcode, since the resolved URL is rendered into the page.
+The `source_meta` attribute reads values from the current post's custom fields. Only use custom fields that you control. Avoid exposing private or protected meta keys (those beginning with `_`) because their values become part of the rendered page.
 :::
 
 ::: info Developer note
-By default `source_meta` is read from the current post. Developers can change which post is used with the `fluent_player/dynamic_source_post_id` filter. (There is no `post_id` shortcode attribute — use the filter for this.)
+By default, `source_meta` reads from the current post or page. Developers can change which post supplies the dynamic source using the `fluent_player/dynamic_source_post_id` filter. There is no `post_id` shortcode attribute.
 :::
 
-## Legacy query-string embed
+## Using the Shortcode
 
-For backward compatibility, you can also load a media item by appending `?fluent_player_media_id=<ID>` to a URL. This is a legacy mechanism — for new content, use the shortcode or the [Gutenberg block](/block) instead.
+### WordPress Block Editor
 
-## Using the Shortcode in Different Areas
-
-**In a Post or Page (Block Editor)**
-
-1. Go to **Pages → Add New** or edit an existing page.
-2. Click the **+ icon** and search for the **Shortcode** block.
-3. **Paste** your code (e.g., `[fluentplayer id="133"]`) into the box.
-4. Click **Publish or Update** to see your video live.
+1. Edit a page or post.
+2. Click **+** and add a **Shortcode** block.
+3. Paste your shortcode (e.g. `[fluentplayer id="129"]`).
+4. Publish or update the page.
 
 ![Gutenberg Block](/guide/public/display-embed/shortcode/gutenberg-shortcode-2.webp)
 
-**In a widget:**
+### Classic Editor
 
-1. Go to **Appearance → Widgets**.
-2. Add a **Text** or **Custom HTML** widget to your sidebar or footer.
-3. Type `[fluentplayer id="133"]` in the widget content.
-4. Save.
+Paste the shortcode directly into the editor wherever you want the player to appear.
 
-**In a theme template (PHP):**
+### Widgets
 
-If you are a developer, you can call the player directly in your code:
+Go to **Appearance → Widgets**, add a **Shortcode**, **Custom HTML**, or **Text** widget, and paste:
 
-```php
-<?php echo do_shortcode('[fluentplayer id="133"]'); ?>
+```text
+[fluentplayer id="129"]
 ```
 
->[!Note]
->If you enter an **ID** that doesn't exist, the player will simply not appear on the page. Always double check your **Media List** to ensure you are using the correct ID.
+### Elementor
 
+Add a **Shortcode** widget and paste your FluentPlayer shortcode.
 
-## Common Questions
+### Divi
 
-**Can I put multiple videos on the same page?**
+Add a **Code** module and insert the shortcode.
+
+### Theme Templates (PHP)
+
+Developers can render the player directly inside a template:
+
+```php
+<?php echo do_shortcode('[fluentplayer id="129"]'); ?>
+```
+
+::: info
+If the specified media ID does not exist, FluentPlayer outputs nothing. Visitors will not see an error message. Always verify the media ID in **FluentPlayer → Media**.
+:::
+
+## Legacy Query String Embed
+
+For backward compatibility, FluentPlayer still supports loading a media item using a query string:
+
+```text
+https://example.com/page/?fluent_player_media_id=129
+```
+
+This method is considered legacy. For new content, use the shortcode or the [Gutenberg block](/block) instead.
+
+## Frequently Asked Questions
+
+**Can I place multiple players on one page?**
 
 Yes. Use a separate shortcode for each video:
 
-```
+```text
 [fluentplayer id="129"]
 
 [fluentplayer id="133"]
 ```
 
-**Can I use the shortcode inside a tab or accordion?**
+**Can I use the shortcode inside tabs or accordions?**
 
-Yes, as long as the tab or accordion plugin supports shortcodes (most do).
+Yes, as long as the plugin supports WordPress shortcodes, FluentPlayer works normally.
+
+**Can I use a YouTube or Vimeo URL directly?**
+
+Yes. FluentPlayer automatically detects supported media providers from the supplied URL, including YouTube, Vimeo, direct media files, and supported CDN providers.
+
+**Do I always need a media item?**
+
+No. You can embed a media URL directly using `source_url`. A saved media item is only required if you want to reuse player settings such as presets, overlays, branding, or controls.
 
 **What happens if the media ID does not exist?**
 
-The shortcode outputs nothing the page will look as if the shortcode is not there. No error message is shown to visitors.
-
-
+If the specified media item cannot be found, FluentPlayer outputs nothing. Visitors will not see an error message.
