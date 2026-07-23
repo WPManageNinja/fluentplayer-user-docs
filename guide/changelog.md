@@ -10,6 +10,47 @@ next: false
 Stay updated with the latest features, improvements, and bug fixes in FluentPlayer. The newest release is listed first, and items marked **(Pro)** require FluentPlayer Pro.
 
 
+## FluentPlayer v1.3.0
+
+_Released on July 22, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds paste-to-add media — paste any URL and the provider is detected automatically; same-site upload URLs resolve to the library attachment
+• Adds playback-override attributes to the [fluentplayer] shortcode — preset, autoplay, muted, loop, controls, and more; id is optional when a source URL is provided
+• Adds Elementor widgets for the player and playlist, with full block-parity settings (Pro)
+• Adds Divi 5 Visual Builder modules for the player and playlist (Pro)
+• Adds audio playback support for CDN providers; Pro adds server-side audio uploads (Pro)
+• Adds Editor-role authoring for media, layers, and presets, previously restricted to Administrators; adjustable via the fluent_player/authoring_capability filter
+• Adds Editor-role authoring for playlists, previously restricted to Administrators (Pro)
+• Adds FluentCRM contact timeline logging — watched milestones and layer interactions are tracked as timeline events
+```
+
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves the source picker to collapse unconfigured Pro providers behind a More sources toggle, with direct links to their setup page (Pro)
+• Improves YouTube poster delivery to serve WebP images for faster loading
+• Improves block editor performance by lazy-loading the player preview
+• Improves block editor startup with a branded loading backdrop during the boot phase
+• Adds Cmd/Ctrl+S to save settings, and a keyboard shortcut to create new media from the admin pages
+• Improves accessibility by announcing locked providers to assistive technology
+• Improves the block editor media and playlist pickers with search and paginated results, making libraries beyond the first 20 items reachable
+• Renames BunnyCDN Stream to Bunny Stream to match the provider's current branding (Pro)
+• Improves the storage settings link so it only appears for users who can access the settings page (Pro)
+```
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes chapter files with umlauts and other non-ASCII characters not rendering correctly in the block preview
+• Fixes audio players not showing all controls without scrolling
+• Fixes per-video audio normalization not being saved reliably
+• Fixes overlay layers (forms, CTAs) failing to appear on sites that load animation libraries such as GSAP
+• Fixes password-locked playlist items exposing Cloudflare Stream and R2 playback tokens before unlock (Pro)
+• Fixes daily visit analytics overwriting the longest watch duration with a shorter later session (Pro)
+• Fixes Bunny Stream media not appearing correctly in the block editor source picker (Pro)
+```
+
+:::
+
 ## FluentPlayer v1.2.0
 
 _Released on July 8, 2026_
