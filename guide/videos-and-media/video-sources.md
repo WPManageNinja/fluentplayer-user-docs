@@ -1,6 +1,6 @@
 ---
 title: "Video Sources"
-description: "Explore supported video source types in FluentPlayer, including WordPress, external URLs, YouTube, Vimeo, Mux, Gumlet, BunnyCDN, Cloudflare, and audio."
+description: "Explore supported video source types in FluentPlayer, including WordPress, external URLs, YouTube, Vimeo, Mux, Gumlet, Bunny, Cloudflare, and audio."
 ---
 
 # Video Sources
@@ -67,7 +67,7 @@ See the full guide: [Vimeo](/vimeo).
 
 In the block editor, **Mux** and **Mux Live** appear as separate source buttons: **Mux** for standard on demand assets and **Mux Live** for live streams. 
 
-With FluentPlayer Pro, you connect your account under **Settings → Storage** (BunnyCDN Stream, BunnyCDN Storage, and Mux rows each have **Configure**). Features include **HLS** playback, uploads, optional **Signed URLs**, **Webhooks**, and optional **AI-generated captions** for on-demand content.
+With FluentPlayer Pro, you connect your account under **Settings → Storage** (Bunny Stream, Bunny Storage, and Mux rows each have **Configure**). Features include **HLS** playback, uploads, optional **Signed URLs**, **Webhooks**, and optional **AI-generated captions** for on-demand content.
 
 When a stream is configured as **Live**, the player shows a **LIVE** badge in the control bar (a pulsing indicator plus “LIVE” text) so viewers know they are watching a live broadcast.
 
@@ -87,12 +87,12 @@ You can upload audio files, such as **MP3** or **M4A**, use an external audio UR
 
 ![Audio](/guide/public/videos-and-media/video-sources/audio-5.webp)
 
-### 7. BunnyCDN (Pro)
+### 7. Bunny (Pro)
 
-With FluentPlayer Pro, you can connect to **Bunny CDN** for professional video hosting. There are two options:
+With FluentPlayer Pro, you can connect to **Bunny** for professional video hosting. There are two options:
 
- * **BunnyCDN Stream**: Use Bunny's video streaming platform. You manage libraries and videos on Bunny, then select them in FluentPlayer. See [BunnyCDN Stream](/bunnycdn-stream).
- * **BunnyCDN Storage**: Use Bunny's storage zones to host video files. Upload and manage files directly from WordPress. See [BunnyCDN Storage](/bunnycdn-storage).
+ * **Bunny Stream**: Use Bunny's video streaming platform. You manage libraries and videos on Bunny, then select them in FluentPlayer. See [Bunny Stream](/bunnycdn-stream).
+ * **Bunny Storage**: Use Bunny's storage zones to host video files. Upload and manage files directly from WordPress. See [Bunny Storage](/bunnycdn-storage).
 
 **Best for:** Sites with lots of videos, high traffic sites, or when you need fast, reliable CDN delivery worldwide.
 
@@ -121,7 +121,7 @@ See the full guide: [Gumlet (Pro)](/gumlet).
 
 1. Go to **FluentPlayer → Media** and create or edit a media item.
 2. In the media editor, look for the **Source** section.
-3. Choose the source type, or paste any URL and let FluentPlayer auto-detect it. Free: **WordPress**, **YouTube**, **Vimeo**, **Audio**. Pro: **URL** (auto-detect/external), **Mux**, **Gumlet**, **BunnyCDN**, and **Cloudflare**.
+3. Choose the source type. Free sources — **WordPress**, **YouTube**, **Vimeo**, **Audio** — appear in the main list. Pro sources — **URL** (auto-detect), **Mux**, **Gumlet**, **Bunny**, and **Cloudflare** — appear here when connected. Unconnected Pro providers collapse behind a **More sources** toggle with a direct link to their setup page in Settings.
 4. Enter the **URL** or select the file.
 5. **Save** the media.
 

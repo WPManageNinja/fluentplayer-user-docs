@@ -6,6 +6,10 @@ A **playlist** lets you group multiple videos together so viewers can watch them
 Creating and embedding playlists requires **FluentPlayer Pro**. The free version displays the Playlists menu, but you must upgrade to Pro to build playlists.
 :::
 
+::: info Who can create playlists?
+Users with the **Editor** role (or higher) can create and manage playlists. This is adjustable using the `fluent_player/authoring_capability` filter — see [Authoring Capabilities](/capabilities).
+:::
+
 ## Before You Start
 
 Make sure you have already created the individual media items (videos) that you want to include. Each video should be fully set up under **FluentPlayer → Media** before you proceed. See [Adding and Editing Videos](/adding-videos) if you have not done this yet.

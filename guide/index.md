@@ -15,12 +15,14 @@ Some common use cases:
 
 ## Free vs Pro
 
-FluentPlayer comes in two versions. This documentation matches **FluentPlayer and FluentPlayer Pro 1.0.7** (see your **Plugins** screen if you use a different release).
+FluentPlayer comes in two versions: **FluentPlayer** (free) and **FluentPlayer Pro**.
 
 | Feature | Free | Pro |
 |---------|------|-----|
 | Add and embed videos | Yes | Yes |
 | Shortcode and Gutenberg block | Yes | Yes |
+| Elementor Widget | — | Yes |
+| Divi 5 Module | — | Yes |
 | Player presets (6 built in: Default, Modern, Simple, Standard, Floating, Minimal) | Yes | Yes |
 | Ambient preset | — | Yes |
 | Subtitles & captions (HLS auto-play) | Yes | Yes |
@@ -33,7 +35,10 @@ FluentPlayer comes in two versions. This documentation matches **FluentPlayer an
 | Resume playback (save position in the browser) | — | Yes |
 | Playlists (Standard, Grid) | — | Yes |
 | Mux video hosting and streaming | — | Yes |
-| BunnyCDN Stream and Storage | — | Yes |
+| Bunny Stream and Bunny Storage | — | Yes |
+| Gumlet video hosting | — | Yes |
+| Cloudflare R2 and Stream | — | Yes |
+| Audio playback on CDN providers (Bunny, Cloudflare, Gumlet, Mux) | — | Yes |
 | Built in analytics dashboard | — | Yes |
 | Timed content below the player (block inner content) | — | Yes |
 | Mailchimp and Webhook email providers | — | Yes |
@@ -41,17 +46,20 @@ FluentPlayer comes in two versions. This documentation matches **FluentPlayer an
 | Media tags and tag-based playlists | — | Yes |
 | Right-click context menu | Yes | Yes |
 | Player share links | — | Yes |
+| Add media by pasting any URL (provider auto-detected) | Yes | Yes |
+| Editor role can author media, presets, layers, and playlists | Yes | Yes |
 | Presto Player migration | Yes | Yes |
 
 The **free version** handles everything you need for embedding and customizing single videos. The **Pro version** adds playlists, Mux and Bunny integrations, analytics, timed content, and more email providers.
 
 ## Key Features at a Glance
 
-- **Video players** — Embed and customize players that support WordPress uploads, YouTube, Vimeo, and audio, plus external URLs, Mux, and BunnyCDN on Pro.
-- **Playlists (Pro)** — Group videos into playlists with two layout options: Standard and Grid.
+- **Video players** — Embed and customize players that support WordPress uploads, YouTube, Vimeo, audio, and direct URLs. Pro adds Mux, Bunny, Gumlet, and Cloudflare CDN delivery.
+- **Paste any URL** — Add media by pasting a URL; FluentPlayer detects the provider automatically.
+- **Playlists (Pro)** — Group videos into playlists with Standard and Grid layouts.
 - **Presets** — Save and reuse player configurations so every video looks consistent.
 - **Overlays** — Add email capture forms, calls-to-action, and action bars that appear while the video plays.
-- **Shortcodes** — Embed videos with `[fluentplayer id="123"]` (or `[fluentmedia]`) or playlists with `[fluentplaylist id="456"]` (Pro).
+- **Embed anywhere** — Use the `[fluentplayer]` shortcode, the Gutenberg block, the Elementor widget (Pro), or the Divi 5 module (Pro).
 - **Analytics** — Track plays, watch time, and viewer behavior with built-in analytics or Google Analytics (both Pro).
 
 ## How It Works (the Big Picture)
