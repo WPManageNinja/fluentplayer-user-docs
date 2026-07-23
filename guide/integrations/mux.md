@@ -89,7 +89,7 @@ Webhooks allow Mux to "talk" to WordPress, notifying your site when a video is f
 
 ![Connect Mux to FluentPlayer](/guide/public/integrations/mux/configure-mux-10.webp)
 
-## DRM & access control (Pro)
+## DRM & Access control (Pro)
 
 For content you need to protect, FluentPlayer's Mux integration goes beyond a public URL:
 
@@ -127,6 +127,25 @@ You can use **both**:
 
 - **[Built-in Analytics](/built-in-analytics):** Viewership inside WordPress (plays, retention, top videos, locations, and more).
 - **Mux Data** (optional): Enter the **Mux Data environment key** in the integration for Mux’s own quality and delivery analytics.
+
+## Use Mus as a Audio Source
+
+In addition to standard video hosting, you can link and play audio tracks from your Mux account using a public playback stream link:
+
+- Log in to your **Mux** account and navigate to your **audio** assets library.
+- Click on your target asset to open its details page, then open the **Playback and Thumbnails** tab.
+
+![Playback and Thumbnails](/guide/public/integrations/mux/playback-and-thumnails-15.webp)
+
+- Locate the **Play your audio** section and click on **Choose and integrate a player**.
+- **Copy** the public playback stream URL (ending in **.m3u8**) provided in the field.
+
+![Copy](/guide/public/integrations/mux/copy-media-url-16.webp)
+
+- In your WordPress admin, go to **Fluent Player → Media** and click **Add Media**.
+- **Paste** the copied Mux stream link into the **Paste a Media URL** field, and click **Add Media** to finalize your audio asset.
+
+![Paste Media url](/guide/public/integrations/mux/add-media-17.webp)
 
 ## Troubleshooting
 
