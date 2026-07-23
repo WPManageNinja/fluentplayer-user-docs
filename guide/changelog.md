@@ -9,6 +9,7 @@ next: false
 
 Stay updated with the latest features, improvements, and bug fixes in FluentPlayer. The newest release is listed first, and items marked **(Pro)** require FluentPlayer Pro.
 
+
 ## FluentPlayer v1.2.0
 
 _Released on July 8, 2026_

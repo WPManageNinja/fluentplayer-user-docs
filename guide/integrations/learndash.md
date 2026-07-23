@@ -17,7 +17,7 @@ Make sure your media items are ready before editing a lesson. Create and configu
 4. In the block settings panel, choose your media item from the dropdown, or select a source type (WordPress, YouTube, Mux, Bunny Stream, and so on) to pick or upload media.
 5. Click **Update or Publish** to save the lesson.
 
-The player will appear on the lesson page exactly where you placed the block, using all the settings configured on that media item preset, controls, branding, and any interactive layers.
+The player will appear on the lesson page exactly where you placed the block, using all the settings configured on that media item — preset, controls, branding, and any interactive layers.
 
 ![Choose media from fluentplayer](/guide/public/integrations/learndash/choose-media-2.webp)
 
