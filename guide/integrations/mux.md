@@ -128,7 +128,7 @@ You can use **both**:
 - **[Built-in Analytics](/built-in-analytics):** Viewership inside WordPress (plays, retention, top videos, locations, and more).
 - **Mux Data** (optional): Enter the **Mux Data environment key** in the integration for Mux’s own quality and delivery analytics.
 
-## Use Mus as a Audio Source
+## Use Mux as a Audio Source
 
 In addition to standard video hosting, you can link and play audio tracks from your Mux account using a public playback stream link:
 
@@ -161,7 +161,4 @@ Most Mux issues trace back to credentials, webhooks, or signed URL keys. After c
 
 Integrating Mux with **FluentPlayer Pro** provides a scalable, professional-grade video delivery system within WordPress. From adaptive HLS streaming to real-time analytics, this connection ensures your audience receives the best possible viewing experience while you maintain full control over your content management.
 
-## Related pages
 
-- [Video Sources](/video-sources) — where Mux fits among all source types
-- [Gutenberg Block](/block) — embed your connected Mux asset on a page

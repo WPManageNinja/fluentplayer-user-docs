@@ -36,6 +36,10 @@ Track how your audience interacts with your content to make data driven decision
 - **[FluentCommunity](/fluent-community)** — Embed FluentPlayer media inside FluentCommunity posts and portal content.
 - **[Smartcodes and personalization](/smartcodes-personalization)** — Use FluentCRM merge tags (for example the contact first-name tag) in supported player text when FluentCRM is installed.
 
+### Learning Management
+
+- **[LearnDash](/learndash)** — Add FluentPlayer video blocks and playlist blocks to LearnDash lessons and quizzes using the native Gutenberg block or shortcode.
+
 ## Where to Configure Integrations
 
 Most integration settings are found in **FluentPlayer → Settings**. Some integrations have their own sections or tabs. Here is a quick map:
@@ -50,8 +54,9 @@ Most integration settings are found in **FluentPlayer → Settings**. Some integ
 | FluentCRM smartcodes | **Settings → Integrations** (FluentCRM) + supported text fields |
 | Export email list | **Settings → Export** |
 
->[!Note]
->Video storage providers (Mux/Bunny) and Email providers (Mailchimp/FluentCRM) are located in separate tabs under the Settings menu. Ensure you are in the correct section before configuring.
+::: info
+Video storage providers (Mux/Bunny) and Email providers (Mailchimp/FluentCRM) are located in separate tabs under the Settings menu. Ensure you are in the correct section before configuring.
+:::
 
 ## Topics in This Section
 
@@ -69,6 +74,7 @@ Most integration settings are found in **FluentPlayer → Settings**. Some integ
 | [Webhook (Pro)](/webhook-integration) | Send email leads to any external URL |
 | [FluentCommunity](/fluent-community) | Player inside FluentCommunity |
 | [Smartcodes (FluentCRM)](/smartcodes-personalization) | Personalized text with merge tags |
+| [LearnDash](/learndash) | Embed videos and playlists in LearnDash lessons and quizzes |
 
 ## Next Steps
 

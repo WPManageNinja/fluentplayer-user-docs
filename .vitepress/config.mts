@@ -161,6 +161,7 @@ const guideGroups = [
       { text: 'FluentCRM', link: '/fluentcrm' },
       { text: 'Fluent Forms', link: '/fluent-forms' },
       { text: 'Smartcodes (FluentCRM)', link: '/smartcodes-personalization' },
+      { text: 'LearnDash', link: '/learndash' },
     ],
   },
   {
@@ -247,6 +248,7 @@ export default defineConfig({
     'guide/integrations/fluent-community.md': 'fluent-community.md',
     'guide/integrations/fluent-forms.md': 'fluent-forms.md',
     'guide/integrations/fluentcrm.md': 'fluentcrm.md',
+    'guide/integrations/learndash.md': 'learndash.md',
     'guide/integrations/google-analytics.md': 'google-analytics.md',
     'guide/integrations/index.md': 'integrations.md',
     'guide/integrations/mailchimp-integration.md': 'mailchimp-integration.md',
