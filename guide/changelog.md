@@ -21,22 +21,22 @@ _Released on July 22, 2026_
 • Adds playback-override attributes to the [fluentplayer] shortcode — preset, autoplay, muted, loop, controls, and more; id is optional when a source URL is provided
 • Adds Elementor widgets for the player and playlist, with full block-parity settings (Pro)
 • Adds Divi 5 Visual Builder modules for the player and playlist (Pro)
-• Adds audio playback support for CDN providers; Pro adds server-side audio uploads (Pro)
+• Adds audio playback support for CDN media providers
 • Adds Editor-role authoring for media, layers, and presets, previously restricted to Administrators; adjustable via the fluent_player/authoring_capability filter
-• Adds Editor-role authoring for playlists, previously restricted to Administrators (Pro)
 • Adds FluentCRM contact timeline logging — watched milestones and layer interactions are tracked as timeline events
+• Adds private media playback — private media plays wherever it is embedded (pages, courses) while its standalone page returns 404 and stays out of sitemaps and search
+• Adds automatic Private visibility for media created from a FluentCommunity lesson, so lesson videos never get a public standalone page
 ```
 
 ```markdown:no-line-numbers [🚀 Improvements]
-• Improves the source picker to collapse unconfigured Pro providers behind a More sources toggle, with direct links to their setup page (Pro)
+• Improves the source picker to collapse unconfigured Pro providers behind a More sources toggle, with direct links to their setup page
 • Improves YouTube poster delivery to serve WebP images for faster loading
 • Improves block editor performance by lazy-loading the player preview
 • Improves block editor startup with a branded loading backdrop during the boot phase
 • Adds Cmd/Ctrl+S to save settings, and a keyboard shortcut to create new media from the admin pages
 • Improves accessibility by announcing locked providers to assistive technology
 • Improves the block editor media and playlist pickers with search and paginated results, making libraries beyond the first 20 items reachable
-• Renames BunnyCDN Stream to Bunny Stream to match the provider's current branding (Pro)
-• Improves the storage settings link so it only appears for users who can access the settings page (Pro)
+• Improves FluentCRM timeline events and layer pickers to show block-editor labels (form title, provider name); the media picker lists newest items first
 ```
 
 ```markdown:no-line-numbers [🐞 Bug fixes]
@@ -44,9 +44,11 @@ _Released on July 22, 2026_
 • Fixes audio players not showing all controls without scrolling
 • Fixes per-video audio normalization not being saved reliably
 • Fixes overlay layers (forms, CTAs) failing to appear on sites that load animation libraries such as GSAP
-• Fixes password-locked playlist items exposing Cloudflare Stream and R2 playback tokens before unlock (Pro)
-• Fixes daily visit analytics overwriting the longest watch duration with a shorter later session (Pro)
-• Fixes Bunny Stream media not appearing correctly in the block editor source picker (Pro)
+• Fixes editing a media item from a page or lesson where it is embedded no longer changing the media's visibility
+• Fixes the Modern preset's mobile control bar crowding the seek bar
+• Fixes the Elementor and Divi builders showing a blank canvas for timed-content and playlist blocks
+• Fixes portrait (9:16) YouTube Shorts being letterboxed instead of filling the frame
+• Fixes page-builder panel colors not applying on the front end; the Divi media module is now selectable in the builder
 ```
 
 :::
