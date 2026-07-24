@@ -83,23 +83,43 @@ Finally, click **Save Settings** to connect FluentPlayer with your BunnyCDN stor
 
 ### 3. Adding a Video from Bunny Storage
 
-- Navigate to **FluentPlayer > Media** and click **Add Media**.
-- Choose **BunnyCDN Storage** as your video source.
+- Navigate to **FluentPlayer → Media** and click **Add Media**.
+- Choose **Bunny Storage** as the source type.
 
 ![Adding Video](/guide/public/integrations/bunnycdn-storage/bunnycdn-storage-9.webp)
 
 #### Managing Files from WordPress
 
-You may be able to:
+From the Bunny Storage browser inside FluentPlayer you can:
 
-- **List:** all video files in your storage zone.
-- **Upload:** new video files from WordPress.
-- **Create folders:** Add directories inside the storage zone from WordPress (REST: create directory) to keep large libraries organized.
-- **Delete:** files from the storage zone.
+- **List** all files in your storage zone.
+- **Upload** new files directly from WordPress.
+- **Create folders** to keep large libraries organized.
+- **Delete** files from the storage zone.
 
- This lets you manage your hosted videos without leaving WordPress.
+This lets you manage your hosted files without leaving WordPress.
 
 ![Adding Video with FluentPlayer](/guide/public/integrations/bunnycdn-storage/add-video-bunnycdn-10.webp)
+
+### 4. Adding Audio from Bunny Storage
+
+Bunny Storage supports audio files alongside video. The steps are the same — only the media type changes.
+
+- Navigate to **FluentPlayer → Media** and click **Add Media**.
+- Set the media type to **Audio**.
+- Choose **Bunny Storage** as the source type.
+
+![Add Audio Media](/guide/public/integrations/bunnycdn-storage/bunny-cdn-storage-11.webp)
+
+- Browse your storage zone to select an existing audio file, or click **Upload** to send a new file directly from WordPress.
+- Save the media item. FluentPlayer switches to the audio-optimized player layout automatically.
+
+![Audio File Browser](/guide/public/integrations/bunnycdn-storage/audio-12.webp)
+
+::: tip
+You can also paste a direct Bunny Storage audio URL into the **Paste a Media URL** field and FluentPlayer will detect the provider automatically.
+:::
+
 
 ## How playback works
 
