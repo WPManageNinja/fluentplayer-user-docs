@@ -10,6 +10,26 @@ next: false
 Stay updated with the latest features, improvements, and bug fixes in FluentPlayer. The newest release is listed first, and items marked **(Pro)** require FluentPlayer Pro.
 
 
+## FluentPlayer v1.3.1
+
+_Released on July 28, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves player asset loading by cache-busting after a plugin update, so browsers load the new version instead of a stale one
+```
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes playback not resuming where you left off in FluentCommunity
+• Fixes the Bunny Stream CDN token not being forwarded to editor preview segments, so protected media previews correctly in the editor
+• Fixes Fluent Player shortcodes not rendering inside the Breakdance builder canvas
+• Fixes YouTube and Vimeo embeds losing their referrer
+• Fixes the Divi and Elementor builder media and playlist pickers, and a wp-admin typography issue in the builder canvas
+```
+
+:::
+
 ## FluentPlayer v1.3.0
 
 _Released on July 22, 2026_
