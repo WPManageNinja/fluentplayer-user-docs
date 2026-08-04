@@ -2,6 +2,8 @@
 
 **FluentPlayer** is a WordPress plugin that lets you add beautiful, customizable video players to your website. Whether you want to embed a single video on a blog post or build a full video course with playlists, FluentPlayer gives you everything you need — right from your WordPress dashboard.
 
+<iframe src="https://www.youtube.com/embed/wA5sO4DhoF0" title="Introducing FluentPlayer: The WordPress Video Player Your Content is Missing" style="max-width:100%;width:100%;aspect-ratio:16/9;height:auto;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+
 ## Who Is It For?
 
 FluentPlayer is built for anyone who uses WordPress and wants to display video content. You do not need any coding knowledge to use it. If you can write a blog post in WordPress, you can use FluentPlayer.

@@ -2,6 +2,8 @@
 
 This guide will walk you through creating your first video and embedding it on a page. You can complete this in under 5 minutes.
 
+<iframe src="https://www.youtube.com/embed/BOGRWeghyNI" title="FluentPlayer Walkthrough: The Only WordPress Video Player You Need" style="max-width:100%;width:100%;aspect-ratio:16/9;height:auto;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+
 ## What you will need
 
 - FluentPlayer installed and activated (see [Installation](/installation)).
