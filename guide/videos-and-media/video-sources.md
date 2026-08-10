@@ -20,7 +20,7 @@ Upload a video file (like an MP4) to your WordPress Media Library and select it 
  * **Best for:** Small videos, simple sites, or when you want everything stored on your own server.
  * **Setup:** Select the "WordPress" option in the source section and pick a file from your library.
 
-### 2. URL (Auto-detect) (Pro)
+### 2. URL (Auto-detect)
 
 Paste any supported video URL and FluentPlayer automatically identifies the provider YouTube, Vimeo, Mux, Bunny, Gumlet, Cloudflare, or a direct file link. If the URL points to a file already in your WordPress Media Library, FluentPlayer resolves it to that library attachment instead of treating it as an external link.
 
