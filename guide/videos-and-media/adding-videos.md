@@ -11,8 +11,8 @@ This guide explains how to manage your video content within FluentPlayer. You ca
 
 Adding a video (Media) is the first step toward getting your content in front of your audience.
 
-1. In your WordPress admin, go to **FluentPlayer → Media** (the **Media** section in **FluentPlayer Pro**).
-2. Click **Add Media** (or **Add New** / **+**, depending on the screen) to create a new item.
+1. In your WordPress admin, go to **FluentPlayer → Media**.
+2. Click **Add Media** to create a new item.
 
 ![Add Media](/guide/public/videos-and-media/adding-videos/add-media-1.webp)
 
@@ -26,7 +26,7 @@ Adding a video (Media) is the first step toward getting your content in front of
 
 ![Set Video Source](/guide/public/videos-and-media/adding-videos/add-video-source-3.webp)
 
-5. Optionally, add a **poster image**. This is the thumbnail that viewers see before they click play. A good poster makes your video look more professional and inviting.
+5. Optionally, add a thumbnail that viewers see before they click play. A good thumbnail makes your video look more professional and inviting.
 6. Choose a **preset** that controls the player's look and controls. See [Presets](/presets) for details.
 7. Click **Publish** to make it live, or **Save as Draft** to come back later.
 
@@ -55,7 +55,7 @@ You can update your videos at any time, and the changes will automatically refle
 2. Find the media in the list and click on its title to open the editor.
 3. Modify any settings, including:
    - The **Video Source** (to swap URLs or files).
-   - The **Poster Image** or **Player Preset**.
+   - The **Thumbnail** or **Player Preset**.
    - Player specific settings like [controls](/creating-custom-presets), [behaviors](/behaviors), [overlays](/overlays), and more.
    - Interactive Layers such as email capture, CTAs, or the action bar.
 4. Click **Update** (or **Publish**) to save your changes.
