@@ -7,7 +7,7 @@ next: false
 
 # Changelog
 
-Stay updated with the latest features, improvements, and bug fixes in FluentPlayer. The newest release is listed first, and items marked **(Pro)** require FluentPlayer Pro.
+Stay updated with the latest features, improvements, and bug fixes in FluentPlayer. The newest release is listed first. Releases that include Pro-only updates group them under a dedicated **Pro** tab.
 
 
 ## FluentPlayer v1.3.1
@@ -39,8 +39,6 @@ _Released on July 22, 2026_
 ```markdown:no-line-numbers [✨ Newly Added]
 • Adds paste-to-add media — paste any URL and the provider is detected automatically; same-site upload URLs resolve to the library attachment
 • Adds playback-override attributes to the [fluentplayer] shortcode — preset, autoplay, muted, loop, controls, and more; id is optional when a source URL is provided
-• Adds Elementor widgets for the player and playlist, with full block-parity settings (Pro)
-• Adds Divi 5 Visual Builder modules for the player and playlist (Pro)
 • Adds audio playback support for CDN media providers
 • Adds Editor-role authoring for media, layers, and presets, previously restricted to Administrators; adjustable via the fluent_player/authoring_capability filter
 • Adds FluentCRM contact timeline logging — watched milestones and layer interactions are tracked as timeline events
@@ -71,6 +69,11 @@ _Released on July 22, 2026_
 • Fixes page-builder panel colors not applying on the front end; the Divi media module is now selectable in the builder
 ```
 
+```markdown:no-line-numbers [💎 Pro]
+• Adds Elementor widgets for the player and playlist, with full block-parity settings
+• Adds Divi 5 Visual Builder modules for the player and playlist
+```
+
 :::
 
 ## FluentPlayer v1.2.0
@@ -79,15 +82,15 @@ _Released on July 8, 2026_
 
 ::: code-group
 
-```markdown:no-line-numbers [🚀 Improvements]
-• Improves resume playback so it can now be set per video, overriding the preset (Pro)
-```
-
 ```markdown:no-line-numbers [🐞 Bug fixes]
 • Fixes the frontend language switcher button not being clickable
 • Fixes the selected hotspot icon not staying visible in the picker preview
 • Fixes the admin top-nav dropdown being hidden behind the WordPress admin bar
 • Fixes the media-select search icon overlapping the input text
+```
+
+```markdown:no-line-numbers [💎 Pro]
+• Improves resume playback so it can now be set per video, overriding the preset
 ```
 
 :::
@@ -176,7 +179,6 @@ _Released on June 22, 2026_
 
 ```markdown:no-line-numbers [✨ Newly Added]
 • Adds Presto Player migration — media, per-video color, thumbnails, YouTube no-cookie settings, and email submissions
-• Adds an updated Playlist flow for the playlist block (Pro)
 • Adds a back button in the media editor header
 • Adds an unsaved-changes guard on the settings page
 ```
@@ -190,12 +192,16 @@ _Released on June 22, 2026_
 ```
 
 ```markdown:no-line-numbers [🐞 Bug fixes]
-• Fixes the assigned preset not controlling resume-playback (Pro)
 • Fixes YouTube Privacy-Enhanced Mode not toggling the embed and poster hosts
 • Fixes the timed-content frontend script loading more than once across render paths
 • Fixes the Google Analytics gtag enqueue not being Pro-gated
 • Fixes |fallback on contact smartcodes not being honored when no CRM contact is present
 • Hardens email exports against spreadsheet formula injection
+```
+
+```markdown:no-line-numbers [💎 Pro]
+• Adds an updated Playlist flow for the playlist block
+• Fixes the assigned preset not controlling resume-playback
 ```
 
 :::
@@ -208,15 +214,12 @@ _Released on May 20, 2026_
 
 ```markdown:no-line-numbers [✨ Newly Added]
 • Adds a dynamic custom-field source on [fluentplayer] — source_url, source_meta, and source_poster attributes for per-render URL override without mutating saved media
-• Adds playlist player navigation controls, previous and next (Pro)
 • Adds player share links and a context menu
-• Adds Preset Source media and Auto brand color mode for playlists (Pro)
 • Adds unified media list filters in the admin dashboard
 • Adds timed content support inside FluentCommunity lessons
 ```
 
 ```markdown:no-line-numbers [🚀 Improvements]
-• Improves the Mux Data analytics payload and reusable field link (Pro)
 • Improves the branding logo UX — image-only picker, position active state, conditional fields, and clickable preview
 • Improves Plugin Check and i18n compliance
 • Improves the Gutenberg poster-only editor preview mode
@@ -232,8 +235,6 @@ _Released on May 20, 2026_
 • Fixes an undefined default settings warning in the player template
 • Fixes iOS Safari being forced to muted when autoplay is disabled
 • Fixes preset behavior runtime key normalization
-• Fixes playlist sidebar collapse on initial mobile load (Pro)
-• Fixes Playlist Block keyboard accessibility and the frontend grid poster (Pro)
 • Fixes the admin media tag filter to match the REST response shape
 • Fixes initial page weight by defaulting preload to metadata
 • Fixes multi-language locale key alignment
@@ -247,7 +248,15 @@ _Released on May 20, 2026_
 • Fixes keyboard focus states across the player UI
 • Fixes raw admin exception messages being exposed
 • Fixes Presto instant page visibility mapping
-• Fixes playlist loop setting wiring and menu toggle support (Pro)
+```
+
+```markdown:no-line-numbers [💎 Pro]
+• Adds playlist player navigation controls, previous and next
+• Adds Preset Source media and Auto brand color mode for playlists
+• Improves the Mux Data analytics payload and reusable field link
+• Fixes playlist sidebar collapse on initial mobile load
+• Fixes Playlist Block keyboard accessibility and the frontend grid poster
+• Fixes playlist loop setting wiring and menu toggle support
 ```
 
 :::
@@ -259,39 +268,42 @@ _Released on April 24, 2026_
 ::: code-group
 
 ```markdown:no-line-numbers [✨ Newly Added]
-• Adds ambient preset layers (Pro)
 • Adds Fluent Community block apiVersion 3 support
 • Adds support for CRM shortcodes in timed content and dynamic layers
 • Adds Presto Player migration tooling for importing media, presets, playlists, settings, analytics, and content rewrites
-• Adds support for FluentCRM-based conditions (Pro)
-• Adds condition support in the dynamic layer, email capture, and more (Pro)
-• Adds media tag management (Pro)
-• Adds YouTube subtitle import through the external subtitle service, including caption and hover preview support (Pro)
-• Adds a tag-based playlist rendering shortcode (Pro)
-• Adds FluentCommunity playlist block support (Pro)
 ```
 
 ```markdown:no-line-numbers [🚀 Improvements]
 • Improves preset template consistency
 • Improves default preset slug resolution, fluent_player embed alignment, and media list table widths
-• Improves playlist aspect ratio alignment and cleans up legacy ratio handling (Pro)
 ```
 
 ```markdown:no-line-numbers [🐞 Bug fixes]
 • Hardens plugin directories across packaging and safety
-• Hardens TLS, signed URLs, analytics, playlist layout guards, and Bunny Storage upload path traversal (Pro)
 • Fixes YouTube Shorts zoom and crop issues on the frontend
 • Fixes audio player volume controls on mobile devices
 • Fixes iframe permission guarding and YouTube cross-player message race conditions
 • Fixes original aspect ratio fallback to 16:9 when source dimensions are unavailable
 • Fixes provider config redaction, unpublished language media filtering, and media settings cache invalidation
 • Fixes auto-draft cleanup bounds and PHP 8.4 compatibility
-• Fixes playlist asset cache busting to use the active free plugin version (Pro)
-• Fixes Mux signed media URLs, signing key settings copy, and playlist YouTube settings (Pro)
-• Fixes Bunny Storage CDN signing, Stream asset tokens, and missing tag options service wiring (Pro)
-• Fixes analytics unique viewers to count anonymous viewers and preserve dominant country and device per user (Pro)
-• Fixes the Bunny browser uncategorized video filter for root-level browsing (Pro)
-• Fixes the debounced YouTube subscriber count lookup in the preset editor (Pro)
+```
+
+```markdown:no-line-numbers [💎 Pro]
+• Adds ambient preset layers
+• Adds support for FluentCRM-based conditions
+• Adds condition support in the dynamic layer, email capture, and more
+• Adds media tag management
+• Adds YouTube subtitle import through the external subtitle service, including caption and hover preview support
+• Adds a tag-based playlist rendering shortcode
+• Adds FluentCommunity playlist block support
+• Improves playlist aspect ratio alignment and cleans up legacy ratio handling
+• Hardens TLS, signed URLs, analytics, playlist layout guards, and Bunny Storage upload path traversal
+• Fixes playlist asset cache busting to use the active free plugin version
+• Fixes Mux signed media URLs, signing key settings copy, and playlist YouTube settings
+• Fixes Bunny Storage CDN signing, Stream asset tokens, and missing tag options service wiring
+• Fixes analytics unique viewers to count anonymous viewers and preserve dominant country and device per user
+• Fixes the Bunny browser uncategorized video filter for root-level browsing
+• Fixes the debounced YouTube subscriber count lookup in the preset editor
 ```
 
 :::
@@ -303,16 +315,8 @@ _Released on March 17, 2026_
 ::: code-group
 
 ```markdown:no-line-numbers [✨ Newly Added]
-• Adds Mux live streaming and VOD provider support (Pro)
-• Adds a playlist overlay mode setting to the playlist block (Pro)
 • Adds a FluentCRM smart-code inserter to timed content
-• Adds configurable thumbnail aspect ratio for all playlist layouts (Pro)
 • Adds dynamic overlay positioning
-• Adds a Mux integration with API client, service, controller, and routes (Pro)
-• Adds playlist per-video overlay and layers support (Pro)
-• Adds BunnyCDN signed URL support for Stream and Storage (Pro)
-• Adds timed content rendering and API controller (Pro)
-• Adds shortcode processing in timed content output (Pro)
 ```
 
 ```markdown:no-line-numbers [🚀 Improvements]
@@ -320,20 +324,31 @@ _Released on March 17, 2026_
 • Improves settings menu mobile responsiveness
 • Improves scroll performance and YouTube HD thumbnails
 • Improves admin UX and block enhancements
-• Improves the analytics tracker with fewer unnecessary flush calls on play and pause (Pro)
-• Improves playlist player gesture controls (Pro)
 ```
 
 ```markdown:no-line-numbers [🐞 Bug fixes]
-• Hardens output escaping across playlist layout templates (Pro)
 • Fixes the settings menu showing duplicate Playback and Accessibility items
 • Fixes settings menu item styling broken by the skin-standard size constraint
 • Fixes JS-PHP connection issues and PHP 8.x compatibility
-• Fixes grid playlist thumbnails being overridden by the Kadence slider (Pro)
 • Fixes the mute icon not updating when the volume slider reaches zero
 • Fixes stuck autoplay detection
-• Fixes playlist overlay and modal playback bugs (Pro)
-• Fixes subtitle endpoints querying a non-existent wp_medias table (Pro)
+```
+
+```markdown:no-line-numbers [💎 Pro]
+• Adds Mux live streaming and VOD provider support
+• Adds a playlist overlay mode setting to the playlist block
+• Adds configurable thumbnail aspect ratio for all playlist layouts
+• Adds a Mux integration with API client, service, controller, and routes
+• Adds playlist per-video overlay and layers support
+• Adds BunnyCDN signed URL support for Stream and Storage
+• Adds timed content rendering and API controller
+• Adds shortcode processing in timed content output
+• Improves the analytics tracker with fewer unnecessary flush calls on play and pause
+• Improves playlist player gesture controls
+• Hardens output escaping across playlist layout templates
+• Fixes grid playlist thumbnails being overridden by the Kadence slider
+• Fixes playlist overlay and modal playback bugs
+• Fixes subtitle endpoints querying a non-existent wp_medias table
 ```
 
 :::
@@ -347,7 +362,6 @@ _Released on March 10, 2026_
 ```markdown:no-line-numbers [✨ Newly Added]
 • Adds keyboard action bezel animations with accessibility controls
 • Adds a settings menu with Playback and Accessibility submenus
-• Adds an ambient preset for looping background video with no controls (Pro)
 • Adds shortcode and Fluent ecosystem block support in timed content
 • Adds text color support and makes the title optional for the form layer
 ```
@@ -362,7 +376,11 @@ _Released on March 10, 2026_
 ```markdown:no-line-numbers [🐞 Bug fixes]
 • Fixes auto-scroll to the second video on page load
 • Fixes autoplay on the chapter modal and a time-input glitch
-• Fixes ambient loop restart timing for YouTube embeds (Pro)
+```
+
+```markdown:no-line-numbers [💎 Pro]
+• Adds an ambient preset for looping background video with no controls
+• Fixes ambient loop restart timing for YouTube embeds
 ```
 
 :::
@@ -373,10 +391,6 @@ _Released on February 28, 2026_
 
 ::: code-group
 
-```markdown:no-line-numbers [✨ Newly Added]
-• Adds BunnyCDN subtitles import and HLS MP4 fallback (Pro)
-```
-
 ```markdown:no-line-numbers [🚀 Improvements]
 • Improves maintainability with a code refactor
 ```
@@ -384,7 +398,11 @@ _Released on February 28, 2026_
 ```markdown:no-line-numbers [🐞 Bug fixes]
 • Fixes PHP 8.x compatibility
 • Fixes YouTube replay buffering and iframe visibility
-• Fixes caption srclang validation (Pro)
+```
+
+```markdown:no-line-numbers [💎 Pro]
+• Adds BunnyCDN subtitles import and HLS MP4 fallback
+• Fixes caption srclang validation
 ```
 
 :::
@@ -395,21 +413,18 @@ _Released on February 24, 2026_
 
 ::: code-group
 
-```markdown:no-line-numbers [✨ Newly Added]
-• Adds .srt subtitle file support (Pro)
-• Adds manageable captions from the preset (Pro)
-• Adds alignment support for the playlist block (Pro)
-```
-
-```markdown:no-line-numbers [🚀 Improvements]
-• Improves the analytics service with percentage tracking (Pro)
-• Improves BunnyCDN Storage upload performance (Pro)
-```
-
 ```markdown:no-line-numbers [🐞 Bug fixes]
 • Fixes the apiVersion 3 YouTube block and iframe issue
 • Fixes a handleEmailSubmit signature mismatch
-• Fixes BunnyCDN video playback (Pro)
+```
+
+```markdown:no-line-numbers [💎 Pro]
+• Adds .srt subtitle file support
+• Adds manageable captions from the preset
+• Adds alignment support for the playlist block
+• Improves the analytics service with percentage tracking
+• Improves BunnyCDN Storage upload performance
+• Fixes BunnyCDN video playback
 ```
 
 :::
