@@ -22,6 +22,8 @@ In your WordPress admin, go to **Tools → Site Health → Info → Server**. Yo
 3. Click **Install Now** next to FluentPlayer.
 4. Once installed, click **Activate**.
 
+![Searching for FluentPlayer in the WordPress plugin directory and activating it](/guide/public/getting-started/installation/search-and-activate.webp)
+
 **Option 2: Upload the zip file**
 
 1. Download the FluentPlayer zip file from your source.
@@ -37,8 +39,14 @@ If you have a FluentPlayer Pro license:
 
 1. Make sure the **free FluentPlayer** plugin is already installed and active (Pro requires it).
 2. Download the Pro zip file from your account or purchase page.
+
+![Downloading the FluentPlayer Pro zip file from the account Downloads page](/guide/public/getting-started/installation/download-pro-zip.webp)
+
 3. In WordPress admin, go to **Plugins → Add New → Upload Plugin**.
 4. Upload the Pro zip file and click **Install Now**.
+
+![Uploading the FluentPlayer Pro zip file and clicking Install Now](/guide/public/getting-started/installation/upload-pro-plugin.webp)
+
 5. Click **Activate**.
 
 After activating Pro, the admin menu label changes to **FluentPlayer Pro**, and additional features like [Playlists](/playlists), [Mux](/mux), [BunnyCDN](/bunnycdn-stream), [Cloudflare R2 & Stream](/cloudflare), [timed content](/block#timed-content-pro) in the media block, and [Analytics](/built-in-analytics) become available.
