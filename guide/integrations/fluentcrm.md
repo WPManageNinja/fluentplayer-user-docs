@@ -1,184 +1,191 @@
 # FluentCRM
 
-**FluentCRM** is a WordPress-native CRM and email marketing plugin. Because it runs entirely on your own server, the integration with FluentPlayer requires no API keys — just install both plugins and the connection is active automatically. Once connected, FluentPlayer can route email subscribers directly into your FluentCRM lists and tags, log video engagement to contact timelines, and personalize your video overlays using CRM contact data.
+**FluentCRM** is a WordPress-native CRM and email marketing plugin. When FluentPlayer and FluentCRM are both active on the same site, they connect to each other **automatically** — there is no API key to paste and no account to link.
+
+Once they are talking to each other, FluentPlayer can tell FluentCRM what your viewers actually did with your videos: how much they watched, and whether they acted on any [interactive layer](/interactive-layers) like a CTA, an ad, or a form. FluentCRM can then record that on the contact's profile and use it to start an email automation.
+
+::: info Free integration
+The FluentCRM integration is **free**. It turns on by itself as soon as both plugins are installed.
+:::
 
 ## What You Can Do with FluentCRM and FluentPlayer
 
-- **Capture leads during playback**: Pause the video at a set timestamp and show an email sign-up form. Submissions go straight into FluentCRM contacts.
-- **Segment subscribers automatically**: Assign new contacts to specific FluentCRM lists and tags at the moment they submit.
-- **Enable double opt-in**: Send a FluentCRM confirmation email before marking a contact as subscribed.
-- **Track video engagement on the contact timeline**: Watched milestones and layer interaction events are written to each contact's FluentCRM activity timeline.
-- **Trigger automations from watch behavior**: Use video milestones and layer interactions as triggers and goals inside FluentCRM automation sequences.
-- **Personalize player text**: Use FluentCRM contact data (name, email) as smartcodes in overlays, titles, and timed content. See [Smartcodes and Personalization](/smartcodes-personalization).
+- **Log watch activity on a contact's profile** — see that a specific person started, reached 25/50/75%, or finished a specific video, with the time they watched.
+- **Log layer interactions** — record when a viewer sees, completes, or skips any [interactive layer](/interactive-layers): a CTA, an ad, a form, or an [email capture overlay](/email-capture).
+- **Run full automations from watch behavior** — video milestones and layer interactions work as both **triggers** and **goals** in FluentCRM automations, so you can send a follow-up email when someone finishes a video, apply a tag when they act on a CTA, or move them to another list when they drop off halfway.
+- **Capture emails into FluentCRM** — new subscribers from an email capture overlay land in the lists and tags you choose.
+- **Personalize what's on screen** — show a viewer's own name inside overlays and titles with [Smartcodes](/smartcodes-personalization).
 
 ## Before You Begin
 
-- **FluentCRM** plugin is installed and active on your WordPress site.
-- **FluentPlayer** (free) is installed and active.
-- You have at least one **FluentCRM list** created to receive new contacts.
+Make sure the following are in place:
 
-## Step 1: Enable and Configure the FluentCRM Integration
+- **FluentPlayer** is installed and active.
+- **FluentCRM** is installed and active on the same site.
+- You have at least one media item in **FluentPlayer → Media** that you want to track.
 
-Go to **FluentPlayer → Settings → Integrations**. FluentCRM appears in the list and shows an **Enabled** badge once the plugin is detected. Click **Configure** to open the FluentCRM settings.
+## Step 1: Open the FluentCRM Integration Settings
 
-![Enabled](/guide/public/integrations/fluentcrm/enabled-fluentcrm-1.webp)
+Go to **FluentPlayer → Settings → Integrations**.
+
+FluentCRM appears in the list with an **Enabled** badge — this confirms FluentPlayer has found the plugin. Click **Configure** to open its settings.
+
+![FluentCRM shown as Enabled on the FluentPlayer Integrations screen](/guide/public/integrations/fluentcrm/integration-settings-1.webp)
+
+::: tip
+If FluentCRM does not appear here at all, the plugin is not active. Activate it in **WordPress → Plugins**, then reload this page.
+:::
+
+## Step 2: Choose What Gets Logged to the Contact Timeline
+
+The FluentCRM settings screen has two parts: **Automation Triggers** at the top, and **Contact Timeline** below it.
 
 ### Automation Triggers
 
-The **Automation Triggers** card shows all FluentCRM automations that use FluentPlayer as a trigger or goal. Media milestones and layer interactions are available as triggers and goals in FluentCRM automations you can target specific media from the automation editor in FluentCRM.
+This card is a read-only summary — there is nothing to configure here. It lists any FluentCRM automation that already uses a FluentPlayer trigger, so you can see at a glance what your videos are driving. Until you build one it simply reads *"No automations use Fluent Player triggers yet"*; you will create your first one in [Step 5](#step-5-build-an-automation-from-watch-behavior).
 
 ### Contact Timeline
 
-The **Contact Timeline** section controls whether and how FluentPlayer logs playback activity to each contact's profile in FluentCRM.
+This is where you decide what FluentPlayer writes onto each contact's profile.
 
-**Log playback to contact timeline**: Toggle this on to start recording watch milestones and layer interactions on the contact profile. Each event is recorded once per contact per media item.
+Turn on **Log playback to contact timeline** to start recording. Each event is recorded **once per contact, per media item**, so a viewer who rewatches the same video will not fill their timeline with duplicates.
 
-When enabled, the following options appear:
+![Contact Timeline settings with the Log playback toggle turned on](/guide/public/integrations/fluentcrm/contact-timeline-2.webp)
 
-| Setting | Options | Description |
-|---------|---------|-------------|
-| **Which media** | Selected media / All media | Choose whether timeline logging applies to every media item or only specific ones you select. |
-| **Media** | Search field | When "Selected media" is chosen, search and pick the media items to track. |
-| **Milestones** | Started, 25%, 50%, 75%, Completed | Check each milestone you want logged. All five are enabled by default. |
-| **Completion Threshold** | 70% / 80% / 90% / 95% / 100% | The watch percentage that counts as "Completed." Default is 80%. |
-| **Layer events** | Seen, Completed, Skipped | Choose which layer interaction types to log — when a viewer sees, completes, or skips an interactive layer. |
+Once the toggle is on, these options appear:
 
-Click **Save Settings** (top right) after configuring.
+| Setting | Options | What it does |
+|---------|---------|--------------|
+| **Which media** | Selected media / All media | Log every video on your site, or only the ones you pick. |
+| **Media** | Search field | Appears when **Selected media** is chosen. Search and add the specific media items to track. |
+| **Milestones** | Started, 25%, 50%, 75%, Completed | The watch points you want recorded. Tick only the ones you care about to keep timelines readable. |
+| **Completion Threshold** | 70% / 80% / 90% / 95% / 100% | How much of the video counts as "Completed". |
+| **Layer events** | Seen, Completed, Skipped | Which interactions with [interactive layers](/interactive-layers) get logged. |
+| **Which layers** | All layers on selected media / Specific layers | Log every layer, or narrow it down to individual ones. |
+| **Layers** | Search field | Appears when **Specific layers** is chosen. Pick the exact layers to track. |
 
-::: tip
-You can use milestone and layer events as triggers in FluentCRM automations — for example, send a follow-up email to contacts who reached the 75% milestone but skipped the email capture layer.
-:::
+Click **Save Settings** in the top-right corner when you are done.
 
-![Contact Timeline](/guide/public/integrations/fluentcrm/conatct-timeline-2.webp)
+## Step 3: Turn On Event Tracking in FluentCRM
 
+FluentPlayer is now sending activity, but FluentCRM needs one setting enabled on its own side before it will display it. Without this step the contact timeline stays empty.
 
-## Step 2: Add an Email Capture Layer to Your Video
+1. In the WordPress sidebar, go to **FluentCRM → Addons**.
+2. Scroll to **Event Tracking Module** under **Advanced Features**.
+3. Click **Settings**, tick **Enable Event Tracking Module**, and click **Save Settings**.
 
-The FluentCRM integration works through the [Email Capture Overlay](/email-capture). Follow these steps to add one to any video.
+The badge next to the module changes to **Enabled**.
 
-### Open the Interactive Layers Panel
-
-1. Go to **FluentPlayer → Media** and open the video you want to gate.
-2. In the right sidebar, select the **Block** tab.
-3. Expand the **Interactive Layers** panel.
-4. Click **+ Add Layer**.
-
-![Add Layer](/guide/public/integrations/fluentcrm/add-layer-2.webp)
-
-### Select Email Capture
-
-In the **Choose Layer Type** popup, click **Email Capture** to open the layer configuration window.
-
-![Email Capture](/guide/public/integrations/fluentcrm/email-capture-3.webp)
-
-## Step 3: Set the Display Time
-
-Expand the **Display** accordion panel on the right side of the popup.
-
-Enter the exact timestamp in the **Start Time** fields (Hours, Minutes, Seconds). When the video reaches this point during playback, it will pause and show the email form.
-
-Use the **video preview** on the left to scrub the timeline and confirm the timing looks right before saving.
-
-![Display Time](/guide/public/integrations/fluentcrm/set-display-time-4.webp)
-
-## Step 4: Connect FluentCRM as the Email Provider
-
-Expand the **Email Providers** accordion panel.
-
-1. Click **+ Add Provider**.
-2. From the **Select Provider** dropdown, choose **FluentCRM**.
-
-### Assign Lists and Tags
-
-Inside the FluentCRM provider settings:
-
-- **Lists**: Select which FluentCRM list(s) new subscribers should be added to.
-- **Tags**: Assign one or more segmentation tags to each new contact.
-
-### Enable Double Opt-In (Optional)
-
-Toggle **Double Opt-In** on if you want FluentCRM to save the contact as **Pending** first and send a confirmation email before marking them as subscribed. This is recommended when consent is important.
-
-Once you have configured the provider, make sure the **Active** toggle is on, then click **Add** to attach the provider to this layer.
-
-::: tip
-You can attach multiple providers to a single email capture layer. For example, you can send the same submission to both FluentCRM and a [Webhook](/webhook-integration) at the same time.
-:::
-
-![Add Email Provider](/guide/public/integrations/fluentcrm/add-email-provider-5.webp)
-
-## Step 5: Customize the Form Content
-
-Expand the **Content** accordion panel to control the text viewers see on the overlay.
-
-| Field | Purpose |
-|-------|---------|
-| **Headline** | Main message above the email input (e.g., "Enter your email to keep watching") |
-| **Email Placeholder** | Hint text inside the input field (e.g., "Email Address") |
-| **Button Text** | Label on the submit button (e.g., "Subscribe") |
-| **Bottom Text** | Small text below the button, such as a privacy note |
-| **Confirmation Message** | Text shown after a successful submission |
-| **Auto-Dismiss After (Seconds)** | How long the success message stays visible before closing |
-| **Dismiss Button Text** | Label on the button that closes the success screen |
-
-![Customize the Content](/guide/public/integrations/fluentcrm/customize-form-content-6.webp)
-
-## Step 6: Configure Skip Controls
-
-Expand the **Controls** accordion panel.
-
-- **Allow Skipping: On** — A **Skip** button appears on the form. Viewers can close the overlay and continue watching without submitting their email. This is a **soft opt-in**.
-- **Allow Skipping: Off** — No Skip button. Viewers must submit their email to continue watching. This is a **hard gate**.
+![Enabling the Event Tracking Module in FluentCRM Addons](/guide/public/integrations/fluentcrm/event-tracking-module-3.webp)
 
 ::: warning
-Turning off skipping creates a strict content gate — viewers cannot watch the rest of the video without submitting the form. Use this only when gating is intentional and the video content justifies the friction.
+This is the step people miss. If nothing is showing up on your contacts, come back to **FluentCRM → Addons** and check that the Event Tracking Module is enabled.
 :::
 
-![Control](/guide/public/integrations/fluentcrm/control-skiping-7.webp)
+## Step 4: See the Activity on a Contact
 
-## Step 7: Customize Appearance
+Open **FluentCRM → Contacts** and click any contact who has watched one of your tracked videos. In the **Additional Information** panel on the right, you will find an **Event Tracking** section listing what they did, newest first.
 
-Expand the **Appearance** accordion panel to style the overlay to match your site.
+![Video watch events listed on a FluentCRM contact profile](/guide/public/integrations/fluentcrm/contact-event-log-4.webp)
 
-- **Button Color**: Set the background and text colors for the submit button.
-- **Layer Color**: Set the background color of the overlay container.
-- **Border Radius (PX)**: Control the roundness of the overlay and button corners.
+Each entry gives you the full picture at a glance:
 
-## Step 8: Set Conditions (Optional)
+- **What happened and to which video** — for example, *Watched 75% of "Streamline Your Form-Building Experience with Fluent Forms"*.
+- **How much they actually watched** — for example, *~4 min of 5 min watched · 90% threshold · #438*, where `#438` is the media ID.
+- **The event key and timestamp** — for example, `fp_media_completed` recorded at `2026-08-12 16:06:46`.
 
-Expand the **Conditions** accordion panel to show the email capture layer only when certain rules are met.
+## Step 5: Build an Automation from Watch Behavior
 
-1. Toggle **Conditions** on.
-2. Choose **Any** (at least one rule must match) or **All** (every rule must match).
-3. Add condition rows using the **Field**, **Operator**, and **Value** dropdowns.
+The timeline tells you what happened. Automations let you *do* something about it — send an email, apply a tag, move someone to another list.
 
-Common conditions include:
+Go to **FluentCRM → Automations** and click **+ New Automation**.
 
-- **Viewer is logged in**: Only show the form to logged-in users.
-- **Viewer is CRM contact**: Show only to existing FluentCRM contacts.
-- **Viewer has CRM tag**: Target subscribers with a specific tag.
-- **URL query parameter**: Show or hide based on a URL value.
+![The New Automation button on the FluentCRM Automations screen](/guide/public/integrations/fluentcrm/new-automation-5.webp)
 
-![Appearance](/guide/public/integrations/fluentcrm/appearance-8.webp)
+In the **Create an Automation Funnel** window, choose **Fluent Player** from the list on the left. Two triggers are available:
 
-## Step 9: Save and Publish
+- **Media Milestone Reached** — starts when a viewer watches a video to a milestone you choose.
+- **Media Layer Interaction** — starts when a viewer sees, completes, or skips an interactive layer such as a CTA, ad, or form.
 
-1. Review the layer position in the video timeline preview on the left side of the popup.
-2. Click **Add Layer** at the bottom of the popup to apply the layer.
-3. Click **Publish** or **Save** in the top right of your WordPress editor to make the layer live.
+![The two Fluent Player triggers in the automation funnel picker](/guide/public/integrations/fluentcrm/fluent-player-triggers-6.webp)
 
-## Where Submissions Are Stored
+Click the trigger you want, and its settings open.
 
-Every email submitted through the overlay is saved in two places:
+## Trigger: Media Milestone Reached
 
-- **FluentPlayer → Analytics → Emails** — A record of all submissions collected through the player, exportable as a list regardless of which provider is connected.
-- **FluentCRM → Contacts** — The contact is created or updated in FluentCRM with the lists and tags you configured.
+Use this when the *amount watched* is what matters — a thank-you email after someone finishes a course video, or a nudge to people who dropped off halfway.
+
+![Settings for the Media Milestone Reached trigger](/guide/public/integrations/fluentcrm/milestone-trigger-7.webp)
+
+### What to watch
+
+| Setting | What it does |
+|---------|--------------|
+| **Target Media** | The video(s) this automation listens to. **Leave it empty to run for any media.** |
+| **Watch Milestone** | Which point starts the automation: Started, Reached 25%, Reached 50%, Reached 75%, or Completed. |
+| **Completion Threshold** | Only applies to **Completed**. Sets how much of the video counts as finished (70–100%). |
+
+### Who can enter
+
+**If the viewer is not in your CRM yet** decides what happens when someone watches who is not a contact:
+
+- **Skip (recommended)** — existing contacts enter the automation normally; unknown viewers are ignored. No contact is created and no actions run for them.
+- **Create as pending** — the viewer is added as a pending contact and sent a double opt-in email. They only become subscribed after confirming.
+
+Two checkboxes give you finer control:
+
+- **Allow contacts to re-enter when another targeted media reaches this milestone** — leave this off and the automation runs **once per contact**: the first video to fire enters them, later ones are skipped. That is what you want for one-time journeys like a welcome email or a coupon. Turn it on if the automation should run again for each video.
+- **Run the automation actions even if the contact status is not subscribed** — normally unsubscribed contacts are left alone. Tick this only when the automation must run regardless of subscription status.
+
+### Conditions
+
+**If Contact Already Exists** controls what happens for people already in your CRM: **Update if Exist** refreshes their details and lets them continue, while **Skip this automation if contact already exist** leaves them out entirely.
+
+Click **Save Settings**, then build out the actions of your automation as normal.
+
+## Trigger: Media Layer Interaction
+
+Use this when the *interaction* is what matters — following up with everyone who acted on a CTA, or with everyone who skipped it.
+
+![Settings for the Media Layer Interaction trigger](/guide/public/integrations/fluentcrm/layer-trigger-8.webp)
+
+### Which layer interaction
+
+| Setting | What it does |
+|---------|--------------|
+| **Target Layers** | The specific [interactive layers](/interactive-layers) this automation listens to. Each one is listed with its type and timestamp, such as *CTA (CTA @ 01:01)*. |
+| **Layer Event** | **Seen**, **Completed**, or **Skipped**. |
+
+What counts as **Completed** depends on the layer type: an ad played to the end, a CTA acted on, or a form / email capture submitted.
+
+### Who can enter and Conditions
+
+These work exactly as described for the milestone trigger above — the only difference is the re-entry checkbox, which here reads **Allow contacts to re-enter when another targeted layer fires this event**.
+
+::: tip A good default for this trigger
+Because a layer interaction is usually a deliberate action, **Create as pending** is often the right choice here — the viewer is added as a pending contact and receives a double opt-in email, which is the safer route where explicit consent is required, such as under GDPR.
+:::
+
+## Capturing Emails into FluentCRM
+
+Watch activity is only half of the integration. FluentPlayer can also collect email addresses mid-video and send them straight to FluentCRM as new contacts, with the lists and tags you choose.
+
+That is handled by the [email capture overlay](/email-capture), with FluentCRM selected as the [email provider](/email-providers). Every submission is saved in two places: under **FluentPlayer → Analytics → Emails**, and as a contact in **FluentCRM → Contacts**.
 
 ## Personalizing Your Video with FluentCRM Data
 
-Once FluentCRM is connected, you can use **FluentCRM Smartcodes** to display personalized text inside your player overlays, titles, and timed content. For example:
+With FluentCRM connected, you can pull contact details into your overlays, titles, and timed content using smartcodes — for example <code v-pre>{{contact.first_name}}</code> to greet a viewer by name. See [Smartcodes and Personalization](/smartcodes-personalization) for the full list.
 
-- Show a viewer's first name in a CTA overlay: <code v-pre>{{contact.first_name}}</code>
-- Display their email in timed content: <code v-pre>{{contact.user_email}}</code>
+## Troubleshooting
 
-See the full reference on the [Smartcodes and Personalization](/smartcodes-personalization) page.
+**Nothing appears on the contact timeline.**
+Check all three in order: **Log playback to contact timeline** is on in FluentPlayer, the **Event Tracking Module** is enabled in FluentCRM → Addons, and the video you are testing is included under **Which media**.
+
+**Activity is logged, but only for some viewers.**
+FluentPlayer can only attribute activity to a viewer it can identify — a logged-in user, or someone already recognised as a contact. Anonymous visitors have nothing to attach the events to.
+
+**The automation never runs.**
+Confirm the automation is **Published** rather than a draft, and check the **If the viewer is not in your CRM yet** setting — with **Skip (recommended)** selected, viewers who are not yet contacts will not enter it.
+
+**A contact only entered the automation once.**
+That is the default. Tick the re-entry checkbox in the trigger settings if you want it to run for each targeted media or layer.

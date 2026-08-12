@@ -25,6 +25,15 @@ function resolveBase(): string {
 
 const base = resolveBase()
 
+/**
+ * Absolute site origin + base, used only for social/link-preview image URLs
+ * (crawlers do not resolve root-relative paths). Override with `VITEPRESS_SITE_URL`.
+ */
+const SITE_URL = (() => {
+  const origin = (process.env.VITEPRESS_SITE_URL ?? 'https://fluentplayer.com').replace(/\/+$/, '')
+  return `${origin}${base}`
+})()
+
 // Shared sidebar groups — bound to the '/' sidebar key (all pages live at the site root).
 const guideGroups = [
   {
@@ -192,6 +201,9 @@ export default defineConfig({
   /** Must match deploy URL (e.g. `/repo-name/` on GitHub Pages project sites). See `resolveBase()`. */
   base,
   title: 'FluentPlayer',
+  /** Default meta description — also the fallback for link previews (og/twitter). */
+  description:
+    'Official documentation for FluentPlayer — the WordPress video and media player plugin by WPManageNinja.',
   lang: 'en-US',
   lastUpdated: false,
   /**
@@ -306,7 +318,33 @@ export default defineConfig({
         href: `${base}brand/fluentplayer_primary_icon.png`,
       },
     ],
+    /**
+     * Static link-preview (Open Graph / Twitter) tags.
+     * The per-page `og:title` / `og:description` / `og:url` are added in `transformHead`.
+     */
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'FluentPlayer Documentation' }],
+    ['meta', { property: 'og:image', content: `${SITE_URL}brand/Hero-Image-2.webp` }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: `${SITE_URL}brand/Hero-Image-2.webp` }],
   ],
+
+  /**
+   * VitePress only emits `<meta name="description">` on its own; social scrapers prefer
+   * the `og:` equivalents. Mirror the page's resolved title/description into them so a
+   * shared link shows the real page name instead of a generic fallback.
+   */
+  transformHead({ pageData, title, description }) {
+    const path = pageData.relativePath.replace(/(index)?\.md$/, '').replace(/\/$/, '')
+
+    return [
+      ['meta', { property: 'og:title', content: title }],
+      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:url', content: `${SITE_URL}${path}` }],
+      ['meta', { name: 'twitter:title', content: title }],
+      ['meta', { name: 'twitter:description', content: description }],
+    ]
+  },
 
   themeConfig: {
     logo: {
