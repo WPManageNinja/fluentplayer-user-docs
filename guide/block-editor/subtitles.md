@@ -10,7 +10,7 @@ description: "Upload VTT or SRT captions in the Block sidebar, manage multiple t
 FluentPlayer allows you to easily add and manage subtitle tracks for your videos directly from the **block** editor.
 
 ::: info Free vs Pro
-Captions embedded in HLS streams play in both versions. **Uploading your own `.vtt`/`.srt` tracks** and **importing captions from YouTube** require **FluentPlayer Pro**. See the [Subtitles capability matrix](/subtitles#free-vs-pro) for details and limits.
+Captions embedded in HLS streams play in both versions. **Uploading your own `.vtt`/`.srt` tracks** and **importing captions from YouTube or Vimeo** require **FluentPlayer Pro**. See [Subtitles & Captions](/subtitles) for details and limits.
 :::
 
 #### Why Use Subtitles?
@@ -31,6 +31,12 @@ Follow these steps to upload a caption track to your video:
 5. Click **Select** to confirm.
 
 After adding the file, you will see the subtitle track listed with its language (for example, English) and file name.
+
+### Importing captions instead of uploading (Pro)
+
+If your video is hosted on YouTube or [Vimeo](/vimeo) and already has captions there, you don't need a file at all. The Subtitles panel shows an import section for that provider — click **Fetch**, tick the tracks you want, and click **Import Selected**. They arrive as regular subtitle tracks you can manage exactly like uploaded ones.
+
+Full steps are on [Subtitles & Captions](/subtitles#importing-captions-from-vimeo-pro).
 
 ## Managing and Removing Tracks
 
