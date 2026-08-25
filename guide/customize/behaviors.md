@@ -74,3 +74,7 @@ On phones and tablets, viewers can use **tap** to play/pause and show or hide co
 
 **Example:** You use the "Modern" preset which has autoplay off. For one specific media item, you override autoplay to be on. Only that video autoplays; all other "Modern" videos do not.
 
+::: info Not every playback option is a behavior
+A few playback options are site-wide switches rather than per-preset behaviors, so you won't find them here or in the preset editor. **Single Playback** — which pauses every other player on the page when a video starts — is one of them. It lives in [General Settings](/general#single-playback).
+:::
+

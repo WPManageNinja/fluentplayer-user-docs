@@ -56,6 +56,24 @@ The global toggle in Settings and the per embed **Remember Playback Position** c
 Playback position is stored in the viewer’s browser. It does not carry over to another device or browser, and clearing site data will reset it.
 :::
 
+## Single Playback
+
+**Checkbox:** Pause other players when one starts — *"Pause every other player on the page when a video starts, so only one plays at a time."*
+
+When a page has more than one FluentPlayer video on it, starting one video pauses all the others. Viewers never end up with two soundtracks playing over each other.
+
+**This is on by default**, and it's a free feature. Most sites should leave it alone.
+
+You'll find it at the bottom of the General panel, just below **Auto Resume Playback**.
+
+![The Single Playback setting in General Settings](/guide/public/settings/general/single-playback-4.webp)
+
+**When to turn it off:** if you deliberately want players to run at the same time — for example a muted background video that should keep looping while a viewer watches a different video on the same page.
+
+::: tip Ambient and background video
+If you use the **Ambient** preset for a decorative background video, consider turning Single Playback off. Otherwise starting any other video on the page will pause your background loop.
+:::
+
 ## Custom CSS
 
 A text area for global CSS that applies to every FluentPlayer instance on your site. The UI suggests scoping your rules:
