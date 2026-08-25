@@ -67,6 +67,7 @@ const guideGroups = [
       { text: 'Gutenberg Block', link: '/block' },
       { text: 'Elementor Widget (Pro)', link: '/elementor' },
       { text: 'Divi 5 Module (Pro)', link: '/divi' },
+      { text: 'Lightbox Embed (Pro)', link: '/lightbox' },
       { text: 'Dedicated Player URL', link: '/dedicated-player-url' },
       { text: 'Timestamp Links', link: '/timestamp-links' },
     ],
@@ -185,6 +186,7 @@ const guideGroups = [
     collapsed: true,
     items: [
       { text: 'Hooks & Filters Reference', link: '/hooks-reference' },
+      { text: 'Cookie Consent & GDPR', link: '/cookie-consent' },
     ],
   },
   {
@@ -239,10 +241,12 @@ export default defineConfig({
     'guide/customize/creating-custom-presets.md': 'creating-custom-presets.md',
     'guide/customize/index.md': 'customize.md',
     'guide/customize/presets.md': 'presets.md',
+    'guide/developer/cookie-consent.md': 'cookie-consent.md',
     'guide/developer/hooks-reference.md': 'hooks-reference.md',
     'guide/display-embed/block.md': 'block.md',
     'guide/display-embed/dedicated-player-url.md': 'dedicated-player-url.md',
     'guide/display-embed/divi.md': 'divi.md',
+    'guide/display-embed/lightbox.md': 'lightbox.md',
     'guide/display-embed/elementor.md': 'elementor.md',
     'guide/display-embed/index.md': 'display-embed.md',
     'guide/display-embed/shortcode.md': 'shortcode.md',
