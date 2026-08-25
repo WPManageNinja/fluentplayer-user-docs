@@ -1,6 +1,6 @@
 ---
 title: "Embed with Shortcode"
-description: "Embed FluentPlayer with [fluentplayer id=\"…\"] or [fluentmedia] in posts, widgets, and templates—find the media ID, optional attributes, and common questions."
+description: "Embed FluentPlayer with [fluentplayer id=\"…\"] in posts, widgets, and templates—find the media ID, optional attributes, and common questions."
 ---
 
 # Embed with Shortcode
@@ -85,6 +85,16 @@ Every post now renders the same template but plays the URL from its own `youtube
 By default `source_meta` is read from the current post. Developers can change which post is used with the `fluent_player/dynamic_source_post_id` filter. (There is no `post_id` shortcode attribute — use the filter for this.)
 :::
 
+## Open the video in a lightbox (Pro)
+
+If you'd rather show a button or thumbnail that opens the video in a popup — instead of placing the player directly on the page — use the `[fluentplayer_modal]` shortcode:
+
+```text
+[fluentplayer_modal id="129" text="Watch the demo"]
+```
+
+The video isn't loaded until someone clicks. See [Lightbox Embed (Pro)](/lightbox) for all the options.
+
 ## Legacy query-string embed
 
 For backward compatibility, you can also load a media item by appending `?fluent_player_media_id=<ID>` to a URL. This is a legacy mechanism — for new content, use the shortcode or the [Gutenberg block](/block) instead.
@@ -106,6 +116,14 @@ For backward compatibility, you can also load a media item by appending `?fluent
 2. Add a **Text** or **Custom HTML** widget to your sidebar or footer.
 3. Type `[fluentplayer id="133"]` in the widget content.
 4. Save.
+
+**In a page builder:**
+
+Most page builders have a Shortcode (or Text/HTML) element — drop your shortcode into it and the player renders. This works in **Breakdance**, where FluentPlayer shortcodes now display live inside the builder canvas instead of showing a blank space, so you can see the player while you design.
+
+Breakdance is shortcode-only by design: there is no separate FluentPlayer element or settings panel to look for. Add a **Shortcode** element containing `[fluentplayer id="133"]` and you're done.
+
+Elementor and Divi 5 users get dedicated widgets with full player settings instead — see [Elementor Widget](/elementor) and [Divi 5 Module](/divi).
 
 **In a theme template (PHP):**
 
