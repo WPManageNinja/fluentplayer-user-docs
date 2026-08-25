@@ -18,11 +18,16 @@ If your subtitles are in a different format, use a free online converter to save
 1. Go to **FluentPlayer → Media** and open the media you want to add subtitles to.
 2. In the right-hand sidebar, click on the **Subtitles** panel under the **Block** tab.
 3. Choose your upload method:
-    * **Manual Upload:** Click the **Upload** button to add your own `.vtt` or `.srt` subtitle file from your computer.
-    * **YouTube Subtitle Import:** For YouTube videos, you can use the **Fetch** button to automatically import existing captions from YouTube.
+    * **Manual Upload (Pro):** Click the **Upload** button to add your own `.vtt` or `.srt` subtitle file from your computer.
+    * **YouTube Subtitle Import (Pro):** For YouTube videos, you can use the **Fetch** button to automatically import existing captions from YouTube.
+    * **Vimeo Subtitle Import (Pro):** For Vimeo videos, use the **Fetch** button to pull in the captions already on that Vimeo video.
+
+::: info All three need Pro
+Adding your own subtitle tracks — whether you upload a file or import them from YouTube or Vimeo — requires **FluentPlayer Pro**. Captions that are already embedded in an HLS stream, or that live on the YouTube or Vimeo video itself, play in the free version without any setup.
+:::
 
 ::: warning
-YouTube subtitle import is an admin only feature. Ensure you have permission to use the content before importing.
+Subtitle import is an admin only feature. Ensure you have permission to use the content before importing.
 :::
 
 4. If prompted, set the **language** for the subtitle track (for example, English, Spanish, French).
