@@ -29,6 +29,12 @@ FluentPlayer comes in two versions: **FluentPlayer** (free) and **FluentPlayer P
 | Ambient preset | — | Yes |
 | Subtitles & captions (HLS auto-play) | Yes | Yes |
 | Upload your own subtitle tracks (.vtt/.srt) | — | Yes |
+| Import captions from YouTube or Vimeo | — | Yes |
+| Vimeo playback (privacy mode, quality, speed, chapter import) | Yes | Yes |
+| Chapters (in-player menu button) | Yes | Yes |
+| Chapter scroll strip below the player | — | Yes |
+| Lightbox embed — open a video in a popup | — | Yes |
+| Single Playback — pause other players when one starts | Yes | Yes |
 | Email capture with FluentCRM | Yes | Yes |
 | Text & button overlays | — | Yes |
 | CTA overlay | — | Yes |

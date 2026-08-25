@@ -164,5 +164,7 @@ See [Video Sources](/video-sources) for how Cloudflare fits alongside every othe
 | **Video won't play (R2)** | Make sure the bucket's **Public Development URL** is enabled (Step 3), and that **Cloudflare Bucket Public URL** in FluentPlayer matches it exactly. |
 | **"Access denied" or missing files** | Verify the **Bucket Name** is spelled exactly as in Cloudflare, and that any **Bucket Sub-Folder** value matches where your files actually live. |
 | **Stream connection rejected** | Confirm your API Token has **Stream Read + Edit** permissions and belongs to the same account as the Account ID. |
+| **A long video stops partway through** | Playback tokens are issued for a set lifetime. FluentPlayer now matches the token's lifetime to the length of the video, so a two-hour video no longer receives a token that expires before the end. If you still see this, update FluentPlayer and clear any page cache so old tokens aren't served from cache. |
+| **Pages with private Stream videos load very slowly** | This is the signature of a misconfigured Stream connection: FluentPlayer had to retry the provider for every private video on the page. Open **Settings → Storage**, run **Test Connection** for Cloudflare Stream, and fix the credentials. Recent versions fail fast instead of stalling the page, but the underlying connection still needs fixing for the videos to play. |
 
 
