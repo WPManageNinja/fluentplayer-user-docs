@@ -49,13 +49,20 @@ FluentPlayer offers YouTube-specific options in [Settings](/settings):
 
 ### 4. Vimeo
 
-Paste a **Vimeo** video URL. FluentPlayer treats Vimeo as a first-class source type (validation allows `viewType: vimeo` in media settings) and loads the Vimeo player with your FluentPlayer styling and options.
+Paste a **Vimeo** video URL. FluentPlayer treats Vimeo as a first-class source type and loads it with your FluentPlayer styling and options.
 
 **Example:**
 
 ```
 https://vimeo.com/123456789
 ```
+
+Vimeo videos support the same features as the rest of your media:
+
+ * **Privacy-Enhanced Mode**: Vimeo sets no cookies and does no tracking until the viewer presses play. This is **on by default**, and is set at **Settings → Vimeo** — see [Vimeo](/vimeo#privacy-enhanced-mode).
+ * **Quality and playback speed**: Both menus appear automatically when the video supports them, and are hidden when it doesn't.
+ * **Chapters**: Import chapters you already created on Vimeo with one click.
+ * **Captions (Pro)**: Import the caption tracks already on the Vimeo video as FluentPlayer subtitles.
 
 **Best for:** Professional hosting on Vimeo, portfolios, or when you already use Vimeo for delivery.
 
