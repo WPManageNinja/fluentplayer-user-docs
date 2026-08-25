@@ -38,7 +38,7 @@ Some policies require that a third-party embed not load *at all* until the visit
 
 FluentPlayer supports this, but it is not a setting you can switch on. It needs a small amount of custom code to connect FluentPlayer to your particular consent tool, so it is a job for a developer.
 
-What to tell them: FluentPlayer can hold YouTube and Vimeo embeds unmounted and release them once consent is given, using the hooks listed under [Cookie consent](/hooks-reference#cookie-consent) in the Hooks & Filters Reference.
+FluentPlayer provides hooks for exactly this: a YouTube or Vimeo embed can be held back unmounted, then released once your consent tool reports that the visitor has accepted. If you're building that integration, [get in touch with support](/support) and we'll point you at the current hooks and how to use them.
 
 ::: warning There is no built-in placeholder
 If embeds are deferred, FluentPlayer renders nothing in their place — whatever your consent plugin displays is what visitors see. Make sure it provides a placeholder, or the space will simply look empty.
