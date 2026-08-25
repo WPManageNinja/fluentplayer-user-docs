@@ -10,6 +10,54 @@ next: false
 Stay updated with the latest features, improvements, and bug fixes in FluentPlayer. The newest release is listed first. Releases that include Pro-only updates group them under a dedicated **Pro** tab.
 
 
+## FluentPlayer v1.3.2
+
+_Released on August 25, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds full Vimeo support — privacy mode, quality and playback-speed menus, chapter import, and caption playback
+• Adds Single Playback — starting one video pauses every other player on the page, so two soundtracks never overlap (on by default)
+• Adds Breakdance support — shortcodes now render live inside the builder canvas
+• Adds cookie-consent support — YouTube and Vimeo embeds can be held back until a consent manager releases them
+```
+
+```markdown:no-line-numbers [🚀 Improvements]
+• Works with WordPress 7.1 — clears the deprecation warnings that appeared every time the editor loaded
+• Speeds up the block editor and media picker on libraries with many private videos
+• The license screen now masks your key and warns you when a license is inside its renewal grace period
+• Standalone media pages can now be switched off site-wide
+• Tightens permission checks and keeps credentials out of the block editor and player output
+```
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes lost progress — the resume position is now saved on pause, on tab switch, and when a single-page-app view is torn down
+• Fixes a blank admin dashboard after an update, caused by browsers holding on to stale files
+• Fixes the same video placed twice on one page rendering only one working player
+• Fixes the Divi and Elementor media pickers, and stops wp-admin typography leaking into the builder frame
+• Fixes YouTube branding appearing over the block editor preview, and portrait Shorts being zoomed
+• Fixes YouTube and Vimeo embeds losing their referrer on sites with a strict referrer policy
+• Fixes Vimeo offering qualities the video cannot actually deliver
+• Fixes Vimeo quality selection on a page with several Vimeo players changing the wrong player
+• Fixes FluentCommunity lesson pages losing full player behavior, including analytics
+• Fixes Bunny Stream token-protected media not playing in the block editor preview
+```
+
+```markdown:no-line-numbers [💎 Pro]
+• Adds Vimeo caption import — pull the captions already on a Vimeo video straight into its subtitles
+• Adds the lightbox shortcode — [fluentplayer_modal id="123"] opens any video in a popup, behind the same visibility and password rules as an inline player
+• Adds the chapter scroll strip — a scrollable chapter list below the player, as an alternative to the in-player menu button
+• A misconfigured Cloudflare Stream connection no longer stalls the page while every private video retries the provider
+• Cloudflare Stream playback tokens now match the length of the video, so a long video no longer cuts off mid-playback
+• The license screen now shows your plan, expiry, days remaining, last checked, and any renewal grace period
+• Fixes playlist colors and aspect ratios entered in unusual formats producing broken styles
+• Fixes a server error on PHP 8 when saving a preset with a JSON settings object — you now get a clear validation message
+• Adds signed update verification, masked license responses, and tighter playlist and provider permissions
+```
+
+:::
+
 ## FluentPlayer v1.3.1
 
 _Released on July 28, 2026_
