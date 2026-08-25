@@ -35,7 +35,11 @@ No. FluentPlayer is a **player** — it plays videos that are hosted elsewhere. 
 
 ### Is FluentPlayer compatible with my page builder?
 
-FluentPlayer works via the `[fluentplayer]` shortcode and the native WordPress (Gutenberg) block. Shortcodes work in virtually all page builders. If you encounter an issue with a specific builder, see [Common Issues & Fixes](/troubleshooting).
+FluentPlayer works via the `[fluentplayer]` shortcode and the native WordPress (Gutenberg) block. Shortcodes work in virtually all page builders.
+
+**Elementor** and **Divi 5** go further with dedicated widgets that expose the full player settings — see [Elementor Widget](/elementor) and [Divi 5 Module](/divi). **Breakdance** uses the shortcode, and the player renders live on the builder canvas so you can see it while designing.
+
+If you encounter an issue with a specific builder, see [Common Issues & Fixes](/troubleshooting).
 
 
 ### Which WordPress version is required?
@@ -55,6 +59,16 @@ See [Shortcode Embed](/shortcode) and [Gutenberg Block](/block) for details.
 ### Can I embed the same video on multiple pages?
 
 Yes. Copy the shortcode or block for any media item and paste it anywhere on your site. Each embed is independent, and the same video can appear on as many pages as you need.
+
+
+### Why does starting one video pause another on the same page?
+
+That's **Single Playback**, and it's on by default — it stops two soundtracks playing over each other. If you want videos to play simultaneously (a muted background loop alongside a main video, for instance), turn it off at **Settings → General → Pause other players when one starts**. See [General Settings](/general#single-playback).
+
+
+### Can I open a video in a popup instead of placing it on the page?
+
+Yes, with FluentPlayer Pro. The `[fluentplayer_modal]` shortcode renders a button or thumbnail that opens the video in a lightbox, and the video isn't loaded until someone clicks it. See [Lightbox Embed (Pro)](/lightbox).
 
 
 ### What is the Dedicated Player URL?
@@ -83,6 +97,13 @@ See [Branding & Appearance](/branding-appearance) and [Settings → Branding](/b
 ### Can I hide specific player controls?
 
 Yes. When [creating a custom preset](/creating-custom-presets), you can toggle individual controls on or off, such as the fullscreen button, playback speed, PIP (picture-in-picture), and more. Control visibility can be set at the preset level or overridden per video.
+
+
+### Why is the Quality menu missing on my Vimeo (or YouTube) video?
+
+Because that particular video only has one resolution available. FluentPlayer hides the Quality menu rather than showing a menu with a single entry in it. The same applies to the Playback Speed menu when the video doesn't allow the speed to change.
+
+If you just uploaded the video, the provider may still be encoding the higher resolutions — check back once processing finishes. See [Vimeo](/vimeo#quality-and-playback-speed).
 
 
 ## Email Capture
