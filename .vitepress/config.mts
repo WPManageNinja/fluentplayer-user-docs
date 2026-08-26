@@ -84,6 +84,7 @@ const guideGroups = [
         collapsed: true,
         items: [
           { text: 'General Settings', link: '/general-settings' },
+          { text: 'Muted Preview', link: '/muted-preview' },
           { text: 'Preset', link: '/preset' },
           { text: 'Branding & Appearance', link: '/branding-appearance' },
         ],
@@ -186,7 +187,8 @@ const guideGroups = [
     collapsed: true,
     items: [
       { text: 'Hooks & Filters Reference', link: '/hooks-reference' },
-      { text: 'Cookie Consent & GDPR', link: '/cookie-consent' },
+      { text: 'Privacy-Enhanced Mode', link: '/privacy-enhanced-mode' },
+      { text: 'Deferring Embeds', link: '/deferred-embeds' },
     ],
   },
   {
@@ -232,6 +234,7 @@ export default defineConfig({
     'guide/block-editor/media-tab.md': 'media-tab.md',
     'guide/block-editor/multi-language.md': 'multi-language.md',
     'guide/block-editor/overlays.md': 'overlays.md',
+    'guide/block-editor/muted-preview.md': 'muted-preview.md',
     'guide/block-editor/preset.md': 'preset.md',
     'guide/block-editor/subtitles.md': 'block-subtitles.md',
     'guide/block-editor/timed-content.md': 'timed-content.md',
@@ -241,7 +244,8 @@ export default defineConfig({
     'guide/customize/creating-custom-presets.md': 'creating-custom-presets.md',
     'guide/customize/index.md': 'customize.md',
     'guide/customize/presets.md': 'presets.md',
-    'guide/developer/cookie-consent.md': 'cookie-consent.md',
+    'guide/developer/deferred-embeds.md': 'deferred-embeds.md',
+    'guide/developer/privacy-enhanced-mode.md': 'privacy-enhanced-mode.md',
     'guide/developer/hooks-reference.md': 'hooks-reference.md',
     'guide/display-embed/block.md': 'block.md',
     'guide/display-embed/dedicated-player-url.md': 'dedicated-player-url.md',
