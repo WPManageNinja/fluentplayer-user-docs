@@ -19,8 +19,6 @@ Autoplay Mode is a single choice, so picking Muted Preview replaces **Autoplay w
 Muted Preview applies to a single embedded player. It is ignored inside a [playlist (Pro)](/playlists), and the option is hidden when you edit a playlist item.
 :::
 
-It also applies to video only — audio media ignores it.
-
 ## Customizing the preview
 
 Click **Customize preview**, just under the Autoplay Mode dropdown, to open the preview settings.
@@ -109,14 +107,26 @@ It is a poor fit when the opening seconds are a title card or a slow fade, since
 
 Because the preview is silent and starts on its own, it also sidesteps the usual autoplay problem: browsers block sound until the visitor interacts with the page, and a muted loop never asks them to.
 
+## When it falls back to a normal player
+
+Muted Preview steps aside where a silent autoplaying loop would be wrong, and the player renders as an ordinary click-to-play embed instead. That happens when:
+
+- the visitor's system asks for **reduced motion**, so an endless loop is never forced on someone who has asked not to see moving content;
+- the media is **audio** rather than video;
+- the source is a **live or continuous stream** rather than an on-demand video.
+
+You do not need to configure any of this — the setting can stay on, and each visitor gets whichever behavior suits them.
+
 ## What visitors see
 
 While the preview loops, the video plays **silently and without controls**, acting as a live poster. Your player logo stays visible if you use one, and its link stays clickable.
 
 ![A video looping silently as a muted preview](/guide/public/block-editor/muted-preview/preview-playing-4.webp)
 
-When the visitor clicks, the player switches to normal playback with sound, and the full interface comes back — controls, chapters, and everything else your player is configured to show.
+When the visitor clicks — or focuses the preview and presses <kbd>Enter</kbd> or <kbd>Space</kbd> — the player switches to normal playback with sound, and the full interface comes back: controls, chapters, and everything else your player is configured to show. The overlay they activate is a real button, labelled **Play with sound** for screen readers.
 
 ![The same video after the click, playing with sound and full controls](/guide/public/block-editor/muted-preview/after-click-5.webp)
 
-Anything that interrupts or asks something of the viewer waits for that click. [Interactive layers](/interactive-layers), [email capture](/email-capture), and [CTAs](/cta-and-action-bar) all start only after the preview ends, so a silent loop never interrupts someone who has not chosen to watch yet.
+Nothing else runs while the preview loops. [Interactive layers](/interactive-layers), [email capture](/email-capture), and [CTAs](/cta-and-action-bar) all wait, so a silent loop never interrupts someone who has not chosen to watch yet.
+
+**Tracking waits too.** [Analytics](/built-in-analytics), watched milestones, [Google Analytics](/google-analytics) events, and [Remember Playback Position](/general#auto-resume-playback) all stay dormant until the viewer converts to full playback. A silent loop is meant to catch attention rather than count as a view, so your engagement figures reflect people who actually chose to watch instead of every page that happened to scroll past.
