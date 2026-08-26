@@ -60,7 +60,7 @@ Playback position is stored in the viewer’s browser. It does not carry over to
 
 **Checkbox:** Pause other players when one starts — *"Pause every other player on the page when a video starts, so only one plays at a time."*
 
-When a page has more than one FluentPlayer video on it, starting one video pauses all the others. Viewers never end up with two soundtracks playing over each other.
+When a page has more than one FluentPlayer video on it, starting one video pauses all the others. Viewers never end up with two soundtracks playing over each other. It matters most on media libraries, lesson pages, and article layouts, where several videos can sit close together on the same page.
 
 **This is on by default**, and it's a free feature. Most sites should leave it alone.
 
