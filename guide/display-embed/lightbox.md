@@ -15,17 +15,35 @@ The lightbox shortcode requires **FluentPlayer Pro**. In the free version, use t
 
 ## Add a Lightbox in Three Steps
 
-### Step 1: Find your media ID
+### Step 1: Copy the lightbox shortcode
 
-Go to **FluentPlayer → Media**. Each video has an **ID** at the start of its row (like `#655`), and a ready-made shortcode in the **ShortCode** column.
+You don't have to write the shortcode yourself. FluentPlayer generates it for the media you're looking at, and there are **two places to copy it from**. Both give you exactly the same thing:
+
+```text
+[fluentplayer_modal id="655"]Watch now[/fluentplayer_modal]
+```
+
+**From the Media list.** Go to **FluentPlayer → Media**, open the **⋮** menu at the end of the video's row, and choose **Copy lightbox shortcode**.
+
+![The row menu in the Media list, with Copy lightbox shortcode highlighted](/guide/public/display-embed/lightbox/copy-from-media-list-4.webp)
+
+**From the Player Editor.** Open the media, and in the **Block** tab expand the **Lightbox** panel. The **Lightbox Shortcode** field holds the ready-made shortcode, with a copy button beside it.
+
+![The Lightbox panel in the Player Editor sidebar, showing the shortcode field and its copy button](/guide/public/display-embed/lightbox/copy-from-editor-5.webp)
+
+Use whichever is closer to hand — the Media list when you're picking a video out of your library, the Player Editor when you're already editing one.
+
+::: tip Replace the label
+What you copy uses **Watch now** as the trigger text. Swap it for your own wording, or replace it with an image — see [Using a Thumbnail or Custom Trigger](#using-a-thumbnail-or-custom-trigger).
+:::
+
+**Building it by hand.** The lightbox uses the **same ID** as the regular shortcode, so you're only swapping the shortcode name. The Media list shows each video's ID at the start of its row (like `#655`) and its regular shortcode in the **ShortCode** column, so `[fluentplayer id="655"]` becomes `[fluentplayer_modal id="655"]`.
 
 ![The Media List, showing the ID and ShortCode columns](/guide/public/display-embed/lightbox/find-media-id-1.webp)
 
-The lightbox uses the **same ID** as the regular shortcode — you're only swapping the shortcode name. So in the example above, `[fluentplayer id="655"]` becomes `[fluentplayer_modal id="655"]`.
-
 ### Step 2: Add the shortcode to your page
 
-Edit the page where you want the video, add a **Shortcode** block, and type your lightbox shortcode into it:
+Edit the page where you want the video, add a **Shortcode** block, and paste your lightbox shortcode into it:
 
 ```text
 [fluentplayer_modal id="655" text="Watch the demo"]
