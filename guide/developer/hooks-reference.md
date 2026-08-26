@@ -18,6 +18,15 @@ Hook names and signatures can change between releases. Test customizations on st
 | `fluent_player/dynamic_source_overrides` | Filter the resolved source overrides (URL, provider, poster) for a [dynamic shortcode](/shortcode#dynamic-media-source-advanced). |
 | `fluent_player/dynamic_source_post_id` | Change which post a `source_meta` source is read from (defaults to the current post). |
 
+## Deferred embeds
+
+| Filter | Purpose |
+|--------|---------|
+| `fluent_player/defer_player` | Hold a YouTube or Vimeo embed back before the provider initializes — see [Deferring Embeds](/deferred-embeds). |
+| `fluent_player/embed_providers` | Filter the host-to-provider map used to detect third-party embeds. |
+
+See [Deferring Embeds](/deferred-embeds) for the full workflow, including the front-end release step.
+
 ## Email capture & providers
 
 | Hook | Purpose |
