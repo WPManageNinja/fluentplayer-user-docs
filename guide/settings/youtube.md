@@ -12,6 +12,8 @@ When enabled, YouTube loads the video from `youtube-nocookie.com` instead of `yo
 Privacy Enhanced Mode reduces the data YouTube collects from page visitors, but it does not make YouTube embeds fully "cookie free." Once a visitor plays the video, YouTube may still set cookies.
 :::
 
+This setting is **off** by default, while [Vimeo's equivalent](/vimeo#privacy-enhanced-mode) is on — check both if you use both sources. For how this fits alongside a cookie-consent banner, see [Privacy-Enhanced Mode](/privacy-enhanced-mode).
+
 ## Show Subscribe Button
 
 When enabled, a YouTube Subscribe button appears below (or near) the YouTube video embed. This makes it easy for viewers to subscribe to your YouTube channel directly from your WordPress site.
