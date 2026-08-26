@@ -77,7 +77,7 @@ Privacy-Enhanced Mode reduces what Vimeo collects from people who merely visit t
 Vimeo's Privacy-Enhanced Mode is **on** out of the box, while [YouTube's](/youtube) is **off**. If you use both sources, check each settings page separately rather than assuming they match.
 :::
 
-If you need embeds held back entirely until a visitor accepts cookies, see [Cookie Consent & GDPR](/cookie-consent).
+If you need Vimeo embeds held back entirely until a visitor accepts cookies, [see](/privacy-enhanced-mode#if-you-need-embeds-fully-blocked-until-consent).
 
 ## Quality and Playback Speed
 
