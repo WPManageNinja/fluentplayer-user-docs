@@ -27,6 +27,24 @@ Hook names and signatures can change between releases. Test customizations on st
 
 See [Deferring Embeds](/deferred-embeds) for the full workflow, including the front-end release step.
 
+## Media pages
+
+| Filter | Purpose |
+|--------|---------|
+| `fluent_player/media_pages_enabled` | Return `false` to switch off the standalone [dedicated player URL](/dedicated-player-url) for every media item. Defaults to `true`. |
+
+```php
+add_filter('fluent_player/media_pages_enabled', '__return_false');
+```
+
+## Muted Preview
+
+| Event | Purpose |
+|-------|---------|
+| `fluentPlayer/mutedPreviewConverted` | Fired on the player container when a [Muted Preview](/muted-preview) converts to full playback. Bubbles, and carries `detail.mediaId`. |
+
+Analytics, layers, and resume tracking all start at this point, so it is the moment to hook into if you track conversions yourself.
+
 ## Email capture & providers
 
 | Hook | Purpose |
