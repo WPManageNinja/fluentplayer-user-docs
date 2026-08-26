@@ -10,6 +10,56 @@ next: false
 Stay updated with the latest features, improvements, and bug fixes in FluentPlayer. The newest release is listed first. Releases that include Pro-only updates group them under a dedicated **Pro** tab.
 
 
+## FluentPlayer v1.4.0
+
+_Released on August 26, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [✨ Newly Added]
+• Adds full Vimeo support — privacy mode, quality and playback-speed menus, and chapters
+• Adds Muted Preview — a new autoplay mode that loops your video silently as its own thumbnail, then plays it with sound when the viewer clicks
+• Adds Single Playback — starting one video pauses every other player on the page, and can be switched off where videos should play at the same time (on by default)
+• Adds deferred third-party embeds — YouTube and Vimeo players can be held back so the provider is never contacted and no tracking requests are sent until they are released, for privacy-driven workflows
+```
+
+```markdown:no-line-numbers [🚀 Improvements]
+• Improves WordPress 7.1 compatibility by removing the deprecated block-editor control that logged a warning every time the editor loaded
+• Improves the block editor and media picker on libraries with many private videos, which no longer cost one database query each
+• Improves autoplay with sound — playback now falls back to muted when the browser blocks it, instead of freezing on the first frame
+• Improves control over public media pages, which can now be switched off site-wide
+• Improves the Presto Player migration to carry over Muted Autoplay Preview settings
+```
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Fixes lost progress — the resume position is now saved on pause, on tab switch, and when a single-page-app view is torn down
+• Fixes the same video placed twice on one page rendering only one working player
+• Fixes YouTube branding appearing over the block editor preview, and portrait Shorts being zoomed
+• Fixes Vimeo offering qualities the video cannot actually deliver
+• Fixes FluentCommunity lesson pages losing full player behavior, including analytics
+• Fixes block editor styles leaking into the core WordPress admin interface
+• Fixes the media and playlist tables losing their pagination controls after you choose a large page size, and they now remember your page and page size
+• Hardens permission checks and keeps credentials out of block editor and player output
+```
+
+```markdown:no-line-numbers [💎 Pro]
+• Adds Vimeo caption import — pull the captions already on a Vimeo video straight into its subtitles
+• Adds the lightbox shortcode — [fluentplayer_modal id="123"] opens any video in a popup, behind the same visibility and password rules as an inline player
+• Adds inline scroll chapters — a scrollable chapter list below the player, chosen from Chapters Display alongside the default menu button
+• Adds Muted Preview options — preview captions, a looped preview range, image and text overlays, and whether a click restarts the video or continues from the preview position
+• Improves a misconfigured Cloudflare Stream connection so it no longer stalls the page while every private video retries the provider
+• Improves Cloudflare Stream playback tokens, which are now cached per requested lifetime so a long video no longer cuts off mid-playback
+• Improves the license screen to show your plan, expiry, days remaining, last checked, and any renewal grace period
+• Fixes playlist colors and aspect ratios entered in unusual formats producing broken styles
+• Fixes a server error on PHP 8 when saving a preset with a JSON settings object — you now get a clear validation message
+• Fixes the grid playlist layout overflowing on narrow viewports
+• Hardens updates with signed verification and masks license responses, keeping license keys and activation hashes out of admin and API output
+• Hardens password-locked playlist items so they no longer expose signed subtitle, DRM, thumbnail, or Bunny tokens in the page source
+• Hardens public playlist payloads by stripping email-capture provider credentials, and enforces the correct permissions on playlist and provider actions
+```
+
+:::
+
 ## FluentPlayer v1.3.2
 
 _Released on August 25, 2026_
