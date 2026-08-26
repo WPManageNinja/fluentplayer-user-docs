@@ -7,6 +7,8 @@ description: "FluentPlayer’s standalone page per media: pretty URLs, query-str
 
 Every FluentPlayer media item has its own **dedicated URL** — a standalone page that shows only the video player and a small header. This is useful when you want to share a direct link to a video without embedding it inside a regular page.
 
+If you would rather your site never exposed these pages, they can be switched off site-wide. That takes a small amount of custom code — see the [Hooks & Filters Reference](/hooks-reference#media-pages).
+
 ## What the URL Looks Like
 
 **Pretty permalink (recommended for sharing):**
