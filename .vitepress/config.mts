@@ -363,6 +363,7 @@ export default defineConfig({
     siteTitle: false,
     nav: [
       { text: 'Home', link: '/introduction' },
+      { text: 'Try It Free', link: 'https://try.wpmanageninja.com/?products=fluent-player' },
       { text: 'Website', link: 'https://fluentplayer.com/' },
       { text: 'Changelog', link: '/changelog' },
       { text: 'Support', link: '/support' },
