@@ -33,7 +33,13 @@ const base = resolveBase()
  * (crawlers do not resolve root-relative paths). Override with `VITEPRESS_SITE_URL`.
  */
 const SITE_URL = (() => {
-  const origin = (process.env.VITEPRESS_SITE_URL ?? 'https://fluentplayer.com').replace(/\/+$/, '')
+  // The DOCS origin, not the marketing site. `https://fluentplayer.com` is a different
+  // host that serves none of these pages or assets, so pointing og:url / og:image there
+  // makes every scraper fetch a 404 and drop the preview entirely.
+  const origin = (process.env.VITEPRESS_SITE_URL ?? 'https://docs.fluentplayer.com').replace(
+    /\/+$/,
+    ''
+  )
   return `${origin}${base}`
 })()
 
