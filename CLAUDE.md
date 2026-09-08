@@ -20,6 +20,8 @@ npm run docs:dev              # Dev server → http://localhost:5173 (live reloa
 npm run docs:build            # Production build → .vitepress/dist/
 npm run docs:preview          # Preview production build → http://localhost:4173
 npm run docs:build:gh-pages   # Build with base /fluentplayer-user-docs/ for GitHub Pages
+npm run featured:generate     # Render social cards for any page missing one (skips existing)
+npm run featured:regenerate   # Re-render EVERY card (--force) — after a title or design change
 ```
 
 **Validation:** There are no tests, linters, or formatters. Run `docs:build` after any link change or page move — VitePress fails the build on broken internal (dead) links, which is the de facto correctness check.
@@ -87,6 +89,20 @@ Every `guide/<section>/` folder contains an `index.md` (the section overview/lan
 - **Adding a new page also requires adding a `rewrites` entry** mapping its source path to its flat `<slug>.md`. Keep slugs globally unique.
 - Image assets under `guide/public/...` are **not** affected by `rewrites` (those paths only remap pages); keep referencing screenshots with the full `/guide/public/...` path.
 
+### Social cards (featured images)
+
+Every page ships its own 1200x630 Open Graph card, so a doc link shared on Slack, X, Facebook or LinkedIn previews with that page's title rather than one shared hero image.
+
+- **Generator:** `scripts/generate-featured-images.mjs` (uses `sharp`; renders an SVG and composites `public/brand/fluentplayer_secondary_logo.png` over it).
+- **Output:** `public/images/featured/<flat-slug>.png` — **committed to the repo**, served at `<base>images/featured/<flat-slug>.png`.
+- **Name = the flat slug the page is served at**, not its file path. The generator gets that slug by **parsing the `rewrites` map out of `config.mts`**, so the seven hand-picked slugs (`/branding-appearance`, `/introduction`, `/email-integrations`, …) are never duplicated and can never drift. A page missing from `rewrites` fails the generator with a named error.
+- `config.mts` (`featuredImageFor()` in `transformHead`) looks the card up by `pageData.relativePath`, which VitePress has already rewritten to the flat path. Anything without a card falls back to `default.png`.
+- `og:image` is emitted **only** in `transformHead`, never in the static `head` array — scrapers take the first tag they find, so a static one would shadow every per-page card.
+
+**When you add a page:** after step 2 of the checklist below (the `rewrites` entry), run `npm run featured:generate` and commit the new PNG.
+**When you change a page's H1:** run `npm run featured:regenerate` — the card bakes the old title in and the skip-if-exists rule will not notice.
+**When you rename or delete a page:** the generator reports the leftover card so you can delete it.
+
 ### Base path
 
 - Resolved dynamically by `resolveBase()` in `config.mts`. Defaults to `/`; reads the `VITEPRESS_BASE` env var, otherwise auto-detects GitHub Pages project sites from `GITHUB_ACTIONS` + `GITHUB_REPOSITORY`.
@@ -148,4 +164,5 @@ Follow these to stay consistent with existing pages.
 4. If it is a section landing page, name it `index.md`, map it to the section slug (e.g. `'guide/section/index.md': 'section.md'`), and place it first in its group.
 5. Put any screenshots in `guide/public/section/new-feature/` and reference them via `/guide/public/...` (image paths are not rewritten).
 6. Label any Pro-only features with **(Pro)** in the heading and the sidebar entry.
-7. Run `npm run docs:build` to verify no broken links before committing.
+7. Run `npm run featured:generate` and commit the new `public/images/featured/<slug>.png`.
+8. Run `npm run docs:build` to verify no broken links before committing.

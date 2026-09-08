@@ -1,5 +1,8 @@
 /// <reference types="node" />
 import { defineConfig } from 'vitepress'
+import { existsSync } from 'node:fs'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 /**
  * Asset base path. Default is **`/`** so local dev and preview use:
@@ -33,6 +36,30 @@ const SITE_URL = (() => {
   const origin = (process.env.VITEPRESS_SITE_URL ?? 'https://fluentplayer.com').replace(/\/+$/, '')
   return `${origin}${base}`
 })()
+
+/**
+ * Per-page link-preview cards.
+ *
+ * `scripts/generate-featured-images.mjs` renders a branded 1200x630 PNG carrying each
+ * page's own title into `public/images/featured/<flat-slug>.png`, which the root
+ * publicDir serves at `<base>images/featured/<flat-slug>.png`.
+ *
+ * The card is named after the flat slug the page is SERVED at — and by the time
+ * `transformHead` runs, `pageData.relativePath` is already the rewritten flat path
+ * (`adding-videos.md`, not `guide/videos-and-media/adding-videos.md`), so the lookup is
+ * just the basename. The generator resolves the same slug by parsing the `rewrites` map
+ * below, which is why the seven hand-picked slugs there need no second copy anywhere.
+ *
+ * Anything without a generated card falls back to `default.png`, which the generator
+ * also emits — so a shared link is never left with no preview at all.
+ */
+const FEATURED_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'public', 'images', 'featured')
+
+function featuredImageFor(relativePath: string): string {
+  const name = `${relativePath.replace(/\.md$/, '')}.png`
+  const file = existsSync(join(FEATURED_DIR, name)) ? name : 'default.png'
+  return `${SITE_URL}images/featured/${file}`
+}
 
 // Shared sidebar groups — bound to the '/' sidebar key (all pages live at the site root).
 const guideGroups = [
@@ -327,14 +354,16 @@ export default defineConfig({
       },
     ],
     /**
-     * Static link-preview (Open Graph / Twitter) tags.
-     * The per-page `og:title` / `og:description` / `og:url` are added in `transformHead`.
+     * Link-preview (Open Graph / Twitter) tags that never vary per page.
+     * The per-page `og:title` / `og:description` / `og:url` / `og:image` are added in
+     * `transformHead` — `og:image` must NOT be repeated here, since scrapers take the
+     * first one they find and a static tag would shadow every per-page card.
      */
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'FluentPlayer Documentation' }],
-    ['meta', { property: 'og:image', content: `${SITE_URL}brand/Hero-Image-2.webp` }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:image', content: `${SITE_URL}brand/Hero-Image-2.webp` }],
   ],
 
   /**
@@ -344,13 +373,17 @@ export default defineConfig({
    */
   transformHead({ pageData, title, description }) {
     const path = pageData.relativePath.replace(/(index)?\.md$/, '').replace(/\/$/, '')
+    const image = featuredImageFor(pageData.relativePath)
 
     return [
       ['meta', { property: 'og:title', content: title }],
       ['meta', { property: 'og:description', content: description }],
       ['meta', { property: 'og:url', content: `${SITE_URL}${path}` }],
+      ['meta', { property: 'og:image', content: image }],
+      ['meta', { property: 'og:image:alt', content: title }],
       ['meta', { name: 'twitter:title', content: title }],
       ['meta', { name: 'twitter:description', content: description }],
+      ['meta', { name: 'twitter:image', content: image }],
     ]
   },
 
