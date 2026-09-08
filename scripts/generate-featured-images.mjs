@@ -62,8 +62,9 @@ const LOGO_W = 340
 const LOGO_X = MARGIN_X
 const LOGO_Y = 78
 
-// Kept in step with SITE_URL in config.mts, which defaults to the same origin.
-const FOOTER_TEXT = (process.env.VITEPRESS_SITE_URL ?? 'https://fluentplayer.com')
+// Kept in step with SITE_URL in config.mts, which defaults to the same origin — the
+// DOCS host, not the marketing site at fluentplayer.com.
+const FOOTER_TEXT = (process.env.VITEPRESS_SITE_URL ?? 'https://docs.fluentplayer.com')
   .replace(/^https?:\/\//, '')
   .replace(/\/+$/, '')
 
