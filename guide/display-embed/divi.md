@@ -1,9 +1,9 @@
-# Divi 5 Module (Pro)
+# Divi 5 Module
 
-FluentPlayer Pro includes native **Divi 5 modules** for both the video player and playlist. Add them to any Divi row or section and configure every setting directly inside the Divi builder panel — no shortcode required.
+FluentPlayer includes a native **Divi 5 module** for the video player, and FluentPlayer Pro adds a matching module for playlists. Add them to any Divi row or section and configure every setting directly inside the Divi builder panel — no shortcode required.
 
-::: info Pro feature
-The Divi 5 module requires **FluentPlayer Pro**. The free plugin supports [Shortcode](/shortcode) and [Gutenberg Block](/block) embeds.
+::: info Free and Pro
+The **Fluent Player** module is available in the free plugin. The **Fluent Player Playlist** module requires **FluentPlayer Pro** and only appears in the Divi builder when Pro is active. [Playlists](/playlists) are a Pro feature.
 :::
 
 ::: warning Divi 5 only
@@ -28,7 +28,7 @@ These modules are built for **Divi 5**. They are not available in Divi 4 or the 
 
 ![Choose Media](/guide/public/display-embed/divi/choose-media-3.webp)
 
-## Adding the FluentPlayer Playlist Module
+## Adding the FluentPlayer Playlist Module (Pro)
 
 1. Click the blue **+** button to insert a new module and type **fluent player** in the search bar.
 2. Click the **Fluent Player Playlist** module to insert it.
