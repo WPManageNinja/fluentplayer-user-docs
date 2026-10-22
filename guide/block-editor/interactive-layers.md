@@ -55,11 +55,11 @@ Every layer includes standard controls to ensure it appears exactly when and whe
  * **Layout & Positioning:** Use the visual position grid to snap your layer to regions like **Top Left**, **Center**, or **Bottom Right**. You can also adjust **Form Width (%)** and **Form Height (%)** for form layers.
  * **Appearance:** Customize **Background** and **Text** colors to match your brand.
  * **Controls (Skip):** Toggle **Allow Skip** so viewers can close the layer to continue watching.
- * **Conditions (Advanced):** You can set rules for when a layer appears based on viewer data.
+ * **Conditions (Advanced) (Pro):** You can set rules for when a layer appears based on viewer data.
 
 ![Email Capture Layer](/guide/public/block-editor/interactive-layers/email-capture-layer-3.webp)
 
-### Advanced Conditions
+### Advanced Conditions (Pro)
 
 The Conditions section in **FluentPlayer** allows you to transform static video overlays into smart, dynamic elements. By setting specific rules, you can control exactly who sees a layer based on their **login** status, **CRM** data, or even their **behavior** on your site. While conditions decide *who* sees a layer, you can personalize *what* it says with [Smartcodes and Personalization](/smartcodes-personalization) to insert the viewer's name or CRM contact data.
 

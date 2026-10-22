@@ -1,6 +1,6 @@
 # General Settings
 
-The **General** section under **Fluent Player → Settings** sets site wide defaults for every player on your site. Use it to choose the default preset and aspect ratio, enable resume playback, and add global custom CSS. These values apply everywhere unless a [preset](/presets) or a per media setting overrides them.
+The **General** section under **Fluent Player → Settings** sets site wide defaults for every player on your site. Use it to choose the default preset and aspect ratio, enable resume playback (Pro), and add global custom CSS (Pro). These values apply everywhere unless a [preset](/presets) or a per media setting overrides them.
 
 To open it, go to **Fluent Player → Settings** and select **General** from the inner settings sidebar. See [Settings Overview](/settings) for how global settings relate to presets and per media overrides.
 
@@ -32,7 +32,7 @@ Use the **Default Aspect Ratio** dropdown to set how players size themselves sit
 
 Individual media items and block embeds can override this under **Block** tab → **General Settings** when a specific video needs a different ratio.
 
-## Auto Resume Playback
+## Auto Resume Playback (Pro)
 
 **Checkbox:** Enable Auto Resume Playback — *"Let your users resume watching from where they left off."*
 
@@ -74,7 +74,7 @@ You'll find it at the bottom of the General panel, just below **Auto Resume Play
 If you use the **Ambient** preset for a decorative background video, consider turning Single Playback off. Otherwise starting any other video on the page will pause your background loop.
 :::
 
-## Custom CSS
+## Custom CSS (Pro)
 
 A text area for global CSS that applies to every FluentPlayer instance on your site. The UI suggests scoping your rules:
 

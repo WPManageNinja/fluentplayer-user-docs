@@ -98,8 +98,8 @@ const guideGroups = [
       { text: 'Embedding Overview', link: '/display-embed' },
       { text: 'Shortcode Embed', link: '/shortcode' },
       { text: 'Gutenberg Block', link: '/block' },
-      { text: 'Elementor Widget (Pro)', link: '/elementor' },
-      { text: 'Divi 5 Module (Pro)', link: '/divi' },
+      { text: 'Elementor Widget', link: '/elementor' },
+      { text: 'Divi 5 Module', link: '/divi' },
       { text: 'Lightbox Embed (Pro)', link: '/lightbox' },
       { text: 'Dedicated Player URL', link: '/dedicated-player-url' },
       { text: 'Timestamp Links', link: '/timestamp-links' },
@@ -212,7 +212,7 @@ const guideGroups = [
     text: 'Migration',
     collapsed: true,
     items: [
-      { text: 'Migrate from Presto Player (Pro)', link: '/presto-player-migration' },
+      { text: 'Migrate from Presto Player', link: '/presto-player-migration' },
     ],
   },
   {

@@ -101,9 +101,9 @@ The **Appearance** section styles the overlay and button.
 
 ![Appearance settings](/guide/public/engagement/email-capture/email-capture-8.webp)
 
-## Conditions
+## Conditions (Pro)
 
-The **Conditions** section lets you show the email capture layer only when specific rules are met.
+The **Conditions** section lets you show the email capture layer only when specific rules are met. Conditions require **FluentPlayer Pro**; on the free plugin the section shows an upgrade prompt, and the email capture layer itself stays available.
 
 1. Toggle **Conditions** on.
 2. Choose **Any** (show if at least one rule matches) or **All** (show only if every rule matches).
