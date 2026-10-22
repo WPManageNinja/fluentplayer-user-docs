@@ -1,9 +1,9 @@
-# Elementor Widget (Pro)
+# Elementor Widget
 
-FluentPlayer Pro includes native **Elementor widgets** for both the video player and playlist. You can drag them into any Elementor section or column and configure every setting directly inside the Elementor panel - no shortcode needed.
+FluentPlayer includes a native **Elementor widget** for the video player, and FluentPlayer Pro adds a matching widget for playlists. You can drag them into any Elementor section or column and configure every setting directly inside the Elementor panel - no shortcode needed.
 
-::: info Pro feature
-The Elementor widget requires **FluentPlayer Pro**. The free version supports [Shortcode](/shortcode) and [Gutenberg Block](/block) embeds.
+::: info Free and Pro
+The **FluentPlayer** widget is available in the free plugin. The **FluentPlayer Playlist** widget requires **FluentPlayer Pro** and only appears in Elementor when Pro is active. [Playlists](/playlists) are a Pro feature.
 :::
 
 ## Adding the FluentPlayer Widget
@@ -23,7 +23,7 @@ The Elementor widget requires **FluentPlayer Pro**. The free version supports [S
 
 ![After Adding Video](/guide/public/display-embed/elementor/after-adding-video-3.webp)
 
-## Adding the FluentPlayer Playlist Widget
+## Adding the FluentPlayer Playlist Widget (Pro)
 
 1. In the widget search panel, type **FluentPlayer Playlist**.
 2. Click the **Fluent Player Playlist** widget to insert it.
