@@ -23,8 +23,10 @@ FluentPlayer comes in two versions: **FluentPlayer** (free) and **FluentPlayer P
 |---------|------|-----|
 | Add and embed videos | Yes | Yes |
 | Shortcode and Gutenberg block | Yes | Yes |
-| Elementor Widget | — | Yes |
-| Divi 5 Module | — | Yes |
+| Elementor Widget (player) | Yes | Yes |
+| Elementor Playlist Widget | — | Yes |
+| Divi 5 Module (player) | Yes | Yes |
+| Divi 5 Playlist Module | — | Yes |
 | Player presets (6 built in: Default, Modern, Simple, Standard, Floating, Minimal) | Yes | Yes |
 | Ambient preset | — | Yes |
 | Subtitles & captions (HLS auto-play) | Yes | Yes |
@@ -38,7 +40,8 @@ FluentPlayer comes in two versions: **FluentPlayer** (free) and **FluentPlayer P
 | Email capture with FluentCRM | Yes | Yes |
 | Text & button overlays | — | Yes |
 | CTA overlay | — | Yes |
-| Custom CSS | Yes | Yes |
+| Block-level custom CSS classes and HTML anchor | Yes | Yes |
+| Global custom CSS (Settings → General) | — | Yes |
 | Google Analytics events | — | Yes |
 | Resume playback (save position in the browser) | — | Yes |
 | Playlists (Standard, Grid) | — | Yes |
@@ -56,7 +59,8 @@ FluentPlayer comes in two versions: **FluentPlayer** (free) and **FluentPlayer P
 | Player share links | — | Yes |
 | Add media by pasting any URL (provider auto-detected) | Yes | Yes |
 | Editor role can author media, presets, layers, and playlists | Yes | Yes |
-| Presto Player migration | Yes | Yes |
+| Presto Player migration (settings, media) | Yes | Yes |
+| Presto Player migration (presets, playlists, analytics, email submissions) | — | Yes |
 
 The **free version** handles everything you need for embedding and customizing single videos. The **Pro version** adds playlists, Mux and Bunny integrations, analytics, timed content, and more email providers.
 
@@ -67,7 +71,7 @@ The **free version** handles everything you need for embedding and customizing s
 - **Playlists (Pro)** — Group videos into playlists with Standard and Grid layouts.
 - **Presets** — Save and reuse player configurations so every video looks consistent.
 - **Overlays** — Add email capture forms, calls-to-action, and action bars that appear while the video plays.
-- **Embed anywhere** — Use the `[fluentplayer]` shortcode, the Gutenberg block, the Elementor widget (Pro), or the Divi 5 module (Pro).
+- **Embed anywhere** — Use the `[fluentplayer]` shortcode, the Gutenberg block, the Elementor widget, or the Divi 5 module (playlist widgets are Pro).
 - **Analytics** — Track plays, watch time, and viewer behavior with built-in analytics or Google Analytics (both Pro).
 
 ## How It Works (the Big Picture)
