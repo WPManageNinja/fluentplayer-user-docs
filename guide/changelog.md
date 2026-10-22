@@ -142,6 +142,8 @@ _Released on July 22, 2026_
 • Adds FluentCRM contact timeline logging — watched milestones and layer interactions are tracked as timeline events
 • Adds private media playback — private media plays wherever it is embedded (pages, courses) while its standalone page returns 404 and stays out of sitemaps and search
 • Adds automatic Private visibility for media created from a FluentCommunity lesson, so lesson videos never get a public standalone page
+• Adds an Elementor widget for the player, with full block-parity settings (the playlist widget requires Pro)
+• Adds a Divi 5 Visual Builder module for the player (the playlist module requires Pro)
 ```
 
 ```markdown:no-line-numbers [🚀 Improvements]
@@ -165,11 +167,6 @@ _Released on July 22, 2026_
 • Fixes the Elementor and Divi builders showing a blank canvas for timed-content and playlist blocks
 • Fixes portrait (9:16) YouTube Shorts being letterboxed instead of filling the frame
 • Fixes page-builder panel colors not applying on the front end; the Divi media module is now selectable in the builder
-```
-
-```markdown:no-line-numbers [💎 Pro]
-• Adds Elementor widgets for the player and playlist, with full block-parity settings
-• Adds Divi 5 Visual Builder modules for the player and playlist
 ```
 
 :::
