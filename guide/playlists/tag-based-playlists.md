@@ -33,6 +33,21 @@ Combine multiple tags with commas:
 
 The playlist renders every media item that matches the tag(s), using your configured playlist [layout](/playlist-layouts) and [appearance](/playlist-settings).
 
+### Shortcode attributes
+
+| Attribute | Default | Description |
+|-----------|---------|-------------|
+| `tags` | — | One or more tag names, comma-separated. This is what makes the playlist tag-based. |
+| `limit` | `20` | Maximum number of videos to include. Capped at **100**. |
+| `orderby` | `date` | Sort field: `date`, `title`, `modified`, or `rand` (random). |
+| `order` | `DESC` | Sort direction: `DESC` (newest / Z–A first) or `ASC` (oldest / A–Z first). |
+
+```text
+[fluentplaylist tags="course-101" limit="10" orderby="title" order="ASC"]
+```
+
+Only **published** media is included, and tags are matched by name.
+
 ::: tip
 A regular playlist uses `[fluentplaylist id="10"]`. A tag-based playlist uses `tags="…"` instead of `id`. See [Embed a Playlist](/embed-playlist) for the standard form.
 :::
