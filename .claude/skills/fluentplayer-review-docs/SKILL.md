@@ -33,7 +33,7 @@ Run `npm run docs:build`. VitePress fails on dead internal links. Capture and re
 
 The sidebar is hand-wired in `.vitepress/config.mts` (`guideGroups`). Cross-check it against the filesystem:
 
-- Collect every page route from `guide/**/*.md` (a file `guide/<section>/<slug>.md` → `/guide/<section>/<slug>`; `index.md` → `/guide/<section>/`). Exclude `changelog.md` and `support.md` if intentionally nav-only.
+- Collect every page route from `docs/**/*.md` via the `rewrites` map in `config.mts` (a file `docs/<section>/<file>.md` is served at the map's value, a flat `/<slug>`; `docs/<section>/index.md` → `/<section>`). Flag any doc missing from `rewrites`. Exclude `changelog.md` and `support.md` if intentionally nav-only.
 - Collect every `link` in `guideGroups`.
 - Report **pages not in the sidebar** (reachable by URL but invisible) and **sidebar links with no file** (dead entries).
 
@@ -43,9 +43,9 @@ For each page whose body clearly describes a Pro-only feature (mentions "Pro", "
 
 ### 4. Screenshot references resolve
 
-For every markdown image `![alt](/guide/public/...)`:
-- Confirm the referenced file exists on disk under `guide/public/...`. Report **broken references**.
-- Report **orphaned images** — files under `guide/public/**` (excluding `.gitkeep`) that no page references.
+For every markdown image `![alt](/docs/public/...)`:
+- Confirm the referenced file exists on disk under `docs/public/...`. Report **broken references**.
+- Report **orphaned images** — files under `docs/public/**` (excluding `.gitkeep`) that no page references.
 - Confirm the extension is `.webp` (the repo convention); flag non-webp references.
 
 ### 5. Known typos / alt-text quality
@@ -59,7 +59,7 @@ Report each with file + line. Also flag empty or duplicated image alt text.
 
 ### 6. Placeholder / empty pages
 
-Flag pages that are empty or stub-only — notably `guide/changelog.md` (currently empty) — and any page with a heading but no body.
+Flag pages that are empty or stub-only — notably `docs/changelog.md` (currently empty) — and any page with a heading but no body.
 
 ---
 
@@ -70,15 +70,15 @@ Print a structured summary, grouped by check, e.g.:
 ```text
 docs:build .............. PASS (0 dead links)
 Sidebar sync ............ 1 issue
-  - guide/integrations/vimeo-integration.md not in guideGroups
+  - docs/integrations/vimeo-integration.md not in guideGroups
 Free/Pro labels ......... 0 issues
 Screenshot refs ......... 2 issues
-  - broken: /guide/public/settings/general/general-settings-9.webp (no file)
-  - orphan: guide/public/integrations/mux/unused-12.webp
+  - broken: /docs/public/settings/general/general-settings-9.webp (no file)
+  - orphan: docs/public/integrations/mux/unused-12.webp
 Typos ................... 1 issue
-  - guide/integrations/webhook-integration.md:14  "Integrattions"
+  - docs/integrations/webhook-integration.md:14  "Integrattions"
 Placeholder pages ....... 1
-  - guide/changelog.md (empty)
+  - docs/changelog.md (empty)
 ```
 
 Then ask which fixes to apply. For typos and broken/orphaned-image cleanup, offer to fix directly. For sidebar gaps, offer to hand off to `fluentplayer-add-doc-page` (or add the missing leaf). For Free/Pro mismatches, confirm each with the user first.

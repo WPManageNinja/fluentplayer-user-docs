@@ -1,8 +1,8 @@
 ---
 name: restructure-fluentplayer-docs
-description: 'Perform STRUCTURAL operations on Fluent Player docs while protecting reference integrity: rename a doc (change its slug/URL), move a doc to another category, delete a doc, merge two docs, or reorder the sidebar. Always rewrites inbound links, moves the image folder, and updates guideGroups in config.mts. USE FOR: rename this doc, change the slug, change the URL of, move X to another category, delete this doc, remove this page, merge these two docs, reorder the sidebar, change the order of pages. DO NOT USE FOR: content/wording edits (use edit-fluentplayer-doc), creating a brand-new page (use write-fluentplayer-doc), or read-only audits (use audit-fluentplayer-docs).'
+description: 'Perform STRUCTURAL operations on Fluent Player docs while protecting reference integrity: rename a doc (change its slug/URL), move a doc to another category, delete a doc, merge two docs, or reorder the sidebar. Always rewrites inbound links, moves the image folder, and updates rewrites + guideGroups in config.mts. USE FOR: rename this doc, change the slug, change the URL of, move X to another category, delete this doc, remove this page, merge these two docs, reorder the sidebar, change the order of pages. DO NOT USE FOR: content/wording edits (use edit-fluentplayer-doc), creating a brand-new page (use write-fluentplayer-doc), or read-only audits (use audit-fluentplayer-docs).'
 license: MIT
-compatibility: 'VitePress repo using guide/<category>/<slug>.md layout. Sidebar defined in .vitepress/config.mts (guideGroups const). No URL rewrite rules — category IS part of the public URL. Requires git, Node + npm to run docs:build.'
+compatibility: 'VitePress repo using docs/<category>/<slug>.md layout, served at FLAT root slugs via the rewrites map in .vitepress/config.mts. Sidebar defined in guideGroups in the same file. Requires git, Node + npm to run docs:build.'
 metadata:
   project: fluentplayer-user-docs
   canonical-rules: CLAUDE.md
@@ -10,10 +10,16 @@ metadata:
 
 # Restructure Fluent Player Docs
 
-Structural changes are high-risk because **a slug is a public URL**: renaming or moving a doc
-breaks every inbound link. Unlike Fluent Forms, Fluent Player has **no rewrite rules** — the
-full path `/guide/<category>/<slug>` is the public URL. Moving a doc to a different category
-changes its URL and requires rewriting all inbound links. This skill makes those changes safely.
+Structural changes are high-risk because **a served slug is a public URL**. Fluent Player uses
+a hand-written `rewrites` map in `.vitepress/config.mts`: each source file
+`docs/<category>/<file>.md` is served at a flat root URL `/<slug>` (the map's value). The
+category folder is NOT part of the URL.
+
+- **Moving a doc to another category does NOT change its URL** — only the `rewrites` KEY changes.
+- **Renaming the served slug DOES change its URL** — every inbound `/<old-slug>` link breaks, and
+  the indexed live URL stops working (GitHub Pages has no server-side redirects). Confirm with
+  the user that a URL change is really wanted.
+
 Canonical conventions live in `CLAUDE.md`.
 
 ---
@@ -21,21 +27,19 @@ Canonical conventions live in `CLAUDE.md`.
 ## Agent Behavior Rules
 
 1. **DO** confirm the operation and exact old/new identifiers before any change.
-2. **DO** survey inbound links before acting: `grep -rln '/guide/<old-path>' guide`.
-3. **DO** rewrite every inbound `/guide/<old-path>` reference to the new path.
+2. **DO** survey inbound links before acting: `grep -rnE '\]\(/<slug>(#[^)]*)?\)' docs index.md`.
+3. **DO** keep the `rewrites` map and `guideGroups` in sync with every file you move, rename,
+   or delete — keeping valid TypeScript.
 4. **DO** move the doc's image folder with it and fix in-doc image refs whenever the
-   slug or category changes.
-5. **DO** update `guideGroups` in `.vitepress/config.mts` — `link`, `text`, and group
-   placement as needed — keeping valid TypeScript.
-6. **DO** use `git mv` for renames/moves so history is preserved.
-7. **DO** end on a green `npm run docs:build`.
-8. **DO NOT** rename or move without rewriting every inbound reference.
-9. **DO NOT** leave an orphaned image folder under the old path.
-10. **DO NOT** delete a doc without removing its sidebar entry AND reporting any inbound
-    links that will now be dead.
-11. **DO NOT** change page wording here (that's edit-fluentplayer-doc).
-12. **REMEMBER:** Moving category changes the URL — unlike sites with rewrite rules,
-    ALL inbound `/guide/<old-cat>/<slug>` links must be rewritten to `/guide/<new-cat>/<slug>`.
+   file's folder or name changes.
+5. **DO** use `git mv` for renames/moves so history is preserved.
+6. **DO** end on a green `npm run docs:build` (it fails on dead internal links).
+7. **DO NOT** change a served slug without rewriting every inbound `/<old-slug>` reference
+   and warning the user the live URL changes.
+8. **DO NOT** leave an orphaned image folder or featured card under the old name.
+9. **DO NOT** delete a doc without removing its `rewrites` entry AND sidebar entry, and
+   reporting any inbound links that will now be dead.
+10. **DO NOT** change page wording here (that's edit-fluentplayer-doc).
 
 ---
 
@@ -48,26 +52,29 @@ Record as `OPERATION`.
 
 ### 1.2 Identifiers (by operation)
 - **rename:** `OLD_SLUG`, `NEW_SLUG`, `CATEGORY`
-  (verify new slug is globally unique: `find guide -name '<new>.md' | grep -v '/public/'`)
+  (the new slug must not already be a `rewrites` value: `grep -n "': '<new>.md'" .vitepress/config.mts`)
 - **move-category:** `SLUG`, `OLD_CATEGORY`, `NEW_CATEGORY`, target sidebar group
 - **delete:** `SLUG` + `CATEGORY`
 - **merge:** `FROM_SLUG` + `FROM_CATEGORY`, `INTO_SLUG` + `INTO_CATEGORY`
   (content of FROM folded into INTO, then FROM deleted)
 - **reorder:** sidebar group + the new item order
 
-Resolve current path(s): `find guide -name '<slug>.md' | grep -v '/public/'`. Record all.
+Resolve current path(s) and served slug(s): `grep -n "<slug>" .vitepress/config.mts` (the
+`rewrites` line shows `'docs/<cat>/<file>.md': '<served-slug>.md'`). Note that a few file names
+differ from their served slug (e.g. `docs/block-editor/branding.md` → `/branding-appearance`).
 
 ### 1.3 Inbound link survey
-Run `grep -rln '/guide/<category>/<slug>' guide` for each affected path and show the user
-the count + file list so the blast radius is visible before confirming.
+Run `grep -rlnE '\]\(/<served-slug>(#[^)]*)?\)' docs index.md` for each affected page and show
+the user the count + file list so the blast radius is visible before confirming.
 
 ### 1.4 Confirm
 
 | Parameter            | Value |
 | -------------------- | ----- |
 | Operation            | ...   |
-| Old path             | ...   |
-| New path             | ...   |
+| Old source path      | ...   |
+| New source path      | ...   |
+| Served URL           | unchanged `/<slug>` / changes `/<old>` → `/<new>` |
 | Inbound links        | N files (listed) |
 | Sidebar change       | ...   |
 
@@ -78,52 +85,57 @@ Wait for confirmation.
 ## Phase 2: Context
 
 1. Read `CLAUDE.md`.
-2. Read `.vitepress/config.mts` and locate the affected entry/entries in `guideGroups`.
-3. Confirm the image folder path(s): `guide/public/<category>/<slug>/`.
+2. Read `.vitepress/config.mts` and locate the affected `rewrites` entry and `guideGroups` entry.
+3. Confirm the image folder path(s): `docs/public/<category>/<file>/`.
 
 ---
 
 ## Phase 3: Procedure (by operation)
 
 ```
-RENAME (slug change, same category):
-  1. git mv guide/<CAT>/<OLD_SLUG>.md guide/<CAT>/<NEW_SLUG>.md
-  2. git mv guide/public/<CAT>/<OLD_SLUG>/ guide/public/<CAT>/<NEW_SLUG>/   (if exists)
+RENAME (served slug change — URL CHANGES):
+  1. git mv docs/<CAT>/<OLD_SLUG>.md docs/<CAT>/<NEW_SLUG>.md
+  2. git mv docs/public/<CAT>/<OLD_SLUG>/ docs/public/<CAT>/<NEW_SLUG>/   (if exists)
   3. In the moved file, rewrite image refs:
-       /guide/public/<CAT>/<OLD_SLUG>/ → /guide/public/<CAT>/<NEW_SLUG>/
-  4. grep -rl '/guide/<CAT>/<OLD_SLUG>' guide → rewrite each to /guide/<CAT>/<NEW_SLUG>
-  5. config.mts guideGroups: set entry "link" to '/guide/<CAT>/<NEW_SLUG>'
-     (update "text" too if the title changed)
-  6. BUILD
+       /docs/public/<CAT>/<OLD_SLUG>/ → /docs/public/<CAT>/<NEW_SLUG>/
+  4. config.mts rewrites: replace the entry with
+       'docs/<CAT>/<NEW_SLUG>.md': '<NEW_SLUG>.md'
+  5. Rewrite every inbound link /<OLD_SLUG>[#anchor] → /<NEW_SLUG>[#anchor] in docs/ and index.md
+  6. config.mts guideGroups: set the entry link to '/<NEW_SLUG>' (update text if the title changed)
+  7. npm run featured:generate, then delete the orphaned public/images/featured/<OLD_SLUG>.png
+  8. BUILD
 
-MOVE-CATEGORY (slug same, folder changes — URL ALSO CHANGES):
-  1. git mv guide/<OLD_CAT>/<SLUG>.md guide/<NEW_CAT>/<SLUG>.md
-  2. git mv guide/public/<OLD_CAT>/<SLUG>/ guide/public/<NEW_CAT>/<SLUG>/   (if exists)
+MOVE-CATEGORY (folder changes — URL UNCHANGED):
+  1. git mv docs/<OLD_CAT>/<FILE>.md docs/<NEW_CAT>/<FILE>.md
+  2. git mv docs/public/<OLD_CAT>/<FILE>/ docs/public/<NEW_CAT>/<FILE>/   (if exists)
   3. In the moved file, rewrite image refs:
-       /guide/public/<OLD_CAT>/<SLUG>/ → /guide/public/<NEW_CAT>/<SLUG>/
-  4. grep -rl '/guide/<OLD_CAT>/<SLUG>' guide → rewrite each to /guide/<NEW_CAT>/<SLUG>
-     (the URL changed — ALL inbound links must be updated)
-  5. config.mts guideGroups: update the entry "link" to '/guide/<NEW_CAT>/<SLUG>'
-     and move the {text, link} object into the correct sidebar group
-  6. BUILD
+       /docs/public/<OLD_CAT>/<FILE>/ → /docs/public/<NEW_CAT>/<FILE>/
+  4. config.mts rewrites: change only the KEY to 'docs/<NEW_CAT>/<FILE>.md'; keep the value
+     (served slug) exactly as it was. Inbound links need no change.
+  5. config.mts guideGroups: move the {text, link} object into the correct sidebar group
+     (link stays '/<slug>')
+  6. npm run featured:regenerate is NOT needed unless you want the card eyebrow (category
+     label) refreshed; if so, delete that one card and run npm run featured:generate
+  7. BUILD
 
 DELETE:
-  1. grep -rln '/guide/<CAT>/<SLUG>' guide → report inbound links that will break; fix or flag
-  2. git rm guide/<CAT>/<SLUG>.md
-  3. rm -rf guide/public/<CAT>/<SLUG>/
-  4. config.mts guideGroups: remove the entry
-  5. BUILD
+  1. grep for inbound /<SLUG> links → report links that will break; fix or flag
+  2. git rm docs/<CAT>/<FILE>.md
+  3. git rm -r docs/public/<CAT>/<FILE>/   (if exists)
+  4. config.mts: remove the rewrites entry AND the guideGroups entry
+  5. git rm public/images/featured/<SLUG>.png
+  6. BUILD
 
 MERGE (FROM into INTO):
-  1. Fold FROM's content into guide/<INTO_CAT>/<INTO_SLUG>.md (preserve conventions)
+  1. Fold FROM's content into docs/<INTO_CAT>/<INTO_FILE>.md (preserve conventions)
   2. Move any still-needed images into INTO's image folder; fix refs
-  3. grep -rl '/guide/<FROM_CAT>/<FROM_SLUG>' guide → rewrite to /guide/<INTO_CAT>/<INTO_SLUG>
-  4. Delete FROM (file + image folder + sidebar entry)
+  3. Rewrite inbound /<FROM_SLUG>[#anchor] links → /<INTO_SLUG>[#matching-anchor]
+  4. Delete FROM (file + image folder + rewrites entry + sidebar entry + featured card)
   5. BUILD
 
 REORDER:
   1. Reorder items within the group in guideGroups inside .vitepress/config.mts
-     (valid TypeScript — keep collapsed: false on nested groups where applicable)
+     (valid TypeScript — keep collapsed settings on nested groups as they are)
   2. BUILD
 ```
 
@@ -132,10 +144,10 @@ REORDER:
 ## Phase 4: Verify & Report
 
 Report:
-- Operation performed; old → new path(s)
+- Operation performed; old → new source path(s); whether the served URL changed
 - Inbound links rewritten: count + file list
-- Image folder moved/removed
-- Sidebar diff (link/text/group/order)
+- Image folder moved/removed; featured card added/removed
+- `rewrites` + sidebar diff
 - Dead links remaining (for delete): listed, or "none"
 - Build: pass / fail
 
@@ -145,24 +157,25 @@ Report:
 
 ### Survey & locate
 ```
-File by slug:    find guide -name '<slug>.md' | grep -v '/public/'
-Inbound links:   grep -rln '/guide/<category>/<slug>' guide
-Image folder:    guide/public/<category>/<slug>/
-Sidebar entry:   grep -n "'/guide/<category>/<slug>'" .vitepress/config.mts
+Rewrite entry:   grep -n "<slug>" .vitepress/config.mts
+Inbound links:   grep -rlnE '\]\(/<slug>(#[^)]*)?\)' docs index.md
+Image folder:    docs/public/<category>/<file>/
+Sidebar entry:   grep -n "link: '/<slug>'" .vitepress/config.mts
+Featured card:   public/images/featured/<slug>.png
 ```
 
-### Critical difference from rewrite-based sites
+### URL model
 ```
-FluentPlayer has NO rewrite rules.
-URL = /guide/<category>/<slug>   — category IS in the public URL.
+Source file  docs/<category>/<file>.md   (on disk — free to move between categories)
+Served URL   /<slug>                     (the rewrites VALUE — this is the public URL)
 
-move-category  → URL CHANGES → ALL inbound links must be rewritten
-rename (slug)  → URL CHANGES → ALL inbound links must be rewritten
+move-category  → URL UNCHANGED → change the rewrites key only
+rename (slug)  → URL CHANGES   → rewrites value, sidebar link, inbound links, featured card
 ```
 
 ### Key Principles
-1. **Full path = public URL** — category and slug together form the URL.
-2. **Survey blast radius first** (`grep -rln`) and show it before acting.
+1. **The rewrites value is the public URL** — the category folder is not part of it.
+2. **Survey blast radius first** and show it before acting.
 3. **Image folder travels with the doc**; never orphan it.
-4. **Sidebar stays in sync** — update guideGroups in config.mts.
+4. **rewrites + guideGroups stay in sync** in config.mts.
 5. **Use `git mv`; finish on a green build.**

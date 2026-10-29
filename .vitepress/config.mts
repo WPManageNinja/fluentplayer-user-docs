@@ -1,7 +1,7 @@
 /// <reference types="node" />
 import { defineConfig } from 'vitepress'
-import { existsSync } from 'node:fs'
-import { dirname, join } from 'node:path'
+import { existsSync, readdirSync, statSync } from 'node:fs'
+import { dirname, join, relative, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 /**
@@ -52,7 +52,7 @@ const SITE_URL = (() => {
  *
  * The card is named after the flat slug the page is SERVED at — and by the time
  * `transformHead` runs, `pageData.relativePath` is already the rewritten flat path
- * (`adding-videos.md`, not `guide/videos-and-media/adding-videos.md`), so the lookup is
+ * (`adding-videos.md`, not `docs/videos-and-media/adding-videos.md`), so the lookup is
  * just the basename. The generator resolves the same slug by parsing the `rewrites` map
  * below, which is why the seven hand-picked slugs there need no second copy anywhere.
  *
@@ -234,7 +234,7 @@ const guideGroups = [
   },
 ]
 
-export default defineConfig({
+const config = defineConfig({
   /** Must match deploy URL (e.g. `/repo-name/` on GitHub Pages project sites). See `resolveBase()`. */
   base,
   title: 'FluentPlayer',
@@ -250,95 +250,97 @@ export default defineConfig({
   cleanUrls: true,
 
   /**
-   * Flat URL structure: source files keep their `guide/<section>/` folders on disk,
+   * Flat URL structure: source files keep their `docs/<section>/` folders on disk,
    * but every page is served from the site root (e.g. `/general-settings`).
+   * The source folder was renamed from `guide/` to `docs/`; only the keys below changed,
+   * every served slug (the values) is untouched, so no live URL moved.
    * Section landing pages map to their section name (e.g. `/block-editor`).
    * A few slugs are disambiguated to avoid collisions (e.g. block-editor branding →
    * `/branding-appearance`, settings integrations → `/email-integrations`).
-   * Image assets under `guide/public/...` are unaffected (rewrites only remap pages).
+   * Image assets under `docs/public/...` are unaffected (rewrites only remap pages).
    */
   rewrites: {
-    'guide/block-editor/advanced.md': 'advanced.md',
-    'guide/block-editor/branding.md': 'branding-appearance.md',
-    'guide/block-editor/chapters.md': 'chapters.md',
-    'guide/block-editor/general-settings.md': 'general-settings.md',
-    'guide/block-editor/index.md': 'block-editor.md',
-    'guide/block-editor/interactive-layers.md': 'interactive-layers.md',
-    'guide/block-editor/media-tab.md': 'media-tab.md',
-    'guide/block-editor/multi-language.md': 'multi-language.md',
-    'guide/block-editor/overlays.md': 'overlays.md',
-    'guide/block-editor/muted-preview.md': 'muted-preview.md',
-    'guide/block-editor/preset.md': 'preset.md',
-    'guide/block-editor/subtitles.md': 'block-subtitles.md',
-    'guide/block-editor/timed-content.md': 'timed-content.md',
-    'guide/block-editor/timestamp-links.md': 'block-timestamp-links.md',
-    'guide/changelog.md': 'changelog.md',
-    'guide/customize/behaviors.md': 'behaviors.md',
-    'guide/customize/creating-custom-presets.md': 'creating-custom-presets.md',
-    'guide/customize/index.md': 'customize.md',
-    'guide/customize/presets.md': 'presets.md',
-    'guide/developer/deferred-embeds.md': 'deferred-embeds.md',
-    'guide/developer/privacy-enhanced-mode.md': 'privacy-enhanced-mode.md',
-    'guide/developer/hooks-reference.md': 'hooks-reference.md',
-    'guide/display-embed/block.md': 'block.md',
-    'guide/display-embed/dedicated-player-url.md': 'dedicated-player-url.md',
-    'guide/display-embed/divi.md': 'divi.md',
-    'guide/display-embed/lightbox.md': 'lightbox.md',
-    'guide/display-embed/elementor.md': 'elementor.md',
-    'guide/display-embed/index.md': 'display-embed.md',
-    'guide/display-embed/shortcode.md': 'shortcode.md',
-    'guide/display-embed/timestamp-links.md': 'timestamp-links.md',
-    'guide/engagement/cta-and-action-bar.md': 'cta-and-action-bar.md',
-    'guide/engagement/email-capture.md': 'email-capture.md',
-    'guide/engagement/email-providers.md': 'email-providers.md',
-    'guide/engagement/index.md': 'engagement.md',
-    'guide/index.md': 'introduction.md',
-    'guide/installation.md': 'installation.md',
-    'guide/integrations/analytics.md': 'built-in-analytics.md',
-    'guide/integrations/bunnycdn-storage.md': 'bunnycdn-storage.md',
-    'guide/integrations/bunnycdn-stream.md': 'bunnycdn-stream.md',
-    'guide/integrations/cloudflare.md': 'cloudflare.md',
-    'guide/integrations/fluent-community.md': 'fluent-community.md',
-    'guide/integrations/fluent-forms.md': 'fluent-forms.md',
-    'guide/integrations/fluentcrm.md': 'fluentcrm.md',
-    'guide/integrations/learndash.md': 'learndash.md',
-    'guide/integrations/google-analytics.md': 'google-analytics.md',
-    'guide/integrations/index.md': 'integrations.md',
-    'guide/integrations/mailchimp-integration.md': 'mailchimp-integration.md',
-    'guide/integrations/gumlet.md': 'gumlet.md',
-    'guide/integrations/mux.md': 'mux.md',
-    'guide/integrations/smartcodes-personalization.md': 'smartcodes-personalization.md',
-    'guide/integrations/vimeo.md': 'vimeo.md',
-    'guide/integrations/webhook-integration.md': 'webhook-integration.md',
-    'guide/migration/presto-player.md': 'presto-player-migration.md',
-    'guide/playlists/creating-playlists.md': 'creating-playlists.md',
-    'guide/playlists/dedicated-playlist-url.md': 'dedicated-playlist-url.md',
-    'guide/playlists/embed-playlist.md': 'embed-playlist.md',
-    'guide/playlists/index.md': 'playlists.md',
-    'guide/playlists/playlist-layouts.md': 'playlist-layouts.md',
-    'guide/playlists/playlist-settings.md': 'playlist-settings.md',
-    'guide/playlists/tag-based-playlists.md': 'tag-based-playlists.md',
-    'guide/quick-start.md': 'quick-start.md',
-    'guide/settings/analytics.md': 'analytics.md',
-    'guide/settings/branding.md': 'branding.md',
-    'guide/settings/capabilities.md': 'capabilities.md',
-    'guide/settings/export.md': 'export.md',
-    'guide/settings/general.md': 'general.md',
-    'guide/settings/index.md': 'settings.md',
-    'guide/settings/integrations.md': 'email-integrations.md',
-    'guide/settings/licensing.md': 'licensing.md',
-    'guide/settings/storage.md': 'storage.md',
-    'guide/settings/youtube.md': 'youtube.md',
-    'guide/support.md': 'support.md',
-    'guide/troubleshooting/faq.md': 'faq.md',
-    'guide/troubleshooting/index.md': 'troubleshooting.md',
-    'guide/videos-and-media/adding-videos.md': 'adding-videos.md',
-    'guide/videos-and-media/index.md': 'videos-and-media.md',
-    'guide/videos-and-media/media-tags.md': 'media-tags.md',
-    'guide/videos-and-media/multiple-languages.md': 'multiple-languages.md',
-    'guide/videos-and-media/public-vs-private.md': 'public-vs-private.md',
-    'guide/videos-and-media/subtitles.md': 'subtitles.md',
-    'guide/videos-and-media/video-sources.md': 'video-sources.md',
+    'docs/block-editor/advanced.md': 'advanced.md',
+    'docs/block-editor/branding.md': 'branding-appearance.md',
+    'docs/block-editor/chapters.md': 'chapters.md',
+    'docs/block-editor/general-settings.md': 'general-settings.md',
+    'docs/block-editor/index.md': 'block-editor.md',
+    'docs/block-editor/interactive-layers.md': 'interactive-layers.md',
+    'docs/block-editor/media-tab.md': 'media-tab.md',
+    'docs/block-editor/multi-language.md': 'multi-language.md',
+    'docs/block-editor/overlays.md': 'overlays.md',
+    'docs/block-editor/muted-preview.md': 'muted-preview.md',
+    'docs/block-editor/preset.md': 'preset.md',
+    'docs/block-editor/subtitles.md': 'block-subtitles.md',
+    'docs/block-editor/timed-content.md': 'timed-content.md',
+    'docs/block-editor/timestamp-links.md': 'block-timestamp-links.md',
+    'docs/changelog.md': 'changelog.md',
+    'docs/customize/behaviors.md': 'behaviors.md',
+    'docs/customize/creating-custom-presets.md': 'creating-custom-presets.md',
+    'docs/customize/index.md': 'customize.md',
+    'docs/customize/presets.md': 'presets.md',
+    'docs/developer/deferred-embeds.md': 'deferred-embeds.md',
+    'docs/developer/privacy-enhanced-mode.md': 'privacy-enhanced-mode.md',
+    'docs/developer/hooks-reference.md': 'hooks-reference.md',
+    'docs/display-embed/block.md': 'block.md',
+    'docs/display-embed/dedicated-player-url.md': 'dedicated-player-url.md',
+    'docs/display-embed/divi.md': 'divi.md',
+    'docs/display-embed/lightbox.md': 'lightbox.md',
+    'docs/display-embed/elementor.md': 'elementor.md',
+    'docs/display-embed/index.md': 'display-embed.md',
+    'docs/display-embed/shortcode.md': 'shortcode.md',
+    'docs/display-embed/timestamp-links.md': 'timestamp-links.md',
+    'docs/engagement/cta-and-action-bar.md': 'cta-and-action-bar.md',
+    'docs/engagement/email-capture.md': 'email-capture.md',
+    'docs/engagement/email-providers.md': 'email-providers.md',
+    'docs/engagement/index.md': 'engagement.md',
+    'docs/index.md': 'introduction.md',
+    'docs/installation.md': 'installation.md',
+    'docs/integrations/analytics.md': 'built-in-analytics.md',
+    'docs/integrations/bunnycdn-storage.md': 'bunnycdn-storage.md',
+    'docs/integrations/bunnycdn-stream.md': 'bunnycdn-stream.md',
+    'docs/integrations/cloudflare.md': 'cloudflare.md',
+    'docs/integrations/fluent-community.md': 'fluent-community.md',
+    'docs/integrations/fluent-forms.md': 'fluent-forms.md',
+    'docs/integrations/fluentcrm.md': 'fluentcrm.md',
+    'docs/integrations/learndash.md': 'learndash.md',
+    'docs/integrations/google-analytics.md': 'google-analytics.md',
+    'docs/integrations/index.md': 'integrations.md',
+    'docs/integrations/mailchimp-integration.md': 'mailchimp-integration.md',
+    'docs/integrations/gumlet.md': 'gumlet.md',
+    'docs/integrations/mux.md': 'mux.md',
+    'docs/integrations/smartcodes-personalization.md': 'smartcodes-personalization.md',
+    'docs/integrations/vimeo.md': 'vimeo.md',
+    'docs/integrations/webhook-integration.md': 'webhook-integration.md',
+    'docs/migration/presto-player.md': 'presto-player-migration.md',
+    'docs/playlists/creating-playlists.md': 'creating-playlists.md',
+    'docs/playlists/dedicated-playlist-url.md': 'dedicated-playlist-url.md',
+    'docs/playlists/embed-playlist.md': 'embed-playlist.md',
+    'docs/playlists/index.md': 'playlists.md',
+    'docs/playlists/playlist-layouts.md': 'playlist-layouts.md',
+    'docs/playlists/playlist-settings.md': 'playlist-settings.md',
+    'docs/playlists/tag-based-playlists.md': 'tag-based-playlists.md',
+    'docs/quick-start.md': 'quick-start.md',
+    'docs/settings/analytics.md': 'analytics.md',
+    'docs/settings/branding.md': 'branding.md',
+    'docs/settings/capabilities.md': 'capabilities.md',
+    'docs/settings/export.md': 'export.md',
+    'docs/settings/general.md': 'general.md',
+    'docs/settings/index.md': 'settings.md',
+    'docs/settings/integrations.md': 'email-integrations.md',
+    'docs/settings/licensing.md': 'licensing.md',
+    'docs/settings/storage.md': 'storage.md',
+    'docs/settings/youtube.md': 'youtube.md',
+    'docs/support.md': 'support.md',
+    'docs/troubleshooting/faq.md': 'faq.md',
+    'docs/troubleshooting/index.md': 'troubleshooting.md',
+    'docs/videos-and-media/adding-videos.md': 'adding-videos.md',
+    'docs/videos-and-media/index.md': 'videos-and-media.md',
+    'docs/videos-and-media/media-tags.md': 'media-tags.md',
+    'docs/videos-and-media/multiple-languages.md': 'multiple-languages.md',
+    'docs/videos-and-media/public-vs-private.md': 'public-vs-private.md',
+    'docs/videos-and-media/subtitles.md': 'subtitles.md',
+    'docs/videos-and-media/video-sources.md': 'video-sources.md',
   },
 
   /**
@@ -346,8 +348,9 @@ export default defineConfig({
    * - `README.md` is for GitHub only (avoids an extra `/readme` route).
    * - `documentation-gaps.md` is an internal audit/planning artifact (it also
    *   contains literal `{{ }}` smartcode examples that would break Vue rendering).
+   * - `CLAUDE.md` is repo guidance for Claude Code, not a doc page (avoids a `/CLAUDE` route).
    */
-  srcExclude: ['README.md', 'documentation-gaps.md'],
+  srcExclude: ['README.md', 'documentation-gaps.md', 'CLAUDE.md'],
 
   head: [
     ['meta', { name: 'generator', content: 'FluentPlayer' }],
@@ -438,3 +441,44 @@ export default defineConfig({
     lineNumbers: true,
   },
 })
+
+/**
+ * URL guard. Every page is served at the flat slug its `rewrites` entry gives it. A page
+ * under `docs/` with no entry would silently go live at `/docs/<section>/<file>` instead —
+ * a wrong, indexable URL — and the build would not notice. So: fail the build (warn in dev)
+ * when a doc has no entry, or an entry points at a file that no longer exists.
+ */
+function assertEveryDocIsRewritten(rewrites: Record<string, string>) {
+  const root = join(dirname(fileURLToPath(import.meta.url)), '..')
+  const docsDir = join(root, 'docs')
+  const walk = (dir: string, out: string[] = []): string[] => {
+    for (const entry of readdirSync(dir)) {
+      const full = join(dir, entry)
+      if (statSync(full).isDirectory()) {
+        if (full !== join(docsDir, 'public')) walk(full, out)
+      } else if (entry.endsWith('.md')) {
+        out.push(relative(root, full).split(sep).join('/'))
+      }
+    }
+    return out
+  }
+
+  const unmapped = walk(docsDir).filter((file) => !(file in rewrites))
+  const stale = Object.keys(rewrites).filter((file) => !existsSync(join(root, file)))
+  if (!unmapped.length && !stale.length) return
+
+  const message = [
+    unmapped.length &&
+      `Docs with no \`rewrites\` entry in .vitepress/config.mts (they would be served at a /docs/... URL):\n  ${unmapped.join('\n  ')}`,
+    stale.length && `\`rewrites\` entries whose file does not exist:\n  ${stale.join('\n  ')}`,
+  ]
+    .filter(Boolean)
+    .join('\n')
+
+  if (process.argv.includes('build')) throw new Error(message)
+  console.warn(`\n[url-guard] ${message}\n`)
+}
+
+assertEveryDocIsRewritten(config.rewrites as Record<string, string>)
+
+export default config

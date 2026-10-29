@@ -49,7 +49,7 @@ npm run docs:build:gh-pages
 ```
 .
 ├── .vitepress/          # VitePress config, theme, and components
-├── guide/               # Documentation content (Markdown)
+├── docs/               # Documentation content (Markdown)
 │   ├── block-editor/    # Block editor panels reference
 │   ├── customize/       # Player customization docs
 │   ├── display-embed/   # Embedding methods (shortcode, block, URL)
@@ -66,7 +66,7 @@ npm run docs:build:gh-pages
 ## Contributing
 
 1. Create a new branch from `master`.
-2. Make your changes in the `guide/` directory.
+2. Make your changes in the `docs/` directory.
 3. Run `npm run docs:dev` to preview locally.
 4. Open a pull request.
 

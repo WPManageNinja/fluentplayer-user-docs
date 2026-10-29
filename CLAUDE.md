@@ -8,7 +8,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the **end-user documentation site** for **FluentPlayer** — a WordPress video and media player plugin by WPManageNinja. The site is built with [VitePress](https://vitepress.dev/) (v1.6+, Vue 3) and deployed to GitHub Pages.
 
-> **You are editing user-facing documentation, not plugin source code.** All content lives under `guide/` in Markdown. The current documented release is **FluentPlayer Free and Pro 1.0.4**.
+> **You are editing user-facing documentation, not plugin source code.** All content lives under `docs/` in Markdown. The current documented release is **FluentPlayer Free and Pro 1.0.4**.
+
+> Source folder is `docs/` (renamed from `guide/`). Pages are served at flat root slugs (e.g. `/general-settings`) through the `rewrites` map in `.vitepress/config.mts`, whose keys are `docs/...` source paths. Page/nav/sidebar links stay flat slugs and never contain `/docs/` or `/guide/`. Image paths in Markdown use `/docs/public/...`.
 
 ---
 
@@ -46,7 +48,7 @@ npm run featured:regenerate   # Re-render EVERY card (--force) — after a title
 │   ├── cache/                  # Build cache (gitignored)
 │   └── dist/                   # Build output (gitignored; may be stale — not authoritative)
 │
-├── guide/                      # ALL documentation content (Markdown)
+├── docs/                       # ALL documentation content (Markdown)
 │   ├── index.md                # "What is FluentPlayer?" (section landing)
 │   ├── installation.md
 │   ├── quick-start.md
@@ -62,14 +64,14 @@ npm run featured:regenerate   # Re-render EVERY card (--force) — after a title
 │   ├── integrations/           # Mux, BunnyCDN, analytics, Mailchimp, Webhook, FluentCommunity…
 │   ├── troubleshooting/        # Common issues + FAQ
 │   └── public/                 # PER-PAGE SCREENSHOTS (.webp/.png), mirrors the doc tree
-│                               #   e.g. guide/public/integrations/mux/access-token-1.webp
-│                               #   referenced in Markdown as /guide/public/integrations/mux/...
+│                               #   e.g. docs/public/integrations/mux/access-token-1.webp
+│                               #   referenced in Markdown as /docs/public/integrations/mux/...
 │
 └── public/                     # Root static assets, served from site root "/"
     └── brand/                  # Logo, favicon, hero image (e.g. /brand/Hero-Image-2.webp)
 ```
 
-Every `guide/<section>/` folder contains an `index.md` (the section overview/landing page) plus its topic pages.
+Every `docs/<section>/` folder contains an `index.md` (the section overview/landing page) plus its topic pages.
 
 ---
 
@@ -83,11 +85,11 @@ Every `guide/<section>/` folder contains an `index.md` (the section overview/lan
 
 ### Flat URL structure (rewrites)
 
-- **Files keep their `guide/<section>/` folders on disk, but every page is served from the site root.** This is done with the `rewrites` map in `config.mts` (e.g. `guide/block-editor/general-settings.md` → `/general-settings`).
-- Section landing pages (`guide/<section>/index.md`) map to their section name (e.g. `/block-editor`); `guide/index.md` maps to `/introduction`.
+- **Files keep their `docs/<section>/` folders on disk, but every page is served from the site root.** This is done with the `rewrites` map in `config.mts` (e.g. `docs/block-editor/general-settings.md` → `/general-settings`).
+- Section landing pages (`docs/<section>/index.md`) map to their section name (e.g. `/block-editor`); `docs/index.md` maps to `/introduction`.
 - A few slugs are disambiguated to avoid collisions: `block-editor/branding` → `/branding-appearance`, `settings/integrations` → `/email-integrations`, `block-editor/subtitles` → `/block-subtitles`, `block-editor/timestamp-links` → `/block-timestamp-links`, `integrations/analytics` → `/built-in-analytics`.
 - **Adding a new page also requires adding a `rewrites` entry** mapping its source path to its flat `<slug>.md`. Keep slugs globally unique.
-- Image assets under `guide/public/...` are **not** affected by `rewrites` (those paths only remap pages); keep referencing screenshots with the full `/guide/public/...` path.
+- Image assets under `docs/public/...` are **not** affected by `rewrites` (those paths only remap pages); keep referencing screenshots with the full `/docs/public/...` path.
 
 ### Social cards (featured images)
 
@@ -132,7 +134,7 @@ Follow these to stay consistent with existing pages.
 
 ### Free vs Pro labeling
 
-- Pro-only features must be labeled **(Pro)** in headings, sidebar entries, and the feature table in `guide/index.md`. These are user-facing product facts — never drop or omit them.
+- Pro-only features must be labeled **(Pro)** in headings, sidebar entries, and the feature table in `docs/index.md`. These are user-facing product facts — never drop or omit them.
 
 ### Links and anchors
 
@@ -142,7 +144,7 @@ Follow these to stay consistent with existing pages.
 
 ### Images and assets
 
-- **Per-page screenshots** go under `guide/public/<section>/<page>/` and are referenced with the matching root-relative path, e.g. `![Alt](/guide/public/integrations/mux/access-token-1.webp)`. Prefer `.webp`. Each folder keeps a `.gitkeep`.
+- **Per-page screenshots** go under `docs/public/<section>/<page>/` and are referenced with the matching root-relative path, e.g. `![Alt](/docs/public/integrations/mux/access-token-1.webp)`. Prefer `.webp`. Each folder keeps a `.gitkeep`.
 - **Brand/site assets** (logo, favicon, hero) live in the root `public/` dir and are served from site root, e.g. `/brand/Hero-Image-2.webp`.
 - Do not reference images with relative `./` paths in Markdown.
 
@@ -158,11 +160,11 @@ Follow these to stay consistent with existing pages.
 
 ## Checklist: adding a new doc page
 
-1. Create the Markdown file under `guide/` (e.g. `guide/section/new-feature.md`).
-2. Add a `rewrites` entry in `.vitepress/config.mts` mapping the source path to a globally-unique flat slug (e.g. `'guide/section/new-feature.md': 'new-feature.md'` → `/new-feature`).
+1. Create the Markdown file under `docs/` (e.g. `docs/section/new-feature.md`).
+2. Add a `rewrites` entry in `.vitepress/config.mts` mapping the source path to a globally-unique flat slug (e.g. `'docs/section/new-feature.md': 'new-feature.md'` → `/new-feature`).
 3. Add its entry to `guideGroups` in `.vitepress/config.mts` using the flat link (e.g. `link: '/new-feature'`).
-4. If it is a section landing page, name it `index.md`, map it to the section slug (e.g. `'guide/section/index.md': 'section.md'`), and place it first in its group.
-5. Put any screenshots in `guide/public/section/new-feature/` and reference them via `/guide/public/...` (image paths are not rewritten).
+4. If it is a section landing page, name it `index.md`, map it to the section slug (e.g. `'docs/section/index.md': 'section.md'`), and place it first in its group.
+5. Put any screenshots in `docs/public/section/new-feature/` and reference them via `/docs/public/...` (image paths are not rewritten).
 6. Label any Pro-only features with **(Pro)** in the heading and the sidebar entry.
 7. Run `npm run featured:generate` and commit the new `public/images/featured/<slug>.png`.
 8. Run `npm run docs:build` to verify no broken links before committing.

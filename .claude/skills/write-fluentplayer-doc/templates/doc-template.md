@@ -13,7 +13,7 @@
 - <Step or point one>
 - <Step or point two>
 
-![<Alt text>](/guide/public/<category>/<slug>/<image-file>.webp)
+![<Alt text>](/docs/public/<category>/<slug>/<image-file>.webp)
 
 ### <Optional Sub-topic>
 
@@ -22,17 +22,18 @@
 ## <Second Major Section>
 
 <Cross-reference other docs with the FULL link form only:>
-See [Descriptive Text](/guide/<category>/<other-slug>) for more.
+See [Descriptive Text](/<other-slug>) for more.
 
 <!--
 SCAFFOLD NOTES — delete before saving:
 - Line 1 must be the bare H1 (optional frontmatter title/description may precede it).
-- Cross-links: /guide/<category>/<slug> ONLY. Never relative (./slug, ../slug).
-- Images: store at guide/public/<category>/<slug>/, reference as /guide/public/<category>/<slug>/<file>.webp
+- Cross-links: flat /<slug> ONLY (the category folder is not in the URL). Never relative (./slug, ../slug).
+- Images: store at docs/public/<category>/<slug>/, reference as /docs/public/<category>/<slug>/<file>.webp
 - Pro-only features: add "(Pro)" after the name and include the ::: info Pro feature callout.
   Remove the callout block entirely if this is NOT a Pro-only page.
-- No support boilerplate. For help, link [How to Get Support](/guide/support).
+- No support boilerplate. For help, link [How to Get Support](/support).
 - Bold has no inner spaces: **term** not ** term **.
 - VitePress callouts: ::: tip, ::: info, ::: warning, ::: danger as appropriate.
-- After writing, add the page to guideGroups in .vitepress/config.mts and run npm run docs:build.
+- After writing, add a rewrites entry ('docs/<category>/<slug>.md': '<slug>.md') and a guideGroups entry
+  in .vitepress/config.mts, run npm run featured:generate, then npm run docs:build.
 -->

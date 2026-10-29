@@ -4,7 +4,7 @@
  * shared on Slack / X / Facebook / LinkedIn previews with that page's own title
  * instead of one generic hero image for the whole site.
  *
- * Sources: `index.md` (home) and `guide/**\/*.md` (excluding `guide/public/`).
+ * Sources: `index.md` (home) and `docs/**\/*.md` (excluding `docs/public/`).
  * Output:  public/images/featured/<flat-slug>.png
  *          (root `public/` is the VitePress publicDir, so these are served at
  *          `<base>images/featured/<flat-slug>.png`.)
@@ -15,8 +15,8 @@
  *
  * That slug cannot be derived from the file path here: this repo's `rewrites` is
  * a hand-written map with seven deliberate disambiguations that no convention
- * reproduces (`guide/block-editor/branding.md` -> `branding-appearance`,
- * `guide/index.md` -> `introduction`, `guide/settings/integrations.md` ->
+ * reproduces (`docs/block-editor/branding.md` -> `branding-appearance`,
+ * `docs/index.md` -> `introduction`, `docs/settings/integrations.md` ->
  * `email-integrations`, and so on — see CLAUDE.md). So this script PARSES that
  * map straight out of config.mts rather than duplicating it, and fails loudly if
  * a page is missing from it.
@@ -34,7 +34,7 @@ import sharp from 'sharp'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = join(__dirname, '..')
-const GUIDE_DIR = join(REPO_ROOT, 'guide')
+const GUIDE_DIR = join(REPO_ROOT, 'docs')
 const GUIDE_PUBLIC_DIR = join(GUIDE_DIR, 'public')
 const OUTPUT_DIR = join(REPO_ROOT, 'public', 'images', 'featured')
 const CONFIG_PATH = join(REPO_ROOT, '.vitepress', 'config.mts')
@@ -294,7 +294,7 @@ async function main() {
     }
 
     const slug = target.replace(/\.md$/, '')
-    const parts = relPath.split('/') // guide/[<section>/]<file>.md
+    const parts = relPath.split('/') // docs/[<section>/]<file>.md
     const section = parts.length > 2 ? titleCaseSlug(parts[1]) : 'Documentation'
 
     jobs.push({

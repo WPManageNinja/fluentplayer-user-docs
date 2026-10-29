@@ -2,7 +2,7 @@
 name: write-fluentplayer-doc
 description: 'Create a NEW Fluent Player end-user documentation page in this VitePress site, correctly placed in a category folder and wired into the sidebar (guideGroups in config.mts). Optionally converts pasted HTML or raw markdown source into a clean doc. USE FOR: add a doc, write a new doc page, create a doc for X, document this feature, write a guide for, new documentation page, turn this content into a doc, import this article. DO NOT USE FOR: editing an existing page (use edit-fluentplayer-doc), renaming/moving/deleting a page or reordering the sidebar (use restructure-fluentplayer-docs), site-wide quality checks (use audit-fluentplayer-docs), or non-docs markdown like README.md / CLAUDE.md.'
 license: MIT
-compatibility: 'VitePress repo using guide/<category>/<slug>.md layout. Sidebar defined in .vitepress/config.mts (guideGroups const). Images stored at guide/public/<category>/<slug>/. Requires Node + npm to run docs:build.'
+compatibility: 'VitePress repo using docs/<category>/<slug>.md layout. Sidebar defined in .vitepress/config.mts (guideGroups const). Images stored at docs/public/<category>/<slug>/. Requires Node + npm to run docs:build.'
 metadata:
   project: fluentplayer-user-docs
   canonical-rules: CLAUDE.md
@@ -20,19 +20,21 @@ the *procedure*.
 ## Agent Behavior Rules
 
 1. **DO** complete Phase 1 setup and confirm the summary table before writing anything.
-2. **DO** place the file at `guide/<category>/<slug>.md` inside an existing category folder
-   (or directly under `guide/` only for top-level items like Get Started pages).
+2. **DO** place the file at `docs/<category>/<slug>.md` inside an existing category folder
+   (or directly under `docs/` only for top-level items like Get Started pages).
 3. **DO** make line 1 a bare `# H1` (optional frontmatter may precede it) that matches
    the sidebar `text` in intent (H1 is the full title; sidebar text is the short label).
-4. **DO** use the FULL cross-link form `/guide/<category>/<slug>` everywhere — no relative links.
-5. **DO** add the page to `guideGroups` in `.vitepress/config.mts` (mandatory — VitePress does
-   NOT auto-discover pages). Keep valid TypeScript.
+4. **DO** link with the root-relative FLAT slug `/<slug>` everywhere (e.g. `/general-settings`) —
+   the category folder is NOT part of the URL. No relative links, no `/guide/...` or `/docs/...`.
+5. **DO** add a `rewrites` entry `'docs/<category>/<slug>.md': '<slug>.md'` AND the page to
+   `guideGroups` in `.vitepress/config.mts` (both mandatory — VitePress does NOT auto-discover
+   pages, and without the rewrite the page is served at the wrong URL). Keep valid TypeScript.
 6. **DO** end on a green `npm run docs:build`.
-7. **DO NOT** create a `.md` file directly under `guide/` unless it is a top-level Get Started
+7. **DO NOT** create a `.md` file directly under `docs/` unless it is a top-level Get Started
    item (check with the user first).
-8. **DO NOT** use relative links (`./slug`, `../slug`) — always full `/guide/...` paths.
+8. **DO NOT** use relative links (`./slug`, `../slug`) — always root-relative flat slugs (`/<slug>`).
 9. **DO NOT** leave support boilerplate ("contact our support team", "reach out … for
-   assistance"); link `[How to Get Support](/guide/support)` instead.
+   assistance"); link `[How to Get Support](/support)` instead.
 10. **DO NOT** invent a new category folder or a new sidebar group without asking the user.
 11. **DO NOT** write `** term **` (inner-whitespace bold) — use `**term**`.
 12. **DO** Use VitePress callouts for Pro features:
@@ -52,21 +54,22 @@ Record as `TITLE`.
 ### 1.2 Category folder
 > **Which category does it belong in?**
 
-List the existing category folders under `guide/` (run `ls guide/`). The user picks one.
+List the existing category folders under `docs/` (run `ls docs/`). The user picks one.
 If none fits, STOP and ask whether to add a new category folder — do not invent one silently.
 Record as `CATEGORY`.
 
 Current categories: `videos-and-media`, `display-embed`, `block-editor`, `engagement`,
 `customize`, `playlists`, `settings`, `integrations`, `troubleshooting`.
-Top-level (flat under `guide/`): Get Started pages, `changelog`, `support`.
+Top-level (flat under `docs/`): Get Started pages, `changelog`, `support`.
 
 ### 1.3 Slug (with uniqueness check)
 Derive `SLUG` = kebab-case of `TITLE`. Verify it is globally unique:
 ```
-find guide -name '<slug>.md' | grep -v '/public/'
+find docs -name '<slug>.md' | grep -v '/public/'
 ```
-Must return nothing. If it collides, ask the user for a distinct slug. Record as `SLUG`.
-The file will be `guide/<CATEGORY>/<SLUG>.md`.
+Must return nothing, and `<slug>.md` must not already be a value in the `rewrites` map in
+`.vitepress/config.mts` (served slugs are global). If it collides, ask the user for a distinct slug. Record as `SLUG`.
+The file will be `docs/<CATEGORY>/<SLUG>.md`.
 
 ### 1.4 Sidebar group + position
 Read `.vitepress/config.mts` and show the existing `guideGroups` group names. Ask:
@@ -100,8 +103,8 @@ Summarize and wait for confirmation before proceeding:
 | ---------------- | ----- |
 | Title            | ...   |
 | Category folder  | ...   |
-| File path        | guide/<category>/<slug>.md |
-| Public URL       | /guide/<category>/<slug> |
+| File path        | docs/<category>/<slug>.md |
+| Public URL       | /<slug> |
 | Sidebar group    | ...   |
 | Position         | after "<item>" |
 | Pro-only         | yes / no |
@@ -121,7 +124,7 @@ Summarize and wait for confirmation before proceeding:
 ## Phase 3: Procedure
 
 ```
-1. SCAFFOLD - Copy templates/doc-template.md to guide/<CATEGORY>/<SLUG>.md.
+1. SCAFFOLD - Copy templates/doc-template.md to docs/<CATEGORY>/<SLUG>.md.
               Replace the H1 with TITLE; delete the scaffold-notes comment.
 
 2. BODY     - Write the page per CLAUDE.md style:
@@ -129,23 +132,28 @@ Summarize and wait for confirmation before proceeding:
               - If IS_PRO: add ::: info Pro feature callout immediately after intro
               - ## sections, ### sub-topics
               - Bullets for steps; numbered lists only for strict sequences
-              - Cross-links as /guide/<category>/<slug> ONLY
+              - Cross-links as flat /<slug> ONLY (anchors: /<slug>#heading-id)
               - VitePress callouts: ::: tip, ::: info, ::: warning as needed
               - NO support boilerplate
               If SOURCE_CONTENT: convert it (strip wrapper HTML, fix bold whitespace,
-              rewrite any absolute fluentplayer.com/guide/... links to /guide/...).
+              rewrite any absolute fluentplayer.com/guide/... links to the flat /<slug>).
 
-3. IMAGES   - If HAS_IMAGES: mkdir -p guide/public/<CATEGORY>/<SLUG>/,
+3. IMAGES   - If HAS_IMAGES: mkdir -p docs/public/<CATEGORY>/<SLUG>/,
               copy/convert source files in (prefer .webp), and reference each as:
-              ![alt text](/guide/public/<CATEGORY>/<SLUG>/<file>.webp)
+              ![alt text](/docs/public/<CATEGORY>/<SLUG>/<file>.webp)
 
-4. SIDEBAR  - Insert into guideGroups in .vitepress/config.mts under SIDEBAR_GROUP
+4. REWRITE - Add to the rewrites map in .vitepress/config.mts (keep it alphabetical):
+              'docs/<CATEGORY>/<SLUG>.md': '<SLUG>.md',
+
+5. SIDEBAR  - Insert into guideGroups in .vitepress/config.mts under SIDEBAR_GROUP
               at SIDEBAR_POSITION:
-              { text: '<TITLE>', link: '/guide/<CATEGORY>/<SLUG>' }
-              (If IS_PRO: { text: '<TITLE> (Pro)', link: '/guide/<CATEGORY>/<SLUG>' })
+              { text: '<TITLE>', link: '/<SLUG>' }
+              (If IS_PRO: { text: '<TITLE> (Pro)', link: '/<SLUG>' })
               Keep valid TypeScript. Preserve collapsed: false on nested groups.
 
-5. BUILD    - Run: npm run docs:build
+6. CARD     - Run: npm run featured:generate  (creates public/images/featured/<SLUG>.png)
+
+7. BUILD    - Run: npm run docs:build
               Fix any dead-link / parse warnings, then rebuild until clean.
 ```
 
@@ -154,10 +162,11 @@ Summarize and wait for confirmation before proceeding:
 ## Phase 4: Verify & Report
 
 Report:
-- File created: `guide/<CATEGORY>/<SLUG>.md`
-- Public URL: `/guide/<CATEGORY>/<SLUG>`
+- File created: `docs/<CATEGORY>/<SLUG>.md`
+- Public URL: `/<SLUG>`
+- `rewrites` entry added
 - Sidebar entry added under **<SIDEBAR_GROUP>**
-- Image folder: `guide/public/<CATEGORY>/<SLUG>/` (N files) or "none"
+- Image folder: `docs/public/<CATEGORY>/<SLUG>/` (N files) or "none"
 - Build: pass / fail (+ any warnings fixed)
 
 ---
@@ -166,13 +175,14 @@ Report:
 
 ### Paths & formats
 ```
-File:        guide/<category>/<slug>.md
-URL:         /guide/<category>/<slug>           (category stays in the URL)
-Cross-link:  [Text](/guide/<category>/<slug>)   (NEVER relative)
-Image file:  guide/public/<category>/<slug>/<name>.webp
-Image ref:   ![Alt](/guide/public/<category>/<slug>/<name>.webp)
-Sidebar:     { text: '<Title>', link: '/guide/<category>/<slug>' }
-Pro sidebar: { text: '<Title> (Pro)', link: '/guide/<category>/<slug>' }
+File:        docs/<category>/<slug>.md
+URL:         /<slug>                            (flat — category is NOT in the URL)
+Rewrite:     'docs/<category>/<slug>.md': '<slug>.md'
+Cross-link:  [Text](/<slug>)                    (NEVER relative)
+Image file:  docs/public/<category>/<slug>/<name>.webp
+Image ref:   ![Alt](/docs/public/<category>/<slug>/<name>.webp)
+Sidebar:     { text: '<Title>', link: '/<slug>' }
+Pro sidebar: { text: '<Title> (Pro)', link: '/<slug>' }
 Bold:        **term**                           (no inner spaces)
 Pro callout: ::: info Pro feature
              <Feature> is available only with **FluentPlayer Pro**. Install and activate
@@ -183,13 +193,14 @@ Build:       npm run docs:build
 
 ### Locate / check
 ```
-Slug unique?   find guide -name '<slug>.md' | grep -v '/public/'   (must be empty)
+Slug unique?   find docs -name '<slug>.md' | grep -v '/public/'   (must be empty)
 Group names:   grep 'text:' .vitepress/config.mts | grep -v link
 ```
 
 ### Key Principles
-1. **Category folder always** — never a bare file under `guide/` unless it's a top-level item.
-2. **Sidebar is mandatory** — a doc not in `guideGroups` is invisible.
-3. **Full path links** — `/guide/<category>/<slug>`, never relative, never category-less.
-4. **No rewrite magic** — the URL is exactly the path you put in the link.
+1. **Category folder always** — never a bare file under `docs/` unless it's a top-level item.
+2. **Sidebar + rewrite are mandatory** — a doc not in `guideGroups` is invisible; one not in
+   `rewrites` is served at the wrong URL.
+3. **Flat links** — `/<slug>`, never relative, never `/guide/...` or `/docs/...`.
+4. **Rewrites decide the URL** — the served URL is the `rewrites` value, not the file path.
 5. **Green build or it's not done.**
