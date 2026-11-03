@@ -71,22 +71,54 @@ In your WordPress dashboard, navigate to **FluentPlayer → Settings → Storage
 Under the BunnyCDN Storage section:
 
 - Toggle **Enable Integration** to turn it on.
-- Enter your **Storage User Name** (your BunnyCDN storage username).
-- Enter the **Storage Hostname** (e.g., storage.bunnycdn.com).
-- Enter your **Storage Password / API Key**.
-- Provide your **CDN Hostname (Pull Zone)** for video delivery.
-- (Optional) Enter your **CDN Security Key** if **token authentication** is enabled.
+- Under **Storage Zones**, click **Add Storage Zone** and fill in the details of your zone:
+  - **Storage Zone Name**: your BunnyCDN storage zone name (the **Username** from the FTP & API Access tab).
+  - **Storage Password**: your storage password / API key (the **Password** from the FTP & API Access tab).
+  - **Storage Hostname**: the storage hostname. It is filled in with `storage.bunnycdn.com`. Change it only if your region uses a different one.
+  - **CDN Hostname (Pull Zone)**: the pull zone hostname used for video delivery.
+  - **CDN Security Key** (optional): your token authentication key, if **token authentication** is enabled.
 
 Finally, click **Save Settings** to connect FluentPlayer with your BunnyCDN storage.
 
 ![Configure FluentPlayer Settings](/docs/public/integrations/bunnycdn-storage/Bunny-cdn-storage-8.webp)
+
+#### Add More Than One Storage Zone
+
+You can connect several Bunny storage zones and use them side by side. For each extra zone:
+
+1. Create the zone (and its pull zone, if you want one) in Bunny, as shown in step 1.
+2. In the BunnyCDN Storage settings, click **Add Storage Zone** again.
+3. In the **Add Storage Zone** window, enter that zone's **Storage Zone Name**, **Storage Password**, and other details, then click **Add**.
+
+![The Add Storage Zone window](/docs/public/integrations/bunnycdn-storage/add-storage-zone-form-13.webp)
+
+4. The new zone appears in the **Storage Zones** list. Click **Save Settings**.
+
+Each media item remembers which zone its file came from. Your existing videos keep playing from their own zone after you add more.
+
+::: tip Already connected before?
+If you set up Bunny Storage on an earlier version, your existing credentials appear as the first entry in **Storage Zones**. You don't need to enter them again.
+:::
+
+::: tip No pull zone?
+**CDN Hostname (Pull Zone)** and **CDN Security Key** are optional. A zone without a pull zone still works: FluentPlayer serves its files through your WordPress site instead.
+:::
+
+![Two zones in the Storage Zones list](/docs/public/integrations/bunnycdn-storage/storage-zones-14.webp)
+
+
 
 ### 3. Adding a Video from Bunny Storage
 
 - Navigate to **FluentPlayer → Media** and click **Add Media**.
 - Choose **Bunny Storage** as the source type.
 
+
+- If you connected more than one storage zone, pick the zone you want to browse from the **Select Storage Zone** dropdown at the top of the file browser. The dropdown only appears when you have two or more zones.
+
 ![Adding Video](/docs/public/integrations/bunnycdn-storage/bunnycdn-storage-9.webp)
+
+<!-- SCREENSHOT: /docs/public/integrations/bunnycdn-storage/select-storage-zone-15.webp — Bunny Storage file browser with the Select Storage Zone dropdown open, listing two zones -->
 
 #### Managing Files from WordPress
 
