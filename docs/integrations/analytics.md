@@ -44,6 +44,17 @@ The dashboard serves as your central command center for video data. It is divide
 
 ![Analytics Dasboard](/docs/public/integrations/analytics/analytics-dashboard-2.webp)
 
+### Lightbox metrics
+
+Click a video in **Top Media** to open its own analytics page. If that video was opened in a [lightbox](/lightbox) during the selected date range, the page shows two extra cards next to **Views**, **Total Watch Time**, **Average Watch Time**, and **Completion Rate**:
+
+ * **Lightbox Opens:** How many times a lightbox opened this video, with the change from the previous period.
+ * **Watched from Lightbox:** The percentage of those opens where the viewer watched the video for a few seconds inside the lightbox.
+
+Both the Lightbox block and the `[fluentplayer_modal]` shortcode are counted. Plays from the editor's lightbox preview are not.
+
+![The Lightbox Opens and Watched from Lightbox cards on a video's analytics page](/docs/public/integrations/analytics/lightbox-metrics-3.webp)
+
 ## Per-user Insights
 
 For **logged-in viewers**, FluentPlayer can show per-user detail beyond the aggregate dashboard. From **Top Viewers**, you can drill into an individual viewer to see their activity — the videos they watched, how far they got, and their retention. This is useful for course creators who want to see exactly how a specific student is progressing.

@@ -9,6 +9,7 @@ FluentPlayer connects with powerful external services to expand your video capab
 Professional hosting ensures faster loading and a better viewer experience by offloading video delivery from your server.
 
 - **[Vimeo](/vimeo)** (Free) — Play any Vimeo-hosted video by pasting its URL. No account connection or embed code needed — just copy the video link from Vimeo and add it as a source.
+- **[Dailymotion](/dailymotion)** (Free) — Play Dailymotion videos in FluentPlayer by pasting the video URL.
 - **[Mux](/mux)** — HLS streaming, direct uploads, live streams, optional signed URLs, webhooks, AI captions, and optional Mux Data analytics. In the block editor you can pick **Mux** or **Mux Live** as the source; credentials are configured under **Settings → Storage**.
 - **[Gumlet](/gumlet)** — Professional video hosting with adaptive HLS streaming, automatic optimization, and secure signed-URL playback. Browse your Gumlet collections and select assets directly in FluentPlayer.
 - **[BunnyCDN Stream](/bunnycdn-stream)** — Use Bunny's video streaming platform. Upload and manage videos in Bunny libraries, then select them in FluentPlayer.
@@ -35,6 +36,14 @@ Track how your audience interacts with your content to make data driven decision
 
 - **[FluentCommunity](/fluent-community)** — Embed FluentPlayer media inside FluentCommunity posts and portal content.
 - **[Smartcodes and personalization](/smartcodes-personalization)** — Use FluentCRM merge tags (for example the contact first-name tag) in supported player text when FluentCRM is installed.
+
+### E-commerce
+
+- **[FluentCart](/fluentcart)** — Show FluentCart product and subscription offers on the player with the FluentCart layer. Product grids, subscription grids, and coupons are Pro.
+
+### AI Agents
+
+- **[AI / MCP](/mcp)** — Let AI assistants work with your FluentPlayer media through an MCP server or WebMCP. Pro adds tools for analytics, playlists, captions, and more.
 
 ### Learning Management
 
