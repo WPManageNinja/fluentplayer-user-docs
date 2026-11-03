@@ -26,6 +26,7 @@ Click the **+ Add Layer** button to open the **Manage Layers** window. From here
  * **Hotspot:** Shows options for creating interactive regions on the video.
  * **Ad:** Displays available **Ad** placement layers.
  * **Shortcode:** Filters for layers that can render any WordPress **Shortcode**.
+ * **FluentCart:** Shows the **[FluentCart](/fluentcart)** layer for product and subscription offers.
 
 ## Layer Types and Features
 
@@ -40,9 +41,10 @@ Each layer type serves a specific marketing or educational purpose:
  * **Hotspot (Pro):** Add clickable icons or dots to the video. You can customize the icon, add a tooltip, and set a target URL for when the viewer clicks the hotspot.
  * **Ad (Pro):** Place a timed advertisement over your video. You can upload an image, set a "Skip" timer, and customize the color of the skip progress bar.
  * **Shortcode (Pro):** Display the output of any WordPress shortcode as a layer. This is highly flexible for adding custom content from other plugins.
+ * **[FluentCart](/fluentcart) (Free):** Sell from inside your video. Show a FluentCart product or subscription card with **Buy Now** and **Add to Cart** buttons. With Pro, you can also show a **Products Grid (Pro)**, a **Subscriptions Grid (Pro)**, or a **Coupon (Pro)** with a one-click copy button. Needs the FluentCart plugin to be active.
 
 ::: info Free vs Pro
-Only the **Fluent Forms** and **Email Capture** layers are available in the free plugin. The **CTA**, **Hotspot**, **Ad**, and **Shortcode** layers require **FluentPlayer Pro**.
+The **Fluent Forms**, **Email Capture**, and **FluentCart** layers are available in the free plugin. The **CTA**, **Hotspot**, **Ad**, and **Shortcode** layers require **FluentPlayer Pro**, as do the FluentCart grid and coupon options.
 :::
 
 ![Layer Types](/docs/public/block-editor/interactive-layers/manage-layer-2.webp)

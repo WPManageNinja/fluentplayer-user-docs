@@ -15,8 +15,8 @@ Open the media in the [Player Editor](/block-editor), then in the **Block** tab 
 
 Autoplay Mode is a single choice, so picking Muted Preview replaces **Autoplay with Sound** or **Muted Autoplay** rather than stacking with them.
 
-::: warning Not available in playlists
-Muted Preview applies to a single embedded player. It is ignored inside a [playlist (Pro)](/playlists), and the option is hidden when you edit a playlist item.
+::: info Using Muted Preview in playlists
+Muted Preview also works in [playlists (Pro)](/playlists), but you turn it on for the playlist, not for each video. Open the playlist and set **Start Mode** to **Muted Preview**. The playlist opens on one video looping silently, then plays it with sound when a visitor clicks. See [Playlist Settings](/playlist-settings). The option stays hidden when you edit a single video inside a playlist.
 :::
 
 ## Customizing the preview

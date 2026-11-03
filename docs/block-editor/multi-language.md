@@ -34,6 +34,7 @@ Once the feature is enabled, you can link and manage your translated video versi
 
  * **Automatic Switching:** When a person visits your site, **FluentPlayer** detects their browser language. If you have a matching video version, it can load that version automatically.
  * **Manual Choice:** **Viewers** can also use the language selector in the player controls to pick their preferred language at any time.
+ * **In Playlists (Pro):** The language selector also works inside a [playlist](/playlists). It shows the languages of whichever video is playing, so each video keeps its own language versions.
 
 
 >[!Note]
