@@ -10,7 +10,9 @@ To customize these features, go to **Fluent Player → Playlists** in your WordP
 
  * **Playlist Title:** Enter or update the title of your playlist for internal organization and display.
 
- * **Autoplay:** Toggle this switch on to start playing the first video automatically when the page loads.
+ * **Start Mode:** Choose how the playlist starts. **Off** waits for a click. **Autoplay** starts playing the first video automatically when the page loads. **Muted Preview** is explained below.
+
+ * **Muted Preview:** Choose **Muted Preview** in **Start Mode** to open the playlist on one video looping silently, like a moving thumbnail. When a visitor clicks, it plays with sound. You can pick which video the preview uses; if you don't, it uses the first video. Picking another video in the playlist plays it with sound. See [Muted Preview](/muted-preview) for the preview options. A Grid playlist that opens videos in a popup has no player to preview on, so it plays normally.
 
  * **Continuous Play:** Enable this to automatically advance to and play the next video in the queue as soon as the current video ends.
 
@@ -20,9 +22,17 @@ To customize these features, go to **Fluent Player → Playlists** in your WordP
 
  * **Show Playlist Menu Toggle:** Show or hide a dedicated menu button in the player chrome that lets viewers collapse or expand the playlist list area.
 
- * **Preset Source:** Choose a specific media item's preset from the dropdown menu. The playlist will copy that video's look, controls, player skin, and brand color. If left unselected, it defaults to your global site presets.
+ * **Allow sharing & embedding:** Adds a **Share** button to the playlist player, so viewers can copy an embed code or share the playlist on social media. It applies on the live page, not in the editor preview. See [Sharing & Embedding](/sharing-and-embedding#sharing-and-embedding-playlists-pro).
+
+ * **Preset Source:** Choose a specific media item's preset from the dropdown menu. The playlist will copy that video's look, controls, player skin, and brand color. If left unselected, it uses the first video's preset.
+
+   The player look is set once for the whole playlist, so the colors from the chosen video's preset (skin, controls, brand and play-button colors) apply to every video in it.
  
  * **Overlay Mode:** Choose between **Per Video** (each video displays its own email captures, CTAs, and action bars as it plays) or **Selected Video** (applies one chosen video's interactive layers across the entire playlist duration).
+
+::: tip Language versions in playlists
+If a video in the playlist has [language versions](/multiple-languages), the player's language selector works for each video. As viewers move through the playlist, the selector updates to show the languages of the video that is playing.
+:::
 
 ::: info Playlist visibility
 Like media items, a playlist can be **public** or **private**. Private playlists are not accessible on their [dedicated playlist URL](/embed-playlist) to visitors without edit permission, the same way [media visibility](/public-vs-private) works.
