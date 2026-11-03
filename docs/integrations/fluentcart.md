@@ -134,7 +134,7 @@ If you turn off **Allow Skip** and leave **Layer Duration** at 0, the offer stay
 In the **Appearance** section:
 
 - **Color** — the **Background** and **Text** color of the offer card.
-- **Buy Now Button**, **Add to Cart Button**, and **Copy Button** — set each button's **Background**, **Text**, **Border**, **Border Width**, **Padding**, and **Border Radius**.
+- **Buy Now Button**, **Add to Cart Button**, and **Copy Button** set each button's **Background**, **Text**, **Border**, **Border Width**, **Padding**, and **Border Radius**.
 
 Untouched buttons match FluentCart's own button style.
 

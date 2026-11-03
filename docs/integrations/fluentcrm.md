@@ -8,7 +8,7 @@ Once they are talking to each other, FluentPlayer can tell FluentCRM what your v
 The FluentCRM integration is **free**. It turns on by itself as soon as both plugins are installed.
 :::
 
-## What You Can Do with FluentCRM and FluentPlayer
+## What You Can Do
 
 - **Log watch activity on a contact's profile** — see that a specific person started, reached 25/50/75%, or finished a specific video, with the time they watched.
 - **Log layer interactions** — record when a viewer sees, completes, or skips any [interactive layer](/interactive-layers): a CTA, an ad, a form, or an [email capture overlay](/email-capture).
@@ -16,7 +16,7 @@ The FluentCRM integration is **free**. It turns on by itself as soon as both plu
 - **Capture emails into FluentCRM** — new subscribers from an email capture overlay land in the lists and tags you choose.
 - **Personalize what's on screen** — show a viewer's own name inside overlays and titles with [Smartcodes](/smartcodes-personalization).
 
-## Before You Begin
+## Requirements
 
 Make sure the following are in place:
 
@@ -24,7 +24,7 @@ Make sure the following are in place:
 - **FluentCRM** is installed and active on the same site.
 - You have at least one media item in **FluentPlayer → Media** that you want to track.
 
-## Step 1: Open the FluentCRM Integration Settings
+## Step 1: Open the Settings
 
 Go to **FluentPlayer → Settings → Integrations**.
 
@@ -36,7 +36,7 @@ FluentCRM appears in the list with an **Enabled** badge — this confirms Fluent
 If FluentCRM does not appear here at all, the plugin is not active. Activate it in **WordPress → Plugins**, then reload this page.
 :::
 
-## Step 2: Choose What Gets Logged to the Contact Timeline
+## Step 2: Choose What to Log
 
 The FluentCRM settings screen has two parts: **Automation Triggers** at the top, and **Contact Timeline** below it.
 
@@ -66,7 +66,7 @@ Once the toggle is on, these options appear:
 
 Click **Save Settings** in the top-right corner when you are done.
 
-## Step 3: Turn On Event Tracking in FluentCRM
+## Step 3: Turn On Event Tracking
 
 FluentPlayer is now sending activity, but FluentCRM needs one setting enabled on its own side before it will display it. Without this step the contact timeline stays empty.
 
@@ -82,7 +82,7 @@ The badge next to the module changes to **Enabled**.
 This is the step people miss. If nothing is showing up on your contacts, come back to **FluentCRM → Addons** and check that the Event Tracking Module is enabled.
 :::
 
-## Step 4: See the Activity on a Contact
+## Step 4: View Contact Activity
 
 Open **FluentCRM → Contacts** and click any contact who has watched one of your tracked videos. In the **Additional Information** panel on the right, you will find an **Event Tracking** section listing what they did, newest first.
 
@@ -94,7 +94,7 @@ Each entry gives you the full picture at a glance:
 - **How much they actually watched** — for example, *~4 min of 5 min watched · 90% threshold · #438*, where `#438` is the media ID.
 - **The event key and timestamp** — for example, `fp_media_completed` recorded at `2026-08-12 16:06:46`.
 
-## Step 5: Build an Automation from Watch Behavior
+## Step 5: Build an Automation
 
 The timeline tells you what happened. Automations let you *do* something about it — send an email, apply a tag, move someone to another list.
 
@@ -124,6 +124,32 @@ Use this when the *amount watched* is what matters — a thank-you email after s
 | **Target Media** | The video(s) this automation listens to. **Leave it empty to run for any media.** |
 | **Watch Milestone** | Which point starts the automation: Started, Reached 25%, Reached 50%, Reached 75%, or Completed. |
 | **Completion Threshold** | Only applies to **Completed**. Sets how much of the video counts as finished (70–100%). |
+
+### Target by media tags (Pro)
+
+With **FluentPlayer Pro**, you can target videos by their [media tags](/media-tags) instead of picking them one by one. A **Target by** option appears above **Target Media**:
+
+- **Media** — pick specific videos in **Target Media**, as described above.
+- **Media tags** — pick one or more tags in **Media Tags**. Every video with those tags is targeted, including videos you tag later.
+
+When you choose **Media tags**, a **Match** option decides how several tags combine:
+
+- **Any of the selected tags** — a video counts if it has at least one of the tags.
+- **All of the selected tags** — a video counts only if it has every tag.
+
+**Match** only matters when you select 2 or more tags.
+
+![Target by Media tags with two tags selected and the Match options](/docs/public/integrations/fluentcrm/milestone-tag-targeting-9.webp)
+
+The same **Target by** option is available when you use **Media Milestone Reached** as a goal in your automation.
+
+::: tip Tag once, automate everywhere
+Tag targeting is handy for a course or series. Tag every lesson `course-1`, then build one automation for that tag. New lessons you tag later are included automatically.
+:::
+
+::: warning If Pro is turned off
+A tag-based automation needs Pro to run. If Pro is deactivated, the automation runs for no media until Pro is active again, or until you set **Target by** back to **Media**.
+:::
 
 ### Who can enter
 
@@ -166,13 +192,13 @@ These work exactly as described for the milestone trigger above — the only dif
 Because a layer interaction is usually a deliberate action, **Create as pending** is often the right choice here — the viewer is added as a pending contact and receives a double opt-in email, which is the safer route where explicit consent is required, such as under GDPR.
 :::
 
-## Capturing Emails into FluentCRM
+## Capturing Emails
 
 Watch activity is only half of the integration. FluentPlayer can also collect email addresses mid-video and send them straight to FluentCRM as new contacts, with the lists and tags you choose.
 
 That is handled by the [email capture overlay](/email-capture), with FluentCRM selected as the [email provider](/email-providers). Every submission is saved in two places: under **FluentPlayer → Analytics → Emails**, and as a contact in **FluentCRM → Contacts**.
 
-## Personalizing Your Video with FluentCRM Data
+## Personalizing Videos
 
 With FluentCRM connected, you can pull contact details into your overlays, titles, and timed content using smartcodes — for example <code v-pre>{{contact.first_name}}</code> to greet a viewer by name. See [Smartcodes and Personalization](/smartcodes-personalization) for the full list.
 
