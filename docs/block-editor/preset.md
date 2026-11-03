@@ -51,6 +51,24 @@ The following controls are available for your custom preset:
 
 ![Player Controls](/docs/public/block-editor/preset/player-control-2.webp)
 
+### Floating Mini-Player for YouTube and Vimeo
+
+YouTube and Vimeo videos can't use the browser's own picture-in-picture window. For these videos, the **Picture In Picture** button floats the player into a mini-player instead, so viewers can keep watching while they scroll and read the rest of the page.
+
+- Viewers click the **Picture in Picture** button in the control bar. The player moves to the bottom-right corner of the screen as a small floating window.
+- To put it back, they click the **×** in the corner of the mini-player, or click the **Picture in Picture** button again.
+- The space where the player sat stays reserved, so the page doesn't jump while the video floats.
+
+The mini-player is part of the free version and needs no setup. It appears whenever the **Picture In Picture** control is turned on in the preset. The built-in **Default**, **Modern**, and **Standard** presets have it on. **Simple**, **Floating**, and **Minimal** have it off.
+
+::: info 
+The floating mini-player is only for single videos. It isn't offered on videos inside a [playlist](/playlists). Other video sources, such as files from your Media Library, keep using the browser's standard picture-in-picture window.
+:::
+
+
+![The Picture In Picture control in the preset settings](/docs/public/block-editor/preset/picture-in-picture-4.webp)
+
+
 ## Built-In Presets
 
 FluentPlayer ships with **seven** built-in presets (six free; the **Ambient** preset requires Pro):
