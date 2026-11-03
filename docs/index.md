@@ -27,17 +27,29 @@ FluentPlayer comes in two versions: **FluentPlayer** (free) and **FluentPlayer P
 | Elementor Playlist Widget | — | Yes |
 | Divi 5 Module (player) | Yes | Yes |
 | Divi 5 Playlist Module | — | Yes |
+| Bricks element (media) | Yes | Yes |
+| Bricks playlist element | — | Yes |
 | Player presets (6 built in: Default, Modern, Simple, Standard, Floating, Minimal) | Yes | Yes |
 | Ambient preset | — | Yes |
 | Subtitles & captions (HLS auto-play) | Yes | Yes |
 | Upload your own subtitle tracks (.vtt/.srt) | — | Yes |
 | Import captions from YouTube or Vimeo | — | Yes |
 | Vimeo playback (privacy mode, quality, speed, chapter import) | Yes | Yes |
+| Dailymotion videos | Yes | Yes |
+| Floating mini-player for YouTube and Vimeo | Yes | Yes |
 | Chapters (in-player menu button) | Yes | Yes |
 | Chapter scroll strip below the player | — | Yes |
 | Lightbox embed — open a video in a popup | — | Yes |
+| Lightbox block — open media from a button, link, or thumbnail | — | Yes |
+| Video clips with shareable clip links | — | Yes |
+| Share menu and embed code for videos | Yes | Yes |
+| Limit which websites can embed your videos | — | Yes |
+| Share and embed playlists | — | Yes |
 | Single Playback — pause other players when one starts | Yes | Yes |
 | Email capture with FluentCRM | Yes | Yes |
+| FluentCRM media tag targeting | — | Yes |
+| FluentCart layer — product and subscription offers on the player | Yes | Yes |
+| FluentCart product grids, subscription grids, and coupons | — | Yes |
 | Text & button overlays | — | Yes |
 | CTA overlay | — | Yes |
 | Block-level custom CSS classes and HTML anchor | Yes | Yes |
@@ -61,6 +73,11 @@ FluentPlayer comes in two versions: **FluentPlayer** (free) and **FluentPlayer P
 | Editor role can author media, presets, layers, and playlists | Yes | Yes |
 | Presto Player migration (settings, media) | Yes | Yes |
 | Presto Player migration (presets, playlists, analytics, email submissions) | — | Yes |
+| All-in-One Video Gallery import (videos and audio) | Yes | Yes |
+| All-in-One Video Gallery import of video tags | — | Yes |
+| Duplicate media and playlists | — | Yes |
+| MCP server and WebMCP for AI agents | Yes | Yes |
+| Pro MCP tools (analytics, playlists, captions, and more) | — | Yes |
 
 The **free version** handles everything you need for embedding and customizing single videos. The **Pro version** adds playlists, Mux and Bunny integrations, analytics, timed content, and more email providers.
 
@@ -71,7 +88,7 @@ The **free version** handles everything you need for embedding and customizing s
 - **Playlists (Pro)** — Group videos into playlists with Standard and Grid layouts.
 - **Presets** — Save and reuse player configurations so every video looks consistent.
 - **Overlays** — Add email capture forms, calls-to-action, and action bars that appear while the video plays.
-- **Embed anywhere** — Use the `[fluentplayer]` shortcode, the Gutenberg block, the Elementor widget, or the Divi 5 module (playlist widgets are Pro).
+- **Embed anywhere** — Use the `[fluentplayer]` shortcode, the Gutenberg block, the Elementor widget, the Divi 5 module, or the Bricks element (playlist widgets are Pro).
 - **Analytics** — Track plays, watch time, and viewer behavior with built-in analytics or Google Analytics (both Pro).
 
 ## How It Works (the Big Picture)

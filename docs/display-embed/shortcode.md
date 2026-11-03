@@ -28,6 +28,14 @@ FluentPlayer writes the shortcode for you.
 
 ![Find your Shortcode](/docs/public/display-embed/shortcode/find-your-shortcode.webp)
 
+### Copy it from the media editor
+
+If you already have the media item open, you can copy the shortcode without going back to the list. Click the **Shortcode** button in the toolbar above the player (its tooltip reads **Copy shortcode**). FluentPlayer copies `[fluentplayer id="…"]` with your media ID and shows **Shortcode copied to clipboard!**.
+
+The button appears once the media item has been saved, and only in the dedicated editor under **FluentPlayer → Media**.
+
+![Copy the shortcode from the media editor toolbar](/docs/public/display-embed/shortcode/copy-shortcode-toolbar-3.webp)
+
 ## Which form do you need?
 
 The `id` is **optional**. The shortcode will render a player as soon as it can work out which video to play — from a saved media item, or from a URL you hand it directly.
