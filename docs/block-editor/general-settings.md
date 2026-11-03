@@ -32,6 +32,10 @@ Control the shape of your video player to match your content.
  * **Original:** Matches the native dimensions of your video file.
  * **Presets:** Choose from common ratios like Wide (16:9), Standard (4:3), Square (1:1), or Classic (2:3).
 
+::: info How "Original" sizes the player
+With **Original**, the player takes the shape of the video itself, so a vertical or square video is no longer boxed into a 16:9 frame. For a file in your WordPress Media Library, FluentPlayer knows the size up front. For other videos, the player starts at 16:9 and adjusts as soon as the video loads.
+:::
+
 
 ![Title and Title Overlay](/docs/public/block-editor/general-settings/title-and-title-overlay-1.webp)
 

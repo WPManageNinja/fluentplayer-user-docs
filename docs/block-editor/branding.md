@@ -25,6 +25,10 @@ Once custom branding is enabled, you can add a watermark or brand logo directly 
  * **Logo Width (PX):** Use the slider or input box to precisely adjust the size of your logo.
  * **Logo Position:** Choose exactly where the logo appears on the player: **Top Left, Top Right, Bottom Left, or Bottom Right.**
 
+::: info Audio players
+The logo also shows on audio players. There, it always appears in the top-right corner at a smaller size, whatever **Logo Position** you pick.
+:::
+
 ### Color Customization
 
 You can fine tune the player's colors to create a cohesive look for your content.

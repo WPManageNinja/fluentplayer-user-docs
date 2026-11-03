@@ -18,6 +18,7 @@ When you go to **FluentPlayer → Media → Add Media**, you enter a focused, fu
  * **Single Purpose:** This screen is designed only for configuring your video.
  * **Locked Layout:** You won't see options for paragraphs or columns here—just the FluentPlayer block and its settings.
  * **Organization:** All your player options live in the **Block** and **Media** tabs in the right sidebar.
+ * **Quick Shortcode Copy:** After the media is saved, click **Shortcode** in the toolbar above the player (tooltip: **Copy shortcode**) to copy its `[fluentplayer id="…"]` shortcode. See [Embed with Shortcode](/shortcode).
 
 ### 2. Standard Posts or Pages
 
