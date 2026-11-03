@@ -5,7 +5,7 @@ description: "Play Vimeo-hosted videos in FluentPlayer by copying the video URL 
 
 # Vimeo
 
-**Vimeo** is a popular, ad-free video hosting platform used for portfolios, courses, and professional content. FluentPlayer treats Vimeo as a first-class video source, so you can display any Vimeo video inside your own player, wrapped in your FluentPlayer styling and options — no embed code required.
+**Vimeo** is a popular, ad-free video hosting platform used for portfolios, courses, and professional content. FluentPlayer treats Vimeo as a first-class video source, so you can display any Vimeo video inside your own player, wrapped in your FluentPlayer styling and options, no embed code required.
 
 Playing a Vimeo video is simple: **copy the video URL from your Vimeo account, then paste it into the Vimeo URL field in FluentPlayer.** This guide walks you through both steps.
 
@@ -34,6 +34,28 @@ You now have a Vimeo URL that looks like `https://vimeo.com/123456789`.
 ::: tip Make sure the video is viewable
 Check the **Privacy** setting in the Share panel. If a video is set to **Private** or restricted, viewers on your site may not be able to play it. Set it to **Public** (or a setting that allows embedding) so everyone can watch.
 :::
+
+### Unlisted Vimeo videos
+
+Unlisted videos play too. Their link has an extra private code after the video ID, for example `https://vimeo.com/123456789/abcdef1234`. Paste the link exactly as Vimeo's **Share** panel gives it to you. FluentPlayer keeps the private code and removes extra parts such as `?share=copy` that would stop the video from playing.
+
+These link forms all work:
+
+| Link form | Example |
+|---|---|
+| Public video | `https://vimeo.com/123456789` |
+| Unlisted video (Share link) | `https://vimeo.com/123456789/abcdef1234` |
+| Unlisted video with extra share parameters | `https://vimeo.com/123456789/abcdef1234?share=copy` |
+| Player link | `https://player.vimeo.com/video/123456789` |
+| Unlisted player link | `https://player.vimeo.com/video/123456789?h=abcdef1234` |
+
+### Domain-restricted Vimeo videos
+
+If you limit a video to specific domains in Vimeo (embed privacy), add your site's domain to the allowed list in Vimeo. FluentPlayer still lets you add the video, even though Vimeo hides its title and thumbnail from FluentPlayer.
+
+In the block editor, the preview shows the message *"Domain-restricted Vimeo can't preview in the editor. It plays on the published page when your site's domain is allowed in Vimeo."* This is expected. Vimeo checks where a video is playing from, and the editor preview doesn't count as your site. Publish or preview the page to see the video play.
+
+![The domain-restricted Vimeo notice in the editor preview](/docs/public/integrations/vimeo/domain-restricted-editor-9.webp)
 
 ## Step 2: Add the Video to FluentPlayer
 
@@ -81,12 +103,14 @@ If you need Vimeo embeds held back entirely until a visitor accepts cookies, [se
 
 ## Quality and Playback Speed
 
-Vimeo videos get the same **Quality** and **Playback Speed** menus as the rest of your media — no setup required, and nothing to switch on.
+Vimeo videos get the same **Quality** and **Playback** (speed) options as the rest of your media, in the player's settings (gear) menu. There's no setup required and nothing to switch on.
+
+![The Playback and Quality options in the player's settings menu](/docs/public/integrations/vimeo/vimeo-quality-speed-11.webp)
 
 Both menus appear only when the video can actually use them:
 
 - The **Quality** menu is hidden when Vimeo only offers a single resolution for that video.
-- The **Playback Speed** menu is hidden when the video does not allow the speed to be changed.
+- The **Playback** speed option is hidden when the video does not allow the speed to be changed.
 
 ::: tip A missing menu is usually not a bug
 If the Quality menu doesn't appear on one particular video, it almost always means Vimeo has only one resolution available for it. FluentPlayer hides the control rather than showing you a menu with nothing useful in it. Check the video in your Vimeo account — a recent upload may still be processing its higher resolutions.
@@ -101,7 +125,7 @@ If you've already added chapters to a video inside Vimeo, you don't need to rety
 
 Your Vimeo chapters are pulled in as regular FluentPlayer chapters, which you can then edit, reorder, or remove like any others. See [Chapters](/chapters) for the full authoring guide.
 
-<!-- TODO: screenshot — go to FluentPlayer → Media, open a Vimeo-sourced media → Block tab → Chapters panel; capture the "Import from Vimeo" button -->
+![The Import from Vimeo button in the Chapters panel](/docs/public/integrations/vimeo/vimeo-import-chapters-10.webp)
 
 ::: warning "No chapters found"
 If you see *"No chapters found on this Vimeo video yet"*, start the preview player and let it load, then click **Import from Vimeo** again. The chapter data arrives with the video, so it isn't available until the preview has loaded.
@@ -120,6 +144,14 @@ Captions you've already uploaded to Vimeo can be imported as FluentPlayer subtit
 
 The imported tracks become normal subtitle entries — you can rename, restyle, or delete them, and viewers pick them from the captions menu exactly like a track you uploaded yourself.
 
+Caption import works with any Vimeo plan. You don't need a Vimeo Enterprise account, as long as the video can be embedded.
+
+If you import a track that is already on the media, FluentPlayer skips it instead of adding a second copy. Running the import again is safe.
+
+::: tip "Vimeo did not share the captions for this video"
+Vimeo keeps captions private when the video is private or limited to specific domains. Make the video embeddable, or [upload the caption file](/subtitles) yourself.
+:::
+
 ::: info Pro feature
 Importing Vimeo captions requires **FluentPlayer Pro**. Playing a Vimeo video, and its built-in captions, works in the free version. See [Subtitles & Captions](/subtitles) for every way to add subtitles.
 :::
@@ -130,10 +162,4 @@ The Vimeo Subtitle Import panel carries a **BETA** label. It works, but treat it
 
 There is a limit on how many tracks you can import in one go. If you have more caption tracks than that, import them in two passes.
 
-## Rest of the Setup
 
-Everything else works exactly like any other FluentPlayer media. Once the Vimeo video is added, you can:
-
-- Customize the player with a [preset](/preset) and [branding options](/branding-appearance).
-- Embed it with a [shortcode](/shortcode) or the [Gutenberg block](/block).
-- Add [chapters](/chapters), [subtitles](/block-subtitles), and engagement features like the [email capture overlay](/email-capture).
