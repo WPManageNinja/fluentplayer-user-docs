@@ -53,6 +53,10 @@ On the same **R2 Object Storage** page, click **Create bucket**.
 
 ![Creating a new R2 bucket](/docs/public/integrations/cloudflare/r2-create-bucket-2.webp)
 
+::: info EU and FedRAMP buckets
+If your data must stay in the European Union, or you need a FedRAMP bucket, you can create the bucket under a **jurisdiction** in Cloudflare instead of using the automatic location. FluentPlayer supports these buckets. Just remember which jurisdiction you picked, because you'll select the same one in [Step 5](#step-5-connect-r2-to-fluentplayer).
+:::
+
 ### Step 3: Enable Public Access
 
 Your videos need a public URL so viewers can play them. Open your new bucket and switch to the **Settings** tab, then find the **Public Development URL** section and click **Enable**.
@@ -108,6 +112,7 @@ Fill in the form with the details you collected from Cloudflare:
 
 - Toggle **Enable Integration** to turn it on.
 - **Cloudflare Account ID** — the Account ID from Step 1.
+- **Bucket Jurisdiction** — leave this on **Default** unless your bucket was created under a jurisdiction. Pick **European Union (EU)** or **FedRAMP** to match it (see below).
 - **Cloudflare Access Key** — the Access Key ID from your R2 API token.
 - **Cloudflare Secret Key** — the Secret Access Key from your R2 API token (stored encrypted).
 - **Cloudflare Bucket Name** — the name of the bucket you created (for example, `fluentplayer`).
@@ -117,6 +122,18 @@ Fill in the form with the details you collected from Cloudflare:
 Click **Test Connection** to confirm the credentials work, then click **Save Settings**.
 
 ![The FluentPlayer Cloudflare R2 configuration form](/docs/public/integrations/cloudflare/fluentplayer-r2-config-11.webp)
+
+#### Which Bucket Jurisdiction should you pick?
+
+A bucket created under a jurisdiction only connects when FluentPlayer uses the matching setting. To check yours, open the bucket in Cloudflare, go to its **Settings** tab, and look at the **S3 API** line:
+
+| The S3 API address looks like | Pick |
+|---|---|
+| `https://<account-id>.r2.cloudflarestorage.com` | **Default** |
+| `https://<account-id>.eu.r2.cloudflarestorage.com` | **European Union (EU)** |
+| `https://<account-id>.fedramp.r2.cloudflarestorage.com` | **FedRAMP** |
+
+![The Bucket Jurisdiction dropdown with Default, European Union (EU) and FedRAMP](/docs/public/integrations/cloudflare/r2-bucket-jurisdiction-13.webp)
 
 ## Option 2: Cloudflare Stream
 
@@ -161,10 +178,12 @@ See [Video Sources](/video-sources) for how Cloudflare fits alongside every othe
 | Problem | Solution |
 |---------|----------|
 | **Test Connection fails** | Double-check the Account ID, Access Key, and Secret Key for stray spaces. For R2, confirm the API token uses **Object Read & Write** and is applied to the correct bucket. |
+| **Test Connection fails for an EU or FedRAMP bucket** | The **Bucket Jurisdiction** must match the bucket. Check the bucket's **S3 API** line in Cloudflare and pick **European Union (EU)** or **FedRAMP** to match. A jurisdiction bucket will not connect on **Default**. |
 | **Video won't play (R2)** | Make sure the bucket's **Public Development URL** is enabled (Step 3), and that **Cloudflare Bucket Public URL** in FluentPlayer matches it exactly. |
 | **"Access denied" or missing files** | Verify the **Bucket Name** is spelled exactly as in Cloudflare, and that any **Bucket Sub-Folder** value matches where your files actually live. |
 | **Stream connection rejected** | Confirm your API Token has **Stream Read + Edit** permissions and belongs to the same account as the Account ID. |
 | **A long video stops partway through** | Playback tokens are issued for a set lifetime. FluentPlayer now matches the token's lifetime to the length of the video, so a two-hour video no longer receives a token that expires before the end. If you still see this, update FluentPlayer and clear any page cache so old tokens aren't served from cache. |
+| **Private video stopped playing on a cached page** | A page cache can keep serving a playback link after it has expired. Since version 1.5.0, the player notices the expired link and fetches a fresh one by itself, so the video plays without you clearing the cache. If it still fails, update FluentPlayer and clear your page cache once. |
 | **Pages with private Stream videos load very slowly** | This is the signature of a misconfigured Stream connection: FluentPlayer had to retry the provider for every private video on the page. Open **Settings → Storage**, run **Test Connection** for Cloudflare Stream, and fix the credentials. Recent versions fail fast instead of stalling the page, but the underlying connection still needs fixing for the videos to play. |
 
 
