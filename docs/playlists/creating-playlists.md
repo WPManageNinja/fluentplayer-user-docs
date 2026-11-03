@@ -60,3 +60,16 @@ You can locate your playlist ID under **FluentPlayer → Playlists** or by check
 If you need to modify a playlist later, go to **FluentPlayer → Playlists**, click the playlist to open it, and make your changes. Any added, removed, or reordered videos update immediately on every live page where that playlist is embedded.
 
 ![Creating Playlist](/docs/public/playlists/creating-playlists/creating-playlist-5.webp)
+
+## Duplicating a Playlist (Pro)
+
+To build a new playlist from an existing one, copy it instead of starting over.
+
+1. Go to **FluentPlayer → Playlists**.
+2. Open the actions menu on the playlist's row and click **Duplicate**.
+
+![Duplicate in the playlist row actions menu](/docs/public/playlists/creating-playlists/duplicate-playlist-7.webp)
+
+A message confirms the copy, and it appears at the top of the list. The copy is named after the original with **(Copy)** at the end and is saved as a **Draft**. It keeps the same videos, layout, settings and password as the original. The videos themselves are not copied: both playlists use the same media items.
+
+Edit the copy, then publish it when it is ready.
