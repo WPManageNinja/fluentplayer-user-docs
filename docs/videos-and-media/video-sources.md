@@ -22,7 +22,7 @@ Upload a video file (like an MP4) to your WordPress Media Library and select it 
 
 ### 2. URL (Auto-detect)
 
-Paste any supported video URL and FluentPlayer automatically identifies the provider YouTube, Vimeo, Mux, Bunny, Gumlet, Cloudflare, or a direct file link. If the URL points to a file already in your WordPress Media Library, FluentPlayer resolves it to that library attachment instead of treating it as an external link.
+Paste any supported video URL and FluentPlayer automatically identifies the provider YouTube, Vimeo, Dailymotion, Mux, Bunny, Gumlet, Cloudflare, or a direct file link. If the URL points to a file already in your WordPress Media Library, FluentPlayer resolves it to that library attachment instead of treating it as an external link.
 
 **Best for:** Quickly adding media without manually selecting a source type; migrating existing URLs in bulk; same-site WordPress uploads you want to reference by URL.
 
@@ -70,7 +70,25 @@ See the full guide: [Vimeo](/vimeo).
 
 ![Vimeo Source](/docs/public/videos-and-media/video-sources/vimeo-3.webp)
 
-### 5. Mux and Mux Live (Pro)
+### 5. Dailymotion
+
+Paste a **Dailymotion** video URL. FluentPlayer plays it with your own controls, branding, and layers on top.
+
+**Example:**
+
+```
+https://www.dailymotion.com/video/x8abc12
+```
+
+Short `dai.ly` links and Dailymotion embed links work too. If you have a Dailymotion Pro account, you can optionally add your own **Dailymotion Player ID** at **Settings → Dailymotion**.
+
+**Best for:** Videos you already publish on Dailymotion.
+
+See the full guide: [Dailymotion](/dailymotion).
+
+![The Dailymotion URL field](/docs/public/videos-and-media/video-sources/dailymotion-7.webp)
+
+### 6. Mux and Mux Live (Pro)
 
 In the block editor, **Mux** and **Mux Live** appear as separate source buttons: **Mux** for standard on demand assets and **Mux Live** for live streams. 
 
@@ -84,7 +102,7 @@ See the full guide: [Mux (Pro)](/mux).
 
 ![Mux](/docs/public/videos-and-media/video-sources/mux-4.webp)
 
-### 6. Audio
+### 7. Audio
 
 FluentPlayer supports audio playback for content such as podcasts, music, interviews, and voice recordings. Select Audio as the media type, and the player will automatically switch to an audio-optimized layout.
 
@@ -94,7 +112,7 @@ You can upload audio files, such as **MP3** or **M4A**, use an external audio UR
 
 ![Audio](/docs/public/videos-and-media/video-sources/audio-5.webp)
 
-### 7. Bunny (Pro)
+### 8. Bunny (Pro)
 
 With FluentPlayer Pro, you can connect to **Bunny** for professional video hosting. There are two options:
 
@@ -105,7 +123,7 @@ With FluentPlayer Pro, you can connect to **Bunny** for professional video hosti
 
 ![BunnyCDN](/docs/public/videos-and-media/video-sources/bunny-cdn-6.webp)
 
-### 8. Cloudflare R2 and Stream (Pro)
+### 9. Cloudflare R2 and Stream (Pro)
 
 With FluentPlayer Pro, you can host and deliver your videos on **Cloudflare**. There are two options:
 
@@ -116,7 +134,7 @@ Connect either one under **Settings → Storage**, then choose it as the source 
 
 **Best for:** Sites that already use Cloudflare, want zero egress costs (R2), or want hands-off encoding and adaptive streaming (Stream).
 
-### 9. Gumlet (Pro)
+### 10. Gumlet (Pro)
 
 With FluentPlayer Pro, you can host and deliver videos through **Gumlet**, a professional platform that automatically optimizes and encodes your uploads for adaptive HLS streaming. Connect your account under **Settings → Storage**, then browse your Gumlet collections and pick an asset when adding media. Enable **signed URLs** for secure, hotlink-protected playback of premium content.
 
@@ -128,7 +146,7 @@ See the full guide: [Gumlet (Pro)](/gumlet).
 
 1. Go to **FluentPlayer → Media** and create or edit a media item.
 2. In the media editor, look for the **Source** section.
-3. Choose the source type. Free sources — **WordPress**, **YouTube**, **Vimeo**, **Audio** — appear in the main list. Pro sources — **URL** (auto-detect), **Mux**, **Gumlet**, **Bunny**, and **Cloudflare** — appear here when connected. Unconnected Pro providers collapse behind a **More sources** toggle with a direct link to their setup page in Settings.
+3. Choose the source type. Free sources — **WordPress**, **YouTube**, **Vimeo**, **Dailymotion**, **Audio** — appear in the main list. Pro sources — **URL** (auto-detect), **Mux**, **Gumlet**, **Bunny**, and **Cloudflare** — appear here when connected. Unconnected Pro providers collapse behind a **More sources** toggle with a direct link to their setup page in Settings.
 4. Enter the **URL** or select the file.
 5. **Save** the media.
 
