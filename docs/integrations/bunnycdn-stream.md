@@ -24,11 +24,39 @@ To start using Bunny Stream, you first need to link your account to FluentPlayer
  ![Configure](/docs/public/integrations/bunnycdn-stream/configure-2.webp)
 
 - Toggle the **Enable Integration** switch to the ON position.
+- Under **Connection Method**, keep **Account API Key (discovers your libraries automatically)** selected.
 - Enter your **API Key** (found in your Bunny dashboard under Account → API Keys).
 - Click the **Test Connection** button to verify the integration.
 - Click **Save Settings**.
 
  ![Integrate BunnyCDN](/docs/public/integrations/bunnycdn-stream/integration-03.webp)
+
+## Connect with Per-Library Credentials
+
+The account API key gives FluentPlayer access to **every** Stream library on your Bunny account. If you only want this site to reach some of your libraries, connect each library with its own credentials instead. You don't need the account API key at all.
+
+1. Open the **BunnyCDN Stream** settings as described above.
+2. Under **Connection Method**, choose **Per-library credentials (no account key needed)**.
+3. Click **Add Library**. In the **Add Library** window, fill in the details for your first library, then click **Add**:
+   - **Library ID**: the ID of your Stream library (for example, `123456`).
+   - **Library Name** (optional): a name you'll recognize when you pick a library later. If you leave it empty, FluentPlayer shows the library ID instead.
+   - **Library API Key**: the API key of this library.
+   - **CDN Hostname**: the library's CDN hostname (for example, `vz-xxxxxxxx-xxx.b-cdn.net`).
+   - **Token Authentication Key**: the library's token authentication key.
+
+![The Add Library window](/docs/public/integrations/bunnycdn-stream/add-library-form-5.webp)
+
+4. The library appears in the **Libraries** list. To add another one, click **Add Library** again and repeat step 3. Add as many libraries as you need.
+5. Click **Test Connection**. FluentPlayer checks each library separately.
+6. Click **Save Settings**.
+
+You'll find all of these values in your Bunny dashboard under **Stream → your library → API** and **Security**.
+
+![Two libraries connected with per-library credentials](/docs/public/integrations/bunnycdn-stream/per-library-credentials-6.webp)
+
+::: tip
+If the test fails with *"Could not connect to library …"*, the message names the library that failed. Check that library's **Library ID** and **Library API Key** for typos or extra spaces.
+:::
 
 ## Using Bunny Stream as a Video Source
 
