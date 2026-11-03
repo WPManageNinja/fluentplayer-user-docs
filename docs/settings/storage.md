@@ -65,9 +65,12 @@ After connecting, Bunny Stream works for both video and audio:
 
 1. Go to **FluentPlayer → Settings → Storage**.
 2. Click **Configure** on the **Bunny Storage** row.
-3. Enter your **storage zone name** and **API key**.
-4. Click **Test connection** to verify.
-5. **Save** the settings.
+3. Under **Storage Zones**, click **Add Storage Zone**, then enter your **Storage Zone Name** and **Storage Password** (plus the optional pull zone details).
+4. To connect another zone, click **Add Storage Zone** again and repeat step 3.
+5. Click **Test connection** to verify.
+6. **Save** the settings.
+
+When you have more than one zone, choose the one to browse from the **Select Storage Zone** dropdown in the Bunny Storage file browser.
 
 ### Using Bunny Storage as a Source
 

@@ -22,6 +22,7 @@ The **Settings** screen is the global control panel for FluentPlayer. All site-w
 | [**Analytics**](/analytics) | Built-in FluentPlayer Analytics and Google Analytics (two separate tabs) |
 | [**Export**](/export) | Download captured email submissions as CSV, JSON, or ODS |
 | [**Migration**](/presto-player-migration) | Import your global settings and media from Presto Player (presets, playlists, analytics, and email submissions with Pro) |
+| [**AI / MCP**](/mcp) | Let AI assistants work with your media through an MCP server |
 | [**Licensing (Pro)**](/licensing) | Activate your Pro license and enable automatic updates |
 
 ::: info Pro vs Free
