@@ -1,6 +1,6 @@
 # Branding Settings
 
-The **Branding** section under **Fluent Player → Settings** sets the global visual identity for every player on your site — brand color, control bar color, and logo. These defaults apply to all embeds unless a [preset](/presets) or per media [Branding panel](/branding-appearance) override takes priority.
+The **Branding** section under **Fluent Player → Settings** sets the global visual identity for every player on your site, brand color, control bar color, and logo. These defaults apply to all embeds unless a [preset](/presets) or per media [Branding panel](/branding-appearance) override takes priority.
 
 To open it, go to **Fluent Player → Settings** and select **Branding** from the inner settings sidebar. See [Settings Overview](/settings) for how global settings relate to presets and per media overrides.
 
@@ -52,6 +52,12 @@ Use a PNG with a transparent background so the logo blends naturally over video 
 | **Bottom right** | Keeps the logo away from left aligned titles |
 
 Pick the corner that avoids covering the most important part of your video frame.
+
+## Logo on Audio Players
+
+Your logo watermark also shows on audio players, not just video. On an audio player, the logo always sits in the **top-right** corner, whatever **Logo Position** you choose, and it is shown smaller so it fits the compact audio layout. The **Logo Link** works the same way as on video.
+
+![The branding logo in the top-right corner of an audio player](/docs/public/settings/branding/logo-on-audio-player-2.webp)
 
 ## Global vs Per Media Branding
 
