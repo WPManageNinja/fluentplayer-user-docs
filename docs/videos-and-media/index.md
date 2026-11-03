@@ -30,6 +30,26 @@ From this screen, you can:
 
 ![Video Library](/docs/public/videos-and-media/index/video-media-1.webp)
 
+## Duplicating Media (Pro)
+
+With FluentPlayer Pro, you can copy a media item instead of setting up a similar video from scratch.
+
+1. Go to **FluentPlayer → Media**.
+2. Open the actions menu on the media's row and click **Duplicate**.
+
+![Duplicate in the media row actions menu](/docs/public/videos-and-media/index/duplicate-media-2.webp)
+
+A message confirms the copy, and it appears at the top of the list. The copy:
+
+- is named after the original with **(Copy)** at the end, for example "Product Tour (Copy)";
+- is saved as a **Draft**, so it is not live until you publish it;
+- keeps all the original's settings, including its source, preset, tags, featured image and password;
+- gets its own copies of the subtitle files and hover-preview thumbnails FluentPlayer made for the original, so deleting one media never removes the other's files.
+
+::: info
+A Mux video can't be duplicated while Mux is still processing it. Try again once it is ready.
+:::
+
 ## Topics in This Section
 
 | Topic | What you will learn |

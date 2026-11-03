@@ -42,10 +42,12 @@ FluentPlayer lets you add videos by simply pasting a media URL. The plugin autom
 
 You can:
 
-- Paste a **YouTube, Vimeo, Mux, Bunny, Gumlet**, or **Cloudflare** video URL, and FluentPlayer will automatically select the correct provider.
+- Paste a **YouTube, Vimeo, Dailymotion, Mux, Bunny, Gumlet**, or **Cloudflare** video URL, and FluentPlayer will automatically select the correct provider.
 - Paste the URL of a video already uploaded to your **WordPress Media Library**, and FluentPlayer will automatically link it to the existing media file without requiring another upload.
 
 ![Adding Media URL](/docs/public/videos-and-media/adding-videos/adding-media-url-5.webp)
+
+When you add a YouTube, Vimeo, or [Dailymotion](/dailymotion) video this way, FluentPlayer keeps the video's **title**, its **provider**, and its **poster** image. You don't need to retype the title or upload a thumbnail, and you can still change either one later.
 
 ## Editing an Existing Media Item
 
@@ -94,4 +96,20 @@ Every media item has a unique **ID** (a number). You need this ID when embedding
 Here is how to find it:
 - In the **Media list**, the ID is shown next to each item (for example, `#42`).
 - When **editing** a media, check the URL in your browser. It contains `post=<ID>` (for example, `post=42`).
+
+## Copying the Shortcode from the Media Editor
+
+You don't have to leave the editor to grab the shortcode. Once a media item has been saved, a **Shortcode** button appears in the toolbar above the player, next to **Replace Media**.
+
+1. Open the media item in **FluentPlayer → Media**.
+2. Click **Shortcode** in the block toolbar. Its tooltip reads **Copy shortcode**.
+3. You'll see **Shortcode copied to clipboard!**. Paste it into any post, page, or widget.
+
+The copied shortcode looks like `[fluentplayer id="42"]`. See [Embed with Shortcode](/shortcode) for everything you can add to it.
+
+![The Shortcode button in the media editor toolbar](/docs/public/videos-and-media/adding-videos/copy-shortcode-toolbar-6.webp)
+
+::: tip
+The button only shows in the dedicated media editor under **FluentPlayer → Media**, not when you add the FluentPlayer block to a regular post or page.
+:::
 
