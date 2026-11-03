@@ -53,6 +53,10 @@ All linked language sources are sent to the player when the page loads, so switc
 
 Because the mappings are already loaded with the player, there is no separate API call or login required to change languages.
 
+### In Playlists (Pro)
+
+The language selector also works inside a [playlist](/playlists). Each video in the playlist keeps its own language versions, and the selector shows the languages of whichever video is playing.
+
 ::: tip
 Automatic switching is great for international audiences, but make sure you actually create the alternate media items and set up the mappings. Without mappings, the primary video always plays.
 :::

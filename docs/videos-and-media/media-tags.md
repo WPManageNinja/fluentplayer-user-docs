@@ -48,6 +48,10 @@ The **FluentPlayer → Media** list shows a **Tags** column so you can see each 
 
 ![Filtering the media list by tag in the Filters panel](/docs/public/videos-and-media/media-tags/media-tags-4.webp)
 
+## Use tags in FluentCRM automations
+
+If you use FluentCRM, you can start an automation when a viewer reaches a watch milestone on any video with a given tag. New videos you tag later are included automatically. See [Target by media tags](/fluentcrm#target-by-media-tags-pro).
+
 ## Next: build a playlist from a tag
 
 Once your media is tagged, you can create a playlist that pulls in every video with a given tag automatically. See [Tag-Based Playlists](/tag-based-playlists).
