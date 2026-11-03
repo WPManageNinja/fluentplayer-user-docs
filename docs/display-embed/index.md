@@ -15,14 +15,16 @@ Once you have created your video in **FluentPlayer**, you need to display it on 
 | **[Gutenberg Block](/block)** | Block editor users who prefer a visual, drag and drop workflow. | Beginner |
 | **[Elementor Widget](/elementor)** | Elementor page builder users drag the FluentPlayer widget into any section. | Beginner |
 | **[Divi 5 Module](/divi)** | Divi 5 builder users add the FluentPlayer module to any row or section. | Beginner |
+| **[Bricks Element](/bricks)** | Bricks builder users add the FluentPlayer element to any section. | Beginner |
 | **[Lightbox Embed (Pro)](/lightbox)** | A button or thumbnail that opens the video in a popup, keeping the page clean. | Beginner |
+| **[Sharing & Embedding](/sharing-and-embedding)** | Letting viewers share a video or copy its embed code to show it on another website. | Beginner |
 | **[Dedicated Player URL](/dedicated-player-url)** | Sharing a direct link to the video (in emails, social media, etc.). | Beginner |
 | **[Timestamp Links](/timestamp-links)** | Creating "chapter" links that jump to a specific moment in the video. | Intermediate |
 
 Most users will use the **shortcode**, the **Gutenberg block**, or their page builder's native widget or module. All options produce the same result on the front end the choice comes down to which tool you build pages with.
 
 ::: tip Using another page builder?
-Elementor and Divi 5 have dedicated FluentPlayer widgets. Other builders — including **Breakdance** — work through the shortcode: add a Shortcode element containing `[fluentplayer id="42"]` and the player renders live on the builder canvas. See [Shortcode Embed](/shortcode#using-the-shortcode-in-different-areas).
+Elementor, Divi 5, and Bricks have dedicated FluentPlayer widgets. Other builders — including **Breakdance** — work through the shortcode: add a Shortcode element containing `[fluentplayer id="42"]` and the player renders live on the builder canvas. See [Shortcode Embed](/shortcode#using-the-shortcode-in-different-areas).
 :::
 
 ## Quick Examples
