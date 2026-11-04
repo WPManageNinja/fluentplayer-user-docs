@@ -29,13 +29,14 @@ Turn on **Enable MCP** at the top of the page. Once it is on, FluentPlayer makes
 
 The help text under the switch reads: *"Let AI assistants like Claude, Cursor and VS Code manage your media, presets and analytics. Signed-in users who can manage media connect with an application password."*
 
-![The Enable MCP switch on the AI / MCP settings page](/docs/public/settings/mcp/mcp-settings-1.webp)
-
 ::: tip
 If you ever want to stop every connected AI tool from reaching FluentPlayer, turn **Enable MCP** off. While it is off, the endpoint refuses every request. Your other settings stay unchanged.
 :::
 
 If FluentHub is active, you will also see *"FluentHub is active, so this switch also appears on its MCP page."* with an **Open FluentHub** link. You can turn MCP on or off from either place.
+
+![The Enable MCP switch on the AI / MCP settings page](/docs/public/settings/mcp/mcp-settings-1.webp)
+
 
 ### Allow AI to Make Changes
 
@@ -78,11 +79,13 @@ AI clients sign in to FluentPlayer with a **WordPress application password**, no
 
 4. Click **Copy** next to your new password and keep it somewhere safe.
 
-![The new application password with the Copy button](/docs/public/settings/mcp/application-password-4.webp)
-
 ::: warning
 The password is shown only once. If you lose it, revoke that entry and create a new one.
 :::
+
+![The new application password with the Copy button](/docs/public/settings/mcp/application-password-4.webp)
+
+
 
 ## Step 4: Fill In Your Details
 
