@@ -74,7 +74,7 @@ This setting is **on** by default. Turning it off keeps the Share button and **C
 When someone shares a video's link, FluentPlayer adds the video's title, description and poster image to the page, so the post shows a proper preview. On X, the video can even play inside the post. If you use Yoast SEO, Rank Math or All in One SEO, FluentPlayer leaves these preview tags to your SEO plugin.
 :::
 
-![The Sharing & embedding section in Settings → General](/docs/public/display-embed/sharing-and-embedding/sharing-settings-4.webp)
+![The Sharing & embedding section in Settings → General](/docs/public/display-embed/sharing-and-embedding/sharing-settings-3.webp)
 
 
 
@@ -113,7 +113,7 @@ The list applies to every shared video and every shared playlist on your site. O
 3. Switch on **Allow Sharing & Embedding** — *"Adds a Share button to the player. Viewers can copy its code to show this playlist on other websites. Applies on the live page."*
 4. Save the playlist.
 
-![The playlist Allow Sharing & Embedding toggle switched on](/docs/public/display-embed/sharing-and-embedding/playlist-sharing-5.webp)
+![The playlist Allow Sharing & Embedding toggle switched on](/docs/public/display-embed/sharing-and-embedding/playlist-sharing-4.webp)
 
 The Share menu then works just like it does for a single video. The embed code shows the whole playlist, and the **Show social share links** and **Websites allowed to embed your videos** settings apply to it too. On social media, the playlist's preview uses the poster image of its first video.
 
