@@ -43,7 +43,15 @@ If the browser blocks automatic copying, the player shows the code in a box with
 
 The embed code shows the video in a frame that points to the video's own embed page on your site. It is sized to a maximum width of 640px and keeps the video's shape on any screen.
 
+::: warning Paste it into a Custom HTML block
 The code works on any website that accepts HTML. On a WordPress site, paste it into a **Custom HTML** block.
+
+1. In the block editor, click **+** (or type `/`) where you want the video.
+2. Choose **Custom HTML**.
+3. Paste the embed code into the block, then save or publish the page.
+:::
+
+![Choosing the Custom HTML block in the WordPress block editor](/docs/public/display-embed/sharing-and-embedding/custom-html-block-3.webp)
 
 The video still plays from your site, so your [player settings](/block-editor), branding and visibility rules apply wherever it is embedded. If you later turn off **Allow Sharing & Embedding**, unpublish the video, or make it private, the embedded copies stop playing. They show *"This video can't be embedded."* with a link back to your site instead.
 
@@ -66,7 +74,7 @@ This setting is **on** by default. Turning it off keeps the Share button and **C
 When someone shares a video's link, FluentPlayer adds the video's title, description and poster image to the page, so the post shows a proper preview. On X, the video can even play inside the post. If you use Yoast SEO, Rank Math or All in One SEO, FluentPlayer leaves these preview tags to your SEO plugin.
 :::
 
-![The Sharing & embedding section in Settings → General](/docs/public/display-embed/sharing-and-embedding/sharing-settings-3.webp)
+![The Sharing & embedding section in Settings → General](/docs/public/display-embed/sharing-and-embedding/sharing-settings-4.webp)
 
 
 
@@ -105,7 +113,7 @@ The list applies to every shared video and every shared playlist on your site. O
 3. Switch on **Allow Sharing & Embedding** — *"Adds a Share button to the player. Viewers can copy its code to show this playlist on other websites. Applies on the live page."*
 4. Save the playlist.
 
-![The playlist Allow Sharing & Embedding toggle switched on](/docs/public/display-embed/sharing-and-embedding/playlist-sharing-4.webp)
+![The playlist Allow Sharing & Embedding toggle switched on](/docs/public/display-embed/sharing-and-embedding/playlist-sharing-5.webp)
 
 The Share menu then works just like it does for a single video. The embed code shows the whole playlist, and the **Show social share links** and **Websites allowed to embed your videos** settings apply to it too. On social media, the playlist's preview uses the poster image of its first video.
 
