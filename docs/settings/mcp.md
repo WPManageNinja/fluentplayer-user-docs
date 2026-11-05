@@ -139,11 +139,10 @@ The setup code and where you paste it are different for each client, so follow t
 
 4. **Try an example.** Ask Claude Code something simple, such as *"List my 5 newest Fluent Player media items with their ID, title, provider and shortcode."* Claude Code calls FluentPlayer and replies with your videos.
 
-![Claude Code listing media from FluentPlayer](/docs/public/settings/mcp/claude-code-prompt-9.webp)
-
 ::: tip
 Claude Code adds the server to the folder you ran the command in. Run the command from the folder you usually work in, or add `--scope user` after `claude mcp add` to make it available everywhere.
 :::
+
 
 ### Connecting Claude Desktop
 
