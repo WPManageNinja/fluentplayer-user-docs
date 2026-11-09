@@ -1,6 +1,6 @@
 # FluentCRM
 
-**FluentCRM** is a WordPress-native CRM and email marketing plugin. When FluentPlayer and FluentCRM are both active on the same site, they connect to each other **automatically** — there is no API key to paste and no account to link.
+**FluentCRM** is a WordPress-native CRM and email marketing plugin. When FluentPlayer and FluentCRM are both active on the same site, they connect to each other **automatically**, there is no API key to paste and no account to link.
 
 Once they are talking to each other, FluentPlayer can tell FluentCRM what your viewers actually did with your videos: how much they watched, and whether they acted on any [interactive layer](/interactive-layers) like a CTA, an ad, or a form. FluentCRM can then record that on the contact's profile and use it to start an email automation.
 

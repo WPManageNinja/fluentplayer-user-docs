@@ -171,7 +171,7 @@ On a local test site (for example a `.local` or `.test` address), the Claude Des
 ![The Cursor tab with its mcp.json code](/docs/public/settings/mcp/client-cursor-11.webp)
 
 2. In Cursor, open **Cursor Settings** and go to **Tools & MCP**. Click **New MCP Server**. Cursor opens its `mcp.json` file.
-3. Paste the code and save. If the file already has servers, add the `fluent-player` entry inside the existing `mcpServers` block.
+3. Paste the code and save. If the file already has servers, add the `fluent-player` entry inside the existing `mcpServers` block.a
 4. Back in **Tools & MCP**, turn on **fluent-player** if Cursor asks you to approve it. Its tools are listed underneath.
 
 <!-- SCREENSHOT: /docs/public/settings/mcp/cursor-tools-mcp-22.webp — Cursor Settings → Tools & MCP with fluent-player enabled and its tools listed -->
