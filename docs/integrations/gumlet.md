@@ -87,3 +87,33 @@ Your Gumlet API Key and Signing Secret grant full administrative access to your 
 :::
 
 ![Gumlet Media](/docs/public/integrations/gumlet/gumlet-media-9.webp)
+
+## Use a Gumlet Video in FluentCommunity
+
+To show a Gumlet video as an inline FluentPlayer player in a FluentCommunity post, paste the video's direct **HLS URL** (`.m3u8`). This method does not need the Gumlet connection set up above.
+
+::: warning Don't paste these URLs
+The Gumlet embed URL (`play.gumlet.io/embed/...`) and the FluentPlayer Media share-page URL (`/fluent-player-media/...`) show only as link previews in Community and do not play inline.
+:::
+
+1. In Gumlet, open the video and click **Embed Video**.
+2. In the **Share video** dialog, open **URLs** and copy the **HLS URL** ending in `.m3u8`.
+
+![Gumlet HLS URL](/docs/public/integrations/gumlet/gumlet-hls-url-10.webp)
+
+3. In WordPress, go to **FluentCommunity → Settings → Features & Addons → FluentPlayer → Player Settings**.
+4. Turn on **Enable FluentPlayer** and **Play Embedded Videos With FluentPlayer**, then click **Save Settings**.
+5. Open a Feed or Space and start a new post.
+6. Click **Add Video**, select **Oembed**, paste the HLS URL into **Enter video URL**, and click **Embed**.
+
+![Community Oembed dialog](/docs/public/integrations/gumlet/community-oembed-11.webp)
+
+7. Write your post and click **Post**. The video plays through FluentPlayer in the feed.
+
+![Gumlet video in a Community post](/docs/public/integrations/gumlet/community-post-12.webp)
+
+::: tip
+No HLS URL under **URLs**? Check that the video has finished processing in Gumlet. If it still isn't shown, contact support.
+:::
+
+For other Community settings, see the [FluentCommunity integration guide](/fluent-community).

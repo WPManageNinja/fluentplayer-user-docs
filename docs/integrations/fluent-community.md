@@ -50,7 +50,7 @@ Control how your community members interact with video content:
 
  * **Enable Video Uploads:** **Turn** this toggle **ON** to allow direct file uploads in community posts.
  * **Permissions:** Restrict who can upload videos choose from Admins, Admins and Moderators, or Everyone.
- * **Play Embedded Videos With FluentPlayer:** Turn this **ON** to force external links (like YouTube or Vimeo) to use your custom branded player.
+ * **Play Embedded Videos With FluentPlayer:** Turn this **ON** to force external links (like YouTube or Vimeo) to use your custom branded player. Works with YouTube, Vimeo and direct stream URLs such as HLS (`.m3u8`).
 
 ![Customize FluentPlayer](/docs/public/integrations/fluent-community/customize-fluentplayer-2.webp)
 
@@ -66,9 +66,11 @@ Once permissions are configured, members can easily share video content within t
 
 - Choose your source in the Attach Video popup:
 
-   * **Oembed:** **Paste** a simple URL (e.g., from YouTube or Vimeo).
+   * **Oembed:** **Paste** a simple URL (e.g., from YouTube or Vimeo). For Gumlet, paste the direct HLS URL, not the embed link. See [Gumlet in FluentCommunity](/gumlet#use-a-gumlet-video-in-fluentcommunity).
    * **HTML Code:** Paste an iframe or custom embed code.
    * **Upload Video:** Drag and drop or select a video file from your device.
+![Oembed video URL](/docs/public/integrations/fluent-community/gumlet-oembed-5.webp)
+
 - Click **Embed** or **Upload**.
 - Select your target **Space** and click **Post**.
 
