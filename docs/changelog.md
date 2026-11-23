@@ -43,6 +43,34 @@ _Released on November 23, 2026_
 • Hardens the YouTube bridge page so it only accepts YouTube addresses
 ```
 
+```markdown:no-line-numbers [💎 Pro]
+• Adds video clips with shareable clip links and clip-aware playlists
+• Adds a Lightbox block to open media from a button, link, or thumbnail
+• Adds Duplicate to the media and playlist list actions menu
+• Adds Pro MCP tools for analytics, playlists, captions, and more
+• Adds FluentCart product grids, subscription grids, and coupons
+• Adds sharing and embedding for playlists, plus a list of websites allowed to embed them
+• Adds a Bricks page-builder element for playlists
+• Adds FluentCRM media tag targeting
+• Adds an ids mode and appearance overrides to the playlist shortcode
+• Improves Muted Preview so it now works in playlists
+• Improves the language switcher so it works per item in playlists
+• Improves the lightbox with more shortcode options and lightbox open tracking
+• Improves Bunny with per-library credentials and multiple storage zones
+• Improves Cloudflare R2 with EU and FedRAMP bucket support
+• Improves signed video URLs on cached pages, which now refresh themselves when they expire
+• Improves watch analytics so they are saved on single-page-app navigation
+• Improves the All-in-One Video Gallery import to include video tags
+• Improves video embedding, which is now available in Free — Pro keeps the allowed websites list
+• Fixes a YouTube black screen in playlists inside Divi
+• Fixes several copies of the same playlist on one page not all working
+• Fixes playlist Additional CSS and Preset Source colors not applying correctly
+• Fixes Vimeo caption import for non-Enterprise accounts, and duplicate Vimeo captions
+• Fixes the chapters strip preventing the player from shrinking on mobile
+• Fixes Mux Data analytics not resetting when the video source changes
+• Hardens the LearnDash completion and Cloudflare Stream webhooks
+```
+
 :::
 
 ## FluentPlayer v1.4.1
