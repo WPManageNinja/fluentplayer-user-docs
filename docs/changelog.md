@@ -10,6 +10,22 @@ next: false
 Stay updated with the latest features, improvements, and bug fixes in FluentPlayer. The newest release is listed first. Releases that include Pro-only updates group them under a dedicated **Pro** tab.
 
 
+## FluentPlayer v1.4.1
+
+_Released on November 20, 2026_
+
+::: code-group
+
+```markdown:no-line-numbers [🐞 Bug fixes]
+• Hardens admin and editor REST requests
+• Fixes a YouTube black screen in Divi and fullscreen cropping on wide screens
+• Fixes the FluentCRM integration settings missing their Save button
+• Fixes a typed media title being lost when a direct or S3 URL has no title of its own
+• Fixes the chapters strip forcing the player wider than a mobile screen
+```
+
+:::
+
 ## FluentPlayer v1.4.0
 
 _Released on August 26, 2026_
