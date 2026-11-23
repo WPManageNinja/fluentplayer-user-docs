@@ -39,6 +39,10 @@ If the browser blocks automatic copying, the player shows the code in a box with
 ![The Share menu with Copy embed code and social share icons](/docs/public/display-embed/sharing-and-embedding/share-menu-2.webp)
 
 
+## Sharing Audio
+
+The **Share** button works on audio players as well as video. It appears on the audio **Standard** and **Simple** skins. On narrow audio players, the button moves into the settings menu so the controls still fit.
+
 ## The Embed Code
 
 The embed code shows the video in a frame that points to the video's own embed page on your site. It is sized to a maximum width of 640px and keeps the video's shape on any screen.

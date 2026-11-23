@@ -74,6 +74,16 @@ You'll find it at the bottom of the General panel, just below **Auto Resume Play
 If you use the **Ambient** preset for a decorative background video, consider turning Single Playback off. Otherwise starting any other video on the page will pause your background loop.
 :::
 
+## Default Volume
+
+Set the volume your players start at, so viewers aren't surprised by a video that is too loud or too quiet.
+
+The default volume applies to all your players. Viewers can still change the volume with the volume control in the player. Their own choice then applies to that player.
+
+::: tip
+Videos set to autoplay without sound stay muted. The default volume only sets the starting level once a viewer turns sound on.
+:::
+
 ## Custom CSS (Pro)
 
 A text area for global CSS that applies to every FluentPlayer instance on your site. The UI suggests scoping your rules:

@@ -69,6 +69,14 @@ The floating mini-player is only for single videos. It isn't offered on videos i
 ![The Picture In Picture control in the preset settings](/docs/public/block-editor/preset/picture-in-picture-4.webp)
 
 
+### Floating Audio Mini-Player
+
+Audio players can float too. When a listener scrolls past an audio player, it can stay on screen as a floating mini-player, so the audio keeps playing while they read the rest of the page.
+
+Audio players also have a new **Bottom bar** style. It fixes a slim player bar to the bottom of the screen, like a music app.
+
+Both are part of the free version.
+
 ## Built-In Presets
 
 FluentPlayer ships with **seven** built-in presets (six free; the **Ambient** preset requires Pro):
