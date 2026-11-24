@@ -58,7 +58,7 @@ Set the player to start automatically when the page loads.
  * **No Autoplay:** The video stays still until the user clicks play.
  * **Autoplay with Sound:** The video starts playing with audio enabled (Note: many browsers block this by default).
  * **Muted Autoplay:** The video starts playing silently. This is the most reliable way to use autoplay across all devices.
- * **Muted Preview:** The video loops silently as its own thumbnail, then plays with sound when the viewer clicks. Click **Customize preview** below the dropdown to set the volume, the looped range, and what appears over the preview — see [Muted Preview](/muted-preview). Not applied inside playlists.
+ * **Muted Preview:** The video loops silently as its own thumbnail, then plays with sound when the viewer clicks. Click **Customize preview** below the dropdown to set the volume, the looped range, and what appears over the preview — see [Muted Preview](/muted-preview). In [playlists (Pro)](/playlists), turn it on for the whole playlist instead — see [Playlist Settings](/playlist-settings).
 
 ### 6. Play Inline On Mobile
 

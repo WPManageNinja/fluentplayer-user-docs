@@ -69,13 +69,21 @@ The floating mini-player is only for single videos. It isn't offered on videos i
 ![The Picture In Picture control in the preset settings](/docs/public/block-editor/preset/picture-in-picture-4.webp)
 
 
-### Floating Audio Mini-Player
+### Audio Miniplayer
 
-Audio players can float too. When a listener scrolls past an audio player, it can stay on screen as a floating mini-player, so the audio keeps playing while they read the rest of the page.
+An audio player can stay on screen while your visitor keeps reading. When the player scrolls out of view, a miniplayer keeps the audio controls close by.
 
-Audio players also have a new **Bottom bar** style. It fixes a slim player bar to the bottom of the screen, like a music app.
+To turn it on for an audio player:
 
-Both are part of the free version.
+1. Select the audio player in the block editor.
+2. In the sidebar, open **General Settings** and switch on **Enable Audio Miniplayer**. Its help text reads *"While audio plays, keeps a miniplayer on screen when the player scrolls out of view."*
+3. Choose a **Miniplayer Layout**:
+   - **Floating Card:** a compact player in the corner of the screen. Visitors can drag it to any corner.
+   - **Bottom Bar:** a full-width player fixed to the bottom of the screen.
+
+![The Enable Audio Miniplayer toggle with Bottom Bar selected](/docs/public/block-editor/preset/audio-miniplayer-5.webp)
+
+The setting is off by default. Visitors can turn the miniplayer off with the miniplayer button in the player. This button isn't shown on the **Minimal** skin. The audio miniplayer is part of the free version.
 
 ## Built-In Presets
 
