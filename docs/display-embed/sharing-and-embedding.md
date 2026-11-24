@@ -41,7 +41,11 @@ If the browser blocks automatic copying, the player shows the code in a box with
 
 ## Sharing Audio
 
-The **Share** button works on audio players as well as video. It appears on the audio **Standard** and **Simple** skins. On narrow audio players, the button moves into the settings menu so the controls still fit.
+Sharing works on audio players too. Open the audio item, go to **General Settings**, and switch on **Allow Sharing & Embedding**, the same way as for a video. A **Share** button then appears in the audio player.
+
+The button is available on the audio **Standard** and **Simple** skins. On a narrow audio player, it moves into the settings menu so the controls still fit.
+
+![The Share button in an audio player](/docs/public/display-embed/sharing-and-embedding/audio-share-button-7.webp)
 
 ## The Embed Code
 
