@@ -62,6 +62,17 @@ You can update your videos at any time, and the changes will automatically refle
    - Interactive Layers such as email capture, CTAs, or the action bar.
 4. Click **Update** (or **Publish**) to save your changes.
 
+## Duplicating a Media Item (Pro)
+
+To start a new video from one you already set up, copy it instead of building it again.
+
+1. Go to **FluentPlayer → Media**.
+2. Open the actions menu on the media item's row and click **Duplicate**.
+
+The copy appears in your media list. Open it to change the title, source, or settings, then publish it when it's ready.
+
+![Duplicate in the media row actions menu](/docs/public/videos-and-media/adding-videos/duplicate-media-7.webp)
+
 ## Understanding the Media Editor
 
 The media editor is organized into logical sections to help you find settings quickly:
