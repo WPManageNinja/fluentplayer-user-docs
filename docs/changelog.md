@@ -12,35 +12,42 @@ Stay updated with the latest features, improvements, and bug fixes in FluentPlay
 
 ## FluentPlayer v1.5.0
 
-_Released on November 23, 2026_
+_Released on November 24, 2026_
 
 ::: code-group
 
 ```markdown:no-line-numbers [✨ Newly Added]
+• Adds Dailymotion as a video provider in your players and the block editor
 • Adds a FluentCart layer for selling products and subscriptions inside your videos
 • Adds a share button and embed code for your videos and audio
-• Adds a floating mini-player for YouTube and Vimeo from the Picture in Picture button
-• Adds an MCP server so AI assistants can manage FluentPlayer, with a site colour reader and a match-site-colours prompt
-• Adds WebMCP so visitors' AI browsers can play, seek, and fill in the email form on videos you allow
-• Adds Dailymotion as a video provider in your players and the block editor
+• Adds a floating mini-player for YouTube and Vimeo videos, and for audio players
+• Adds MCP and WebMCP so AI assistants can manage FluentPlayer
 • Adds a Bricks page-builder element for FluentPlayer
-• Adds a floating audio mini-player with a new Bottom bar style
-• Adds a default volume setting for your players
 • Adds an importer for videos and audio from All-in-One Video Gallery
 • Adds a button to copy a media item's shortcode from the editor toolbar
+• Adds a default volume setting for your media
 ```
 
 ```markdown:no-line-numbers [🚀 Improvements]
-• Improves block editor support so domain-restricted Vimeo videos show their title and poster
+• Improves block editor support so domain-restricted Vimeo videos show their title and preview
 • Improves player cleanup on sites that switch pages without reloading
 • Improves accessibility with better screen reader support for admin dropdowns and time fields
 • Improves branding so the logo also shows on audio players
-• Improves audio players with the share button on the Standard and Simple skins, moving into the settings menu on narrow players
 ```
 
 ```markdown:no-line-numbers [🐞 Bug fixes]
-• Hardens the player logo link so it opens safely in a new tab
-• Hardens the YouTube bridge page so it only accepts YouTube addresses
+• Fixes players not working when a cookie consent plugin blocks scripts
+• Fixes a YouTube black screen in Divi and fullscreen cropping on wide screens
+• Fixes players set to "Original" size not matching the video's shape
+• Fixes unlisted Vimeo links from Vimeo's Share button not playing
+• Fixes Vimeo videos showing each caption twice
+• Fixes Additional CSS not changing the player colors
+• Fixes media added by URL losing its title, source, and thumbnail
+• Fixes forms on a fullscreen video becoming unusable when the phone keyboard is open
+• Fixes hidden layers blocking the player controls
+• Fixes a logo without a link jumping the page to the top
+• Fixes the FluentCRM integration settings missing their Save button
+• Fixes the wider block editor sidebar applying to blocks other than Fluent Player blocks
 ```
 
 ```markdown:no-line-numbers [💎 Pro]
@@ -65,7 +72,7 @@ _Released on November 23, 2026_
 • Fixes a YouTube black screen in playlists inside Divi
 • Fixes several copies of the same playlist on one page not all working
 • Fixes playlist Additional CSS and Preset Source colors not applying correctly
-• Fixes Vimeo caption import for non-Enterprise accounts, and duplicate Vimeo captions
+• Fixes Vimeo caption import for non-Enterprise accounts
 • Fixes the chapters strip preventing the player from shrinking on mobile
 • Fixes Mux Data analytics not resetting when the video source changes
 • Hardens the LearnDash completion and Cloudflare Stream webhooks
