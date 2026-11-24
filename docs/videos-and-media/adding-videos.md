@@ -69,7 +69,13 @@ To start a new video from one you already set up, copy it instead of building it
 1. Go to **FluentPlayer → Media**.
 2. Open the actions menu on the media item's row and click **Duplicate**.
 
-The copy appears in your media list. Open it to change the title, source, or settings, then publish it when it's ready.
+The copy appears in your media list. It is named after the original with **(Copy)** at the end and is saved as a **Draft**, so it isn't visible to anyone yet. It keeps the original's settings, and any subtitle files FluentPlayer generated are copied too, so the two items don't share them.
+
+Open the copy to change the title, source, or settings, then publish it when it's ready.
+
+::: info
+If a video you uploaded to Mux is still processing, **Duplicate** won't work yet. You'll see *"This media is still processing. Try again once it is ready."* Wait until the video is ready, then try again.
+:::
 
 ![Duplicate in the media row actions menu](/docs/public/videos-and-media/adding-videos/duplicate-media-7.webp)
 
