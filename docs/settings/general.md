@@ -76,13 +76,21 @@ If you use the **Ambient** preset for a decorative background video, consider tu
 
 ## Default Volume
 
-Set the volume your players start at, so viewers aren't surprised by a video that is too loud or too quiet.
+**Slider:** Default Volume — *"The volume every player starts at (can be overridden per media). Viewers can still adjust it while watching."*
 
-The default volume applies to all your players. Viewers can still change the volume with the volume control in the player. Their own choice then applies to that player.
+Use this to set the starting volume for all your players, so viewers aren't surprised by a video that is too loud or too quiet. The slider goes from 0 to 100, and you can also type a number in the box next to it. The default is **100**, which is full volume.
+
+To change it, go to **Fluent Player → Settings → General** and scroll down to **Default Volume**, just below **Single Playback**. Drag the slider or enter a value, then click **Save Settings**.
+
+![The Default Volume slider below Single Playback in General Settings](/docs/public/settings/general/default-volume-5.webp)
+
+**Set a different volume for one video:** open the media, go to **General Settings**, and switch on **Override Default Volume**. Then set its own **Start Volume**. With the switch off, the video follows the site default.
 
 ::: tip
-Videos set to autoplay without sound stay muted. The default volume only sets the starting level once a viewer turns sound on.
+Viewers can still change the volume while watching. Your default only sets where the player starts.
 :::
+
+![The Override Default Volume switch and Start Volume slider in the media editor](/docs/public/settings/general/override-default-volume-6.webp)
 
 ## Custom CSS (Pro)
 

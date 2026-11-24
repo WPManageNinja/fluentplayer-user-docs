@@ -84,6 +84,12 @@ FluentPlayer Pro allows you to handle common video management tasks without leav
 
 **Related:** [Video Sources](/video-sources): Choosing Bunny as a source.
 
+## Signed Video Links on Cached Pages
+
+If you protect your videos with a **Token Authentication Key**, each video gets a signed link that expires after a while. A page cache can keep serving an old link after it has expired.
+
+The player now notices an expired link and fetches a fresh one by itself, so the video keeps playing without you clearing the cache. If a video still won't play, update FluentPlayer and clear your page cache once.
+
 ## Bunny Stream vs Bunny Storage
 
 | | Bunny Stream | Bunny Storage |
